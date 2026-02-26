@@ -1,0 +1,433 @@
+#+title: Student Support
+#+url: /services/student-support
+#+status: draft
+
+* V1
+
+** Hero
+:PROPERTIES:
+:SECTION: Hero — full-width
+:LAYOUT: Centered text
+:IMAGE: student being welcomed at airport, or settling into homestay
+:END:
+
+*** Headline
+
+You're never on your own.
+
+*** Subheadline
+
+From the moment you land in Australia to the day you graduate — accommodation, welfare, health insurance, and 24/7 emergency support.
+
+-----
+
+** Support Services
+:PROPERTIES:
+:SECTION: BentoBox — 6 cards with icons
+:LAYOUT: 3x2 grid on desktop, stacked on mobile
+:END:
+
+*** Accommodation
+:PROPERTIES:
+:ICON: home
+:END:
+
+Vetted homestay families through the Australian Homestay Network. Safe, supportive, meals included. Short and long-term arrangements available.
+
+*** Guardianship
+:PROPERTIES:
+:ICON: shield
+:END:
+
+Legal guardianship for students under 18 through Professional Student Care Australia or International Student Alliance. Welfare monitoring, school liaison, parental reporting, and compliance with Department of Home Affairs requirements.
+
+*** 24/7 Emergency Hotline
+:PROPERTIES:
+:ICON: phone
+:END:
+
+Round-the-clock crisis support. Multilingual assistance. Coordination with local emergency services. Peace of mind for students and families.
+
+*** Airport Transfers
+:PROPERTIES:
+:ICON: plane
+:END:
+
+Meet and greet at the airport. Direct transfer to your accommodation. Luggage assistance. Your first moment in Australia should feel safe, not stressful.
+
+*** Health Insurance (OSHC)
+:PROPERTIES:
+:ICON: heart
+:END:
+
+Overseas Student Health Cover is mandatory for all student visas. We help you choose the right policy, enroll, and manage claims.
+
+*** Document Translation
+:PROPERTIES:
+:ICON: file-text
+:END:
+
+NAATI-certified translations for academic, legal, and visa documents. Accepted by all Australian authorities. Fast turnaround.
+
+-----
+
+** Orientation & Onboarding
+:PROPERTIES:
+:SECTION: Two-column — text left, image right
+:LAYOUT: 55/45 split
+:IMAGE: students in group orientation session
+:END:
+
+Arriving in a new country is overwhelming. Our orientation program makes the transition smooth:
+
+- Campus and local area familiarisation
+- Banking and essential services setup
+- Public transport guidance
+- Australian lifestyle and culture introduction
+- Student support services overview
+- Personal development programs for confidence and community
+
+-----
+
+** Your Support Journey
+:PROPERTIES:
+:SECTION: Timeline — horizontal, 3 phases
+:LAYOUT: Connected phases
+:END:
+
+*** Before You Arrive
+
+Document translation. Accommodation arranged. OSHC enrolled. Visa approved. You'll know exactly what to expect.
+
+*** When You Land
+
+Airport pickup. Orientation. First-day support. Banking, transport, and essentials sorted.
+
+*** While You Study
+
+24/7 hotline. Welfare monitoring. Cultural adaptation support. Personal development. We're a phone call away — always.
+
+-----
+
+** Fees & Investment
+:PROPERTIES:
+:SECTION: Info card
+:LAYOUT: Clean, single column
+:END:
+
+Fees vary based on individual circumstances and service requirements. Key cost considerations:
+
+- *Medical examinations*: $240–$380 depending on assessment type
+- *Accommodation, guardianship, and OSHC*: Student responsibility; fees vary by arrangement
+- *Additional services*: 24/7 emergency hotline, document translation, airport transfers, and short-tour coordination
+
+All fees are communicated transparently during initial consultation. No hidden charges.
+
+-----
+
+** CTA
+:PROPERTIES:
+:SECTION: Full-width CTA banner
+:CTA-PRIMARY: Ask About Support Services
+:CTA-SECONDARY: Call +61 8 6381 0030
+:END:
+
+*** Headline
+
+Comprehensive support. Genuine care.
+
+*** Body
+
+Talk to us about the support services available for your situation. Every student's needs are different — and our response is always personal.
+
+* V2
+
+** Hero
+:PROPERTIES:
+:SECTION: Hero — full-width
+:LAYOUT: Centered text
+:IMAGE: student video-calling family from homestay living room
+:END:
+
+*** Headline
+
+10,000 km from home. But never alone.
+
+*** Subheadline
+
+Being far from your family is hard. We can't replace them — but we can make sure someone is always looking out for you.
+
+-----
+
+** What It Really Feels Like
+:PROPERTIES:
+:SECTION: Two-column — text left, image right
+:LAYOUT: 55/45 split
+:IMAGE: student looking out window, reflective
+:END:
+
+The flight is long. The airport is unfamiliar. The accents are different. You don't know which bus to catch, how to open a bank account, or who to call if something goes wrong at 2 a.m.
+
+Your parents are awake at odd hours, checking their phone, hoping you're okay.
+
+This is the part of studying abroad nobody puts in the brochure. And it's the part we take most seriously.
+
+Since 1998, we've supported students from 40+ countries through the difficult, disorienting early days — and stayed with them through every stage that followed. Not because it's a service. Because it matters.
+
+-----
+
+** The Things That Make the Difference
+:PROPERTIES:
+:SECTION: BentoBox — 6 cards with icons
+:LAYOUT: 3x2 grid on desktop, stacked on mobile
+:END:
+
+*** A Home, Not Just a Room
+:PROPERTIES:
+:ICON: home
+:END:
+
+We arrange accommodation with vetted homestay families through the Australian Homestay Network. Meals included. A family who checks in on you. A place that feels safe when everything else feels new.
+
+*** Someone Watching Over You
+:PROPERTIES:
+:ICON: shield
+:END:
+
+For students under 18, we arrange legal guardianship through Professional Student Care Australia or International Student Alliance. Welfare monitoring, school liaison, regular updates to your parents, and full compliance with Department of Home Affairs requirements — so they can sleep at night.
+
+*** A Voice at 2 a.m.
+:PROPERTIES:
+:ICON: phone
+:END:
+
+Our 24/7 emergency hotline means there is always someone to call. Multilingual. Connected to local emergency services. Because crises don't wait for business hours.
+
+*** A Friendly Face at the Airport
+:PROPERTIES:
+:ICON: plane
+:END:
+
+Your first moments in Australia shouldn't be stressful. We meet you at the airport, help with your luggage, and take you directly to your accommodation. That first breath of relief? We've seen it hundreds of times.
+
+*** Health Cover Sorted
+:PROPERTIES:
+:ICON: heart
+:END:
+
+Overseas Student Health Cover is mandatory. We help you choose the right policy, get enrolled, and navigate claims if you ever need to use it.
+
+*** Your Documents, Translated
+:PROPERTIES:
+:ICON: file-text
+:END:
+
+NAATI-certified translations for academic, legal, and visa documents. Accepted by all Australian authorities. One less thing to worry about.
+
+-----
+
+** The First Week
+:PROPERTIES:
+:SECTION: Two-column — text left, image right
+:LAYOUT: 55/45 split
+:IMAGE: students laughing during orientation, exploring campus
+:END:
+
+The first week is the hardest. That's why our orientation program exists — to turn overwhelm into confidence:
+
+- We show you around campus and the local area
+- We help you set up banking and essentials
+- We walk you through public transport
+- We introduce you to Australian culture and lifestyle
+- We connect you with personal development programs so you build confidence and community from day one
+
+By the end of your first week, Australia starts to feel less foreign and more like a place you could belong.
+
+-----
+
+** A Promise to Parents
+:PROPERTIES:
+:SECTION: Timeline — horizontal, 3 phases
+:LAYOUT: Connected phases
+:END:
+
+*** Before They Leave
+
+Everything is arranged before your child boards the plane. Documents translated. Accommodation confirmed. Health cover enrolled. You'll have a clear picture of what awaits them.
+
+*** When They Arrive
+
+We're at the airport. We take them to their homestay. We walk them through their first day. You'll hear from us — and from them — that they're settled.
+
+*** Every Day After
+
+24/7 emergency support. Welfare monitoring. Cultural adaptation help. Personal development. Your child is never without someone to turn to.
+
+-----
+
+** What It Costs
+:PROPERTIES:
+:SECTION: Info card
+:LAYOUT: Clean, warm background
+:END:
+
+We believe in honesty about costs — it's one of our founding principles. Fees vary based on your child's specific situation and needs, but here's what to expect:
+
+Medical examinations for visa purposes range from $240 to $380. Accommodation, guardianship, and health cover fees depend on the arrangement and duration. Additional services like document translation, airport transfers, and 24/7 emergency hotline access carry separate fees.
+
+Every cost is communicated clearly during your initial consultation. We'll give you a realistic picture — not a sales pitch.
+
+-----
+
+** CTA
+:PROPERTIES:
+:SECTION: Full-width CTA banner
+:CTA-PRIMARY: Talk to Us About Your Child's Support
+:CTA-SECONDARY: Call +61 8 6381 0030
+:END:
+
+*** Headline
+
+They'll be okay. We'll make sure of it.
+
+*** Body
+
+Every student's situation is different. Talk to us about what your child needs — and we'll show you how we'll look after them.
+
+* V3
+
+** Hero
+:PROPERTIES:
+:SECTION: Hero — full-width
+:LAYOUT: Centered text. Clean design
+:END:
+
+*** Headline
+
+Student support services in Australia.
+
+*** Subheadline
+
+Accommodation. Guardianship. Health cover. Airport transfers. Translation. 24/7 emergency line. All arranged before arrival.
+
+-----
+
+** What's Included
+:PROPERTIES:
+:SECTION: BentoBox — 6 cards with icons
+:LAYOUT: 3x2 grid on desktop, stacked on mobile
+:END:
+
+*** Accommodation
+:PROPERTIES:
+:ICON: home
+:END:
+
+Homestay with vetted families via the Australian Homestay Network. Meals included. Short-term and long-term options.
+
+*** Guardianship (Under 18)
+:PROPERTIES:
+:ICON: shield
+:END:
+
+Legal guardian appointed through Professional Student Care Australia or International Student Alliance. Includes welfare monitoring, school liaison, parental reporting. Required by Department of Home Affairs for minor students.
+
+*** 24/7 Emergency Hotline
+:PROPERTIES:
+:ICON: phone
+:END:
+
+Round-the-clock support. Multilingual. Coordinated with local emergency services. Available to all Blue Education clients.
+
+*** Airport Transfers
+:PROPERTIES:
+:ICON: plane
+:END:
+
+Meet and greet at the airport. Direct transfer to accommodation. Luggage help included.
+
+*** Health Insurance (OSHC)
+:PROPERTIES:
+:ICON: heart
+:END:
+
+Overseas Student Health Cover — mandatory for all student visas. We handle policy selection, enrollment, and claims support.
+
+*** Document Translation
+:PROPERTIES:
+:ICON: file-text
+:END:
+
+NAATI-certified. Academic, legal, and visa documents. Accepted by all Australian authorities.
+
+-----
+
+** Orientation Program
+:PROPERTIES:
+:SECTION: Checklist — single column
+:LAYOUT: Clean checklist with checkboxes
+:END:
+
+Included for all new arrivals:
+
+- [ ] Campus and local area tour
+- [ ] Bank account setup
+- [ ] Public transport walkthrough
+- [ ] Australian culture and lifestyle briefing
+- [ ] Student support services overview
+- [ ] Personal development program enrollment
+
+-----
+
+** Timeline
+:PROPERTIES:
+:SECTION: Timeline — horizontal, 3 phases
+:LAYOUT: Numbered steps, minimal
+:END:
+
+*** Pre-Arrival
+
+Documents translated. Accommodation booked. OSHC enrolled. Visa sorted.
+
+*** Arrival Day
+
+Airport pickup. Transfer to accommodation. First-day orientation.
+
+*** Ongoing
+
+24/7 hotline access. Welfare checks. Cultural adaptation support. Personal development programs.
+
+-----
+
+** Cost Considerations
+:PROPERTIES:
+:SECTION: Info card
+:LAYOUT: Clean, single column
+:END:
+
+| Item | Notes |
+|------|-------|
+| Accommodation | Fees vary by homestay arrangement and duration |
+| Guardianship | Required for under-18 students; fees vary |
+| OSHC | Mandatory; fees depend on provider and duration |
+| Medical exams | $240-$380 depending on assessment type |
+| Translation, airport transfers, 24/7 hotline | Additional service fees apply |
+
+All fees communicated upfront during initial consultation. No hidden charges.
+
+-----
+
+** CTA
+:PROPERTIES:
+:SECTION: Full-width CTA banner
+:CTA-PRIMARY: Ask About Support Services
+:CTA-SECONDARY: Call +61 8 6381 0030
+:END:
+
+*** Headline
+
+Get the full picture.
+
+*** Body
+
+Contact us with your situation. We'll tell you exactly what support is available and what it costs.

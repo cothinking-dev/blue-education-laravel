@@ -1,0 +1,508 @@
+#+title: Blue Education Website Sitemap
+
+*Total pages: 24* (excluding blog articles)
+
+Based on available content. Pages marked /[planned]/ need content from client before development.
+
+-----
+
+* Visual Sitemap
+
+#+begin_example
+Blue Education Website (24 pages)
+│
+├── 1.  Home (/)
+│
+├── Services
+│   ├── Education
+│   │   ├── 2.  Education Overview (/services/education)
+│   │   ├── 3.  School Programs (/services/education/school-programs)
+│   │   ├── 4.  English & Foundation (/services/education/english-foundation)
+│   │   ├── 5.  VET & TAFE (/services/education/vet-tafe)
+│   │   └── 6.  University Degrees (/services/education/degrees)
+│   │
+│   ├── Migration & Visas
+│   │   ├── 7.  Migration Overview (/services/migration)
+│   │   ├── 8.  Student Visas (/services/migration/student-visas)
+│   │   ├── 9.  Graduate & Work Visas (/services/migration/graduate-work-visas)
+│   │   └── 10. Permanent Residence (/services/migration/permanent-residence)
+│   │
+│   ├── 11. Career Services (/services/career)
+│   └── 12. Student Support (/services/student-support)
+│
+├── Programs
+│   ├── 13. Buddy Programme (/programs/buddy-programme)
+│   ├── 14. Study Tours (/programs/study-tours)
+│   └── 15. SCSA Associate (/programs/scsa-associate)
+│
+├── 16. Why Australia (/why-australia)
+│
+├── About
+│   ├── 17. About Us (/about)
+│   ├── 18. Our Team (/about/team)
+│   └── 19. Our Partners (/about/partners)
+│
+├── Resources
+│   ├── 20. Blog (/blog)
+│   ├── 21. FAQ (/resources/faq) [planned]
+│   └── 22. Admission Requirements (/resources/admission-requirements)
+│
+├── 23. Fees & Investment (/fees)
+│
+└── 24. Contact (/contact)
+#+end_example
+
+-----
+
+* Detailed Page Specifications
+
+** 1. Home (/)
+
+*Purpose:* First impression, service overview, trust signals, conversion entry points.
+
+*Sections:*
+- Hero banner with CTA ("Book a Free Consultation")
+- Service overview cards (Education, Migration, Career, Support)
+- Featured programs (Buddy Programme, SCSA)
+- Why Australia highlights (3-4 key stats)
+- Testimonials carousel [planned - need from client]
+- Partners/university logos strip
+- Latest blog posts (3)
+- Contact/consultation CTA
+
+*Source:* service-integration.org, brand-messaging.org
+
+-----
+
+** 2. Education Overview (/services/education)
+
+*Purpose:* Overview of all education pathways with links to detailed pages. Also covers student placement process and education pathway counseling.
+
+*Sections:*
+- Hero: "Your Education Pathway Starts Here"
+- Education pathway diagram (Primary → English → Foundation → VET → Degree)
+- Service cards linking to 4 sub-pages
+- Student placement process (institution matching, application, CoE)
+- How we help (counseling process overview)
+- CTA: "Get a Free Education Assessment"
+
+*Source:* education-services.org (intro, pathway planning, student placement sections)
+
+-----
+
+** 3. School Programs (/services/education/school-programs)
+
+*Purpose:* Primary & secondary education placements for international students.
+
+*Sections:*
+- Australian school system structure (13 years, compulsory to 16)
+- Public vs private school options
+- School selection and placement process
+- Welfare requirements for under-18 students
+- Accommodation (Australian Homestay Network)
+- Guardianship services
+- Link to Buddy Programme page
+
+*Source:* education-services.org (section 2)
+
+-----
+
+** 4. English & Foundation (/services/education/english-foundation)
+
+*Purpose:* ELICOS courses and foundation studies programs.
+
+*Sections:*
+- ELICOS overview (10/20/30 week blocks)
+- Course types: General English, Academic English, IELTS/PTE prep
+- Specialized teaching qualifications (TESOL, CELTA, EfTC)
+- Foundation studies programs
+- Pathway diagram: ELICOS → Foundation → University
+- Partner institutions
+
+*Source:* education-services.org (sections 3-4)
+
+-----
+
+** 5. VET & TAFE (/services/education/vet-tafe)
+
+*Purpose:* Vocational education and training pathways.
+
+*Sections:*
+- What is VET/TAFE
+- Qualification levels (Certificate I-IV, Diploma, Advanced Diploma)
+- Industry-relevant training areas
+- Work-integrated learning
+- Pathway to higher education
+- Connection to skilled migration lists
+- Teaching pathways (Bachelor of Education, Master of Teaching, Grad Dip)
+
+*Source:* education-services.org (sections 5, 7)
+
+-----
+
+** 6. University Degrees (/services/education/degrees)
+
+*Purpose:* Higher education programs (Bachelor, Master, Doctoral).
+
+*Sections:*
+- AQF framework overview (Levels 7-10)
+- Bachelor degree programs (3-4 years)
+- Master degree programs (1-2 years)
+- Doctoral programs (PhD)
+- World rankings (7 in global top 100)
+- TEQSA quality assurance
+- Post-study work visa eligibility
+- Partner universities
+
+*Source:* education-services.org (section 6)
+
+-----
+
+** 7. Migration Overview (/services/migration)
+
+*Purpose:* Overview of all visa and migration services with links to detailed pages.
+
+*Sections:*
+- Migration pathway diagram (Study → Graduate → Permanent Residence)
+- Visa service cards linking to 3 sub-pages
+- Why choose Blue Education for migration
+- Professional credentials (Migration Alliance, MIA, QEAC)
+- CTA: "Book a Migration Assessment"
+
+*Source:* migration-visa-services.org (intro + pathway summary)
+
+-----
+
+** 8. Student Visas (/services/migration/student-visas)
+
+*Purpose:* Student visa (Subclass 500) information and application support.
+
+*Sections:*
+- Subclass 500 overview
+- Eligibility requirements
+- Application process (step-by-step)
+- Document checklist
+- GTE statement guidance
+- Financial capacity requirements
+- Health and character requirements
+- How Blue Education helps
+
+*Source:* migration-visa-services.org (section 1)
+
+-----
+
+** 9. Graduate & Work Visas (/services/migration/graduate-work-visas)
+
+*Purpose:* Post-study work visas and employer-sponsored options.
+
+*Sections:*
+- Subclass 485 overview (Graduate Work Stream + Post-Study Work Stream)
+- Duration by qualification (2/3/4 years)
+- Eligibility criteria
+- Employer sponsored migration (ENS, TSS/482)
+- Standard Business Sponsor (SBS) assistance
+- Work visa assistance services
+
+*Source:* migration-visa-services.org (sections 2, 4), special-programs.org (SBS)
+
+-----
+
+** 10. Permanent Residence (/services/migration/permanent-residence)
+
+*Purpose:* Pathways to permanent residency in Australia.
+
+*Sections:*
+- Skilled migration (points-based system)
+- Skills assessment and points test optimization
+- EOI and state nomination
+- Business migration
+- Family & partner visas
+- Visitor visas and resident return visa
+
+*Source:* migration-visa-services.org (sections 3, 5-8)
+
+-----
+
+** 11. Career Services (/services/career)
+
+*Purpose:* Career development and employment support for graduates.
+
+*Sections:*
+- Career counseling overview
+- Job readiness programs (workplace culture, interview skills, networking)
+- Employer connections and job matching
+- Internship arrangements and work placement programs
+- Executive Internship Programme
+- Career services pathway (Assessment → Preparation → Experience → Employment)
+
+*Source:* career-services.org
+
+-----
+
+** 12. Student Support (/services/student-support)
+
+*Purpose:* Welfare and support services for international students.
+
+*Sections:*
+- Accommodation (Australian Homestay Network)
+- Guardianship services (under 18)
+- 24/7 emergency hotline
+- Airport transfers
+- Document translation (NAATI certified)
+- Health insurance (OSHC)
+- Orientation & onboarding
+- Personal development programs
+
+*Source:* student-support-services.org
+
+-----
+
+** 13. Buddy Programme (/programs/buddy-programme)
+
+*Purpose:* Dedicated page for Blue Education's signature 14-day immersion program. Key differentiator.
+
+*Sections:*
+- Program overview
+- 14-day structure (morning English lessons + afternoon school integration)
+- Homestay accommodation details
+- Field trips and experiential learning
+- Voluntary work opportunities (CV enhancement)
+- Partnership with Anglican Schools
+- Photo gallery / video [planned]
+- How to apply
+
+*Source:* special-programs.org (section 3)
+
+-----
+
+** 14. Study Tours (/programs/study-tours)
+
+*Purpose:* Short-term study tours and immersion programs.
+
+*Sections:*
+- Study tours overview
+- Culinary Study Tour (Fremantle, WA) - featured
+- Short-term immersion programs (weeks to months)
+- Custom group tours
+- Booking information
+
+*Source:* special-programs.org (sections 1-2)
+
+-----
+
+** 15. SCSA Associate Program (/programs/scsa-associate)
+
+*Purpose:* Blue Education's unique role promoting WA curriculum internationally.
+
+*Sections:*
+- What is SCSA
+- Blue Education's official recognition
+- WACE program for international students
+- Benefits for international schools
+- Benefits for students
+- Curriculum implementation support
+
+*Source:* special-programs.org (section 4)
+
+-----
+
+** 16. Why Australia (/why-australia)
+
+*Purpose:* Value proposition for choosing Australia as education destination. Includes Perth/WA focus per client direction.
+
+*Sections:*
+- Top 5 reasons to study in Australia
+- Global recognition and quality assurance
+- Variety of educational options (1,100+ institutions)
+- Technology and innovation
+- Work opportunities (post-study visa 2-4 years)
+- Quality of life and cost comparison with UK/USA
+- Perth & Western Australia spotlight ("golden state of education")
+- Multicultural environment
+
+*Source:* why-australia.org, brand-messaging.org (WA focus notes)
+
+-----
+
+** 17. About Us (/about)
+
+*Purpose:* Company story, mission, values, and credibility.
+
+*Sections:*
+- Company history (founded 1998)
+- Mission and vision
+- Core values (5 principles)
+- Professional credentials and memberships
+- Why Choose Blue Education (6 differentiators)
+- Geographic presence
+- Testimonials [planned - need from client]
+
+*Source:* company-overview.org, service-integration.org
+
+-----
+
+** 18. Our Team (/about/team)
+
+*Purpose:* Team member profiles building trust and personal connection.
+
+*Sections:*
+- Leadership: Glen (Managing Director)
+- International team profiles (Hana, Sonia, Minami, Elijah, Sherene)
+- Team composition by domain
+- International office locations
+- Multilingual capabilities
+
+*Source:* team-profiles.org
+
+-----
+
+** 19. Our Partners (/about/partners)
+
+*Purpose:* Institutional partnerships and professional affiliations.
+
+*Sections:*
+- University partners (focus on WA institutions)
+- TAFE and RTO partners
+- Professional memberships (Migration Alliance, MIA, QEAC)
+- International office network
+- Partner logos [planned - need from client]
+
+*Source:* company-overview.org (credentials + relationships)
+
+-----
+
+** 20. Blog (/blog)
+
+*Purpose:* Content hub for SEO, thought leadership, and student resources.
+
+*Categories:*
+- Education News
+- Migration Updates
+- Student Stories
+- Study Tips
+- Living in Australia
+
+*Source:* N/A (individual posts created separately)
+
+-----
+
+** 21. FAQ (/resources/faq) [planned]
+
+*Purpose:* Address common questions, reduce support burden, improve SEO.
+
+*Sections (tabbed/categorized):*
+- Education FAQs
+- Migration & Visa FAQs
+- Career Services FAQs
+- Student Support FAQs
+- Fees & Costs FAQs
+
+*Source:* Compiled from all docs
+
+-----
+
+** 22. Admission Requirements (/resources/admission-requirements)
+
+*Purpose:* Dedicated reference page for entry requirements by program level.
+
+*Sections:*
+- English language requirements (by test and program level)
+- Academic requirements (by education level)
+- Pathway options for students below direct entry
+- How Blue Education helps with admissions
+
+*Source:* admission-requirements.org
+
+-----
+
+** 23. Fees & Investment (/fees)
+
+*Purpose:* Transparent cost information reinforcing honesty values.
+
+*Sections:*
+- Blue Education service fees overview
+- STAC charges explanation
+- Medical examination costs ($240-$380)
+- Government and third-party costs
+- Student responsibilities
+- Fee calculator
+
+*Source:* fees-and-costs.org
+
+-----
+
+** 24. Contact (/contact)
+
+*Purpose:* Primary conversion page for inquiries and consultation booking.
+
+*Sections:*
+- Contact form
+- Office address (33 Barrack St GF Unit 2, Perth WA 6000)
+- Phone numbers (+61 8 6381 0030, +61 411 708 899, 1300 040 696)
+- Email (info@blueeducation.com.au)
+- Office map and hours
+- Consultation booking (types: Education, Migration, Career)
+- WhatsApp integration
+- International representative contacts
+
+*Source:* company-overview.org (contact section)
+
+-----
+
+* Navigation Structure
+
+#+begin_example
+[Logo] Blue Education
+─────────────────────────────────────────────────
+Home | Services ▼ | Programs ▼ | Why Australia |
+       About ▼   | Resources ▼ | Fees | Contact
+
+Services Dropdown:
+├── Education Services →
+│   ├── School Programs
+│   ├── English & Foundation
+│   ├── VET & TAFE
+│   └── University Degrees
+├── Migration & Visas →
+│   ├── Student Visas
+│   ├── Graduate & Work Visas
+│   └── Permanent Residence
+├── Career Services
+└── Student Support
+
+Programs Dropdown:
+├── Buddy Programme
+├── Study Tours
+└── SCSA Associate
+
+About Dropdown:
+├── About Us
+├── Our Team
+└── Our Partners
+
+Resources Dropdown:
+├── Blog
+├── FAQ
+└── Admission Requirements
+#+end_example
+
+-----
+
+* URL Redirect Map (Old → New)
+
+| Old URL              | New URL                                | Type |
+|----------------------+----------------------------------------+------|
+| =/buddy-program/=    | =/programs/buddy-programme=            |  301 |
+| =/culinary-study-tour/= | =/programs/study-tours=            |  301 |
+| =/english-courses/=  | =/services/education/english-foundation= | 301 |
+
+-----
+
+* SEO Notes
+
+- Each page should have unique title tag and meta description
+- Use breadcrumbs on all sub-pages
+- Implement schema markup (Organization, Service, FAQ, BreadcrumbList)
+- Internal linking between related service pages
+- Blog posts should cross-link to relevant service pages
+- Buddy Programme page targets unique program-specific keywords

@@ -1,0 +1,1126 @@
+#+TITLE: Blue Education Website Content Extraction
+#+DATE: 2026-01-30
+#+DESCRIPTION: Full content extraction from https://www.blueeducation.com.au/
+#+PROPERTY: header-args :eval never-export
+
+* Main Pages
+
+** Homepage
+:PROPERTIES:
+:URL: https://www.blueeducation.com.au/
+:END:
+
+*** Hero Section
+Start Your Journey to Australia with us today! STUDY WORK LIVE
+
+*** What We Do
+
+**** For International Students
+We will help you:
+- Identify your CAREER goals
+- Explore your OPTIONS
+- Enrol into your COURSE
+- Obtain your VISA
+
+**** For Employers
+We will help you:
+- Find the right candidate
+- Assist in work readiness
+- Get you the right to sponsor a worker
+- Obtain your worker's work visa
+
+**** For International Student Graduates & Migrants
+We will help you:
+- To be work-ready
+- Identify your job prospects
+- Get connected with potential employers
+- Obtain the relevant work visa
+
+*** SCSA Partnership
+We are recognised as a partner to the School Curriculum and Standards Authority (SCSA), a Western Australian (WA) Government's statutory authority responsible for the WA curriculum from Kindergarten to Year 12 delivered by schools locally and internationally.
+
+*** Services Overview
+
+**** Education
+- Education and career planning
+- Course and school selection/enrolment/changes
+- School transfer/withdrawal
+- Student visa application
+- Student Health Cover
+- Accommodation and homestay
+- Flight and transport
+- Other student support services
+
+**** Migration
+- Skilled Migration
+- Graduate Work Visa
+- Post Study Work Visa
+- Sponsored Skilled Visa
+- Employer's Standard Business Sponsorship
+- Family Migration
+- Spouse/De-Facto/Child Visa
+- Business/Investment Migration
+- Visa Appeal
+
+**** Career
+- Career counselling
+- Resume review and construction
+- Interview coaching
+- Job search strategies
+- Cultural adaptation initiatives
+- Personality and career assessment
+- Communication skills training
+- Part-time and full time work opportunities
+- Volunteer and work internships
+
+*** About Us Summary
+Blue Education has been established since the late 90s, specialising in education guidance, counselling and international student placement in Australia. Blue Education strives to promote the Australian lifestyle and quality education to students from around the globe. 7 out of 100 of the world's top universities are in Australia!
+
+*** Core Values
+- BRANDING (20+ years, boutique)
+- HONEST (genuine advice)
+- QUALIFIED (QEAC certified, Migration Alliance, MIA)
+- PROFESSIONALISM (trusted, reliable)
+
+*** Contact Information
+*Australia*
+BLUE Education I Migration I Career
+- 2/33, Barrack Street, Perth, Western Australia 6000
+- 27 - 31 Myers Street, Geelong, Victoria 3220
+- Email: info@blueeducation.com.au
+- Tel: 1300 040 696 I +618 6381 0030
+- Office Hours: 9.30am - 5.00pm (Monday - Friday)
+
+*Malaysia* - MARA Agent I Partner Office
+No 12, (2nd Floor), Jalan Shook Lin, Petaling Jaya, 46200 Selangor
+
+*Ghana* - Blue Partner Representative Office
+Hse No. 7934W Laryea Ania Street, Kisseman West Legon
+
+*Zambia*
+Room 4, Monarch International Company Limited
+6643+CF Kitwe, Zambia
++260 96 3403582
+
+** Contact Us
+:PROPERTIES:
+:URL: https://www.blueeducation.com.au/contact-us
+:END:
+
+*** Australia Offices
+BLUE Education | Migration | Career
+- 33 (GF), Barrack Street, Perth, Western Australia 6000
+- 420 Collins Street, Melbourne, Victoria 3000
+- 27 - 31 Myers Street, Geelong, Victoria 3220
+
+Email: info@blueeducation.com.au
+Tel: 1300 040 696 | +618 6381 0030
+
+Office Hours: 9.30am - 5.00pm (Monday - Friday)
+Last Appointment: 4.30pm
+Please send through your appointment request via Email | WhatsApp | Call
+
+*** Malaysia Office
+L-07-01, Level 7, Block L
+Solaris Mont Kiara
+No. 2, Jalan Solaris Mont Kiara
+50480 Kuala Lumpur.
+
+MARA Advisory | Immigration Lawyer | Partner Office
+No 12, (2nd Floor), Jalan Yong Shook Lin,
+46200 Petaling Jaya.
++6 03 6200 0782
+By appointments only
+
+*** Ghana Office
+Blue Partner Representative Office
+Hse No. 7934WLaryea Ania Street
+Kisseman, West Legon
+By appointments only
+
+*** Indonesia Office
+Blue Partner Representative Office
+PT HWP INDO Consulting
+Menara Batavia 12Ath floor, JI. KH MAs Mansyur Ka. 126, Central Jakarta 10220
+
+*** Zambia Office
+Room 4, Monarch International Company Limited.
+6643+CF Kitwe, Zambia.
++260 96 3403582
+
+** Why Australia
+:PROPERTIES:
+:URL: https://www.blueeducation.com.au/why-australia
+:END:
+
+Australia is a popular destination for international students with its highly livable cities, temperate climate, a strong economy, an amiable culture and high-quality education system.
+
+Home to some of the world's leading universities, you have the freedom to choose a path that suits your particular goals. There are thousands of courses out there. Whichever course you choose, you will certainly experience a unique kind of learning!
+
+Times, CNN, Economist are amongst the many who have proudly reminded us that Australia does have many liveable cities within its fortress of sound economy, exceptional education institutions and multicultural brilliance. Australia has some of the best colleges in the world. Look at the list of colleges in the top 100 countries in the world, 7 are actually in Australia. Amazing, since Australia has only 23 million residents.
+
+You also have a lot of choices when you come to Australia. There are over 1100 institutions found across the entire country. The cost of living in Australia is great, especially when compared to the UK and the USA.
+
+*** Top 5 Reasons Why Australia
+
+1. *GLOBAL RECOGNITION* - Schools and employers around the world recognise degrees from Australian schools. Graduates from Australia are highly sought because of the impressive international reputation of the Australian education system, carefully regulated by the Australian government to maintain high standards.
+
+2. *DIVERSITY IN EDUCATION* - Institutions in Australia offer a wide variety of courses and degrees, so international students can easily find the school and field that are right for them. Depending on their interest, students can choose between universities, vocational education, and English language training. It is also easy for students to move between qualification levels or institutions.
+
+3. *TECHNOLOGY* - It is most appealing to international students because of the quality of scientific research in Australia. Australia is at the forefront of new technology and innovations. Students who study in Australia can take advantage of the country's impressive technology and research resources.
+
+4. *JOB OPPORTUNITIES* - While the UK closes doors for doctors and the US focuses more on IT professionals, Australia offers more job facilities in multiple disciplines. It can be agriculture or aeronautics, accounts or actuaries. With the Subclass 485, Post Study Work Visa, would allow 2 to 4 years of work opportunities.
+
+5. *AUSTRALIA IS SIMPLY TOO BEAUTIFUL TO RESIST!* - The white sandy beaches, the blue skies, the crisp air. How can anyone NOT fall in love with Australia! There is not a moment of dullness in this beautiful country. Abundance of opportunities!
+
+** The 3 Pillars (Core Services)
+:PROPERTIES:
+:URL: https://www.blueeducation.com.au/the-3-pillars
+:END:
+
+This is our dedication to work with you towards a desired pathway for a successful career.
+
+*** Education Pillar
+Our team of Education Counselors is here to advise and guide you through your options for studying and living in Australia. Our counselors are professional and proficient, always ready to provide you a hassle-free experience, from consultation to enrolment and visa application.
+
+Service delivery:
+- Education and career planning
+- Course and school selection/ enrolment/ changes
+- School transfer/ withdrawal
+- Student visa application
+- Student Health Cover
+- Accommodation and homestay
+- Flight and transport
+- Other student support services
+
+*** Migration Pillar
+Our team of licensed Registered Migration Agents comes with years of experience and successful cases that have helped changed the lives of many individuals and families. Our team is professional and honest and will always be transparent with you.
+
+Service delivery:
+- Skilled Migration
+- Graduate Work Visa
+- Post Study Work Visa
+- Sponsored Skilled Visa
+- Employer's Standard Business Sponsorship
+- Family Migration
+- Spouse / De-Facto / Child Visa
+- Business and Investment Migration
+- Visa Appeal
+
+*** Career Pillar
+Our Career Counsellors come with years of corporate experience and are eager to share with you their experience and quick tips in finding your niche in the job marketplace.
+
+Service delivery:
+- Career counselling
+- Resume review and construction
+- Interview coaching
+- Job search strategies
+- Cultural adaptation initiatives
+- Personality and career assessment
+- Communication skills training
+- Internship placement
+- Part-time and full time work
+- Volunteer and work internships
+
+* Services
+
+** Education Services
+:PROPERTIES:
+:URL: https://www.blueeducation.com.au/education
+:END:
+
+Our education counsellors services include assessing of student future aspiration and recommendations of pathways, courses and institute in Australia. We are here to help you to gain admission and assist you through the entire school and visa application process.
+
+From primary school to university studies, we have assisted thousands of clients from 40 different countries in the past 20 years.
+
+If you are considering a short-term study abroad experience, such as an English language program or even thinking of extending your study in Australia. Curious about your study option, we are here to help, from primary, secondary to pursuing a full degree program such as study abroad, bachelors, Graduate or PhD.
+
+*** Services Includes
+- Application for student visa/ renewal or extension of student visa
+- Enrolment of course/ change of course
+- Change of school /& programme
+- Advice on course selection and school visit
+- Advice on overall education, migration and career pathway planning
+
+** Australian Education System
+:PROPERTIES:
+:URL: https://www.blueeducation.com.au/australian-education-system
+:END:
+
+*** Internationally Recognised Qualifications
+With more Australian universities rising in the Top 100 in the world, Australia remains as a favourite destination for international students with regulated curriculum and study pathways that links to higher education. Legislation such as the Education Services for Overseas Students (ESOS) Act 2000 and the National Code of Practice for Registration Authorities and Providers of Education and Training to Overseas Students 2007 (National Code) govern the institutions providing education to international students.
+
+*** Primary and Secondary
+- In Australia, compulsory schooling typically starts at Pre-primary
+- Lower Secondary students (Year 7 to 10) focus on the same learning areas, but with greater diversity in electives and subject choices
+- Upper Secondary Students (Year 11 & 12) can elect to study subjects that will prepare them for future educational pursuits or chosen career
+
+*** Post Secondary Education - Vocational Education and Training (VET)
+VET institutions specialise in providing students with hands-on experience and real-world skills.
+- Level 1 - Certificate I
+- Level 2 - Certificate II
+- Level 3 - Certificate III
+- Level 4 - Certificate IV
+- Level 5 - Diploma
+- Level 6 - Advanced Diploma, Associate Degree
+
+*** Degree and Post Graduate Education
+Australian universities and private institutions offer a wide range of courses:
+- Level 7 - Bachelor Degree
+- Level 8 - Bachelor Honours Degree, Graduate Certificate, Graduate Diploma
+- Level 9 - Masters Degree
+- Level 10 - Doctoral Degree
+
+*** Education Fees
+The costs of studying in Australia depend on the institution and the level of study, and the specialisation you choose. As an international student, your tuition fees are payable before you study and an upfront payment of 1 trimester, 1 semester (6 months) or 1-year tuition fees may be required prior to application of student visa.
+
+As an international student, you must enrol in courses and study at institutions that are registered on the Commonwealth Register of Institutions and Courses for Overseas Students (CRICOS).
+
+** English Courses
+:PROPERTIES:
+:URL: https://www.blueeducation.com.au/english-courses
+:END:
+
+"Take advantage of every opportunity to practice your communication skills so that when important occasions arise, you will have the gift, the style, the sharpness, the clarity, and the emotions to affect other people." - Jim Rohn
+
+By studying English in Australia, you are compelled to speak and engage others around you in their native language, English.
+
+*** Course Types
+
+**** General English
+Focusing on communication skills and understand of English language rules, structure, vocabulary and grammar
+
+**** English for Academic Purposes
+Preparing you for study at an English-speaking university, higher education or vocational institute. Courses are offered at private English colleges and University English colleges and may be recognised by further education institutes, classes are usually offered in 10 weeks, 20 weeks or 30 weeks block
+
+**** English Language Bridging
+Pathway English program offered within English-speaking University. Courses are offered only offered with University English colleges and study period are in blocks of 10 weeks to 20 weeks. Pre-requisite of English assessment or IELTS / Cambridge or Pearson result required.
+
+**** English for Specific Purposes (ESP)
+Focusing on practical English for specific course areas such as business, aviation or tourism
+
+**** Examination Preparation (IELTS Preparation / Cambridge English)
+Preparing you for English language proficiency examinations. Exam format usually includes testing of 4 different areas including Reading, Writing, Listening and Speaking
+
+**** Certificate (I - IV) of Spoken and Written English
+Provide a general education framework for learners to develop English language and literacy skills to have the ability to speak and write maintain participation in the general community.
+
+**** English for Teaching
+These courses include TESOL and CELTA (Teaching English to Speakers of Other Languages, EfTC (English for Teaching Children)
+
+** Admission Criteria
+:PROPERTIES:
+:URL: https://www.blueeducation.com.au/admission-criteria
+:END:
+
+Entry requirements are based on your highest qualification and the marks/grades obtained. Most importantly, candidates are required to meet the English Language criteria set by the school.
+
+*** English Language Requirements
+English language skills are a requirement for (selected countries) for receiving an Australian student visa. IELTS (Academic or General), TOEFL, Cambridge (CAE) and Pearson (PTE) test results are accepted by the Australian Government Department of Immigration & Border Protection (DIBP) for visa purposes.
+
+Institutions set their own English language requirements for course entry, and the English proficiency score needed for your course may be different to the score needed to secure your visa.
+
+*** Minimum IELTS Requirements (General Guide)
+| Qualification Level | Minimum IELTS Academic |
+|---------------------|------------------------|
+| Certificate I - IV | 5.5 |
+| Diploma - Advanced Diploma, Associate Degree | 5.5 - 6.0 |
+| Bachelor Degree | 6.0 - 6.5 (no band below 6.0) |
+| Bachelor Honours Degree | 6.5 (no band below 6.0) |
+| Graduate Certificate, Graduate Diploma | 6.5 - 7.0 (no band below 6.0 or 6.5) |
+| Masters Degree | 6.5 - 7.5 (no band below 6.5) |
+| Doctoral Degree | 6.5 - 8.0 (no band below 7.0) |
+
+** Application Process
+:PROPERTIES:
+:URL: https://www.blueeducation.com.au/application-process
+:END:
+
+*** Questions to Consider Before Initial Consultation
+- Reflect on what you want to achieve, with an end in mind - what inspires you?
+- What are your strong subjects in school?
+- What are your fields of interest?
+- What career would you like to pursue?
+- Is there a particular industry that you see yourself in?
+- Is your partner/family in support of your desires?
+- Consider your budget and time frame.
+
+*** What to Bring for Consultation
+As every client's circumstance is different, we have a personalised strategy for kick starting your education journey. Contact us and we will revert within 48 hours on what information do you require with a complimentary education consultation.
+
+** Fees and Charges
+:PROPERTIES:
+:URL: https://www.blueeducation.com.au/fees-and-charges
+:END:
+
+*** Initial Assessment
+Our fees will be based on your background, circumstances and request for service support. However, our initial assessment on your request will be complimentary.
+
+Our fees vary and will depend on:
+- Type of visa application
+- Amount of time estimated to prepare your application
+- Extent of services you require
+- Number of dependents
+- Complexity of your case
+
+*** Services and Fees
+Before you officially appoint us, we will provide you a quote, or fee estimate including:
+- Professional fees
+- Disbursements (at cost, such as visa application charges, health cover, bank charges etc.)
+- Miscellaneous charges (where applicable, credit card charges, fee for urgent cases and other ancillary support etc)
+
+*** Student Visa Application Fees (Department of Home Affairs)
+- $620 for Main Applicant (all ages)
+- $405 for Additional Applicant Charge (18 and over)
+- $135 for Additional Applicant Charge (under 18)
+- $700 for Subsequent Temporary Application Charge (STAC)
+
+*** Other Costs
+- Overseas Student Health Cover (OSHC)
+- Medical Examination required by the Department of Home Affairs, costing around $240-$380
+
+** Migration Services
+:PROPERTIES:
+:URL: https://www.blueeducation.com.au/migration
+:END:
+
+Blue Education provides professional Australian immigration services through a team of Registered Migration Agents, specialising in Skilled Migration, Employer Sponsored Visas, Family Migration, and Business Migration.
+
+We also work in collaboration with experienced Immigration Lawyers and Migration Lawyers for complex matters such as visa refusals, cancellations, and appeals.
+
+*** Trusted Australian Migration Advice
+We provide efficient and reliable consultation to give an accurate and honest assessment of your chances for migration to Australia.
+
+Our role is to provide accurate, honest, and transparent migration advice, helping you understand:
+- Your eligibility for Australian visas
+- Your realistic chances of success
+- The most suitable visa options based on your profile
+- Clear timelines, requirements, and expectations
+
+*** Types of Migration Services
+
+**** Skilled & Work Migration
+- Skilled Independent & State Nominated Visas
+- Employer Sponsored Visas
+- Sponsored Skilled Visas
+- Graduate Visa
+- Post-Study Work Visa
+
+**** Employer Sponsored Migration
+- Employer Nomination Scheme (ENS)
+- Temporary Skill Shortage (TSS) Visa
+- Labour Agreement Support
+
+**** Family & Partner Migration
+- Partner / Spouse / De-Facto Visas
+- Child Visas
+- Family Migration Pathways
+
+**** Business & Investment Migration
+- Business Innovation & Investment Visas
+- Entrepreneur & Investor Pathways
+
+**** Visa Refusals & Appeals
+- Visa Refusals
+- Visa Cancellations
+- Administrative Appeals
+
+** Skilled Migration
+:PROPERTIES:
+:URL: https://www.blueeducation.com.au/skilled-migration
+:END:
+
+The Skilled Occupations List or more commonly known as the 'SOL' is a list of skilled occupations that are in need in Australia comprising of 4 major groups i.e. managers and administrators; professionals; associate professionals; and tradespersons and related workers.
+
+The Australian Government wants a targeted, high-value, demand-driven, skilled migration program that is responsive to the needs of the Australian labor market.
+
+*** Visa Types Requiring Points-Tested Skilled Migration
+- Skilled-Independent visa (subclass 189)
+- Skilled-Nominated visa (subclass 190)
+- Skilled Work Regional (Provisional) visa (subclass 491)
+
+*** How to Qualify
+You may be eligible to apply for this visa if you are 'invited'. To be eligible, you need to have:
+- Nominated an occupation that is on the relevant SOL
+- Obtained a suitable skills assessment for that occupation
+- Not yet turned 45 years of age
+- Achieved the score specified in your letter of invitation based on the factors in the points test
+- At least competent English
+
+** Employer Sponsored
+:PROPERTIES:
+:URL: https://www.blueeducation.com.au/employer-sponsored
+:END:
+
+There are a few visa options available that allow skilled workers to come to Australia and work for an approved business as their skills and job experiences are in demand in Australia.
+
+*** Temporary Skill Shortage visa (subclass 482)
+This temporary visa lets an employer sponsor a suitably skilled worker to fill a position they can't find a suitably skilled Australian to fill.
+
+*** Permanent Employer Sponsored Programme
+
+**** Employer Nomination Scheme visa (subclass 186)
+Employers in Australia can sponsor skilled workers to remain in Australia on a permanent basis through the Employer Nomination Scheme.
+
+**** Regional Sponsored Migration Scheme visa (subclass 187)
+This visa will allow a skilled worker to remain in Australia on a permanent basis and work in a regional area (this visa is closed for new applicants).
+
+**** Skilled Employer Sponsored Regional (Provisional) visa (subclass 494)
+This visa enables regional employers to address identified labour shortages within their region by sponsoring skilled workers where employers can't source an appropriately skilled Australian worker.
+
+** Graduate / Post Study Work Visa
+:PROPERTIES:
+:URL: https://www.blueeducation.com.au/graduate-post-study-work-visa
+:END:
+
+The Temporary Graduate visa (subclass 485) lets you live, study and work in Australia temporarily after you have finished your studies. Students are only able to access the Temporary Graduate visa (subclass 485) once as a primary applicant.
+
+*** Two Streams
+
+**** Graduate Work Stream
+For international students with an eligible qualification who graduate with skills and qualifications that relate to an occupation on the Skilled Occupation List (SOL). A visa in this stream is granted for 18 months from the date of grant.
+
+**** Post-Study Work Stream
+For international students who graduate with a higher education degree from an Australian education provider, regardless of their field of study. This stream is only available to students who applied for and was granted, their first student visa to Australia on or after 5 November 2011. A visa in this stream can be granted for up to 4 years.
+
+*** Important Conditions
+
+**** English Language Ability
+Having achieved an overall score of IELTS at least 6 with a minimum a score of 5 in each of the four test components, undertaken in the 3 years immediately prior to lodging the visa application.
+
+**** Australian Study Requirement
+You must have completed one or more degrees, diplomas or trade qualifications:
+- For award by a CRICOS Registered Australian educational institution
+- All instruction conducted in English
+- Completed as a result of total of at least two academic years (92 weeks) study
+- Completed in a total of at least 16 calendar months
+- Undertaken while in Australia as the holder of a visa authorising you to study
+
+** Standard Business Sponsor (SBS)
+:PROPERTIES:
+:URL: https://www.blueeducation.com.au/sbs
+:END:
+
+Businesses in Australia who require skilled workers or professionals from overseas can have the option to apply as a Standard Business Sponsor (SBS). The SBS is an approval for an Australian business to employ skilled overseas professionals to work in Australia. It is valid for five (5) years, allowing the business to nominate as many employees as required.
+
+*** Eligibility Requirements
+You need to be legally established and currently operating a business, in or outside of Australia. Your business must not have any adverse information against your operations or associated persons that can affect your suitability as a sponsor. Your business should have a strong record or commitment to hire local labour.
+
+*** Required Documents
+- Business incorporation certificate and other records
+- Annual Financial Report and Tax Returns for the most recently concluded Financial Year
+- For smaller businesses, interim tax lodgements (i.e. BAS) and/or business bank statements covering the period of operations (at least 2 years)
+- If you are a newly established business, a viable Business Plan
+
+** Family & Partner Visa
+:PROPERTIES:
+:URL: https://www.blueeducation.com.au/others
+:END:
+
+Business, Partner and Family visa applications can be strenuous, time-consuming and a huge undertaking.
+
+Australia has a number of visas available to enable an Australian (or an Australian Permanent Resident) to sponsor partner, child and family member. The family and partner migration schemes allow eligible persons to sponsor their partner or family members to join them in Australia on a temporary or permanent basis.
+
+*** Partner Category Visa Options
+If you wish to bring your partner to Australia, you may be eligible if you are:
+- Spouse of an Australian citizen, Australian permanent resident or eligible New Zealand citizen
+- Fiance of an Australian citizen, Australian permanent resident or eligible New Zealand citizen
+- De facto partner (including same-sex relationships) with an Australian citizen, Australian permanent resident or eligible New Zealand citizen
+
+*** Child and Adoption Visa Options
+This visa application typically includes:
+- Children with parents residing in Australia
+- Persons under 18 years of age (and if a person is 18 years of age or older, he/she must be single and financially dependent on their parent)
+- Single persons (not married, engaged to be married, or in a de facto relationship)
+
+*** Parent Category Visa Options
+This visa application typically includes:
+- Parents with 1 or more children residing in Australia
+
+** Career Services
+:PROPERTIES:
+:URL: https://www.blueeducation.com.au/career
+:END:
+
+*** Common Challenges
+- It is difficult or almost impossible to find a full time job in Australia for an international student graduate
+- I don't even get a reply for the CVs I have submitted!
+- How many applications do I have to send?
+- Most companies want to hire people with experience!
+
+*** Our Support
+Our Career Counsellors are here to help graduates find their niche in the job marketplace. We also help new migrants, graduates or current job seekers who are looking at career options, or even considering a career change.
+
+We can guide you through any job application process, get acquainted with cultural nuances in the business world, and consider some winning strategies to stay ahead when submitting your job applications.
+
+*** Services Include
+- Career Counselling
+- Resume Writing Services
+- Interview Coaching
+- Job Search Strategies
+- Cultural Adaptation Initiatives
+- Personality and Career Assessment
+- Communication Skills Training
+
+** Employability Booster Programme (EBP)
+:PROPERTIES:
+:URL: https://www.blueeducation.com.au/ebp
+:END:
+
+Our Employability Booster Programme (EBP) is a 6-phase approach.
+
+*** Phase 1: ASSESSMENT
+Review of candidate's requirements, background and job readiness.
+- Initial interview to ascertain candidate's strengths and areas for improvement
+- Candidate to complete Initial Placement Questionnaire (IPQ)
+- Candidate to complete Online Readiness Training
+
+*** Phase 2: READINESS
+Ascertain candidate's inclination towards being 'ready' for employment.
+- Assist with the preparation of a professional CV
+- Provide additional support i.e. presence in LinkedIn, tips on presentation and image, and understand of cultural context
+
+*** Phase 3: PROFILING
+Assess candidate's requirements and match with potential employers.
+- Research on shortlisted employers
+- Develop letters/templates of approach
+- Candidate to contact prospective employers
+
+*** Phase 4: PREPARATION
+Get candidate ready and positioned for interviews in the job marketplace.
+- Work with candidate to develop a target list of potential employers
+- Shortlist and prioritise employers to approach
+
+*** Phase 5: PLACEMENT
+Facilitate opportunities for internship and interviews.
+- Assist in lining up interviews and internship
+- Assist candidate to prepare for interviews, provide feedback and action plans
+
+*** Phase 6: REVIEW
+Gain feedback on candidate's performance.
+- Contact employer, or the companies who have interviewed or hired candidate to obtain feedback
+- Provide feedback to candidate
+
+** Executive Internship Programme
+:PROPERTIES:
+:URL: https://www.blueeducation.com.au/executive-internship-programme
+:END:
+
+Our organisation is always supportive of international student graduates. Our internship programme prepares you with the skills, knowledge and multi-dimensional thinking approaches necessary to gain a head start in today's dynamic and challenging workplace.
+
+*** Programme Provides
+- An understanding of the Australian Qualifications Framework
+- A platform conducive for you to integrate into the Australian work culture
+- An understanding of our international processes, systems and organisational policies to be effective at the workplace
+
+Places are limited and we only run this programme twice a year. Undergraduate and post-graduate students in business/commerce studies are also encouraged to apply.
+
+** Host Employer Programme
+:PROPERTIES:
+:URL: https://www.blueeducation.com.au/host-employer
+:END:
+
+*** What is the Employability Booster Programme
+The EBP is a continuous support service, extended to our student graduates with qualification obtained from an Australian institution. The programme is also suitable for those who are looking at career change or who require guidance in the job marketplace.
+
+*** Benefits to the Host Company
+Whilst the objective is to prepare the candidate to be 'work-ready', the employer benefits from this arrangement as well. There is no obligatory to hire after the internship period.
+
+- Test-drive 'talent' - Allow the employer to 'test-drive' the talent
+- Work Satisfaction - Increase employee satisfaction and retention rate
+- Enhance Creativity - Introduction of fresh ideas and perspectives
+- Early Exposure for Adaptability - Allowing graduates the earliest opportunity to work towards meeting work standards
+
+*** Roles and Responsibilities
+
+**** Employer
+- Provide a safe and conducive environment for the intern to learn
+- Dedicated mentor and/or supervisor to monitor performance
+- Agreed upon learning objectives and expected tasks
+- Orientation of workplace practices
+- Feedback on progress and performance review
+- Commitment of 3 months or at least 16 hours a week (for no more than 8 weeks)
+- Provision of adequate resources, equipment, and facilities
+
+**** Blue Education
+- Carry out the matching process between the Intern and the Host Employer
+- Clearly establish the objectives of both parties
+- Walk through the task expectations with the mentor/supervisor
+- Establish the performance review framework
+- Provide a platform to escalate and resolve any issues
+
+**** Intern
+- Clarity of learning objectives and task expectations
+- Commitment of 3 months or at least 16 hours a week
+- On-time reporting at the workplace
+- Receive formal feedback from mentor/supervisor
+- Application and extension of knowledge gained
+
+** Career Partners
+:PROPERTIES:
+:URL: https://www.blueeducation.com.au/our-partners
+:END:
+
+*** Lisa - Professional Vogue
+Lisa has two passions in life: fashion and style, and personal development. The creation of Professional Vogue is the realisation of those two passions. Lisa takes pride in helping others find work as well as advance in their professional career. Lisa has designed programmes at Professional Vogue to focus on enhancing employability and soft skills. Lisa is focused on building and developing future leaders and helping men and women make their mark and achieve their goals in corporate WA.
+
+*** Natalia - Employment Advantage
+Natalia has contributed significantly in the education and employment marketplace for more than two decades. Natalia has extensive experience in research and development as well as creating training contents in the areas of soft skills development. Natalia's agile and creative learning practices saw her develop her first online program in 2004 before online learning became accepted into mainstream training activities. Today, the Employment Advantage Tool has contributed to the success of many candidates in the job marketplace.
+
+** OSHC and OVC
+:PROPERTIES:
+:URL: https://www.blueeducation.com.au/oshc-ovc
+:END:
+
+*** Overseas Student Health Cover (OSHC)
+OSHC or the Overseas Student Health Cover provides insurance protection for an international student whilst studying in Australia. As a minimum, the cover would provide for selected cost of medical consult, hospital treatment, ambulance and limited pharmaceuticals. You will not be able to lodge a student visa application without the appropriate cover. If you are coming with your dependents i.e. your partner/spouse and children, you are required to purchase a couple's cover or family cover.
+
+Partners:
+- OSHC Australia
+- Annalink OSHC-Students
+- Konpare
+
+*** Overseas Visitors Cover (OVC)
+For students and family members who may not be eligible for OSHC, we can also assist with arranging Overseas Visitors Cover (OVC).
+
+Partners:
+- Allianz Care
+- Annalink OVHC
+- Konpare OVHC
+
+** Homestay
+:PROPERTIES:
+:URL: https://www.blueeducation.com.au/homestay
+:END:
+
+If you are considering coming to Australia and would like to immerse into the Australian-way as quickly as you can, then you should choose to live with a homestay family.
+
+Homestay is perfect for those with limited time and budget but still want to maximise the experience of living as a local in a foreign country. Your homestay family will provide your meals and a place to stay, whilst you get busy with school and your new circle of friends.
+
+*** Benefits for International Students
+- Get acquainted with the locals through your Australian family
+- Your homestay family gives you a safe environment to learn the language
+- Don't have to worry about paying all sorts of bills
+- Don't have to worry about what to eat or how to prepare your meals
+- Gain first-hand experience in cultural awareness and exchange
+
+*** Benefits for Homestay Hosts
+- Experience cultural exchange and learn about your foreign student's home and background
+- Appreciate your own culture and way of living
+- Fill in the emptiness or quietness of your home
+- Make a little extra cash on the side
+- Build long lasting relationships
+
+*** Expectations of the Student
+- Greet one another in the mornings or when either party returns home
+- Help with the basic house chores
+- Do your own laundry, clean your own room
+- Help prepare meals in the kitchen
+- Notify or seek approval from your host in advance on matters affecting prior commitments
+- Seek permission before bringing a friend home
+- Let your host know immediately if you have broken something or have run into trouble
+- Be considerate at all times and be conscious of house-rules
+
+*** Expectations of the Homestay Host
+We welcome traditional families, non-traditional families and single individuals. Host families are expected to:
+- Provide a clean and comfortable bedroom with appropriate heating or ventilation (bed, wardrobe, desk and lamp)
+- Provide 2 meals a day on weekdays and 3 meals on weekends
+- Use English as your primary language of communication
+- Assist your student in settling into the new environment
+- Include your student in the daily routines at home
+- Help your student to organise basic activities (bank account, local SIM card etc.)
+- Swiftly respond to your student in case of an emergency
+- Consent to obtaining the Australian Federal Police Clearance and Working with Children Certificate (if student is under 18)
+
+* Programs
+
+** Study Tour (Overview)
+:PROPERTIES:
+:URL: https://www.blueeducation.com.au/study-tour
+:END:
+
+The page features two main study tour programmes:
+1. BUDDY PROGRAMME - A programme for students to experience Australian school life with local buddies
+2. ENGLISH & CULINARY PROGRAMME - Combines English learning with culinary experiences
+
+** Buddy Programme
+:PROPERTIES:
+:URL: https://www.blueeducation.com.au/study-tours
+:END:
+
+*** Did You Know?
+- Australia has some of the best colleges in the world. 7 of the top 100 universities in the world are in Australia, while the country only has 23 million people!
+- You have a lot of choice when you come to Australia. There are over 1100 institutions found across the entire country.
+- The cost of living in Australia is actually great, especially when compared to the United Kingdom and United States.
+
+*** Programme Overview
+The Buddy Programme is an amazing and highly engaging journey that can develop the student's language, social and communication skills. The programme runs for fourteen days. Students attend school with their Buddies and live with homestay families.
+
+*** Our Programme
+Our programme runs with an established and long trusting relationship with the Anglican Schools and the homestay families within the local community. Our schools are sprawled on huge campus grounds, surrounded by luscious greenery, beautiful wildlife with the luxury of proximity to the glorious Indian Ocean.
+
+We offer:
+- Structured English lessons and discussion topics surrounding historical, cultural and geographical themes of Australia
+- Students placed with homestay families who provide a warm and safe environment
+- Emphasis on cognitive and social development opportunities through classroom and field activities
+
+*** The Homestay Experience
+Homestay is the quickest way for a student to immerse in their host's culture. Homestay families have to pass background clearance checks by the police and interviews by our local representative office. Homestay families provide for the meals of the student as well as emotional support during the entire programme. The Student gets to participate in all the family activities of the host families during weekends.
+
+*** The High School Experience
+- English is taught in class in the mornings, structured to promote the usage and understanding of the language
+- Integration is in the afternoon when Students get to join in the routine of the high school students
+- All subjects such as Science and Math are taught in English
+- Local Field Trip is integrated into the classroom studies
+
+*** Field Trip Destinations
+- Caversham Wildlife Park
+- King's Park
+- Fremantle Market
+- Maritime & Historical Walk
+- Penguin and Sea Lion Cruise
+- Rottnest Island
+- The Pinnacles
+- Sandboarding adventure
+
+We can also make special arrangements with the local councils to participate in voluntary work.
+
+** SCSA Associate Programme
+:PROPERTIES:
+:URL: https://www.blueeducation.com.au/scsa
+:END:
+
+*** Blue Education - Your Gateway to Studying in Australia
+With over 20 years of experience and engagement across 140 countries, Blue Education has been a trusted guide for international students, helping them navigate pathways to university and transition into work employment in their chosen careers. Now, our reach has expanded through official recognition by the School Curriculum and Standards Authority (SCSA), under the WA Department of Education, allowing us to provide direct support to overseas schools and students seeking to study in Australia.
+
+*** What This Means for International Students
+Through our SCSA accreditation, students overseas can now complete the Western Australian Certificate of Education (WACE) program without needing to relocate immediately. The WACE qualification is recognized by universities worldwide, offering students global mobility and academic opportunities.
+
+*** Western Australia Premier's WACE Bursary
+AUD 20,000 bursary for international students who complete the WACE program overseas and then enrol in one of WA's leading universities:
+- The University of Western Australia (UWA)
+- Curtin University
+- Murdoch University
+- Edith Cowan University (ECU)
+- The University of Notre Dame Australia
+
+*** About SCSA
+The SCSA is the Western Australian Government's statutory authority responsible for the Western Australian curriculum from Kindergarten to Year 12 delivered by schools locally and internationally. Blue Education has been appointed by the statutory authority to promote Western Australia curriculum programme internationally.
+
+*** WAM International
+Since 1987, the School Curriculum and Standards Authority (the SCSA) has licensed international schools to deliver its curriculum programs. The Western Australian Matriculation Program International (WAM International) is an internationally recognised pre-university program.
+
+- Internationally recognised one-year program
+- Prepares students for university entry
+- Successful students will receive the WACE and the Western Australian Statement of Student Achievement (WASSA)
+
+50 international WACE graduates who elect to commence their further studies at a Western Australian university will be awarded this scholarship each year.
+
+** TOEFL Test Centre
+:PROPERTIES:
+:URL: https://www.blueeducation.com.au/toefl
+:END:
+
+Blue Education is now an authorised TOEFL iBT ETS authorised test centre!
+
+The TOEFL iBT Test is one of the most widely respected English language proficiency exams in the world. The test is accepted by over 13,000 universities, institutions, and professional registration bodies in over 160 countries. TOEFL iBT is accepted by the Department of Home Affairs for various visa applications, including student, temporary graduate (485), and skilled migration visas.
+
+*** Why TOEFL iBT
+
+1. *Globally Respected & Widely Accepted* - For university admission, visa applications, or professional registration
+
+2. *Faster Registration & More Flexibility* - Register quickly with improved scheduling tools. Retake the test in as little as 3 days if needed.
+
+3. *Free Practice Tools to Help You Succeed* - Full-length practice test, personalised study plan, daily prep activities, and 40-minute sample test
+
+4. *Shorter Test Time* - Total test duration is now under 2 hours
+
+5. *Instant & Clear Score Insights* - See unofficial Reading and Listening scores immediately after your test, full official results in 4-8 days
+
+*** TOEFL TestReady
+No other English language test provider has a prep offering like this - designed for you, with you. TOEFL TestReady combines the best TOEFL iBT prep offerings with exclusive features and deeper insights to enhance your English communication skills.
+
+* About
+
+** About Us
+:PROPERTIES:
+:URL: https://www.blueeducation.com.au/about-us
+:END:
+
+*** Our History
+In 1998, a group of professionals got together and saw the need to provide independent, honest and reliable advice to international students who wanted to live and study in Australia. Blue Education was founded based on that trust and desire.
+
+Since then, our team has delivered invaluable insights to thousands of students, providing them with sound options and pathways to quality education and the hope for a successful career thereafter.
+
+*** Mission Statement
+Discovering the pathway for individuals and families to their desired future in Australia.
+
+*** Our Vision
+To be the world's leading and trusted source of advice for education, career and migration to Australia.
+
+*** Our Core Values
+- PROFESSIONALISM in how we conduct ourselves
+- INTEGRITY in all that we do for you
+- RELIABILITY on all that we provide to you
+- RESPECT for you, our staff and business partners
+
+** Blue Australia Team
+:PROPERTIES:
+:URL: https://www.blueeducation.com.au/blue-australia-team
+:END:
+
+Our team at Blue comes from various industries, including the education sector, multi-national corporations and professional firms. Our skills are multifaceted and most of us are multilingual. We provide assistance to international students and potential migrants from all over Asia, Europe, America, South America Africa and the Middle East.
+
+*** Glen Ong - Managing Director | Registered Migration Agent
+MARN: 1385471
+
+Glen is the Managing Director at Blue. He comes with almost 20 years of experience in the education industry, having worked with several education providers in both private and government sectors. Glen is also a Registered Migration Agent and is experienced in facilitating student visa, visitor visa, Skilled Migration, Family/Parent Visa, Partner Visa and Resident Return Visa. Glen graduated with a double degree from Curtin University, BCom (Marketing) and BArts (Asian Studies). Glen also attained the Graduate Certificate in Migration Law and Practice. Glen is fluent in English and can converse in Cantonese and Bahasa Malaysia.
+
+*** Monica Gaikwad - Associate Counsellor
+Monica graduated with a Master of Business Administration from Curtin University. Monica first joined the Executive Internship Programme at Blue, and has progressed to be a real asset to the team. Monica is originally from India but spent most of her childhood years growing up in Kuwait. She is fluent in English, Hindi and Marathi.
+
+*** Flora Wang - Marketing Executive/Counsellor
+Flora graduated with a Master of Marketing and Innovation Management from Edith Cowan University. Flora is originally from China where she completed her Bachelor of Business from Guangdong University of Foreign Studies. Flora is fluent in English, Mandarin and Cantonese.
+
+*** Shen Sekhon - Associate Counsellor
+Shen Sekhon graduated with a Masters in Business Administration from Curtin University in 2014. She hails from Malaysia. Shen has worked in the higher education industry for over 20 years and has an extensive experience in marketing, recruitment and enrolment of international students. She worked for Curtin University for 14 years.
+
+** Blue International Team
+:PROPERTIES:
+:URL: https://www.blueeducation.com.au/blue-international-team
+:END:
+
+*** Sonia Ong - Executive Director
+Sonia leads our offshore initiatives, with more than 20 years of experience in consulting and implementation of strategy, risk and governance models. Sonia first arrived in Australia to complete her high school and subsequently attained her degree from the University of Western Australia. Sonia also completed her MBA from Deakin University. Sonia is a Certified Practicing Accountant in Australia, a Chartered Accountant in Malaysia. She speaks fluently in 5 different languages.
+
+*** Mansheel Kaur - Solicitor | Immigration Lawyer
+Mansheel comes with many success stories for clients requiring Business Migration, Skilled Migration, Family/Parent Visa, Partner Visa and Resident Return Visa. Mansheel is also a Solicitor in New South Wales, as well as an Advocate and Solicitor in Malaysia, having had over 35 years of legal experience. She speaks English, Malay, Indonesian, Punjabi and Hindi.
+
+*** Nino Sekyere-Boakye - Regional Director (Ghana) | Registered Migration Agent
+MARN: 0959773
+
+Nino comes with a strong background as an academician and a researcher who understands the Australian education system and migration law. Over the last decade, Nino has helped many African students come to Australia. He has travelled and worked in over 25 African countries.
+
+*** Priscilla Bwalya Mwansa - Regional Advisor (Lusaka) | Senior Counsellor
+Priscilla is one of our Senior Counsellors. She is responsible to help plan, advise and support students in the region who wish to pursue an education pathway in Australia. Priscilla obtained her Bachelor of Accounting from Copperbelt University. She is a Chartered Accountant with ZICA.
+
+*** Arwinder Pal Singh - Registered Migration Agent
+MARN: 1574550
+
+Arwinder brings successful cases in Employer Sponsored Program, Skilled Migration Program, Family Migration, Temporary Short Stay and Long Stay Visas, Training Visas, Student Visas, and Administrative Appeals Tribunal matters.
+
+*** Hana Hursepuny - Executive Assistant
+Hana is an integral member of the Blue family. She works closely with the team in Australia and the rest in our offshore offices. Hana is based in Indonesia.
+
+*** Minami Sakamoto - Associate Counsellor, Japan
+Minami is one of our Associate Counsellors based in Japan. She is currently completing her studies in World Liberal Arts at Nagoya University of Foreign Studies.
+
+*** Elaine Ho - Regional Head (Malaysia)
+Elaine is our Regional Head in Malaysia. She has a Barrister at Law from Lincoln's Inn and practised law in Malaysia before venturing in the field of procurement with the UN.
+
+*** Monica Low - Associate Counsellor
+Monica graduated with a Bachelor of Science In Hospitality and Tourism Management from Purdue University, Indiana. She joins the Blue International Team in Malaysia.
+
+*** Elijah Chongo - Regional Head (Zambia)
+Elijah is our Regional Advisor based in Lusaka. He assists clients in Zambia and neighbouring countries located in the Southern sub-region of Africa.
+
+*** Sherene Chan - Regional Head (New Zealand)
+Sherene is the Regional Advisor for Blue Education in Auckland, New Zealand. She currently facilitates the options for those who intend to study, work and live in New Zealand.
+
+* Resources
+
+** Blog
+:PROPERTIES:
+:URL: https://www.blueeducation.com.au/blog
+:END:
+
+*** Recent Posts
+
+**** What Happens When a Dependant Turns 18 or 24 on an Australian Visa?
+/A Guide for Families Navigating Temporary and Permanent Visa Pathways/
+Blue Education - Nov 24, 2025 - 3 min read - 115 views - 1 comment
+
+For many international families living, studying, or working in Australia, visa requirements can feel complex - especially when children on dependent visas reach key age milestones. Turning 18 or 24 can affect a young person's eligibility to remain attached to a parent's visa, which may require families to take action sooner than expected.
+
+**** Your Guide to Australia's Group of Eight Universities
+/How to Get In and Why It's Worth It/
+Blue Education - Nov 12, 2025 - 3 min read - 18 views - 1 comment - 1 like
+
+If you're considering studying in Australia and aiming for a world-class qualification, the prestigious Group of Eight (Go8) universities offer some of the best opportunities available.
+
+** Blog Post: Dependant Visa Ages
+:PROPERTIES:
+:URL: https://www.blueeducation.com.au/post/what-happens-when-a-dependant-turns-18-or-24-on-an-australian-visa
+:END:
+
+*** Turning 18 on a Temporary Visa
+When a dependant turns 18, Australian immigration law begins to treat them as an adult. To stay attached to a parent's temporary visa, dependants over 18 typically must be:
+- Financially dependent on their parent(s)
+- Not married, engaged, or in a de facto relationship
+- Studying (usually full-time)
+- Reliant on their parent(s) for their day-to-day living costs
+
+*** What Families Should Do When a Dependant Turns 18
+1. *Update Documentation* - Ensure your dependant has an up-to-date passport, enrolment confirmation, and proof of financial support.
+2. *Maintain Appropriate Health Cover* - Dependants aged 18 and over must have valid OSHC (or equivalent) at all times.
+3. *Prepare for Future Applications* - Ensure the 18-year-old continues to meet dependency requirements.
+4. *Plan Early for Independence* - If the young adult becomes financially independent, enters a relationship, or finishes study, they may need to apply for their own visa.
+
+*** What If Dependant Wishes to Remain in Australia?
+If the Dependant wishes to study or continue to study, then the Dependant will need to apply for his/her own student visa.
+
+*** Turning 24 While Included in a Parent's Permanent Visa Application
+Under Australian migration rules:
+- Children under 18 can be included as dependants
+- Young adults 18 to 23 can also be included if they are still financially dependent and studying
+- Children 24 and over can only be included in very limited circumstances - generally only if they have a disability
+
+*** Why This Matters
+If a parent has applied for PR and their child turns 24 before the visa is granted, the child may:
+- No longer meet the definition of a dependant
+- Be removed from the application
+- Need to apply for a separate visa to remain in Australia lawfully
+
+The best way to avoid complications is to plan early - ideally well before the child turns 23.
+
+** Blog Post: Group of Eight Universities
+:PROPERTIES:
+:URL: https://www.blueeducation.com.au/post/your-guide-to-australia-s-group-of-eight-universities-how-to-get-in-and-why-it-s-worth-it
+:END:
+
+*** What Are the Group of Eight Universities?
+These are eight leading Australian research-intensive universities known for their high academic standards, global rankings and rich student experience.
+
+*** How to Apply: Step-by-Step
+1. Choose your course & check entry requirements
+2. Prepare your documents
+3. Submit the application
+4. Accept offer & apply for student visa
+5. Obtain visa grant, arrive, enrol and start your studies
+
+*** Documents Needed
+- Academic Records - Transcripts, degree certificates, grading scale
+- English Language Test Scores - IELTS, TOEFL, PTE, or Cambridge
+- Identification - Passport (and birth certificate if needed)
+- Statement of Purpose / Personal Statement
+- Curriculum Vitae (CV) / Resume
+- Letters of Recommendation - 2-3 referees (is an added advantage)
+- Research Proposal - applicable for research/Master of Philosophy or PhD programs
+- Financial Documents - proof of funds, tuition fee receipt
+- Additional (if applicable) - portfolio, work experience letters, medical reports
+
+*** Rough Costs
+- Tuition fees: AUD 35,000-55,000 per year
+- Living costs: AUD 30,000-35,000 annually
+
+*** What Can a Degree from a Go8 University Do for You?
+- Global recognition & reputation
+- Strong industry connections & research opportunities
+- Enhanced career outcomes & pathways
+- Valuable skills development
+
+Universities like University of Melbourne, UNSW Sydney, and Australian National University are globally recognized for academic excellence, research-led teaching, and state-of-the-art facilities. Graduates of Go8 universities are highly sought-after by employers worldwide.
+
+** News & Events
+:PROPERTIES:
+:URL: https://www.blueeducation.com.au/events
+:END:
+
+*** Upcoming Events
+
+**** Study in Australia | 1-on-1 Consultation
+Watch out for the dates in 2025!
+
+This is a session dedicated to SPM|STPM |O/A-level leavers. There are hundreds or study programmes to choose from and scholarship offers. Our Counsellor from Australia will be in Malaysia to see students and families on individual counselling sessions.
+
+**** International Students Get Together
+Watch out for the dates in 2025!
+
+We welcome international students who would like to discuss about their concerns or queries about visas or migration opportunities with a Registered Migration Agent.
+
+Topics covered:
+- 189 Skilled Independent visa
+- 190 State Sponsored visa
+- 489 Skilled Regional visa
+- 820 Partner visa
+- 500 Student visa
+- 600 Visitor visa
+- 870 Parent visa
+- 485 Temporary Graduate visa
+- 407 Training visa
+
+**** Springboard to Australia
+Watch out for the dates in 2026!
+
+Springboard to Australia (STA) is an event that Blue Education initiated in a few major cities in Malaysia, Taiwan and Ghana back in 2016. Blue Education and its key partner, GLP Lawyers International, will present about Australia, study pathway options, student visa requirements, work placement, migration and investment opportunities.
+
+Topics:
+- High school, foundation, diploma, degree or post graduate degree programmes
+- Study and work placement strategies
+- Scholarship opportunities
+- Study & Skilled Migration pathways
+- Investment & Talent Migration
+
+* Legal
+
+** Privacy Policy
+:PROPERTIES:
+:URL: https://www.blueeducation.com.au/privacy-policy
+:END:
+
+Blue Education is committed to providing you with the best possible customer service experience. We are bound by the Privacy Act 1988 and the Australian Privacy Principles, which set out guidelines in handling personal information safeguarding the privacy of individuals.
+
+*** Collection of Personal Information
+In the normal course of business in providing Education Consulting and Migration Services, we will collect personal information from you such as: personal email, contact numbers, addresses, passports details, education qualifications, medical history, visa information and employment history.
+
+*** Sharing of Personal Information
+Information collected will only be used to provide services to you delivering specific outcomes including student placement, Visa application, Internship, Career placement and Migration. We may disclose your information to other companies to provide services on our behalf. Those companies will be permitted to obtain only the personal information they need to deliver the service. We take reasonable steps to ensure that these organisations are bound by confidentiality and privacy obligations.
+
+*** Use of Personal Information
+We will only use or disclose your Personal Information for the purposes for which it was collected. We may also use your Personal Information for our promotional and marketing activities.
+
+*** Safeguarding Personal Information
+We store personal information in both electronic IT systems as well as paper files. Steps are taken to protect the personal information we hold against loss, unauthorised access, use, modification or disclosure, and against other misuse. These steps include password protection and access privileges for accessing our IT systems, securing paper files in locked cabinets and physical access restrictions.
+
+Your personal information will be stored for the number of years dictated by statutory requirements. When no longer required, personal information is destroyed in a secure manner.
+
+*** Accessing Your Personal Information
+You have the right to access and correct your personal information, subject to exceptions allowed by law. We may charge a fee depending on the amount of data required.
+
+*** Contact
+Blue Education welcomes your comments regarding this Privacy Policy. If you have any questions, please contact us at info@blueeducation.com.au
+
+** Zero Tolerance to Abuse Policy
+:PROPERTIES:
+:URL: https://www.blueeducation.com.au/zerotolerancetoabuse
+:END:
+
+At Blue Education, we are committed to providing a safe and respectful environment for all our employees. We believe in fostering a workplace culture that promotes professionalism, mutual respect, and dignity.
+
+*** Definition of Abusive Behavior
+Abusive behavior encompasses any action, language, or gesture that is intended to intimidate, belittle, threaten, discriminate against, or harm the physical or emotional well-being of our employees. This includes:
+- Verbal and written abuse, such as yelling, using profane language, or making derogatory comments
+- Physical aggression, such as assault, pushing, or any form of physical harm
+- Sexual harassment or inappropriate advances
+- Discrimination based on race, gender, religion, age, disability, nationality, or any other protected characteristic
+- Threats of violence or harm, whether explicit or implied
+- Cyberbullying or online harassment through any digital platform
+- Any other behavior that is deemed abusive or harmful by the company
+
+*** Reporting Process
+Employees who experience or witness abusive behavior from a customer or client are encouraged to report it immediately to their supervisor, manager, or the designated HR representative. The company will provide clear channels of communication and maintain confidentiality throughout the reporting process. Employees will not face any negative consequences or retaliation for reporting incidents.
+
+*** Investigation and Consequences
+Upon receiving a report of abusive behavior, the company will promptly investigate the incident. Actions may include:
+- Issuing a warning or formal notice to the customer or client
+- Restricting or terminating the customer's access to our services
+- Involving legal authorities if the behavior constitutes a criminal offense
+- Pursuing civil remedies against the offending party, if necessary
+
+*** Communication of Policy
+The Zero Tolerance Towards Abusive Behavior Policy will be communicated through:
+- Displaying signs or notices in public areas and online platforms
+- Including a statement in service agreements or terms of use
+- Communicating the policy during customer interactions
+- Providing educational materials or training sessions
+

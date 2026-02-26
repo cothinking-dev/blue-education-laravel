@@ -1,0 +1,408 @@
+#+title: Contact
+#+url: /contact
+#+status: draft
+
+* V1
+
+** Hero
+:PROPERTIES:
+:SECTION: Hero — minimal, warm
+:LAYOUT: Centered text, subtle background
+:END:
+
+*** Headline
+
+Let's talk about your future.
+
+*** Subheadline
+
+Every Australian journey starts with a conversation. Reach out — we respond within 24 hours.
+
+-----
+
+** Contact Methods
+:PROPERTIES:
+:SECTION: Three-column — phone, email, visit
+:LAYOUT: 3 cards with icons, equal width
+:END:
+
+*** Call Us
+:PROPERTIES:
+:ICON: phone
+:END:
+
+- +61 8 6381 0030
+- +61 411 708 899
+- 1300 040 696 (within Australia)
+
+*** Email Us
+:PROPERTIES:
+:ICON: mail
+:END:
+
+info@blueeducation.com.au
+
+We respond within 24 hours.
+
+*** Visit Us
+:PROPERTIES:
+:ICON: map-pin
+:END:
+
+33 Barrack St, GF Unit 2
+Perth, Western Australia 6000
+
+-----
+
+** Contact Form
+:PROPERTIES:
+:SECTION: Two-column — form left, info right
+:LAYOUT: 60/40 split. Left: contact form. Right: office photo + map embed
+:END:
+
+*** Form Fields
+
+- Full Name (required)
+- Email (required)
+- Phone Number
+- Country of Residence
+- Enquiry Type (dropdown: Education / Migration / Career / Student Support / Other)
+- Message (textarea)
+- Preferred Language (dropdown: English / Bahasa / Japanese / Other)
+
+/[Submit button: "Send Enquiry"]/
+
+*** Office Location
+:PROPERTIES:
+:LAYOUT: Google Maps embed + office photo
+:END:
+
+/[Embedded map — 33 Barrack St, Perth WA 6000]/
+
+-----
+
+** Book a Consultation
+:PROPERTIES:
+:SECTION: Highlight card — distinct from contact form
+:LAYOUT: Full-width card, subtle premium background
+:END:
+
+*** Headline
+
+Prefer a structured conversation?
+
+*** Body
+
+Book a free consultation with one of our specialists. Choose your area of interest — education, migration, or career — and we'll match you with the right team member.
+
+- Free initial consultation
+- Available in English, Bahasa, Japanese, and more
+- In-person (Perth), phone, or video call
+- No obligation
+
+/[Book Consultation button → calendly or booking widget]/
+
+-----
+
+** International Representatives
+:PROPERTIES:
+:SECTION: Location cards — compact
+:LAYOUT: Horizontal row of small cards
+:END:
+
+| Region          | Contact         |
+|-----------------+-----------------|
+| Japan           | Minami Sakamoto |
+| New Zealand     | Sherene         |
+| Zambia / Africa | Elijah          |
+| Indonesia       | Hana            |
+| Taiwan          | TBC             |
+| Malaysia        | TBC             |
+
+For local support in your region, contact our international team or email info@blueeducation.com.au.
+
+-----
+
+** WhatsApp
+:PROPERTIES:
+:SECTION: Floating widget
+:LAYOUT: Fixed bottom-right, WhatsApp green
+:NOTE: Persistent across all pages, not just contact
+:END:
+
+/[WhatsApp floating button → +61 411 708 899]/
+
+* V2
+/The Human Story — make reaching out feel safe and low-stakes./
+
+** Hero
+:PROPERTIES:
+:SECTION: Hero — minimal, warm
+:LAYOUT: Centered text, subtle background
+:END:
+
+*** Headline
+
+You don't need to have it all figured out. You just need to start the conversation.
+
+*** Subheadline
+
+We've been the first phone call for thousands of students, parents, and professionals over the past 25+ years. No question is too early. No concern is too small.
+
+-----
+
+** Contact Methods
+:PROPERTIES:
+:SECTION: Three-column — phone, email, visit
+:LAYOUT: 3 cards with icons, equal width
+:END:
+
+*** Call Us
+:PROPERTIES:
+:ICON: phone
+:END:
+
+Sometimes you just want to talk to a real person. We get it.
+
+- +61 8 6381 0030
+- +61 411 708 899
+- 1300 040 696 (within Australia)
+
+Our team speaks English, Bahasa, Cantonese, Japanese, and more. Call in the language you're most comfortable with.
+
+*** Email Us
+:PROPERTIES:
+:ICON: mail
+:END:
+
+info@blueeducation.com.au
+
+Write as much or as little as you want. We respond within 24 hours — personally, not with a template.
+
+*** Visit Us
+:PROPERTIES:
+:ICON: map-pin
+:END:
+
+33 Barrack St, GF Unit 2
+Perth, Western Australia 6000
+
+If you're in Perth, you're welcome to drop in. If not, we'll connect by phone or video — wherever you are in the world.
+
+-----
+
+** Contact Form
+:PROPERTIES:
+:SECTION: Two-column — form left, info right
+:LAYOUT: 60/40 split. Left: contact form. Right: office photo + map embed
+:END:
+
+*** Form Fields
+
+- Full Name (required)
+- Email (required)
+- Phone Number
+- Country of Residence
+- Enquiry Type (dropdown: Education / Migration / Career / Student Support / Other)
+- Message (textarea)
+- Preferred Language (dropdown: English / Bahasa / Japanese / Other)
+
+/[Submit button: "Send Enquiry"]/
+
+*** Office Location
+:PROPERTIES:
+:LAYOUT: Google Maps embed + office photo
+:END:
+
+/[Embedded map — 33 Barrack St, Perth WA 6000]/
+
+-----
+
+** Book a Consultation
+:PROPERTIES:
+:SECTION: Highlight card — distinct from contact form
+:LAYOUT: Full-width card, subtle premium background
+:END:
+
+*** Headline
+
+Ready for a proper conversation?
+
+*** Body
+
+A free consultation is the best way to get clear, personalised advice. Tell us what you're interested in — education, migration, or career — and we'll match you with the right person on our team.
+
+Here's what to expect:
+
+- A genuine conversation, not a sales pitch
+- Available in English, Bahasa, Japanese, and more
+- In-person (Perth), phone, or video call — your choice
+- No obligation, no pressure
+- We'll be honest about your options — even if it means telling you something you weren't expecting
+
+We've been doing this since 1998. Whatever your question, we've probably heard it before — and we'll give you a straight answer.
+
+/[Book Consultation button → calendly or booking widget]/
+
+-----
+
+** International Representatives
+:PROPERTIES:
+:SECTION: Location cards — compact
+:LAYOUT: Horizontal row of small cards
+:END:
+
+Not everyone starts their journey from Australia. We have team members in your part of the world:
+
+| Region          | Contact         | How they help                          |
+|-----------------+-----------------+----------------------------------------|
+| Japan           | Minami Sakamoto | Native Japanese support, local context |
+| New Zealand     | Sherene         | Trans-Tasman guidance from Auckland    |
+| Zambia / Africa | Elijah          | Regional support in Bemba and Nyanja   |
+| Indonesia       | Hana            | Indonesian and Malay language support  |
+| Taiwan          | TBC             | East Asian market support              |
+| Malaysia        | TBC             | Southeast Asian market support         |
+
+Prefer to start in your own country, in your own language? Reach out to our local representative or email info@blueeducation.com.au.
+
+-----
+
+** WhatsApp
+:PROPERTIES:
+:SECTION: Floating widget
+:LAYOUT: Fixed bottom-right, WhatsApp green
+:NOTE: Persistent across all pages, not just contact
+:END:
+
+/[WhatsApp floating button → +61 411 708 899]/
+
+* V3
+/Clear & Direct — just the facts./
+
+** Hero
+:PROPERTIES:
+:SECTION: Hero — minimal, warm
+:LAYOUT: Centered text, subtle background
+:END:
+
+*** Headline
+
+Contact Blue Education
+
+*** Subheadline
+
+Free consultation. Response within 24 hours.
+
+-----
+
+** Contact Methods
+:PROPERTIES:
+:SECTION: Three-column — phone, email, visit
+:LAYOUT: 3 cards with icons, equal width
+:END:
+
+*** Phone
+:PROPERTIES:
+:ICON: phone
+:END:
+
+| Number           | Type              |
+|------------------+-------------------|
+| +61 8 6381 0030  | Office            |
+| +61 411 708 899  | Mobile / WhatsApp |
+| 1300 040 696     | Australia-wide    |
+
+*** Email
+:PROPERTIES:
+:ICON: mail
+:END:
+
+info@blueeducation.com.au
+
+Response within 24 hours.
+
+*** Office
+:PROPERTIES:
+:ICON: map-pin
+:END:
+
+33 Barrack St, GF Unit 2
+Perth, WA 6000
+
+-----
+
+** Contact Form
+:PROPERTIES:
+:SECTION: Two-column — form left, info right
+:LAYOUT: 60/40 split. Left: contact form. Right: office photo + map embed
+:END:
+
+*** Form Fields
+
+- Full Name (required)
+- Email (required)
+- Phone Number
+- Country of Residence
+- Enquiry Type (dropdown: Education / Migration / Career / Student Support / Other)
+- Message (textarea)
+- Preferred Language (dropdown: English / Bahasa / Japanese / Other)
+
+/[Submit button: "Send Enquiry"]/
+
+*** Office Location
+:PROPERTIES:
+:LAYOUT: Google Maps embed + office photo
+:END:
+
+/[Embedded map — 33 Barrack St, Perth WA 6000]/
+
+-----
+
+** Book a Consultation
+:PROPERTIES:
+:SECTION: Highlight card — distinct from contact form
+:LAYOUT: Full-width card, subtle premium background
+:END:
+
+*** Headline
+
+Free consultation.
+
+*** Body
+
+- Education, migration, or career guidance
+- English, Bahasa, Japanese, and more
+- In-person (Perth), phone, or video
+- No obligation
+
+/[Book Consultation button → calendly or booking widget]/
+
+-----
+
+** International Representatives
+:PROPERTIES:
+:SECTION: Location cards — compact
+:LAYOUT: Horizontal row of small cards
+:END:
+
+| Region          | Contact         |
+|-----------------+-----------------|
+| Japan           | Minami Sakamoto |
+| New Zealand     | Sherene         |
+| Zambia / Africa | Elijah          |
+| Indonesia       | Hana            |
+| Taiwan          | TBC             |
+| Malaysia        | TBC             |
+
+Email: info@blueeducation.com.au
+
+-----
+
+** WhatsApp
+:PROPERTIES:
+:SECTION: Floating widget
+:LAYOUT: Fixed bottom-right, WhatsApp green
+:NOTE: Persistent across all pages, not just contact
+:END:
+
+/[WhatsApp floating button → +61 411 708 899]/

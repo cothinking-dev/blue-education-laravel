@@ -1,0 +1,34 @@
+#!/usr/bin/env bash
+#
+# pre-commit hook: update README.md progress via Claude
+#
+# Triggers only when files under DOCS/website-content/v2/ are staged.
+# Calls the Claude CLI to scan that directory and update Phase 2 progress
+# in README.md, then stages the result before the commit lands.
+
+set -e
+
+CHANGED_DOCS=$(git diff --cached --name-only | grep "^DOCS/website-content/v2/" || true)
+
+if [ -z "$CHANGED_DOCS" ]; then
+    exit 0
+fi
+
+echo "📄 Content changes detected — updating README progress via Claude..."
+
+CLAUDE_BIN="${HOME}/.local/bin/claude"
+
+if [ ! -x "$CLAUDE_BIN" ]; then
+    echo "⚠️  Claude CLI not found at $CLAUDE_BIN — skipping README update."
+    exit 0
+fi
+
+"$CLAUDE_BIN" -p \
+    "Scan DOCS/website-content/v2/ for all .org files. Files prefixed with DONE- are finalised; all others are in progress. Using this, update README.md: (1) update the Phase 2 row in the Project Phases table to show the correct X/24 count, (2) update the Content Status column in the Scope of Work table — ✅ Finalised for DONE-* pages, 🔄 In Progress for the rest. Only modify README.md." \
+    --allowedTools "Read,Write,Edit,Glob" \
+    --output-format text \
+    > /dev/null
+
+git add README.md
+
+echo "✅ README.md updated and staged."

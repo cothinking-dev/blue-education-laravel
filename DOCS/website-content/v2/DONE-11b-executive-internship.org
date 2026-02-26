@@ -1,0 +1,179 @@
+#+title: Executive Internship Programme
+#+url: /programmes/executive-internship
+#+status: draft
+
+** Hero
+:PROPERTIES:
+:SECTION: Hero — full-width
+:LAYOUT: Left-aligned text
+:IMAGE: Professional setting, Perth CBD or modern office environment
+:END:
+
+*** Headline
+
+Strategic work experience for business graduates.
+
+*** Subheadline
+
+The Executive Internship Programme (EIP) runs twice a year. Places are limited. Open to undergraduate and postgraduate students in business or commerce.
+
+-----
+
+** What It Is
+:PROPERTIES:
+:SECTION: Two-column — text left, programme facts right
+:LAYOUT: 60/40 split. Right: key facts box (intake, eligibility, duration, partners)
+:END:
+
+*** Body
+
+The EIP places business graduates and final-year students with Australian employers for structured, mentored workplace experience. Not entry-level administration — a real position with agreed objectives, a dedicated supervisor, and a formal performance review at the end.
+
+The programme is built around our six-phase Employability Booster Programme (EBP), which starts before placement and continues through to review. Blue Education manages the matching, preparation, and employer coordination. You bring the commitment.
+
+*** Key Facts
+
+| Detail         | Info                                              |
+|----------------+---------------------------------------------------|
+| Intakes        | Twice per year                                    |
+| Places         | Limited — assessed intake                         |
+| Eligible       | Undergraduate and postgraduate, business/commerce |
+| Duration       | Up to 3 months (min. 16 hours per week)           |
+| Partners       | Professional Vogue · Employment Advantage         |
+| Managed by     | Blue Education                                    |
+
+-----
+
+** The Six-Phase EBP Process
+:PROPERTIES:
+:SECTION: Timeline — vertical, 6 phases
+:LAYOUT: Connected numbered steps, icon per phase
+:END:
+
+*** Phase 1 — Assessment
+
+Initial review of your background, strengths, and readiness for Australian employment. You complete an Initial Placement Questionnaire and an online readiness module before the programme begins.
+
+*** Phase 2 — Readiness
+
+CV preparation, LinkedIn presence, presentation guidance, and context on Australian workplace culture — what employers expect and how to meet those expectations.
+
+*** Phase 3 — Profiling
+
+We research target organisations, develop approach templates, and match your profile with employers suited to your background and goals.
+
+*** Phase 4 — Preparation
+
+We build a shortlist of target employers with you, prioritise them by fit, and prepare you for interviews and workplace expectations before any approach is made.
+
+*** Phase 5 — Placement
+
+Blue Education facilitates introductions, assists with interview preparation, and coordinates your internship placement once an employer confirms.
+
+*** Phase 6 — Review
+
+Structured performance review at the end of placement. Feedback from your employer, a final debrief with the programme team, and documented outcomes for your records.
+
+-----
+
+** What You Gain
+:PROPERTIES:
+:SECTION: BentoBox — 3 cards
+:LAYOUT: 3-column grid
+:END:
+
+*** Documented Australian Experience
+
+Placement with a real employer — agreed objectives, a dedicated supervisor, and a formal performance review. The kind of experience that makes your application stand out in the [[/services/career][Australian job market]].
+
+*** Professional Development
+
+Soft skills training, CV and LinkedIn preparation, and interview coaching before you step into the placement. Delivered through our programme partners.
+
+*** AQF Alignment
+
+An understanding of how your qualification maps to Australian employer expectations within the [[https://www.aqf.edu.au][Australian Qualifications Framework]] — and what it means for your [[/services/migration/graduate-work-visas][post-study visa]] options.
+
+-----
+
+** Programme Partners
+:PROPERTIES:
+:SECTION: Two-column cards — equal width
+:LAYOUT: Side-by-side partner cards with name, organisation, description
+:END:
+
+*** Lisa — Professional Vogue
+
+Lisa specialises in employability and soft skills for corporate environments. Professional Vogue programmes focus on presence, presentation, and the practical skills that shape how candidates are received in Western Australian workplaces.
+
+*** Natalia — Employment Advantage
+
+Natalia has more than two decades of experience in education and employment training. Her programmes focus on soft skills, career positioning, and job market readiness. The Employment Advantage Tool has contributed to the placement of candidates across multiple industries.
+
+-----
+
+** For Host Employers
+:PROPERTIES:
+:SECTION: Feature list — 4 items with icon
+:LAYOUT: Horizontal cards
+:END:
+
+*** What's Involved
+
+Hosting an EIP intern means providing a supervisor, agreed learning objectives, and a genuine working environment. Blue Education handles the matching, objectives framework, and performance review structure. There is no obligation to hire after placement.
+
+- Commitment: 16 hours per week for up to 8 weeks
+- Dedicated mentor or supervisor
+- Orientation and agreed task expectations
+
+*** What You Gain
+
+- Access to motivated, pre-assessed business graduates
+- An early look at talent before any hiring decision is made
+- Fresh perspectives and skills from candidates with international education backgrounds
+- No recruitment cost or hiring obligation
+
+/[Interested in hosting an intern? [[/contact][Contact our team →]].]/
+
+-----
+
+** How to Apply
+:PROPERTIES:
+:SECTION: Three-step numbered process
+:LAYOUT: Horizontal connected steps
+:END:
+
+*** 1. Confirm Intake Dates
+
+The programme runs twice a year. [[/contact][Contact us]] to confirm when the next intake opens and whether applications are currently being accepted.
+
+*** 2. Submit Your Application
+
+Send your CV and a brief summary of your goals and the type of placement you're looking for. We assess fit before confirming a place.
+
+*** 3. Begin the EBP
+
+Once accepted, your six-phase programme starts with an assessment session. Placement typically follows within the same intake cycle.
+
+-----
+
+** Also Relevant
+
+/Also relevant: [[/services/career][Career Services →]] · [[/services/migration/graduate-work-visas][Graduate Work Visas →]] · [[/about/partners][Our Partners →]]/
+
+-----
+
+** CTA
+:PROPERTIES:
+:SECTION: Full-width CTA banner
+:CTA-PRIMARY: Apply for the Next Intake
+:CTA-SECONDARY: Call +61 8 6381 0030
+:END:
+
+*** Headline
+
+Two intakes a year. Applications close early.
+
+*** Body
+
+Tell us about your background and the type of placement you're aiming for. We'll confirm current intake dates and walk you through the application process.

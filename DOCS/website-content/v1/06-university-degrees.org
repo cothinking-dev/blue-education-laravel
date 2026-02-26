@@ -1,0 +1,349 @@
+#+title: University Degrees
+#+url: /services/education/degrees
+#+status: draft
+
+* V1
+
+** Hero
+:PROPERTIES:
+:SECTION: Hero — full-width
+:LAYOUT: Centered text
+:IMAGE: University graduation ceremony
+:END:
+
+*** Headline
+
+Study at some of the best universities on earth.
+
+*** Subheadline
+
+Seven Australian universities rank in the global top 100. Your degree will be recognised by employers and institutions worldwide.
+
+-----
+
+** Programs
+:PROPERTIES:
+:SECTION: BentoBox — 3 cards
+:LAYOUT: 3-column grid, equal height
+:END:
+
+*** Bachelor Degrees
+:PROPERTIES:
+:TAG: AQF Level 7
+:END:
+
+3–4 year undergraduate programs across all disciplines. The foundation of an Australian professional career.
+
+*Post-study work visa: 2 years*
+
+*** Master Degrees
+:PROPERTIES:
+:TAG: AQF Level 9
+:END:
+
+1–2 year postgraduate programs for specialisation and career advancement. Coursework or research options.
+
+*Post-study work visa: 3 years*
+
+*** Doctoral Programs
+:PROPERTIES:
+:TAG: AQF Level 10
+:END:
+
+Research-focused PhD programs at world-class facilities. For those pushing the boundaries of their field.
+
+*Post-study work visa: 4 years*
+
+-----
+
+** Why an Australian Degree?
+:PROPERTIES:
+:SECTION: Alternating two-column — 3 rows
+:LAYOUT: Text/image alternating sides
+:END:
+
+*** Global recognition
+:PROPERTIES:
+:IMAGE: World map with highlighted connections
+:END:
+
+Australian qualifications are regulated by the Tertiary Education Quality and Standards Agency (TEQSA). This government-backed quality assurance means your degree is respected by employers and institutions in every major economy. Programs in regulated professions — such as teaching, nursing, and engineering — are aligned with Australian professional registration requirements.
+
+*** Industry connections
+:PROPERTIES:
+:IMAGE: Students in industry placement / internship setting
+:END:
+
+Australian universities maintain strong ties with industry. Many programs include practical components, industry placements, and projects with real organisations — giving you experience alongside your qualification.
+
+*** A career launchpad
+:PROPERTIES:
+:IMAGE: Young professional in Australian city
+:END:
+
+Your degree doesn't just end at graduation. The Post-Study Work Visa gives you 2–4 years to gain Australian work experience, build your professional network, and position yourself for permanent residence.
+
+-----
+
+** Admission Requirements
+:PROPERTIES:
+:SECTION: Table — clean reference
+:LAYOUT: Simple table with link to full requirements page
+:END:
+
+| Program    | IELTS Minimum | Academic Requirement              |
+|------------+---------------+-----------------------------------|
+| Bachelor   | 6.5           | Year 12 equivalent or VET Diploma |
+| Master     | 6.5 – 7.0     | Relevant Bachelor degree          |
+| Doctoral   | 6.5 – 7.0     | Relevant Master degree            |
+
+[[/resources/admission-requirements][See full admission requirements →]]
+
+-----
+
+** CTA
+:PROPERTIES:
+:SECTION: Full-width CTA banner
+:CTA-PRIMARY: Get University Recommendations
+:CTA-SECONDARY: Call +61 8 6381 0030
+:END:
+
+*** Headline
+
+Which university is right for you?
+
+*** Body
+
+We'll match you with institutions that fit your academic background, career goals, and budget. Free assessment — no obligation.
+
+* V2
+
+** Hero
+:PROPERTIES:
+:SECTION: Hero — full-width
+:LAYOUT: Centered text
+:IMAGE: University graduation ceremony
+:END:
+
+*** Headline
+
+This degree could change the trajectory of your entire life.
+
+*** Subheadline
+
+An Australian university qualification is recognised around the world. And with a post-study work visa, it's not just education — it's your entry point into a new career and a new country.
+
+-----
+
+** Programs
+:PROPERTIES:
+:SECTION: BentoBox — 3 cards
+:LAYOUT: 3-column grid, equal height
+:END:
+
+*** Bachelor Degrees
+:PROPERTIES:
+:TAG: AQF Level 7
+:END:
+
+Whether you're 18 or 38, a bachelor degree is the foundation of an Australian professional career. Three to four years of deep study across any discipline — from engineering to business, health sciences to creative arts.
+
+*After graduation: 2-year post-study work visa to launch your Australian career.*
+
+*** Master Degrees
+:PROPERTIES:
+:TAG: AQF Level 9
+:END:
+
+Already have a degree but want to specialise, pivot, or accelerate your career? A master program — one to two years, coursework or research — gives you the credentials and the edge.
+
+*After graduation: 3-year post-study work visa.*
+
+*** Doctoral Programs
+:PROPERTIES:
+:TAG: AQF Level 10
+:END:
+
+For the researchers, the thinkers, the ones who want to push the frontier. PhD programs at Australian universities come with world-class facilities and globally respected supervision.
+
+*After graduation: 4-year post-study work visa.*
+
+-----
+
+** Why an Australian Degree?
+:PROPERTIES:
+:SECTION: Alternating two-column — 3 rows
+:LAYOUT: Text/image alternating sides
+:END:
+
+*** Your degree travels with you
+:PROPERTIES:
+:IMAGE: World map with highlighted connections
+:END:
+
+Every Australian university is regulated by the Tertiary Education Quality and Standards Agency (TEQSA) — a government body that exists solely to ensure quality. That's why Australian qualifications are recognised and respected in every major economy. Your degree works wherever you go. And if you're pursuing a regulated profession — teaching, nursing, engineering — your program is aligned with Australian professional registration requirements.
+
+*** You don't just learn — you work
+:PROPERTIES:
+:IMAGE: Students in industry placement / internship setting
+:END:
+
+Australian universities don't teach in a vacuum. Many programs include industry placements, real-world projects, and professional mentoring. By the time you graduate, you've already built connections and experience that matter to employers.
+
+*** Graduation isn't the end — it's the beginning
+:PROPERTIES:
+:IMAGE: Young professional in Australian city
+:END:
+
+The Post-Study Work Visa gives you 2–4 years of open work rights in Australia after graduation. That's time to gain local experience, build a professional network, and position yourself for permanent residence. For many of our clients, this is where the real journey begins.
+
+-----
+
+** Admission Requirements
+:PROPERTIES:
+:SECTION: Table — clean reference
+:LAYOUT: Simple table with link to full requirements page
+:END:
+
+| Program    | IELTS Minimum | Academic Requirement              |
+|------------+---------------+-----------------------------------|
+| Bachelor   | 6.5           | Year 12 equivalent or VET Diploma |
+| Master     | 6.5 – 7.0     | Relevant Bachelor degree          |
+| Doctoral   | 6.5 – 7.0     | Relevant Master degree            |
+
+Don't meet the requirements yet? That's not a dead end. Foundation programs, VET diplomas, and ELICOS courses can bridge the gap — and we'll show you the most efficient route.
+
+[[/resources/admission-requirements][See full admission requirements →]]
+
+-----
+
+** CTA
+:PROPERTIES:
+:SECTION: Full-width CTA banner
+:CTA-PRIMARY: Get University Recommendations
+:CTA-SECONDARY: Call +61 8 6381 0030
+:END:
+
+*** Headline
+
+You've been thinking about this for a while. Let's make it real.
+
+*** Body
+
+Tell us your background, your goals, and your budget. We'll recommend universities that genuinely fit — and walk you through every step from application to arrival. Free consultation, no pressure.
+
+* V3
+
+** Hero
+:PROPERTIES:
+:SECTION: Hero — full-width
+:LAYOUT: Centered text
+:IMAGE: University graduation ceremony
+:END:
+
+*** Headline
+
+Australian university degrees. Globally recognised.
+
+*** Subheadline
+
+Seven universities in the world top 100. Post-study work visas up to 4 years. Quality assured by TEQSA.
+
+-----
+
+** Programs
+:PROPERTIES:
+:SECTION: BentoBox — 3 cards
+:LAYOUT: 3-column grid, equal height
+:END:
+
+*** Bachelor Degrees
+:PROPERTIES:
+:TAG: AQF Level 7
+:END:
+
+- Duration: 3–4 years
+- All disciplines available
+- Post-study work visa: 2 years
+
+*** Master Degrees
+:PROPERTIES:
+:TAG: AQF Level 9
+:END:
+
+- Duration: 1–2 years
+- Coursework or research
+- Post-study work visa: 3 years
+
+*** Doctoral Programs
+:PROPERTIES:
+:TAG: AQF Level 10
+:END:
+
+- Duration: 3–4 years
+- Research-focused
+- Post-study work visa: 4 years
+
+-----
+
+** Why an Australian Degree?
+:PROPERTIES:
+:SECTION: Alternating two-column — 3 rows
+:LAYOUT: Text/image alternating sides
+:END:
+
+*** Global recognition
+:PROPERTIES:
+:IMAGE: World map with highlighted connections
+:END:
+
+All universities regulated by TEQSA (government quality assurance). Qualifications recognised in every major economy. Regulated professions aligned with Australian registration requirements.
+
+*** Industry connections
+:PROPERTIES:
+:IMAGE: Students in industry placement / internship setting
+:END:
+
+Many programs include industry placements, real-world projects, and professional mentoring. You graduate with experience, not just a certificate.
+
+*** Post-study work rights
+:PROPERTIES:
+:IMAGE: Young professional in Australian city
+:END:
+
+2–4 years of open work rights after graduation. Time to gain Australian experience, build your network, and pursue permanent residence.
+
+-----
+
+** Admission Requirements
+:PROPERTIES:
+:SECTION: Table — clean reference
+:LAYOUT: Simple table with link to full requirements page
+:END:
+
+| Program  | IELTS     | Academic Requirement       | Work Visa |
+|----------+-----------+----------------------------+-----------|
+| Bachelor | 6.5       | Year 12 equiv. or VET Dip. | 2 years   |
+| Master   | 6.5 – 7.0 | Relevant Bachelor degree   | 3 years   |
+| Doctoral | 6.5 – 7.0 | Relevant Master degree     | 4 years   |
+
+Below entry requirements? Pathway options: ELICOS, Foundation Studies, VET Diploma.
+
+[[/resources/admission-requirements][See full admission requirements →]]
+
+-----
+
+** CTA
+:PROPERTIES:
+:SECTION: Full-width CTA banner
+:CTA-PRIMARY: Get University Recommendations
+:CTA-SECONDARY: Call +61 8 6381 0030
+:END:
+
+*** Headline
+
+Get matched to the right university.
+
+*** Body
+
+Free assessment. We evaluate your background, goals, and budget — then recommend institutions that fit. No obligation.

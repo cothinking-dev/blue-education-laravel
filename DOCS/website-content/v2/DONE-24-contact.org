@@ -1,0 +1,129 @@
+#+title: Contact
+#+url: /contact
+#+status: draft
+
+** Hero
+:PROPERTIES:
+:SECTION: Hero — minimal, warm
+:LAYOUT: Centered text, subtle background
+:END:
+
+*** Headline
+
+Contact Blue Education
+
+*** Subheadline
+
+We respond to all enquiries within one business day.
+
+-----
+
+** Contact Methods
+:PROPERTIES:
+:SECTION: Three-column — phone, email, visit
+:LAYOUT: 3 cards with icons, equal width
+:END:
+
+*** Phone
+:PROPERTIES:
+:ICON: phone
+:END:
+
+| Number           | Type              |
+|------------------+-------------------|
+| +61 8 6381 0030  | Office            |
+| +61 411 708 899  | Mobile / WhatsApp |
+| 1300 040 696     | Australia-wide    |
+
+*** Email
+:PROPERTIES:
+:ICON: mail
+:END:
+
+info@blueeducation.com.au
+
+We respond within one business day.
+
+*** Office
+:PROPERTIES:
+:ICON: map-pin
+:END:
+
+33 Barrack St, GF Unit 2
+Perth, Western Australia 6000
+
+-----
+
+** Contact Form
+:PROPERTIES:
+:SECTION: Two-column — form left, info right
+:LAYOUT: 60/40 split. Left: contact form. Right: office photo + map embed
+:END:
+
+*** Form Fields
+
+- Full Name (required)
+- Email (required)
+- Phone Number
+- Country of Residence
+- Enquiry Type (dropdown: Education / Migration / Career / Student Support / Other)
+- Message (textarea)
+- Preferred Language (dropdown: English / Cantonese / Mandarin / Bahasa / Malay / Hindi / Indonesian / Japanese / Other)
+
+/[Submit button: "Send Enquiry"]/
+
+*** Office Location
+:PROPERTIES:
+:LAYOUT: Google Maps embed + office photo
+:END:
+
+/[Embedded map — 33 Barrack St, Perth WA 6000]/
+
+-----
+
+** Book a Consultation
+:PROPERTIES:
+:SECTION: Highlight card — distinct from contact form
+:LAYOUT: Full-width card, subtle premium background
+:END:
+
+*** Headline
+
+Book a Consultation
+
+*** Body
+
+- Education, migration, or career guidance
+- English, Bahasa, Cantonese, Japanese, and more
+- In-person (Perth), phone, or video
+
+/[Book Consultation button → calendly or booking widget]/
+
+-----
+
+** International Representatives
+:PROPERTIES:
+:SECTION: Location cards — compact
+:LAYOUT: Horizontal row of small cards
+:END:
+
+| Region          | Contact         |
+|-----------------+-----------------|
+| Japan           | Minami Sakamoto |
+| New Zealand     | Sherene         |
+| Zambia / Africa | Elijah          |
+| Indonesia       | Hana            |
+| Malaysia        | Elaine Ho, Monica Low |
+
+For local support in your region, contact our international team or email info@blueeducation.com.au.
+
+-----
+
+** WhatsApp
+:PROPERTIES:
+:SECTION: Floating widget
+:LAYOUT: Fixed bottom-right, WhatsApp green
+:NOTE: Persistent across all pages, not just contact
+:END:
+
+/[WhatsApp floating button → +61 411 708 899]/

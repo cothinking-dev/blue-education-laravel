@@ -1,0 +1,65 @@
+* Admission Criteria & Requirements
+
+Standardized requirements for entry into Australian educational programs, varying by level and institution.
+
+** English Language Requirements
+
+*** Accepted English Proficiency Tests
+
+Australian institutions accept the following test results for visa and admission purposes:
+
+| Test | Full Name |
+|------|-----------|
+| IELTS | International English Language Testing System (Academic or General) |
+| TOEFL | Test of English as a Foreign Language |
+| Cambridge CAE | Certificate in Advanced English |
+| Pearson PTE | Pearson Test of English |
+
+*** Minimum Scores by Program Level
+
+| Program Level | IELTS Minimum | Individual Band Minimum |
+|--------------|---------------|------------------------|
+| Bachelor Degree | 6.5 overall | Varies by institution |
+| Graduate Certificate/Diploma | 6.5 - 7.0 overall | No band below 6.0 - 6.5 |
+| Master/Doctoral | 6.5 - 7.0 overall | No band below 6.0 - 6.5 |
+
+*** Important Notes on English Requirements
+- Specific institutions may have higher requirements
+- Course English requirements may differ from visa English requirements
+- Some institutions offer English pathway programs for students below direct entry requirements
+- English test scores are typically valid for 2 years
+- ELICOS courses available for students who need to improve proficiency first
+
+** Academic Requirements
+
+| Entry Level | Academic Requirement |
+|-------------|---------------------|
+| Foundation Programs | Completion of high school (Year 11 or equivalent) |
+| VET/TAFE Programs | Varies by qualification level and program |
+| University Entry (Bachelor) | Australian Year 12 equivalent OR VET Diploma/Advanced Diploma |
+| Postgraduate Programs | Relevant Bachelor degree or equivalent |
+
+** Additional Considerations
+
+- *Subject prerequisites:* Some programs require specific subjects (e.g., sciences for engineering)
+- *Professional programs:* Teaching, nursing, engineering may have registration requirements
+- *Creative arts:* Portfolio or interview requirements may apply
+- *Postgraduate:* Some programs require relevant work experience
+- *Country-specific:* Requirements may vary based on country of origin
+
+** Pathway Options for Students Below Direct Entry
+
+1. *ELICOS* - English Language Intensive Courses (10-30 week blocks)
+2. *Foundation Studies* - Pre-university bridging programs
+3. *VET/TAFE Diploma* - Can pathway to university entry
+4. *Packaged offers* - Combined English + academic programs
+
+** How Blue Education Helps
+
+- Personalized assessment of eligibility based on current qualifications
+- Guidance on which English test to take and target scores
+- Identification of pathway options if direct entry is not yet possible
+- Application processing and lodgement support
+- Liaison with institution admissions offices
+
+*Note:* The Admissions office of respective institutions provides the final decision on acceptance of applications.

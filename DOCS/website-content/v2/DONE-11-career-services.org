@@ -1,0 +1,83 @@
+#+title: Career Services
+#+url: /services/career
+#+status: draft
+
+** Hero
+:PROPERTIES:
+:SECTION: Hero — full-width
+:LAYOUT: Left-aligned text
+:IMAGE: professional handshake, Australian office environment
+:END:
+
+*** Headline
+
+Turn your Australian qualification into an Australian career.
+
+*** Subheadline
+
+Getting qualified is the start. From skills gap analysis and employer introductions to graduate work visa support — every step of the path from study to employment, handled by a dedicated team.
+
+-----
+
+** The Career Pathway
+:PROPERTIES:
+:SECTION: Timeline — horizontal, 6 stages
+:LAYOUT: Connected steps with icons
+:END:
+
+*** 1. Assess & Plan
+
+One-on-one session to map your skills against your goals. We identify gaps, outline realistic pathways, and review your resume before you start applying.
+
+*** 2. Prepare
+
+Australian workplaces operate differently to most. This step covers interview techniques, professional networking, and LinkedIn optimisation — plus the unwritten expectations that affect how you're perceived from day one.
+
+*** 3. Build Experience
+
+Theory only goes so far. Industry-specific internships and work placements give you the Australian work history that makes your resume credible to local employers.
+
+*** 4. Connect with Employers
+
+Direct introductions to employers we work with — not job boards, not cold applications. Recruitment support guided by advisors who know your field and your goals.
+
+*** 5. Secure Your Visa
+
+Your career plan and your visa must align. We assess your [[/services/migration/graduate-work-visas][work visa]] eligibility, prepare your application, and coordinate employer sponsorship where required.
+
+*** 6. Advance Your Career
+
+For business graduates and experienced professionals, the [[/programmes/executive-internship][Executive Internship Programme]] offers senior-level placements with executive mentorship. Limited places, twice a year.
+
+-----
+
+
+** The Executive Internship Programme
+:PROPERTIES:
+:SECTION: Highlight card — premium styling
+:LAYOUT: Full-width, subtle premium background
+:TAG: Premium Program
+:END:
+
+For business graduates and experienced professionals who want more than entry-level experience. Strategic placements with Australian employers, executive mentorship through [[/programmes/executive-internship][our EIP partners]], and a structured programme that runs twice a year.
+
+Places are limited. Applications open before each intake.
+
+[[/programmes/executive-internship][Learn more about the Executive Internship Programme →]]
+
+-----
+
+** CTA
+:PROPERTIES:
+:SECTION: Full-width CTA banner
+:CTA-PRIMARY: Book a Career Assessment
+:CTA-SECONDARY: Call +61 8 6381 0030
+:END:
+
+*** Headline
+
+Your career in Australia starts with a plan.
+
+*** Body
+
+We map your skills against Australian employment pathways and identify your work visa options before you're under pressure to figure it out alone.

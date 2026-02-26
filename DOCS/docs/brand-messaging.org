@@ -1,0 +1,118 @@
+* Brand Messaging & Positioning
+
+Key messaging guidelines and differentiators for Blue Education content and copywriting.
+
+** Brand Positioning
+
+*Tagline concept:* Trusted education, career, and migration advisors since 1998.
+
+*Positioning statement:* Blue Education is a boutique education, career, and migration consultancy that provides independent, honest, and personalized guidance to international students seeking to study, work, and live in Australia.
+
+** Key Differentiators
+
+*** 1. Boutique & Personalized
+- Not a large-scale agency - every client gets individual attention
+- Tailored guidance rather than one-size-fits-all solutions
+- Single point of contact throughout the journey
+
+*** 2. Honest & Transparent
+- Founding principle: "Honesty is the Best Policy"
+- Realistic guidance about challenges AND opportunities
+- Transparent fee structure communicated upfront
+- Will advise against options that don't serve the client's long-term interests
+
+*** 3. End-to-End Integrated Services
+- Education + Career + Migration under one roof
+- No need to coordinate multiple service providers
+- Seamless transitions between study, work, and settlement phases
+
+*** 4. 25+ Years Track Record
+- Founded 1998 - over two decades of operation
+- Clients from 40+ countries, experience across 140 countries
+- Established relationships with universities, TAFEs, employers
+
+*** 5. SCSA Associate Status
+- Official recognition by WA Department of Education
+- Unique ability to promote WA curriculum (WACE) internationally
+- Enables international schools to deliver Australian curriculum
+
+*** 6. Buddy Programme
+- Unique 14-day immersive school experience
+- Partnership with Anglican Schools
+- Homestay + classroom integration + voluntary work
+- No other agency offers this specific program
+
+*** 7. Multilingual Team
+- 5+ languages across the team
+- Representatives in Japan, New Zealand, Zambia, Indonesia, Taiwan, Malaysia
+- Cultural understanding, not just language translation
+
+*** 8. Australian-Based, 24/7 Support
+- Perth HQ with national partnerships
+- On-ground support and local expertise
+- 24/7 emergency hotline for all clients
+
+** Core Values (for messaging)
+
+1. *Client-Centric* - "Your goals are our compass"
+2. *Honesty* - "We tell you what you need to hear, not what you want to hear"
+3. *Quality* - "Excellence in every interaction"
+4. *Professional Expertise* - "Qualified, accredited, current"
+5. *Personalized Service* - "Your journey is unique, your guidance should be too"
+
+** Target Audience
+
+*** Primary Audience
+- Mature couples and working adults (25-45) seeking a fresh start in Australia
+- Recent Malaysian graduates experiencing "quarter-life crisis" - looking for overseas opportunities
+- Parents seeking quality education for their children in Australia
+
+*** Geographic Focus
+- *Primary markets:* Malaysia, Indonesia, Japan, Taiwan
+- *Secondary markets:* New Zealand, Zambia/Africa
+- *Broader reach:* Asia, Europe, Americas, Middle East
+
+*** Audience Pain Points
+- Overwhelmed by complex visa and education system
+- Fear of getting bad or biased advice from commission-driven agents
+- Uncertainty about career prospects after studying
+- Concern about children's welfare and safety abroad
+- Language and cultural barriers
+
+*** What They Want to Hear
+- "We've been doing this for 25+ years - we know the system inside out"
+- "We'll be honest with you about your chances"
+- "We support you from day one through to settlement"
+- "Your child will be safe - we provide 24/7 support and guardianship"
+- "We speak your language" (literally and culturally)
+
+** Tone of Voice
+
+- *Professional* but warm and approachable
+- *Confident* without being aggressive
+- *Honest* and straightforward
+- *Empathetic* - understanding the emotional weight of migration decisions
+- *Informative* - position as trusted advisors, not salespeople
+
+** Key Statistics for Content
+
+| Stat | Value | Use in |
+|------|-------|--------|
+| Years operating | 25+ (since 1998) | Trust/credibility |
+| Countries experience | 140 | Global reach |
+| Countries served clients from | 40+ | Diversity |
+| Australian universities in top 100 | 7 | Education quality |
+| Post-study work visa duration | 2-4 years | Work opportunities |
+| Education institutions in AU | 1,100+ | Choice/variety |
+| Programs available | 20,000+ | Choice/variety |
+| Education system span | 13 years (prep-Y12) | System overview |
+
+** Meeting Notes (Client Direction)
+
+- Maintain branding consistency
+- Need 1,000 stock photos for new website
+- Team photos needed: study tours, working offices, group photos, key 5 staff members
+- Focus on *Western Australia* ("golden state of education"), not just generic Australia
+- School logos: swap out, don't use full Go8 - focus on WA institutions
+- Website needs widget integration and contact form (from KookaQuest)
+- Domain DNS migration required

@@ -1,0 +1,277 @@
+#+title: Our Partners
+#+url: /about/partners
+#+status: draft
+
+* V1
+
+** Hero
+:PROPERTIES:
+:SECTION: Hero — subtle, clean
+:LAYOUT: Centered text, light background
+:END:
+
+*** Headline
+
+Trusted by institutions. Accredited by industry.
+
+*** Subheadline
+
+25+ years of partnerships with Australia's leading universities, TAFEs, and professional bodies.
+
+-----
+
+** Institutional Partners
+:PROPERTIES:
+:SECTION: Logo grid with section heading
+:LAYOUT: Grid of partner logos, grayscale, color on hover
+:NOTE: Focus on WA institutions per client direction. Need logos from client.
+:END:
+
+*** Universities
+
+/[Partner university logos — focus on WA: UWA, Curtin, Murdoch, ECU, etc.]/
+
+*** TAFE & Training Providers
+
+/[TAFE WA, RTO partner logos]/
+
+Blue Education has cultivated direct partnerships with universities, TAFEs, and RTOs across Australia — with a particular depth in Western Australia. These relationships mean streamlined applications, insider knowledge, and genuine advocacy on your behalf.
+
+-----
+
+** Professional Credentials
+:PROPERTIES:
+:SECTION: Feature list — logo + description, 4 items
+:LAYOUT: Vertical list, logo left, text right
+:END:
+
+*** QEAC Certified
+Qualified Education Agent Counsellor — the premier professional qualification for education agents in Australia.
+
+*** Migration Alliance
+Australia's largest professional body for migration agents. Access to industry knowledge, development, and peer networks.
+
+*** Migration Institute of Australia
+The MIA represents the highest professional and ethical standards in migration advice and services.
+
+*** Australian Bar Association
+Connection to the Australian Bar Association provides access to legal expertise relevant to education and migration matters.
+
+-----
+
+** International Offices
+:PROPERTIES:
+:SECTION: Map graphic with location pins
+:LAYOUT: World map with labeled pins, or simple location grid
+:END:
+
+| Location        | Representative     | Market Coverage    |
+|-----------------+--------------------+--------------------|
+| Perth, WA (HQ)  | Glen + core team   | Australia-wide     |
+| Japan           | Minami Sakamoto    | Northeast Asia     |
+| New Zealand     | Sherene            | Oceania            |
+| Zambia          | Elijah             | Africa             |
+| Indonesia       | Hana               | Southeast Asia     |
+| Taiwan          | TBC                | East Asia          |
+| Malaysia        | TBC                | Southeast Asia     |
+
+-----
+
+** CTA
+:PROPERTIES:
+:SECTION: Full-width CTA banner
+:CTA-PRIMARY: Partner With Us
+:CTA-SECONDARY: Contact Our Team
+:END:
+
+*** Headline
+
+Interested in partnering with Blue Education?
+
+*** Body
+
+We're always open to conversations with institutions and organisations who share our commitment to student outcomes.
+
+* V2
+/The Human Story — empathy, emotional resonance, personal journeys/
+
+** Hero
+:PROPERTIES:
+:SECTION: Hero — subtle, clean
+:LAYOUT: Centered text, light background
+:END:
+
+*** Headline
+
+The institutions we partner with believe what we believe: students come first.
+
+*** Subheadline
+
+Over 25 years, we've built relationships with universities, TAFEs, and professional bodies who share our commitment to honest guidance and genuine student outcomes.
+
+-----
+
+** Institutional Partners
+:PROPERTIES:
+:SECTION: Logo grid with section heading
+:LAYOUT: Grid of partner logos, grayscale, color on hover
+:NOTE: Focus on WA institutions per client direction. Need logos from client.
+:END:
+
+*** Universities
+
+/[Partner university logos — focus on WA: UWA, Curtin, Murdoch, ECU, etc.]/
+
+*** TAFE & Training Providers
+
+/[TAFE WA, RTO partner logos]/
+
+Partnerships aren't just logos on a page. Over 25 years, we've built genuine relationships with universities, TAFEs, and RTOs across Australia — with particular depth in Western Australia. These connections mean more than streamlined applications. They mean we know the admissions teams. We understand the campus culture. And when your application needs an advocate, we can be one.
+
+-----
+
+** Professional Credentials
+:PROPERTIES:
+:SECTION: Feature list — logo + description, 4 items
+:LAYOUT: Vertical list, logo left, text right
+:END:
+
+*** QEAC Certified
+The premier professional qualification for education agents in Australia. It means our counsellors have been tested, verified, and held to the highest standard.
+
+*** Migration Alliance
+Membership in Australia's largest professional body for migration agents. This gives our team access to continuous professional development, peer networks, and the latest regulatory knowledge.
+
+*** Migration Institute of Australia
+The MIA sets the benchmark for ethical migration practice. Our affiliation reflects our commitment to doing things the right way — even when shortcuts exist.
+
+*** Australian Bar Association
+Our connection to the Australian Bar Association provides access to legal expertise relevant to education and migration matters — ensuring our advice is backed by the strongest professional foundations.
+
+-----
+
+** International Offices
+:PROPERTIES:
+:SECTION: Map graphic with location pins
+:LAYOUT: World map with labeled pins, or simple location grid
+:END:
+
+We believe great advice starts before you leave home. That's why we have representatives in key regions around the world — people who speak your language, understand your context, and can meet you face to face.
+
+| Location        | Representative     | Market Coverage    |
+|-----------------+--------------------+--------------------|
+| Perth, WA (HQ)  | Glen + core team   | Australia-wide     |
+| Japan           | Minami Sakamoto    | Northeast Asia     |
+| New Zealand     | Sherene            | Oceania            |
+| Zambia          | Elijah             | Africa             |
+| Indonesia       | Hana               | Southeast Asia     |
+| Taiwan          | TBC                | East Asia          |
+| Malaysia        | TBC                | Southeast Asia     |
+
+-----
+
+** CTA
+:PROPERTIES:
+:SECTION: Full-width CTA banner
+:CTA-PRIMARY: Partner With Us
+:CTA-SECONDARY: Contact Our Team
+:END:
+
+*** Headline
+
+We build partnerships the same way we build client relationships — on trust.
+
+*** Body
+
+If you're an institution or organisation that shares our commitment to student outcomes and honest guidance, we'd love to start a conversation.
+
+* V3
+/Clear & Direct — ultra-concise, outcome-focused/
+
+** Hero
+:PROPERTIES:
+:SECTION: Hero — subtle, clean
+:LAYOUT: Centered text, light background
+:END:
+
+*** Headline
+
+25+ years of institutional partnerships. Industry accredited.
+
+*** Subheadline
+
+Direct relationships with Australian universities, TAFEs, and RTOs. Professional credentials that prove it.
+
+-----
+
+** Institutional Partners
+:PROPERTIES:
+:SECTION: Logo grid with section heading
+:LAYOUT: Grid of partner logos, grayscale, color on hover
+:NOTE: Focus on WA institutions per client direction. Need logos from client.
+:END:
+
+*** Universities
+
+/[Partner university logos — focus on WA: UWA, Curtin, Murdoch, ECU, etc.]/
+
+*** TAFE & Training Providers
+
+/[TAFE WA, RTO partner logos]/
+
+Direct partnerships with universities, TAFEs, and RTOs across Australia. Strong depth in Western Australia. Streamlined applications. Insider knowledge. Genuine advocacy.
+
+-----
+
+** Professional Credentials
+:PROPERTIES:
+:SECTION: Feature list — logo + description, 4 items
+:LAYOUT: Vertical list, logo left, text right
+:END:
+
+*** QEAC Certified
+Premier professional qualification for education agents in Australia.
+
+*** Migration Alliance
+Australia's largest professional body for migration agents.
+
+*** Migration Institute of Australia
+Highest professional and ethical standards in migration services.
+
+*** Australian Bar Association
+Legal expertise relevant to education and migration matters.
+
+-----
+
+** International Offices
+:PROPERTIES:
+:SECTION: Map graphic with location pins
+:LAYOUT: World map with labeled pins, or simple location grid
+:END:
+
+| Location        | Representative     | Market Coverage    |
+|-----------------+--------------------+--------------------|
+| Perth, WA (HQ)  | Glen + core team   | Australia-wide     |
+| Japan           | Minami Sakamoto    | Northeast Asia     |
+| New Zealand     | Sherene            | Oceania            |
+| Zambia          | Elijah             | Africa             |
+| Indonesia       | Hana               | Southeast Asia     |
+| Taiwan          | TBC                | East Asia          |
+| Malaysia        | TBC                | Southeast Asia     |
+
+-----
+
+** CTA
+:PROPERTIES:
+:SECTION: Full-width CTA banner
+:CTA-PRIMARY: Partner With Us
+:CTA-SECONDARY: Contact Our Team
+:END:
+
+*** Headline
+
+Partner with Blue Education.
+
+*** Body
+
+We work with institutions and organisations committed to student outcomes. Let's talk.

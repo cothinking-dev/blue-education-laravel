@@ -1,0 +1,288 @@
+#+title: Study Tours
+#+url: /programs/study-tours
+#+status: draft
+
+* V1
+
+** Hero
+:PROPERTIES:
+:SECTION: Hero — full-width
+:LAYOUT: Centered text
+:IMAGE: Group of students exploring Fremantle or coastal WA
+:END:
+
+*** Headline
+
+Experience Australia before you commit to it.
+
+*** Subheadline
+
+Short-term study tours and immersion programs — from a few weeks to a few months. No long-term enrollment required.
+
+-----
+
+** Featured: Culinary Study Tour
+:PROPERTIES:
+:SECTION: Two-column — image left, text right
+:LAYOUT: 45/55 split
+:IMAGE: Food preparation, Fremantle markets, coastal setting
+:TAG: Fremantle, Western Australia
+:END:
+
+*** Headline
+
+Cook. Explore. Experience Western Australia.
+
+*** Body
+
+Our Culinary Study Tour combines hands-on culinary training with cultural immersion in Fremantle — one of Australia's most vibrant coastal cities. Learn Australian cooking techniques, explore local food markets, and experience Perth's renowned food culture firsthand.
+
+Perfect for culinary students, food professionals, and anyone who wants to taste Australia.
+
+-----
+
+** Short-Term Immersion Programs
+:PROPERTIES:
+:SECTION: Feature list — icon + heading + text
+:LAYOUT: Vertical list, 4 items
+:END:
+
+*** Flexible Duration
+
+From one week to several months. Choose the length that fits your schedule and goals.
+
+*** Academic & Cultural
+
+Every program combines educational content with cultural experiences — classroom learning meets real-world Australia.
+
+*** No Long-Term Commitment
+
+Explore Australian education without committing to a full degree. Perfect for students testing the waters.
+
+*** Certificate of Participation
+
+All participants receive a certificate — valuable for university applications, CVs, and scholarship submissions.
+
+-----
+
+** Custom Group Tours
+:PROPERTIES:
+:SECTION: Highlight card
+:LAYOUT: Full-width, subtle background
+:END:
+
+We design bespoke study tours for schools, universities, and organisations. Tell us your group size, interests, and timeline — we'll build the program.
+
+-----
+
+** CTA
+:PROPERTIES:
+:SECTION: Full-width CTA banner
+:CTA-PRIMARY: Enquire About Study Tours
+:CTA-SECONDARY: Call +61 8 6381 0030
+:END:
+
+*** Headline
+
+Plan your group's Australian experience.
+
+*** Body
+
+Contact us to discuss available tours, custom programs, and group rates.
+
+* V2
+
+** Hero
+:PROPERTIES:
+:SECTION: Hero — full-width
+:LAYOUT: Centered text
+:IMAGE: Group of students laughing at Fremantle harbour, golden hour
+:END:
+
+*** Headline
+
+Some trips change how you see the world.
+
+*** Subheadline
+
+A few weeks in Australia — studying, exploring, tasting, connecting. No textbook can give you this.
+
+-----
+
+** Why a Study Tour Matters
+:PROPERTIES:
+:SECTION: Two-column — text left, image right
+:LAYOUT: 55/45 split
+:IMAGE: Students around a table with local ingredients, Fremantle markets in background
+:END:
+
+There's a difference between reading about a country and standing in it.
+
+A study tour isn't a holiday. It's the moment a student discovers that they can navigate an unfamiliar place, hold a conversation in English with a stranger, cook a dish they've never heard of, and feel at home somewhere new.
+
+For some, it's the first step toward studying in Australia long-term. For others, it's the experience of a lifetime on its own.
+
+Since 1998, we've been designing these moments — combining real educational content with the kind of cultural immersion that stays with you.
+
+-----
+
+** Featured: Culinary Study Tour
+:PROPERTIES:
+:SECTION: Two-column — image left, text right
+:LAYOUT: 45/55 split
+:IMAGE: Hands chopping fresh produce, Fremantle kitchen
+:TAG: Fremantle, Western Australia
+:END:
+
+*** Headline
+
+Learn to cook. Learn a culture.
+
+*** Body
+
+Fremantle is one of Western Australia's most vibrant coastal cities — a place where food, history, and ocean meet. Our Culinary Study Tour puts you in the kitchen: hands-on cooking, local food markets, Australian techniques and ingredients.
+
+But it's about more than food. It's about confidence — following instructions in English, working in a team, discovering flavours you've never tasted. Students leave with skills, stories, and a deeper understanding of Australian culture.
+
+-----
+
+** More Than a Classroom
+:PROPERTIES:
+:SECTION: Feature list — icon + heading + text
+:LAYOUT: Vertical list, 4 items
+:END:
+
+*** Flexible, Not Rigid
+
+One week. One month. Several months. Every student and group is different, and our programs flex to match. No one-size-fits-all itineraries.
+
+*** Education That Sticks
+
+Every program combines structured learning with cultural experiences. The classroom gives you knowledge; the experience gives you understanding.
+
+*** Low Commitment, High Impact
+
+No long-term enrollment. No visa complications for short stays. Just a genuine taste of Australian education and life, with the option to return for more.
+
+*** Something to Show For It
+
+All participants receive a certificate of participation — a tangible addition to university applications, CVs, and scholarship submissions.
+
+-----
+
+** Custom Group Tours
+:PROPERTIES:
+:SECTION: Highlight card
+:LAYOUT: Full-width, warm background
+:END:
+
+We work with schools, universities, and organisations to design bespoke study tours. Tell us about your group — their interests, their goals, their timeline — and we'll build a programme that's theirs alone.
+
+25+ years of relationships with Australian institutions means we can open doors others can't.
+
+-----
+
+** CTA
+:PROPERTIES:
+:SECTION: Full-width CTA banner
+:CTA-PRIMARY: Start Planning Your Tour
+:CTA-SECONDARY: Call +61 8 6381 0030
+:END:
+
+*** Headline
+
+The best education happens outside the classroom.
+
+*** Body
+
+Whether it's a culinary tour in Fremantle or a custom programme for your school, we'll help you plan an Australian experience worth remembering. Get in touch.
+
+* V3
+
+** Hero
+:PROPERTIES:
+:SECTION: Hero — full-width
+:LAYOUT: Centered text. Clean, minimal
+:END:
+
+*** Headline
+
+Short-term study tours in Australia.
+
+*** Subheadline
+
+Educational and cultural immersion programs. One week to several months. Groups and individuals. No long-term enrollment required.
+
+-----
+
+** Tour Options
+:PROPERTIES:
+:SECTION: BentoBox — 3 cards
+:LAYOUT: 3-column grid
+:END:
+
+*** Culinary Study Tour
+
+Hands-on cooking and cultural immersion in Fremantle, WA. Australian techniques, local food markets, and cultural experiences. For culinary students and food professionals.
+
+*** Short-Term Immersion
+
+Academic and cultural programs from one week to several months. Educational content combined with real-world Australian experiences. Certificate of participation included.
+
+*** Custom Group Tours
+
+Bespoke programs for schools, universities, and organisations. We design the itinerary around your group's size, interests, and timeline.
+
+-----
+
+** What's Included
+:PROPERTIES:
+:SECTION: Feature list — icon + heading + one-liner
+:LAYOUT: Vertical list, 4 items
+:END:
+
+| Feature | Details |
+|---------|---------|
+| Duration | Flexible: 1 week to several months |
+| Content | Academic + cultural immersion |
+| Participants | Groups or individuals |
+| Certificate | Certificate of participation for all attendees |
+| Customisation | Fully bespoke programs available for groups |
+| Commitment | No long-term enrollment required |
+
+-----
+
+** Who It's For
+:PROPERTIES:
+:SECTION: Feature list — 3 items
+:LAYOUT: Horizontal cards
+:END:
+
+*** Students Exploring Options
+
+Experience Australian education before committing to a full program. Low-risk way to test the fit.
+
+*** Schools and Universities
+
+Send your students on a structured educational tour. We handle logistics, content, and accommodation.
+
+*** Culinary Professionals
+
+The Fremantle Culinary Study Tour: hands-on training, food markets, and Australian cooking techniques.
+
+-----
+
+** CTA
+:PROPERTIES:
+:SECTION: Full-width CTA banner
+:CTA-PRIMARY: Enquire About Study Tours
+:CTA-SECONDARY: Call +61 8 6381 0030
+:END:
+
+*** Headline
+
+Get tour details.
+
+*** Body
+
+Contact us for available dates, pricing, and custom program options.

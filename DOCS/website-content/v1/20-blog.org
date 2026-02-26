@@ -1,0 +1,214 @@
+#+title: Blog
+#+url: /blog
+#+status: draft
+
+* V1
+
+** Hero
+:PROPERTIES:
+:SECTION: Hero — minimal, clean
+:LAYOUT: Left-aligned heading, no background image
+:END:
+
+*** Headline
+
+Insights, updates, and stories from the world of international education.
+
+-----
+
+** Blog Grid
+:PROPERTIES:
+:SECTION: Blog listing — filterable cards
+:LAYOUT: 3-column grid, image-topped cards with title, excerpt, date, category tag
+:NOTE: Dynamic content — CMS-driven. Categories as filter tabs above grid.
+:END:
+
+*** Categories
+
+- All
+- Education News
+- Migration Updates
+- Student Stories
+- Study Tips
+- Living in Australia
+- Career Advice
+
+*** Card Format
+
+Each blog card displays:
+- Featured image
+- Category tag
+- Title
+- Excerpt (2 lines)
+- Publication date
+- Read time estimate
+
+-----
+
+** Newsletter CTA
+:PROPERTIES:
+:SECTION: Inline CTA — email capture
+:LAYOUT: Centered, mid-page, subtle background
+:END:
+
+*** Headline
+
+Stay informed.
+
+*** Body
+
+Get education, migration, and career updates delivered to your inbox. No spam — just useful information.
+
+/[Email input field + Subscribe button]/
+
+-----
+
+** Pagination
+:PROPERTIES:
+:SECTION: Standard pagination
+:LAYOUT: Numbered pages, previous/next
+:END:
+
+* V2
+/The Human Story — warm, inviting, community-building tone./
+
+** Hero
+:PROPERTIES:
+:SECTION: Hero — minimal, clean
+:LAYOUT: Left-aligned heading, no background image
+:END:
+
+*** Headline
+
+Real stories. Honest advice. Written by people who've walked the same path.
+
+*** Subheadline
+
+For over 25 years, we've helped students from 40+ countries navigate the journey to Australia. Here's what we've learned along the way.
+
+-----
+
+** Blog Grid
+:PROPERTIES:
+:SECTION: Blog listing — filterable cards
+:LAYOUT: 3-column grid, image-topped cards with title, excerpt, date, category tag
+:NOTE: Dynamic content — CMS-driven. Categories as filter tabs above grid.
+:END:
+
+*** Categories
+
+- All
+- Education News
+- Migration Updates
+- Student Stories
+- Study Tips
+- Living in Australia
+- Career Advice
+
+*** Card Format
+
+Each blog card displays:
+- Featured image
+- Category tag
+- Title
+- Excerpt (2 lines)
+- Publication date
+- Read time estimate
+
+-----
+
+** Newsletter CTA
+:PROPERTIES:
+:SECTION: Inline CTA — email capture
+:LAYOUT: Centered, mid-page, subtle background
+:END:
+
+*** Headline
+
+Moving to Australia is a big decision. We'll help you make it with clarity.
+
+*** Body
+
+Join our community of students, graduates, and families building lives in Australia. We send practical updates on education, migration, and career opportunities — nothing more, nothing less.
+
+/[Email input field + Subscribe button]/
+
+-----
+
+** Pagination
+:PROPERTIES:
+:SECTION: Standard pagination
+:LAYOUT: Numbered pages, previous/next
+:END:
+
+* V3
+/Clear & Direct — scannable, utility-first./
+
+** Hero
+:PROPERTIES:
+:SECTION: Hero — minimal, clean
+:LAYOUT: Left-aligned heading, no background image
+:END:
+
+*** Headline
+
+Blog
+
+*** Subheadline
+
+Education, migration, and career updates for international students.
+
+-----
+
+** Blog Grid
+:PROPERTIES:
+:SECTION: Blog listing — filterable cards
+:LAYOUT: 3-column grid, image-topped cards with title, excerpt, date, category tag
+:NOTE: Dynamic content — CMS-driven. Categories as filter tabs above grid.
+:END:
+
+*** Categories
+
+- All
+- Education News
+- Migration Updates
+- Student Stories
+- Study Tips
+- Living in Australia
+- Career Advice
+
+*** Card Format
+
+Each blog card displays:
+- Featured image
+- Category tag
+- Title
+- Excerpt (2 lines)
+- Publication date
+- Read time estimate
+
+-----
+
+** Newsletter CTA
+:PROPERTIES:
+:SECTION: Inline CTA — email capture
+:LAYOUT: Centered, mid-page, subtle background
+:END:
+
+*** Headline
+
+Get updates. No spam.
+
+*** Body
+
+Education, migration, and career news — delivered to your inbox.
+
+/[Email input field + Subscribe button]/
+
+-----
+
+** Pagination
+:PROPERTIES:
+:SECTION: Standard pagination
+:LAYOUT: Numbered pages, previous/next
+:END:

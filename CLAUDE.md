@@ -23,6 +23,7 @@ This application is a Laravel application and its main Laravel ecosystems packag
 This project has domain-specific skills available. You MUST activate the relevant skill whenever you work in that domain—don't wait until you're stuck.
 
 - `pest-testing` — Tests applications using the Pest 4 PHP framework. Activates when writing tests, creating unit or feature tests, adding assertions, testing Livewire components, browser testing, debugging test failures, working with datasets or mocking; or when the user mentions test, spec, TDD, expects, assertion, coverage, or needs to verify functionality works.
+- `copywriting` — Writes and reviews website copy for Blue Education. Activates when working on page content, section copy, headlines, CTAs, testimonials, taglines, or any written content for the website; or when the user mentions copy, content, headline, tone, writing style, or asks to review/rewrite text on a page.
 
 ## Conventions
 

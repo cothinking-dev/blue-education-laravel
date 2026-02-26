@@ -1,0 +1,348 @@
+#+title: English & Foundation Programs
+#+url: /services/education/english-foundation
+#+status: draft
+
+* V1
+
+** Hero
+:PROPERTIES:
+:SECTION: Hero — full-width
+:LAYOUT: Centered text
+:IMAGE: Diverse students in classroom, engaged in discussion
+:END:
+
+*** Headline
+
+Build the English skills that open Australian doors.
+
+*** Subheadline
+
+Intensive language courses and foundation programs designed to get you university-ready — at your pace.
+
+-----
+
+** ELICOS Courses
+:PROPERTIES:
+:SECTION: Two-column — text left, image right
+:LAYOUT: 55/45 split
+:IMAGE: Language classroom, small group work
+:END:
+
+*** What is ELICOS?
+
+English Language Intensive Courses for Overseas Students. Offered at private colleges and university colleges across Australia, ELICOS courses are your fastest route to the English proficiency you need for further study or professional work.
+
+*** Course durations
+
+| Block     | Duration |
+|-----------+----------|
+| Intensive      | 10 weeks |
+| Comprehensive  | 20 weeks |
+| Extended       | 30 weeks |
+
+Choose the duration that matches your current level and target requirements.
+
+-----
+
+** Course Types
+:PROPERTIES:
+:SECTION: BentoBox — 4 cards
+:LAYOUT: 2x2 grid, icon-topped
+:END:
+
+*** General English
+
+Everyday communication skills — speaking, listening, reading, and writing for daily life in Australia.
+
+*** Academic English
+
+Preparation for university-level study. Essay writing, academic reading, research skills, and presentation techniques.
+
+*** Test Preparation
+
+Targeted IELTS, PTE, and Cambridge CAE preparation. Strategy, practice tests, and score improvement.
+
+*** English for Teaching
+
+Professional qualifications for educators: TESOL, CELTA, and EfTC (English for Teaching Children). Ideal for those pursuing international teaching careers.
+
+-----
+
+** Foundation Studies
+:PROPERTIES:
+:SECTION: Two-column — text left, pathway diagram right
+:LAYOUT: 55/45 split. Right side: simple visual pathway diagram
+:END:
+
+*** What are Foundation programs?
+
+Pre-university bridging programs for international students who've completed high school but need additional preparation for Australian university entry.
+
+*** What you get
+
+- Academic skills development in your chosen field
+- Subject-specific preparation aligned with your degree
+- Guaranteed university pathway options at partner institutions
+- Credit towards your future degree
+- Adaptation to Australian academic standards and expectations
+
+-----
+
+** Your Pathway
+:PROPERTIES:
+:SECTION: Timeline — horizontal, 3 steps
+:LAYOUT: Connected arrows, simple
+:END:
+
+*** ELICOS → Build your English to the level you need
+
+*** Foundation → Bridge to university-level academic skills
+
+*** University → Enter your degree program with confidence
+
+-----
+
+** CTA
+:PROPERTIES:
+:SECTION: Full-width CTA banner
+:CTA-PRIMARY: Assess My English Level
+:CTA-SECONDARY: View Admission Requirements
+:END:
+
+*** Headline
+
+Not sure which course is right for you?
+
+*** Body
+
+We'll assess your current English level and recommend the most efficient pathway to your study goals. Free consultation — no obligation.
+
+* V2
+
+** Hero
+:PROPERTIES:
+:SECTION: Hero — full-width
+:LAYOUT: Centered text
+:IMAGE: Diverse students in classroom, engaged in discussion
+:END:
+
+*** Headline
+
+Your English isn't a barrier. It's just the first step.
+
+*** Subheadline
+
+Thousands of students have started exactly where you are now — unsure of their level, worried about keeping up. That's what these programs are for.
+
+-----
+
+** ELICOS Courses
+:PROPERTIES:
+:SECTION: Two-column — text left, image right
+:LAYOUT: 55/45 split
+:IMAGE: Language classroom, small group work
+:END:
+
+*** What is ELICOS?
+
+English Language Intensive Courses for Overseas Students — offered at private colleges and university colleges across Australia. These aren't generic language apps or textbook drills. You'll be in a classroom with other international students, learning to communicate in the real-world English you'll actually use at university, at work, and in daily life.
+
+*** How long does it take?
+
+That depends on where you're starting from.
+
+| Your Starting Point | Recommended Duration |
+|---------------------+----------------------|
+| Beginner to lower-intermediate | 30 weeks (Extended) |
+| Intermediate | 20 weeks (Comprehensive) |
+| Upper-intermediate | 10 weeks (Intensive) |
+
+Your Blue Education counselor will help you choose the right duration based on an honest assessment of your current level and your target entry requirements.
+
+-----
+
+** Course Types
+:PROPERTIES:
+:SECTION: BentoBox — 4 cards
+:LAYOUT: 2x2 grid, icon-topped
+:END:
+
+*** General English
+
+The confidence to navigate daily life in Australia — ordering coffee, talking to your landlord, making friends. Speaking, listening, reading, and writing for the real world.
+
+*** Academic English
+
+University isn't just about subject knowledge — it's about writing essays that hold together, reading dense academic texts, and presenting ideas clearly. This course gets you ready.
+
+*** Test Preparation
+
+Need an IELTS, PTE, or Cambridge CAE score for admission? Targeted preparation with practice tests, score strategies, and the skills that actually move your numbers.
+
+*** English for Teaching
+
+If you want to teach English professionally — in Australia or abroad — qualifications like TESOL, CELTA, and EfTC (English for Teaching Children) give you the credentials to do it.
+
+-----
+
+** Foundation Studies
+:PROPERTIES:
+:SECTION: Two-column — text left, pathway diagram right
+:LAYOUT: 55/45 split. Right side: simple visual pathway diagram
+:END:
+
+*** What are Foundation programs?
+
+You've finished high school. But maybe the education system in your country doesn't align perfectly with Australian university entry requirements. Maybe you need to brush up on specific subjects. Foundation programs bridge that gap — they're designed specifically for international students in your situation.
+
+*** What you walk away with
+
+- Academic skills in your chosen field, taught the Australian way
+- Subject-specific preparation that directly feeds into your degree
+- Guaranteed university pathway options at partner institutions
+- Credit towards your future degree — so you're not starting from scratch
+- The confidence that comes from understanding how Australian academics think, write, and assess
+
+-----
+
+** Your Pathway
+:PROPERTIES:
+:SECTION: Timeline — horizontal, 3 steps
+:LAYOUT: Connected arrows, simple
+:END:
+
+*** ELICOS → Build your English until you're ready — no rushing, no shortcuts
+
+*** Foundation → Learn the academic skills and subject knowledge universities expect
+
+*** University → Walk into your degree program knowing you belong there
+
+-----
+
+** CTA
+:PROPERTIES:
+:SECTION: Full-width CTA banner
+:CTA-PRIMARY: Assess My English Level
+:CTA-SECONDARY: View Admission Requirements
+:END:
+
+*** Headline
+
+Wondering where you stand?
+
+*** Body
+
+We'll assess your current English level and tell you honestly what it will take to reach your goal. No sugar-coating, no unnecessary courses — just the most efficient pathway to where you want to be. Free consultation.
+
+* V3
+
+** Hero
+:PROPERTIES:
+:SECTION: Hero — full-width
+:LAYOUT: Centered text
+:IMAGE: Diverse students in classroom, engaged in discussion
+:END:
+
+*** Headline
+
+English courses and university prep for international students.
+
+*** Subheadline
+
+Get your English to entry level. Bridge the gap to an Australian degree. Start when you're ready.
+
+-----
+
+** ELICOS Courses
+:PROPERTIES:
+:SECTION: Two-column — text left, image right
+:LAYOUT: 55/45 split
+:IMAGE: Language classroom, small group work
+:END:
+
+*** What is ELICOS?
+
+English Language Intensive Courses for Overseas Students. Delivered at private colleges and university colleges across Australia.
+
+*** Durations
+
+| Block | Duration | Best For |
+|-------+----------+----------|
+| Intensive | 10 weeks | Upper-intermediate students close to target score |
+| Comprehensive | 20 weeks | Intermediate students building toward university entry |
+| Extended | 30 weeks | Beginner to lower-intermediate starting from scratch |
+
+-----
+
+** Course Types
+:PROPERTIES:
+:SECTION: BentoBox — 4 cards
+:LAYOUT: 2x2 grid, icon-topped
+:END:
+
+*** General English
+
+Speaking, listening, reading, writing. Everyday communication for life in Australia.
+
+*** Academic English
+
+Essay writing, academic reading, research skills, presentations. Preparation for university-level study.
+
+*** Test Preparation
+
+IELTS, PTE, Cambridge CAE. Strategy, practice tests, score improvement.
+
+*** English for Teaching
+
+TESOL, CELTA, EfTC qualifications. For educators pursuing international teaching careers.
+
+-----
+
+** Foundation Studies
+:PROPERTIES:
+:SECTION: Two-column — text left, pathway diagram right
+:LAYOUT: 55/45 split. Right side: simple visual pathway diagram
+:END:
+
+*** What it is
+
+Pre-university bridging programs. For students who've completed high school but don't yet meet Australian university entry requirements.
+
+*** What you get
+
+- Academic skills development in your field
+- Subject-specific preparation aligned to your target degree
+- Guaranteed pathway to partner universities
+- Credit towards your future degree
+- Adaptation to Australian academic standards
+
+-----
+
+** The Pathway
+:PROPERTIES:
+:SECTION: Timeline — horizontal, 3 steps
+:LAYOUT: Connected arrows, simple
+:END:
+
+*** ELICOS → English proficiency to the level you need
+
+*** Foundation → Academic skills and subject knowledge for university
+
+*** University → Direct entry into your degree program
+
+-----
+
+** CTA
+:PROPERTIES:
+:SECTION: Full-width CTA banner
+:CTA-PRIMARY: Assess My English Level
+:CTA-SECONDARY: View Admission Requirements
+:END:
+
+*** Headline
+
+Find out which course you need.
+
+*** Body
+
+Free English level assessment. We tell you where you are, what you need, and the fastest path to get there.

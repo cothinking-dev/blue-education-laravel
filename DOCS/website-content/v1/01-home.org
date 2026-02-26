@@ -1,0 +1,615 @@
+#+title: Home
+#+url: /
+#+status: draft
+
+* V1
+
+** Hero
+:PROPERTIES:
+:SECTION: Full-width hero with background video/image
+:LAYOUT: Centered text over dark overlay
+:CTA-PRIMARY: Book a Free Consultation
+:CTA-SECONDARY: Explore Our Services
+:IMAGE: Full-width background — students on campus, diverse group, Perth skyline
+:END:
+
+*** Headline
+
+Your Australian future starts with the right advice.
+
+*** Subheadline
+
+Education. Career. Migration. One team, one plan, one trusted partner — since 1998.
+
+-----
+
+** Social Proof Bar
+:PROPERTIES:
+:SECTION: Stats bar — horizontal strip, 4 items
+:LAYOUT: Full-width, contrasting background
+:END:
+
+| Stat                  | Display       |
+|-----------------------+---------------|
+| Years of experience   | 25+           |
+| Countries served      | 40+           |
+| Global reach          | 140 countries |
+| Support availability  | 24/7          |
+
+-----
+
+** What We Do
+:PROPERTIES:
+:SECTION: BentoBox — 4 cards, icon + heading + short text + link
+:LAYOUT: 2x2 grid on desktop, stacked on mobile
+:END:
+
+*** Education Services
+
+From primary school to PhD. We match you with the right institution, the right course, and the right pathway — so nothing is left to chance.
+
+[[/services/education][Explore education pathways →]]
+
+*** Migration & Visas
+
+Student visas. Graduate visas. Permanent residence. Our registered migration agents handle the complexity so you don't have to.
+
+[[/services/migration][See visa options →]]
+
+*** Career Services
+
+Job readiness. Employer connections. Internships. We help you turn your Australian qualification into an Australian career.
+
+[[/services/career][Build your career →]]
+
+*** Student Support
+
+Accommodation. Guardianship. Health insurance. Airport pickup. 24/7 emergency hotline. You're never on your own.
+
+[[/services/student-support][See support services →]]
+
+-----
+
+** The Blue Education Difference
+:PROPERTIES:
+:SECTION: Two-column — text left, image right
+:LAYOUT: 60/40 split
+:IMAGE: Glen in consultation with a student
+:END:
+
+*** Headline
+
+Boutique by design. Honest by principle.
+
+*** Body
+
+Large agencies process thousands of students a year. We don't.
+
+Blue Education is deliberately small. Every client works with a dedicated advisor who knows their name, their goals, and their circumstances. We don't earn commission from institutions — which means our advice serves your interests, not ours.
+
+When we say honesty is our founding principle, we mean it. If a pathway won't work for you, we'll say so. If there's a better option you haven't considered, we'll show you.
+
+That's been our approach since 1998. It's why clients from 40 countries trust us with the biggest decisions of their lives.
+
+[[/about][Learn our story →]]
+
+-----
+
+** Featured Programs
+:PROPERTIES:
+:SECTION: Two cards — horizontal, image-topped
+:LAYOUT: Side by side on desktop, stacked on mobile
+:END:
+
+*** Buddy Programme
+:PROPERTIES:
+:IMAGE: Students in school uniform with Australian buddies, classroom setting
+:TAG: 14-Day Immersion
+:END:
+
+Live with an Australian family. Study alongside Australian students. Experience the culture firsthand in 14 days that could change everything.
+
+[[/programs/buddy-programme][Discover the Buddy Programme →]]
+
+*** SCSA Associate
+:PROPERTIES:
+:IMAGE: Students in graduation attire, WA landscape
+:TAG: International Curriculum
+:END:
+
+Complete the Western Australian Certificate of Education from your home country. Officially recognised. Globally respected.
+
+[[/programs/scsa-associate][Learn about SCSA →]]
+
+-----
+
+** Why Australia
+:PROPERTIES:
+:SECTION: Three-column feature strip with icons
+:LAYOUT: Icon top, bold stat, supporting text below
+:END:
+
+*** 7 universities in the global top 100
+
+World-class education recognised by employers everywhere.
+
+*** 2–4 years post-study work visa
+
+Graduate and stay to build real career experience.
+
+*** 1,100+ institutions, 20,000+ programs
+
+Whatever you want to study, Australia has the right fit.
+
+[[/why-australia][See all the reasons →]]
+
+-----
+
+** Testimonials
+:PROPERTIES:
+:SECTION: Carousel — quote card with photo, name, country, program
+:LAYOUT: Rotating cards, 1 visible on mobile, 3 on desktop
+:NOTE: Content TBC — need testimonials from client
+:END:
+
+#+begin_quote
+"Blue Education didn't just help me get into university — they helped me build a life in Australia. From my student visa to my first job, Glen and the team were there every step of the way."
+
+— /[Client Name], [Country], [Program]/
+#+end_quote
+
+#+begin_quote
+"I was overwhelmed by the visa process. Blue Education made it simple. They were honest about the timeline and delivered exactly what they promised."
+
+— /[Client Name], [Country], [Visa Type]/
+#+end_quote
+
+-----
+
+** Partners
+:PROPERTIES:
+:SECTION: Logo strip — auto-scrolling, grayscale logos
+:LAYOUT: Single row, infinite scroll
+:NOTE: Focus on WA institutions per client direction. Need logos from client.
+:END:
+
+Trusted by leading Australian institutions.
+
+/[University logos — focus on WA: UWA, Curtin, Murdoch, ECU, TAFE WA, etc.]/
+
+-----
+
+** Latest From the Blog
+:PROPERTIES:
+:SECTION: Three cards — image, title, excerpt, date
+:LAYOUT: 3-column grid
+:NOTE: Dynamic — pulls latest 3 blog posts
+:END:
+
+/[Dynamic content — latest blog posts]/
+
+-----
+
+** Final CTA
+:PROPERTIES:
+:SECTION: Full-width CTA banner
+:LAYOUT: Centered text, contrasting background color
+:CTA-PRIMARY: Book a Free Consultation
+:CTA-SECONDARY: Call +61 8 6381 0030
+:END:
+
+*** Headline
+
+Ready to start your Australian journey?
+
+*** Body
+
+Book a free consultation with our team. We'll assess your options, answer your questions, and give you an honest picture of what's possible — no obligations, no pressure.
+
+* V2
+/The Human Story — lead with empathy, emotional resonance, personal journeys/
+
+** Hero
+:PROPERTIES:
+:SECTION: Full-width hero with background video/image
+:LAYOUT: Centered text over dark overlay
+:CTA-PRIMARY: Book a Free Consultation
+:CTA-SECONDARY: Explore Our Services
+:IMAGE: Full-width background — students on campus, diverse group, Perth skyline
+:END:
+
+*** Headline
+
+Leaving home is hard. We make sure it's worth it.
+
+*** Subheadline
+
+For over 25 years, we've guided people through one of life's biggest decisions — studying, working, and building a life in Australia. You don't have to figure it out alone.
+
+-----
+
+** Social Proof Bar
+:PROPERTIES:
+:SECTION: Stats bar — horizontal strip, 4 items
+:LAYOUT: Full-width, contrasting background
+:END:
+
+| Stat                  | Display       |
+|-----------------------+---------------|
+| Years walking beside our clients | 25+ |
+| Countries our clients call home  | 40+ |
+| Countries we've worked across    | 140 |
+| Emergency support                | 24/7 |
+
+-----
+
+** What We Do
+:PROPERTIES:
+:SECTION: BentoBox — 4 cards, icon + heading + short text + link
+:LAYOUT: 2x2 grid on desktop, stacked on mobile
+:END:
+
+*** Find Your Place to Learn
+
+Maybe it's a university degree. Maybe it's a TAFE course. Maybe it's primary school for your child. Whatever the chapter, we'll help you find the right institution and the right pathway — from prep through to PhD.
+
+[[/services/education][Explore education pathways →]]
+
+*** Navigate the Visa Maze
+
+Visa applications can feel impossibly complex. Our registered migration agents take the weight off your shoulders — handling student visas, graduate visas, and permanent residence so you can focus on what matters.
+
+[[/services/migration][See visa options →]]
+
+*** Build a Career, Not Just a Resume
+
+A qualification opens doors. But you need someone who knows which doors. We connect you with employers, prepare you for the Australian workplace, and help you turn study into a career you're proud of.
+
+[[/services/career][Build your career →]]
+
+*** Know That Someone Has Your Back
+
+Moving to a new country means late-night worries and unexpected challenges. Accommodation, guardianship, health insurance, airport pickup — and a 24/7 emergency hotline for the moments when you need someone now.
+
+[[/services/student-support][See support services →]]
+
+-----
+
+** The Blue Education Difference
+:PROPERTIES:
+:SECTION: Two-column — text left, image right
+:LAYOUT: 60/40 split
+:IMAGE: Glen in consultation with a student
+:END:
+
+*** Headline
+
+We remember your name. We remember your story.
+
+*** Body
+
+At a big agency, you're a number. Here, you're a person.
+
+When you call Blue Education, you speak to the advisor who already knows your situation — your goals, your family, your concerns. We're deliberately small because we believe the biggest decisions of your life deserve more than a template.
+
+And here's what makes us different from most agencies: we don't earn commission from institutions. So when we recommend a pathway, it's because it's right for you — not because it's profitable for us.
+
+Sometimes the right advice is hard to hear. We'll tell you if a plan won't work. We'll also show you a better one. That honesty has been our founding principle since 1998, and it's why families from 40 countries trust us with something as personal as their future.
+
+[[/about][Learn our story →]]
+
+-----
+
+** Featured Programs
+:PROPERTIES:
+:SECTION: Two cards — horizontal, image-topped
+:LAYOUT: Side by side on desktop, stacked on mobile
+:END:
+
+*** Buddy Programme
+:PROPERTIES:
+:IMAGE: Students in school uniform with Australian buddies, classroom setting
+:TAG: 14-Day Immersion
+:END:
+
+Imagine your child sitting in an Australian classroom, making friends, eating dinner with a local family, and discovering what life here really feels like — in just 14 days. Our partnership with Anglican Schools makes it possible.
+
+[[/programs/buddy-programme][Discover the Buddy Programme →]]
+
+*** SCSA Associate
+:PROPERTIES:
+:IMAGE: Students in graduation attire, WA landscape
+:TAG: International Curriculum
+:END:
+
+Your child doesn't have to leave home to start an Australian education. As an official SCSA Associate, we help international schools deliver the Western Australian Certificate of Education — recognised worldwide.
+
+[[/programs/scsa-associate][Learn about SCSA →]]
+
+-----
+
+** Why Australia
+:PROPERTIES:
+:SECTION: Three-column feature strip with icons
+:LAYOUT: Icon top, bold stat, supporting text below
+:END:
+
+*** 7 universities in the global top 100
+
+An education that travels with you, recognised by employers around the world.
+
+*** 2–4 years post-study work visa
+
+Time to plant roots. Graduate and stay to build real career experience before deciding what's next.
+
+*** 1,100+ institutions, 20,000+ programs
+
+From trade skills to research degrees — there's a path for every ambition.
+
+[[/why-australia][See all the reasons →]]
+
+-----
+
+** Testimonials
+:PROPERTIES:
+:SECTION: Carousel — quote card with photo, name, country, program
+:LAYOUT: Rotating cards, 1 visible on mobile, 3 on desktop
+:NOTE: Content TBC — need testimonials from client
+:END:
+
+#+begin_quote
+"Blue Education didn't just help me get into university — they helped me build a life in Australia. From my student visa to my first job, Glen and the team were there every step of the way."
+
+— /[Client Name], [Country], [Program]/
+#+end_quote
+
+#+begin_quote
+"I was overwhelmed by the visa process. Blue Education made it simple. They were honest about the timeline and delivered exactly what they promised."
+
+— /[Client Name], [Country], [Visa Type]/
+#+end_quote
+
+-----
+
+** Partners
+:PROPERTIES:
+:SECTION: Logo strip — auto-scrolling, grayscale logos
+:LAYOUT: Single row, infinite scroll
+:NOTE: Focus on WA institutions per client direction. Need logos from client.
+:END:
+
+Trusted by the institutions that shape Australia's future.
+
+/[University logos — focus on WA: UWA, Curtin, Murdoch, ECU, TAFE WA, etc.]/
+
+-----
+
+** Latest From the Blog
+:PROPERTIES:
+:SECTION: Three cards — image, title, excerpt, date
+:LAYOUT: 3-column grid
+:NOTE: Dynamic — pulls latest 3 blog posts
+:END:
+
+/[Dynamic content — latest blog posts]/
+
+-----
+
+** Final CTA
+:PROPERTIES:
+:SECTION: Full-width CTA banner
+:LAYOUT: Centered text, contrasting background color
+:CTA-PRIMARY: Book a Free Consultation
+:CTA-SECONDARY: Call +61 8 6381 0030
+:END:
+
+*** Headline
+
+Your future in Australia starts with a conversation.
+
+*** Body
+
+You've got questions. You've got doubts. That's normal — moving countries is one of the hardest things you'll ever do. Book a free consultation. We'll listen, we'll be honest, and we'll help you see what's possible.
+
+* V3
+/Clear & Direct — ultra-concise, outcome-focused, every sentence earns its place/
+
+** Hero
+:PROPERTIES:
+:SECTION: Full-width hero with background video/image
+:LAYOUT: Centered text over dark overlay
+:CTA-PRIMARY: Book a Free Consultation
+:CTA-SECONDARY: Explore Our Services
+:IMAGE: Full-width background — students on campus, diverse group, Perth skyline
+:END:
+
+*** Headline
+
+Study. Work. Live in Australia.
+
+*** Subheadline
+
+Independent education, career, and migration advice from Perth. Since 1998.
+
+-----
+
+** Social Proof Bar
+:PROPERTIES:
+:SECTION: Stats bar — horizontal strip, 4 items
+:LAYOUT: Full-width, contrasting background
+:END:
+
+| Stat                  | Display       |
+|-----------------------+---------------|
+| Years operating       | 25+           |
+| Countries served      | 40+           |
+| Global reach          | 140 countries |
+| Support               | 24/7          |
+
+-----
+
+** What We Do
+:PROPERTIES:
+:SECTION: BentoBox — 4 cards, icon + heading + short text + link
+:LAYOUT: 2x2 grid on desktop, stacked on mobile
+:END:
+
+*** Education
+
+Primary school to PhD. 1,100+ institutions. 20,000+ programs. We match you to the right one.
+
+[[/services/education][Explore education →]]
+
+*** Migration
+
+Student visas. Graduate visas. Permanent residence. Registered migration agents handle it.
+
+[[/services/migration][See visa options →]]
+
+*** Career
+
+Job readiness. Employer connections. We turn your qualification into a career.
+
+[[/services/career][Build your career →]]
+
+*** Support
+
+Accommodation. Guardianship. Health cover. Airport pickup. 24/7 emergency hotline.
+
+[[/services/student-support][See support →]]
+
+-----
+
+** The Blue Education Difference
+:PROPERTIES:
+:SECTION: Two-column — text left, image right
+:LAYOUT: 60/40 split
+:IMAGE: Glen in consultation with a student
+:END:
+
+*** Headline
+
+Independent advice. No commissions.
+
+*** Body
+
+We don't earn commission from institutions. Our recommendations serve your interests, not ours.
+
+Blue Education is deliberately boutique. One dedicated advisor. One coordinated plan across education, career, and migration. No handoffs, no runaround.
+
+If a pathway won't work, we say so. If there's a better option, we show you. That approach has kept us in business since 1998 and earned the trust of clients from 40 countries.
+
+[[/about][Learn more →]]
+
+-----
+
+** Featured Programs
+:PROPERTIES:
+:SECTION: Two cards — horizontal, image-topped
+:LAYOUT: Side by side on desktop, stacked on mobile
+:END:
+
+*** Buddy Programme
+:PROPERTIES:
+:IMAGE: Students in school uniform with Australian buddies, classroom setting
+:TAG: 14-Day Immersion
+:END:
+
+14 days. Australian homestay, classroom, and cultural immersion. Partnership with Anglican Schools. No other agency offers this.
+
+[[/programs/buddy-programme][Learn more →]]
+
+*** SCSA Associate
+:PROPERTIES:
+:IMAGE: Students in graduation attire, WA landscape
+:TAG: International Curriculum
+:END:
+
+Deliver the WA Certificate of Education from your home country. Official SCSA Associate status. Internationally recognised.
+
+[[/programs/scsa-associate][Learn more →]]
+
+-----
+
+** Why Australia
+:PROPERTIES:
+:SECTION: Three-column feature strip with icons
+:LAYOUT: Icon top, bold stat, supporting text below
+:END:
+
+*** 7 of the world's top 100 universities
+
+Global recognition. World-class education.
+
+*** 2–4 year post-study work visa
+
+Stay and build real career experience after graduation.
+
+*** 1,100+ institutions. 20,000+ programs.
+
+Every field. Every level. The right fit exists.
+
+[[/why-australia][See why Australia →]]
+
+-----
+
+** Testimonials
+:PROPERTIES:
+:SECTION: Carousel — quote card with photo, name, country, program
+:LAYOUT: Rotating cards, 1 visible on mobile, 3 on desktop
+:NOTE: Content TBC — need testimonials from client
+:END:
+
+#+begin_quote
+"Blue Education didn't just help me get into university — they helped me build a life in Australia. From my student visa to my first job, Glen and the team were there every step of the way."
+
+— /[Client Name], [Country], [Program]/
+#+end_quote
+
+#+begin_quote
+"I was overwhelmed by the visa process. Blue Education made it simple. They were honest about the timeline and delivered exactly what they promised."
+
+— /[Client Name], [Country], [Visa Type]/
+#+end_quote
+
+-----
+
+** Partners
+:PROPERTIES:
+:SECTION: Logo strip — auto-scrolling, grayscale logos
+:LAYOUT: Single row, infinite scroll
+:NOTE: Focus on WA institutions per client direction. Need logos from client.
+:END:
+
+Partnered with leading Australian institutions.
+
+/[University logos — focus on WA: UWA, Curtin, Murdoch, ECU, TAFE WA, etc.]/
+
+-----
+
+** Latest From the Blog
+:PROPERTIES:
+:SECTION: Three cards — image, title, excerpt, date
+:LAYOUT: 3-column grid
+:NOTE: Dynamic — pulls latest 3 blog posts
+:END:
+
+/[Dynamic content — latest blog posts]/
+
+-----
+
+** Final CTA
+:PROPERTIES:
+:SECTION: Full-width CTA banner
+:LAYOUT: Centered text, contrasting background color
+:CTA-PRIMARY: Book a Free Consultation
+:CTA-SECONDARY: Call +61 8 6381 0030
+:END:
+
+*** Headline
+
+Get honest advice. Free.
+
+*** Body
+
+Free consultation. We assess your options and tell you exactly where you stand. No obligations.

@@ -1,0 +1,343 @@
+#+title: School Programs
+#+url: /services/education/school-programs
+#+status: draft
+
+* V1
+
+** Hero
+:PROPERTIES:
+:SECTION: Hero — full-width
+:LAYOUT: Left-aligned text
+:IMAGE: Primary/secondary students in Australian school uniforms
+:END:
+
+*** Headline
+
+Give your child a world-class Australian education.
+
+*** Subheadline
+
+Primary and secondary placements in Australian schools — with accommodation, guardianship, and welfare handled from day one.
+
+-----
+
+** The Australian School System
+:PROPERTIES:
+:SECTION: Two-column — infographic left, text right
+:LAYOUT: 45/55 split. Left: visual diagram of 13-year school system
+:END:
+
+Australia's school system spans 13 years:
+
+- *Preparatory year* — Foundation/Kindergarten
+- *Primary* — Years 1–6 (or 1–7 in some states)
+- *Secondary* — Years 7–12 (or 8–12 in some states)
+- *Compulsory* until age 16 in most states and territories
+
+Both public and private options are available, with consistently high standards regulated by state and federal authorities. As an SCSA Associate, Blue Education holds official recognition from the WA Department of Education, giving us unique insight into the Western Australian curriculum (WACE).
+
+-----
+
+** What We Handle
+:PROPERTIES:
+:SECTION: Feature list — icon + heading + description
+:LAYOUT: 2-column grid, 6 items
+:END:
+
+*** School Selection & Placement
+
+We match your child with the right school based on location, curriculum, fees, and their individual needs.
+
+*** Student Visa (Subclass 500)
+
+Full visa application support for minors — including documentation, health checks, and character requirements.
+
+*** Accommodation
+
+Safe, vetted homestay families through the Australian Homestay Network (AHN). Meals included.
+
+*** Guardianship
+
+Legal guardianship for students under 18, through Professional Student Care Australia or International Student Alliance. Mandatory for unaccompanied minors.
+
+*** Welfare Monitoring
+
+Ongoing welfare checks, school liaison, family communication, and compliance with Department of Home Affairs requirements.
+
+*** Cultural Adaptation
+
+Integration support to help young students adjust to Australian schools, social norms, and daily life.
+
+-----
+
+** For Parents
+:PROPERTIES:
+:SECTION: Two-column — text left, image right
+:LAYOUT: 60/40 split
+:IMAGE: Parent video-calling with child, or family at airport
+:END:
+
+We understand that sending your child overseas is one of the biggest decisions you'll make. That's why we don't just arrange a school placement — we build a safety net around your child.
+
+- 24/7 emergency hotline for parents and students
+- Regular welfare reports and school updates
+- Direct communication line with guardianship providers
+- On-ground support in Perth and across major Australian cities
+
+Your child is never on their own. Neither are you.
+
+-----
+
+** Explore the Buddy Programme
+:PROPERTIES:
+:SECTION: Highlight card — image-backed
+:LAYOUT: Full-width card with background image, overlaid text
+:IMAGE: Students with Australian buddies in classroom
+:END:
+
+Not ready for a full enrollment? The Buddy Programme offers a 14-day immersive school experience — English lessons, classroom integration, homestay, and voluntary work.
+
+[[/programs/buddy-programme][Discover the Buddy Programme →]]
+
+-----
+
+** CTA
+:PROPERTIES:
+:SECTION: Full-width CTA banner
+:CTA-PRIMARY: Enquire About School Placements
+:CTA-SECONDARY: Call +61 8 6381 0030
+:END:
+
+*** Headline
+
+Let's find the right school for your child.
+
+*** Body
+
+Contact us for a free assessment. We'll discuss your child's needs, recommend suitable schools, and explain every step of the process.
+
+* V2
+
+** Hero
+:PROPERTIES:
+:SECTION: Hero — full-width
+:LAYOUT: Left-aligned text
+:IMAGE: Primary/secondary students in Australian school uniforms
+:END:
+
+*** Headline
+
+They'll be safe. They'll be supported. They'll thrive.
+
+*** Subheadline
+
+Sending your child to study in Australia is a big decision. We make sure everything — the school, the home, the people around them — is taken care of before they arrive.
+
+-----
+
+** The Australian School System
+:PROPERTIES:
+:SECTION: Two-column — infographic left, text right
+:LAYOUT: 45/55 split. Left: visual diagram of 13-year school system
+:END:
+
+Australia's education system is structured, well-resourced, and globally respected. It spans 13 years:
+
+- *Preparatory year* — Foundation/Kindergarten
+- *Primary* — Years 1–6 (or 1–7 in some states)
+- *Secondary* — Years 7–12 (or 8–12 in some states)
+- Education is *compulsory* until age 16 in most states and territories
+
+Your child can enter at any stage. Public and private schools are available, all regulated to high standards by state and federal authorities. And with Blue Education's SCSA Associate status, we have official recognition from the WA Department of Education — giving us unique insight into the Western Australian curriculum.
+
+-----
+
+** What We Handle
+:PROPERTIES:
+:SECTION: Feature list — icon + heading + description
+:LAYOUT: 2-column grid, 6 items
+:END:
+
+*** School Selection & Placement
+
+Every child is different. We take the time to understand your child's strengths, interests, and needs — then match them with a school where they'll feel at home.
+
+*** Student Visa (Subclass 500)
+
+Visa paperwork for minors can be especially stressful. We manage the entire Subclass 500 application — documentation, health checks, character requirements — so nothing falls through the cracks.
+
+*** Accommodation
+
+Your child will live with a vetted homestay family through the Australian Homestay Network (AHN). Meals included. These are families who genuinely care about their students' wellbeing.
+
+*** Guardianship
+
+Australian law requires legal guardianship for unaccompanied students under 18. We arrange this through Professional Student Care Australia or International Student Alliance — trusted providers we've worked with for years.
+
+*** Welfare Monitoring
+
+We don't just place your child and walk away. We conduct ongoing welfare checks, maintain regular contact with the school, and keep you informed every step of the way — all in compliance with Department of Home Affairs requirements.
+
+*** Cultural Adaptation
+
+Moving to a new country at a young age takes courage. We help your child adjust to Australian school life, social norms, and daily routines — so the transition feels supported, not overwhelming.
+
+-----
+
+** For Parents
+:PROPERTIES:
+:SECTION: Two-column — text left, image right
+:LAYOUT: 60/40 split
+:IMAGE: Parent video-calling with child, or family at airport
+:END:
+
+We know the worry doesn't stop at the departure gate. You'll lie awake some nights wondering if they're eating well, making friends, keeping up at school. We've supported families from over 40 countries through this exact moment — and we've learned that the best thing we can offer is constant, honest communication.
+
+- *24/7 emergency hotline* — for parents and students, any time of day or night
+- *Regular welfare reports* — so you always know how your child is doing
+- *Direct line to guardianship providers* — no middlemen when it matters
+- *On-ground support* in Perth and across major Australian cities
+
+Your child is never on their own. Neither are you.
+
+-----
+
+** Explore the Buddy Programme
+:PROPERTIES:
+:SECTION: Highlight card — image-backed
+:LAYOUT: Full-width card with background image, overlaid text
+:IMAGE: Students with Australian buddies in classroom
+:END:
+
+Not sure if full enrollment is the right step yet? The Buddy Programme is a 14-day immersive school experience — your child attends classes at an Anglican School, stays with a homestay family, participates in voluntary work, and gets a real taste of Australian school life. It's the perfect way to test the waters before committing.
+
+[[/programs/buddy-programme][Discover the Buddy Programme →]]
+
+-----
+
+** CTA
+:PROPERTIES:
+:SECTION: Full-width CTA banner
+:CTA-PRIMARY: Enquire About School Placements
+:CTA-SECONDARY: Call +61 8 6381 0030
+:END:
+
+*** Headline
+
+You want what's best for your child. So do we.
+
+*** Body
+
+Talk to us about your child's needs and goals. We'll recommend schools, explain the process, and answer every question — because the more you know, the more confident you'll feel.
+
+* V3
+
+** Hero
+:PROPERTIES:
+:SECTION: Hero — full-width
+:LAYOUT: Left-aligned text
+:IMAGE: Primary/secondary students in Australian school uniforms
+:END:
+
+*** Headline
+
+Australian school placements for international students aged 5–18.
+
+*** Subheadline
+
+School selection, visa, accommodation, guardianship, and welfare — handled end to end.
+
+-----
+
+** The Australian School System
+:PROPERTIES:
+:SECTION: Two-column — infographic left, text right
+:LAYOUT: 45/55 split. Left: visual diagram of 13-year school system
+:END:
+
+| Stage | Years | Ages |
+|-------+-------+------|
+| Preparatory | Foundation | ~5 |
+| Primary | 1–6 (or 1–7) | 6–12 |
+| Secondary | 7–12 (or 8–12) | 12–18 |
+
+- 13-year system, compulsory until age 16 in most states and territories
+- Public and private options available
+- Regulated by state and federal authorities
+- Blue Education is an SCSA Associate — officially recognised by the WA Department of Education
+
+-----
+
+** What's Included
+:PROPERTIES:
+:SECTION: Feature list — icon + heading + description
+:LAYOUT: 2-column grid, 6 items
+:END:
+
+*** School Selection & Placement
+
+Matched to your child's needs: location, curriculum, fees, learning profile.
+
+*** Student Visa (Subclass 500)
+
+Full application management — documentation, health checks, character requirements.
+
+*** Accommodation
+
+Vetted homestay families via Australian Homestay Network (AHN). Meals included.
+
+*** Guardianship
+
+Legal guardianship arranged through Professional Student Care Australia or International Student Alliance. Required for unaccompanied students under 18.
+
+*** Welfare Monitoring
+
+Ongoing checks, school liaison, family updates. Compliant with Department of Home Affairs requirements.
+
+*** Cultural Adaptation
+
+Support for adjusting to Australian schools, social norms, and daily life.
+
+-----
+
+** Parent Support
+:PROPERTIES:
+:SECTION: Two-column — text left, image right
+:LAYOUT: 60/40 split
+:IMAGE: Parent video-calling with child, or family at airport
+:END:
+
+- 24/7 emergency hotline
+- Regular welfare reports and school updates
+- Direct communication with guardianship providers
+- On-ground support in Perth and major Australian cities
+
+-----
+
+** Try Before You Commit
+:PROPERTIES:
+:SECTION: Highlight card — image-backed
+:LAYOUT: Full-width card with background image, overlaid text
+:IMAGE: Students with Australian buddies in classroom
+:END:
+
+*The Buddy Programme:* 14-day immersive school experience. English lessons, classroom integration, homestay, and voluntary work — in partnership with Anglican Schools.
+
+[[/programs/buddy-programme][Discover the Buddy Programme →]]
+
+-----
+
+** CTA
+:PROPERTIES:
+:SECTION: Full-width CTA banner
+:CTA-PRIMARY: Enquire About School Placements
+:CTA-SECONDARY: Call +61 8 6381 0030
+:END:
+
+*** Headline
+
+Get a free school placement assessment.
+
+*** Body
+
+Tell us your child's age, year level, and preferences. We'll recommend schools and outline the full process.

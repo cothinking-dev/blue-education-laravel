@@ -1,0 +1,71 @@
+#+title: Blog
+#+url: /blog
+#+status: draft
+
+** Hero
+:PROPERTIES:
+:SECTION: Hero — minimal, clean
+:LAYOUT: Left-aligned heading, no background image
+:END:
+
+*** Headline
+
+Blog
+
+*** Subheadline
+
+Education, migration, and career updates for international students.
+
+-----
+
+** Blog Grid
+:PROPERTIES:
+:SECTION: Blog listing — filterable cards
+:LAYOUT: 3-column grid, image-topped cards with title, excerpt, date, category tag
+:NOTE: Dynamic content — CMS-driven. Categories as filter tabs above grid.
+:END:
+
+*** Categories
+
+- All
+- Migration
+- Education
+- Career Advice
+- Living in Australia
+- Study Tips
+
+*** Card Format
+
+Each blog card displays:
+- Featured image
+- Category tag
+- Title
+- Excerpt (2 lines)
+- Publication date
+- Read time estimate
+
+-----
+
+** Newsletter CTA
+:PROPERTIES:
+:SECTION: Inline CTA — email capture
+:LAYOUT: Centered, mid-page, subtle background
+:END:
+
+*** Headline
+
+Stay informed.
+
+*** Body
+
+Education, migration, and career updates — delivered to your inbox.
+
+/[Email input field + Subscribe button]/
+
+-----
+
+** Pagination
+:PROPERTIES:
+:SECTION: Standard pagination
+:LAYOUT: Numbered pages, previous/next
+:END:

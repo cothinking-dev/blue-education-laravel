@@ -1,0 +1,123 @@
+#+title: FAQ
+#+url: /resources/faq
+#+status: draft
+
+** Hero
+:PROPERTIES:
+:SECTION: Hero — minimal
+:LAYOUT: Centered heading, clean background
+:END:
+
+*** Headline
+
+Frequently asked questions.
+
+*** Subheadline
+
+Quick answers for international students, parents, and professionals.
+
+-----
+
+** FAQ Sections
+:PROPERTIES:
+:SECTION: Tabbed accordion — category tabs at top, accordion items below
+:LAYOUT: Tabs for categories, expandable Q&A items within each tab
+:END:
+
+*** Education
+
+**** How do I choose the right course?
+
+We assess your background, goals, and budget and recommend matching programs from 1,100+ institutions and 20,000+ programs.
+
+**** What English level do I need?
+
+| Program Level            | IELTS Minimum |
+|--------------------------+---------------|
+| Foundation               | 5.0 – 5.5    |
+| VET/TAFE                 | 5.5 – 6.0    |
+| Bachelor                 | 6.5           |
+| Graduate Cert/Diploma    | 6.5 – 7.0    |
+| Master/Doctoral          | 6.5 – 7.0    |
+
+Postgraduate programs: no individual band below 6.0–6.5. Also accepted: TOEFL, Cambridge CAE, Pearson PTE. Scores valid for 2 years. If you're not at the required level, [[/services/education/english-foundation][ELICOS courses]] (10–30 weeks) can bridge the gap.
+
+**** Can I change courses after I start?
+
+Usually yes, but it may affect your visa conditions. Talk to us before making changes.
+
+*** Migration & Visas
+
+**** How long does a student visa take?
+
+4–8 weeks typical. We review applications for completeness before submission to avoid delays.
+
+**** Can I work while studying?
+
+Yes. [[/services/migration/student-visas][Student visa]] holders can work up to 48 hours per fortnight during term and unlimited hours during breaks.
+
+**** What happens after I graduate?
+
+You may be eligible for a [[/services/migration/graduate-work-visas][Graduate/Post-Study Work Visa (Subclass 485)]]. Two streams:
+
+*Graduate Work Stream:* 18 months — for graduates with skills on the skilled occupation list.
+
+*Post-Study Work Stream:*
+
+| Qualification | Duration |
+|---------------+----------|
+| Bachelor      | 2 years  |
+| Master        | 3 years  |
+| Doctoral      | 4 years  |
+
+Both streams provide full work rights and a pathway to permanent residency.
+
+*** Career
+
+**** Do you guarantee job placement?
+
+No. We provide career counseling, job readiness training, employer introductions, and internship placements. These significantly improve employment prospects but do not guarantee placement.
+
+**** When should I start career planning?
+
+Before choosing your course. Career goals should drive education decisions, not the other way around.
+
+*** Fees & Costs
+
+**** How much does Blue Education charge?
+
+Varies by service and complexity. Initial consultation is free. Full fee breakdown provided before any commitment.
+
+**** What other costs should I budget for?
+
+- Tuition (paid to institution)
+- Accommodation
+- OSHC (mandatory health insurance)
+- Living expenses
+- Visa application fees
+- Medical examination ($240–$380)
+
+Details: [[/fees][Fees & Investment →]]
+
+*** Student Support
+
+**** What if there's an emergency?
+
+24/7 emergency hotline. Multilingual support. All Blue Education clients covered.
+
+**** Do you provide accommodation?
+
+Yes. Through the Australian Homestay Network — vetted families, meals included. Guardianship arranged for under-18 students through Professional Student Care Australia or International Student Alliance. [[/services/student-support][Student support services →]]
+
+-----
+
+** Still Have Questions?
+:PROPERTIES:
+:SECTION: CTA — inline
+:CTA-PRIMARY: Contact Us
+:CTA-SECONDARY: Call +61 8 6381 0030
+:END:
+
+*** Body
+
+Contact us directly. We respond to all enquiries within one business day.

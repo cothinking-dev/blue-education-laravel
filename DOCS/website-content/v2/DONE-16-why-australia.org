@@ -1,0 +1,138 @@
+#+title: Why Australia
+#+url: /why-australia
+#+status: draft
+
+** Hero
+:PROPERTIES:
+:SECTION: Hero — full-width, landscape imagery
+:LAYOUT: Centered text
+:IMAGE: Iconic Australian landscape — Perth skyline, beach, or university campus
+:END:
+
+*** Headline
+
+Five things Australia gets right for international students.
+
+*** Subheadline
+
+Globally recognised degrees, post-study work rights, and a quality of life that consistently ranks among the world's best. Western Australia included.
+
+-----
+
+** Five Reasons
+:PROPERTIES:
+:SECTION: Alternating two-column — numbered, text/image alternating sides
+:LAYOUT: 5 rows, each with large number, heading, body text, and image
+:END:
+
+*** 01. Globally recognised qualifications
+:PROPERTIES:
+:IMAGE: University lecture hall, diverse students
+:END:
+
+Nine [[/services/education/degrees][Australian universities]] rank in the QS World University Rankings top 100 — six of them in the top 50. Every institution is regulated by TEQSA, Australia's national quality assurance framework, ensuring standards that employers and institutions worldwide recognise.
+
+An Australian degree travels well. That's the point.
+
+*** 02. More choice than almost anywhere
+:PROPERTIES:
+:IMAGE: Campus variety — modern architecture, labs, outdoor learning
+:END:
+
+1,100+ institutions. 20,000+ programs. From 10-week [[/services/education/english-foundation][English language courses]] to doctoral research, [[/services/education/vet-tafe][vocational training]] to executive education — Australia offers a pathway for every ambition, every level, every budget.
+
+*** 03. Work while you study — and after
+:PROPERTIES:
+:IMAGE: Young professional in office setting, Australian city background
+:END:
+
+Australia actively encourages [[/services/migration/student-visas][international students]] to work. After graduation, the [[/services/migration/graduate-work-visas][Post-Study Work Visa (Subclass 485)]] gives you real time to build your career:
+
+| Qualification   | Post-Study Work Visa |
+|-----------------+----------------------|
+| Bachelor Degree | 2 years              |
+| Master Degree   | 3 years              |
+| Doctoral Degree | 4 years              |
+
+The Graduate Work Stream provides 18 months for graduates with skills on the relevant occupation lists. Either way, it's a genuine [[/services/career][career launchpad]].
+
+*** 04. A lifestyle that's hard to beat
+:PROPERTIES:
+:IMAGE: Perth coastline, outdoor lifestyle, café culture
+:END:
+
+The 2025 EIU Global Liveability Index placed three Australian cities in the world's top 10. Melbourne fourth. Sydney sixth. Adelaide ninth. The factors assessed: stability, healthcare, culture, education, and infrastructure. Australia performs well across all of them.
+
+*** 05. Affordable compared to the alternatives
+:PROPERTIES:
+:IMAGE: City comparison graphic or cost-of-living infographic
+:END:
+
+Australia offers competitive tuition fees across its university sector — from AUD $20,000 per year for many undergraduate programs. Perth and regional cities offer a lower cost of living than Australia's east coast capitals. The combination makes a meaningful difference over a two to four year degree.
+
+-----
+
+** Perth & Western Australia
+:PROPERTIES:
+:SECTION: Two-column — text left, comparison table right
+:LAYOUT: 50/50 split
+:IMAGE: Perth city skyline, Kings Park, Swan River
+:NOTE: Client direction — position WA as "the golden state of education"
+:END:
+
+*** Headline
+
+Why Perth.
+
+*** Body
+
+Perth is Western Australia's capital and Blue Education's home base. It's also one of the most underrated study destinations in Australia — four globally ranked universities, a thriving job market across mining, technology, healthcare, and education, and a liveability ranking that consistently places it among the world's top 15 cities.
+
+*** Perth Advantage
+
+| Factor            | Perth                                        |
+|-------------------+----------------------------------------------|
+| Cost of living    | Lower than Sydney and Melbourne               |
+| Class sizes       | Smaller, more personal attention              |
+| Safety            | Lower crime rate than most eastern Australian capitals |
+| Job market        | Mining, technology, healthcare, education     |
+| Climate           | Year-round sunshine                           |
+| [[/contact][Blue Education HQ]] | On-ground support and local expertise         |
+
+-----
+
+** Multicultural by Design
+:PROPERTIES:
+:SECTION: Feature strip — icon + text, 3 columns
+:LAYOUT: Horizontal, icons centered above text
+:END:
+
+*** Culturally diverse
+
+One of the most multicultural countries on earth.
+
+*** English immersion
+
+Full daily immersion in the global language of business and science.
+
+*** Legal protections
+
+Strong anti-discrimination laws. International student rights protected at every level.
+
+-----
+
+** CTA
+:PROPERTIES:
+:SECTION: Full-width CTA banner
+:LAYOUT: Centered, warm background image (sunset, campus)
+:CTA-PRIMARY: Book an Education Assessment
+:CTA-SECONDARY: Explore Education Services
+:END:
+
+*** Headline
+
+Talk to someone who knows Western Australia.
+
+*** Body
+
+Perth-based advisors with 28 years of experience, serving clients from 40+ countries. We'll tell you what fits your situation — no guesswork.

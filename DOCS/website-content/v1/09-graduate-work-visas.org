@@ -1,0 +1,289 @@
+#+title: Graduate & Work Visas
+#+url: /services/migration/graduate-work-visas
+#+status: draft
+
+* V1
+
+** Hero
+:PROPERTIES:
+:SECTION: Hero — full-width
+:LAYOUT: Left-aligned text
+:IMAGE: young professional in Australian office
+:END:
+
+*** Headline
+
+Graduate. Stay. Build your career.
+
+*** Subheadline
+
+The Subclass 485 visa gives you 18 months to 4 years of work rights in Australia after graduation, depending on your qualification. We'll help you make the most of them.
+
+-----
+
+** Post-Study Work Visa (Subclass 485)
+:PROPERTIES:
+:SECTION: Two-column — text left, table right
+:LAYOUT: 55/45 split
+:END:
+
+*** Body
+
+The Subclass 485 visa is your bridge from study to career. It lets you live, work, and study in Australia after completing your qualification — giving you time to gain real work experience, build your professional network, and explore permanent residence pathways.
+
+*** Two Visa Streams
+
+*Graduate Work Stream*
+- Duration: 18 months
+- For graduates with skills and qualifications on relevant skilled occupation lists
+
+*Post-Study Work Stream*
+Duration varies by qualification level:
+
+| Qualification   | Duration |
+|-----------------+----------|
+| Bachelor Degree | 2 years  |
+| Master Degree   | 3 years  |
+| Doctoral Degree | 4 years  |
+
+-----
+
+** Employer Sponsored Visas
+:PROPERTIES:
+:SECTION: BentoBox — 2 cards
+:LAYOUT: Side by side, equal height
+:END:
+
+*** Temporary Skill Shortage (TSS) — Subclass 482
+
+For skilled workers with a job offer from an approved Australian employer. Allows you to work in Australia for up to 4 years and can lead to permanent residence.
+
+*** Employer Nomination Scheme (ENS)
+
+Direct pathway to permanent residence through employer sponsorship. Your employer nominates you for a permanent position.
+
+Both the Subclass 485 and employer-sponsored visas include family inclusion options — your partner and dependent children can be included in your application.
+
+-----
+
+** For Employers: Standard Business Sponsor
+:PROPERTIES:
+:SECTION: Highlight card — subtle background
+:LAYOUT: Full-width, icon left, text right
+:END:
+
+Need to hire international talent? We help Australian businesses become Standard Business Sponsors (SBS) — a 5-year approval to sponsor skilled workers.
+
+- SBS application preparation and lodgement
+- Compliance training and ongoing obligation guidance
+- Streamlined pathway to nominate workers
+
+-----
+
+** CTA
+:PROPERTIES:
+:SECTION: Full-width CTA banner
+:CTA-PRIMARY: Book a Work Visa Assessment
+:CTA-SECONDARY: Call +61 8 6381 0030
+:END:
+
+*** Headline
+
+Graduated or about to graduate?
+
+*** Body
+
+Don't wait until the last minute. Let us assess your work visa options now so you can transition from study to career without gaps.
+
+* V2
+
+** Hero
+:PROPERTIES:
+:SECTION: Hero — full-width
+:LAYOUT: Left-aligned text
+:IMAGE: young professional in Australian office
+:END:
+
+*** Headline
+
+You worked hard to graduate. Now it is time to build something with it.
+
+*** Subheadline
+
+Graduation is a milestone — but for international students, it also brings a wave of uncertainty. Can I stay? Will I find work? Is there a path to something permanent? The answer is yes. And it starts with the right visa, applied for at the right time, with the right support.
+
+-----
+
+** Post-Study Work Visa (Subclass 485)
+:PROPERTIES:
+:SECTION: Two-column — text left, table right
+:LAYOUT: 55/45 split
+:END:
+
+*** Body
+
+The Subclass 485 is your bridge between student life and your career in Australia. It gives you the legal right to live, work, and continue studying — and the time to build real experience, grow your professional network, and start thinking about permanent residence.
+
+For many of our clients, this visa is the turning point. It is where Australia stops being "the place I studied" and becomes "the place I am building my life."
+
+We have guided graduates through this transition since 1998 — across every qualification level, from trade certificates to doctoral degrees. We know the timelines, the requirements, and the pitfalls to avoid.
+
+There are two streams, depending on your qualification:
+
+*** Graduate Work Stream
+
+For graduates with skills and qualifications on relevant skilled occupation lists — 18 months of work rights.
+
+*** Post-Study Work Stream
+
+Duration depends on your qualification level:
+
+| Qualification   | Duration   |
+|-----------------+------------|
+| Bachelor Degree | 2 years    |
+| Master Degree   | 3 years    |
+| Doctoral Degree | 4 years    |
+
+-----
+
+** Employer Sponsored Visas
+:PROPERTIES:
+:SECTION: BentoBox — 2 cards
+:LAYOUT: Side by side, equal height
+:END:
+
+*** Temporary Skill Shortage (TSS) — Subclass 482
+
+Your employer values you enough to sponsor your visa. The TSS visa lets you work in Australia for up to 4 years — and it can lead to permanent residence. We handle the application so neither you nor your employer has to navigate the complexity alone.
+
+*** Employer Nomination Scheme (ENS)
+
+This is the direct path to permanent residence through your employer. They nominate you for a permanent position, and we manage the nomination application, labour market testing, and compliance. For many clients, this is the moment everything clicks into place.
+
+-----
+
+** For Employers: Standard Business Sponsor
+:PROPERTIES:
+:SECTION: Highlight card — subtle background
+:LAYOUT: Full-width, icon left, text right
+:END:
+
+If you are an Australian business looking to hire international talent, we can help you become a Standard Business Sponsor (SBS). This is a 5-year approval that allows you to sponsor skilled workers — and we make the process straightforward.
+
+- SBS application preparation and lodgement
+- Compliance training so you understand your obligations
+- A streamlined pathway to nominate workers when you need them
+
+-----
+
+** CTA
+:PROPERTIES:
+:SECTION: Full-width CTA banner
+:CTA-PRIMARY: Book a Work Visa Assessment
+:CTA-SECONDARY: Call +61 8 6381 0030
+:END:
+
+*** Headline
+
+Do not let uncertainty stall your momentum.
+
+*** Body
+
+Whether you are about to graduate or already have your degree in hand, the best time to explore your work visa options is now. Book a free assessment and we will map out your next steps — honestly and clearly.
+
+* V3
+
+** Hero
+:PROPERTIES:
+:SECTION: Hero — full-width
+:LAYOUT: Left-aligned text
+:IMAGE: young professional in Australian office
+:END:
+
+*** Headline
+
+Graduate visas and work visas. Sorted.
+
+*** Subheadline
+
+Post-study work visa (485), employer-sponsored visa (482), Employer Nomination Scheme. One team handles all three.
+
+-----
+
+** Post-Study Work Visa (Subclass 485)
+:PROPERTIES:
+:SECTION: Two-column — text left, table right
+:LAYOUT: 55/45 split
+:END:
+
+*** Body
+
+The Subclass 485 lets you live, work, and study in Australia after graduation. Duration depends on your qualification level. It is your bridge to skilled migration or employer sponsorship.
+
+*** Duration by Qualification
+
+| Qualification   | Duration   | Stream             |
+|-----------------+------------+--------------------|
+| Trade/VET       | 18 months  | Graduate Work      |
+| Bachelor Degree | 2 years    | Post-Study Work    |
+| Master Degree   | 3 years    | Post-Study Work    |
+| Doctoral Degree | 4 years    | Post-Study Work    |
+
+*** What we handle
+
+- Eligibility assessment
+- Application preparation and lodgement
+- Department of Home Affairs liaison
+- Family inclusion where applicable
+
+-----
+
+** Employer Sponsored Visas
+:PROPERTIES:
+:SECTION: BentoBox — 2 cards
+:LAYOUT: Side by side, equal height
+:END:
+
+*** Temporary Skill Shortage (TSS) — Subclass 482
+
+| Who qualifies      | Skilled workers with a job offer from an approved Australian employer |
+| Duration           | Up to 4 years                                                        |
+| PR pathway         | Yes                                                                  |
+| What we do         | Full application support for worker and employer                     |
+
+*** Employer Nomination Scheme (ENS)
+
+| Who qualifies      | Workers nominated by their employer for a permanent role |
+| Outcome            | Permanent residence                                      |
+| What we do         | Nomination application, labour market testing, compliance |
+
+-----
+
+** For Employers: Standard Business Sponsor (SBS)
+:PROPERTIES:
+:SECTION: Highlight card — subtle background
+:LAYOUT: Full-width, icon left, text right
+:END:
+
+Need to sponsor international talent? You need SBS approval first.
+
+| What it is         | 5-year approval to sponsor skilled workers |
+| What we do         | Application, compliance training, ongoing support |
+| Timeline           | We prepare and lodge on your behalf        |
+
+-----
+
+** CTA
+:PROPERTIES:
+:SECTION: Full-width CTA banner
+:CTA-PRIMARY: Book a Work Visa Assessment
+:CTA-SECONDARY: Call +61 8 6381 0030
+:END:
+
+*** Headline
+
+Graduated or about to?
+
+*** Body
+
+Free work visa assessment. We review your options and give you a clear next step. Book now — do not wait until your student visa expires.

@@ -1,0 +1,127 @@
+#+title: VET & TAFE
+#+url: /services/education/vet-tafe
+#+status: draft
+
+** Hero
+:PROPERTIES:
+:SECTION: Hero — full-width
+:LAYOUT: Left-aligned text
+:IMAGE: Hands-on workshop/training environment
+:END:
+
+*** Headline
+
+VET and TAFE qualifications open careers.
+
+*** Subheadline
+
+Practical training across trades, technical fields, and specialist roles — with many qualifications aligning directly to Australia's skilled migration pathways.
+
+-----
+
+** What is VET/TAFE?
+:PROPERTIES:
+:SECTION: Two-column — text left, image right
+:LAYOUT: 55/45 split
+:IMAGE: TAFE campus, students in workshop
+:END:
+
+Vocational Education and Training (VET) is delivered through Technical and Further Education (TAFE) institutions and Registered Training Organisations (RTOs) across Australia.
+
+VET qualifications emphasise practical, hands-on skills. You learn in workshops, labs, and real workplace settings. Graduates enter the workforce job-ready, with qualifications employers trust.
+
+-----
+
+** Is VET right for you?
+:PROPERTIES:
+:SECTION: 3-column card grid
+:LAYOUT: Desktop: 3 equal-width cards, icon at top of each card, heading + short paragraph per card. Mobile: stack vertically.
+:END:
+
+*** You want to work in a trade or specialist role
+
+Not every career requires a degree. VET qualifications are built around the skills employers actually hire for — and most can be completed in under two years.
+
+*** You're changing careers
+
+VET is well-suited to career changers who need industry-recognised credentials in a new field without starting from scratch academically. [[/services/career][Career services →]] can help you identify the right pathway.
+
+*** You have migration goals
+
+Many VET occupations sit on Australia's skilled occupation lists. The right qualification can be the most direct route to a skilled migration pathway.
+
+-----
+
+** What You Can Study
+:PROPERTIES:
+:SECTION: Tag/chip grid
+:LAYOUT: Pill-style tags displayed in a wrapping grid. No descriptions needed — sector names only. Preceded by a short intro line. Mobile: wrap naturally.
+:END:
+
+Industries available through TAFE and registered training providers across Australia:
+
+- Construction & Trades
+- Business & Administration
+- Information Technology
+- Hospitality & Tourism
+- Childcare & Community Services
+- Healthcare Support
+- Automotive
+- Creative Industries
+
+-----
+
+** Qualification Levels
+:PROPERTIES:
+:SECTION: Table — clean, minimal
+:LAYOUT: Full-width reference table
+:END:
+
+| Qualification      | Duration     | Career Outcome                    | Min. IELTS |
+|--------------------+--------------+-----------------------------------+------------|
+| Certificate I–II   | 6–12 months  | Entry-level roles                 | 5.5        |
+| Certificate III–IV | 6–18 months  | Skilled trades, technical roles   | 5.5        |
+| Diploma            | 1–2 years    | Supervisory, specialist roles     | 5.5–6.0    |
+| Advanced Diploma   | 1.5–2 years  | Management, university pathway    | 5.5–6.0    |
+
+/English requirements are a general guide. Individual institutions may set higher thresholds./
+
+-----
+
+** Why VET?
+:PROPERTIES:
+:SECTION: 3-column feature list
+:LAYOUT: Desktop: 3 equal columns. Each item: icon left-aligned inline with heading (not above), bold heading, short paragraph below. Open layout — no card backgrounds, no box borders, no shadow. Subtle left accent rule on each item. Mobile: stack vertically.
+:NOTE: Intentionally differentiated from the "Is VET right for you?" card grid earlier on this page — lighter visual treatment to avoid back-to-back identical formats.
+:END:
+
+*** Industry-aligned training
+
+Training happens in workshops, labs, and workplaces. What you learn maps directly to what employers expect on day one.
+
+*** Credit towards a degree
+
+Diploma and Advanced Diploma holders can apply for credit recognition at Australian universities — reducing the time required to complete a bachelor degree.
+
+*** Skilled migration pathways
+
+Many VET occupations appear on Australia's skilled occupation lists. For students with migration goals, the right qualification can open that door directly. Eligible graduates may also qualify for the Graduate Work Stream visa (18 months).
+
+[[/services/migration/graduate-work-visas][Learn about graduate work visas →]]
+
+-----
+
+** CTA
+:PROPERTIES:
+:SECTION: Full-width CTA banner
+:CTA-PRIMARY: Explore VET Options
+:CTA-SECONDARY: Call +61 8 6381 0030
+:END:
+
+*** Headline
+
+Find the right VET qualification.
+
+*** Body
+
+Talk to an advisor. They'll match your career goals to the right programme and confirm whether it opens a pathway to skilled migration.

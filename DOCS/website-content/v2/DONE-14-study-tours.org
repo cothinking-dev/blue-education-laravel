@@ -1,0 +1,95 @@
+#+title: Study Tours
+#+url: /programs/study-tours
+#+status: draft
+
+** Hero
+:PROPERTIES:
+:SECTION: Hero — full-width
+:LAYOUT: Centered text
+:IMAGE: Group of students exploring Fremantle or coastal WA
+:END:
+
+*** Headline
+
+Short-term study tours in Australia.
+
+*** Subheadline
+
+Educational and cultural immersion programs. One week to several months. Groups and individuals. No long-term enrolment required.
+
+-----
+
+** Featured: Culinary Study Tour
+:PROPERTIES:
+:SECTION: Two-column — image left, text right
+:LAYOUT: 45/55 split
+:IMAGE: Food preparation, Fremantle markets, coastal setting
+:TAG: Fremantle, Western Australia
+:END:
+
+*** Headline
+
+Cook. Explore. Experience Western Australia.
+
+*** Body
+
+Hands-on culinary training and cultural immersion in Fremantle — one of [[/why-australia][Western Australia]]'s most vibrant coastal cities. Australian cooking techniques, local food markets, and Perth's food culture firsthand.
+
+For culinary students, food professionals, and anyone who wants to experience Australia through its food.
+
+-----
+
+** Short-Term Immersion Programs
+:PROPERTIES:
+:SECTION: Feature list — icon + heading + text
+:LAYOUT: Vertical list, 4 items
+:END:
+
+*** Flexible Duration
+
+From one week to several months. Choose the length that fits your schedule and goals.
+
+*** Academic & Cultural
+
+Every program combines educational content with cultural experiences — classroom learning meets real-world Australia.
+
+*** No Long-Term Commitment
+
+Explore Australian education without committing to a full degree or enrolment.
+
+*** Certificate of Participation
+
+All participants receive a certificate of participation — useful for CVs and scholarship documentation.
+
+-----
+
+** Custom Group Tours
+:PROPERTIES:
+:SECTION: Highlight card
+:LAYOUT: Full-width, subtle background
+:END:
+
+We design bespoke study tours for schools, universities, and organisations. Tell us your group size, interests, and timeline — we build the program.
+
+-----
+
+** Also Relevant
+
+/Also relevant: [[/programs/buddy-programme][Buddy Programme →]] · [[/contact][Enquire about a custom tour →]]/
+
+-----
+
+** CTA
+:PROPERTIES:
+:SECTION: Full-width CTA banner
+:CTA-PRIMARY: Enquire About Study Tours
+:CTA-SECONDARY: Call +61 8 6381 0030
+:END:
+
+*** Headline
+
+Get tour details.
+
+*** Body
+
+Contact us for available dates, pricing, and custom program options.

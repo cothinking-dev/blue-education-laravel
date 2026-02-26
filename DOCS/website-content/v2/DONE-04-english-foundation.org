@@ -1,0 +1,164 @@
+#+title: English & Foundation Programs
+#+url: /services/education/english-foundation
+#+status: draft
+
+** Hero
+:PROPERTIES:
+:SECTION: Hero — full-width
+:LAYOUT: Centered text
+:IMAGE: Diverse students in classroom, engaged in discussion
+:END:
+
+*** Headline
+
+English and Foundation programmes for students on their way to an Australian university.
+
+*** Subheadline
+
+ELICOS and Foundation programmes cover the two most common gaps: English proficiency and academic preparation. Your advisor will assess which applies to you, place you in the right course, and stay with you through to enrolment.
+
+-----
+
+** ELICOS Courses
+:PROPERTIES:
+:SECTION: Two-column intro + full-width table row below
+:LAYOUT: Desktop: 55/45 text left / image right, then standalone 3-column table spanning full width. Mobile: stack text → image → table.
+:IMAGE: Language classroom, small group work
+:END:
+
+*** What is ELICOS?
+
+Most Australian universities require an IELTS score of 6.5 or higher for undergraduate entry. ELICOS is how you get there — structured English courses delivered at private colleges and university English colleges across Australia.
+
+Classes cover the four core skills: reading, writing, listening, and speaking. Duration depends on where your English is now — your advisor will assess your level before you enrol.
+
+*** Course Durations
+
+| Block         | Duration | Best For                                          |
+|---------------+----------+---------------------------------------------------|
+| Intensive     | 10 weeks | Upper-intermediate students close to target score |
+| Comprehensive | 20 weeks | Intermediate students building toward entry        |
+| Extended      | 30 weeks | Beginner to lower-intermediate                    |
+
+-----
+
+** Course Types
+:PROPERTIES:
+:SECTION: 3-column card grid (pricing-style)
+:LAYOUT: Desktop: 3 equal columns, icon-topped, tagline + description + bullet list per card. Mobile: stack vertically.
+:END:
+
+*** General English
+/For students building everyday communication/
+
+The foundation course. Covers all four skills — speaking, listening, reading, and writing — with a focus on using English in real situations, not just studying it.
+
+- Speaking and listening for daily life in Australia
+- Vocabulary, grammar, and sentence structure
+- Reading and writing for practical contexts
+- Available from beginner level upward
+- ESP streams available: business, aviation, and tourism
+
+*** Academic English
+/For students preparing for university entry/
+
+Structured preparation for study at an English-speaking university. Covers the skills you'll use from your first lecture — and the ones assessors look for in written work.
+
+- Essay writing and academic referencing
+- Academic reading and critical analysis
+- Research skills and in-class presentations
+- Includes English Language Bridging (delivered through university English colleges)
+
+*** Test Preparation
+/For students targeting a specific score/
+
+Australian universities and the Department of Home Affairs both accept IELTS, PTE Academic, Cambridge CAE, and TOEFL iBT. This course is built around those exams specifically — strategy and timed practice, not general English revision. Blue Education is a registered TOEFL iBT test centre.
+
+- IELTS, PTE Academic, Cambridge CAE, TOEFL iBT
+- Exam strategy and timed practice tests
+- Score improvement across all four bands
+- Targets both course entry and visa requirements
+
+-----
+
+** English for Teaching
+:PROPERTIES:
+:SECTION: Standalone callout panel
+:LAYOUT: Desktop: accent/muted background (not dark), icon or small image left / text right (60/40). Mobile: stack image → text. Visually distinct from card grid above.
+:END:
+
+*** Heading
+
+Teaching English professionally? There's a qualification for that.
+
+*** Body
+
+Blue Education also assists you in obtaining professional English teaching qualifications — for educators pursuing careers in international English instruction, not students preparing for university.
+
+- *TESOL* — Teaching English to Speakers of Other Languages
+- *CELTA* — Certificate in Teaching English to Speakers of Other Languages
+- *EfTC* — English for Teaching Children
+
+-----
+
+** Foundation Studies
+:PROPERTIES:
+:SECTION: Two-column — text left, pathway diagram right
+:LAYOUT: 55/45 split. Right side: simple visual pathway diagram
+:END:
+
+*** What are Foundation programmes?
+
+Foundation programmes are for international students who've finished high school but don't yet meet direct entry requirements for an Australian university.
+
+Rather than waiting or reapplying, you complete a one-year programme that builds the academic skills your target degree expects — and earns you a place at a partner university on completion.
+
+*** What you get
+
+- Subject-specific preparation aligned to your intended degree
+- Academic writing, research methods, and critical thinking
+- Credit towards your first year of university in some programmes
+- Direct entry to a partner university on successful completion
+
+-----
+
+** The Pathway
+:PROPERTIES:
+:SECTION: Timeline — horizontal, 3 steps
+:LAYOUT: Connected arrows, simple. Add short intro line above the steps: "Your pathway depends on where the gap is." Label each step as a starting point, not a mandatory sequence — most students need one stage, some need both.
+:END:
+
+*** Intro
+
+Your pathway depends on where the gap is.
+
+*** ELICOS
+
+Your English reaches the level required — for your course, your visa, and your first day of lectures. Duration is 10 to 30 weeks depending on your starting point. Your advisor assesses your level and confirms which block suits you before you enrol.
+
+*** Foundation
+
+One year of structured academic preparation aligned to your intended degree. You cover the subject knowledge and study skills your first year expects, then enter directly into a partner university on completion.
+
+*** University
+
+You start your degree having already covered the groundwork it requires. The first semester is still demanding — but you're prepared for it. Once you receive your university offer, you'll need to apply for a [[/services/migration/student-visas][student visa →]].
+
+-----
+
+** CTA
+:PROPERTIES:
+:SECTION: Full-width CTA banner
+:CTA-PRIMARY: Assess My English Level
+:CTA-SECONDARY: View Admission Requirements
+:END:
+
+*** Headline
+
+Find out where your English sits.
+
+*** Body
+
+An English level assessment takes the guesswork out. Your advisor will tell you exactly which course suits your situation and what comes next.
+
+[[/resources/admission-requirements][View admission requirements →]]

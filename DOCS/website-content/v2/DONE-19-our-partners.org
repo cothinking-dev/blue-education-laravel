@@ -1,0 +1,96 @@
+#+title: Our Partners
+#+url: /about/partners
+#+status: draft
+
+** Hero
+:PROPERTIES:
+:SECTION: Hero — subtle, clean
+:LAYOUT: Centered text, light background
+:END:
+
+*** Headline
+
+28 years of institutional partnerships. Industry accredited.
+
+*** Subheadline
+
+Direct relationships with Australian universities, TAFEs, and RTOs. Professional credentials that back it up.
+
+-----
+
+** Institutional Partners
+:PROPERTIES:
+:SECTION: Logo grid with section heading
+:LAYOUT: Grid of partner logos, grayscale, color on hover. Universities grouped first, then TAFE & RTOs below. Mobile: 2-column wrap per group.
+:NOTE: Full partner list to be confirmed with client. WA universities confirmed: UWA, Curtin, Murdoch, ECU, Notre Dame. Additional partner universities across Australia to be added. TAFE WA and RTO partners to be confirmed. Logos needed from client.
+:END:
+
+*** Universities
+
+Blue Education works with all five [[/services/education/degrees][Western Australian universities]] and a broader network of partner institutions across Australia. Access to over 1,100 institutions and 20,000 programmes means your options aren't limited to what one agent happens to represent.
+
+/[WA partner university logos: UWA, Curtin, Murdoch, ECU, Notre Dame — plus additional national partners. Full list and logos to be supplied by client.]/
+
+*** TAFE & Training Providers
+
+Direct relationships with [[/services/education/vet-tafe][TAFE WA]] and registered training organisations across Western Australia and nationally. VET applications handled the same way as university placements — with the same advisor, start to finish.
+
+/[TAFE WA and RTO partner logos — to be supplied by client.]/
+
+-----
+
+** Professional Credentials
+:PROPERTIES:
+:SECTION: Feature list — logo + description, 4 items
+:LAYOUT: Vertical list, logo left, text right
+:END:
+
+*** QEAC Certified
+
+Qualified Education Agent Counsellor — the premier professional qualification for education agents in Australia.
+
+*** Migration Alliance
+
+Australia's largest professional body for migration agents. Access to current industry knowledge, professional development, and peer networks.
+
+*** Migration Institute of Australia
+
+The MIA represents the highest professional and ethical standards in migration advice and services.
+
+*** Australian Bar Association
+
+Access to legal expertise relevant to education and migration matters.
+
+-----
+
+** International Offices
+:PROPERTIES:
+:SECTION: Map graphic with location pins
+:LAYOUT: World map with labeled pins, or simple location grid
+:END:
+
+| Location        | Representative     | Market Coverage    |
+|-----------------+--------------------+--------------------|
+| Perth, WA (HQ)  | Glen + core team   | Australia-wide     |
+| Japan           | Minami Sakamoto    | Northeast Asia     |
+| New Zealand     | Sherene            | Oceania            |
+| Zambia          | Elijah             | Africa             |
+| Indonesia       | Hana               | Southeast Asia     |
+| Malaysia        | Elaine Ho, Monica Low | Southeast Asia     |
+
+-----
+
+** CTA
+:PROPERTIES:
+:SECTION: Full-width CTA banner
+:CTA-PRIMARY: Partner With Us
+:CTA-SECONDARY: Contact Our Team
+:END:
+
+*** Headline
+
+Partner with Blue Education.
+
+*** Body
+
+We work with institutions and organisations committed to student outcomes. Contact us to start a conversation.

@@ -1,0 +1,749 @@
+* Blue Education Website Rebrand - Work Breakdown Structure
+** Project Overview
+*Objective:* Rebrand the kookaquest website (https://kookaquest.cothink.ing) to Blue Education Australia *Scope:* Full website rebrand including design, content, technical implementation, and SEO setup *Current Site:* 6 pages (Homepage, Buddy Program, Culinary Study Tour, English Courses, Contact, Privacy Policy) *Target Outcome:* Comprehensive website representing all Blue Education services with individual service pages
+
+--------------
+
+** Executive Summary
+*** Pages Analysis
+*Existing Pages (6 total):* 1. Homepage - REBRAND 2. Buddy Program - REBRAND & REPOSITION 3. Culinary Study Tour - REBRAND 4. English Courses - REBRAND & EXPAND 5. Contact - REBRAND 6. Privacy Policy - UPDATE
+
+*New Pages Required: 34 pages*
+
+*Total Website Pages: 40 pages*
+
+--------------
+
+** Phase 1: Planning & Strategy (Week 1)
+*** 1.1 Content Strategy & Information Architecture
+- [ ] Map all Blue Education services to page structure
+- [ ] Define URL structure and navigation hierarchy
+- [ ] Create content templates for each page type
+- [ ] Define SEO keyword strategy per service
+- [ ] Plan internal linking structure
+- [ ] Create sitemap (XML and visual)
+
+*** 1.2 Design & Branding Strategy
+- [ ] Develop Blue Education brand guidelines (colors, typography, imagery style)
+- [ ] Design component library (buttons, cards, forms, CTAs)
+- [ ] Create wireframes for all page templates
+- [ ] Design mockups for key pages (Homepage, 2-3 service pages)
+- [ ] Define mobile-responsive breakpoints
+- [ ] Plan image and media requirements
+
+*** 1.3 Technical Planning
+- [ ] Audit existing kookaquest technical stack
+- [ ] Plan migration approach (content, URLs, redirects)
+- [ ] Set up development, staging, and production environments
+- [ ] Plan form integrations (contact forms, applications)
+- [ ] Define analytics and tracking requirements
+- [ ] Plan CMS structure (if applicable)
+
+*Deliverables:* - Site architecture document - Brand guidelines document - Design system - Technical specification document - Project timeline
+
+--------------
+
+** Phase 2: Content Development (Week 2-4)
+*** 2.1 Existing Pages - Content Rebrand (5 pages)
+**** 2.1.1 Homepage
+- [ ] Rebrand hero section (Blue Education value proposition)
+- [ ] Update service categories (Education, Migration, Career, Support)
+- [ ] Rewrite “Why Australia” section with Blue Education perspective
+- [ ] Update featured programs section
+- [ ] Add testimonials/success stories
+- [ ] Update contact information and location
+- [ ] SEO optimization (title, meta, headings)
+
+**** 2.1.2 Buddy Program (rebrand under Primary & Secondary Education)
+- [ ] Align content with Blue Education brand voice
+- [ ] Update program details and pricing
+- [ ] Add integration with guardianship services
+- [ ] Update application process
+- [ ] Refresh imagery and callouts
+- [ ] SEO optimization
+
+**** 2.1.3 Culinary Study Tour (rebrand under Study Tours)
+- [ ] Rebrand to Blue Education offering
+- [ ] Update program inclusions and benefits
+- [ ] Align with Blue Education service standards
+- [ ] Update booking and application process
+- [ ] Refresh imagery
+- [ ] SEO optimization
+
+**** 2.1.4 English Courses (expand to ELICOS page)
+- [ ] Expand content to match Blue Education's ELICOS offerings
+- [ ] Add all 7 program pathways from services document
+- [ ] Include partner institutions
+- [ ] Add pathway progression flowchart
+- [ ] Update pricing and duration details
+- [ ] SEO optimization
+
+**** 2.1.5 Contact Page
+- [ ] Update to Blue Education Perth address
+- [ ] Add phone: +61 863810030
+- [ ] Update business hours (Australian timezone)
+- [ ] Add office location map
+- [ ] Update contact form fields
+- [ ] Add consultation booking integration
+- [ ] SEO optimization
+
+**** 2.1.6 Privacy Policy
+- [ ] Update company name to Blue Education
+- [ ] Update contact details
+- [ ] Review and update data handling policies
+- [ ] Ensure Australian privacy law compliance
+
+--------------
+
+*** 2.2 New Education Service Pages (7 pages)
+**** 2.2.1 Education Pathway Planning & Counseling
+- [ ] Write page content (what it is, who it's for, key features)
+- [ ] Create pathway visualization/flowchart
+- [ ] Add counselor profiles or credentials
+- [ ] Include consultation booking CTA
+- [ ] Create custom imagery/icons
+- [ ] SEO optimization
+
+**** 2.2.2 Foundation Studies Programs
+- [ ] Write comprehensive page content
+- [ ] List partner institutions offering foundation programs
+- [ ] Include pathway to university diagram
+- [ ] Add program duration and entry requirements
+- [ ] Create application process section
+- [ ] SEO optimization
+
+**** 2.2.3 Vocational Education & Training (VET/TAFE)
+- [ ] Write detailed page content
+- [ ] List qualification levels (Cert I-IV, Diplomas, Advanced Diplomas)
+- [ ] Include popular courses and industries
+- [ ] Add skilled migration pathway connection
+- [ ] Include partner TAFE institutions
+- [ ] SEO optimization
+
+**** 2.2.4 Degrees & Higher Education
+- [ ] Write comprehensive content for university pathways
+- [ ] Include Bachelor, Master, Doctoral program information
+- [ ] Add partner universities
+- [ ] Include discipline categories
+- [ ] Create university application process guide
+- [ ] SEO optimization
+
+**** 2.2.5 Teaching Pathways
+- [ ] Write specialized content for teaching programs
+- [ ] Detail Bachelor of Education, Master of Teaching, Grad Dip
+- [ ] Include AITSL accreditation information
+- [ ] Add teaching registration requirements
+- [ ] Include career placement support details
+- [ ] SEO optimization
+
+**** 2.2.6 Primary & Secondary Education (Overview page)
+- [ ] Write content for school-age international students
+- [ ] Include Buddy Program as featured offering
+- [ ] Add school selection process
+- [ ] Include guardianship services integration
+- [ ] Add Australian school system overview
+- [ ] SEO optimization
+
+**** 2.2.7 International Student Placement Services
+- [ ] Write content about end-to-end placement support
+- [ ] Detail application process steps
+- [ ] Include success rate/testimonials
+- [ ] Add partner institution logos
+- [ ] Create “How it Works” section
+- [ ] SEO optimization
+
+--------------
+
+*** 2.3 New Migration & Visa Service Pages (8 pages)
+**** 2.3.1 Student Visas (Subclass 500)
+- [ ] Write detailed visa information page
+- [ ] Include eligibility requirements
+- [ ] Detail application process and timeline
+- [ ] Add required documents checklist
+- [ ] Include GTE statement guidance
+- [ ] SEO optimization
+
+**** 2.3.2 Graduate/Post-Study Work Visa (Subclass 485)
+- [ ] Write content for both streams (Graduate Work & Post-Study Work)
+- [ ] Detail duration by qualification level
+- [ ] Include eligibility criteria
+- [ ] Add English language requirements
+- [ ] Create pathway diagram
+- [ ] SEO optimization
+
+**** 2.3.3 Skilled Migration
+- [ ] Write comprehensive skilled migration content
+- [ ] Include points test information
+- [ ] Detail EOI and state nomination process
+- [ ] Add skills assessment requirements
+- [ ] Include occupation lists
+- [ ] SEO optimization
+
+**** 2.3.4 Employer Sponsored Migration
+- [ ] Write content for ENS and TSS visas
+- [ ] Detail employer sponsorship process
+- [ ] Include SBS assistance information
+- [ ] Add pathway to permanent residence
+- [ ] Include both employer and applicant perspectives
+- [ ] SEO optimization
+
+**** 2.3.5 Business Migration
+- [ ] Write content for business visa pathways
+- [ ] Include investment requirements
+- [ ] Detail business plan requirements
+- [ ] Add state nomination information
+- [ ] Include success stories/case studies
+- [ ] SEO optimization
+
+**** 2.3.6 Family & Partner Visas
+- [ ] Write content for family reunification visas
+- [ ] Detail partner, parent, and other family visas
+- [ ] Include evidence requirements
+- [ ] Add application process and timeline
+- [ ] Include relationship documentation guide
+- [ ] SEO optimization
+
+**** 2.3.7 Migration Services Overview
+- [ ] Create overview page for all migration services
+- [ ] Include visitor visas and resident return visas
+- [ ] Add migration pathway flowchart
+- [ ] Detail MARA agent credentials
+- [ ] Include consultation booking CTA
+- [ ] SEO optimization
+
+**** 2.3.8 Why Choose Our Migration Services
+- [ ] Highlight Blue Education migration credentials
+- [ ] Detail Migration Alliance, MIA memberships
+- [ ] Include success rates and testimonials
+- [ ] Add “Honest Approach” messaging
+- [ ] Include migration agent profiles
+- [ ] SEO optimization
+
+--------------
+
+*** 2.4 New Career Development Service Pages (5 pages)
+**** 2.4.1 Career Services Overview
+- [ ] Write overview of all career services
+- [ ] Include career pathway diagram
+- [ ] Detail connection to education and migration services
+- [ ] Add employer network information
+- [ ] Include success stories
+- [ ] SEO optimization
+
+**** 2.4.2 Career Counseling & Job Readiness
+- [ ] Write combined content for counseling and job prep
+- [ ] Detail one-on-one counseling services
+- [ ] Include job readiness program curriculum
+- [ ] Add Australian workplace culture training details
+- [ ] Include resume/interview preparation
+- [ ] SEO optimization
+
+**** 2.4.3 Employer Connections & Work Placement
+- [ ] Write content about employer network
+- [ ] Detail job matching services
+- [ ] Include work placement program information
+- [ ] Add industry partnership logos
+- [ ] Include placement success metrics
+- [ ] SEO optimization
+
+**** 2.4.4 Internship Programs
+- [ ] Write content for standard and executive internships
+- [ ] Detail internship placement process
+- [ ] Include industry categories
+- [ ] Add duration and expectations
+- [ ] Include application requirements
+- [ ] SEO optimization
+
+**** 2.4.5 Work Visa Assistance
+- [ ] Write content connecting visas to employment
+- [ ] Detail work rights for different visa types
+- [ ] Include employer sponsorship coordination
+- [ ] Add compliance guidance
+- [ ] Cross-link with migration services
+- [ ] SEO optimization
+
+--------------
+
+*** 2.5 New Student Support Service Pages (4 pages)
+**** 2.5.1 Student Support Services Overview
+- [ ] Write comprehensive overview of all support services
+- [ ] Detail 24/7 emergency hotline
+- [ ] Include airport transfers, orientation services
+- [ ] Add document translation services
+- [ ] Include personal development programs
+- [ ] SEO optimization
+
+**** 2.5.2 Accommodation & Homestay Services
+- [ ] Write content about Australian Homestay Network partnership
+- [ ] Detail homestay placement process
+- [ ] Include homestay family vetting process
+- [ ] Add accommodation options and pricing
+- [ ] Include student testimonials
+- [ ] SEO optimization
+
+**** 2.5.3 Guardianship Services
+- [ ] Write content for under-18 students
+- [ ] Detail legal guardianship requirements
+- [ ] Include Professional Student Care Australia partnership
+- [ ] Add welfare monitoring and school liaison details
+- [ ] Include parent reporting process
+- [ ] SEO optimization
+
+**** 2.5.4 Health Insurance (OSHC) & Welfare
+- [ ] Write content about OSHC requirements
+- [ ] Detail policy selection and enrollment
+- [ ] Include claims assistance information
+- [ ] Add welfare support services
+- [ ] Include compliance with visa requirements
+- [ ] SEO optimization
+
+--------------
+
+*** 2.6 New Special Programs Pages (2 pages)
+**** 2.6.1 Study Tours (expand existing Culinary Tour page)
+- [ ] Create overview page for all study tour offerings
+- [ ] Feature Culinary Study Tour prominently
+- [ ] Add short-term immersion programs
+- [ ] Include custom tour options
+- [ ] Detail booking and group arrangements
+- [ ] SEO optimization
+
+**** 2.6.2 SCSA Associate Program
+- [ ] Write content about SCSA partnership
+- [ ] Detail Western Australia curriculum promotion
+- [ ] Include international school partnerships
+- [ ] Add curriculum implementation support details
+- [ ] Include pathway creation to Australian education
+- [ ] SEO optimization
+
+--------------
+
+*** 2.7 New Company & Information Pages (7 pages)
+**** 2.7.1 About Us
+- [ ] Write comprehensive company history (founded 1998)
+- [ ] Include mission and vision
+- [ ] Detail core values (honesty, client-centric, quality)
+- [ ] Add company milestones
+- [ ] Include professional credentials and memberships
+- [ ] SEO optimization
+
+**** 2.7.2 Our Team
+- [ ] Create team member profiles
+- [ ] Highlight Managing Director Glen
+- [ ] Include education, career, and migration specialists
+- [ ] Add professional qualifications and certifications
+- [ ] Include team photos
+- [ ] SEO optimization
+
+**** 2.7.3 Why Australia
+- [ ] Write expanded content about studying in Australia
+- [ ] Include education system overview
+- [ ] Detail post-study work opportunities
+- [ ] Add quality of life and safety information
+- [ ] Include student city guides
+- [ ] SEO optimization
+
+**** 2.7.4 Why Choose Blue Education
+- [ ] Write unique value proposition page
+- [ ] Detail integrated services approach
+- [ ] Highlight honest, transparent approach
+- [ ] Include 25+ years of experience
+- [ ] Add client testimonials and success stories
+- [ ] SEO optimization
+
+**** 2.7.5 Our Partners
+- [ ] Create page showcasing institutional partnerships
+- [ ] Include university partner logos
+- [ ] Add TAFE and RTO partnerships
+- [ ] Include professional body memberships
+- [ ] Detail international representative offices
+- [ ] SEO optimization
+
+**** 2.7.6 FAQ
+- [ ] Write frequently asked questions by category
+- [ ] Include education-related FAQs
+- [ ] Add migration and visa FAQs
+- [ ] Include career services FAQs
+- [ ] Add student support FAQs
+- [ ] SEO optimization
+
+**** 2.7.7 Knowledge Base / Student Resources
+- [ ] Create resource hub for students
+- [ ] Include visa requirement guides
+- [ ] Add document checklists
+- [ ] Include pre-departure guides
+- [ ] Add arrival and orientation resources
+- [ ] SEO optimization
+
+--------------
+
+*** 2.8 Blog Setup & Migration (1 section)
+**** 2.8.1 Blog Structure
+- [ ] Define blog categories (Education News, Migration Updates, Student Stories, Study Tips, Living in Australia)
+- [ ] Create blog landing page
+- [ ] Design blog post template
+- [ ] Set up author profiles
+- [ ] Plan RSS feed and newsletter integration
+- [ ] SEO optimization for blog system
+
+**** 2.8.2 Initial Blog Content
+- [ ] Migrate any existing relevant kookaquest blog content
+- [ ] Create 10 initial blog posts:
+  - Student success stories (3 posts)
+  - Migration pathway guides (2 posts)
+  - Study tips and advice (2 posts)
+  - Living in Australia guides (2 posts)
+  - Education sector updates (1 post)
+- [ ] Set up blog posting workflow
+- [ ] SEO optimization per post
+
+--------------
+
+** Phase 3: Design & Development (Week 5-8)
+*** 3.1 Visual Design
+**** 3.1.1 Brand Identity
+- [ ] Create Blue Education logo (if not existing)
+- [ ] Define color palette (primary, secondary, accent colors)
+- [ ] Select typography (headings, body, special fonts)
+- [ ] Create brand guidelines document
+- [ ] Design icon set for services
+- [ ] Create image style guide
+
+**** 3.1.2 UI Components
+- [ ] Design navigation header (desktop and mobile)
+- [ ] Design footer with sitemap and contact info
+- [ ] Create button styles (primary, secondary, ghost)
+- [ ] Design card components for services
+- [ ] Create form input styles
+- [ ] Design CTA sections and banners
+- [ ] Create testimonial/quote styles
+- [ ] Design breadcrumb navigation
+- [ ] Create loading states and animations
+
+**** 3.1.3 Page Designs
+- [ ] Design Homepage (high-priority)
+- [ ] Design Service page template
+- [ ] Design About/Team page template
+- [ ] Design Blog listing and post templates
+- [ ] Design Contact page
+- [ ] Design FAQ page
+- [ ] Create responsive designs for all templates
+- [ ] Get client approval on designs
+
+--------------
+
+*** 3.2 Frontend Development
+**** 3.2.1 Setup & Infrastructure
+- [ ] Set up development environment
+- [ ] Configure build tools and bundlers
+- [ ] Set up version control (Git repository)
+- [ ] Implement responsive framework
+- [ ] Set up CSS preprocessor (if applicable)
+- [ ] Configure deployment pipeline
+
+**** 3.2.2 Template Development
+- [ ] Build header component
+- [ ] Build footer component
+- [ ] Build homepage template
+- [ ] Build service page template
+- [ ] Build about/team page template
+- [ ] Build contact page with form
+- [ ] Build blog listing template
+- [ ] Build blog post template
+- [ ] Build FAQ page template
+- [ ] Implement search functionality (if applicable)
+
+**** 3.2.3 Component Development
+- [ ] Develop hero/banner components
+- [ ] Develop service card components
+- [ ] Develop testimonial components
+- [ ] Develop team member cards
+- [ ] Develop form components
+- [ ] Develop CTA components
+- [ ] Develop accordion/tab components
+- [ ] Develop modal/popup components
+- [ ] Implement mobile menu
+
+**** 3.2.4 Content Integration
+- [ ] Integrate all homepage content
+- [ ] Integrate all 34 new service page content
+- [ ] Integrate all 5 rebranded page content
+- [ ] Integrate blog posts
+- [ ] Integrate FAQ content
+- [ ] Integrate team member profiles
+- [ ] Add all images and media
+- [ ] Implement internal linking
+
+--------------
+
+*** 3.3 Backend Development
+**** 3.3.1 Forms & Integrations
+- [ ] Build contact form with validation
+- [ ] Build consultation booking form
+- [ ] Build application forms (program-specific)
+- [ ] Set up form submission handling
+- [ ] Integrate email notifications
+- [ ] Set up CRM integration (if applicable)
+- [ ] Implement spam protection (CAPTCHA)
+
+**** 3.3.2 CMS Setup (if applicable)
+- [ ] Configure CMS for content management
+- [ ] Set up content types for services, blog, team
+- [ ] Create content entry workflows
+- [ ] Configure user roles and permissions
+- [ ] Set up media library
+- [ ] Configure SEO fields per content type
+
+**** 3.3.3 Additional Features
+- [ ] Implement site search
+- [ ] Set up newsletter signup
+- [ ] Implement WhatsApp integration
+- [ ] Set up live chat (if required)
+- [ ] Implement document download system
+- [ ] Set up application portal (if required)
+
+--------------
+
+** Phase 4: SEO & Marketing Setup (Week 9)
+*** 4.1 On-Page SEO
+**** 4.1.1 Technical SEO
+- [ ] Configure XML sitemap
+- [ ] Set up robots.txt
+- [ ] Implement canonical URLs
+- [ ] Set up structured data/schema markup for:
+  - Organization schema
+  - Service schema
+  - Educational organization schema
+  - Breadcrumb schema
+  - FAQ schema
+  - Blog post schema
+- [ ] Optimize site speed and performance
+- [ ] Implement lazy loading for images
+- [ ] Configure 301 redirects from kookaquest URLs
+
+**** 4.1.2 Content SEO
+- [ ] Optimize all page titles (40 pages)
+- [ ] Write meta descriptions (40 pages)
+- [ ] Optimize heading structure (H1, H2, H3)
+- [ ] Optimize image alt texts
+- [ ] Implement internal linking strategy
+- [ ] Create SEO-friendly URLs
+- [ ] Add Open Graph tags for social sharing
+- [ ] Add Twitter Card tags
+
+**** 4.1.3 Local SEO
+- [ ] Create/claim Google Business Profile
+- [ ] Set up Bing Places
+- [ ] Implement local business schema
+- [ ] Add NAP (Name, Address, Phone) consistently
+- [ ] Set up location pages if needed
+
+--------------
+
+*** 4.2 Analytics & Tracking
+**** 4.2.1 Analytics Setup
+- [ ] Set up Google Analytics 4
+- [ ] Configure goal tracking (form submissions, bookings)
+- [ ] Set up conversion tracking
+- [ ] Implement event tracking
+- [ ] Create custom dashboards
+- [ ] Set up user flow analysis
+
+**** 4.2.2 Additional Tracking
+- [ ] Set up Google Search Console
+- [ ] Implement Facebook Pixel (if using Meta ads)
+- [ ] Set up LinkedIn Insight Tag (if applicable)
+- [ ] Configure heat mapping tool (optional)
+- [ ] Set up A/B testing framework (optional)
+
+--------------
+
+*** 4.3 Redirects & Migration
+**** 4.3.1 URL Mapping
+- [ ] Map all kookaquest URLs to Blue Education URLs
+- [ ] Create redirect plan (301 redirects)
+- [ ] Test all redirects
+- [ ] Submit old URLs for removal in Search Console
+- [ ] Monitor 404 errors post-launch
+
+**** 4.3.2 Domain & Hosting
+- [ ] Set up Blue Education domain (if new)
+- [ ] Configure DNS settings
+- [ ] Set up SSL certificate
+- [ ] Configure hosting environment
+- [ ] Set up CDN (if applicable)
+- [ ] Create staging environment
+
+--------------
+
+** Phase 5: Testing & Quality Assurance (Week 10)
+*** 5.1 Functional Testing
+- [ ] Test all forms and form validation
+- [ ] Test all internal links
+- [ ] Test all external links
+- [ ] Test search functionality
+- [ ] Test newsletter signup
+- [ ] Test file downloads
+- [ ] Test all CTAs and buttons
+- [ ] Test mobile menu and navigation
+
+*** 5.2 Cross-Browser Testing
+- [ ] Test on Chrome (desktop and mobile)
+- [ ] Test on Firefox (desktop and mobile)
+- [ ] Test on Safari (desktop and mobile)
+- [ ] Test on Edge (desktop)
+- [ ] Test on older browser versions
+- [ ] Fix browser-specific issues
+
+*** 5.3 Responsive Testing
+- [ ] Test on mobile devices (various screen sizes)
+- [ ] Test on tablets (portrait and landscape)
+- [ ] Test on desktop (various resolutions)
+- [ ] Test on large screens (1920px+)
+- [ ] Fix responsive issues
+
+*** 5.4 Performance Testing
+- [ ] Run Lighthouse audits (Performance, Accessibility, SEO)
+- [ ] Run PageSpeed Insights
+- [ ] Optimize images and assets
+- [ ] Minimize CSS/JS files
+- [ ] Test page load times
+- [ ] Fix performance issues
+
+*** 5.5 Content Review
+- [ ] Proofread all 40 pages
+- [ ] Check for brand consistency
+- [ ] Verify all contact information
+- [ ] Check image quality and relevance
+- [ ] Verify all links and CTAs
+- [ ] Review tone and voice consistency
+
+*** 5.6 SEO Audit
+- [ ] Verify all meta tags
+- [ ] Check all heading structures
+- [ ] Verify schema implementation
+- [ ] Test site speed
+- [ ] Check mobile-friendliness
+- [ ] Verify sitemap is accessible
+- [ ] Run SEO audit tools
+
+--------------
+
+** Phase 6: Launch & Post-Launch (Week 11-12)
+*** 6.1 Pre-Launch
+- [ ] Final client review and approval
+- [ ] Backup kookaquest website
+- [ ] Create rollback plan
+- [ ] Schedule launch date/time
+- [ ] Notify stakeholders of launch
+- [ ] Prepare launch checklist
+
+*** 6.2 Launch
+- [ ] Deploy to production
+- [ ] Implement all redirects
+- [ ] Verify DNS changes
+- [ ] Test production site thoroughly
+- [ ] Submit new sitemap to Search Console
+- [ ] Update social media profiles with new URLs
+- [ ] Send launch announcement
+
+*** 6.3 Post-Launch Monitoring (First 2 weeks)
+- [ ] Monitor analytics daily
+- [ ] Check for 404 errors and fix
+- [ ] Monitor site performance
+- [ ] Check form submissions are working
+- [ ] Monitor search rankings
+- [ ] Address any user-reported issues
+- [ ] Collect user feedback
+
+*** 6.4 Post-Launch Optimization
+- [ ] Analyze user behavior data
+- [ ] Identify high-exit pages and optimize
+- [ ] A/B test key conversion pages
+- [ ] Optimize low-performing pages
+- [ ] Update content based on feedback
+- [ ] Plan content calendar for blog
+
+--------------
+
+** Summary Statistics
+*** Page Count Breakdown
+*Existing Pages (6):* - Homepage - Buddy Program - Culinary Study Tour - English Courses - Contact - Privacy Policy
+
+*New Education Pages (7):* - Education Pathway Planning & Counseling - Foundation Studies Programs - Vocational Education & Training (VET/TAFE) - Degrees & Higher Education - Teaching Pathways - Primary & Secondary Education Overview - International Student Placement Services
+
+*New Migration Pages (8):* - Student Visas (Subclass 500) - Graduate/Post-Study Work Visa (Subclass 485) - Skilled Migration - Employer Sponsored Migration - Business Migration - Family & Partner Visas - Migration Services Overview - Why Choose Our Migration Services
+
+*New Career Pages (5):* - Career Services Overview - Career Counseling & Job Readiness - Employer Connections & Work Placement - Internship Programs - Work Visa Assistance
+
+*New Support Pages (4):* - Student Support Services Overview - Accommodation & Homestay Services - Guardianship Services - Health Insurance (OSHC) & Welfare
+
+*New Special Programs Pages (2):* - Study Tours (expanded) - SCSA Associate Program
+
+*New Company & Info Pages (7):* - About Us - Our Team - Why Australia - Why Choose Blue Education - Our Partners - FAQ - Knowledge Base / Student Resources
+
+*Blog Section (1+):* - Blog landing page - Individual blog posts
+
+*TOTAL: 40 pages + blog posts*
+
+--------------
+
+** Resource Requirements
+*** Team Composition
+- Project Manager (1)
+- Content Writer/Strategist (1-2)
+- UX/UI Designer (1)
+- Frontend Developer (1-2)
+- Backend Developer (1)
+- SEO Specialist (1)
+- QA Tester (1)
+
+*** Timeline
+- *Phase 1 (Planning):* 1 week
+- *Phase 2 (Content):* 3 weeks
+- *Phase 3 (Design & Dev):* 4 weeks
+- *Phase 4 (SEO Setup):* 1 week
+- *Phase 5 (Testing):* 1 week
+- *Phase 6 (Launch):* 1-2 weeks
+
+*Total Project Duration:* 11-12 weeks
+
+--------------
+
+** Critical Dependencies
+1. *Blue Education brand assets* (logo, colors, imagery)
+2. *Content source materials* (service details, team bios, testimonials)
+3. *Access to kookaquest hosting/domain*
+4. *New domain/hosting for Blue Education* (if separate)
+5. *Client approval at key milestones* (design, content, pre-launch)
+6. *Integration credentials* (email, CRM, forms, analytics)
+
+--------------
+
+** Risk Mitigation
+1. *Content delays:* Start content writing early, work in parallel on design
+2. *Technical issues:* Maintain staging environment for testing
+3. *SEO impact:* Implement proper redirects, submit sitemaps immediately
+4. *Timeline slippage:* Build buffer time into each phase
+5. *Scope creep:* Lock requirements after Phase 1, manage change requests
+
+--------------
+
+** Success Metrics
+*** Launch Metrics
+- All 40 pages published and live
+- 0 broken links
+- Page load time < 3 seconds
+- Mobile-friendly (Google test)
+- Lighthouse score > 90
+
+*** Post-Launch Metrics (3 months)
+- Organic traffic maintained or increased
+- Form submission rate > 2%
+- Bounce rate < 60%
+- Average session duration > 2 minutes
+- Search rankings for target keywords
+
+--------------
+
+/End of Work Breakdown Structure/

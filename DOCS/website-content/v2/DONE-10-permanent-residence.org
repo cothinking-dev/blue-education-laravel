@@ -1,0 +1,120 @@
+#+title: Permanent Residence
+#+url: /services/migration/permanent-residence
+#+status: draft
+
+** Hero
+:PROPERTIES:
+:SECTION: Hero — full-width
+:LAYOUT: Left-aligned text
+:IMAGE: family in suburban Australian setting, or new home
+:END:
+
+*** Headline
+
+Your path to Australian permanent residence starts with the right first step.
+
+*** Subheadline
+
+From skills assessment and points optimisation to employer nomination and family reunification — every pathway is different, and the details matter. We manage the application from start to finish.
+
+-----
+
+** Pathways to PR
+:PROPERTIES:
+:SECTION: Card grid — 4 cards
+:LAYOUT: 2x2 grid, visible content (not accordion)
+:END:
+
+*** Skilled Migration
+:PROPERTIES:
+:TAG: Subclass 189 · 190 · 491
+:END:
+
+For qualified professionals with skills in demand in Australia. The points-based system assesses age, English proficiency, qualifications, and work experience. We handle [[/resources/admission-requirements][skills assessment]] coordination, EOI preparation, and state nomination applications.
+
+/If your points are too low, we tell you — and show you exactly what to do about it./
+
+*Best for:* Professionals with [[/services/migration/graduate-work-visas][Australian qualifications and work experience]] who meet or are approaching the points threshold.
+
+*** Employer Sponsored Migration
+:PROPERTIES:
+:TAG: Subclass 186 · 482
+:END:
+
+Your employer nominates you for permanent or temporary residence. We manage the nomination application, labour market testing requirements, and sponsorship compliance throughout.
+
+*Best for:* Workers with a confirmed job offer from an approved Australian employer who cannot find a suitably skilled local candidate.
+
+*** Business Migration
+
+For business owners, investors, and entrepreneurs planning to establish or invest in Australia. We support business plan development, investment requirement guidance, and state nomination applications.
+
+*Best for:* Experienced business operators with significant capital or a demonstrated track record in business ownership or management.
+
+*** Family & Partner Visas
+
+Partner, parent, and family reunification pathways for those with Australian citizen or permanent resident family members. We compile relationship evidence, manage financial sponsorship documentation, and coordinate health and character requirements — including representation if the application requires a review.
+
+*Best for:* Anyone with an eligible Australian citizen, permanent resident, or eligible NZ citizen family member or partner.
+
+-----
+
+** How It Works
+:PROPERTIES:
+:SECTION: Timeline — horizontal, 3 steps
+:LAYOUT: Connected steps with icons
+:END:
+
+*** 1. Skills Assessment
+
+Your occupation must be assessed by the relevant Australian authority before you can submit an Expression of Interest. We identify the appropriate assessing body for your field and coordinate the application.
+
+*** 2. Expression of Interest (EOI)
+
+Once assessed, you submit an EOI through SkillSelect. Invitations are issued in rounds — your points score determines when and whether you receive one. We optimise your points profile and advise on state nomination options that can increase your total.
+
+*** 3. Application
+
+Invitations are valid for 60 days. Once received, we prepare and lodge your visa application — documentation, health and character requirements, and compliance checks handled in full.
+
+-----
+
+** When It's More Complex
+:PROPERTIES:
+:SECTION: Highlight card
+:LAYOUT: Full-width, neutral background
+:END:
+
+Not every application is straightforward. If you've previously had a visa refused or cancelled — or if your situation involves complex employer arrangements, an appeal, or Administrative Appeals Tribunal proceedings — we work alongside experienced immigration lawyers who specialise in exactly these matters.
+
+[[/contact][Talk to us about your situation →]]
+
+-----
+
+** What Comes Next?
+:PROPERTIES:
+:SECTION: Next Step — 2 linked cards before CTA
+:LAYOUT: Simple card row or bulleted links with short intro
+:END:
+
+Permanent residence changes what's possible. With status confirmed, the next steps are yours to choose.
+
+- [[/services/career][Explore career support and employer connections →]]
+- [[/contact][Talk to a migration agent →]]
+
+-----
+
+** CTA
+:PROPERTIES:
+:SECTION: Full-width CTA banner
+:CTA-PRIMARY: Assess My PR Eligibility
+:CTA-SECONDARY: Call +61 8 6381 0030
+:END:
+
+*** Headline
+
+Eligible for PR?
+
+*** Body
+
+We assess your qualifications, work history, and visa status, and tell you which pathways apply — and which don't. Straight answer, no speculation.

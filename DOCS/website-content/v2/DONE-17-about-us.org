@@ -1,0 +1,142 @@
+#+title: About Us
+#+url: /about
+#+status: draft
+
+** Hero
+:PROPERTIES:
+:SECTION: Hero — full-width image with overlay text
+:LAYOUT: Left-aligned text
+:IMAGE: Blue Education Perth office or team photo
+:END:
+
+*** Headline
+
+Independent education and migration advice. Since 1998.
+
+*** Subheadline
+
+Most education consultancies cover one thing. We've covered all three — education, career, and migration — from a single Perth office for 28 years. Clients from 40+ countries trust us with decisions that don't have a do-over.
+
+-----
+
+** Our Story
+:PROPERTIES:
+:SECTION: Two-column — text left, image right
+:LAYOUT: 60/40 split
+:IMAGE: Archival team photo or Perth office
+:END:
+
+In 1998, a small group of education and migration professionals in Perth identified a critical need: international students required independent, unbiased guidance — not generic advice driven by institutional partnerships.
+
+They founded Blue Education on a principle that still defines us: give honest advice — including when that means redirecting someone away from the wrong path.
+
+28 years later, we've helped thousands of students from 40+ countries navigate Australia's education system, launch careers, and build permanent lives here. We've done it one student at a time — because that's the only way to do it properly.
+
+Still in Perth. Same principle since day one.
+
+-----
+
+** Our Values
+:PROPERTIES:
+:SECTION: BentoBox — 5 cards with icons
+:LAYOUT: Grid, icon-top, bold title, short description
+:END:
+
+*** Client-Centric
+
+Your goals drive every recommendation. We listen, assess, and advise based on what's right for you.
+
+*** Honest
+
+We tell you what you need to hear. If a pathway won't work, we say so — and find one that will.
+
+*** Quality-Driven
+
+Every interaction — from first consultation to visa approval — meets a standard we'd set for our own family.
+
+*** Professionally Qualified
+
+QEAC certified. Migration Alliance. MIA affiliated. Australian Bar Association. Qualified, accredited, current.
+
+*** Personalised
+
+Your situation is unique. Your circumstances, goals, and timeline are yours alone — and your advice should match.
+
+-----
+
+** By the Numbers
+:PROPERTIES:
+:SECTION: Stats bar — large numbers with labels
+:LAYOUT: Full-width strip, 4 columns
+:END:
+
+| Stat               | Display       |
+|--------------------+---------------|
+| Founded            | 1998          |
+| Countries served   | 40+           |
+| Registered Migration Agents | 3 |
+| Team languages     | 5+            |
+
+-----
+
+** Why Choose Blue Education
+:PROPERTIES:
+:SECTION: Alternating two-column — text/image flip per row
+:LAYOUT: 3 rows, alternating image side
+:END:
+
+*** Education + Career + Migration. One provider.
+:PROPERTIES:
+:IMAGE: Team in meeting room, collaborative setting
+:END:
+
+Most agencies cover one domain. We cover all three — coordinated into a single, seamless plan. One team. No handoffs between providers.
+
+*** Perth HQ. Representatives in 5 countries.
+:PROPERTIES:
+:IMAGE: Map showing Perth HQ + international offices
+:END:
+
+Headquarters in Perth, Western Australia. Partners in every major Australian city. International representatives in Japan, Indonesia, New Zealand, Zambia, and Malaysia. Your language. Your timezone.
+
+*** Support from enrolment to permanent residence.
+:PROPERTIES:
+:IMAGE: Graduate shaking hands with employer
+:END:
+
+Our relationship doesn't end at enrollment. [[/services/education][Study support]]. Career development. [[/services/migration][Migration pathways]]. [[/services/student-support][24/7 emergency hotline]]. We stay with you through every stage.
+
+-----
+
+** Professional Credentials
+:PROPERTIES:
+:SECTION: Logo strip with labels
+:LAYOUT: Horizontal row of credential logos
+:END:
+
+| Credential         | Description                                                          |
+|--------------------+----------------------------------------------------------------------|
+| QEAC               | Qualified Education Agent Counsellor — premier professional qualification |
+| Migration Alliance | Australia's largest professional body for migration agents           |
+| MIA                | Migration Institute of Australia — highest ethical standards         |
+| Australian Bar Association | Legal expertise relevant to education and migration matters |
+
+-----
+
+** CTA
+:PROPERTIES:
+:SECTION: Full-width CTA banner
+:LAYOUT: Centered, contrasting background
+:CTA-PRIMARY: Book a Consultation
+:CTA-SECONDARY: Meet Our Team
+:END:
+
+*** Headline
+
+Talk to us. We'll tell you where you stand.
+
+*** Body
+
+One session covers your education, career, and migration options — assessed together, not in separate conversations with separate agencies.
+
+[[/about/team][Meet our team →]]

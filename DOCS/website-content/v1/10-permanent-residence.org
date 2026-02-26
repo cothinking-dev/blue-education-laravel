@@ -1,0 +1,267 @@
+#+title: Permanent Residence
+#+url: /services/migration/permanent-residence
+#+status: draft
+
+* V1
+
+** Hero
+:PROPERTIES:
+:SECTION: Hero — full-width
+:LAYOUT: Centered text
+:IMAGE: family in suburban Australian setting, or new home
+:END:
+
+*** Headline
+
+Make Australia home. Permanently.
+
+*** Subheadline
+
+Multiple pathways to permanent residence — and we'll find the one that fits your skills, your career, and your family situation.
+
+-----
+
+** Pathways to PR
+:PROPERTIES:
+:SECTION: Accordion — expandable sections
+:LAYOUT: Clean accordion, one open at a time
+:END:
+
+*** Skilled Migration (Points-Based)
+
+For qualified professionals with skills in demand. We handle skills assessments, points test optimisation, Expression of Interest (EOI) preparation, and state nomination applications.
+
+*Best for:* Professionals with Australian qualifications and work experience who meet the points threshold.
+
+*** Employer Sponsored Migration
+
+Your employer nominates you for permanent residence through the Employer Nomination Scheme (ENS). We manage the nomination application, labour market testing, and compliance.
+
+*Best for:* Workers with a permanent job offer from an approved Australian employer.
+
+*** Business Migration
+
+For business owners, investors, and entrepreneurs. We support business plan development, investment requirement guidance, state nominations, and ongoing compliance.
+
+*Best for:* Experienced business people looking to establish or invest in Australia.
+
+*** Family & Partner Visas
+
+Partner visas for married or de facto partners. Parent visas. Other family reunification pathways. We compile relationship evidence, financial documentation, prepare you for interviews, and manage the full application — including appeals and reviews if needed.
+
+*Best for:* Anyone with an Australian citizen, permanent resident, or eligible NZ citizen family member or partner.
+
+-----
+
+** Other Visas
+:PROPERTIES:
+:SECTION: Two cards — compact
+:LAYOUT: Side by side
+:END:
+
+*** Visitor Visas
+
+Short-term visas for tourism, family visits, or business purposes. We handle documentation, purpose-of-visit statements, financial capacity evidence, and return intention demonstration.
+
+*** Resident Return Visa
+
+For permanent residents who need to travel overseas and maintain their re-entry rights. 5-year or 3-month travel facility options. We assess your substantial ties to Australia and ensure quick processing for eligible applicants.
+
+-----
+
+** CTA
+:PROPERTIES:
+:SECTION: Full-width CTA banner
+:CTA-PRIMARY: Assess My PR Eligibility
+:CTA-SECONDARY: Call +61 8 6381 0030
+:END:
+
+*** Headline
+
+Wondering if permanent residence is possible for you?
+
+*** Body
+
+Book a free migration assessment. We'll review your qualifications, work experience, and circumstances — then give you an honest answer about your options.
+
+* V2
+
+** Hero
+:PROPERTIES:
+:SECTION: Hero — full-width
+:LAYOUT: Centered text
+:IMAGE: family in suburban Australian setting, or new home
+:END:
+
+*** Headline
+
+The moment Australia stops being a destination and becomes your home.
+
+*** Subheadline
+
+Permanent residence is not just a visa status. It is the end of uncertainty — the moment you can stop wondering "How long can I stay?" and start planning the rest of your life. We have helped clients from over 40 countries reach this point. Let us help you find your pathway.
+
+-----
+
+** Pathways to PR
+:PROPERTIES:
+:SECTION: Accordion — expandable sections
+:LAYOUT: Clean accordion, one open at a time
+:END:
+
+*** Skilled Migration (Points-Based)
+
+"Is permanent residence really possible for someone like me?"
+
+We hear this question all the time. And for many skilled professionals, the answer is yes — especially if you have Australian qualifications and work experience. The points-based system rewards exactly the skills and effort you have already invested.
+
+We handle every step: skills assessments, points test optimisation, Expression of Interest preparation, and state nomination applications. If your points are not high enough yet, we will tell you honestly — and show you what to do about it.
+
+*Best for:* Professionals with in-demand skills, Australian qualifications, and work experience.
+
+*** Employer Sponsored Migration
+
+Your employer has seen your value and wants to keep you. The Employer Nomination Scheme (ENS) is a direct pathway to permanent residence — your employer nominates you, and we manage the process from nomination through to approval.
+
+For many clients, this is the moment their years of hard work pay off. We handle labour market testing, compliance, and every piece of paperwork so nothing slows down the process.
+
+*Best for:* Workers whose Australian employer is ready to sponsor them for a permanent role.
+
+*** Business Migration
+
+If you are a business owner, investor, or entrepreneur, there are pathways designed specifically for you. We support business plan development, navigate investment requirements, assist with state nominations, and ensure ongoing compliance.
+
+Australia welcomes people who create jobs and invest in communities. If that describes you, we can show you how to make it happen.
+
+*Best for:* Experienced business people looking to establish, acquire, or invest in an Australian business.
+
+*** Family & Partner Visas
+
+"Will I be able to bring my family?"
+
+This is often the most emotional part of the migration journey. Partner visas for married or de facto couples. Parent visas. Other family reunification pathways. We compile the relationship evidence, prepare the financial documentation, and manage the entire application — including appeals and reviews if needed. Because bringing your family together should not be harder than it needs to be.
+
+*Best for:* Anyone with an Australian citizen, permanent resident, or eligible NZ citizen family member or partner.
+
+-----
+
+** Other Visas
+:PROPERTIES:
+:SECTION: Two cards — compact
+:LAYOUT: Side by side
+:END:
+
+*** Visitor Visas
+
+Sometimes the first step is simply visiting. Whether it is tourism, seeing family, or exploring business opportunities, we handle the documentation, purpose-of-visit statements, financial capacity evidence, and return intention requirements for short-term visitor visas.
+
+*** Resident Return Visa
+
+You have permanent residence, but you need to travel. The Resident Return Visa maintains your re-entry rights — with 5-year or 3-month travel facility options. We ensure your travel does not put your residency status at risk.
+
+-----
+
+** CTA
+:PROPERTIES:
+:SECTION: Full-width CTA banner
+:CTA-PRIMARY: Assess My PR Eligibility
+:CTA-SECONDARY: Call +61 8 6381 0030
+:END:
+
+*** Headline
+
+Permanent residence might be closer than you think.
+
+*** Body
+
+Book a free migration assessment. We will look at your qualifications, your work experience, and your personal circumstances — and give you an honest answer about what is possible. No pressure. No false promises. Just the truth about where you stand and what comes next.
+
+* V3
+
+** Hero
+:PROPERTIES:
+:SECTION: Hero — full-width
+:LAYOUT: Centered text
+:IMAGE: family in suburban Australian setting, or new home
+:END:
+
+*** Headline
+
+Permanent residence. Multiple pathways. One team.
+
+*** Subheadline
+
+Skilled migration, employer sponsorship, business visas, family reunification. We handle the application end to end.
+
+-----
+
+** Pathways to PR
+:PROPERTIES:
+:SECTION: Accordion — expandable sections
+:LAYOUT: Clean accordion, one open at a time
+:END:
+
+*** Skilled Migration (Points-Based)
+
+| Who qualifies   | Professionals with skills on the occupation list          |
+| How it works    | Points test based on age, English, qualifications, experience |
+| What we do      | Skills assessment, points optimisation, EOI, state nomination |
+| Best for        | Australian-qualified professionals meeting the points threshold |
+
+*** Employer Sponsored Migration
+
+| Who qualifies   | Workers with a permanent job offer from an approved employer |
+| How it works    | Employer nominates you via Employer Nomination Scheme (ENS)  |
+| What we do      | Nomination application, labour market testing, compliance    |
+| Best for        | Workers whose employer will sponsor them                     |
+
+*** Business Migration
+
+| Who qualifies   | Business owners, investors, entrepreneurs             |
+| How it works    | State nomination + business/investment requirements   |
+| What we do      | Business plan, investment guidance, nomination, compliance |
+| Best for        | People looking to establish or invest in Australia     |
+
+*** Family & Partner Visas
+
+| Who qualifies   | Partners, parents, family of AU citizens/PR holders/eligible NZ citizens |
+| Visa types      | Partner (married/de facto), parent, other family                 |
+| What we do      | Relationship evidence, financials, full application, appeals     |
+| Best for        | Anyone with eligible family ties to Australia                    |
+
+-----
+
+** Other Visas
+:PROPERTIES:
+:SECTION: Two cards — compact
+:LAYOUT: Side by side
+:END:
+
+*** Visitor Visas
+
+| Purpose   | Tourism, family visits, business                                    |
+| Duration  | Short-term                                                          |
+| We handle | Documentation, purpose-of-visit, financials, return intention proof |
+
+*** Resident Return Visa
+
+| Purpose   | Maintain re-entry rights for permanent residents |
+| Options   | 5-year or 3-month travel facility                |
+| We handle | Application and substantial ties assessment      |
+
+-----
+
+** CTA
+:PROPERTIES:
+:SECTION: Full-width CTA banner
+:CTA-PRIMARY: Assess My PR Eligibility
+:CTA-SECONDARY: Call +61 8 6381 0030
+:END:
+
+*** Headline
+
+Eligible for PR?
+
+*** Body
+
+Free migration assessment. We review your qualifications, experience, and circumstances. Honest answer. No obligation. Book now.

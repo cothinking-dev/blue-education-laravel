@@ -1,0 +1,101 @@
+#+title: Blue Education Australia
+
+Context documentation for Blue Education's website content, copywriting, and marketing.
+
+| Field    | Value                                                      |
+|----------+------------------------------------------------------------|
+| Client   | Blue Education Australia                                   |
+| Industry | International education, career, and migration consultancy |
+| HQ       | Perth, Western Australia                                   |
+| Founded  | 1998 (25+ years)                                           |
+| Website  | www.blueeducation.com.au                                   |
+
+-----
+
+* Context Documents
+:PROPERTIES:
+:STYLE:    asd
+:END:
+
+
+All context docs live in =docs/=. Start with the file most relevant to your task.
+
+** Strategic / High-Level
+
+| File                    | Description                                         | Use for                                    |
+|-------------------------+-----------------------------------------------------+--------------------------------------------|
+| brand-messaging.org     | Positioning, differentiators, tone, target audience  | Homepage copy, taglines, ad copy           |
+| sitemap.org             | 24-page website sitemap with page specs and nav      | Website architecture, page planning, dev   |
+| service-integration.org | How services connect, the Blue Education Pathway     | Homepage, service overview, client journey |
+
+** Company Information
+
+| File                 | Description                                       | Use for                           |
+|----------------------+---------------------------------------------------+-----------------------------------|
+| company-overview.org | Company profile, history, mission, values          | About Us page, company sections   |
+| team-profiles.org    | Leadership and international team member profiles  | Team page, trust-building content |
+
+** Core Services
+
+| File                        | Description                                            | Use for                 |
+|-----------------------------+--------------------------------------------------------+-------------------------|
+| education-services.org      | All education: primary/secondary, ELICOS, VET, degrees | Education service pages |
+| migration-visa-services.org | All visas: student, graduate, skilled, family           | Migration & visa pages  |
+| career-services.org         | Career counseling, job readiness, internships           | Career services pages   |
+
+** Support & Programs
+
+| File                         | Description                                      | Use for               |
+|------------------------------+--------------------------------------------------+-----------------------|
+| student-support-services.org | Accommodation, guardianship, 24/7 hotline, OSHC  | Student support pages |
+| special-programs.org         | Buddy Programme, study tours, SCSA Associate     | Programs pages        |
+
+** Reference / Practical
+
+| File                        | Description                                            | Use for                         |
+|-----------------------------+--------------------------------------------------------+---------------------------------|
+| why-australia.org           | Value proposition: rankings, work opportunities, QoL   | Why Australia page, marketing   |
+| admission-requirements.org  | English tests, minimum scores, academic requirements   | Admission requirements, FAQ     |
+| fees-and-costs.org          | Service fees, STAC, medical costs, responsibilities    | Fees page, transparency content |
+
+-----
+
+* Quick Start by Task
+
+- *Writing homepage copy?* Start with =brand-messaging.org= + =service-integration.org=
+- *Building a service page?* Read the relevant service doc (education, migration, career, support)
+- *Planning the website?* Read =sitemap.org= for the 24-page architecture
+- *Need company background?* Read =company-overview.org= + =team-profiles.org=
+- *Writing for a specific audience?* Check =brand-messaging.org= for target audience and tone
+
+-----
+
+* Directory Structure
+
+#+begin_example
+blue-education/
+├── README.org                 ← You are here
+├── docs/                      ← Active context documentation (13 .org files)
+├── website-content/           ← Website page content (copywriting output)
+└── archive/                   ← Archived source materials
+    ├── legacy/
+    │   ├── 20251217T141800--blue-education.org
+    │   ├── website-content/
+    │   └── website-rebrand-project/
+    └── website-extraction/
+#+end_example
+
+-----
+
+* Key Facts
+
+| Fact               | Value                                             |
+|--------------------+---------------------------------------------------|
+| Founded            | 1998                                              |
+| Experience         | 25+ years, 140 countries, 40+ nationalities       |
+| HQ                 | Perth, Western Australia                          |
+| Team               | Multilingual (5+ languages), 3 specialist domains |
+| Key differentiator | Boutique, honest, end-to-end integrated services  |
+| SCSA Associate     | Official WA curriculum promotion internationally  |
+| Signature program  | Buddy Programme (14-day school immersion)         |
+| Contact            | info@blueeducation.com.au / +61 8 6381 0030      |

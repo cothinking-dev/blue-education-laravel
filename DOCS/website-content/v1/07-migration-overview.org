@@ -1,0 +1,380 @@
+#+title: Migration & Visas
+#+url: /services/migration
+#+status: draft
+
+* V1
+
+** Hero
+:PROPERTIES:
+:SECTION: Hero — full-width with overlay
+:LAYOUT: Left-aligned text
+:IMAGE: passport, boarding pass, Australian landmarks
+:END:
+
+*** Headline
+
+Navigate the visa system with someone who knows it inside out.
+
+*** Subheadline
+
+Registered migration agents. 25+ years of experience. From student visas to permanent residence — we handle the process so you can focus on your future.
+
+-----
+
+** The Migration Pathway
+:PROPERTIES:
+:SECTION: Timeline — horizontal, 4 stages
+:LAYOUT: Connected steps with icons, left to right on desktop, vertical on mobile
+:END:
+
+*** Study
+
+Student Visa (Subclass 500) — enroll, study, and build your foundation in Australia.
+
+*** Graduate
+
+Graduate Work Visa (Subclass 485) — stay 18 months to 4 years to gain real work experience, depending on your qualification.
+
+*** Work
+
+Employer Sponsorship or Skilled Migration — turn experience into a career.
+
+*** Settle
+
+Permanent Residence — make Australia home.
+
+/Not every journey follows this exact path — and that's fine. We tailor the plan to your situation./
+
+-----
+
+** Visa Services
+:PROPERTIES:
+:SECTION: BentoBox — 3 cards linking to sub-pages
+:LAYOUT: 3-column grid, icon-topped, with arrow links
+:END:
+
+*** Student Visas
+:PROPERTIES:
+:ICON: book
+:LINK: /services/migration/student-visas
+:END:
+
+Subclass 500 applications for international students enrolling in registered Australian courses. We handle GTE statements, document compilation, and lodgement.
+
+[[/services/migration/student-visas][Student visa details →]]
+
+*** Graduate & Work Visas
+:PROPERTIES:
+:ICON: briefcase
+:LINK: /services/migration/graduate-work-visas
+:END:
+
+Post-study work visas (Subclass 485), employer-sponsored visas (TSS/482), and Standard Business Sponsor applications.
+
+[[/services/migration/graduate-work-visas][Graduate & work visas →]]
+
+*** Permanent Residence
+:PROPERTIES:
+:ICON: home
+:LINK: /services/migration/permanent-residence
+:END:
+
+Skilled migration, business migration, family & partner visas, visitor visas, and resident return visas. Multiple pathways to calling Australia home.
+
+[[/services/migration/permanent-residence][Permanent residence pathways →]]
+
+-----
+
+** Why Trust Us With Your Visa
+:PROPERTIES:
+:SECTION: Two-column — text left, credentials right
+:LAYOUT: 55/45 split. Right side: credential badges/logos stacked
+:END:
+
+*** Body
+
+Visa applications are high-stakes. A mistake can mean delays, refusals, or wasted money. That's why you want a team that's done this thousands of times.
+
+Our migration agents are registered with the Migration Alliance and the Migration Institute of Australia. Our education counselors hold QEAC certification. We don't cut corners, we don't guess, and we don't make promises we can't keep.
+
+We also won't tell you what you want to hear. If your points score is too low, we'll say so — and we'll show you exactly what to do about it.
+
+*** Credentials
+
+- Migration Alliance member
+- Migration Institute of Australia (MIA)
+- QEAC certified education agents
+- Australian Bar Association affiliated
+- 25+ years of successful applications
+
+-----
+
+** CTA
+:PROPERTIES:
+:SECTION: Full-width CTA banner
+:LAYOUT: Centered, contrasting background
+:CTA-PRIMARY: Book a Migration Assessment
+:CTA-SECONDARY: Call +61 8 6381 0030
+:END:
+
+*** Headline
+
+Not sure which visa is right for you?
+
+*** Body
+
+Book a free migration assessment. We'll review your situation, explain your options clearly, and give you an honest picture of what's achievable — before you commit to anything.
+
+* V2
+
+** Hero
+:PROPERTIES:
+:SECTION: Hero — full-width with overlay
+:LAYOUT: Left-aligned text
+:IMAGE: passport, boarding pass, Australian landmarks
+:END:
+
+*** Headline
+
+You have a dream of building a life in Australia. We know how to make it real.
+
+*** Subheadline
+
+Moving to a new country is one of the biggest decisions you will ever make. The visa process should not be the thing that holds you back. Since 1998, we have guided clients from over 40 countries through every step — with honesty, patience, and registered migration expertise.
+
+-----
+
+** The Migration Pathway
+:PROPERTIES:
+:SECTION: Timeline — horizontal, 4 stages
+:LAYOUT: Connected steps with icons, left to right on desktop, vertical on mobile
+:END:
+
+*** Study
+
+It starts with a student visa. You arrive, you study, you begin to feel what life in Australia is really like. This is your foundation.
+
+*** Graduate
+
+You finish your degree and earn the right to stay — 18 months to 4 years on a graduate work visa, depending on your qualification. Enough time to build real experience and real connections.
+
+*** Work
+
+An employer sees your value. Or your skills land you on the occupation list. Either way, your career in Australia takes shape.
+
+*** Settle
+
+Permanent residence. The moment "visiting Australia" becomes "living in Australia." Your family can join you. This is home now.
+
+/Every story is different. Some people follow this path step by step. Others jump ahead or take a detour. We plan for your life, not a template./
+
+-----
+
+** Visa Services
+:PROPERTIES:
+:SECTION: BentoBox — 3 cards linking to sub-pages
+:LAYOUT: 3-column grid, icon-topped, with arrow links
+:END:
+
+*** Student Visas
+:PROPERTIES:
+:ICON: book
+:LINK: /services/migration/student-visas
+:END:
+
+"Will my application be strong enough?" It will be. We prepare your Subclass 500 application with the same care we would give our own family — because we know what is at stake for yours.
+
+[[/services/migration/student-visas][Learn about student visas →]]
+
+*** Graduate & Work Visas
+:PROPERTIES:
+:ICON: briefcase
+:LINK: /services/migration/graduate-work-visas
+:END:
+
+You have studied hard. Now you deserve the chance to put that education to work. We handle post-study work visas, employer-sponsored visas, and business sponsor applications so your momentum does not stop at graduation.
+
+[[/services/migration/graduate-work-visas][Explore work visa options →]]
+
+*** Permanent Residence
+:PROPERTIES:
+:ICON: home
+:LINK: /services/migration/permanent-residence
+:END:
+
+"Is permanent residence really possible for someone like me?" We hear this question every week. The answer, more often than people expect, is yes. Let us show you the pathway.
+
+[[/services/migration/permanent-residence][Discover PR pathways →]]
+
+-----
+
+** Why Trust Us With Your Visa
+:PROPERTIES:
+:SECTION: Two-column — text left, credentials right
+:LAYOUT: 55/45 split. Right side: credential badges/logos stacked
+:END:
+
+*** Body
+
+We understand the weight of this decision. You are not just filing paperwork — you are putting your future, and often your family's future, in someone else's hands.
+
+That is why we have spent 25 years building a practice grounded in honesty. Our founding principle is simple: we tell you what you need to hear, not what you want to hear. If your points score is too low, we will say so. And then we will show you exactly how to change that.
+
+Our migration agents are registered with the Migration Alliance and the Migration Institute of Australia. Our education counselors hold QEAC certification. We have worked with clients from over 40 countries, across nearly every visa category Australia offers. We do not guess. We do not cut corners. And we never make promises we cannot keep.
+
+*** Credentials
+
+- Migration Alliance member
+- Migration Institute of Australia (MIA)
+- QEAC certified education agents
+- Australian Bar Association affiliated
+- 25+ years guiding clients from 40+ countries
+
+-----
+
+** CTA
+:PROPERTIES:
+:SECTION: Full-width CTA banner
+:LAYOUT: Centered, contrasting background
+:CTA-PRIMARY: Book a Migration Assessment
+:CTA-SECONDARY: Call +61 8 6381 0030
+:END:
+
+*** Headline
+
+What if your Australian dream is closer than you think?
+
+*** Body
+
+Book a free migration assessment. No pressure, no obligation. We will sit with you, review your situation honestly, and tell you exactly where you stand — so you can make a decision with confidence, not anxiety.
+
+* V3
+
+** Hero
+:PROPERTIES:
+:SECTION: Hero — full-width with overlay
+:LAYOUT: Left-aligned text
+:IMAGE: passport, boarding pass, Australian landmarks
+:END:
+
+*** Headline
+
+Australian visas. Done right.
+
+*** Subheadline
+
+Registered migration agents. 25+ years. 40+ countries served. Student visas, work visas, permanent residence — one team handles it all.
+
+-----
+
+** The Migration Pathway
+:PROPERTIES:
+:SECTION: Timeline — horizontal, 4 stages
+:LAYOUT: Connected steps with icons, left to right on desktop, vertical on mobile
+:END:
+
+*** Study
+
+Student Visa (Subclass 500). Enroll in a registered course. Study full-time. Work part-time.
+
+*** Graduate
+
+Graduate Work Visa (Subclass 485). Stay 18 months to 4 years after graduation depending on qualification and stream.
+
+*** Work
+
+Employer Sponsorship (Subclass 482/ENS) or Skilled Migration. Convert experience into a career pathway.
+
+*** Settle
+
+Permanent Residence. Points-based, employer-sponsored, business, or family pathways.
+
+/Your path may skip steps or combine them. We plan around your specific situation./
+
+-----
+
+** Visa Services
+:PROPERTIES:
+:SECTION: BentoBox — 3 cards linking to sub-pages
+:LAYOUT: 3-column grid, icon-topped, with arrow links
+:END:
+
+*** Student Visas
+:PROPERTIES:
+:ICON: book
+:LINK: /services/migration/student-visas
+:END:
+
+| What       | Subclass 500                      |
+| Who        | International students            |
+| Includes   | GTE statement, docs, lodgement    |
+
+[[/services/migration/student-visas][Student visa details →]]
+
+*** Graduate & Work Visas
+:PROPERTIES:
+:ICON: briefcase
+:LINK: /services/migration/graduate-work-visas
+:END:
+
+| What       | Subclass 485, 482, ENS            |
+| Who        | Graduates, sponsored workers      |
+| Includes   | Application, SBS setup, compliance |
+
+[[/services/migration/graduate-work-visas][Graduate & work visas →]]
+
+*** Permanent Residence
+:PROPERTIES:
+:ICON: home
+:LINK: /services/migration/permanent-residence
+:END:
+
+| What       | Skilled, business, family, partner, visitor, resident return visas |
+| Who        | Anyone eligible for PR or other visa pathways                     |
+| Includes   | Skills assessment, EOI, nomination                                |
+
+[[/services/migration/permanent-residence][Permanent residence pathways →]]
+
+-----
+
+** Why Trust Us With Your Visa
+:PROPERTIES:
+:SECTION: Two-column — text left, credentials right
+:LAYOUT: 55/45 split. Right side: credential badges/logos stacked
+:END:
+
+*** Body
+
+Visa mistakes cost time and money. Here is why clients trust us:
+
+- *Registered agents* — Migration Alliance, Migration Institute of Australia, QEAC certified
+- *25+ years* of successful applications across nearly every visa category
+- *Honest assessments* — if your points are too low, we tell you and show you how to fix it
+- *End-to-end* — education, career, and migration under one roof
+- *No surprises* — transparent fees communicated upfront
+
+*** Credentials
+
+- Migration Alliance member
+- Migration Institute of Australia (MIA)
+- QEAC certified education agents
+- Australian Bar Association affiliated
+- 25+ years, 40+ countries served
+
+-----
+
+** CTA
+:PROPERTIES:
+:SECTION: Full-width CTA banner
+:LAYOUT: Centered, contrasting background
+:CTA-PRIMARY: Book a Migration Assessment
+:CTA-SECONDARY: Call +61 8 6381 0030
+:END:
+
+*** Headline
+
+Not sure which visa fits?
+
+*** Body
+
+Free migration assessment. We review your situation, explain your options, and give you an honest answer. No commitment required.

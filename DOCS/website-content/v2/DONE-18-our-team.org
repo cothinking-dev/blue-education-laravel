@@ -1,0 +1,308 @@
+#+title: Our Team
+#+url: /about/team
+#+status: draft
+
+** Hero
+:PROPERTIES:
+:SECTION: Hero — full-width, subtle
+:LAYOUT: Centered text, light background
+:IMAGE: Group team photo (request from client — international + Australian staff)
+:END:
+
+*** Headline
+
+Multilingual specialists. Five countries. One mission.
+
+*** Subheadline
+
+Education, migration, and career experts — headquartered in Perth, represented across Asia, Africa, and the Pacific.
+
+*** Intro paragraph
+
+Our team spans continents, industries, and languages. From Registered Migration Agents to chartered accountants, solicitors to career counsellors — we bring real-world expertise to every consultation. Most of us are multilingual. All of us are committed to getting it right for you.
+
+-----
+
+** Australian Team
+:PROPERTIES:
+:SECTION: Leadership grid — photo top, bio below
+:LAYOUT: 2×2 card grid (or 2+2 stacked rows)
+:NOTE: Perth-based core team
+:END:
+
+*** Glen Ong — Managing Director | Registered Migration Agent MARN: 1385471
+:PROPERTIES:
+:IMAGE: DOCS/website-content/images/team/glen-ong.jpeg
+:LANGUAGES: English, Cantonese, Bahasa Malaysia
+:CREDENTIALS: BCom (Marketing), BArts (Asian Studies) — Curtin University; Grad Certificate in Migration Law & Practice; MARN 1385471
+:END:
+
+Glen brings nearly 20 years of experience across private and government education sectors. As Managing Director, he leads Blue's long-term strategy while remaining personally accessible to clients.
+
+A Registered Migration Agent, Glen is experienced in student visas, skilled migration, family and partner visas, and resident return visas. Despite a demanding schedule, Glen ensures every client receives honest, individualised advice — no templates, no shortcuts.
+
+Glen is fluent in English and conversational in Cantonese and Bahasa Malaysia.
+
+*** Monica Gaikwad — Associate Counsellor
+:PROPERTIES:
+:IMAGE: DOCS/website-content/images/team/monica-gaikwad.jpeg
+:LANGUAGES: English, Hindi, Marathi
+:CREDENTIALS: MBA — Curtin University; BBusiness (Accounting & Auditing) — S.N.D.T Women's University, Mumbai
+:END:
+
+Originally from India, Monica grew up in Kuwait before moving to Australia. She joined Blue through the Executive Internship Programme and has grown into a valued member of the team.
+
+With a background in financial acumen and a natural aptitude for counselling, Monica supports students through their study and enrolment journeys. Outside work, she organises social activities for international students — if you want to meet fellow students on a Friday night, Monica is your person.
+
+Monica is fluent in English, Hindi, and Marathi.
+
+*** Flora Wang — Marketing Executive | Counsellor
+:PROPERTIES:
+:IMAGE: DOCS/website-content/images/team/flora-wang.png
+:LANGUAGES: English, Mandarin, Cantonese
+:CREDENTIALS: Master of Marketing and Innovation Management — Edith Cowan University; BBusiness — Guangdong University of Foreign Studies; Exchange — University of Wisconsin
+:END:
+
+Flora is an Education Counsellor dedicated to helping students find the right pathway to a rewarding career. She invests real time in understanding each student's background before recommending courses or institutions.
+
+Originally from China, Flora has lived and studied in the United States and travelled extensively across Japan, Korea, and the Philippines. Her firsthand experience as an international student gives her genuine insight into the challenges students face when moving abroad.
+
+Flora is fluent in English, Mandarin, and Cantonese.
+
+*** Shen Sekhon — Associate Counsellor
+:PROPERTIES:
+:IMAGE: DOCS/website-content/images/team/shen-sekhon.jpg
+:LANGUAGES: English, Bahasa Malaysia
+:CREDENTIALS: MBA — Curtin University (2014); Bachelor of Mass Communications (Journalism & PR) — Curtin University (2003); Diploma in Multimedia — LimKokWing University
+:END:
+
+With over 20 years in international higher education, Shen brings deep expertise in marketing, recruitment, and student enrolment. She spent 14 years at Curtin University as Marketing & Communications Manager, recruiting across Southeast Asia, West Asia, the subcontinent, and Europe.
+
+Shen hails from Malaysia and regularly travels between Kuala Lumpur and Perth, advising parents and students on foundation and higher education pathways to Australia.
+
+-----
+
+** International Operations
+:PROPERTIES:
+:SECTION: Section intro + team grid
+:LAYOUT: 2–3 column card grid with region tags
+:NOTE: Sonia leads offshore; regionals by geographic coverage
+:END:
+
+*** Section intro
+
+Blue's international reach is powered by a team of regional representatives who provide localised support — in your language, in your time zone, with on-the-ground knowledge of your country's education and migration landscape.
+
+*** Sonia Ong — Executive Director | International Operations
+:PROPERTIES:
+:IMAGE: DOCS/website-content/images/team/sonia-ong.jpeg
+:LANGUAGES: English + 4 additional languages (Mandarin, Cantonese, Bahasa Malaysia, Bahasa Indonesia)
+:REGION: Global (offshore operations lead)
+:CREDENTIALS: MBA — Deakin University (Strategy & Planning); BCom — University of Western Australia; CPA (Australia); Chartered Accountant (Malaysia); Certified Business Continuity Professional — Disaster Recovery Institute, US
+:END:
+
+Sonia leads Blue's offshore initiatives, bringing over 20 years of experience in strategy, risk, and governance consulting. Her background spans multi-national corporations, public listed companies, and senior management advisory across Asia.
+
+Sonia first came to Australia for high school, then completed her degree at UWA before building a career that took her across Asia. She is instrumental in establishing Blue's international partnerships and operations infrastructure.
+
+Sonia speaks fluently in 5 languages and continues to travel across Asia conducting governance and risk training for directors and senior executives.
+
+*** Elaine Ho — Regional Head, Malaysia
+:PROPERTIES:
+:IMAGE: DOCS/website-content/images/team/elaine-ho.jpg
+:LANGUAGES: English, Malay, Cantonese
+:REGION: Malaysia, Southeast Asia
+:CREDENTIALS: Barrister at Law — Lincoln's Inn; procurement and governance experience with United Nations and major Asia Pacific airline
+:END:
+
+Elaine brings a rare combination of legal training, international procurement experience, and education counselling. After practising law in Malaysia, she moved into governance and strategy roles with the UN and a major Asia Pacific airline before dedicating herself to student and migration counselling.
+
+Her extensive travel and cross-cultural experience allows her to give prospective migrants a realistic picture of life in Australia. Elaine is fluent in English, Malay, and Cantonese.
+
+*** Monica Low — Associate Counsellor, Malaysia
+:PROPERTIES:
+:IMAGE: DOCS/website-content/images/team/monica-low.jpg
+:LANGUAGES: English, Bahasa Malaysia, Mandarin, Cantonese (and local Chinese dialects)
+:REGION: Malaysia, Southeast Asia
+:CREDENTIALS: BSc in Hospitality & Tourism Management — Purdue University, Indiana; Postgraduate Diploma in Marketing — Curtin University; banking and financial sector experience
+:END:
+
+A native of Kuala Lumpur, Monica brings years of business and interpersonal skills developed across hotel management in Seattle, retail banking in Singapore, and now education counselling in Malaysia.
+
+Monica's approachable personality and multilingual fluency make her a natural fit for student interaction across Southeast Asia.
+
+*** Hana Hursepuny — Executive Assistant | Indonesia Representative
+:PROPERTIES:
+:IMAGE: DOCS/website-content/images/team/hana-hursepuny.png
+:LANGUAGES: English, Indonesian
+:REGION: Indonesia, Malaysia
+:END:
+
+Hana is an integral member of the Blue family. She started as an intern and has grown into the team's go-to expert on enrolment process requirements and student visa guidelines — and a trainer for the wider team.
+
+Based in Indonesia, Hana travels frequently to Australia for meetings and team activities. She serves as translator and interpreter for Indonesian and Malaysian students on short-term study tours and immersion programmes.
+
+*** Minami Sakamoto — Associate Counsellor, Japan
+:PROPERTIES:
+:IMAGE: DOCS/website-content/images/team/minami-sakamoto.png
+:LANGUAGES: Japanese, English
+:REGION: Japan, Northeast Asia
+:CREDENTIALS: World Liberal Arts — Nagoya University of Foreign Studies
+:END:
+
+Based in Japan, Minami first came to Australia to study English, then joined Blue as an intern before becoming a counsellor. Her own experience as an international student — having also studied in France and New York — gives her a genuine connection with clients navigating life away from home.
+
+Minami supports Japanese students considering English study, homestay programmes, and work opportunities in Australia — guidance in their language, on their terms.
+
+*** Nino Sekyere-Boakye — Regional Director, Ghana | Registered Migration Agent MARN: 0959773
+:PROPERTIES:
+:IMAGE: DOCS/website-content/images/team/nino-sekyere-boakye.jpeg
+:LANGUAGES: English, French (conversational)
+:REGION: Ghana, West Africa, Africa-wide
+:CREDENTIALS: BA (Hons) — University of Ghana; Master of Professional Marketing — Edith Cowan University; Graduate Diploma of Migration Law — Murdoch University; MARN 0959773
+:END:
+
+Nino is an academician and researcher who has spent over a decade helping African students pursue education and work experience in Australia. He has travelled and worked in over 25 African countries and holds deep knowledge of the education, social, and economic environments across the continent.
+
+As a Registered Migration Agent, Nino is qualified to advise on courses, visa pathways, career options, and life in Australia.
+
+*** Elijah Chongo — Regional Head, Zambia
+:PROPERTIES:
+:IMAGE: DOCS/website-content/images/team/elijah-chongo.jpg
+:LANGUAGES: English, ici Bemba, ci Nyanja
+:REGION: Zambia, Southern Africa
+:CREDENTIALS: Master's in Business Management — Wales University (via London School of Management); Bachelor of Public Administration — University of Lusaka; Certificate in Basic Prosecution in Law — NIPA Zambia
+:END:
+
+Based in Lusaka, Elijah assists clients across Zambia and neighbouring countries in planning their pathway to Australia — whether to study, work, visit, or migrate. He brings over 20 years of research, risk management, and strategic advisory experience across both private and public sectors.
+
+Elijah continues to provide business management consultancy to large organisations while serving as Blue's primary representative in the Southern African sub-region.
+
+*** Priscilla Bwalya Mwansa — Regional Advisor, Lusaka | Senior Counsellor
+:PROPERTIES:
+:IMAGE: DOCS/website-content/images/team/priscilla-mwansa.jpg
+:LANGUAGES: English, ici Bemba
+:REGION: Zambia, Southern Africa
+:CREDENTIALS: Bachelor of Accounting — Copperbelt University; MBA (Finance, in progress); Chartered Accountant — ZICA; ZICA Technician; ZICA Licentiate
+:END:
+
+Priscilla is a Senior Counsellor responsible for planning, advising, and supporting students from Zambia and the broader region who wish to pursue education in Australia.
+
+With a background in strategic management and chartered accounting, Priscilla is uniquely positioned to provide insight into both career planning and the financial considerations of studying abroad. Her goal is simple: help young people plan and achieve their goals.
+
+*** Sherene Chan — Regional Head, New Zealand
+:PROPERTIES:
+:IMAGE: DOCS/website-content/images/team/sherene-chan.jpg
+:LANGUAGES: English, Malay, Cantonese
+:REGION: New Zealand, Oceania
+:CREDENTIALS: MBA — University of South Australia; former Big 4 accounting firm consultant; stakeholder management with UNDP, Khazanah Nasional Berhad, Petronas Malaysia
+:END:
+
+Based in Auckland, Sherene facilitates options for those intending to study, work, and live in New Zealand. Her background as a migrant to the country gives her invaluable firsthand perspective on what clients will experience.
+
+Prior to education counselling, Sherene worked with a Big 4 firm and led stakeholder relationship management for some of the world's most prominent institutions — including the United Nations Development Programme.
+
+-----
+
+** Migration & Legal Specialists
+:PROPERTIES:
+:SECTION: Two-column feature cards
+:LAYOUT: Full-width, distinct styling — emphasise credentials
+:NOTE: These are specialist roles worth calling out separately
+:END:
+
+*** Section intro
+
+Blue's migration and legal specialists are fully registered and credentialled. Whether you need visa advice, migration strategy, or legal representation — we have qualified professionals on the team.
+
+*** Mansheel Kaur — Solicitor | Immigration Lawyer
+:PROPERTIES:
+:IMAGE: DOCS/website-content/images/team/mansheel-kaur.jpg
+:LANGUAGES: English, Malay, Indonesian, Punjabi, Hindi
+:CREDENTIALS: LL.B & Bachelor of Jurisprudence — Monash University; Solicitor (NSW); Advocate & Solicitor (Malaysia); Associate of the Chartered Institute of Arbitrators (UK); Accredited Mediator; Notary Public
+:END:
+
+Mansheel comes with over 35 years of legal experience spanning Australia and Malaysia. She has a strong track record across business migration, skilled migration, family and partner visas, contributory parent visas, and resident return visas.
+
+Mansheel completed high school at Pembroke School in Adelaide before graduating from Monash University. She is a Notary Public and an accredited Mediator, and speaks five languages — making her exceptionally well-placed to serve clients from across Southeast Asia.
+
+*** Arwinder Pal Singh — Registered Migration Agent MARN: 1574550
+:PROPERTIES:
+:IMAGE: DOCS/website-content/images/team/arwinder-singh.png
+:LANGUAGES: English, Hindi, Punjabi
+:CREDENTIALS: Bachelor of Computer Science — GND University, Amritsar; Master of Engineering — University of South Australia; Juris Doctor (in progress) — Deakin University; MARN 1574550
+:END:
+
+Arwinder is one of Blue's Registered Migration Agents, with a comprehensive track record across employer-sponsored programs, skilled migration, family migration, student visas, and Administrative Appeals Tribunal matters.
+
+Prior to migration work, Arwinder held major roles in the public and private sectors and led the design of academic programmes for vocational and higher education institutions. His technical background in engineering and law gives him a structured, thorough approach to complex migration cases.
+
+-----
+
+** Our Expertise
+:PROPERTIES:
+:SECTION: Three-column feature strip
+:LAYOUT: Icon-topped, centered text
+:END:
+
+*** Education Specialists
+
+Institution matching. Pathway planning. Course selection. We know the Australian education system inside out — from English language programmes to postgraduate degrees.
+
+*** Career Specialists
+
+Job readiness. Employer connections. Career mapping. We bridge the gap between qualification and employment, with real-world insight into the Australian job market.
+
+*** Migration Specialists
+
+Registered agents. Visa applications. Legal compliance. Blue holds MARN 1385471 and QEAC S165. We navigate the system so you don't have to.
+
+-----
+
+** International Offices
+:PROPERTIES:
+:SECTION: Reference table — compact
+:LAYOUT: Clean table, mobile-friendly
+:END:
+
+| Location           | Representative(s)                  | Market Coverage           |
+|--------------------+------------------------------------+---------------------------|
+| Perth, WA (HQ)     | Glen Ong, Monica G, Flora, Shen    | Australia-wide            |
+| Global (Offshore)  | Sonia Ong (Executive Director)     | International operations  |
+| Malaysia           | Elaine Ho, Monica Low              | Southeast Asia            |
+| Indonesia          | Hana Hursepuny                     | Indonesia, Malaysia       |
+| Japan              | Minami Sakamoto                    | Japan, Northeast Asia     |
+| Ghana              | Nino Sekyere-Boakye (MARN)         | West Africa, Africa-wide  |
+| Zambia             | Elijah Chongo, Priscilla Mwansa    | Zambia, Southern Africa   |
+| New Zealand        | Sherene Chan                       | New Zealand, Oceania      |
+
+-----
+
+** Credentials & Registrations
+:PROPERTIES:
+:SECTION: Small credential strip or footer element — trust signal
+:LAYOUT: Horizontal strip, logos or badges
+:END:
+
+- MARN 1385471 (Glen Ong, Managing Director)
+- MARN 0959773 (Nino Sekyere-Boakye, Ghana)
+- MARN 1574550 (Arwinder Pal Singh)
+- QEAC S165
+- Registered with Migration Agents Registration Authority (MARA)
+
+-----
+
+** CTA
+:PROPERTIES:
+:SECTION: Full-width CTA banner
+:CTA-PRIMARY: Book a Consultation
+:CTA-SECONDARY: Call +61 8 6381 0030
+:END:
+
+*** Headline
+
+Talk to someone who speaks your language.
+
+*** Body
+
+Our team members are based in Perth, Malaysia, Indonesia, Japan, Ghana, Zambia, and New Zealand. We'll connect you with the right adviser for your situation.

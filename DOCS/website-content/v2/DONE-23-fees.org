@@ -1,0 +1,127 @@
+#+title: Fees & Investment
+#+url: /fees
+#+status: draft
+
+** Hero
+:PROPERTIES:
+:SECTION: Hero — minimal
+:LAYOUT: Left-aligned text, clean background
+:END:
+
+*** Headline
+
+Fees & Costs
+
+*** Subheadline
+
+All fees communicated upfront, before any work begins.
+
+-----
+
+** Our Approach to Fees
+:PROPERTIES:
+:SECTION: Two-column — text left, image right
+:LAYOUT: 60/40 split
+:IMAGE: Consultation setting, documents on table
+:END:
+
+Blue Education's fees vary based on the services you need and the complexity of your situation. Every journey is different — so pricing is personalised, not one-size-fits-all.
+
+Before we do any work, we tell you exactly what it will cost and why. Our initial consultation is used to assess your situation — we provide a personalised quote before you commit to anything.
+
+- *Fees by service* — you pay for what you need, not a package that includes what you don't
+- *Personalised quotes* — every situation is different; pricing reflects that
+- *Upfront breakdown* — full cost picture provided at consultation, before any application work begins
+
+-----
+
+** Cost Overview
+:PROPERTIES:
+:SECTION: Table — clean
+:LAYOUT: Full-width reference table
+:END:
+
+| Cost Category              | Who Sets It          | Paid To               | Amount                 |
+|----------------------------+----------------------+-----------------------+------------------------|
+| Blue Education service fees | Blue Education       | Blue Education        | Varies by case         |
+| STAC charges               | Blue Education       | Blue Education        | Varies by visa history |
+| Medical examination        | Panel physicians     | Medical provider      | $240–$380              |
+| Visa application           | Dept of Home Affairs | Australian Government | Varies by subclass     |
+| Tuition                    | Institution          | Institution           | Varies by program      |
+
+-----
+
+** What You'll Pay
+:PROPERTIES:
+:SECTION: Feature list — visible content, no accordion
+:LAYOUT: Vertical sections, clearly separated
+:END:
+
+*** Blue Education Service Fees
+
+Our service fees cover consultation, pathway planning, application processing, document compilation, and ongoing support. Fees vary by case — contact us for a personalised quote.
+
+*** Student Travel Advice & Consent (STAC)
+
+STAC charges are based on each applicant's visa history and specific circumstances. We provide transparent calculations at initial consultation.
+
+*** Medical Examinations
+
+Required for visa applications. Cost ranges from *$240 to $380* depending on examination type (standard health check vs comprehensive medical assessment).
+
+*** Visa Application Fees
+
+Set by the Australian Government Department of Home Affairs. Vary by visa subclass. See [[/services/migration/student-visas][student visa details →]]. Separate from Blue Education fees.
+
+*** Tuition Fees
+
+Paid directly to your educational institution. Vary by institution, program, and duration.
+
+-----
+
+** Additional Support Services
+:PROPERTIES:
+:SECTION: Table — clean
+:LAYOUT: Simple reference table
+:END:
+
+| Service                   | Description                    |
+|---------------------------+--------------------------------|
+| [[/services/student-support][24/7 Emergency Hotline]]    | Round-the-clock crisis support |
+| Document Translation      | NAATI-certified                |
+| Airport Transfers         | Meet, greet, transport         |
+| [[/programs/study-tours][Study Tour Programs]]       | Short-term tour coordination   |
+| Specialised Consultations | Expert advice sessions         |
+
+-----
+
+** Student Responsibilities
+:PROPERTIES:
+:SECTION: Feature list — icon + text
+:LAYOUT: Vertical list, 5 items
+:END:
+
+Students budget separately for:
+
+- *Accommodation* — homestay, rental, or student housing
+- *Guardianship* — required for students under 18 (via Professional Student Care Australia or International Student Alliance)
+- *OSHC* — Overseas Student Health Cover (mandatory for all [[/services/migration/student-visas][student visas]])
+- *Living expenses* — transport, food, personal
+- *Tuition* — course fees paid directly to institution
+
+-----
+
+** CTA
+:PROPERTIES:
+:SECTION: Full-width CTA banner
+:CTA-PRIMARY: Get a Personalised Quote
+:CTA-SECONDARY: Call +61 8 6381 0030
+:END:
+
+*** Headline
+
+Get your cost breakdown.
+
+*** Body
+
+Tell us your situation — education level, visa status, and what you're trying to achieve. We'll provide an itemised quote before any work begins.

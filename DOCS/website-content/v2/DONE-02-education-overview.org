@@ -1,0 +1,172 @@
+#+title: Education Services
+#+url: /services/education
+#+status: draft
+
+** Hero
+:PROPERTIES:
+:SECTION: Hero — full-width with overlay
+:LAYOUT: Centered text
+:IMAGE: University campus, diverse students walking
+:END:
+
+*** Headline
+
+Australia has 1,100+ institutions and 20,000+ programs. Finding the right one takes more than a Google search.
+
+*** Subheadline
+
+We've been navigating this system since 1998. Let us show you where you fit.
+
+-----
+
+** How We Help
+:PROPERTIES:
+:SECTION: Two-column — text left, image right
+:LAYOUT: 55/45 split
+:IMAGE: Counselor with student in meeting
+:END:
+
+Choosing where and what to study in Australia isn't just an education decision — it's a career decision, a migration decision, and a life decision.
+
+Your advisor maps out institutions and programs against two questions: what career do you want, and what does your visa pathway look like? The course recommendation comes after that — not before.
+
+Once you've decided, we take care of the rest — application, enrolment, and student visa included.
+
+-----
+
+** Education Pathways
+:PROPERTIES:
+:SECTION: Pathway selector — 4 image-topped cards
+:LAYOUT: 2×2 grid on desktop, single column stack on mobile. All 4 cards visible by default — no
+         tabs, accordion, or hidden content. Each card: full-width image (top, ~200px tall,
+         object-fit cover), bold audience-framed label (card heading), 2–3 lines body text,
+         text link at bottom. Entire card is clickable. Subtle card shadow or border.
+         Hover state: slight elevation or left border accent.
+:SEO-NOTE: All content static and visible in DOM — no JS-gated content.
+:END:
+
+Which describes your situation?
+
+*** I'm enrolling a child in school
+:PROPERTIES:
+:LINK: /services/education/school-programs
+:IMAGE: A young international student in school uniform sitting at a desk in a bright, modern
+        Australian classroom. Natural window light. Other students visible in background —
+        diverse group. Warm, safe atmosphere. Candid, not posed.
+:IMAGE-ALT: International student in Australian school classroom
+:IMAGE-SEARCH: "international student Australian classroom primary school"
+:END:
+
+For students aged 5–18. We handle school selection, accommodation, guardianship, and welfare — so parents know their child is looked after at every stage.
+
+[[/services/education/school-programs][Learn more →]]
+
+*** I need to build my English or bridge to university
+:PROPERTIES:
+:LINK: /services/education/english-foundation
+:IMAGE: A small group of adult international students — mid-20s, mixed nationalities — studying
+        together around a table in a modern college setting. Textbooks, laptops, notepads visible.
+        One student speaking, others engaged. Bright, airy room.
+:IMAGE-ALT: International students studying English in a college classroom
+:IMAGE-SEARCH: "adult international students English language class group study"
+:END:
+
+Not quite at university entry level yet? English language courses (10–30 weeks) and foundation programs build the academic skills and IELTS scores that open the door.
+
+[[/services/education/english-foundation][Learn more →]]
+
+*** I want a practical, career-focused qualification
+:PROPERTIES:
+:LINK: /services/education/vet-tafe
+:IMAGE: A student in a hands-on workshop or trade laboratory setting — safety glasses on,
+        working with professional equipment. Focused expression. Clean, well-equipped modern
+        TAFE facility. Could be automotive, hospitality, or construction context.
+:IMAGE-ALT: TAFE student working in a vocational training workshop
+:IMAGE-SEARCH: "TAFE student vocational training workshop Australia hands-on"
+:END:
+
+Certificates through to Advanced Diplomas — practical, industry-recognised qualifications. Many sit directly on Australia's skilled migration lists.
+
+[[/services/education/vet-tafe][Learn more →]]
+
+*** I'm applying for a Bachelor's, Master's, or PhD
+:PROPERTIES:
+:LINK: /services/education/degrees
+:IMAGE: A confident international student walking across a modern university campus in Perth —
+        sunny day, university buildings and open lawns in background. Carrying a backpack,
+        looking ahead. Aspirational but candid, not stock-photo stiff.
+:IMAGE-ALT: International student walking on Australian university campus
+:IMAGE-SEARCH: "international student university campus Perth Western Australia sunny"
+:END:
+
+Bachelor, Master, and Doctoral programs across seven globally ranked Australian universities. Graduates receive 2–4 years of post-study work rights.
+
+[[/services/education/degrees][Learn more →]]
+
+-----
+
+** The Placement Process
+:PROPERTIES:
+:SECTION: Timeline — vertical, 5 steps
+:LAYOUT: Numbered steps, icon + heading + short text
+:END:
+
+*** 1. Discovery Session
+
+We assess your background, goals, and eligibility. One conversation to understand where you're starting from and where you want to end up.
+
+*** 2. Pathway Recommendation
+
+You receive a shortlist of institutions and programs matched to your career and migration goals — with a clear explanation of why each one fits.
+
+*** 3. Application & Enrolment
+
+We prepare your documents, lodge applications, and secure your offer and enrolment confirmation.
+
+*** 4. Visa & Pre-Departure
+
+Student visa, accommodation, health insurance, arrival orientation. All coordinated in one place.
+
+*** 5. Ongoing Support
+
+Academic guidance, welfare monitoring, and career planning for as long as you're studying.
+
+-----
+
+** Admission Snapshot
+:PROPERTIES:
+:SECTION: Table — clean, minimal
+:LAYOUT: Simple reference table
+:END:
+
+| Program Level   | IELTS     | Duration     | Post-Study Work Visa |
+|-----------------+-----------+--------------+----------------------|
+| Foundation      | 5.0 – 5.5 | 6–12 months  | —                    |
+| VET/TAFE        | 5.5 – 6.0 | 6 months–2yr | 18 months (if eligible) |
+| Bachelor Degree | 6.5       | 3–4 years    | 2 years              |
+| Master Degree   | 6.5 – 7.0 | 1–2 years    | 3 years              |
+| Doctoral        | 6.5 – 7.0 | 3–4 years    | 4 years              |
+
+Think of entry requirements as a starting point, not a ceiling. There's almost always more than one way in.
+
+/VET post-study work rights (Graduate Work Stream, Subclass 485, 18 months) are available to graduates whose qualification and occupation appear on a skilled occupation list. Eligibility depends on course and occupation — your advisor will confirm during assessment./
+
+[[/resources/admission-requirements][See full admission requirements →]]
+
+-----
+
+** CTA
+:PROPERTIES:
+:SECTION: Full-width CTA banner
+:LAYOUT: Centered, contrasting background
+:CTA-PRIMARY: Book an Education Assessment
+:CTA-SECONDARY: Call +61 8 6381 0030
+:END:
+
+*** Headline
+
+Know what you want to study. Not sure how to get there?
+
+*** Body
+
+We review your background, map your options, and tell you exactly what the pathway looks like — in one conversation.

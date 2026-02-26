@@ -1,0 +1,314 @@
+#+title: SCSA Associate Program
+#+url: /programs/scsa-associate
+#+status: draft
+
+* V1
+
+** Hero
+:PROPERTIES:
+:SECTION: Hero — full-width
+:LAYOUT: Left-aligned text
+:IMAGE: Students in school environment, WA branding
+:END:
+
+*** Headline
+
+Australian curriculum. Delivered internationally. Officially recognised.
+
+*** Subheadline
+
+Blue Education is an official SCSA Associate — authorised to promote the Western Australian curriculum to schools and students worldwide.
+
+-----
+
+** What Is SCSA?
+:PROPERTIES:
+:SECTION: Two-column — text left, logo/badge right
+:LAYOUT: 60/40 split. Right: SCSA logo and WA Dept of Education badge
+:END:
+
+The School Curriculum and Standards Authority (SCSA) is the governing body responsible for Kindergarten to Year 12 curriculum, assessment, standards, and reporting in Western Australia.
+
+SCSA oversees the Western Australian Certificate of Education (WACE) — the qualification that Year 12 students complete before entering university.
+
+Blue Education has been officially recognised by SCSA, under the WA Department of Education, to promote this curriculum internationally.
+
+-----
+
+** For International Schools
+:PROPERTIES:
+:SECTION: Feature list — icon + heading + text
+:LAYOUT: Vertical, 5 items
+:END:
+
+*** Implement the WA Curriculum
+
+Deliver Australian-standard education at your school — without relocating to Australia.
+
+*** Application & Onboarding Support
+
+We help you understand, apply for, and launch SCSA-aligned programs from start to finish.
+
+*** Quality Assurance
+
+Align with Australian education standards and SCSA moderation requirements.
+
+*** Create Student Pathways
+
+Give your students a recognised Australian qualification that opens doors to Australian universities.
+
+*** Ongoing Guidance
+
+Curriculum implementation support doesn't end at launch. We provide continued guidance and liaison with SCSA.
+
+-----
+
+** For Students
+:PROPERTIES:
+:SECTION: BentoBox — 3 cards
+:LAYOUT: 3-column grid
+:END:
+
+*** Complete WACE Overseas
+
+Earn the Western Australian Certificate of Education from your home country — the same qualification Australian students earn.
+
+*** University-Ready
+
+WACE is internationally recognised and accepted by Australian universities for direct entry.
+
+*** Seamless Transition
+
+If you later choose to study in Australia, your WACE preparation means you're already aligned with Australian academic expectations.
+
+-----
+
+** CTA
+:PROPERTIES:
+:SECTION: Full-width CTA banner
+:CTA-PRIMARY: Learn More About SCSA Partnership
+:CTA-SECONDARY: Call +61 8 6381 0030
+:END:
+
+*** Headline
+
+Bring Australian education to your school.
+
+*** Body
+
+Whether you're a school exploring SCSA accreditation or a student interested in WACE, contact us to discuss your options.
+
+* V2
+
+** Hero
+:PROPERTIES:
+:SECTION: Hero — full-width
+:LAYOUT: Left-aligned text
+:IMAGE: School principal standing in front of a modern school building, warm expression
+:END:
+
+*** Headline
+
+What if your students could earn an Australian qualification — without leaving your country?
+
+*** Subheadline
+
+Blue Education is an official SCSA Associate. We help international schools deliver the Western Australian curriculum — the same standard Australian students follow.
+
+-----
+
+** The Vision Behind It
+:PROPERTIES:
+:SECTION: Two-column — text left, image right
+:LAYOUT: 55/45 split
+:IMAGE: Diverse classroom of students engaged in learning
+:END:
+
+You run a school. You want to give your students every possible advantage — a globally recognised qualification, a pathway to world-class universities, an education that prepares them for an international future.
+
+But sending students abroad is expensive, complicated, and not possible for every family.
+
+What if you could bring the education to them instead?
+
+The School Curriculum and Standards Authority (SCSA) governs the K-12 curriculum in Western Australia — including the Western Australian Certificate of Education (WACE), the qualification Year 12 students complete before entering university. It's rigorous, internationally recognised, and accepted for direct entry into Australian universities.
+
+As an official SCSA Associate, Blue Education helps schools like yours understand, apply for, and deliver this curriculum — bringing Australian education standards into your classrooms, wherever in the world they are.
+
+-----
+
+** What This Means for Your School
+:PROPERTIES:
+:SECTION: Feature list — icon + heading + text
+:LAYOUT: Vertical, 5 items
+:END:
+
+*** A Curriculum Worth Delivering
+
+The WA curriculum is built on Australian education standards — among the highest in the world. Your students access the same framework as domestic Australian students.
+
+*** We Walk You Through It
+
+From initial understanding to formal application to classroom launch, we guide you through every step. SCSA compliance, moderation requirements, onboarding — we handle the complexity so you can focus on teaching.
+
+*** A Qualification That Opens Doors
+
+WACE isn't just a certificate. It's a pathway. Your students earn an internationally recognised qualification that Australian universities accept for direct entry.
+
+*** Ongoing Partnership
+
+This isn't a one-time setup. We provide continued liaison with SCSA, ongoing quality assurance support, and guidance as your program evolves.
+
+*** Your Students Stay Home — Their Opportunities Go Global
+
+Families don't need to finance overseas study for their children to access Australian education. The classroom they're already in becomes the launchpad.
+
+-----
+
+** What This Means for Students
+:PROPERTIES:
+:SECTION: BentoBox — 3 cards
+:LAYOUT: 3-column grid
+:END:
+
+*** The Same Qualification
+
+You earn the Western Australian Certificate of Education — the exact same qualification Australian Year 12 students earn. Not a version of it. The real thing.
+
+*** Ready for University
+
+WACE is internationally recognised. Australian universities accept it for direct entry. So do many universities around the world.
+
+*** A Head Start
+
+If you later decide to study in Australia, you arrive already aligned with Australian academic standards, teaching methods, and expectations. No catching up. No culture shock in the classroom.
+
+-----
+
+** CTA
+:PROPERTIES:
+:SECTION: Full-width CTA banner
+:CTA-PRIMARY: Discuss SCSA for Your School
+:CTA-SECONDARY: View Requirements
+:END:
+
+*** Headline
+
+Your school. Australian standards. Global possibilities.
+
+*** Body
+
+Whether you're exploring the idea or ready to apply, we'll walk you through what SCSA accreditation involves and how it would work for your school. Let's start a conversation.
+
+* V3
+
+** Hero
+:PROPERTIES:
+:SECTION: Hero — full-width
+:LAYOUT: Left-aligned text. Clean, minimal
+:END:
+
+*** Headline
+
+SCSA Associate Program: deliver Australian curriculum internationally.
+
+*** Subheadline
+
+Blue Education is officially authorised by the WA Department of Education to promote the SCSA curriculum to schools and students worldwide.
+
+-----
+
+** What Is SCSA?
+:PROPERTIES:
+:SECTION: Info card
+:LAYOUT: Clean, single column
+:END:
+
+| Detail | Info |
+|--------|------|
+| Full name | School Curriculum and Standards Authority |
+| Jurisdiction | Western Australia |
+| Scope | Kindergarten to Year 12 |
+| Key qualification | Western Australian Certificate of Education (WACE) |
+| Oversight | Curriculum, assessment, standards, reporting, moderation |
+| Recognition | Internationally recognised; accepted for direct entry to Australian universities |
+
+-----
+
+** For International Schools
+:PROPERTIES:
+:SECTION: Feature list — icon + heading + text
+:LAYOUT: Vertical, 5 items
+:END:
+
+*** What You Get
+
+- Ability to deliver the WA curriculum at your school
+- Application and onboarding support from start to finish
+- SCSA compliance and moderation guidance
+- Quality assurance alignment with Australian standards
+- Ongoing liaison with SCSA after launch
+
+*** How It Works
+
+1. *Understand* — We explain the SCSA framework, requirements, and what accreditation involves
+2. *Apply* — We support your formal application to deliver the WA curriculum
+3. *Onboard* — We help you set up curriculum delivery, teacher preparation, and compliance
+4. *Launch* — Your school begins delivering WACE-aligned education
+5. *Maintain* — We provide continued guidance and SCSA liaison
+
+-----
+
+** For Students
+:PROPERTIES:
+:SECTION: BentoBox — 3 cards
+:LAYOUT: 3-column grid
+:END:
+
+*** WACE Overseas
+
+Complete the Western Australian Certificate of Education from your home country. Same qualification as domestic Australian students.
+
+*** University Entry
+
+WACE accepted for direct entry to Australian universities. Internationally recognised.
+
+*** Transition Ready
+
+Already aligned with Australian academic standards if you later choose to study in Australia.
+
+-----
+
+** Who This Is For
+:PROPERTIES:
+:SECTION: Feature list — 3 items
+:LAYOUT: Horizontal cards
+:END:
+
+*** International Schools
+
+Schools wanting to offer an Australian-standard curriculum without geographic relocation. Any country.
+
+*** Education Providers
+
+Organisations exploring Australian curriculum partnerships for their student base.
+
+*** Students
+
+Students wanting to earn WACE from their home country for Australian university entry.
+
+-----
+
+** CTA
+:PROPERTIES:
+:SECTION: Full-width CTA banner
+:CTA-PRIMARY: Learn More About SCSA Partnership
+:CTA-SECONDARY: View Requirements
+:END:
+
+*** Headline
+
+Explore SCSA accreditation.
+
+*** Body
+
+Contact us to discuss requirements, process, and timeline for delivering the WA curriculum at your school.

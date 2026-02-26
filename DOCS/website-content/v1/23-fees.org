@@ -1,0 +1,316 @@
+#+title: Fees & Investment
+#+url: /fees
+#+status: draft
+
+* V1
+
+** Hero
+:PROPERTIES:
+:SECTION: Hero — minimal
+:LAYOUT: Left-aligned text, clean background
+:END:
+
+*** Headline
+
+Transparent pricing. No hidden costs.
+
+*** Subheadline
+
+We believe in honest advice — and that starts with being upfront about what things cost.
+
+-----
+
+** Our Approach to Fees
+:PROPERTIES:
+:SECTION: Two-column — text left, image right
+:LAYOUT: 60/40 split
+:IMAGE: Consultation setting, documents on table
+:END:
+
+Blue Education's fees vary based on the services you need and the complexity of your situation. We don't believe in one-size-fits-all pricing — because no two journeys are the same.
+
+What we do believe in:
+
+- *Transparency* — all fees communicated clearly during your initial consultation
+- *No surprises* — you understand your financial commitment before you proceed
+- *Honest expectations* — realistic cost breakdowns, not lowball estimates
+
+Your initial consultation is free. Always.
+
+-----
+
+** What You'll Pay
+:PROPERTIES:
+:SECTION: Accordion — expandable sections
+:LAYOUT: Clean accordion, icons
+:END:
+
+*** Blue Education Service Fees
+
+Our service fees cover consultation, pathway planning, application processing, document compilation, and ongoing support. Fees vary by case — contact us for a personalised quote.
+
+*** Student Travel Advice & Consent (STAC)
+
+STAC charges are based on each applicant's visa history. We provide transparent calculations based on your individual circumstances. Use our fee calculator for an initial estimate.
+
+*** Medical Examinations
+
+Required for visa applications. Cost ranges from *$240 to $380* depending on the type of examination.
+
+*** Visa Application Fees
+
+Set by the Australian Government Department of Home Affairs. Vary by visa subclass. Separate from Blue Education fees.
+
+*** Tuition Fees
+
+Paid directly to your educational institution. Vary by institution, program, and duration.
+
+-----
+
+** Additional Support Services
+:PROPERTIES:
+:SECTION: Table — clean
+:LAYOUT: Simple reference table
+:END:
+
+| Service                | Description                         |
+|------------------------+-------------------------------------|
+| 24/7 Emergency Hotline    | Round-the-clock crisis support      |
+| Document Translation      | NAATI-certified, fast turnaround    |
+| Airport Transfers         | Meet, greet, and transport          |
+| Study Tour Programs       | Short-term tour coordination        |
+| Specialized Consultations | Expert advice sessions              |
+
+-----
+
+** Your Responsibilities
+:PROPERTIES:
+:SECTION: Feature list — icon + text
+:LAYOUT: Vertical list, 5 items
+:END:
+
+Students are responsible for:
+
+- *Accommodation* — homestay, rental, or student housing
+- *Guardianship* — required for students under 18
+- *OSHC* — Overseas Student Health Cover (mandatory for student visas)
+- *Living expenses* — personal costs, transport, food
+- *Tuition* — course fees paid directly to institutions
+
+-----
+
+** CTA
+:PROPERTIES:
+:SECTION: Full-width CTA banner
+:CTA-PRIMARY: Get a Personalised Quote
+:CTA-SECONDARY: Call +61 8 6381 0030
+:END:
+
+*** Headline
+
+Want to know exactly what your journey will cost?
+
+*** Body
+
+Book a free consultation. We'll assess your situation and provide a clear, itemised cost breakdown — no obligation, no pressure.
+
+* V2
+/The Human Story — address the anxiety of financial planning for something this important./
+
+** Hero
+:PROPERTIES:
+:SECTION: Hero — minimal
+:LAYOUT: Left-aligned text, clean background
+:END:
+
+*** Headline
+
+The investment that changes everything.
+
+*** Subheadline
+
+Moving to Australia is one of the biggest financial decisions you'll make. You deserve to know exactly what it costs — before you commit.
+
+-----
+
+** Our Approach to Fees
+:PROPERTIES:
+:SECTION: Two-column — text left, image right
+:LAYOUT: 60/40 split
+:IMAGE: Consultation setting, documents on table
+:END:
+
+We understand the weight of this decision. You're not just paying for a service — you're investing in your future, your family's future, maybe a whole new life. That's why we refuse to be vague about money.
+
+Since 1998, our founding principle has been "Honesty is the Best Policy." That applies to everything — including costs. Here's what that looks like in practice:
+
+- *Full transparency* — every fee is communicated clearly during your initial consultation, before you commit to anything
+- *No hidden costs* — if there's a charge, you'll know about it upfront
+- *Realistic expectations* — we'd rather give you honest numbers than comfortable ones that surprise you later
+
+Our fees vary because your situation is unique. The complexity of your visa history, the services you need, the pathway that makes sense for you — all of this shapes the cost. That's why we start with a free consultation: so we can understand your situation before quoting a number.
+
+*Your initial consultation is always free.* Come with your questions. Leave with clarity.
+
+-----
+
+** What You'll Pay
+:PROPERTIES:
+:SECTION: Accordion — expandable sections
+:LAYOUT: Clean accordion, icons
+:END:
+
+*** Blue Education Service Fees
+
+Our fees cover the full journey: consultation, pathway planning, application processing, document compilation, and ongoing support throughout your time in Australia. Because every case is different, we provide personalised quotes rather than generic price lists. You'll know exactly what you're paying for and why.
+
+*** Student Travel Advice & Consent (STAC)
+
+STAC charges depend on your visa history and personal circumstances. We calculate these transparently and explain every component so there are no surprises. Our fee calculator is available as a reference tool to help you estimate costs.
+
+*** Medical Examinations
+
+Visa applications require health assessments. Depending on the type of examination needed for your visa subclass, costs range from *$240 to $380*. We'll tell you which examination you need and what to expect.
+
+*** Visa Application Fees
+
+These are set by the Australian Government Department of Home Affairs and vary by visa subclass. They're completely separate from our service fees. We'll provide you with the exact figures for your specific visa type during consultation.
+
+*** Tuition Fees
+
+Tuition is paid directly to your educational institution and varies by institution, program, and duration. We help you compare options and factor tuition into your overall budget planning.
+
+-----
+
+** Additional Support Services
+:PROPERTIES:
+:SECTION: Table — clean
+:LAYOUT: Simple reference table
+:END:
+
+These services are available for students who want extra peace of mind:
+
+| Service                | What it means for you                                     |
+|------------------------+-----------------------------------------------------------|
+| 24/7 Emergency Hotline    | Crisis support any hour, any day — because emergencies don't keep office hours |
+| Document Translation      | NAATI-certified translations, fast turnaround — professionally done, legally valid |
+| Airport Transfers         | Someone waiting when you land — meet, greet, and transport to your accommodation |
+| Study Tour Programs       | Short-term immersive experiences coordinated end-to-end    |
+| Specialized Consultations | Expert advice sessions tailored to your specific needs     |
+
+-----
+
+** Your Responsibilities
+:PROPERTIES:
+:SECTION: Feature list — icon + text
+:LAYOUT: Vertical list, 5 items
+:END:
+
+Beyond our service fees and government charges, you'll need to budget for these ongoing costs. We'll help you estimate realistic figures during your consultation:
+
+- *Accommodation* — homestay with a vetted family, rental, or student housing. We can arrange homestay through the Australian Homestay Network.
+- *Guardianship* — required for students under 18, arranged through Professional Student Care Australia or International Student Alliance.
+- *OSHC* — Overseas Student Health Cover. Mandatory for all student visa holders. Think of it as your healthcare safety net.
+- *Living expenses* — food, transport, personal spending. We'll give you realistic figures for your chosen city.
+- *Tuition* — course fees paid directly to your institution.
+
+-----
+
+** CTA
+:PROPERTIES:
+:SECTION: Full-width CTA banner
+:CTA-PRIMARY: Get a Personalised Quote
+:CTA-SECONDARY: Call +61 8 6381 0030
+:END:
+
+*** Headline
+
+Clarity before commitment.
+
+*** Body
+
+Book a free consultation. We'll sit down with you, understand your situation, and give you an honest, itemised cost breakdown — everything you need to make this decision with confidence. No obligation. No pressure. Just the truth about what it costs.
+
+* V3
+/Clear & Direct — maximum information density, minimum words./
+
+** Hero
+:PROPERTIES:
+:SECTION: Hero — minimal
+:LAYOUT: Left-aligned text, clean background
+:END:
+
+*** Headline
+
+Fees & Costs
+
+*** Subheadline
+
+All fees communicated upfront. Free initial consultation.
+
+-----
+
+** Cost Overview
+:PROPERTIES:
+:SECTION: Table — clean
+:LAYOUT: Full-width reference table
+:END:
+
+| Cost Category              | Who Sets It           | Paid To              | Amount               |
+|----------------------------+-----------------------+----------------------+----------------------|
+| Blue Education service fees | Blue Education       | Blue Education       | Varies by case       |
+| STAC charges               | Blue Education        | Blue Education       | Varies by visa history |
+| Medical examination        | Panel physicians      | Medical provider     | $240–$380            |
+| Visa application           | Dept of Home Affairs  | Australian Government | Varies by subclass   |
+| Tuition                    | Institution           | Institution          | Varies by program    |
+
+Use our fee calculator for an initial estimate, or contact us for a personalised quote.
+
+-----
+
+** Additional Support Services
+:PROPERTIES:
+:SECTION: Table — clean
+:LAYOUT: Simple reference table
+:END:
+
+| Service                | Description                      |
+|------------------------+----------------------------------|
+| 24/7 Emergency Hotline    | Round-the-clock crisis support   |
+| Document Translation      | NAATI-certified                  |
+| Airport Transfers         | Meet, greet, transport           |
+| Study Tour Programs       | Short-term tour coordination     |
+| Specialized Consultations | Expert advice sessions           |
+
+-----
+
+** Student Responsibilities
+:PROPERTIES:
+:SECTION: Feature list — icon + text
+:LAYOUT: Vertical list, 5 items
+:END:
+
+Students budget separately for:
+
+- *Accommodation* — homestay, rental, or student housing
+- *Guardianship* — required for under-18 students
+- *OSHC* — Overseas Student Health Cover (mandatory)
+- *Living expenses* — transport, food, personal
+- *Tuition* — paid directly to institution
+
+-----
+
+** CTA
+:PROPERTIES:
+:SECTION: Full-width CTA banner
+:CTA-PRIMARY: Get a Personalised Quote
+:CTA-SECONDARY: Call +61 8 6381 0030
+:END:
+
+*** Headline
+
+Get your cost breakdown.
+
+*** Body
+
+Free consultation. Itemised quote based on your situation. No obligation.

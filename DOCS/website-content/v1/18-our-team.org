@@ -1,0 +1,378 @@
+#+title: Our Team
+#+url: /about/team
+#+status: draft
+
+* V1
+
+** Hero
+:PROPERTIES:
+:SECTION: Hero — full-width, subtle
+:LAYOUT: Centered text
+:IMAGE: Group team photo, professional but warm
+:END:
+
+*** Headline
+
+The people behind your Australian journey.
+
+*** Subheadline
+
+A multilingual team of education, career, and migration specialists — connected across Australia and internationally.
+
+-----
+
+** Leadership
+:PROPERTIES:
+:SECTION: Two-column — photo left, bio right
+:LAYOUT: 40/60 split
+:IMAGE: Professional headshot of Glen
+:END:
+
+*** Glen — Managing Director
+
+Nearly 20 years in international education and migration. Fluent in English, Cantonese, and Bahasa Malaysia.
+
+Glen leads Blue Education with a simple philosophy: give every client the honest advice they need to make the right decision. He's worked across private and government education sectors and personally helps clients identify study pathways, job opportunities, and permanent residency options.
+
+Despite a busy schedule, Glen ensures every client gets genuine, personalised guidance — not a templated process.
+
+-----
+
+** International Team
+:PROPERTIES:
+:SECTION: Team grid — photo cards with name, role, languages, market
+:LAYOUT: 5 cards in responsive grid (3+2 or 2+2+1)
+:NOTE: Need professional photos of each team member from client
+:END:
+
+*** Hana
+:PROPERTIES:
+:ROLE: Indonesia Representative
+:LANGUAGES: English, Indonesian
+:MARKET: Indonesia, Malaysia
+:END:
+
+Translator and interpreter supporting Indonesian and Malaysian students through every stage of their education and migration journey.
+
+*** Sonia
+:PROPERTIES:
+:ROLE: Multilingual Specialist
+:LANGUAGES: 5 languages
+:MARKET: Multi-region (Asia, Australia)
+:END:
+
+Well-traveled, having lived and worked across Asia and Australia. Sonia's cultural breadth and linguistic range make her uniquely equipped to connect with clients from diverse backgrounds.
+
+*** Minami Sakamoto
+:PROPERTIES:
+:ROLE: Associate Counsellor — Japan
+:LANGUAGES: Japanese, English
+:MARKET: Japan (Northeast Asia)
+:END:
+
+Based in Japan, Minami provides localised support for Japanese students considering education in Australia — guidance in their language, on their terms.
+
+*** Elijah
+:PROPERTIES:
+:ROLE: Regional Representative — Africa
+:LANGUAGES: English, ici Bemba, ci Nyanja
+:MARKET: Zambia, Africa
+:END:
+
+Supporting students and migrants from Zambia and the broader African region with culturally informed guidance and representation.
+
+*** Sherene
+:PROPERTIES:
+:ROLE: Regional Advisor — New Zealand
+:LANGUAGES: English
+:MARKET: New Zealand (Oceania)
+:END:
+
+Based in Auckland, Sherene assists New Zealand clients exploring educational and migration opportunities across the Tasman.
+
+-----
+
+** Our Expertise
+:PROPERTIES:
+:SECTION: Three-column feature strip
+:LAYOUT: Icon-topped, centered text
+:END:
+
+*** Education Specialists
+
+Institution matching. Pathway planning. Course selection. We know the Australian education system inside out.
+
+*** Career Specialists
+
+Job readiness. Employer connections. Career mapping. We bridge the gap between qualification and career.
+
+*** Migration Specialists
+
+Registered agents. Visa applications. Compliance. We navigate the system so you don't have to.
+
+-----
+
+** CTA
+:PROPERTIES:
+:SECTION: Full-width CTA banner
+:CTA-PRIMARY: Book a Consultation
+:CTA-SECONDARY: Call +61 8 6381 0030
+:END:
+
+*** Headline
+
+Meet us. Ask anything.
+
+*** Body
+
+Book a free consultation with a team member who speaks your language — literally and culturally.
+
+* V2
+/The Human Story — empathy, emotional resonance, personal journeys/
+
+** Hero
+:PROPERTIES:
+:SECTION: Hero — full-width, subtle
+:LAYOUT: Centered text
+:IMAGE: Group team photo, professional but warm
+:END:
+
+*** Headline
+
+We've been where you are. That's why we do what we do.
+
+*** Subheadline
+
+Our team members have lived across continents, speak five languages between them, and understand what it really means to start a new life somewhere unfamiliar.
+
+-----
+
+** Leadership
+:PROPERTIES:
+:SECTION: Two-column — photo left, bio right
+:LAYOUT: 40/60 split
+:IMAGE: Professional headshot of Glen
+:END:
+
+*** Glen — Managing Director
+
+For nearly 20 years, Glen has helped people navigate one of the most complex and emotional decisions of their lives — where to study, where to work, and where to call home.
+
+Fluent in English, Cantonese, and Bahasa Malaysia, Glen doesn't just process applications. He sits down with you, understands your family's situation, and gives you the honest advice you need — not the easy answer. He's worked across both private and government education sectors, and he still personally helps clients map out study pathways, job opportunities, and permanent residency options.
+
+In a world of agencies that treat you like a file number, Glen remembers your name.
+
+-----
+
+** International Team
+:PROPERTIES:
+:SECTION: Team grid — photo cards with name, role, languages, market
+:LAYOUT: 5 cards in responsive grid (3+2 or 2+2+1)
+:NOTE: Need professional photos of each team member from client
+:END:
+
+*** Hana
+:PROPERTIES:
+:ROLE: Indonesia Representative
+:LANGUAGES: English, Indonesian
+:MARKET: Indonesia, Malaysia
+:END:
+
+For Indonesian and Malaysian students, the journey to Australia can feel overwhelming — especially when you're navigating it in a second language. Hana is there to make sure nothing gets lost in translation, supporting you through every stage of your education and migration journey.
+
+*** Sonia
+:PROPERTIES:
+:ROLE: Multilingual Specialist
+:LANGUAGES: 5 languages
+:MARKET: Multi-region (Asia, Australia)
+:END:
+
+Five languages. Multiple countries. A career spent living across Asia and Australia. Sonia doesn't just understand different cultures — she's lived them. That experience means she connects with clients in a way that goes beyond paperwork: she understands what you're leaving behind and what you're building toward.
+
+*** Minami Sakamoto
+:PROPERTIES:
+:ROLE: Associate Counsellor — Japan
+:LANGUAGES: Japanese, English
+:MARKET: Japan (Northeast Asia)
+:END:
+
+Considering Australia from Japan? Minami is based right there with you. She provides guidance in Japanese, in your timezone, with the cultural understanding that makes a real difference when you're making such a significant decision.
+
+*** Elijah
+:PROPERTIES:
+:ROLE: Regional Representative — Africa
+:LANGUAGES: English, ici Bemba, ci Nyanja
+:MARKET: Zambia, Africa
+:END:
+
+For students in Zambia and across the African continent, Elijah is the first point of contact — someone who understands your context, speaks your language, and can help you see what an Australian education could mean for your future.
+
+*** Sherene
+:PROPERTIES:
+:ROLE: Regional Advisor — New Zealand
+:LANGUAGES: English
+:MARKET: New Zealand (Oceania)
+:END:
+
+Based in Auckland, Sherene works with New Zealanders who are ready to explore what's possible across the Tasman. The close relationship between our two countries creates unique opportunities — Sherene helps you find them.
+
+-----
+
+** Our Expertise
+:PROPERTIES:
+:SECTION: Three-column feature strip
+:LAYOUT: Icon-topped, centered text
+:END:
+
+*** Education Specialists
+
+Finding the right school, course, or university isn't just about rankings. It's about matching your ambitions with the right institution — someone who sees where you want to go and knows how to get you there.
+
+*** Career Specialists
+
+A qualification is a starting point. Our career specialists help you take the next step — from job readiness and resume preparation to employer connections and Australian workplace culture.
+
+*** Migration Specialists
+
+Visa law is complex. Our registered migration agents handle the detail so you can focus on the bigger picture — building a life in Australia.
+
+-----
+
+** CTA
+:PROPERTIES:
+:SECTION: Full-width CTA banner
+:CTA-PRIMARY: Book a Consultation
+:CTA-SECONDARY: Call +61 8 6381 0030
+:END:
+
+*** Headline
+
+Start with a conversation. In your language.
+
+*** Body
+
+Book a free consultation with a team member who understands your culture, speaks your language, and genuinely wants to help you find the right path.
+
+* V3
+/Clear & Direct — ultra-concise, outcome-focused/
+
+** Hero
+:PROPERTIES:
+:SECTION: Hero — full-width, subtle
+:LAYOUT: Centered text
+:IMAGE: Group team photo, professional but warm
+:END:
+
+*** Headline
+
+Multilingual specialists. Five countries. One mission.
+
+*** Subheadline
+
+Education, career, and migration experts — based in Perth, represented internationally.
+
+-----
+
+** Leadership
+:PROPERTIES:
+:SECTION: Two-column — photo left, bio right
+:LAYOUT: 40/60 split
+:IMAGE: Professional headshot of Glen
+:END:
+
+*** Glen — Managing Director
+
+Nearly 20 years in international education and migration. Fluent in English, Cantonese, and Bahasa Malaysia. Worked across private and government sectors.
+
+Glen personally helps clients with study pathways, job opportunities, and permanent residency options. Every client gets honest, individualised advice — no templates.
+
+-----
+
+** International Team
+:PROPERTIES:
+:SECTION: Team grid — photo cards with name, role, languages, market
+:LAYOUT: 5 cards in responsive grid (3+2 or 2+2+1)
+:NOTE: Need professional photos of each team member from client
+:END:
+
+*** Hana
+:PROPERTIES:
+:ROLE: Indonesia Representative
+:LANGUAGES: English, Indonesian
+:MARKET: Indonesia, Malaysia
+:END:
+
+Translation and support for Indonesian and Malaysian students. Every stage covered.
+
+*** Sonia
+:PROPERTIES:
+:ROLE: Multilingual Specialist
+:LANGUAGES: 5 languages
+:MARKET: Multi-region (Asia, Australia)
+:END:
+
+Five languages. Lived across Asia and Australia. Connects with clients from multiple regions and backgrounds.
+
+*** Minami Sakamoto
+:PROPERTIES:
+:ROLE: Associate Counsellor — Japan
+:LANGUAGES: Japanese, English
+:MARKET: Japan (Northeast Asia)
+:END:
+
+Based in Japan. Guidance for Japanese students in their language and timezone.
+
+*** Elijah
+:PROPERTIES:
+:ROLE: Regional Representative — Africa
+:LANGUAGES: English, ici Bemba, ci Nyanja
+:MARKET: Zambia, Africa
+:END:
+
+On-the-ground support for students from Zambia and the broader African region.
+
+*** Sherene
+:PROPERTIES:
+:ROLE: Regional Advisor — New Zealand
+:LANGUAGES: English
+:MARKET: New Zealand (Oceania)
+:END:
+
+Auckland-based. Assists New Zealanders exploring education and migration across the Tasman.
+
+-----
+
+** Our Expertise
+:PROPERTIES:
+:SECTION: Three-column feature strip
+:LAYOUT: Icon-topped, centered text
+:END:
+
+*** Education
+
+Institution matching. Pathway planning. Course selection. Prep to PhD.
+
+*** Career
+
+Job readiness. Employer connections. Qualification to career.
+
+*** Migration
+
+Registered agents. Visa applications. Compliance. We handle it.
+
+-----
+
+** CTA
+:PROPERTIES:
+:SECTION: Full-width CTA banner
+:CTA-PRIMARY: Book a Consultation
+:CTA-SECONDARY: Call +61 8 6381 0030
+:END:
+
+*** Headline
+
+Free consultation. Your language.
+
+*** Body
+
+Talk to a specialist who speaks your language and understands your situation.

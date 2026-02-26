@@ -1,0 +1,130 @@
+#+title: Student Visas
+#+url: /services/migration/student-visas
+#+status: draft
+
+** Hero
+:PROPERTIES:
+:SECTION: Hero — full-width
+:LAYOUT: Left-aligned text
+:IMAGE: student with passport and acceptance letter
+:END:
+
+*** Headline
+
+Study in Australia starts with the right visa application.
+
+*** Subheadline
+
+Registered migration agents handle your Subclass 500 application end to end — eligibility, documents, GTE statement, and lodgement.
+
+-----
+
+** What Is a Student Visa?
+:PROPERTIES:
+:SECTION: Two-column — text left, key facts card right
+:LAYOUT: 60/40 split
+:END:
+
+*** Body
+
+The Student Visa (Subclass 500) allows international students to study full-time at a registered Australian institution — covering courses from primary school through to doctoral programmes.
+
+A well-prepared application moves through the system cleanly. Your advisor handles the document compilation, GTE statement, and lodgement so nothing gets missed.
+
+*** Key Facts
+:PROPERTIES:
+:LAYOUT: Card with bullet points, slight background
+:END:
+
+| Feature          | Detail                          |
+|------------------+---------------------------------|
+| Visa subclass    | 500                             |
+| Duration         | Course length + buffer          |
+| Work rights      | 48 hrs/fortnight while course is in session; unlimited during scheduled course breaks |
+| Family inclusion | Eligible dependants can apply   |
+| Health insurance | OSHC mandatory                  |
+| Typical processing | 4–8 weeks (varies by nationality and application volume) |
+
+/Overseas Student Health Cover (OSHC) is mandatory for the duration of your visa. It covers selected medical consultations, hospital treatment, ambulance, and limited pharmaceuticals. Bringing dependants? A couple's or family cover is required. We arrange OSHC through our [[/services/student-support][student support services →]]./
+
+-----
+
+** How We Help
+:PROPERTIES:
+:SECTION: Timeline — vertical, 5 steps
+:LAYOUT: Numbered steps with icons
+:END:
+
+*** 1. Eligibility Assessment
+
+We review your situation and confirm you meet the requirements before any application work begins.
+
+*** 2. Document Compilation
+
+Academic transcripts, financial evidence, health checks, character documents — we provide the checklist and verify everything.
+
+*** 3. GTE Statement
+
+The Genuine Temporary Entrant statement is the Department of Home Affairs' way of assessing whether you genuinely intend to study and return home. We help you prepare one that's clear, credible, and specific to your situation.
+
+*** 4. Application Lodgement
+
+We complete and submit your application with all supporting documents properly formatted and certified.
+
+*** 5. After Lodgement
+
+We monitor your application and respond to any Department of Home Affairs requests on your behalf — until your visa is granted. Once your visa is granted: [[/services/migration/graduate-work-visas][Graduate work visas →]]
+
+-----
+
+** Requirements Snapshot
+:PROPERTIES:
+:SECTION: Feature list — icon + text
+:LAYOUT: 2-column grid
+:END:
+
+*** Financial Capacity
+
+Evidence covering tuition, living costs, and travel expenses for the duration of your studies.
+
+*** English Proficiency
+
+[[/services/education/english-foundation][IELTS, TOEFL, PTE, or Cambridge]] results meeting course and visa requirements.
+
+*** Health & Character
+
+Medical examination ($240–$380) and police clearance certificates from countries you've lived in.
+
+*** Confirmation of Enrolment
+
+A valid CoE from a CRICOS-registered institution. We help you secure enrolment through our [[/services/education][education services →]].
+
+-----
+
+** What Comes Next?
+:PROPERTIES:
+:SECTION: Next Step — 2 linked cards before CTA
+:LAYOUT: Simple card row or bulleted links with short intro
+:END:
+
+Once you're enrolled and studying, the next milestone is what happens after graduation.
+
+- [[/services/migration/graduate-work-visas][Post-study work visas →]]
+- [[/services/student-support][Support during your studies →]]
+
+-----
+
+** CTA
+:PROPERTIES:
+:SECTION: Full-width CTA banner
+:CTA-PRIMARY: Start My Student Visa Application
+:CTA-SECONDARY: Call +61 8 6381 0030
+:END:
+
+*** Headline
+
+Ready to apply?
+
+*** Body
+
+We assess your eligibility, give you a clear document checklist, and lodge your application. No guesswork on your end.

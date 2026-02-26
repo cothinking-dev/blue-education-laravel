@@ -1,0 +1,311 @@
+#+title: VET & TAFE
+#+url: /services/education/vet-tafe
+#+status: draft
+
+* V1
+
+** Hero
+:PROPERTIES:
+:SECTION: Hero — full-width
+:LAYOUT: Left-aligned text
+:IMAGE: Hands-on workshop/training environment
+:END:
+
+*** Headline
+
+Practical skills. Real qualifications. Clear career pathways.
+
+*** Subheadline
+
+Vocational education in Australia is career-focused from day one — and many qualifications align directly with skilled migration pathways.
+
+-----
+
+** What is VET/TAFE?
+:PROPERTIES:
+:SECTION: Two-column — text left, image right
+:LAYOUT: 55/45 split
+:IMAGE: TAFE campus, students in workshop
+:END:
+
+Vocational Education and Training (VET) is delivered through Technical and Further Education (TAFE) institutions and Registered Training Organisations (RTOs) across Australia.
+
+Unlike university degrees, VET qualifications emphasise practical, hands-on skills. You learn by doing — in workshops, labs, and real workplace settings. Graduates enter the workforce job-ready, with qualifications employers trust.
+
+Many VET qualifications also serve as a stepping stone to university degrees or align with occupations on Australia's skilled migration lists.
+
+-----
+
+** Qualification Levels
+:PROPERTIES:
+:SECTION: Table — clean, minimal
+:LAYOUT: Full-width reference table
+:END:
+
+| Qualification       | Typical Duration | Career Outcome                    |
+|---------------------+------------------+-----------------------------------|
+| Certificate I–II    | 6–12 months      | Entry-level roles                 |
+| Certificate III–IV  | 6–18 months      | Skilled trades, technical roles   |
+| Diploma             | 1–2 years        | Supervisory, technical specialist |
+| Advanced Diploma    | 1.5–2 years      | Management, pathway to university |
+
+-----
+
+** Teaching Pathways
+:PROPERTIES:
+:SECTION: Highlight card — subtle background
+:LAYOUT: Full-width card, icon left, text right
+:END:
+
+Interested in teaching? Australia offers specialized education programs:
+
+- *Bachelor of Education* — 4-year undergraduate qualification
+- *Master of Teaching* — 1.5–2 year postgraduate qualification
+- *Graduate Diploma in Education* — 1-year conversion qualification
+
+Specialisation options include Primary, Secondary, and Early Childhood education. All programs meet Australian teaching registration requirements, include practical classroom placements, and come with career placement assistance.
+
+-----
+
+** Why VET?
+:PROPERTIES:
+:SECTION: Feature list — 3 items, icon + text
+:LAYOUT: Vertical list
+:END:
+
+*** Career-ready skills
+
+Learn what employers actually need. VET courses are designed with industry input and include workplace placements.
+
+*** Pathway to university
+
+Many diplomas and advanced diplomas offer credit towards bachelor degrees — saving time and money.
+
+*** Migration alignment
+
+Numerous VET occupations appear on Australia's skilled occupation lists, creating direct pathways to skilled migration.
+
+-----
+
+** CTA
+:PROPERTIES:
+:SECTION: Full-width CTA banner
+:CTA-PRIMARY: Explore VET Options
+:CTA-SECONDARY: Call +61 8 6381 0030
+:END:
+
+*** Headline
+
+Practical, affordable, and career-focused.
+
+*** Body
+
+Let us match you with the right VET program for your career goals. Book a free consultation.
+
+* V2
+
+** Hero
+:PROPERTIES:
+:SECTION: Hero — full-width
+:LAYOUT: Left-aligned text
+:IMAGE: Hands-on workshop/training environment
+:END:
+
+*** Headline
+
+You don't need a four-year degree to build a career in Australia.
+
+*** Subheadline
+
+Vocational training gets you job-ready faster, costs less, and for many occupations, it's the direct route to skilled migration.
+
+-----
+
+** What is VET/TAFE?
+:PROPERTIES:
+:SECTION: Two-column — text left, image right
+:LAYOUT: 55/45 split
+:IMAGE: TAFE campus, students in workshop
+:END:
+
+Maybe you've been working for years and want a career change. Maybe you've just finished school and you're not sure university is the right fit. Maybe you're looking at Australia's skilled occupation lists and thinking: /there has to be a faster way in/.
+
+There is. Vocational Education and Training (VET) is delivered through TAFE institutions and Registered Training Organisations across Australia. Unlike university, VET is built around doing — workshops, labs, real workplace settings. You graduate with practical skills and a qualification that employers recognise and trust.
+
+And here's the part that matters for many of our clients: numerous VET occupations sit on Australia's skilled migration lists. A VET qualification doesn't just lead to a job — it can lead to a life here.
+
+-----
+
+** Qualification Levels
+:PROPERTIES:
+:SECTION: Table — clean, minimal
+:LAYOUT: Full-width reference table
+:END:
+
+| Qualification       | Duration     | Where It Takes You                |
+|---------------------+--------------+-----------------------------------|
+| Certificate I–II    | 6–12 months  | Entry-level roles — your foot in the door |
+| Certificate III–IV  | 6–18 months  | Skilled trades and technical roles |
+| Diploma             | 1–2 years    | Supervisory and specialist positions |
+| Advanced Diploma    | 1.5–2 years  | Management roles or pathway into a bachelor degree |
+
+Not sure which level is right? That's exactly what our consultation is for.
+
+-----
+
+** Teaching Pathways
+:PROPERTIES:
+:SECTION: Highlight card — subtle background
+:LAYOUT: Full-width card, icon left, text right
+:END:
+
+Want to teach? If you're passionate about education, Australia offers clear pathways to a teaching career:
+
+- *Bachelor of Education* — 4-year undergraduate qualification
+- *Master of Teaching* — 1.5–2 year postgraduate qualification
+- *Graduate Diploma in Education* — 1-year conversion qualification
+
+Specialisation options include Primary, Secondary, and Early Childhood education. All programs meet Australian teaching registration requirements and include real classroom placements, with career placement assistance. We've helped educators from across Asia and beyond make this transition.
+
+-----
+
+** Why VET?
+:PROPERTIES:
+:SECTION: Feature list — 3 items, icon + text
+:LAYOUT: Vertical list
+:END:
+
+*** You graduate ready to work
+
+VET courses are designed with direct industry input. You don't just learn theory — you learn what employers actually need, with workplace placements built into the program.
+
+*** It can lead to a degree
+
+If you decide later that you want a bachelor degree, many diplomas and advanced diplomas offer credit transfer — meaning you've already done some of the work.
+
+*** It can lead to permanent residence
+
+This is the path many of our clients don't know about until they talk to us. Numerous VET occupations appear on Australia's skilled occupation lists, creating a direct connection between your training and your migration goals.
+
+-----
+
+** CTA
+:PROPERTIES:
+:SECTION: Full-width CTA banner
+:CTA-PRIMARY: Explore VET Options
+:CTA-SECONDARY: Call +61 8 6381 0030
+:END:
+
+*** Headline
+
+A practical path to a career — and a life — in Australia.
+
+*** Body
+
+Tell us your career goals and we'll identify the VET programs that match. We'll also show you whether your target occupation qualifies for skilled migration. Free consultation.
+
+* V3
+
+** Hero
+:PROPERTIES:
+:SECTION: Hero — full-width
+:LAYOUT: Left-aligned text
+:IMAGE: Hands-on workshop/training environment
+:END:
+
+*** Headline
+
+Vocational training in Australia. Job-ready faster.
+
+*** Subheadline
+
+Hands-on qualifications. Industry-designed courses. Many align with skilled migration pathways.
+
+-----
+
+** What is VET/TAFE?
+:PROPERTIES:
+:SECTION: Two-column — text left, image right
+:LAYOUT: 55/45 split
+:IMAGE: TAFE campus, students in workshop
+:END:
+
+*VET* = Vocational Education and Training.
+*TAFE* = Technical and Further Education (the main public provider).
+*RTOs* = Registered Training Organisations (private providers).
+
+Practical, hands-on training. You learn in workshops, labs, and real workplaces. Graduates enter the workforce job-ready.
+
+*Two bonus pathways:*
+1. Many VET qualifications offer credit towards bachelor degrees
+2. Many VET occupations appear on Australia's skilled migration lists
+
+-----
+
+** Qualification Levels
+:PROPERTIES:
+:SECTION: Table — clean, minimal
+:LAYOUT: Full-width reference table
+:END:
+
+| Qualification       | Duration     | Outcome                           |
+|---------------------+--------------+-----------------------------------|
+| Certificate I–II    | 6–12 months  | Entry-level roles                 |
+| Certificate III–IV  | 6–18 months  | Skilled trades, technical roles   |
+| Diploma             | 1–2 years    | Supervisory, specialist roles     |
+| Advanced Diploma    | 1.5–2 years  | Management, university pathway    |
+
+-----
+
+** Teaching Pathways
+:PROPERTIES:
+:SECTION: Highlight card — subtle background
+:LAYOUT: Full-width card, icon left, text right
+:END:
+
+Want to teach in Australia? Three options:
+
+| Qualification | Duration | Type |
+|---------------+----------+------|
+| Bachelor of Education | 4 years | Undergraduate |
+| Master of Teaching | 1.5–2 years | Postgraduate |
+| Graduate Diploma in Education | 1 year | Conversion |
+
+Specialisations: Primary, Secondary, Early Childhood. All meet Australian teaching registration requirements. All include classroom placements and career placement assistance.
+
+-----
+
+** Why VET?
+:PROPERTIES:
+:SECTION: Feature list — 3 items, icon + text
+:LAYOUT: Vertical list
+:END:
+
+*** Career-ready
+
+Courses designed with industry input. Workplace placements included.
+
+*** University pathway
+
+Diploma and Advanced Diploma holders can receive credit towards bachelor degrees.
+
+*** Migration pathway
+
+Many VET occupations are on Australia's skilled occupation lists.
+
+-----
+
+** CTA
+:PROPERTIES:
+:SECTION: Full-width CTA banner
+:CTA-PRIMARY: Explore VET Options
+:CTA-SECONDARY: Call +61 8 6381 0030
+:END:
+
+*** Headline
+
+Find the right VET program.
+
+*** Body
+
+Free consultation. We match your career goals to the right qualification — and tell you if it qualifies for skilled migration.

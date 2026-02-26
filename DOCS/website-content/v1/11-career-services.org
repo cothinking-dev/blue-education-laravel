@@ -1,0 +1,304 @@
+#+title: Career Services
+#+url: /services/career
+#+status: draft
+
+* V1
+
+** Hero
+:PROPERTIES:
+:SECTION: Hero — full-width
+:LAYOUT: Left-aligned text
+:IMAGE: professional handshake, Australian office environment
+:END:
+
+*** Headline
+
+Turn your Australian qualification into an Australian career.
+
+*** Subheadline
+
+Career counseling. Job readiness. Employer connections. Internships. Work visa support. We bridge the gap between graduation and employment.
+
+-----
+
+** The Career Pathway
+:PROPERTIES:
+:SECTION: Timeline — horizontal, 6 stages
+:LAYOUT: Connected steps with icons
+:END:
+
+*** Assess & Plan
+
+One-on-one career counseling. We identify your strengths, map the job market, and define your career goals.
+
+*** Prepare
+
+Job readiness programs covering Australian workplace culture, interview techniques, resume writing, LinkedIn optimisation, and networking.
+
+*** Build Experience
+
+Industry-specific internships and work placements — real Australian work experience in your field.
+
+*** Connect with Employers
+
+Direct introductions to our employer network. Job matching. Recruitment support.
+
+*** Secure Your Visa
+
+Work visa eligibility assessment, application support, and employer sponsorship coordination to secure your ongoing employment rights.
+
+*** Advance Your Career
+
+The Executive Internship Programme places experienced professionals and postgraduate students in senior-level positions with leading organisations — executive mentorship and leadership development.
+
+-----
+
+** What We Offer
+:PROPERTIES:
+:SECTION: BentoBox — 4 cards
+:LAYOUT: 2x2 grid
+:END:
+
+*** Career Counseling
+
+Personalised career planning sessions. Industry insights, skills gap analysis, pathway mapping aligned with migration goals, and resume and cover letter review.
+
+*** Job Readiness Programs
+
+Australian workplace culture is different. We prepare you for it — from how to answer interview questions to how to network professionally.
+
+*** Internship & Placement Programs
+
+Real work experience with Australian companies. Standard internships for students and graduates, plus an Executive Internship Programme for postgraduate professionals.
+
+*** Employer Connections
+
+Access to our employer network. We match your skills to open opportunities and facilitate introductions — not just job boards, real relationships.
+
+-----
+
+** The Executive Internship Programme
+:PROPERTIES:
+:SECTION: Highlight card — premium styling
+:LAYOUT: Full-width, subtle premium background
+:TAG: Premium Program
+:END:
+
+For experienced professionals and postgraduate students seeking senior-level Australian experience. Strategic placements in leading organisations with executive mentorship and leadership development.
+
+This isn't an entry-level internship. It's a career accelerator.
+
+-----
+
+** CTA
+:PROPERTIES:
+:SECTION: Full-width CTA banner
+:CTA-PRIMARY: Start Your Career Plan
+:CTA-SECONDARY: Call +61 8 6381 0030
+:END:
+
+*** Headline
+
+Your career in Australia starts with a plan.
+
+*** Body
+
+Book a free career consultation. We'll assess your skills, identify opportunities, and build a roadmap to employment — whether you're still studying or already graduated.
+
+* V2
+
+** Hero
+:PROPERTIES:
+:SECTION: Hero — full-width
+:LAYOUT: Left-aligned text
+:IMAGE: graduate looking out at city skyline, contemplative yet hopeful
+:END:
+
+*** Headline
+
+You didn't move 10,000 km to wonder "what now?"
+
+*** Subheadline
+
+Graduating in a country that isn't home is exciting and terrifying in equal measure. We help you navigate the Australian job market with clarity, confidence, and a real plan.
+
+-----
+
+** The Reality No One Talks About
+:PROPERTIES:
+:SECTION: Two-column — text left, image right
+:LAYOUT: 55/45 split
+:IMAGE: student looking at laptop in library, focused but uncertain
+:END:
+
+You studied hard. You graduated. And now you're staring at a job market you don't fully understand — different resume conventions, different interview expectations, different networking culture. The rules you grew up with don't apply here.
+
+That gap between "qualified" and "employed" can feel enormous. We exist to close it.
+
+Since 1998, we've helped international graduates from 40+ countries make sense of the Australian workplace — not with generic advice, but with one-on-one guidance tailored to where you are and where you want to be.
+
+-----
+
+** How We Walk With You
+:PROPERTIES:
+:SECTION: Timeline — horizontal, 6 stages
+:LAYOUT: Connected steps with icons
+:END:
+
+*** Understand You
+
+We sit down with you. Not a form, not an algorithm. A real conversation about your strengths, your fears, and what success looks like to you.
+
+*** Prepare You
+
+Australian workplaces have their own culture. We teach you the unwritten rules — how to interview, how to network, how to present yourself on LinkedIn, how to write a resume that actually gets read.
+
+*** Place You
+
+Industry-specific internships and work placements connect you with Australian companies. Real experience in your field.
+
+*** Connect You
+
+Employer introductions, job matching, and recruitment support — we open doors through real relationships, not just job boards.
+
+*** Secure Your Visa
+
+Work visa eligibility assessment, application support, and employer sponsorship coordination. We handle the complexity so you can focus on your career.
+
+*** Elevate You
+
+For experienced professionals, our Executive Internship Programme opens doors at the senior level — executive mentorship and leadership development in leading organisations.
+
+-----
+
+** The Executive Internship Programme
+:PROPERTIES:
+:SECTION: Highlight card — premium styling
+:LAYOUT: Full-width, subtle premium background
+:TAG: Premium Program
+:END:
+
+Some of our clients arrive with years of experience but no Australian track record. The Executive Internship Programme places experienced professionals and postgraduate students in senior-level positions with leading organisations — complete with executive mentorship and leadership development.
+
+It's not starting over. It's translating your experience into a new context.
+
+-----
+
+** CTA
+:PROPERTIES:
+:SECTION: Full-width CTA banner
+:CTA-PRIMARY: Book a Free Career Conversation
+:CTA-SECONDARY: Call +61 8 6381 0030
+:END:
+
+*** Headline
+
+You've earned the qualification. Let's earn the career.
+
+*** Body
+
+Book a free consultation. We'll listen to your story, understand your goals, and build a plan that gets you from graduation to employment — step by step.
+
+* V3
+
+** Hero
+:PROPERTIES:
+:SECTION: Hero — full-width
+:LAYOUT: Left-aligned text. Clean, minimal design
+:END:
+
+*** Headline
+
+Career services for international graduates in Australia.
+
+*** Subheadline
+
+Counseling. Job prep. Internships. Employer introductions. Work visa support. One provider, end to end.
+
+-----
+
+** What This Is
+:PROPERTIES:
+:SECTION: Two-column — text left, summary right
+:LAYOUT: 60/40 split
+:END:
+
+Blue Education's career services help international students and graduates get employed in Australia. We cover everything from career planning through to work visa coordination.
+
+| Service | What You Get |
+|---------|-------------|
+| Career Counseling | 1-on-1 sessions, skills gap analysis, career pathway mapping, resume and cover letter review |
+| Job Readiness | Australian workplace culture, interview prep, resume review, LinkedIn optimisation |
+| Internships | Industry-specific placements with Australian companies |
+| Work Placements | Structured programs with mentorship and evaluation |
+| Employer Connections | Direct introductions, job matching, recruitment support |
+| Work Visa Assistance | Eligibility assessment, application support, employer sponsorship coordination |
+
+-----
+
+** Who It's For
+:PROPERTIES:
+:SECTION: Feature list — 3 items
+:LAYOUT: Horizontal cards
+:END:
+
+*** Current Students
+
+Start career planning before you graduate. Skills gap analysis and pathway mapping so you're ready when the time comes.
+
+*** Recent Graduates
+
+Job readiness training, internship placements, and employer introductions. Get from qualified to employed.
+
+*** Experienced Professionals
+
+The Executive Internship Programme: senior-level placements in leading organisations with executive mentorship. For postgraduate students and professionals with existing experience.
+
+-----
+
+** The 6-Step Process
+:PROPERTIES:
+:SECTION: Timeline — horizontal, 6 stages
+:LAYOUT: Numbered steps, minimal
+:END:
+
+*** 1. Assess & Plan
+
+Career counseling session. Define goals, identify strengths, map opportunities.
+
+*** 2. Prepare
+
+Job readiness program. Australian workplace culture, interview skills, resume and LinkedIn.
+
+*** 3. Build Experience
+
+Internship or work placement. Real Australian work experience in your industry.
+
+*** 4. Connect
+
+Employer introductions. Job matching. Recruitment support.
+
+*** 5. Visa Support
+
+Work visa eligibility assessment, application support, employer sponsorship coordination.
+
+*** 6. Advance
+
+Executive Internship Programme for experienced professionals. Senior-level placements with executive mentorship.
+
+-----
+
+** CTA
+:PROPERTIES:
+:SECTION: Full-width CTA banner
+:CTA-PRIMARY: Book a Free Career Consultation
+:CTA-SECONDARY: Call +61 8 6381 0030
+:END:
+
+*** Headline
+
+Get started.
+
+*** Body
+
+Free consultation. We'll assess your situation and recommend a career plan. Works for current students and graduates alike.

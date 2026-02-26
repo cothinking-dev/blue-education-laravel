@@ -1,0 +1,103 @@
+#+title: Admission Requirements
+#+url: /resources/admission-requirements
+#+status: draft
+
+** Hero
+:PROPERTIES:
+:SECTION: Hero — minimal
+:LAYOUT: Left-aligned text, clean background
+:END:
+
+*** Headline
+
+Admission requirements.
+
+*** Subheadline
+
+English scores, academic qualifications, and pathway options — by program level.
+
+-----
+
+** English Language Requirements
+:PROPERTIES:
+:SECTION: Table with intro text
+:LAYOUT: Clean reference table, full-width
+:END:
+
+*Accepted tests:* IELTS, TOEFL, Cambridge CAE, Pearson PTE. Scores valid for 2 years.
+
+*** Minimum IELTS Scores
+
+| Program                      | Overall | Per-band minimum   |
+|------------------------------+---------+--------------------|
+| Foundation                   | 5.0–5.5 | Varies             |
+| VET/TAFE                     | 5.5–6.0 | Varies             |
+| Bachelor                     | 6.5     | Varies by institution |
+| Graduate Cert/Diploma        | 6.5–7.0 | Minimum 6.0 in each band |
+| Master/Doctoral              | 6.5–7.0 | Minimum 6.0 in each band |
+
+Institutions may set higher thresholds. Course requirements may differ from visa requirements.
+
+-----
+
+** Academic Requirements
+:PROPERTIES:
+:SECTION: Table — clean reference
+:LAYOUT: Full-width reference table
+:END:
+
+| Entry Level          | Requirement                                          |
+|----------------------+------------------------------------------------------|
+| Foundation           | Year 11 (or equivalent)                              |
+| VET/TAFE             | Year 10–12 (varies by program)                       |
+| [[/services/education/degrees][Bachelor]]             | Year 12 equivalent OR VET Diploma/Advanced Diploma   |
+| [[/services/education/degrees][Postgraduate]]         | Relevant Bachelor degree (+ work experience for some)|
+| Professional (teaching, nursing, engineering) | Academic admission plus registration with the relevant Australian authority |
+| Creative Arts        | Portfolio or interview may apply                     |
+
+-----
+
+** Pathway Options
+:PROPERTIES:
+:SECTION: Two-column — pathway table left, CTA card right
+:LAYOUT: 60/40 split
+:END:
+
+*** If you don't meet direct entry requirements
+
+| Pathway           | Duration    | Purpose                                |
+|-------------------+-------------+----------------------------------------|
+| [[/services/education/english-foundation][ELICOS]]            | 10–30 weeks | English proficiency improvement         |
+| [[/services/education/english-foundation][Foundation Studies]] | 1 year     | Pre-university academic preparation     |
+| [[/services/education/vet-tafe][VET Diploma]]       | 1–2 years  | Vocational qualification + uni pathway  |
+| Packaged Offer    | Varies     | English + academic program, single visa |
+
+We assess where you are now and map the shortest path to where you want to be.
+
+/Note for professional fields: Teaching, nursing, and engineering graduates require registration with the relevant Australian authority — Teaching Council, AHPRA (nursing and allied health), or Engineers Australia — in addition to academic admission. We advise on these requirements as part of your pathway assessment./
+
+*** CTA Card
+:PROPERTIES:
+:LAYOUT: Card with button
+:CTA-PRIMARY: Get My Eligibility Assessed
+:CTA-SECONDARY: View Education Pathways
+:END:
+
+Send your transcripts and English test results — we'll assess your options and recommend the best pathway.
+
+-----
+
+** CTA
+:PROPERTIES:
+:SECTION: Full-width CTA banner
+:CTA-PRIMARY: Book an Assessment
+:CTA-SECONDARY: Call +61 8 6381 0030
+:END:
+
+*** Headline
+
+Send your transcripts — we'll tell you where you stand.
+
+*** Body
+
+Send academic transcripts and English test results. We assess your current level, identify any gaps, and recommend the most direct pathway to your target program.

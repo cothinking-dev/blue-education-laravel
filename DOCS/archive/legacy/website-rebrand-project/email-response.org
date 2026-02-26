@@ -1,0 +1,105 @@
+* Email Response to Sonia - Blue Education Rebrand Questions
+
+--------------
+
+Hi Sonia,
+
+Had a great conversation yesterday! Here are my thoughts regarding your questions:
+
+--------------
+
+** 1. Do we need that many new pages?
+A good way to assess this is by looking at competitors in the overseas education consultancy space. I did some research and here's what I found:
+
+| Competitor              | Pages |
+|-------------------------+-------|
+| IDP Education Australia | 75    |
+| EduExperts Malaysia     | 62    |
+| Kaplan International    | 45-50 |
+| AECC Global Malaysia    | 33    |
+| SUN Education Malaysia  | 23    |
+
+/Note: Page counts exclude blog posts and individual university/institution listings --- only general service, program, and information pages./
+
+Local competitors typically sit around 20-30 pages, while international players have more (45-75 pages). Blue Education is a bit unique because you offer more than just education consultancy --- there's also visa/migration services and career services. In theory, this means we should have even more pages, but around 40 is a solid starting point that we can grow from.
+
+I'm not too concerned about overloading users with information. What's more important is how the information is presented --- clean layouts, good navigation, and avoiding large walls of text. Interestingly, many Asian cultures actually prefer information-dense websites (here's a great video on why Japanese websites are so cluttered: https://www.youtube.com/watch?v=vi8pyS076a8). The key is structure, not scarcity.
+
+Having robust FAQ sections will also help tremendously with SEO, GEO, and AEO --- meaning your website will be more discoverable on traditional search engines, AI-powered search tools like ChatGPT and Perplexity, and featured snippets on Google.
+
+--------------
+
+** 2. How does the blog setup work?
+I'll be creating a blog system for the new website --- this includes a gallery view to browse all blog posts, and a stylised template for each individual blog page. The intention is to migrate the existing writeups from the Wix site over to the new website, not to recycle or rewrite them.
+
+I actually tried searching for the blog posts previously, and they're quite difficult to find on the current Wix website --- the only way I could locate them was by crawling through the sitemap. The new website will make the blog much more visible and accessible to visitors.
+
+Just to note: the current KookaQuest website I've built for Kit doesn't come with a blogging system, so this will be an addition for Blue Education.
+
+--------------
+
+** 3. What would you prepare for us in terms of branding?
+First, let me reassure you --- I'm not looking to change the logo. “Blue Education, Migration & Career” stays exactly as it is. No wars with the elders required!
+
+What I need is to gather as much information as I can reasonably get to build out the website properly.
+
+*Regarding text content:* A corporate profile PDF document would be incredibly helpful --- the kind you'd use for grant applications, tenders, or partnership proposals. This typically contains company achievements, a more detailed history, and services offerings. The reason I'm asking is that the current About Us page on Blue Education's site could use more depth. Having richer content helps web crawlers and AI search tools better understand and describe what your company does.
+
+*Regarding media assets:* I'd appreciate the RAW version or high-resolution version of the logo. From experience with other clients, I tend to receive low-to-mid resolution JPEG images of logos, which I then need to process --- removing backgrounds, converting from pixel to vector graphics, creating favicons, and producing black & white variations. If there's an existing brand kit with these assets already prepared, I could waive off some of the design costs on my end.
+
+--------------
+
+** 4. Who's doing the writeup for SEO optimisation?
+I'll be handling the SEO.
+
+SEO is typically broken into three main parts: Technical, On-page, and Off-page. When most people think about SEO, they think about writing lots of articles --- that's the Off-page stuff, which I can look into for the future. But for this project, I'm mainly focusing on Technical and On-page SEO.
+
+This includes things like meta descriptions, page titles, making sure Google indexes the website properly, and setting up Open Graph tags --- so when you paste your website link on WhatsApp or Facebook, the generated preview card will look clean and professional rather than broken or blank.
+
+--------------
+
+** 5. Does the 12-Month Hosting & Maintenance mean I will unplug from Wix altogether?
+Yes, with the new website, there's no need to continue paying for the Wix subscription --- I'll be managing the hosting and maintenance.
+
+However, if you'd like to keep the Wix website for “safe-keeping,” that's perfectly fine too. I've had clients who wanted to create static archive versions of their old websites for nostalgia or reference purposes. Interactive elements like contact forms and search won't work, but it's nice to have a copy so that in the future, you can look back and say “did my website really look like that?”
+
+Totally up to you.
+
+--------------
+
+** 6. Would it help if we gave you more pictures and access to Freepik?
+Yes, having as many pictures as possible would be helpful --- ideally genuine photos from the company. I personally dislike websites that rely heavily on stock images, so real photos of your team, office, events, and students would make the website feel much more authentic.
+
+That said, I doubt it will bring the cost down significantly. Image sourcing is only a small part of the web development process. There's also optimising images for the web (smaller file sizes for mobile so the website loads faster), adding alt-text for screen readers for people with vision disabilities, and color-grading to ensure visual consistency.
+
+On that note --- I aim to make the website as accessible as possible, following WCAG (Web Content Accessibility Guidelines) standards as closely as I can. This means people with disabilities will be able to read and navigate the website easily using keyboards, screen readers, speech-to-text, and other assistive technologies.
+
+--------------
+
+** 7. On the maintenance of 20 man-days a year --- what happens if we go over?
+Good question. Here's how the maintenance package works:
+
+The 20 man-days are valid for the year (1 Jan 2026 -- 1 Jan 2027), and unused days will not carry over to the following year. For any change requests within the package, work will commence within 3 business days. Depending on the scope, here's roughly what to expect:
+
+| Request Type                      | Estimated Effort | Turnaround        |
+|-----------------------------------+------------------+-------------------|
+| Text & image updates (5-10 pages) | 1 man-day        | 2-3 business days |
+| Building a new landing page       | 1-2 man-days     | 3-5 business days |
+| Design tweaks across the site     | 0.5-1 man-day    | 2-3 business days |
+
+If you exceed the 20 man-days, additional work will be charged at *MYR 100 per man-day* (the package rate works out to MYR 80/day, so there's a small premium for ad-hoc work outside the package).
+
+--------------
+
+** KookaQuest Website Link
+As requested, here's the link to the KookaQuest website I've prepared for Kit's team:
+
+*https://kookaquest.cothink.ing/*
+
+Feel free to share it with the team for feedback. This will give you a sense of the design direction and quality of work --- though Blue Education's site will of course have its own branding and expanded content.
+
+--------------
+
+Thank you very much for the detailed questions, Sonia. I look forward to hearing from you.
+
+Best regards, Jotham

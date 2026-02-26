@@ -1,0 +1,343 @@
+#+title: Admission Requirements
+#+url: /resources/admission-requirements
+#+status: draft
+
+* V1
+
+** Hero
+:PROPERTIES:
+:SECTION: Hero — minimal
+:LAYOUT: Left-aligned text, clean background
+:END:
+
+*** Headline
+
+What you need to get in.
+
+*** Subheadline
+
+English language scores, academic qualifications, and pathway options — by program level.
+
+-----
+
+** English Language Requirements
+:PROPERTIES:
+:SECTION: Table with intro text
+:LAYOUT: Clean reference table, full-width
+:END:
+
+Australian institutions accept the following English proficiency tests:
+
+| Test         | Full Name                                      |
+|--------------+------------------------------------------------|
+| IELTS        | International English Language Testing System  |
+| TOEFL        | Test of English as a Foreign Language           |
+| Cambridge CAE | Certificate in Advanced English                |
+| Pearson PTE  | Pearson Test of English                         |
+
+*** Minimum Scores by Program Level
+
+| Program                   | IELTS Minimum | Band Minimum      |
+|---------------------------+---------------+-------------------|
+| Foundation Programs       | 5.0 – 5.5    | Varies             |
+| VET/TAFE                  | 5.5 – 6.0    | Varies             |
+| Bachelor Degree           | 6.5           | Varies by institution |
+| Graduate Certificate/Diploma | 6.5 – 7.0 | No band below 6.0–6.5 |
+| Master/Doctoral           | 6.5 – 7.0    | No band below 6.0–6.5 |
+
+*Important:* Scores are typically valid for 2 years. Course requirements may differ from visa requirements. Specific institutions may set higher thresholds.
+
+-----
+
+** Academic Requirements
+:PROPERTIES:
+:SECTION: Feature list — heading + text
+:LAYOUT: Vertical list, clean
+:END:
+
+*** Foundation Programs
+
+Completion of high school (Year 11 or equivalent).
+
+*** VET/TAFE
+
+Varies by qualification level and specific program. Some require Year 10 completion; others require Year 12.
+
+*** Bachelor Degrees
+
+Australian Year 12 equivalent, OR completion of a VET Diploma or Advanced Diploma.
+
+*** Postgraduate Programs
+
+Relevant Bachelor degree or equivalent. Some programs require work experience.
+
+*** Professional Programs
+
+Teaching, nursing, and engineering may have additional registration and prerequisite requirements. Creative arts programs may require portfolios or interviews.
+
+-----
+
+** Not Quite There Yet?
+:PROPERTIES:
+:SECTION: Two-column — pathway options left, CTA right
+:LAYOUT: 60/40 split
+:END:
+
+*** Pathway Options
+
+If you don't meet direct entry requirements, there are clear routes to get there:
+
+1. *ELICOS* — Intensive English courses (10–30 weeks) to reach the score you need
+2. *Foundation Studies* — Pre-university bridging programs
+3. *VET Diploma* — Vocational qualification that can pathway into a Bachelor degree
+4. *Packaged Offers* — Combined English + academic programs with a single visa
+
+We assess where you are now and map the shortest path to where you want to be.
+
+*** CTA Card
+:PROPERTIES:
+:LAYOUT: Card with button
+:CTA-PRIMARY: Get My Eligibility Assessed
+:CTA-SECONDARY: View Pathway Options
+:END:
+
+Not sure if you qualify? Book a free assessment and we'll tell you — honestly.
+
+-----
+
+** CTA
+:PROPERTIES:
+:SECTION: Full-width CTA banner
+:CTA-PRIMARY: Book a Free Assessment
+:CTA-SECONDARY: Call +61 8 6381 0030
+:END:
+
+*** Headline
+
+Let us check your eligibility.
+
+*** Body
+
+Send us your academic transcripts and English test results. We'll assess your options and recommend the best pathway — free of charge.
+
+* V2
+/The Human Story — encouraging, "here's how to get there" tone./
+
+** Hero
+:PROPERTIES:
+:SECTION: Hero — minimal
+:LAYOUT: Left-aligned text, clean background
+:END:
+
+*** Headline
+
+You're closer than you think.
+
+*** Subheadline
+
+Admission requirements can look intimidating on paper. Let us break them down — and show you the pathway that gets you there.
+
+-----
+
+** English Language Requirements
+:PROPERTIES:
+:SECTION: Table with intro text
+:LAYOUT: Clean reference table, full-width
+:END:
+
+English proficiency is the most common concern we hear from students. The good news? Australia accepts multiple tests, and if you're not at the required level yet, there are clear pathways to get you there.
+
+Australian institutions accept these English proficiency tests:
+
+| Test         | Full Name                                      |
+|--------------+------------------------------------------------|
+| IELTS        | International English Language Testing System  |
+| TOEFL        | Test of English as a Foreign Language           |
+| Cambridge CAE | Certificate in Advanced English                |
+| Pearson PTE  | Pearson Test of English                         |
+
+*** Minimum Scores by Program Level
+
+| Program                   | IELTS Minimum | Band Minimum      |
+|---------------------------+---------------+-------------------|
+| Foundation Programs       | 5.0 – 5.5    | Varies             |
+| VET/TAFE                  | 5.5 – 6.0    | Varies             |
+| Bachelor Degree           | 6.5           | Varies by institution |
+| Graduate Certificate/Diploma | 6.5 – 7.0 | No band below 6.0–6.5 |
+| Master/Doctoral           | 6.5 – 7.0    | No band below 6.0–6.5 |
+
+*Don't be discouraged by these numbers.* Scores are valid for 2 years, so you have time to prepare. And if you're not quite there, ELICOS (English Language Intensive Courses) can bridge the gap in as little as 10 weeks. We'll help you figure out which test to take and what score to aim for.
+
+-----
+
+** Academic Requirements
+:PROPERTIES:
+:SECTION: Feature list — heading + text
+:LAYOUT: Vertical list, clean
+:END:
+
+Every education level has its own entry point. Here's what you'll need — and remember, if you don't meet one requirement directly, there's almost always an alternative pathway.
+
+*** Foundation Programs
+
+Completed Year 11 (or equivalent) in your home country. Foundation programs are specifically designed as a bridge to university — they exist because the system wants you to succeed.
+
+*** VET/TAFE
+
+Requirements vary by qualification level and program. Some accept Year 10 completion; others require Year 12. These programs are practical, career-focused, and many can pathway directly into a Bachelor degree.
+
+*** Bachelor Degrees
+
+Australian Year 12 equivalent, OR a completed VET Diploma or Advanced Diploma. If your school system doesn't align perfectly with Australia's, a Foundation program can bridge the gap.
+
+*** Postgraduate Programs
+
+A relevant Bachelor degree or equivalent. Some programs also ask for work experience — which can actually work in your favour if you're a mature student looking for a career change.
+
+*** Professional Programs
+
+Programs in teaching, nursing, and engineering may have additional registration requirements. Creative arts may require a portfolio or interview. We'll guide you through the specifics for your chosen field.
+
+-----
+
+** Not Quite There Yet?
+:PROPERTIES:
+:SECTION: Two-column — pathway options left, CTA right
+:LAYOUT: 60/40 split
+:END:
+
+*** Here's the truth about "not qualifying"
+
+Most students who come to us worried about not qualifying end up in Australia within a year. The system is designed with pathways — not dead ends.
+
+1. *ELICOS* — Intensive English courses (10–30 weeks). The most common pathway. Focused, effective, and many institutions offer packaged enrolment.
+2. *Foundation Studies* — Pre-university programs that prepare you academically and culturally. Think of it as a head start, not a detour.
+3. *VET Diploma* — Vocational qualifications that can pathway into a Bachelor degree. You earn a qualification along the way.
+4. *Packaged Offers* — English + academic program combined with a single visa application. One process, one visa, clear progression.
+
+We've helped students from 40+ countries find the right pathway. Whatever your starting point, we'll map the route forward.
+
+*** CTA Card
+:PROPERTIES:
+:LAYOUT: Card with button
+:CTA-PRIMARY: Get My Eligibility Assessed
+:CTA-SECONDARY: View Pathway Options
+:END:
+
+Wondering where you stand? Send us your transcripts and test results. We'll give you an honest assessment — and if you're not ready yet, we'll show you exactly how to get there.
+
+-----
+
+** CTA
+:PROPERTIES:
+:SECTION: Full-width CTA banner
+:CTA-PRIMARY: Book a Free Assessment
+:CTA-SECONDARY: Call +61 8 6381 0030
+:END:
+
+*** Headline
+
+Let's figure out your pathway together.
+
+*** Body
+
+Share your academic transcripts and English test results. We'll assess your eligibility, identify the best options, and tell you exactly what steps to take next — free of charge, no obligation.
+
+* V3
+/Clear & Direct — reference-card format./
+
+** Hero
+:PROPERTIES:
+:SECTION: Hero — minimal
+:LAYOUT: Left-aligned text, clean background
+:END:
+
+*** Headline
+
+Admission Requirements
+
+*** Subheadline
+
+English scores, academic qualifications, and pathway options.
+
+-----
+
+** English Language Requirements
+:PROPERTIES:
+:SECTION: Table with intro text
+:LAYOUT: Clean reference table, full-width
+:END:
+
+*Accepted tests:* IELTS, TOEFL, Cambridge CAE, Pearson PTE. Scores valid for 2 years.
+
+*** Minimum IELTS Scores
+
+| Program                      | Overall | Band Minimum       |
+|------------------------------+---------+--------------------|
+| Foundation                   | 5.0–5.5 | Varies             |
+| VET/TAFE                     | 5.5–6.0 | Varies             |
+| Bachelor                     | 6.5     | Varies by institution |
+| Graduate Cert/Diploma        | 6.5–7.0 | No band below 6.0–6.5 |
+| Master/Doctoral              | 6.5–7.0 | No band below 6.0–6.5 |
+
+Note: Institutions may set higher thresholds. Course requirements may differ from visa requirements.
+
+-----
+
+** Academic Requirements
+:PROPERTIES:
+:SECTION: Feature list — heading + text
+:LAYOUT: Vertical list, clean
+:END:
+
+| Entry Level          | Requirement                                          |
+|----------------------+------------------------------------------------------|
+| Foundation           | Year 11 (or equivalent)                              |
+| VET/TAFE             | Year 10–12 (varies by program)                       |
+| Bachelor             | Year 12 equivalent OR VET Diploma/Advanced Diploma   |
+| Postgraduate         | Relevant Bachelor degree (+ work experience for some)|
+| Professional (teaching, nursing, engineering) | Additional registration requirements |
+| Creative Arts        | Portfolio or interview may apply                     |
+
+-----
+
+** Pathway Options
+:PROPERTIES:
+:SECTION: Two-column — pathway options left, CTA right
+:LAYOUT: 60/40 split
+:END:
+
+*** If you don't meet direct entry requirements
+
+| Pathway           | Duration    | Purpose                                |
+|-------------------+-------------+----------------------------------------|
+| ELICOS            | 10–30 weeks | English proficiency improvement         |
+| Foundation Studies | 1 year     | Pre-university academic preparation     |
+| VET Diploma       | 1–2 years  | Vocational qualification + uni pathway  |
+| Packaged Offer    | Varies     | English + academic program, single visa |
+
+*** CTA Card
+:PROPERTIES:
+:LAYOUT: Card with button
+:CTA-PRIMARY: Get My Eligibility Assessed
+:CTA-SECONDARY: View Pathway Options
+:END:
+
+Free eligibility assessment. Send transcripts and test results.
+
+-----
+
+** CTA
+:PROPERTIES:
+:SECTION: Full-width CTA banner
+:CTA-PRIMARY: Book a Free Assessment
+:CTA-SECONDARY: Call +61 8 6381 0030
+:END:
+
+*** Headline
+
+Free eligibility check.
+
+*** Body
+
+Send academic transcripts and English test results. We assess your options and recommend the best pathway — no charge, no obligation.

@@ -1,0 +1,132 @@
+#+title: Migration & Visas
+#+url: /services/migration
+#+status: draft
+
+** Hero
+:PROPERTIES:
+:SECTION: Hero — full-width with overlay
+:LAYOUT: Left-aligned text
+:IMAGE: passport, boarding pass, Australian landmarks
+:END:
+
+*** Headline
+
+Visa applications that get it right the first time.
+
+*** Subheadline
+
+Registered migration agents with 28 years of successful applications. From student visas to permanent residence, we manage the process end to end.
+
+-----
+
+** The Migration Pathway
+:PROPERTIES:
+:SECTION: Timeline — horizontal, 4 stages
+:LAYOUT: Connected steps with icons, left to right on desktop, vertical on mobile
+:END:
+
+*** Study
+
+Student Visa (Subclass 500). Enrol in a CRICOS-registered course, study full-time, and work up to 48 hours per fortnight.
+
+/[NOTE: Verify current DHA student visa work hour limit before publishing — this figure (48hr/fortnight) reflects the cap reinstated in 2023, but policy may have been updated since. Check current DHA guidelines.]/
+
+*** Graduate
+
+Graduate Work Visa (Subclass 485). Remain in Australia for 18 months to 4 years after graduation — depending on your qualification level and visa stream.
+
+*** Work
+
+Employer Sponsorship (Subclass 482) or Skilled Migration. Your Australian work experience becomes the foundation for the next step. [[/services/career][Career services →]]
+
+*** Settle
+
+Permanent Residence. Points-based, employer-sponsored, business, or family pathways — each with different requirements and timelines.
+
+/Your path may skip steps or combine them. We plan around your specific situation./
+
+-----
+
+** Visa Services
+:PROPERTIES:
+:SECTION: BentoBox — 3 cards linking to sub-pages, with a brief note below
+:LAYOUT: 3-column grid, icon-topped, with arrow links. Below the cards: a single line of supporting text in muted style referencing additional visa types.
+:END:
+
+*** Student Visas
+:PROPERTIES:
+:ICON: book
+:LINK: /services/migration/student-visas
+:END:
+
+Subclass 500 applications for international students enrolling in registered Australian courses. We handle GTE statements, document compilation, and lodgement.
+
+[[/services/migration/student-visas][Student visa details →]]
+
+*** Graduate & Work Visas
+:PROPERTIES:
+:ICON: briefcase
+:LINK: /services/migration/graduate-work-visas
+:END:
+
+Post-study work visas (Subclass 485), employer-sponsored visas (TSS/482), and Standard Business Sponsor applications.
+
+[[/services/migration/graduate-work-visas][Graduate & work visas →]]
+
+*** Permanent Residence
+:PROPERTIES:
+:ICON: home
+:LINK: /services/migration/permanent-residence
+:END:
+
+Skilled migration, business migration, family & partner visas, and resident return visas. Multiple pathways to calling Australia home. We also assist with visa refusals, cancellations, and appeals — working alongside experienced immigration lawyers where needed.
+
+[[/services/migration/permanent-residence][Permanent residence pathways →]]
+
+/Also available: Visitor Visas (Subclass 600) for family members and short-term visits to Australia. [[/contact][Speak to an advisor →]]/
+
+-----
+
+** Why Trust Us With Your Visa
+:PROPERTIES:
+:SECTION: Two-column — text left, credentials right
+:LAYOUT: 55/45 split. Left: intro text + bullet list. Right: credential badges — each displayed as a visual tile with logo + organisation name. No list format on the right. Mobile: stack text above badges.
+:END:
+
+*** Body
+
+Visa mistakes cost time and money. We tell you what's realistic before you apply — not after something goes wrong.
+
+- *Registered agents* — Migration Alliance, Migration Institute of Australia, QEAC certified
+- *28 years* of successful applications across nearly every visa category
+- *Honest assessments* — if your points are too low, we tell you and show you how to fix it
+- *End-to-end* — education, career, and migration under one roof
+- *Transparent fees* — communicated upfront during initial consultation
+
+*** Credentials
+
+/[Credential badge tiles — logo + name. Logos needed from client.]/
+- Migration Alliance
+- Migration Institute of Australia (MIA)
+- QEAC
+- 25+ years · 40+ countries
+
+/NOTE: "Australian Bar Association affiliated" removed pending client confirmation. Re-add if verified./
+
+-----
+
+** CTA
+:PROPERTIES:
+:SECTION: Full-width CTA banner
+:LAYOUT: Centered, contrasting background
+:CTA-PRIMARY: Book a Migration Assessment
+:CTA-SECONDARY: Call +61 8 6381 0030
+:END:
+
+*** Headline
+
+Get an honest read on your visa options.
+
+*** Body
+
+A registered migration agent will assess your situation, identify the right pathway, and tell you if something won't work — before it costs you.

@@ -1,0 +1,340 @@
+#+title: Student Visas
+#+url: /services/migration/student-visas
+#+status: draft
+
+* V1
+
+** Hero
+:PROPERTIES:
+:SECTION: Hero — full-width
+:LAYOUT: Left-aligned text
+:IMAGE: student with passport and acceptance letter
+:END:
+
+*** Headline
+
+Your student visa, handled properly the first time.
+
+*** Subheadline
+
+Subclass 500 applications prepared and lodged by registered migration agents with 25+ years of experience.
+
+-----
+
+** What Is a Student Visa?
+:PROPERTIES:
+:SECTION: Two-column — text left, key facts card right
+:LAYOUT: 60/40 split
+:END:
+
+*** Body
+
+The Student Visa (Subclass 500) allows international students to study full-time at a registered Australian institution. It covers courses from primary school through to doctoral programs.
+
+Getting it right matters. A poorly prepared application can mean delays, extra costs, or refusal. We make sure your application is complete, compliant, and compelling.
+
+*** Key Facts
+:PROPERTIES:
+:LAYOUT: Card with bullet points, slight background
+:END:
+
+- *Visa subclass:* 500
+- *Duration:* Length of your course + buffer
+- *Work rights:* Yes (limited hours during term)
+- *Family inclusion:* Eligible dependants can apply
+- *Health insurance:* OSHC mandatory
+
+-----
+
+** How We Help
+:PROPERTIES:
+:SECTION: Timeline — vertical, 5 steps
+:LAYOUT: Numbered steps with icons
+:END:
+
+*** 1. Eligibility Assessment
+
+We review your situation and confirm you meet the requirements before any application work begins.
+
+*** 2. Document Compilation
+
+Academic transcripts, financial evidence, health checks, character documents — we provide the checklist and verify everything.
+
+*** 3. GTE Statement
+
+We help you prepare a strong Genuine Temporary Entrant statement that clearly explains your study intentions.
+
+*** 4. Application Lodgement
+
+We complete and submit your application accurately, with all supporting documents properly formatted and certified.
+
+*** 5. Follow-Up
+
+We liaise with the Department of Home Affairs on your behalf, responding to any requests for additional information.
+
+-----
+
+** Requirements Snapshot
+:PROPERTIES:
+:SECTION: Feature list — icon + text
+:LAYOUT: 2-column grid
+:END:
+
+*** Financial Capacity
+
+Evidence that you can cover tuition, living costs, and travel expenses for the duration of your studies.
+
+*** English Proficiency
+
+IELTS, TOEFL, PTE, or Cambridge results meeting course and visa requirements.
+
+*** Health & Character
+
+Medical examination ($240–$380) and police clearance certificates from countries you've lived in.
+
+*** Confirmation of Enrollment
+
+A valid CoE from a CRICOS-registered institution — which we help you secure through our education services.
+
+-----
+
+** CTA
+:PROPERTIES:
+:SECTION: Full-width CTA banner
+:CTA-PRIMARY: Start My Student Visa Application
+:CTA-SECONDARY: Call +61 8 6381 0030
+:END:
+
+*** Headline
+
+Ready to apply?
+
+*** Body
+
+Book a free assessment. We'll review your eligibility, explain the process, and give you a clear timeline — no surprises.
+
+* V2
+
+** Hero
+:PROPERTIES:
+:SECTION: Hero — full-width
+:LAYOUT: Left-aligned text
+:IMAGE: student with passport and acceptance letter
+:END:
+
+*** Headline
+
+You have already decided to study in Australia. Now let us make sure nothing stands in your way.
+
+*** Subheadline
+
+The visa application can feel overwhelming — the forms, the documents, the GTE statement, the fear of getting something wrong. We have been guiding students through this process since 1998. You are not doing this alone.
+
+-----
+
+** What Is a Student Visa?
+:PROPERTIES:
+:SECTION: Two-column — text left, key facts card right
+:LAYOUT: 60/40 split
+:END:
+
+*** Body
+
+The Student Visa (Subclass 500) is your entry point to studying in Australia. It covers everything from primary school to doctoral programs at registered institutions.
+
+But here is what no one tells you: the application itself can make or break your plans. A missing document, an unconvincing GTE statement, incomplete financial evidence — any one of these can lead to delays or refusal. And when you have already told your family, quit your job, or started planning your new life, a refusal is devastating.
+
+That is exactly why we exist. We have prepared thousands of student visa applications over 25 years. We know what the Department of Home Affairs looks for, and we make sure your application gives them no reason to say no.
+
+*** Key Facts
+:PROPERTIES:
+:LAYOUT: Card with bullet points, slight background
+:END:
+
+- *Visa subclass:* 500
+- *Duration:* Matches your course length, plus a buffer period
+- *Work rights:* Yes — limited hours during term, more during breaks
+- *Family inclusion:* Your partner and dependent children can be included
+- *Health insurance:* OSHC is mandatory (we help arrange it)
+
+-----
+
+** How We Help
+:PROPERTIES:
+:SECTION: Timeline — vertical, 5 steps
+:LAYOUT: Numbered steps with icons
+:END:
+
+*** 1. We Start With an Honest Conversation
+
+Before any paperwork, we sit down and assess your situation properly. If something needs addressing — a gap in your study history, insufficient funds, or weak English scores — we tell you upfront so we can fix it before it becomes a problem.
+
+*** 2. We Build Your Document Package
+
+Academic transcripts, financial statements, health checks, police clearances — we give you a clear checklist tailored to your specific situation, then verify every document before it goes into your application.
+
+*** 3. We Craft Your GTE Statement
+
+The Genuine Temporary Entrant statement is often the most important part of your application. We help you articulate your study intentions clearly and honestly — because that is what the Department wants to see.
+
+*** 4. We Lodge Your Application
+
+We complete and submit everything accurately, formatted to Department of Home Affairs standards. No guesswork. No missing attachments.
+
+*** 5. We Stay With You Until It Is Done
+
+If the Department comes back with questions or requests for additional information, we handle it. You are never left wondering what to do next.
+
+-----
+
+** Requirements Snapshot
+:PROPERTIES:
+:SECTION: Feature list — icon + text
+:LAYOUT: 2-column grid
+:END:
+
+*** Financial Capacity
+
+You need to show you can cover tuition, living costs, and travel. This can feel daunting, but we will walk you through exactly what evidence is needed and in what format.
+
+*** English Proficiency
+
+IELTS, TOEFL, PTE, or Cambridge — your scores need to meet both the course requirements and the visa requirements. If you are not there yet, we can recommend preparation options.
+
+*** Health & Character
+
+A medical exam ($240–$380) and police clearance certificates from every country you have lived in. We guide you through the process so nothing is missed.
+
+*** Confirmation of Enrollment
+
+A valid CoE from a CRICOS-registered institution. If you have not enrolled yet, our education counselors can help you find the right course and secure your place.
+
+-----
+
+** CTA
+:PROPERTIES:
+:SECTION: Full-width CTA banner
+:CTA-PRIMARY: Start My Student Visa Application
+:CTA-SECONDARY: Call +61 8 6381 0030
+:END:
+
+*** Headline
+
+Take the first step — it is easier than you think.
+
+*** Body
+
+Book a free assessment. We will review your situation honestly, explain exactly what you need, and give you a clear timeline. No pressure. No surprises. Just a straightforward conversation about your options.
+
+* V3
+
+** Hero
+:PROPERTIES:
+:SECTION: Hero — full-width
+:LAYOUT: Left-aligned text
+:IMAGE: student with passport and acceptance letter
+:END:
+
+*** Headline
+
+Student Visa (Subclass 500). Applied right the first time.
+
+*** Subheadline
+
+Registered migration agents. 25+ years. Full application service from eligibility check to lodgement.
+
+-----
+
+** What Is a Student Visa?
+:PROPERTIES:
+:SECTION: Two-column — text left, key facts card right
+:LAYOUT: 60/40 split
+:END:
+
+*** Body
+
+The Subclass 500 lets international students study full-time at registered Australian institutions — from primary school to PhD level.
+
+A poorly prepared application leads to delays or refusal. We prepare it properly the first time.
+
+*** Key Facts
+:PROPERTIES:
+:LAYOUT: Card with bullet points, slight background
+:END:
+
+| Feature          | Detail                              |
+|------------------+-------------------------------------|
+| Visa subclass    | 500                                 |
+| Duration         | Course length + buffer              |
+| Work rights      | Yes (limited hours during term)     |
+| Family inclusion | Eligible dependants can apply       |
+| Health insurance | OSHC mandatory                      |
+
+-----
+
+** What We Do
+:PROPERTIES:
+:SECTION: Timeline — vertical, 5 steps
+:LAYOUT: Numbered steps with icons
+:END:
+
+*** 1. Eligibility Check
+
+Confirm you meet requirements before any application work starts.
+
+*** 2. Document Compilation
+
+We provide the checklist. You gather the documents. We verify everything: transcripts, financials, health, character.
+
+*** 3. GTE Statement Preparation
+
+We help you write a strong Genuine Temporary Entrant statement that clearly states your study intentions.
+
+*** 4. Application Lodgement
+
+Completed, formatted, and submitted with all supporting documents.
+
+*** 5. Department Liaison
+
+We respond to any Department of Home Affairs requests on your behalf.
+
+-----
+
+** What You Need
+:PROPERTIES:
+:SECTION: Feature list — icon + text
+:LAYOUT: 2-column grid
+:END:
+
+*** Financial Capacity
+
+Evidence covering tuition + living costs + travel for your study duration.
+
+*** English Proficiency
+
+IELTS, TOEFL, PTE, or Cambridge scores meeting course and visa thresholds.
+
+*** Health & Character
+
+Medical exam ($240–$380) + police clearance from every country you have lived in.
+
+*** Confirmation of Enrollment
+
+Valid CoE from a CRICOS-registered institution. We can help you secure enrollment through our education services.
+
+-----
+
+** CTA
+:PROPERTIES:
+:SECTION: Full-width CTA banner
+:CTA-PRIMARY: Start My Student Visa Application
+:CTA-SECONDARY: Call +61 8 6381 0030
+:END:
+
+*** Headline
+
+Ready to apply?
+
+*** Body
+
+Free eligibility assessment. Clear timeline. No surprises. Book now.

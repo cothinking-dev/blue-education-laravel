@@ -1,0 +1,165 @@
+#+title: Student Support
+#+url: /services/student-support
+#+status: draft
+
+** Hero
+:PROPERTIES:
+:SECTION: Hero — full-width
+:LAYOUT: Centered text
+:IMAGE: student being welcomed at airport, or settling into homestay
+:END:
+
+*** Headline
+
+Student support services in Australia.
+
+*** Subheadline
+
+Accommodation. Guardianship. Health cover. Airport transfers. Translation. 24/7 emergency line. All arranged before arrival.
+
+-----
+
+** Support Services
+:PROPERTIES:
+:SECTION: BentoBox — 6 cards with icons
+:LAYOUT: 3x2 grid on desktop, stacked on mobile
+:END:
+
+*** Accommodation
+:PROPERTIES:
+:ICON: home
+:END:
+
+Vetted [[/programs/buddy-programme][homestay families]] through the Australian Homestay Network. Safe, supportive living environment. Meals included. Short-term and long-term arrangements available.
+
+*** Guardianship (Under 18)
+:PROPERTIES:
+:ICON: shield
+:END:
+
+Legal guardianship arranged through Professional Student Care Australia or International Student Alliance. Welfare monitoring, school liaison, parental reporting. Required by the Department of Home Affairs for unaccompanied minor students.
+
+*** 24/7 Emergency Hotline
+:PROPERTIES:
+:ICON: phone
+:END:
+
+Round-the-clock crisis support. Multilingual assistance. Coordination with local emergency services. Available to all Blue Education clients.
+
+*** Airport Transfers
+:PROPERTIES:
+:ICON: plane
+:END:
+
+Meet and greet at the airport. Direct transfer to accommodation. Luggage assistance included.
+
+*** Health Insurance (OSHC)
+:PROPERTIES:
+:ICON: heart
+:END:
+
+Overseas Student Health Cover — mandatory for all [[/services/migration/student-visas][student visas]]. We arrange cover through our partner providers — OSHC Australia, Annalink, and Konpare — and handle policy selection, enrolment, claims assistance, and renewal.
+
+*** Document Translation
+:PROPERTIES:
+:ICON: file-text
+:END:
+
+NAATI-certified translations for academic, legal, and visa documents. Accepted by all Australian authorities. Fast turnaround.
+
+-----
+
+** Orientation & Onboarding
+:PROPERTIES:
+:SECTION: Two-column — text left, image right
+:LAYOUT: 55/45 split
+:IMAGE: students in group orientation session
+:END:
+
+Comprehensive introduction to life and study in Australia for all new arrivals:
+
+- Campus and local area familiarisation
+- Banking and essential services setup
+- Public transport guidance
+- Australian lifestyle and culture introduction
+- Student support services overview
+- Personal development programs for confidence and community
+
+-----
+
+** For Parents
+:PROPERTIES:
+:SECTION: Two-column — text left, image right
+:LAYOUT: 60/40 split
+:IMAGE: Parent video-calling with child
+:END:
+
+Sending your child to study in Australia is a significant decision. Here's how we look after them:
+
+- *24/7 emergency hotline* — for parents and students, any time
+- *Regular welfare reports* — school updates and wellbeing checks
+- *Direct communication* with guardianship providers
+- *On-ground support* in Perth and across major Australian cities
+
+-----
+
+** Your Support Journey
+:PROPERTIES:
+:SECTION: Timeline — horizontal, 3 phases
+:LAYOUT: Connected phases
+:END:
+
+*** Pre-Arrival
+
+Documents translated. Accommodation arranged. OSHC enrolled. Visa approved.
+
+*** Arrival Day
+
+Airport pickup. Transfer to accommodation. First-day orientation.
+
+*** Ongoing
+
+24/7 hotline. Welfare monitoring. Cultural adaptation support. Personal development programs.
+
+-----
+
+** Cost Considerations
+:PROPERTIES:
+:SECTION: Table — clean
+:LAYOUT: Reference table
+:END:
+
+| Item                                       | Notes                                                |
+|--------------------------------------------+------------------------------------------------------|
+| Accommodation                              | Fees vary by homestay arrangement and duration        |
+| Guardianship                               | Required for under-18 students; fees vary             |
+| OSHC                                       | Mandatory; fees depend on provider and duration       |
+| Medical examinations                       | $240–$380 depending on assessment type                |
+| Translation, airport transfers, 24/7 hotline | Additional service fees apply                       |
+
+Items above are costs payable directly to providers — homestay families, guardianship organisations, OSHC providers, medical clinics. Blue Education's service fees for advisory, application management, and ongoing support are quoted separately during initial consultation.
+
+[[/fees][See full fees & costs →]]
+
+-----
+
+** Also Relevant
+
+/Also relevant: [[/programs/buddy-programme][Buddy Programme →]] · [[/services/migration/student-visas][Student visa support →]]/
+
+-----
+
+** CTA
+:PROPERTIES:
+:SECTION: Full-width CTA banner
+:CTA-PRIMARY: Ask About Support Services
+:CTA-SECONDARY: Call +61 8 6381 0030
+:END:
+
+*** Headline
+
+Get the full picture.
+
+*** Body
+
+Contact us with your situation. We'll tell you exactly what support is available and what it costs.

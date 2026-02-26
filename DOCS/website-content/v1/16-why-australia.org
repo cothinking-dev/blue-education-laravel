@@ -1,0 +1,417 @@
+#+title: Why Australia
+#+url: /why-australia
+#+status: draft
+
+* V1
+
+** Hero
+:PROPERTIES:
+:SECTION: Hero — full-width, landscape imagery
+:LAYOUT: Centered text
+:IMAGE: Iconic Australian landscape — Perth skyline, beach, or university campus
+:END:
+
+*** Headline
+
+World-class education. Real career pathways. A life worth building.
+
+*** Subheadline
+
+There's a reason over 700,000 international students choose Australia every year.
+
+-----
+
+** Five Reasons
+:PROPERTIES:
+:SECTION: Alternating two-column — numbered, text/image alternating sides
+:LAYOUT: 5 rows, each with large number, heading, body text, and image
+:END:
+
+*** 01. Globally recognised qualifications
+:PROPERTIES:
+:IMAGE: University lecture hall, diverse students
+:END:
+
+Seven Australian universities rank in the global top 100. Qualifications are regulated by the Australian government through TEQSA, ensuring standards that employers and institutions worldwide recognise and respect.
+
+An Australian degree doesn't just work in Australia. It works everywhere.
+
+*** 02. More choice than almost anywhere
+:PROPERTIES:
+:IMAGE: Campus variety — modern architecture, labs, outdoor learning
+:END:
+
+1,100+ institutions. 20,000+ programs. From English language courses to PhDs, vocational training to executive education — Australia offers a pathway for every ambition, every level, every budget.
+
+*** 03. Work while you study — and after
+:PROPERTIES:
+:IMAGE: Young professional in office setting, Australian city background
+:END:
+
+Unlike many destinations, Australia actively encourages international students to work. And after graduation, the Post-Study Work Visa gives you 2–4 years to build real Australian career experience:
+
+| Qualification   | Work Visa Duration |
+|-----------------+--------------------|
+| Bachelor Degree | 2 years            |
+| Master Degree   | 3 years            |
+| Doctoral Degree | 4 years            |
+
+That's not just study — it's a genuine career launchpad.
+
+*** 04. A lifestyle that's hard to beat
+:PROPERTIES:
+:IMAGE: Perth coastline, outdoor lifestyle, café culture
+:END:
+
+Australia consistently ranks among the world's most liveable countries. Safe communities. Stunning natural environments. Multicultural cities. Excellent healthcare. A culture that values work-life balance.
+
+You won't just get an education. You'll get a life you actually enjoy living.
+
+*** 05. Affordable compared to the alternatives
+:PROPERTIES:
+:IMAGE: City comparison graphic or cost-of-living infographic
+:END:
+
+Compared to the UK and USA, Australia offers competitive tuition and significantly lower living costs — especially in Perth and regional cities. Quality education doesn't have to mean crippling debt.
+
+-----
+
+** Perth & Western Australia
+:PROPERTIES:
+:SECTION: Two-column — text left, image right
+:LAYOUT: 55/45 split
+:IMAGE: Perth city skyline, Kings Park, Swan River
+:NOTE: Client direction — position WA as "the golden state of education"
+:END:
+
+*** Headline
+
+The golden state of education.
+
+*** Body
+
+While most agencies funnel students to Sydney and Melbourne, we think Perth is Australia's best-kept secret for international students.
+
+Lower cost of living. Smaller class sizes. Safer communities. A thriving job market in mining, technology, healthcare, and education. And a lifestyle that balances world-class education with beaches, parks, and year-round sunshine.
+
+Blue Education is headquartered in Perth because we believe Western Australia offers something the east coast can't — a genuine community where you're known by name, not student number.
+
+-----
+
+** Multicultural by Design
+:PROPERTIES:
+:SECTION: Feature strip — icon + text, 3 columns
+:LAYOUT: Horizontal, icons centered above text
+:END:
+
+*** 200+ nationalities
+
+Australia is one of the most culturally diverse countries on earth. You'll feel at home.
+
+*** English-speaking environment
+
+Full immersion in English — the language of global business, science, and opportunity.
+
+*** Strong anti-discrimination laws
+
+Australia protects the rights of international students at every level.
+
+-----
+
+** CTA
+:PROPERTIES:
+:SECTION: Full-width CTA banner
+:LAYOUT: Centered, warm background image (sunset, campus)
+:CTA-PRIMARY: Start Your Australian Journey
+:CTA-SECONDARY: Explore Education Services
+:END:
+
+*** Headline
+
+Australia is waiting. Are you ready?
+
+*** Body
+
+Book a free consultation with our Perth-based team. We'll help you find the right pathway — honestly, clearly, and personally.
+
+* V2
+/The Human Story — paint the picture of a life transformed./
+
+** Hero
+:PROPERTIES:
+:SECTION: Hero — full-width, landscape imagery
+:LAYOUT: Centered text
+:IMAGE: Iconic Australian landscape — Perth skyline, beach, or university campus
+:END:
+
+*** Headline
+
+Imagine waking up to a life you chose — not the one that was chosen for you.
+
+*** Subheadline
+
+For over 25 years, we've helped people from 40+ countries turn "what if I moved to Australia?" into "I'm so glad I did."
+
+-----
+
+** Five Reasons
+:PROPERTIES:
+:SECTION: Alternating two-column — numbered, text/image alternating sides
+:LAYOUT: 5 rows, each with large number, heading, body text, and image
+:END:
+
+*** 01. A degree the world takes seriously
+:PROPERTIES:
+:IMAGE: University lecture hall, diverse students
+:END:
+
+When you tell a future employer you studied in Australia, doors open. Seven Australian universities sit in the global top 100. The government regulates every institution through TEQSA, so the standard isn't a hope — it's a guarantee.
+
+But the real value? Employers from Tokyo to Toronto know exactly what an Australian qualification means. You won't have to explain yourself. Your credentials speak first.
+
+*** 02. A pathway for wherever you are right now
+:PROPERTIES:
+:IMAGE: Campus variety — modern architecture, labs, outdoor learning
+:END:
+
+Maybe you're a recent graduate unsure of your next step. Maybe you're a working professional looking to start over. Maybe you're a parent planning something better for your child.
+
+Australia has over 1,100 institutions and 20,000+ programs — from 10-week English courses to doctoral research. There's a pathway that meets you exactly where you are, not where someone else thinks you should be.
+
+*** 03. Your career doesn't wait until graduation
+:PROPERTIES:
+:IMAGE: Young professional in office setting, Australian city background
+:END:
+
+In many countries, studying means putting your career on hold. Not here. Australia lets you work while you study. And once you graduate, the Post-Study Work Visa gives you real time to build your career:
+
+| Qualification   | Work Visa Duration |
+|-----------------+--------------------|
+| Bachelor Degree | 2 years            |
+| Master Degree   | 3 years            |
+| Doctoral Degree | 4 years            |
+
+That's 2–4 years to gain Australian work experience, build professional networks, and explore pathways to permanent residency. It's not just a degree — it's the beginning of a whole new chapter.
+
+*** 04. A place that actually feels like home
+:PROPERTIES:
+:IMAGE: Perth coastline, outdoor lifestyle, café culture
+:END:
+
+Moving to a new country is emotional. You worry: Will I belong? Will I be safe? Will I miss home too much?
+
+Australia makes it easier than most. A multicultural society where over 200 nationalities coexist. Safe communities. Clean air. Healthcare you can trust. Year-round sunshine in Perth. Weekend barbecues with friends from four different continents.
+
+The students we've worked with over 25+ years tell us the same thing: "I thought I was coming for the degree. I stayed for the life."
+
+*** 05. Quality education without the financial anxiety
+:PROPERTIES:
+:IMAGE: City comparison graphic or cost-of-living infographic
+:END:
+
+Studying abroad is an investment — and it's natural to worry about whether the numbers work. Compared to the UK and USA, Australia offers competitive tuition and noticeably lower living costs, especially in Perth and regional cities.
+
+This isn't about cutting corners. It's about getting genuine value: a world-class education in a world-class country, without the burden of overwhelming debt.
+
+-----
+
+** Perth & Western Australia
+:PROPERTIES:
+:SECTION: Two-column — text left, image right
+:LAYOUT: 55/45 split
+:IMAGE: Perth city skyline, Kings Park, Swan River
+:NOTE: Client direction — position WA as "the golden state of education"
+:END:
+
+*** Headline
+
+Perth: where you're known by name, not student number.
+
+*** Body
+
+Sydney and Melbourne get the headlines. Perth gets the lifestyle.
+
+Think: smaller class sizes where lecturers actually know you. A job market hungry for talent in mining, technology, healthcare, and education. Beaches 20 minutes from campus. A city safe enough to walk home at midnight.
+
+Blue Education is headquartered in Perth because we've seen what happens when students come here — they thrive. Not just academically, but personally. They build lives they love.
+
+Western Australia isn't just a place to study. For many of our clients over the past 25+ years, it's become home.
+
+-----
+
+** Multicultural by Design
+:PROPERTIES:
+:SECTION: Feature strip — icon + text, 3 columns
+:LAYOUT: Horizontal, icons centered above text
+:END:
+
+*** 200+ nationalities call Australia home
+
+You'll share classrooms with students from every corner of the world. Loneliness is hard to sustain when the person at the next desk understands exactly what it feels like to start over in a new country.
+
+*** English immersion, every day
+
+There's no faster way to master English than living, studying, and working in it daily. And English remains the global language of business, science, and opportunity.
+
+*** A country that protects you
+
+Australia has strong anti-discrimination laws and a legal framework that specifically protects the rights of international students. You're not a guest here. You're part of the community.
+
+-----
+
+** CTA
+:PROPERTIES:
+:SECTION: Full-width CTA banner
+:LAYOUT: Centered, warm background image (sunset, campus)
+:CTA-PRIMARY: Start Your Australian Journey
+:CTA-SECONDARY: Explore Education Services
+:END:
+
+*** Headline
+
+Your future self is waiting in Australia.
+
+*** Body
+
+We've guided thousands of people from 40+ countries through this exact decision. Book a free consultation with our Perth-based team — no pressure, no sales pitch. Just honest conversation about what's possible for you.
+
+* V3
+/Clear & Direct — maximum information density, minimum words./
+
+** Hero
+:PROPERTIES:
+:SECTION: Hero — full-width, landscape imagery
+:LAYOUT: Centered text
+:IMAGE: Iconic Australian landscape — Perth skyline, beach, or university campus
+:END:
+
+*** Headline
+
+Study in Australia. Work in Australia. Stay in Australia.
+
+*** Subheadline
+
+Five reasons Australia outperforms the UK and USA for international students.
+
+-----
+
+** Five Reasons
+:PROPERTIES:
+:SECTION: Alternating two-column — numbered, text/image alternating sides
+:LAYOUT: 5 rows, each with large number, heading, body text, and image
+:END:
+
+*** 01. Globally recognised qualifications
+:PROPERTIES:
+:IMAGE: University lecture hall, diverse students
+:END:
+
+- 7 universities in the global top 100
+- All institutions regulated by TEQSA (government quality framework)
+- Qualifications recognised by employers and institutions worldwide
+
+*** 02. Unmatched variety
+:PROPERTIES:
+:IMAGE: Campus variety — modern architecture, labs, outdoor learning
+:END:
+
+- 1,100+ institutions
+- 20,000+ programs
+- English language courses, VET/TAFE, undergraduate, postgraduate, doctoral
+- Every level, every budget, every career goal
+
+*** 03. Work rights before and after graduation
+:PROPERTIES:
+:IMAGE: Young professional in office setting, Australian city background
+:END:
+
+Work while studying. Then stay and work after:
+
+| Qualification   | Post-Study Work Visa |
+|-----------------+----------------------|
+| Bachelor Degree | 2 years              |
+| Master Degree   | 3 years              |
+| Doctoral Degree | 4 years              |
+
+The Post-Study Work Visa (Subclass 485) provides a direct pathway to Australian career experience and potential permanent residency.
+
+*** 04. High quality of life
+:PROPERTIES:
+:IMAGE: Perth coastline, outdoor lifestyle, café culture
+:END:
+
+- Safe, low-crime communities
+- Multicultural (200+ nationalities)
+- Excellent healthcare
+- Year-round pleasant climate
+- Strong work-life balance culture
+
+*** 05. Lower costs than UK/USA
+:PROPERTIES:
+:IMAGE: City comparison graphic or cost-of-living infographic
+:END:
+
+Competitive tuition. Lower living costs — especially Perth and regional cities. Same quality, less debt.
+
+-----
+
+** Perth & Western Australia
+:PROPERTIES:
+:SECTION: Two-column — text left, image right
+:LAYOUT: 55/45 split
+:IMAGE: Perth city skyline, Kings Park, Swan River
+:NOTE: Client direction — position WA as "the golden state of education"
+:END:
+
+*** Headline
+
+Why Perth.
+
+*** Body
+
+| Factor              | Perth Advantage                              |
+|---------------------+----------------------------------------------|
+| Cost of living      | Lower than Sydney/Melbourne                  |
+| Class sizes         | Smaller, more personal                       |
+| Safety              | Among Australia's safest cities              |
+| Job market          | Mining, tech, healthcare, education          |
+| Climate             | Year-round sunshine                          |
+| Blue Education HQ   | On-ground support, local expertise           |
+
+-----
+
+** Multicultural by Design
+:PROPERTIES:
+:SECTION: Feature strip — icon + text, 3 columns
+:LAYOUT: Horizontal, icons centered above text
+:END:
+
+*** 200+ nationalities
+
+One of the most culturally diverse countries on earth.
+
+*** English immersion
+
+Full daily immersion in the global language of business and science.
+
+*** Legal protections
+
+Strong anti-discrimination laws. International student rights protected at every level.
+
+-----
+
+** CTA
+:PROPERTIES:
+:SECTION: Full-width CTA banner
+:LAYOUT: Centered, warm background image (sunset, campus)
+:CTA-PRIMARY: Start Your Australian Journey
+:CTA-SECONDARY: Explore Education Services
+:END:
+
+*** Headline
+
+Free consultation. No obligation.
+
+*** Body
+
+Talk to our Perth-based team. Education, career, and migration guidance from advisors with 25+ years of experience across 40+ countries.

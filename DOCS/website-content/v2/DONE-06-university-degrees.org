@@ -1,0 +1,169 @@
+#+title: University Degrees
+#+url: /services/education/degrees
+#+status: draft
+
+** Hero
+:PROPERTIES:
+:SECTION: Hero — full-width
+:LAYOUT: Centered text
+:IMAGE: University graduation ceremony
+:END:
+
+*** Headline
+
+A degree worth having, from a city worth studying in.
+
+*** Subheadline
+
+A degree from one of Western Australia's universities opens doors in most major economies — and gives you 2 to 4 years to build a career here before you decide what comes next.
+
+-----
+
+** Programs
+:PROPERTIES:
+:SECTION: Comparison table — 3 columns
+:LAYOUT: Horizontal comparison table. Columns: Bachelor, Master, Doctoral — each with a brief tagline beneath the column header. Rows: AQF Level, Duration, Post-study work visa. The post-study work visa row should be visually prominent (bold or highlighted). Desktop: full-width. Mobile: stack as 3 individual summary cards.
+:END:
+
+|                      | Bachelor                                                                                                | Master                                                                                                       | Doctoral                                                                                           |
+|----------------------+---------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------|
+| /Tagline/            | The starting point for most professional careers — and for post-study work rights in Western Australia. | For specialisation or career advancement. Coursework or research pathways available depending on your field. | Research-focused PhD programmes at institutions with strong industry and government research ties. |
+| AQF Level            | Level 7                                                                                                 | Level 9                                                                                                      | Level 10                                                                                           |
+| Duration             | 3–4 years                                                                                               | 1–2 years                                                                                                    | 3–4 years                                                                                          |
+| Post-study work visa | 2 years                                                                                                 | 3 years                                                                                                      | 4 years                                                                                            |
+
+/Also available: Graduate Certificate and Graduate Diploma (AQF Level 8) — typically 6 months to 1 year. Suited to graduates seeking additional specialisation without committing to a full Master degree./
+
+-----
+
+** Our Partner Universities
+:PROPERTIES:
+:SECTION: University grid — WA institutions highlighted, with note on broader partners
+:LAYOUT: Desktop: logo + name + descriptor grid. WA universities featured prominently. Mobile: 2-column wrap. Each card links to the relevant university profile on the Our Partners page.
+:NOTE: Blue Education partners with all 5 WA universities plus additional institutions across Australia. Full partner list to be confirmed with client for the Our Partners page. Feature WA 5 here; reference broader network below.
+:END:
+
+Blue Education works with all five main Western Australian universities — and a wider network of institutions across Australia. Your advisor matches you to the right one based on your goals, background, and intended field.
+
+*** The University of Western Australia (UWA)
+
+One of Australia's leading research universities. Strong in medicine, science, law, and engineering. Consistently ranked in the global top 100.
+
+*** Curtin University
+
+Perth's largest university, with particular strength in engineering, technology, business, and health sciences. Strong industry connections and work-integrated learning across most programmes.
+
+*** Murdoch University
+
+Known for health sciences, law, veterinary science, and environmental studies. Smaller cohorts and a strong focus on student support.
+
+*** Edith Cowan University (ECU)
+
+Recognised for creative arts, education, nursing, and security studies. A practical, career-focused institution with strong ties to Western Australian industry.
+
+*** The University of Notre Dame Australia
+
+A smaller, values-based university with strengths in health, law, philosophy, and education. Located in Fremantle.
+
+[[/about/partners][View all partner institutions →]]
+
+-----
+
+** Why study in Western Australia?
+:PROPERTIES:
+:SECTION: Alternating two-column — 3 rows
+:LAYOUT: Text/image alternating sides
+:END:
+
+*** Global recognition
+:PROPERTIES:
+:IMAGE: World map with highlighted connections
+:END:
+
+Western Australia's universities are regulated by TEQSA, ensuring consistent academic standards across all programmes. Qualifications are recognised across major economies — including in regulated professions such as teaching, nursing, and engineering.
+
+*** Industry connections
+:PROPERTIES:
+:IMAGE: Students in industry placement / internship setting
+:END:
+
+Many programmes include industry placements, research projects, and professional mentoring. Graduates leave with demonstrated experience in their field — not just a transcript.
+
+*** Post-study work rights
+:PROPERTIES:
+:IMAGE: Young professional in Perth city
+:END:
+
+The Post-Study Work Visa (Subclass 485) gives graduates 2 to 4 years of open work rights in Australia. That's time to build experience in your field, establish professional connections in Perth, and consider your options for permanent residence.
+
+[[/services/migration/graduate-work-visas][Learn about graduate work visas →]]
+
+[[/services/migration/permanent-residence][Permanent residence pathways →]]
+
+-----
+
+** Fees & Costs
+:PROPERTIES:
+:SECTION: Text block — muted background
+:LAYOUT: Full-width, centred text, no more than 3 short paragraphs.
+:END:
+
+Tuition fees vary by institution, field of study, and qualification level. Most universities require fees to be paid per semester or trimester before each study period begins.
+
+As an international student, your fees are separate from your living costs. Perth is widely regarded as one of Australia's most liveable and cost-effective cities for students — your advisor can provide a detailed cost breakdown for your specific situation.
+
+[[/resources/admission-requirements][See admission requirements and fee guidance →]]
+
+-----
+
+** Admission Requirements
+:PROPERTIES:
+:SECTION: Table — clean reference
+:LAYOUT: Simple table with link to full requirements page
+:END:
+
+| Program  | IELTS     | Academic Requirement              |
+|----------+-----------+-----------------------------------|
+| Bachelor | 6.5       | Year 12 equivalent or VET Diploma |
+| Master   | 6.5 – 7.0 | Relevant Bachelor degree          |
+| Doctoral | 6.5 – 7.0 | Relevant Master degree            |
+
+Below entry requirements? There are structured pathways to get you there:
+- [[/services/education/english-foundation][ELICOS and Foundation programmes →]] — for students below English or academic entry level
+- [[/services/education/vet-tafe][VET Diploma →]] — recognised as an alternative to Year 12 for Bachelor entry
+
+[[/resources/admission-requirements][See full admission requirements →]]
+
+-----
+
+** How to Apply
+:PROPERTIES:
+:SECTION: Numbered steps — horizontal or vertical
+:LAYOUT: Desktop: 5 horizontal steps connected by arrows. Mobile: vertical stacked list. Each step has a number, short heading, and one sentence.
+:END:
+
+1. *Assess your eligibility* — Your advisor reviews your academic background, English level, and career goals to confirm which programmes and institutions suit your situation.
+2. *Choose your institution and programme* — Blue Education identifies the right match from our partner institutions and presents your options.
+3. *Submit your application* — We manage the application process and liaise with the institution on your behalf.
+4. *Receive your offer and apply for your student visa* — Once you have a Confirmation of Enrolment (CoE), your visa application can proceed. [[/services/migration/student-visas][Learn about student visas →]]
+5. *Arrive, enrol, and begin* — Your advisor remains available throughout your studies and into your post-graduation planning. [[/services/career][Explore career services →]]
+
+-----
+
+** CTA
+:PROPERTIES:
+:SECTION: Full-width CTA banner
+:CTA-PRIMARY: Get University Recommendations
+:CTA-URL: /contact
+:CTA-SECONDARY: Call +61 8 6381 0030
+:END:
+
+*** Headline
+
+Not sure which university is the right fit?
+
+*** Body
+
+Talk to an advisor. They'll assess your background and goals, then recommend the institution and programme that suits your situation.
+
+[[/about/partners][View our partner institutions →]]

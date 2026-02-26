@@ -1,0 +1,554 @@
+* Blue Education Website - Sitemap & Navigation Structure
+** Consolidated Page Structure
+*Total Pages: 23 main pages* (reduced from 40 through consolidation)
+
+--------------
+
+** Primary Navigation (Main Menu)
+*** 1. Home
+- *URL:* =/=
+- *Type:* Standalone page
+- *Content:* Hero, service overview, featured programs, testimonials, why Australia highlights
+
+--------------
+
+*** 2. Services (Mega Menu / Dropdown)
+**** 2.1 Education Services
+*Structure:* Hub page + 4 detailed pages (5 pages total)
+
+***** Education Hub Page
+- *URL:* =/services/education=
+- *Type:* Overview/Hub page
+- *Content:* Brief overview of all education services with links to detailed pages
+- *Sections:*
+  - Education Pathway Planning & Counseling (overview)
+  - Quick links to all 4 detailed service pages below
+  - Success stories and testimonials
+  - “How to Get Started” CTA
+
+***** School Programs (Detailed Page)
+- *URL:* =/services/education/school-programs=
+- *Content:*
+  - Primary & Secondary Education
+  - Buddy Program (integrated)
+  - School selection and placement
+  - Guardianship services integration
+  - Australian school system overview
+
+***** English & Foundation (Detailed Page)
+- *URL:* =/services/education/english-foundation=
+- *Content:*
+  - ELICOS - All 7 program pathways (General English, EAP, Bridging, ESP, Exam Prep, Certificate I-IV, English for Teaching)
+  - Foundation Studies Programs
+  - Pathway to university diagram
+  - Partner institutions
+
+***** VET & Higher Education (Detailed Page)
+- *URL:* =/services/education/vet-higher-education=
+- *Content:*
+  - Vocational Education & Training (VET/TAFE)
+  - Degrees & Higher Education (Bachelor, Master, Doctoral)
+  - Teaching Pathways (Bachelor of Education, Master of Teaching, Grad Dip)
+  - Partner universities and TAFEs
+  - Skilled migration pathway connections
+
+***** Student Placement (Detailed Page)
+- *URL:* =/services/education/student-placement=
+- *Content:*
+  - International student placement services
+  - End-to-end support process
+  - Application process steps
+  - Institution matching
+  - Success rates and testimonials
+
+*Total Education Pages:* 5 pages (1 hub + 4 detailed)
+
+--------------
+
+**** 2.2 Migration & Visas
+- *URL:* =/services/migration=
+- *Type:* Overview/Hub page with sections for each visa type
+- *Sections on page:*
+  - Student Visas (Subclass 500)
+  - Graduate/Post-Study Work Visa (Subclass 485)
+  - Skilled Migration
+  - Employer Sponsored Migration
+  - Business Migration
+  - Family & Partner Visas
+  - Other Visas (Visitor, Resident Return)
+- *Why Choose Our Migration Services* (testimonials, credentials section)
+
+*Option A - Single Long Page:* All migration services on one page with accordion/tab sections for each visa type
+
+*Option B - Hub + 3 Detailed Pages:* - =/services/migration= (hub with overview + credentials) - =/services/migration/student-graduate-visas= (Student + Graduate Work Visa) - =/services/migration/permanent-residence= (Skilled + Employer Sponsored + Business) - =/services/migration/family-other= (Family/Partner + Visitor + Resident Return)
+
+*Recommended:* Option A (Single consolidated page with tabs/accordions) = 1 page instead of 8
+
+--------------
+
+**** 2.3 Career Services
+- *URL:* =/services/career=
+- *Type:* Single consolidated page
+- *Sections on page:*
+  - Career Services Overview
+  - Career Counseling & Job Readiness Programs
+  - Employer Connections & Work Placement
+  - Internship Programs (Standard & Executive)
+  - Work Visa Assistance
+- *Layout:* Single scrollable page with section navigation
+
+*Page count:* 1 page instead of 5
+
+--------------
+
+**** 2.4 Student Support
+- *URL:* =/services/student-support=
+- *Type:* Single consolidated page
+- *Sections on page:*
+  - Student Support Services Overview
+  - Accommodation & Homestay Services
+  - Guardianship Services (for under-18 students)
+  - Health Insurance (OSHC) & Welfare
+  - 24/7 Emergency Hotline
+  - Airport Transfers
+  - Document Translation
+  - Orientation & Personal Development
+- *Layout:* Single scrollable page with section navigation
+
+*Page count:* 1 page instead of 4
+
+--------------
+
+*** 3. Programs (Dropdown)
+**** 3.1 Study Tours
+- *URL:* =/programs/study-tours=
+- *Type:* Single page featuring all tours
+- *Content:*
+  - Study Tours Overview
+  - Culinary Study Tour (featured)
+  - Short-term Immersion Programs
+  - Custom Group Tours
+  - Booking Information
+
+*Page count:* 1 page instead of 2
+
+--------------
+
+**** 3.2 SCSA Associate Program
+- *URL:* =/programs/scsa-associate=
+- *Type:* Standalone page
+- *Content:* Western Australia curriculum promotion, international school partnerships
+
+*Page count:* 1 page
+
+--------------
+
+*** 4. About (Dropdown)
+**** 4.1 About Us
+- *URL:* =/about=
+- *Type:* Single consolidated page
+- *Sections on page:*
+  - Company History (founded 1998)
+  - Mission & Vision
+  - Core Values
+  - Company Milestones
+  - Professional Credentials & Memberships
+  - Why Choose Blue Education (integrated into About page)
+
+*Page count:* 1 page instead of 2
+
+--------------
+
+**** 4.2 Our Team
+- *URL:* =/about/team=
+- *Type:* Standalone page
+- *Content:* Team member profiles, credentials, leadership
+
+*Page count:* 1 page
+
+--------------
+
+**** 4.3 Our Partners
+- *URL:* =/about/partners=
+- *Type:* Standalone page
+- *Content:* Institutional partnerships, professional memberships, international offices
+
+*Page count:* 1 page
+
+--------------
+
+*** 5. Why Australia
+- *URL:* =/why-australia=
+- *Type:* Standalone page
+- *Content:* Education system, opportunities, quality of life, student city guides
+
+*Page count:* 1 page
+
+--------------
+
+*** 6. Resources (Dropdown)
+**** 6.1 Blog
+- *URL:* =/blog=
+- *Type:* Blog landing page + individual posts
+- *Categories:*
+  - Education News
+  - Migration Updates
+  - Student Stories
+  - Study Tips
+  - Living in Australia
+
+*Page count:* 1 landing page + blog posts
+
+--------------
+
+**** 6.2 FAQ
+- *URL:* =/resources/faq=
+- *Type:* Single page with tabbed/categorized sections
+- *Categories:*
+  - Education FAQs
+  - Migration & Visa FAQs
+  - Career Services FAQs
+  - Student Support FAQs
+  - General FAQs
+
+*Page count:* 1 page
+
+--------------
+
+**** 6.3 Knowledge Base
+- *URL:* =/resources/knowledge-base=
+- *Type:* Resource hub page
+- *Content:*
+  - Visa requirement guides
+  - Document checklists (downloadable)
+  - Pre-departure guides
+  - Arrival & orientation resources
+  - Living in Australia guides
+
+*Page count:* 1 page
+
+--------------
+
+*** 7. Contact
+- *URL:* =/contact=
+- *Type:* Standalone page
+- *Content:* Contact form, office details, map, consultation booking, WhatsApp integration
+
+*Page count:* 1 page
+
+--------------
+
+** Secondary Navigation (Footer)
+*** Footer Column 1: Quick Links
+- Home
+- About Us
+- Our Team
+- Our Partners
+- Why Australia
+
+*** Footer Column 2: Services
+- Education Services
+- Migration & Visas
+- Career Services
+- Student Support
+
+*** Footer Column 3: Programs & Resources
+- Study Tours
+- SCSA Associate
+- Blog
+- FAQ
+- Knowledge Base
+
+*** Footer Column 4: Contact & Legal
+- Contact Us
+- Privacy Policy
+- Terms & Conditions
+- Sitemap
+
+--------------
+
+** Complete Page List (Consolidated)
+*** Main Pages (23 total)
+1. *Homepage* - =/=
+2. *Privacy Policy* - =/privacy-policy=
+3. *Contact* - =/contact=
+
+*Services (8 pages):* 4. Education Hub - =/services/education= 5. School Programs - =/services/education/school-programs= 6. English & Foundation - =/services/education/english-foundation= 7. VET & Higher Ed - =/services/education/vet-higher-education= 8. Student Placement - =/services/education/student-placement= 9. Migration & Visas - =/services/migration= (all visa types consolidated) 10. Career Services - =/services/career= 11. Student Support - =/services/student-support=
+
+*Programs (2 pages):* 12. Study Tours - =/programs/study-tours= 13. SCSA Associate - =/programs/scsa-associate=
+
+*About (3 pages):* 14. About Us - =/about= (includes Why Choose Blue Education) 15. Our Team - =/about/team= 16. Our Partners - =/about/partners=
+
+*Information (4 pages):* 17. Why Australia - =/why-australia= 18. Blog Landing - =/blog= 19. FAQ - =/resources/faq= 20. Knowledge Base - =/resources/knowledge-base=
+
+*Legacy/Existing Pages (3 pages to maintain for SEO/redirects):* 21. Buddy Program - =/buddy-program= → redirects to =/services/education/school-programs#buddy-program= 22. Culinary Study Tour - =/culinary-study-tour= → redirects to =/programs/study-tours#culinary-tour= 23. English Courses - =/english-courses= → redirects to =/services/education/english-foundation#elicos=
+
+--------------
+
+** Visual Sitemap Hierarchy
+#+begin_example
+Blue Education Website
+│
+├── Home (/)
+│
+├── Services (/services)
+│   │
+│   ├── Education (/services/education) [HUB]
+│   │   ├── School Programs (/services/education/school-programs)
+│   │   │   • Primary & Secondary Education
+│   │   │   • Buddy Program (anchor)
+│   │   │   • Guardianship Integration
+│   │   │
+│   │   ├── English & Foundation (/services/education/english-foundation)
+│   │   │   • ELICOS - All 7 program pathways
+│   │   │   • Foundation Studies Programs
+│   │   │
+│   │   ├── VET & Higher Education (/services/education/vet-higher-education)
+│   │   │   • Vocational Education & Training (VET/TAFE)
+│   │   │   • Degrees & Higher Education
+│   │   │   • Teaching Pathways
+│   │   │
+│   │   └── Student Placement (/services/education/student-placement)
+│   │       • International Student Placement Services
+│   │       • Education Pathway Counseling
+│   │
+│   ├── Migration & Visas (/services/migration) [CONSOLIDATED PAGE]
+│   │   • Student Visas (Subclass 500) [TAB/SECTION]
+│   │   • Graduate/Post-Study Work Visa (Subclass 485) [TAB/SECTION]
+│   │   • Skilled Migration [TAB/SECTION]
+│   │   • Employer Sponsored Migration [TAB/SECTION]
+│   │   • Business Migration [TAB/SECTION]
+│   │   • Family & Partner Visas [TAB/SECTION]
+│   │   • Other Visas (Visitor, Resident Return) [TAB/SECTION]
+│   │   • Why Choose Our Migration Services [SECTION]
+│   │
+│   ├── Career Services (/services/career) [CONSOLIDATED PAGE]
+│   │   • Career Counseling
+│   │   • Job Readiness Programs
+│   │   • Employer Connections & Work Placement
+│   │   • Internship Programs
+│   │   • Work Visa Assistance
+│   │
+│   └── Student Support (/services/student-support) [CONSOLIDATED PAGE]
+│       • Support Services Overview
+│       • Accommodation & Homestay
+│       • Guardianship Services
+│       • Health Insurance (OSHC) & Welfare
+│       • 24/7 Emergency Hotline
+│       • Airport Transfers & Orientation
+│
+├── Programs (/programs)
+│   ├── Study Tours (/programs/study-tours)
+│   │   • Culinary Study Tour (featured)
+│   │   • Short-term Immersion Programs
+│   │   • Custom Group Tours
+│   │
+│   └── SCSA Associate (/programs/scsa-associate)
+│       • WA Curriculum Promotion
+│       • International School Partnerships
+│
+├── About (/about)
+│   ├── About Us (/about)
+│   │   • Company History (1998-present)
+│   │   • Mission & Values
+│   │   • Why Choose Blue Education
+│   │   • Professional Credentials
+│   │
+│   ├── Our Team (/about/team)
+│   │   • Leadership Team
+│   │   • Education Specialists
+│   │   • Migration Specialists
+│   │   • Career Specialists
+│   │
+│   └── Our Partners (/about/partners)
+│       • University Partners
+│       • TAFE & RTO Partners
+│       • Professional Memberships
+│       • International Offices
+│
+├── Why Australia (/why-australia)
+│   • Education System Overview
+│   • Post-Study Work Opportunities
+│   • Quality of Life & Safety
+│   • Student City Guides
+│
+├── Resources (/resources)
+│   ├── Blog (/blog)
+│   │   • Blog Posts (categorized)
+│   │   • Author Profiles
+│   │
+│   ├── FAQ (/resources/faq)
+│   │   • Education FAQs
+│   │   • Migration FAQs
+│   │   • Career FAQs
+│   │   • Support FAQs
+│   │
+│   └── Knowledge Base (/resources/knowledge-base)
+│       • Visa Guides
+│       • Document Checklists
+│       • Pre-Departure Guides
+│       • Arrival Resources
+│
+├── Contact (/contact)
+│   • Contact Form
+│   • Office Details & Map
+│   • Consultation Booking
+│   • WhatsApp Integration
+│
+└── Legal
+    ├── Privacy Policy (/privacy-policy)
+    └── Terms & Conditions (/terms) [OPTIONAL]
+#+end_example
+
+--------------
+
+** Navigation Benefits of Consolidation
+*** Before: 40 individual pages
+- Overwhelming navigation
+- Deep menu structures
+- Difficult to find related services
+- Poor user experience
+
+*** After: 23 main pages
+- Cleaner, simpler navigation
+- Related content grouped together
+- Easier content discovery
+- Better user experience
+- Improved SEO (consolidated authority)
+- Reduced maintenance overhead
+
+--------------
+
+** Page Consolidation Strategy
+*** Hub Pages (Overview + Links to Details)
+*Education Services Hub* aggregates all education offerings with clear pathways to detailed pages
+
+*** Single Consolidated Pages (Tabs/Accordions/Sections)
+*Migration & Visas* - All visa types on one page with tabbed interface *Career Services* - All career services on scrollable page *Student Support* - All support services on scrollable page
+
+*** Feature Integration
+*Buddy Program* integrated into School Programs page *Culinary Study Tour* integrated into Study Tours page *Why Choose Blue Education* integrated into About Us page
+
+--------------
+
+** URL Redirect Map (Old to New)
+| Old kookaquest URL      | New Blue Education URL                              | Redirect Type |
+|-------------------------+-----------------------------------------------------+---------------|
+| =/=                     | =/=                                                 | 301 Redirect  |
+| =/buddy-program/=       | =/services/education/school-programs#buddy-program= | 301 Redirect  |
+| =/culinary-study-tour/= | =/programs/study-tours#culinary-tour=               | 301 Redirect  |
+| =/english-courses/=     | =/services/education/english-foundation#elicos=     | 301 Redirect  |
+| =/contact/=             | =/contact=                                          | 301 Redirect  |
+| =/privacy-policy/=      | =/privacy-policy=                                   | 301 Redirect  |
+
+--------------
+
+** Recommended Main Menu Structure
+#+begin_example
+┌─────────────────────────────────────────────────────────────┐
+│  [Logo] Blue Education                                      │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  Home | Services ▼ | Programs ▼ | About ▼ | Why Australia │
+│        Resources ▼ | Contact    | [Book Consultation]      │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+
+Services Dropdown:
+├── Education Services >
+│   ├── School Programs
+│   ├── English & Foundation
+│   ├── VET & Higher Education
+│   └── Student Placement
+├── Migration & Visas
+├── Career Services
+└── Student Support
+
+Programs Dropdown:
+├── Study Tours
+└── SCSA Associate
+
+About Dropdown:
+├── About Us
+├── Our Team
+└── Our Partners
+
+Resources Dropdown:
+├── Blog
+├── FAQ
+└── Knowledge Base
+#+end_example
+
+--------------
+
+** Mobile Navigation Structure
+*Hamburger Menu:*
+
+#+begin_example
+☰ Menu
+├── Home
+├── Services >
+│   ├── Education Services >
+│   │   ├── School Programs
+│   │   ├── English & Foundation
+│   │   ├── VET & Higher Education
+│   │   └── Student Placement
+│   ├── Migration & Visas
+│   ├── Career Services
+│   └── Student Support
+├── Programs >
+│   ├── Study Tours
+│   └── SCSA Associate
+├── About >
+│   ├── About Us
+│   ├── Our Team
+│   └── Our Partners
+├── Why Australia
+├── Resources >
+│   ├── Blog
+│   ├── FAQ
+│   └── Knowledge Base
+└── Contact
+
+[Book Consultation Button]
+#+end_example
+
+--------------
+
+** Content Organization Recommendations
+*** For Long Consolidated Pages:
+1. *Use Sticky Navigation*
+   - Jump links to sections
+   - Progress indicator
+   - Back to top button
+2. *Visual Hierarchy*
+   - Clear section dividers
+   - Consistent spacing
+   - Icon-based service cards
+3. *Interactive Elements*
+   - Accordions for detailed content
+   - Tabs for different visa types
+   - Modal popups for forms
+4. *Performance*
+   - Lazy load images
+   - Progressive content loading
+   - Optimize for mobile scrolling
+
+--------------
+
+** SEO Considerations
+*** Consolidated Pages Benefit:
+- *Increased page authority* (all related content on one URL)
+- *Better keyword targeting* (comprehensive coverage)
+- *Improved user engagement* (longer time on page)
+- *Reduced bounce rate* (related content easily accessible)
+
+*** Maintain SEO for Legacy URLs:
+- *301 redirects* preserve link equity
+- *Anchor links* (#buddy-program) maintain specific targeting
+- *Breadcrumbs* show navigation hierarchy
+- *Schema markup* for all services on consolidated pages
+
+--------------
+
+/This sitemap reduces 40 individual pages to 23 main pages while maintaining all content through strategic consolidation and improved information architecture./

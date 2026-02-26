@@ -1,0 +1,319 @@
+#+title: FAQ
+#+url: /resources/faq
+#+status: planned
+#+note: Questions to be compiled from client consultations and common enquiries
+
+* V1
+
+** Hero
+:PROPERTIES:
+:SECTION: Hero — minimal
+:LAYOUT: Centered heading, clean background
+:END:
+
+*** Headline
+
+Questions? We've got answers.
+
+*** Subheadline
+
+The most common questions from international students, parents, and professionals considering Australia.
+
+-----
+
+** FAQ Sections
+:PROPERTIES:
+:SECTION: Tabbed accordion — category tabs at top, accordion items below
+:LAYOUT: Tabs for categories, expandable Q&A items within each tab
+:NOTE: Content TBC — populate from common client enquiries
+:END:
+
+*** Education
+
+**** How do I choose the right course?
+
+Our education counselors assess your background, career goals, and budget to recommend courses and institutions that fit. Book a free consultation and we'll walk you through your options.
+
+**** What English level do I need?
+
+It depends on your program. Bachelor degrees typically require IELTS 6.5; postgraduate programs require 6.5–7.0. Australia accepts four English tests: IELTS, TOEFL, Cambridge CAE, and Pearson PTE. Scores are valid for 2 years. We can assess your current level and recommend a pathway if you're not there yet.
+
+**** Can I change courses after I start?
+
+In most cases, yes — but it may affect your visa. Talk to us before making any changes so we can advise on the implications.
+
+*** Migration & Visas
+
+**** How long does a student visa take?
+
+Processing times vary, but typically 4–8 weeks. We recommend applying as early as possible. Our team ensures your application is complete to avoid unnecessary delays.
+
+**** Can I work while studying?
+
+Yes. Student visa holders can work up to 48 hours per fortnight during term and unlimited hours during breaks.
+
+**** What happens after I graduate?
+
+You may be eligible for a Graduate/Post-Study Work Visa (Subclass 485). There are two streams: the Graduate Work Stream (18 months) for graduates with skills on the skilled occupation list, and the Post-Study Work Stream (2–4 years depending on qualification level). We help with the transition.
+
+*** Career
+
+**** Do you guarantee job placement?
+
+No — and we'd be skeptical of anyone who does. What we provide is career counseling, job readiness training, employer introductions, and internship placements that significantly improve your employment prospects.
+
+**** When should I start career planning?
+
+As early as possible — ideally before you even choose your course. Career outcomes should inform your education decisions, not the other way around.
+
+*** Fees & Costs
+
+**** How much does Blue Education charge?
+
+Our fees vary based on services required. Initial consultations are free. We provide transparent fee breakdowns before any commitment.
+
+**** What other costs should I budget for?
+
+Tuition, accommodation, OSHC (health insurance), living expenses, visa application fees, and medical examinations ($240–$380). See our [[/fees][Fees & Investment]] page for detailed guidance.
+
+*** Student Support
+
+**** What if there's an emergency?
+
+We operate a 24/7 emergency hotline for all clients. Call anytime — we coordinate with local services and provide multilingual assistance.
+
+**** Do you provide accommodation?
+
+Yes — through the Australian Homestay Network. Vetted families, meals included, safe environments.
+
+-----
+
+** Still Have Questions?
+:PROPERTIES:
+:SECTION: CTA — inline
+:CTA-PRIMARY: Contact Us
+:CTA-SECONDARY: Call +61 8 6381 0030
+:END:
+
+*** Body
+
+Can't find what you're looking for? Contact our team directly — we respond within 24 hours.
+
+* V2
+/The Human Story — conversational, warm, addressing the real anxieties behind each question./
+
+** Hero
+:PROPERTIES:
+:SECTION: Hero — minimal
+:LAYOUT: Centered heading, clean background
+:END:
+
+*** Headline
+
+We hear you. Here are the answers.
+
+*** Subheadline
+
+Moving to a new country is full of unknowns. We've spent 25+ years answering these exact questions — honestly, patiently, in five languages.
+
+-----
+
+** FAQ Sections
+:PROPERTIES:
+:SECTION: Tabbed accordion — category tabs at top, accordion items below
+:LAYOUT: Tabs for categories, expandable Q&A items within each tab
+:END:
+
+*** Education
+
+**** How do I choose the right course when there are thousands of options?
+
+It's overwhelming — we know. Australia has over 1,100 institutions and 20,000+ programs. That's too many to research on your own. Our education counselors sit down with you, understand your background, your career goals, and your budget, and narrow it down to the options that actually make sense for your life. Book a free consultation and let us do the heavy lifting.
+
+**** What English level do I need?
+
+Bachelor degrees typically require IELTS 6.5. Postgraduate programs range from 6.5 to 7.0. Australia accepts four English proficiency tests — IELTS, TOEFL, Cambridge CAE, and Pearson PTE — and scores are valid for 2 years. But here's what matters: if you're not there yet, that's okay. There are pathway programs — ELICOS courses from 10 to 30 weeks — designed to get you to the level you need. We assess where you are and map the route forward.
+
+**** Can I change courses after I start?
+
+Usually, yes — but it can affect your visa conditions. Don't make any changes without talking to us first. We've seen students get into trouble by switching without understanding the implications. A quick conversation can save a lot of stress.
+
+*** Migration & Visas
+
+**** How long does a student visa take?
+
+Typically 4–8 weeks, but it depends on your circumstances and how complete your application is. Our team reviews every application before submission to make sure nothing is missing — because incomplete applications are the number one cause of delays.
+
+**** Can I work while studying?
+
+Yes — and this is one of Australia's biggest advantages. Student visa holders can work up to 48 hours per fortnight during term and unlimited hours during breaks. Many of our students use this to gain Australian work experience, cover living costs, and build professional networks while they study.
+
+**** What happens after I graduate?
+
+This is the question that changes everything. If you complete an eligible qualification, you can apply for a Graduate/Post-Study Work Visa (Subclass 485). There are two streams. The Graduate Work Stream gives you 18 months if your skills are on the relevant skilled occupation list. The Post-Study Work Stream gives you longer: Bachelor graduates get 2 years, Master graduates get 3, and Doctoral graduates get 4. That's real time to build a career, earn Australian income, and explore pathways to permanent residency. We help with every step of the transition.
+
+*** Career
+
+**** Do you guarantee job placement?
+
+No — and honestly, we'd encourage you to walk away from anyone who makes that promise. What we do provide is career counseling, job readiness training, employer introductions, and internship placements. These don't guarantee a specific outcome, but they dramatically improve your chances. We've been doing this for over 25 years and we know what works.
+
+**** When should I start career planning?
+
+Before you choose your course. Seriously. We've seen too many students pick a program first and think about careers later, only to discover their qualification doesn't lead where they thought. At Blue Education, we believe career outcomes should drive your education decisions — not the other way around.
+
+*** Fees & Costs
+
+**** How much does Blue Education charge?
+
+Our fees vary based on the services you need and the complexity of your situation. What doesn't vary is this: your initial consultation is free, and we give you a complete, transparent breakdown before you commit to anything. No hidden costs. No surprises. That's been our approach since 1998.
+
+**** What other costs should I budget for?
+
+Beyond our service fees, you'll need to budget for tuition (paid directly to your institution), accommodation, OSHC (Overseas Student Health Cover — mandatory for all student visas), living expenses, and visa application fees. Medical examinations range from $240 to $380. We walk you through every cost during your consultation so there are no surprises. See our [[/fees][Fees & Investment]] page for a full breakdown.
+
+*** Student Support
+
+**** What if there's an emergency?
+
+You call us. We operate a 24/7 emergency hotline for every client. Day or night, weekday or holiday — our multilingual team coordinates with local services and makes sure you're safe. You're never on your own.
+
+**** Do you provide accommodation?
+
+Yes — through the Australian Homestay Network. Vetted families, meals included, safe environments. For students under 18, we also arrange guardianship through Professional Student Care Australia or International Student Alliance. Your safety and wellbeing are non-negotiable for us.
+
+-----
+
+** Still Have Questions?
+:PROPERTIES:
+:SECTION: CTA — inline
+:CTA-PRIMARY: Contact Us
+:CTA-SECONDARY: Call +61 8 6381 0030
+:END:
+
+*** Body
+
+There's no such thing as a silly question when you're planning a move like this. Contact us directly — we respond within 24 hours, in your preferred language.
+
+* V3
+/Clear & Direct — shortest possible answers that are still complete./
+
+** Hero
+:PROPERTIES:
+:SECTION: Hero — minimal
+:LAYOUT: Centered heading, clean background
+:END:
+
+*** Headline
+
+FAQ
+
+*** Subheadline
+
+Quick answers for international students, parents, and professionals.
+
+-----
+
+** FAQ Sections
+:PROPERTIES:
+:SECTION: Tabbed accordion — category tabs at top, accordion items below
+:LAYOUT: Tabs for categories, expandable Q&A items within each tab
+:END:
+
+*** Education
+
+**** How do I choose the right course?
+
+Free consultation. We assess your background, goals, and budget and recommend matching programs from 1,100+ institutions.
+
+**** What English level do I need?
+
+| Program Level            | IELTS Minimum |
+|--------------------------+---------------|
+| Foundation               | 5.0 – 5.5    |
+| VET/TAFE                 | 5.5 – 6.0    |
+| Bachelor                 | 6.5           |
+| Graduate Cert/Diploma    | 6.5 – 7.0    |
+| Master/Doctoral          | 6.5 – 7.0    |
+
+Postgraduate programs: no individual band below 6.0–6.5. Also accepted: TOEFL, Cambridge CAE, Pearson PTE. Scores valid for 2 years.
+
+**** Can I change courses after I start?
+
+Usually yes, but it may affect your visa. Talk to us first.
+
+*** Migration & Visas
+
+**** How long does a student visa take?
+
+4–8 weeks typical. Apply early. We review applications for completeness before submission.
+
+**** Can I work while studying?
+
+Yes. Up to 48 hours per fortnight during term. Unlimited during breaks.
+
+**** What happens after I graduate?
+
+Graduate/Post-Study Work Visa (Subclass 485) has two streams:
+
+*Graduate Work Stream:* 18 months — for graduates with skills on the skilled occupation list.
+
+*Post-Study Work Stream:*
+
+| Qualification | Duration |
+|---------------+----------|
+| Bachelor      | 2 years  |
+| Master        | 3 years  |
+| Doctoral      | 4 years  |
+
+Both streams provide full work rights and a pathway to permanent residency.
+
+*** Career
+
+**** Do you guarantee job placement?
+
+No. We provide career counseling, job readiness training, employer introductions, and internship placements.
+
+**** When should I start career planning?
+
+Before choosing your course. Career goals should drive education decisions.
+
+*** Fees & Costs
+
+**** How much does Blue Education charge?
+
+Varies by service and complexity. Initial consultation is free. Full fee breakdown provided before any commitment.
+
+**** What other costs should I budget for?
+
+- Tuition (paid to institution)
+- Accommodation
+- OSHC (mandatory health insurance)
+- Living expenses
+- Visa application fees
+- Medical examination ($240–$380)
+
+Details: [[/fees][Fees & Investment]]
+
+*** Student Support
+
+**** What if there's an emergency?
+
+24/7 emergency hotline. Multilingual support. All clients covered.
+
+**** Do you provide accommodation?
+
+Yes. Australian Homestay Network — vetted families, meals included. Guardianship arranged for under-18 students.
+
+-----
+
+** Still Have Questions?
+:PROPERTIES:
+:SECTION: CTA — inline
+:CTA-PRIMARY: Contact Us
+:CTA-SECONDARY: Call +61 8 6381 0030
+:END:
+
+*** Body
+
+Contact us. Response within 24 hours.

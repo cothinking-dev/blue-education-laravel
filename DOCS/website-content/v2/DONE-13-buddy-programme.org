@@ -1,0 +1,138 @@
+#+title: Buddy Programme
+#+url: /programs/buddy-programme
+#+status: draft
+
+** Hero
+:PROPERTIES:
+:SECTION: Hero — full-width, lifestyle image
+:LAYOUT: Left-aligned text
+:IMAGE: International student with Australian buddy in school setting
+:END:
+
+*** Headline
+
+Two weeks. Real school. Real families. Real Western Australia.
+
+*** Subheadline
+
+High school students join Australian classrooms, live with vetted homestay families, and explore Western Australia through structured field trips — all within a supervised 14-day programme run in partnership with Anglican Schools.
+
+-----
+
+** What Is the Buddy Programme?
+:PROPERTIES:
+:SECTION: Two-column — text left, summary table right
+:LAYOUT: 55/45 split
+:IMAGE: Group of students on field trip, laughing
+:END:
+
+*** Body
+
+Two weeks inside Australian school life. Morning sessions focus on English and Australian culture. Afternoons are spent in regular high school classes, alongside local students. Homestay accommodation — with meals provided and homestay families approved through police background checks — ensures the experience is safe, supported, and authentic.
+
+*** Programme Summary
+
+| Detail         | Info                          |
+|----------------+-------------------------------|
+| Duration       | 14 days                       |
+| Age group      | High school students          |
+| Accommodation  | Homestay (meals included)     |
+| School partner | Anglican Schools              |
+| Certificate    | Certificate of completion     |
+| Voluntary work | Yes, through local councils   |
+
+-----
+
+** Your 14 Days
+:PROPERTIES:
+:SECTION: Two-column split — Morning / Afternoon
+:LAYOUT: Side-by-side cards, icon-topped
+:END:
+
+*** Mornings: English Language & Culture
+:PROPERTIES:
+:ICON: sun
+:END:
+
+Structured lessons built around Australian context — history, culture, geography, and wildlife. Grammar, vocabulary, and sentence structure taught practically, not in isolation.
+- Australian history, geography, and wildlife as lesson themes
+- Vocabulary, grammar, and sentence structure
+- Communication skills developed through interactive class discussion
+
+*** Afternoons: High School Integration
+:PROPERTIES:
+:ICON: users
+:END:
+
+Students join regular Australian high school classes — Science, Maths, and other subjects, all in English. The point is participation, not observation: same lessons, same teachers, same expectations as local students.
+- Standard academic classes alongside Australian peers
+- All subjects taught in English (including Science, Maths)
+- Social and cross-cultural skills developed in a real school environment
+
+-----
+
+** Beyond the Classroom
+:PROPERTIES:
+:SECTION: BentoBox — 3 cards with images
+:LAYOUT: 3-column grid, image-topped cards
+:END:
+
+*** Homestay Experience
+:PROPERTIES:
+:IMAGE: Family dinner table, warm lighting
+:END:
+
+Police-cleared homestay families provide meals, emotional support, and a genuine share of Australian family life — including weekend activities. Students are looked after, not just housed.
+
+*** Local Field Trips
+:PROPERTIES:
+:IMAGE: Students at outdoor landmark, coastal WA
+:END:
+
+The classroom comes to life outside it. Programme destinations include Caversham Wildlife Park, Rottnest Island, The Pinnacles, King's Park, the Fremantle Market, and a Penguin and Sea Lion Cruise — each chosen to connect to the cultural and environmental themes taught in class.
+
+*** Voluntary Work
+:PROPERTIES:
+:IMAGE: Students helping at community event
+:END:
+
+Students who want to go further can arrange voluntary work with local councils. The voluntary work certificate has practical value — it strengthens CV and scholarship applications for students intending to continue their studies.
+
+-----
+
+** Why It Matters
+:PROPERTIES:
+:SECTION: Feature list — icon + heading + one-liner
+:LAYOUT: Vertical list, alternating background rows
+:END:
+
+- *Test before you commit* — experience Australian education without a multi-year enrolment
+- *Build real English skills* — practical, immersive language development in 14 days of genuine classroom use
+- *Strengthen applications* — voluntary work certificate and programme certificate support future university and scholarship submissions
+- *Adapt, not just observe* — participating as a student, not a visitor, builds the kind of independence that carries forward
+- *Make connections that last* — with Australian classmates and homestay families in a supervised environment
+- *Anglican Schools partnership* — established pastoral care, vetted homestay families, and a programme that has run with the same school network since its founding
+
+-----
+
+
+** Also Relevant
+
+/Also relevant: [[/services/student-support][Student support services →]] · [[/programs/study-tours][Study tours →]] · [[/services/education/english-foundation][English programmes →]]/
+
+-----
+
+** CTA
+:PROPERTIES:
+:SECTION: Full-width CTA banner
+:LAYOUT: Centered, vibrant background
+:CTA-PRIMARY: Enquire About the Buddy Programme
+:END:
+
+*** Headline
+
+Limited places each intake.
+
+*** Body
+
+Contact us to confirm availability for the upcoming intake and receive programme dates, costs, and enrolment details.

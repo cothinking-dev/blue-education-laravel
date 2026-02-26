@@ -1,0 +1,443 @@
+#+title: Education Services
+#+url: /services/education
+#+status: draft
+
+* V1
+
+** Hero
+:PROPERTIES:
+:SECTION: Hero — full-width with overlay
+:LAYOUT: Centered text
+:IMAGE: University campus, diverse students walking
+:END:
+
+*** Headline
+
+Find the right course. At the right institution. On the right pathway.
+
+*** Subheadline
+
+Australia has 1,100+ institutions and 20,000+ programs. We help you cut through the noise and find the one that actually fits your goals.
+
+-----
+
+** How We Help
+:PROPERTIES:
+:SECTION: Two-column — text left, image right
+:LAYOUT: 55/45 split
+:IMAGE: Counselor with student in meeting
+:END:
+
+Choosing where and what to study in Australia isn't just an education decision — it's a career decision, a migration decision, and a life decision.
+
+Our education counselors start by understanding your goals. Where do you want to end up? Then we work backwards — identifying the right institution, the right qualification level, and the right pathway to get you there.
+
+We handle the application, the enrollment, and the visa. You focus on getting ready.
+
+-----
+
+** Education Pathways
+:PROPERTIES:
+:SECTION: BentoBox — 4 cards, each linking to detailed page
+:LAYOUT: 2x2 grid. Each card: icon, heading, 2-line description, arrow link
+:END:
+
+*** School Programs
+:PROPERTIES:
+:ICON: graduation-cap
+:LINK: /services/education/school-programs
+:END:
+
+Primary and secondary placements for international students aged 5–18. Includes accommodation, guardianship, and welfare arrangements.
+
+[[/services/education/school-programs][Learn more →]]
+
+*** English & Foundation
+:PROPERTIES:
+:ICON: book-open
+:LINK: /services/education/english-foundation
+:END:
+
+ELICOS language courses and foundation studies to build your English proficiency and prepare for university-level study.
+
+[[/services/education/english-foundation][Learn more →]]
+
+*** VET & TAFE
+:PROPERTIES:
+:ICON: wrench
+:LINK: /services/education/vet-tafe
+:END:
+
+Practical, career-focused training from Certificate to Advanced Diploma. Many qualifications align with skilled migration pathways.
+
+[[/services/education/vet-tafe][Learn more →]]
+
+*** University Degrees
+:PROPERTIES:
+:ICON: award
+:LINK: /services/education/degrees
+:END:
+
+Bachelor, Master, and Doctoral programs at world-ranked Australian universities. Includes 2–4 year post-study work visas.
+
+[[/services/education/degrees][Learn more →]]
+
+-----
+
+** The Placement Process
+:PROPERTIES:
+:SECTION: Timeline — vertical, 5 steps
+:LAYOUT: Numbered steps, icon + heading + short text
+:END:
+
+*** 1. Discovery Session
+
+We learn about your background, goals, budget, and timeline. No obligation — just an honest conversation.
+
+*** 2. Pathway Recommendation
+
+We identify institutions and programs that match your goals — including career outcomes and migration potential.
+
+*** 3. Application & Enrollment
+
+We prepare and lodge your application, negotiate offers, and secure your Confirmation of Enrollment (CoE).
+
+*** 4. Visa & Pre-Departure
+
+We handle your student visa application and prepare you for arrival — accommodation, insurance, orientation.
+
+*** 5. Ongoing Support
+
+Once you're studying, we're still here. Academic guidance, welfare support, and career planning throughout.
+
+-----
+
+** Admission Snapshot
+:PROPERTIES:
+:SECTION: Table — clean, minimal
+:LAYOUT: Simple reference table
+:END:
+
+| Program Level   | English Minimum (IELTS) | Duration     |
+|-----------------+-------------------------+--------------|
+| Foundation      | 5.0 – 5.5              | 6–12 months  |
+| VET/TAFE        | 5.5 – 6.0              | 6 months–2yr |
+| Bachelor Degree | 6.5                    | 3–4 years    |
+| Master Degree   | 6.5 – 7.0              | 1–2 years    |
+| Doctoral        | 6.5 – 7.0              | 3–4 years    |
+
+[[/resources/admission-requirements][See full admission requirements →]]
+
+-----
+
+** CTA
+:PROPERTIES:
+:SECTION: Full-width CTA banner
+:LAYOUT: Centered, contrasting background
+:CTA-PRIMARY: Get a Free Education Assessment
+:CTA-SECONDARY: Call +61 8 6381 0030
+:END:
+
+*** Headline
+
+Not sure where to start?
+
+*** Body
+
+Book a free education assessment. We'll review your qualifications, discuss your goals, and recommend the best pathway — in plain language, with no pressure.
+
+* V2
+
+** Hero
+:PROPERTIES:
+:SECTION: Hero — full-width with overlay
+:LAYOUT: Centered text
+:IMAGE: University campus, diverse students walking
+:END:
+
+*** Headline
+
+Your future in Australia starts with one good decision.
+
+*** Subheadline
+
+With 1,100+ institutions and 20,000+ programs, the choice can feel paralysing. We sit down with you, understand where you want your life to go, and find the education pathway that gets you there.
+
+-----
+
+** How We Help
+:PROPERTIES:
+:SECTION: Two-column — text left, image right
+:LAYOUT: 55/45 split
+:IMAGE: Counselor with student in meeting
+:END:
+
+Maybe you're a parent searching for the best school for your child in a country you've never lived in. Maybe you're a working adult wondering if it's too late to start a new career on the other side of the world. Maybe you've just graduated and you're staring at a hundred options, unsure which one leads somewhere real.
+
+We've guided students from over 40 countries through exactly this moment. Since 1998, our counselors have helped people turn uncertainty into a clear, funded, visa-ready plan.
+
+We don't just help you pick a course. We help you understand what that course means for your career, your visa, and your life in Australia — then we handle the paperwork so you can focus on what matters.
+
+-----
+
+** Education Pathways
+:PROPERTIES:
+:SECTION: BentoBox — 4 cards, each linking to detailed page
+:LAYOUT: 2x2 grid. Each card: icon, heading, 2-line description, arrow link
+:END:
+
+*** School Programs
+:PROPERTIES:
+:ICON: graduation-cap
+:LINK: /services/education/school-programs
+:END:
+
+Your child, safe and thriving in an Australian classroom. We handle everything — school selection, accommodation, guardianship, and ongoing welfare — so you can feel confident from afar.
+
+[[/services/education/school-programs][Learn more →]]
+
+*** English & Foundation
+:PROPERTIES:
+:ICON: book-open
+:LINK: /services/education/english-foundation
+:END:
+
+English isn't a barrier — it's just a step. ELICOS courses and foundation studies give you the language skills and academic preparation to walk into university ready.
+
+[[/services/education/english-foundation][Learn more →]]
+
+*** VET & TAFE
+:PROPERTIES:
+:ICON: wrench
+:LINK: /services/education/vet-tafe
+:END:
+
+Learn by doing. Vocational training gives you job-ready skills from day one — and many qualifications open doors to skilled migration.
+
+[[/services/education/vet-tafe][Learn more →]]
+
+*** University Degrees
+:PROPERTIES:
+:ICON: award
+:LINK: /services/education/degrees
+:END:
+
+A degree from an Australian university is recognised around the world. And with post-study work visas of 2–4 years, it's not just an education — it's a launchpad.
+
+[[/services/education/degrees][Learn more →]]
+
+-----
+
+** The Placement Process
+:PROPERTIES:
+:SECTION: Timeline — vertical, 5 steps
+:LAYOUT: Numbered steps, icon + heading + short text
+:END:
+
+*** 1. We Listen First
+
+Tell us about your life, your goals, your concerns. This isn't a sales pitch — it's a real conversation between you and someone who's helped thousands of people in your shoes.
+
+*** 2. We Map Your Options
+
+Based on your background and aspirations, we recommend institutions and programs — always with an eye on career outcomes and migration potential.
+
+*** 3. We Handle the Applications
+
+From preparing documents to lodging applications and securing your Confirmation of Enrollment (CoE), we take the admin off your plate.
+
+*** 4. We Get You There
+
+Student visa, accommodation, insurance, orientation. We prepare you for your new life so you arrive with confidence, not anxiety.
+
+*** 5. We Stay With You
+
+Our support doesn't stop at enrollment. Academic guidance, welfare checks, career planning — we're here throughout your journey.
+
+-----
+
+** Admission Snapshot
+:PROPERTIES:
+:SECTION: Table — clean, minimal
+:LAYOUT: Simple reference table
+:END:
+
+| Program Level   | English Minimum (IELTS) | Duration     |
+|-----------------+-------------------------+--------------|
+| Foundation      | 5.0 – 5.5              | 6–12 months  |
+| VET/TAFE        | 5.5 – 6.0              | 6 months–2yr |
+| Bachelor Degree | 6.5                    | 3–4 years    |
+| Master Degree   | 6.5 – 7.0              | 1–2 years    |
+| Doctoral        | 6.5 – 7.0              | 3–4 years    |
+
+Don't worry if your scores aren't there yet — pathway programs exist for exactly this situation, and we'll help you find the right one.
+
+[[/resources/admission-requirements][See full admission requirements →]]
+
+-----
+
+** CTA
+:PROPERTIES:
+:SECTION: Full-width CTA banner
+:LAYOUT: Centered, contrasting background
+:CTA-PRIMARY: Get a Free Education Assessment
+:CTA-SECONDARY: Call +61 8 6381 0030
+:END:
+
+*** Headline
+
+You don't have to figure this out alone.
+
+*** Body
+
+Book a free education assessment. We'll review your qualifications, talk through your goals, and give you an honest recommendation — no pressure, no jargon, just clarity.
+
+* V3
+
+** Hero
+:PROPERTIES:
+:SECTION: Hero — full-width with overlay
+:LAYOUT: Centered text
+:IMAGE: University campus, diverse students walking
+:END:
+
+*** Headline
+
+Study in Australia. We'll handle the rest.
+
+*** Subheadline
+
+1,100+ institutions. 20,000+ programs. One advisor who knows the system inside out.
+
+-----
+
+** How We Help
+:PROPERTIES:
+:SECTION: Two-column — text left, image right
+:LAYOUT: 55/45 split
+:IMAGE: Counselor with student in meeting
+:END:
+
+*What we do:* Match you with the right Australian education program based on your goals, qualifications, and budget.
+
+*How it works:*
+- You tell us where you want to end up (career, country, qualification)
+- We identify the best institution, program, and pathway
+- We handle applications, enrollment, and student visa
+- You arrive in Australia ready to study
+
+*Who it's for:* International students at any level — school-age children, English learners, career changers, and degree seekers.
+
+-----
+
+** Education Pathways
+:PROPERTIES:
+:SECTION: BentoBox — 4 cards, each linking to detailed page
+:LAYOUT: 2x2 grid. Each card: icon, heading, 2-line description, arrow link
+:END:
+
+*** School Programs
+:PROPERTIES:
+:ICON: graduation-cap
+:LINK: /services/education/school-programs
+:END:
+
+Ages 5–18. Primary and secondary school placements. Accommodation, guardianship, and welfare included.
+
+[[/services/education/school-programs][Learn more →]]
+
+*** English & Foundation
+:PROPERTIES:
+:ICON: book-open
+:LINK: /services/education/english-foundation
+:END:
+
+ELICOS language courses (10–30 weeks) and foundation studies. Pathway to university entry.
+
+[[/services/education/english-foundation][Learn more →]]
+
+*** VET & TAFE
+:PROPERTIES:
+:ICON: wrench
+:LINK: /services/education/vet-tafe
+:END:
+
+Certificates, Diplomas, Advanced Diplomas. Hands-on training. Many align with skilled migration lists.
+
+[[/services/education/vet-tafe][Learn more →]]
+
+*** University Degrees
+:PROPERTIES:
+:ICON: award
+:LINK: /services/education/degrees
+:END:
+
+Bachelor, Master, Doctoral. Seven Australian universities in the global top 100. Post-study work visa: 2–4 years.
+
+[[/services/education/degrees][Learn more →]]
+
+-----
+
+** The Placement Process
+:PROPERTIES:
+:SECTION: Timeline — vertical, 5 steps
+:LAYOUT: Numbered steps, icon + heading + short text
+:END:
+
+*** 1. Discovery Session
+
+Free consultation. We assess your background, goals, and eligibility.
+
+*** 2. Pathway Recommendation
+
+You receive a shortlist of institutions and programs matched to your career and migration goals.
+
+*** 3. Application & Enrollment
+
+We prepare documents, lodge applications, and secure your Confirmation of Enrollment (CoE).
+
+*** 4. Visa & Pre-Departure
+
+Student visa application, accommodation, insurance, and arrival orientation — all handled.
+
+*** 5. Ongoing Support
+
+Academic guidance, welfare monitoring, and career planning for as long as you're studying.
+
+-----
+
+** Admission Snapshot
+:PROPERTIES:
+:SECTION: Table — clean, minimal
+:LAYOUT: Simple reference table
+:END:
+
+| Program Level   | IELTS     | Duration     | Post-Study Work Visa |
+|-----------------+-----------+--------------+----------------------|
+| Foundation      | 5.0 – 5.5 | 6–12 months  | —                    |
+| VET/TAFE        | 5.5 – 6.0 | 6 months–2yr | —                    |
+| Bachelor Degree | 6.5       | 3–4 years    | 2 years              |
+| Master Degree   | 6.5 – 7.0 | 1–2 years    | 3 years              |
+| Doctoral        | 6.5 – 7.0 | 3–4 years    | 4 years              |
+
+Below direct entry? Pathway options available: ELICOS, Foundation Studies, VET Diploma.
+
+[[/resources/admission-requirements][See full admission requirements →]]
+
+-----
+
+** CTA
+:PROPERTIES:
+:SECTION: Full-width CTA banner
+:LAYOUT: Centered, contrasting background
+:CTA-PRIMARY: Get a Free Education Assessment
+:CTA-SECONDARY: Call +61 8 6381 0030
+:END:
+
+*** Headline
+
+Get a free education assessment.
+
+*** Body
+
+We review your qualifications, recommend a pathway, and explain your options — in one call. No obligation.

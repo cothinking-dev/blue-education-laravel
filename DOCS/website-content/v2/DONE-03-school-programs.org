@@ -1,0 +1,134 @@
+#+title: School Programs
+#+url: /services/education/school-programs
+#+status: draft
+
+** Hero
+:PROPERTIES:
+:SECTION: Hero — full-width
+:LAYOUT: Left-aligned text
+:IMAGE: Primary/secondary students in Australian school uniforms
+:END:
+
+*** Headline
+
+A quality Australian education for your child, with a safety net built around them.
+
+*** Subheadline
+
+We handle placement, visa, accommodation, and guardianship — so you're not left worrying from the other side of the world.
+
+-----
+
+** The Australian School System
+:PROPERTIES:
+:SECTION: Two-column — infographic left, text right
+:LAYOUT: 45/55 split. Left: visual diagram of 13-year school system
+:END:
+
+Australia's school system spans 13 years:
+
+| Stage       | Years           | Ages   | What students focus on                                        |
+|-------------+-----------------+--------+---------------------------------------------------------------|
+| Preparatory | Foundation      | ~5     | Early learning, social development                            |
+| Primary     | 1–6 (or 1–7)   | 6–12   | Core subjects across all learning areas                       |
+| Lower Sec.  | 7–10 (or 8–10) | 12–16  | Broader learning areas with growing elective choices          |
+| Upper Sec.  | 11–12           | 16–18  | Subjects chosen to prepare for further education or career    |
+
+- Compulsory until age 16 in most states and territories
+- Public and private schools available — we match your child to the right fit
+- Blue Education is an SCSA Associate — officially named by SCSA on their international schools website as an appointed agency to promote the WA curriculum internationally. [[/programs/scsa-associate][Learn about SCSA →]]
+
+-----
+
+** What We Handle
+:PROPERTIES:
+:SECTION: Two-group layout — timeline + card grid
+:LAYOUT-BEFORE-ARRIVAL: Horizontal numbered step sequence (3 steps). Desktop: left-to-right
+         connected steps with a line or arrow between them. Mobile: vertical stack with step
+         numbers. Each step: large number, icon, bold heading, 2–3 lines of text, optional
+         link. Background: subtle light tint to distinguish from surrounding sections.
+:LAYOUT-ONCE-THEYRE-THERE: 2×2 card grid. Desktop: 4 equal cards in a grid. Mobile: 2 cards
+         per row or single column stack. Each card: icon top, bold heading, 2–3 lines of text,
+         optional link at bottom. Cards have a soft shadow or border for separation.
+:NOTE: The two groups use intentionally different layouts — timeline reinforces that "Before
+       Arrival" is a sequential process; grid reinforces that "Once They're There" services
+       run in parallel. Section heading "What We Handle" sits above both groups.
+:END:
+
+*** Before Arrival
+
+**** School Selection & Placement
+
+We match your child to the right school based on location, curriculum, fees, learning profile, and long-term goals. Public and private options across Australia — we explain the differences and recommend what fits.
+
+**** Student Visa (Subclass 500)
+
+Full visa application management for minors — documentation, health checks, character requirements, lodgement. We handle the process end to end.
+
+[[/services/migration/student-visas][Learn about student visas →]]
+
+**** Accommodation
+
+Homestay placement through the Australian Homestay Network. Vetted families, meals included, safe living environment — all arranged before your child arrives.
+
+[[/services/student-support][Full accommodation details →]]
+
+*** Once They're There
+
+**** Guardianship
+
+Legal guardianship arranged through Professional Student Care Australia or International Student Alliance. Required by the Department of Home Affairs for unaccompanied students under 18. Your child has a named responsible adult in Australia at all times.
+
+[[/services/student-support][Full guardianship details →]]
+
+**** Welfare Monitoring
+
+Regular welfare checks, school liaison, and parental reporting — so you always know how your child is settling in, not just at enrolment time.
+
+[[/services/student-support][Full welfare support details →]]
+
+**** Cultural Adaptation
+
+The first weeks in a new country can be disorienting for young students. We provide ongoing integration support: helping your child navigate Australian classroom culture, social norms, and daily routines. For a more structured introduction, our Buddy Programme places students alongside Australian peers for 14 days before full enrolment begins.
+
+[[/programs/buddy-programme][Learn about the Buddy Programme →]]
+
+**** School Transfer & Change of Programme
+
+Already enrolled but need to change schools or programmes? We manage the full transfer — notifying the institution, updating enrolment records, and advising on any visa implications. Changes to enrolment must be reported to the Department of Home Affairs; we handle that process on your behalf.
+
+-----
+
+** For Parents
+:PROPERTIES:
+:SECTION: Two-column — text left, image right
+:LAYOUT: 60/40 split
+:IMAGE: Parent video-calling with child, or family at airport
+:END:
+
+Sending your child overseas is a significant decision. Here's what we put in place before they board the plane:
+
+- *24/7 emergency hotline* — for parents and students, any time
+- *Regular welfare reports* — school updates and wellbeing checks
+- *Direct communication* with guardianship providers
+- *On-ground support* in Perth and across major Australian cities
+
+Your child is never on their own. Neither are you.
+
+-----
+
+** CTA
+:PROPERTIES:
+:SECTION: Full-width CTA banner
+:CTA-PRIMARY: Enquire About School Placements
+:CTA-SECONDARY: Explore the Buddy Programme
+:CTA-SECONDARY-LINK: /programs/buddy-programme
+:END:
+
+*** Headline
+
+Start with a conversation.
+
+*** Body
+
+Tell us your child's age, year level, and preferences — we'll recommend schools and walk you through exactly what the process involves.

@@ -1,0 +1,242 @@
+#+title: Home
+#+url: /
+#+status: draft
+
+** Hero
+:PROPERTIES:
+:SECTION: Full-width hero with background video/image
+:LAYOUT: Centered text over dark overlay
+:CTA-PRIMARY: Book a Consultation
+:CTA-SECONDARY: Explore Our Services
+:IMAGE: Full-width background — students on campus, diverse group, Perth skyline
+:END:
+
+*** Headline
+
+Your Future in Australia Starts Here
+
+*** Subheadline
+
+Independent education, career, and migration advice from Perth, Western Australia. Since 1998.
+
+-----
+
+** Social Proof Bar
+:PROPERTIES:
+:SECTION: Stats bar — horizontal strip, 5 items
+:LAYOUT: Full-width, contrasting background
+:END:
+
+| Stat                    | Display      |
+|-------------------------+--------------|
+| Years of service        | Nearly 30    |
+| Client countries        | 40+          |
+| Australian institutions | 1,100+       |
+| Top 100 universities    | 7            |
+| Emergency support       | 24/7         |
+
+-----
+
+** What We Do
+:PROPERTIES:
+:SECTION: BentoBox — 4 cards, icon + heading + short text + link
+:LAYOUT: 2x2 grid on desktop, stacked on mobile
+:END:
+
+*** Education Services
+
+Primary school to PhD. We help you find the right institution and program for your goals.
+
+[[/services/education][Explore education pathways →]]
+
+*** Migration & Visas
+
+Not sure which visa you need? We'll assess your situation and help you handle the application.
+
+[[/services/migration][See visa options →]]
+
+*** Career Services
+
+We help graduates build a career in Australia. Your Australian qualification is only useful if you can work with it.
+
+[[/services/career][Build your career →]]
+
+*** Student Support
+
+We cover everything a student needs. Accommodation, guardianship, health cover, airport transfers, and a 24/7 emergency line.
+
+[[/services/student-support][See support services →]]
+
+-----
+
+** How We Care
+:PROPERTIES:
+:SECTION: Two-column — text left, image right
+:LAYOUT: 60/40 split
+:IMAGE: Glen in consultation with a student
+:END:
+
+*** Headline
+
+28 years of experience we stand behind.
+
+*** Body
+
+Since 1998, we've operated on one principle: give honest advice.
+
+Every client is assigned a dedicated advisor who coordinates your education, visa, and career plan — start to finish. No handoffs between agencies means no need to re-explain your situation over and over again.
+
+That means telling you when a visa application won't succeed, a course isn't the right fit, or a better path exists — before you commit to the wrong one.
+
+That's earned the trust of clients from 40+ countries — scholars who came back, and brought others — for decisions that shaped their lives.
+
+[[/about][Learn our story →]]
+
+-----
+
+** Featured Programs
+:PROPERTIES:
+:SECTION: Two cards — horizontal, image-topped
+:LAYOUT: Side by side on desktop, stacked on mobile
+:END:
+
+*** Buddy Programme
+:PROPERTIES:
+:IMAGE: Students in school uniform with Australian buddies, classroom setting
+:TAG: 14-Day Immersion
+:END:
+
+14 days at an Australian homestay — classroom integration and cultural immersion. Built in partnership with Anglican Schools.
+
+[[/programs/buddy-programme][Discover the Buddy Programme →]]
+
+*** SCSA Associate
+:PROPERTIES:
+:IMAGE: Students in graduation attire, WA landscape
+:TAG: International Curriculum
+:END:
+
+Complete the Western Australian Certificate of Education (WACE) from your home country. Officially recognised and globally respected.
+
+[[/programs/scsa-associate][Learn about SCSA →]]
+
+[[/programs][See all programmes →]]
+
+-----
+
+** Why Western Australia
+:PROPERTIES:
+:SECTION: Bento box — 5 cards
+:LAYOUT: Varied grid, mixed card sizes
+:END:
+
+*** Perth regularly features among the world's most liveable cities.
+
+Clean air, short commutes, a safe city, and a genuinely multicultural community. Students who come here tend to stay.
+
+*** Four globally recognised universities. All in Perth.
+
+UWA, Curtin, Murdoch, and ECU offer qualifications accepted by employers and institutions in every major market.
+
+*** Your degree comes with time to use it.
+
+Graduates receive 2–4 years of unrestricted work rights — enough to build real experience, establish connections, and weigh your options properly.
+
+*** A job market that needs skilled graduates.
+
+Western Australia's resources, healthcare, construction, and professional services sectors are all expanding. The demand for qualified people is genuine and growing.
+
+*** One curriculum. K to PhD.
+
+WA's SCSA-governed framework covers every stage — from primary school through to doctoral research. Structured, regulated, and recognised internationally.
+
+[[/why-australia][See why Western Australia →]]
+
+-----
+
+** Testimonials
+:PROPERTIES:
+:SECTION: Carousel — quote card with avatar, name (initials), country, program
+:LAYOUT: Rotating cards, 1 visible on mobile, 3 on desktop
+:NOTE: 5 testimonials — 3 visible at a time. Avatars use initials. Client to confirm attribution details.
+:END:
+
+#+begin_quote
+"The team went above and beyond, helping me find my course of interest and arrange a scholarship to UWA within 2 weeks."
+
+— /N.L., Malaysia, Bachelor of Commerce — University of Western Australia/
+#+end_quote
+
+#+begin_quote
+"Where would I be without the team at Blue Education? They have helped me so much through my time in Perth, that they are now like family. They are always there for me, whatever I need."
+
+— /H.T., Japan, Master of Business Administration — Curtin University/
+#+end_quote
+
+#+begin_quote
+"Blue Education made my dream of becoming a Registered Nurse come true."
+
+— /S.W., Singapore, Bachelor of Nursing — Edith Cowan University/
+#+end_quote
+
+#+begin_quote
+"My first experience with Blue Education was in 2017, renewing my visa for the first time. Everything was handled in order and in a timely manner. The most organised service I've experienced."
+
+— /Z.L., China, Doctor of Philosophy — Murdoch University/
+#+end_quote
+
+#+begin_quote
+"They went as far as arranging homestay accommodation and planning out the smoothest course for my next few years of study. My transition to Australia couldn't have been easier."
+
+— /J.K., South Korea, Foundation Studies — North Metropolitan TAFE/
+#+end_quote
+
+-----
+
+** Partners
+:PROPERTIES:
+:SECTION: Logo strip — auto-scrolling, grayscale logos
+:LAYOUT: Single row, infinite scroll
+:NOTE: Curtin logo (curtin-logo.webp) is low res — replace with file from Curtin brand team.
+:END:
+
+Partnered with leading Western Australian institutions.
+
+| Institution           | File                              | Format | Notes                  |
+|-----------------------+-----------------------------------+--------+------------------------|
+| University of WA      | /images/partners/uwa-logo.svg     | SVG    |                        |
+| Curtin University     | /images/partners/curtin-logo.webp | WebP   | Low res — replace      |
+| Murdoch University    | /images/partners/murdoch-logo.svg | SVG    |                        |
+| Edith Cowan Uni (ECU) | /images/partners/ecu-logo.png     | PNG    |                        |
+| North Metro TAFE      | /images/partners/nmtafe-logo.svg  | SVG    |                        |
+
+-----
+
+** Latest From the Blog
+:PROPERTIES:
+:SECTION: Three cards — image, title, excerpt, date
+:LAYOUT: 3-column grid
+:NOTE: Dynamic — pulls latest 3 blog posts
+:END:
+
+/[Dynamic content — latest blog posts]/
+
+[[/blog][View all articles →]]
+
+-----
+
+** Final CTA
+:PROPERTIES:
+:SECTION: Full-width CTA banner
+:LAYOUT: Centered text, contrasting background color
+:CTA-PRIMARY: Book a Consultation
+:CTA-SECONDARY: Call +61 8 6381 0030
+:END:
+
+*** Headline
+
+Not sure where to start?
+
+*** Body
+
+Most people aren't. Book a conversation with us and we'll map out your options honestly — whatever they turn out to be.

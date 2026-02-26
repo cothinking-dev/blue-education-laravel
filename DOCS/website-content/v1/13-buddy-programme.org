@@ -1,0 +1,402 @@
+#+title: Buddy Programme
+#+url: /programs/buddy-programme
+#+status: draft
+
+* V1
+
+** Hero
+:PROPERTIES:
+:SECTION: Hero — full-width, lifestyle image
+:LAYOUT: Left-aligned text
+:IMAGE: International student with Australian buddy in school setting
+:END:
+
+*** Headline
+
+14 days that could change everything.
+
+*** Subheadline
+
+Live with an Australian family. Study alongside Australian students. Experience the culture, the classroom, and the country — firsthand.
+
+-----
+
+** What Is the Buddy Programme?
+:PROPERTIES:
+:SECTION: Two-column — text left, image right
+:LAYOUT: 55/45 split
+:IMAGE: Group of students on field trip, laughing
+:END:
+
+The Buddy Programme is a 14-day educational and cultural immersion designed for international students who want to experience Australia before committing to long-term study.
+
+You don't just visit Australia. You live it. Mornings are spent in structured English lessons. Afternoons are spent in real Australian classrooms, sitting alongside local high school students, studying the same subjects, making real connections.
+
+You stay with a carefully selected homestay family who provides meals, support, and a genuine window into Australian life.
+
+It's not a tour. It's a trial run for your future.
+
+-----
+
+** Your 14 Days
+:PROPERTIES:
+:SECTION: Two-column split — Morning / Afternoon
+:LAYOUT: Side-by-side cards, icon-topped
+:END:
+
+*** Mornings: English Language & Culture
+:PROPERTIES:
+:ICON: sun
+:END:
+
+Structured English lessons covering:
+- Australian history, geography, and wildlife
+- Communication skills and vocabulary building
+- Grammar and sentence structure
+- Cultural traditions and the Australian way of life
+
+Interactive and practical — not textbook drills.
+
+*** Afternoons: High School Integration
+:PROPERTIES:
+:ICON: users
+:END:
+
+Join Australian high school students in their regular classes:
+- Science, mathematics, and core subjects
+- All instruction in English (except foreign language classes)
+- Experience Australian teaching methods firsthand
+- Build cross-cultural friendships that last
+
+-----
+
+** Beyond the Classroom
+:PROPERTIES:
+:SECTION: BentoBox — 3 cards with images
+:LAYOUT: 3-column grid, image-topped cards
+:END:
+
+*** Homestay Experience
+:PROPERTIES:
+:IMAGE: Family dinner table, warm lighting
+:END:
+
+Live with a vetted Australian family. All meals included. Safe, supportive, and genuinely welcoming. This isn't a hotel stay — it's cultural immersion at its most authentic.
+
+*** Local Field Trips
+:PROPERTIES:
+:IMAGE: Students at outdoor landmark, coastal WA
+:END:
+
+Classroom lessons come alive through field trips to local landmarks, natural environments, and cultural sites across Western Australia.
+
+*** Voluntary Work
+:PROPERTIES:
+:IMAGE: Students helping at community event
+:END:
+
+Special arrangements with local councils for voluntary work opportunities. Looks exceptional on your CV, strengthens scholarship applications, and builds real-world confidence.
+
+-----
+
+** Why It Matters
+:PROPERTIES:
+:SECTION: Feature list — icon + heading + one-liner
+:LAYOUT: Vertical list, alternating background rows
+:END:
+
+- *Test before you commit* — experience Australian education without a multi-year enrollment
+- *Build real English skills* — immersive, practical language development in 14 days
+- *Strengthen your applications* — voluntary work and certificates enhance university and scholarship submissions
+- *Gain independence* — develop confidence, social skills, and cultural adaptability
+- *Make genuine connections* — friendships with Australian students and your homestay family
+- *Stay safe* — fully supervised, partnership with Anglican Schools, comprehensive support
+
+-----
+
+** Partnership
+:PROPERTIES:
+:SECTION: Logo bar + short text
+:LAYOUT: Centered, clean
+:END:
+
+The Buddy Programme operates in partnership with Anglican Schools, ensuring a quality educational environment with established pastoral care and welfare standards.
+
+-----
+
+** CTA
+:PROPERTIES:
+:SECTION: Full-width CTA banner
+:LAYOUT: Centered, vibrant background
+:CTA-PRIMARY: Enquire About the Buddy Programme
+:CTA-SECONDARY: Download Programme Guide
+:END:
+
+*** Headline
+
+Give your child 14 days of real Australian experience.
+
+*** Body
+
+Spaces are limited. Contact us to learn about upcoming programme dates, costs, and how to secure a spot.
+
+* V2
+
+** Hero
+:PROPERTIES:
+:SECTION: Hero — full-width, lifestyle image
+:LAYOUT: Left-aligned text
+:IMAGE: Parent and child at airport departure gate, emotional moment
+:END:
+
+*** Headline
+
+You'll send them a child. They'll come back a young adult.
+
+*** Subheadline
+
+14 days in Australia — living with a local family, studying in a real school, discovering who they can become.
+
+-----
+
+** A Letter to Parents
+:PROPERTIES:
+:SECTION: Two-column — text left, image right
+:LAYOUT: 55/45 split
+:IMAGE: Parent watching child walk into school building, seen from behind
+:END:
+
+We know what it takes to let them go.
+
+Your child is about to board a plane to a country they've only seen in pictures. They'll be nervous. You'll be more nervous. You'll wonder if they'll be safe, if they'll eat properly, if they'll be okay without you.
+
+Here's what we've learned after 25+ years of running this programme: they'll surprise you. In 14 days, they'll navigate a new school. They'll sit in classrooms where everything is in English. They'll help in the community. They'll come home with stories, friendships, and a confidence you haven't seen before.
+
+The Buddy Programme isn't a holiday. It's the moment your child discovers what they're capable of.
+
+-----
+
+** What Their Days Look Like
+:PROPERTIES:
+:SECTION: Two-column split — Morning / Afternoon
+:LAYOUT: Side-by-side cards, icon-topped
+:END:
+
+*** Mornings: Finding Their Voice
+:PROPERTIES:
+:ICON: sun
+:END:
+
+Structured English lessons, but nothing like a textbook class. They learn about Australian history, geography, and wildlife through conversation and interaction. They build vocabulary, practise grammar, and gain the confidence to express themselves in English — not perfectly, but bravely.
+
+*** Afternoons: Becoming Part of the School
+:PROPERTIES:
+:ICON: users
+:END:
+
+This is where the magic happens. Your child joins Australian high school students in their regular classes — science, mathematics, all of it. They sit at the same desks. They work on the same problems. They eat lunch together. By day three, they have a buddy. By day ten, they have a friend.
+
+-----
+
+** The Moments That Matter Most
+:PROPERTIES:
+:SECTION: BentoBox — 3 cards with images
+:LAYOUT: 3-column grid, image-topped cards
+:END:
+
+*** Becoming Part of a Family
+:PROPERTIES:
+:IMAGE: Homestay family and student cooking together
+:END:
+
+Your child stays with a carefully vetted Australian family. Meals together. Conversations at the dinner table. Weekend routines. It's not a hotel — it's a home. And for many students, their homestay family becomes a connection they keep for years.
+
+*** Seeing the Country Up Close
+:PROPERTIES:
+:IMAGE: Students on nature walk, coastal WA
+:END:
+
+Field trips bring the classroom to life. Your child will explore Western Australian landmarks, natural environments, and cultural sites — not from a tour bus window, but on foot, with friends.
+
+*** Giving Back
+:PROPERTIES:
+:IMAGE: Students planting trees with council workers
+:END:
+
+Through special arrangements with local councils, your child can participate in voluntary work. It builds their CV, strengthens scholarship applications, and teaches them something no classroom can — the feeling of contributing to a community that isn't their own.
+
+-----
+
+** What Parents Tell Us
+:PROPERTIES:
+:SECTION: Feature list — icon + heading + one-liner
+:LAYOUT: Vertical list, alternating background rows
+:END:
+
+- *They came back braver* — 14 days of navigating a new world builds real independence
+- *Their English jumped forward* — immersive practice accelerates what years of classes can't
+- *They want to go back* — many Buddy Programme students return for long-term study
+- *We could see them growing* — confidence, social skills, and cultural adaptability developed in real time
+- *We felt they were safe* — the Anglican Schools partnership and comprehensive support gave us peace of mind
+
+-----
+
+** Partnership
+:PROPERTIES:
+:SECTION: Logo bar + short text
+:LAYOUT: Centered, clean
+:END:
+
+The Buddy Programme operates in partnership with Anglican Schools — known for quality education, established pastoral care, and high welfare standards. Your child is in good hands.
+
+-----
+
+** CTA
+:PROPERTIES:
+:SECTION: Full-width CTA banner
+:LAYOUT: Centered, warm background
+:CTA-PRIMARY: Enquire About the Buddy Programme
+:CTA-SECONDARY: Download Programme Guide
+:END:
+
+*** Headline
+
+14 days. A lifetime of confidence.
+
+*** Body
+
+Spaces are limited each intake. Talk to us about upcoming programme dates, what's included, and how to prepare your child for the experience.
+
+* V3
+
+** Hero
+:PROPERTIES:
+:SECTION: Hero — full-width
+:LAYOUT: Left-aligned text. Clean, minimal
+:END:
+
+*** Headline
+
+Buddy Programme: 14-day school immersion in Australia.
+
+*** Subheadline
+
+English classes in the morning. Australian high school in the afternoon. Homestay with a local family. Voluntary work included.
+
+-----
+
+** Programme Overview
+:PROPERTIES:
+:SECTION: Two-column — text left, summary right
+:LAYOUT: 60/40 split
+:END:
+
+A 14-day educational and cultural immersion for international students. Run in partnership with Anglican Schools in Western Australia.
+
+| Detail | Info |
+|--------|------|
+| Duration | 14 days |
+| Age group | High school students |
+| Accommodation | Homestay (meals included) |
+| School partner | Anglican Schools |
+| Certificate | Yes, certificate of completion |
+| Voluntary work | Yes, through local councils |
+
+-----
+
+** Daily Structure
+:PROPERTIES:
+:SECTION: Two-column split — Morning / Afternoon
+:LAYOUT: Side-by-side cards
+:END:
+
+*** Morning: English Language
+:PROPERTIES:
+:ICON: sun
+:END:
+
+- Australian history, culture, geography, and wildlife
+- Communication and vocabulary building
+- Grammar and sentence structure
+- Interactive teaching methods
+
+*** Afternoon: High School Classes
+:PROPERTIES:
+:ICON: users
+:END:
+
+- Join Australian students in regular classes
+- Science, mathematics, and core subjects
+- All instruction in English
+- Cross-cultural interaction with local students
+
+-----
+
+** What's Included
+:PROPERTIES:
+:SECTION: BentoBox — 3 cards
+:LAYOUT: 3-column grid
+:END:
+
+*** Homestay
+
+Vetted Australian family. All meals. Safe, supervised living environment.
+
+*** Field Trips
+
+Local landmarks, natural sites, and cultural locations in Western Australia. Integrated with classroom learning.
+
+*** Voluntary Work
+
+Arranged with local councils. Enhances CV and scholarship applications. Certificate provided.
+
+-----
+
+** Who It's For
+:PROPERTIES:
+:SECTION: Feature list — 3 items
+:LAYOUT: Horizontal cards
+:END:
+
+*** Students Exploring Australia
+
+Experience Australian education before committing to long-term study. Low-risk way to test the fit.
+
+*** Students Building English Skills
+
+14 days of immersive, practical English — faster progress than classroom-only study.
+
+*** Students Strengthening Applications
+
+Voluntary work certificate, cross-cultural experience, and completion certificate. Valuable for university and scholarship submissions.
+
+-----
+
+** Key Facts
+:PROPERTIES:
+:SECTION: Feature list — icon + heading + one-liner
+:LAYOUT: Vertical list
+:END:
+
+- *Fully supervised* — partnership with Anglican Schools, established pastoral care standards
+- *Meals included* — all meals provided by homestay family
+- *Certificate of completion* — issued to all participants
+- *Voluntary work certificate* — additional credential for CVs and applications
+- *No long-term commitment* — 14 days, no enrollment obligation
+
+-----
+
+** CTA
+:PROPERTIES:
+:SECTION: Full-width CTA banner
+:CTA-PRIMARY: Enquire About the Buddy Programme
+:CTA-SECONDARY: Download Programme Guide
+:END:
+
+*** Headline
+
+Check availability.
+
+*** Body
+
+Limited spaces per intake. Contact us for upcoming dates, costs, and enrollment requirements.

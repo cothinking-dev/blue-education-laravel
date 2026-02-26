@@ -1,0 +1,158 @@
+#+title: SCSA Associate Program
+#+url: /programs/scsa-associate
+#+status: draft
+
+** Hero
+:PROPERTIES:
+:SECTION: Hero — full-width
+:LAYOUT: Left-aligned text
+:IMAGE: Students in school environment, WA branding
+:END:
+
+*** Headline
+
+Australian curriculum. Delivered internationally. Officially recognised.
+
+*** Subheadline
+
+Blue Education is appointed by SCSA — the WA Government's curriculum authority — to help international schools implement and deliver the Western Australian curriculum, including the WACE programme.
+
+-----
+
+** What Is SCSA?
+:PROPERTIES:
+:SECTION: Two-column — info table left, logo/badge right
+:LAYOUT: 60/40 split. Right: SCSA logo and WA Dept of Education badge
+:END:
+
+| Detail           | Info                                                     |
+|------------------+----------------------------------------------------------|
+| Full name        | School Curriculum and Standards Authority                 |
+| Jurisdiction     | Western Australia                                        |
+| Scope            | Kindergarten to Year 12                                  |
+| Key qualification | Western Australian Certificate of Education (WACE)      |
+| Oversight        | Curriculum, assessment, standards, reporting, moderation |
+| Recognition      | Internationally recognised; accepted for direct entry to Australian universities |
+
+-----
+
+** For International Schools
+:PROPERTIES:
+:SECTION: Feature list — icon + heading + text
+:LAYOUT: Vertical, 5 items
+:END:
+
+*** Deliver the WA Curriculum
+
+Australian-standard education at your school — without relocating to Australia.
+
+*** Application & Onboarding Support
+
+We guide you through the SCSA framework, formal application, and classroom launch from start to finish.
+
+*** Quality Assurance
+
+Alignment with Australian education standards. SCSA moderation and compliance requirements handled.
+
+*** Create Student Pathways
+
+Give your students a recognised Australian qualification that opens doors to [[/services/education/degrees][Australian universities]].
+
+*** Ongoing Guidance
+
+Continued liaison with SCSA, quality assurance support, and curriculum implementation guidance after launch.
+
+-----
+
+** How It Works
+:PROPERTIES:
+:SECTION: Timeline — horizontal, 5 steps
+:LAYOUT: Connected steps
+:END:
+
+*** 1. Understand
+
+We explain the SCSA framework, requirements, and what accreditation involves.
+
+*** 2. Apply
+
+We support your formal application to deliver the WA curriculum.
+
+*** 3. Onboard
+
+Curriculum delivery setup, teacher preparation, and compliance.
+
+*** 4. Launch
+
+Your school begins delivering WACE-aligned education.
+
+*** 5. Maintain
+
+Continued guidance, SCSA liaison, and quality assurance.
+
+-----
+
+** For Students
+:PROPERTIES:
+:SECTION: BentoBox — 3 cards
+:LAYOUT: 3-column grid
+:END:
+
+*** Complete WACE Overseas
+
+Earn the Western Australian Certificate of Education from your home country — the same qualification Australian Year 12 students earn.
+
+*** University-Ready
+
+WACE is accepted for [[/resources/admission-requirements][direct entry]] to [[/services/education/degrees][Western Australian universities]]. Students who complete the programme overseas are assessed on the same criteria as domestic Year 12 graduates.
+
+*** Seamless Transition
+
+If you later choose to study in Australia, your WACE preparation means you're already aligned with Australian academic standards and teaching methods.
+
+*** Premier's WACE Bursary
+
+Students who complete the WACE programme overseas and enrol in a participating WA university may be eligible for the Premier's WACE Bursary — AUD $20,000, awarded to 50 applicants per year. Participating universities: UWA, Curtin, Murdoch, ECU, and Notre Dame.
+
+-----
+
+** Who This Is For
+:PROPERTIES:
+:SECTION: Feature list — 3 items
+:LAYOUT: Horizontal cards
+:END:
+
+*** International Schools
+
+Schools wanting to offer an Australian-standard curriculum. Any country.
+
+*** Education Providers
+
+Organisations exploring Australian curriculum partnerships for their student base.
+
+*** Students
+
+Students wanting to earn WACE from their home country for Australian university entry.
+
+-----
+
+** Also Relevant
+
+/Also relevant: [[/services/education/degrees][University degrees in WA →]] · [[/about/partners][Our partner institutions →]]/
+
+-----
+
+** CTA
+:PROPERTIES:
+:SECTION: Full-width CTA banner
+:CTA-PRIMARY: Learn More About SCSA Partnership
+:CTA-SECONDARY: Call +61 8 6381 0030
+:END:
+
+*** Headline
+
+Explore SCSA accreditation.
+
+*** Body
+
+Contact us to discuss requirements, process, and timeline for delivering the WA curriculum at your school — or earning WACE as a student.
