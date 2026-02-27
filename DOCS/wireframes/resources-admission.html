@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admission Requirements — Blue Education Wireframe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/tokens.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: { extend: {
+        colors: {
+          primary:   { DEFAULT: 'var(--primary)',   foreground: 'var(--primary-foreground)' },
+          secondary: { DEFAULT: 'var(--secondary)', foreground: 'var(--secondary-foreground)' },
+          base:      { DEFAULT: 'var(--base)',      foreground: 'var(--base-foreground)' },
+          muted:     { DEFAULT: 'var(--muted)',     foreground: 'var(--muted-foreground)' },
+        },
+        borderRadius: {
+          corner: 'var(--corner)', 'corner-lg': 'var(--corner-lg)', 'corner-full':'var(--corner-full)',
+        },
+        fontFamily: { sans: ['Inter', 'sans-serif'] },
+      }}
+    }
+  </script>
+  <style>
+    .img-ph {
+      background-color: #d1d5db;
+      background-image: repeating-linear-gradient(-55deg, transparent, transparent 8px, rgba(0,0,0,0.04) 8px, rgba(0,0,0,0.04) 9px);
+    }
+    .wf-bar {
+      font-family: 'Courier New', monospace; font-size: 9px; font-weight: bold;
+      text-transform: uppercase; letter-spacing: 0.12em; color: #3b82f6; background: #eff6ff;
+      border-top: 1px solid #bfdbfe; border-bottom: 1px solid #bfdbfe; padding: 4px 32px;
+    }
+  </style>
+</head>
+<body class="bg-neutral-300 py-8 font-sans">
+  <div class="flex gap-8 items-start mx-auto px-8" style="width: max-content;">
+
+    <!-- ═══════════════════════════════════════════════
+         DESKTOP CANVAS — 1280px
+    ═══════════════════════════════════════════════ -->
+    <div style="width:1280px; background:var(--base); color:var(--base-foreground);" class="shadow-2xl shrink-0">
+      <div class="flex items-center justify-between px-8 py-2 border-b-2 border-amber-300 bg-amber-50 dark:border-amber-800 dark:bg-amber-950">
+        <div class="flex items-center gap-3">
+          <span class="font-bold text-amber-800 tracking-widest text-sm dark:text-amber-200">WIREFRAME</span>
+          <span class="text-amber-700 text-sm dark:text-amber-300">·  Blue Education  ·  Admission Requirements  ·  Desktop 1280px</span>
+        </div>
+        <span class="text-amber-500 font-mono text-xs dark:text-amber-400">Layout &amp; copy reference — not final design</span>
+      </div>
+
+      <div id="nav-placeholder"></div>
+
+      <main id="main-content">
+
+        <!-- ════════════════════════════════════════════════════
+             §1  HERO
+        ════════════════════════════════════════════════════ -->
+        <div class="wf-bar">§1 · Hero — Left-aligned, clean background</div>
+        <section aria-labelledby="hero-h" class="px-16 py-16 bg-gray-50 border-b border-gray-200 dark:bg-slate-900 dark:border-slate-700">
+          <div style="max-width:700px;">
+            <p class="text-pretty text-xs font-bold text-blue-600 uppercase tracking-widest mb-3 dark:text-blue-400">Resources</p>
+            <h1 id="hero-h" class="text-pretty text-5xl font-bold text-gray-900 mb-5 leading-tight dark:text-slate-100">Admission requirements.</h1>
+            <p class="text-pretty text-xl text-gray-600 leading-relaxed dark:text-slate-400">English scores, academic qualifications, and pathway options — by program level.</p>
+          </div>
+        </section>
+
+        <!-- ════════════════════════════════════════════════════
+             §2  ENGLISH LANGUAGE REQUIREMENTS
+        ════════════════════════════════════════════════════ -->
+        <div class="wf-bar">§2 · English Language Requirements — Intro text + full-width reference table</div>
+        <section aria-labelledby="english-h" class="px-16 py-14 bg-white border-b border-gray-100 dark:bg-slate-800 dark:border-slate-800">
+          <h2 id="english-h" class="text-pretty text-2xl font-bold text-gray-900 mb-4 dark:text-slate-100">English Language Requirements</h2>
+          <p class="text-pretty text-gray-600 text-sm leading-relaxed mb-2 dark:text-slate-400">
+            <strong class="text-gray-900 dark:text-slate-100">Accepted tests:</strong> IELTS, TOEFL, Cambridge CAE, Pearson PTE. Scores valid for 2 years.
+          </p>
+          <p class="text-pretty text-gray-600 text-sm mb-8 dark:text-slate-400">Institutions may set higher thresholds. Course requirements may differ from visa requirements.</p>
+
+          <h3 class="text-pretty text-lg font-semibold text-gray-900 mb-4 dark:text-slate-100">Minimum IELTS Scores</h3>
+          <div class="overflow-x-auto">
+            <table class="w-full text-sm border border-gray-200 rounded-lg overflow-hidden dark:border-slate-700">
+              <caption class="sr-only">Minimum IELTS scores by program level, including per-band minimums</caption>
+              <thead class="bg-gray-800 text-white">
+                <tr>
+                  <th scope="col" class="text-left px-6 py-3 font-semibold">Program</th>
+                  <th scope="col" class="text-left px-6 py-3 font-semibold">Overall IELTS</th>
+                  <th scope="col" class="text-left px-6 py-3 font-semibold">Per-Band Minimum</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-b border-gray-100 dark:border-slate-800">
+                  <td class="px-6 py-4 font-medium text-gray-900 dark:text-slate-100">Foundation</td>
+                  <td class="px-6 py-4 text-gray-700 dark:text-slate-300">5.0 – 5.5</td>
+                  <td class="px-6 py-4 text-gray-500 dark:text-slate-500">Varies</td>
+                </tr>
+                <tr class="border-b border-gray-100 bg-gray-50 dark:border-slate-800 dark:bg-slate-900">
+                  <td class="px-6 py-4 font-medium text-gray-900 dark:text-slate-100">VET/TAFE</td>
+                  <td class="px-6 py-4 text-gray-700 dark:text-slate-300">5.5 – 6.0</td>
+                  <td class="px-6 py-4 text-gray-500 dark:text-slate-500">Varies</td>
+                </tr>
+                <tr class="border-b border-gray-100 dark:border-slate-800">
+                  <td class="px-6 py-4 font-medium text-gray-900 dark:text-slate-100">Bachelor</td>
+                  <td class="px-6 py-4 text-gray-700 dark:text-slate-300">6.5</td>
+                  <td class="px-6 py-4 text-gray-500 dark:text-slate-500">Varies by institution</td>
+                </tr>
+                <tr class="border-b border-gray-100 bg-gray-50 dark:border-slate-800 dark:bg-slate-900">
+                  <td class="px-6 py-4 font-medium text-gray-900 dark:text-slate-100">Graduate Cert/Diploma</td>
+                  <td class="px-6 py-4 text-gray-700 dark:text-slate-300">6.5 – 7.0</td>
+                  <td class="px-6 py-4 text-gray-500 dark:text-slate-500">Minimum 6.0 in each band</td>
+                </tr>
+                <tr>
+                  <td class="px-6 py-4 font-medium text-gray-900 dark:text-slate-100">Master/Doctoral</td>
+                  <td class="px-6 py-4 text-gray-700 dark:text-slate-300">6.5 – 7.0</td>
+                  <td class="px-6 py-4 text-gray-500 dark:text-slate-500">Minimum 6.0 in each band</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- ════════════════════════════════════════════════════
+             §3  ACADEMIC REQUIREMENTS
+        ════════════════════════════════════════════════════ -->
+        <div class="wf-bar">§3 · Academic Requirements — Full-width reference table</div>
+        <section aria-labelledby="academic-h" class="px-16 py-14 bg-gray-50 border-b border-gray-100 dark:bg-slate-900 dark:border-slate-800">
+          <h2 id="academic-h" class="text-pretty text-2xl font-bold text-gray-900 mb-8 dark:text-slate-100">Academic Requirements</h2>
+          <div class="overflow-x-auto">
+            <table class="w-full text-sm border border-gray-200 rounded-lg overflow-hidden dark:border-slate-700">
+              <caption class="sr-only">Academic entry requirements by education level</caption>
+              <thead class="bg-gray-800 text-white">
+                <tr>
+                  <th scope="col" class="text-left px-6 py-3 font-semibold">Entry Level</th>
+                  <th scope="col" class="text-left px-6 py-3 font-semibold">Requirement</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-b border-gray-100 bg-white dark:border-slate-800 dark:bg-slate-800">
+                  <td class="px-6 py-4 font-medium text-gray-900 dark:text-slate-100">Foundation</td>
+                  <td class="px-6 py-4 text-gray-700 dark:text-slate-300">Year 11 (or equivalent)</td>
+                </tr>
+                <tr class="border-b border-gray-100 bg-gray-50 dark:border-slate-800 dark:bg-slate-900">
+                  <td class="px-6 py-4 font-medium text-gray-900 dark:text-slate-100">VET/TAFE</td>
+                  <td class="px-6 py-4 text-gray-700 dark:text-slate-300">Year 10–12 (varies by program)</td>
+                </tr>
+                <tr class="border-b border-gray-100 bg-white dark:border-slate-800 dark:bg-slate-800">
+                  <td class="px-6 py-4 font-medium text-gray-900 dark:text-slate-100">
+                    <a href="./services-education-university.html" class="text-blue-600 hover:underline dark:text-blue-400">Bachelor</a>
+                  </td>
+                  <td class="px-6 py-4 text-gray-700 dark:text-slate-300">Year 12 equivalent <strong>OR</strong> VET Diploma/Advanced Diploma</td>
+                </tr>
+                <tr class="border-b border-gray-100 bg-gray-50 dark:border-slate-800 dark:bg-slate-900">
+                  <td class="px-6 py-4 font-medium text-gray-900 dark:text-slate-100">
+                    <a href="./services-education-university.html" class="text-blue-600 hover:underline dark:text-blue-400">Postgraduate</a>
+                  </td>
+                  <td class="px-6 py-4 text-gray-700 dark:text-slate-300">Relevant Bachelor degree (+ work experience for some programs)</td>
+                </tr>
+                <tr class="border-b border-gray-100 bg-white dark:border-slate-800 dark:bg-slate-800">
+                  <td class="px-6 py-4 font-medium text-gray-900 dark:text-slate-100">Professional <span class="text-gray-400 font-normal dark:text-slate-400">(teaching, nursing, engineering)</span></td>
+                  <td class="px-6 py-4 text-gray-700 dark:text-slate-300">Academic admission plus registration with the relevant Australian authority</td>
+                </tr>
+                <tr class="bg-gray-50 dark:bg-slate-900">
+                  <td class="px-6 py-4 font-medium text-gray-900 dark:text-slate-100">Creative Arts</td>
+                  <td class="px-6 py-4 text-gray-700 dark:text-slate-300">Portfolio or interview may apply</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- ════════════════════════════════════════════════════
+             §4  PATHWAY OPTIONS — 60/40 split
+        ════════════════════════════════════════════════════ -->
+        <div class="wf-bar">§4 · Pathway Options — 60/40 split: table left, CTA card right</div>
+        <section aria-labelledby="pathways-h" class="px-16 py-14 bg-white border-b border-gray-100 dark:bg-slate-800 dark:border-slate-800">
+          <h2 id="pathways-h" class="text-pretty text-2xl font-bold text-gray-900 mb-8 dark:text-slate-100">Pathway Options</h2>
+          <div class="flex gap-12 items-start">
+
+            <!-- Left 60%: pathway table -->
+            <div style="flex: 0 0 58%;">
+              <h3 class="text-pretty text-base font-semibold text-gray-800 mb-5 dark:text-slate-200">If you don't meet direct entry requirements</h3>
+              <div class="overflow-x-auto mb-6">
+                <table class="w-full text-sm border border-gray-200 rounded-lg overflow-hidden dark:border-slate-700">
+                  <caption class="sr-only">Pathway options for students below direct entry requirements</caption>
+                  <thead class="bg-gray-800 text-white">
+                    <tr>
+                      <th scope="col" class="text-left px-5 py-3 font-semibold">Pathway</th>
+                      <th scope="col" class="text-left px-5 py-3 font-semibold">Duration</th>
+                      <th scope="col" class="text-left px-5 py-3 font-semibold">Purpose</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="border-b border-gray-100 bg-white dark:border-slate-800 dark:bg-slate-800">
+                      <td class="px-5 py-4 font-medium text-gray-900 dark:text-slate-100">
+                        <a href="./services-education-english.html" class="text-blue-600 hover:underline dark:text-blue-400">ELICOS</a>
+                      </td>
+                      <td class="px-5 py-4 text-gray-700 whitespace-nowrap dark:text-slate-300">10–30 weeks</td>
+                      <td class="px-5 py-4 text-gray-700 dark:text-slate-300">English proficiency improvement</td>
+                    </tr>
+                    <tr class="border-b border-gray-100 bg-gray-50 dark:border-slate-800 dark:bg-slate-900">
+                      <td class="px-5 py-4 font-medium text-gray-900 dark:text-slate-100">
+                        <a href="./services-education-english.html" class="text-blue-600 hover:underline dark:text-blue-400">Foundation Studies</a>
+                      </td>
+                      <td class="px-5 py-4 text-gray-700 whitespace-nowrap dark:text-slate-300">1 year</td>
+                      <td class="px-5 py-4 text-gray-700 dark:text-slate-300">Pre-university academic preparation</td>
+                    </tr>
+                    <tr class="border-b border-gray-100 bg-white dark:border-slate-800 dark:bg-slate-800">
+                      <td class="px-5 py-4 font-medium text-gray-900 dark:text-slate-100">
+                        <a href="./services-education-vet.html" class="text-blue-600 hover:underline dark:text-blue-400">VET Diploma</a>
+                      </td>
+                      <td class="px-5 py-4 text-gray-700 whitespace-nowrap dark:text-slate-300">1–2 years</td>
+                      <td class="px-5 py-4 text-gray-700 dark:text-slate-300">Vocational qualification + university pathway</td>
+                    </tr>
+                    <tr class="bg-gray-50 dark:bg-slate-900">
+                      <td class="px-5 py-4 font-medium text-gray-900 dark:text-slate-100">Packaged Offer</td>
+                      <td class="px-5 py-4 text-gray-700 whitespace-nowrap dark:text-slate-300">Varies</td>
+                      <td class="px-5 py-4 text-gray-700 dark:text-slate-300">English + academic program, single visa</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p class="text-pretty text-gray-600 text-sm leading-relaxed mb-4 dark:text-slate-400">We assess where you are now and map the shortest path to where you want to be.</p>
+              <div class="bg-amber-50 border border-amber-200 rounded-lg p-4 dark:bg-amber-950">
+                <p class="text-pretty text-sm text-amber-800 leading-relaxed dark:text-amber-200">
+                  <strong>Professional fields note:</strong> Teaching, nursing, and engineering graduates require registration with the relevant Australian authority — Teaching Council, AHPRA (nursing and allied health), or Engineers Australia — in addition to academic admission. We advise on these requirements as part of your pathway assessment.
+                </p>
+              </div>
+            </div>
+
+            <!-- Right 40%: CTA card -->
+            <aside class="flex-1 border-2 border-blue-100 bg-blue-50 rounded-xl p-8 text-center dark:bg-blue-950" aria-labelledby="assessment-card-h" style="min-width:280px;">
+              <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4 dark:bg-blue-900" role="img" aria-label="Assessment icon">
+                <svg class="w-6 h-6 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              </div>
+              <h3 id="assessment-card-h" class="text-pretty text-xl font-bold text-gray-900 mb-4 dark:text-slate-100">Get assessed</h3>
+              <p class="text-pretty text-gray-600 text-sm leading-relaxed mb-6 dark:text-slate-400">Send your transcripts and English test results — we'll assess your options and recommend the best pathway.</p>
+              <div class="space-y-3">
+                <a href="./contact.html" class="block w-full bg-blue-600 text-white font-bold px-6 py-3 rounded text-sm hover:bg-blue-700">Get My Eligibility Assessed</a>
+                <a href="./services-education.html" class="block w-full border border-blue-600 text-blue-600 font-semibold px-6 py-3 rounded text-sm hover:bg-blue-50 dark:text-blue-400 dark:hover:bg-blue-900">View Education Pathways</a>
+              </div>
+            </aside>
+
+          </div>
+        </section>
+
+        <!-- ════════════════════════════════════════════════════
+             §5  FULL-WIDTH CTA BANNER
+        ════════════════════════════════════════════════════ -->
+        <div class="wf-bar">§5 · CTA Banner — Full-width, dark background</div>
+        <section aria-labelledby="cta-h" class="py-16 px-8 text-center" style="background:#1e3a5f;">
+          <h2 id="cta-h" class="text-pretty text-4xl font-bold text-white mb-4">Send your transcripts — we'll tell you where you stand.</h2>
+          <p class="text-pretty text-lg mb-8 mx-auto" style="color:#93c5fd; max-width:580px;">Send academic transcripts and English test results. We assess your current level, identify any gaps, and recommend the most direct pathway to your target program.</p>
+          <div class="flex gap-4 justify-center">
+            <a href="./contact.html" class="bg-white font-bold px-8 py-3 rounded text-base hover:bg-gray-100 dark:bg-slate-800" style="color:#1e3a5f;">Book an Assessment</a>
+            <a href="tel:+61863810030" class="border-2 border-white text-white font-semibold px-8 py-3 rounded text-base">Call +61 8 6381 0030</a>
+          </div>
+        </section>
+
+      </main>
+
+      <div id="footer-placeholder"></div>
+    </div>
+    <!-- end DESKTOP CANVAS -->
+
+    <!-- ═══════════════════════════════════════════════
+         MOBILE CANVAS — 390px
+    ═══════════════════════════════════════════════ -->
+    <div style="width:390px; background:var(--base); color:var(--base-foreground);" class="shadow-2xl shrink-0 sticky top-8">
+      <div class="flex items-center justify-between px-4 py-2 border-b-2 border-amber-300 bg-amber-50 dark:border-amber-800 dark:bg-amber-950">
+        <span class="font-bold text-amber-800 tracking-widest text-xs dark:text-amber-200">WIREFRAME</span>
+        <span class="text-amber-600 font-mono" style="font-size:8px;">Mobile 390px</span>
+      </div>
+
+      <div id="nav-placeholder-m"></div>
+
+      <main>
+
+        <!-- §1 Hero — mobile -->
+        <div class="wf-bar">§1 · Hero</div>
+        <section aria-labelledby="hero-h-m" class="px-5 py-10 bg-gray-50 dark:bg-slate-900">
+          <p class="text-pretty text-xs font-bold text-blue-600 uppercase tracking-widest mb-2 dark:text-blue-400">Resources</p>
+          <h1 id="hero-h-m" class="text-pretty text-3xl font-bold text-gray-900 mb-3 leading-tight dark:text-slate-100">Admission requirements.</h1>
+          <p class="text-pretty text-sm text-gray-600 leading-relaxed dark:text-slate-400">English scores, academic qualifications, and pathway options — by program level.</p>
+        </section>
+
+        <!-- §2 English Requirements — mobile -->
+        <div class="wf-bar">§2 · English Language Requirements</div>
+        <section aria-labelledby="english-h-m" class="px-5 py-8 bg-white border-t border-gray-200 dark:bg-slate-800 dark:border-slate-700">
+          <h2 id="english-h-m" class="text-pretty text-lg font-bold text-gray-900 mb-3 dark:text-slate-100">English Language Requirements</h2>
+          <p class="text-pretty text-xs text-gray-600 mb-1 dark:text-slate-400"><strong>Accepted:</strong> IELTS, TOEFL, Cambridge CAE, Pearson PTE</p>
+          <p class="text-pretty text-xs text-gray-500 mb-5 dark:text-slate-500">Scores valid for 2 years.</p>
+          <h3 class="text-pretty text-sm font-semibold text-gray-800 mb-3 dark:text-slate-200">Minimum IELTS Scores</h3>
+          <div class="overflow-x-auto">
+            <table class="w-full text-xs border border-gray-200 rounded-lg overflow-hidden dark:border-slate-700">
+              <caption class="sr-only">Minimum IELTS scores by program level</caption>
+              <thead class="bg-gray-800 text-white">
+                <tr>
+                  <th scope="col" class="text-left px-3 py-2 font-semibold">Program</th>
+                  <th scope="col" class="text-left px-3 py-2 font-semibold">Overall</th>
+                  <th scope="col" class="text-left px-3 py-2 font-semibold">Per Band</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-b border-gray-100 bg-white dark:border-slate-800 dark:bg-slate-800"><td class="px-3 py-2 font-medium">Foundation</td><td class="px-3 py-2">5.0–5.5</td><td class="px-3 py-2 text-gray-500 dark:text-slate-500">Varies</td></tr>
+                <tr class="border-b border-gray-100 bg-gray-50 dark:border-slate-800 dark:bg-slate-900"><td class="px-3 py-2 font-medium">VET/TAFE</td><td class="px-3 py-2">5.5–6.0</td><td class="px-3 py-2 text-gray-500 dark:text-slate-500">Varies</td></tr>
+                <tr class="border-b border-gray-100 bg-white dark:border-slate-800 dark:bg-slate-800"><td class="px-3 py-2 font-medium">Bachelor</td><td class="px-3 py-2">6.5</td><td class="px-3 py-2 text-gray-500 dark:text-slate-500">Varies</td></tr>
+                <tr class="border-b border-gray-100 bg-gray-50 dark:border-slate-800 dark:bg-slate-900"><td class="px-3 py-2 font-medium">Grad Cert/Dip</td><td class="px-3 py-2">6.5–7.0</td><td class="px-3 py-2 text-gray-500 dark:text-slate-500">Min 6.0</td></tr>
+                <tr class="bg-white dark:bg-slate-800"><td class="px-3 py-2 font-medium">Master/PhD</td><td class="px-3 py-2">6.5–7.0</td><td class="px-3 py-2 text-gray-500 dark:text-slate-500">Min 6.0</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- §3 Academic Requirements — mobile -->
+        <div class="wf-bar">§3 · Academic Requirements</div>
+        <section aria-labelledby="academic-h-m" class="px-5 py-8 bg-gray-50 border-t border-gray-200 dark:bg-slate-900 dark:border-slate-700">
+          <h2 id="academic-h-m" class="text-pretty text-lg font-bold text-gray-900 mb-4 dark:text-slate-100">Academic Requirements</h2>
+          <div class="overflow-x-auto">
+            <table class="w-full text-xs border border-gray-200 rounded-lg overflow-hidden dark:border-slate-700">
+              <caption class="sr-only">Academic entry requirements by education level</caption>
+              <thead class="bg-gray-800 text-white">
+                <tr>
+                  <th scope="col" class="text-left px-3 py-2 font-semibold">Entry Level</th>
+                  <th scope="col" class="text-left px-3 py-2 font-semibold">Requirement</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-b border-gray-100 bg-white dark:border-slate-800 dark:bg-slate-800"><td class="px-3 py-2 font-medium">Foundation</td><td class="px-3 py-2">Year 11 or equivalent</td></tr>
+                <tr class="border-b border-gray-100 bg-gray-50 dark:border-slate-800 dark:bg-slate-900"><td class="px-3 py-2 font-medium">VET/TAFE</td><td class="px-3 py-2">Year 10–12 (varies)</td></tr>
+                <tr class="border-b border-gray-100 bg-white dark:border-slate-800 dark:bg-slate-800"><td class="px-3 py-2 font-medium">Bachelor</td><td class="px-3 py-2">Year 12 or VET Diploma</td></tr>
+                <tr class="border-b border-gray-100 bg-gray-50 dark:border-slate-800 dark:bg-slate-900"><td class="px-3 py-2 font-medium">Postgraduate</td><td class="px-3 py-2">Bachelor degree (+ work exp. for some)</td></tr>
+                <tr class="border-b border-gray-100 bg-white dark:border-slate-800 dark:bg-slate-800"><td class="px-3 py-2 font-medium">Professional</td><td class="px-3 py-2">Academic + AU registration authority</td></tr>
+                <tr class="bg-gray-50 dark:bg-slate-900"><td class="px-3 py-2 font-medium">Creative Arts</td><td class="px-3 py-2">Portfolio/interview may apply</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- §4 Pathways — mobile stacked -->
+        <div class="wf-bar">§4 · Pathway Options (stacked)</div>
+        <section aria-labelledby="pathways-h-m" class="px-5 py-8 bg-white border-t border-gray-200 dark:bg-slate-800 dark:border-slate-700">
+          <h2 id="pathways-h-m" class="text-pretty text-lg font-bold text-gray-900 mb-2 dark:text-slate-100">Pathway Options</h2>
+          <p class="text-pretty text-xs text-gray-600 mb-5 dark:text-slate-400">If you don't meet direct entry requirements:</p>
+          <div class="overflow-x-auto mb-6">
+            <table class="w-full text-xs border border-gray-200 rounded-lg overflow-hidden dark:border-slate-700">
+              <caption class="sr-only">Pathway options for students below direct entry</caption>
+              <thead class="bg-gray-800 text-white">
+                <tr>
+                  <th scope="col" class="text-left px-3 py-2 font-semibold">Pathway</th>
+                  <th scope="col" class="text-left px-3 py-2 font-semibold">Duration</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-b border-gray-100 bg-white dark:border-slate-800 dark:bg-slate-800"><td class="px-3 py-2 font-medium text-blue-600 dark:text-blue-400">ELICOS</td><td class="px-3 py-2">10–30 weeks</td></tr>
+                <tr class="border-b border-gray-100 bg-gray-50 dark:border-slate-800 dark:bg-slate-900"><td class="px-3 py-2 font-medium text-blue-600 dark:text-blue-400">Foundation Studies</td><td class="px-3 py-2">1 year</td></tr>
+                <tr class="border-b border-gray-100 bg-white dark:border-slate-800 dark:bg-slate-800"><td class="px-3 py-2 font-medium text-blue-600 dark:text-blue-400">VET Diploma</td><td class="px-3 py-2">1–2 years</td></tr>
+                <tr class="bg-gray-50 dark:bg-slate-900"><td class="px-3 py-2 font-medium">Packaged Offer</td><td class="px-3 py-2">Varies</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="bg-blue-50 border border-blue-200 rounded-xl p-5 text-center dark:bg-blue-950 dark:border-blue-800">
+            <h3 class="text-pretty text-base font-bold text-gray-900 mb-3 dark:text-slate-100">Get assessed</h3>
+            <p class="text-pretty text-xs text-gray-600 mb-4 dark:text-slate-400">Send your transcripts and test results — we'll recommend the best pathway.</p>
+            <a href="./contact.html" class="block w-full bg-blue-600 text-white font-bold px-4 py-3 rounded text-sm mb-2">Get My Eligibility Assessed</a>
+            <a href="./services-education.html" class="block w-full border border-blue-600 text-blue-600 font-semibold px-4 py-3 rounded text-sm dark:text-blue-400">View Education Pathways</a>
+          </div>
+        </section>
+
+        <!-- §5 CTA Banner — mobile -->
+        <div class="wf-bar">§5 · CTA Banner</div>
+        <section aria-labelledby="cta-h-m" class="px-5 py-12 text-center" style="background:#1e3a5f;">
+          <h2 id="cta-h-m" class="text-pretty text-2xl font-bold text-white mb-3">Send your transcripts — we'll tell you where you stand.</h2>
+          <p class="text-pretty text-sm mb-6" style="color:#93c5fd;">We assess your level, identify gaps, and recommend the most direct pathway.</p>
+          <div class="flex flex-col gap-3">
+            <a href="./contact.html" class="bg-white font-bold px-6 py-3 rounded text-sm dark:bg-slate-800" style="color:#1e3a5f;">Book an Assessment</a>
+            <a href="tel:+61863810030" class="border-2 border-white text-white font-semibold px-6 py-3 rounded text-sm">Call +61 8 6381 0030</a>
+          </div>
+        </section>
+
+      </main>
+
+      <div id="footer-placeholder-m"></div>
+    </div>
+    <!-- end MOBILE CANVAS -->
+
+  </div>
+  <script src="./assets/site.js"></script>
+</body>
+</html>

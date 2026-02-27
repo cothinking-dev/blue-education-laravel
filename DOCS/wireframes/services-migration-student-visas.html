@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Visas — Blue Education Wireframe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/tokens.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: { extend: {
+        colors: {
+          primary:   { DEFAULT: 'var(--primary)',   foreground: 'var(--primary-foreground)' },
+          secondary: { DEFAULT: 'var(--secondary)', foreground: 'var(--secondary-foreground)' },
+          base:      { DEFAULT: 'var(--base)',      foreground: 'var(--base-foreground)' },
+          muted:     { DEFAULT: 'var(--muted)',     foreground: 'var(--muted-foreground)' },
+        },
+        borderRadius: {
+          corner: 'var(--corner)', 'corner-lg': 'var(--corner-lg)', 'corner-full': 'var(--corner-full)',
+        },
+        fontFamily: { sans: ['Inter', 'sans-serif'] },
+      }}
+    }
+  </script>
+  <style>
+    .img-ph {
+      background-color: #d1d5db;
+      background-image: repeating-linear-gradient(-55deg, transparent, transparent 8px, rgba(0,0,0,0.04) 8px, rgba(0,0,0,0.04) 9px);
+    }
+    .wf-bar {
+      font-family: 'Courier New', monospace; font-size: 9px; font-weight: bold;
+      text-transform: uppercase; letter-spacing: 0.12em; color: #3b82f6; background: #eff6ff;
+      border-top: 1px solid #bfdbfe; border-bottom: 1px solid #bfdbfe; padding: 4px 32px;
+    }
+  </style>
+</head>
+<body class="bg-neutral-300 py-8 font-sans">
+  <div class="flex gap-8 items-start mx-auto px-8" style="width: max-content;">
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         DESKTOP CANVAS — 1280px
+    ═══════════════════════════════════════════════════════════════ -->
+    <div style="width:1280px; background:var(--base); color:var(--base-foreground);" class="shadow-2xl shrink-0">
+
+      <div class="flex items-center justify-between px-8 py-2 border-b-2 border-amber-300 bg-amber-50 dark:border-amber-800 dark:bg-amber-950">
+        <div class="flex items-center gap-3">
+          <span class="font-bold text-amber-800 tracking-widest text-sm dark:text-amber-200">WIREFRAME</span>
+          <span class="text-amber-700 text-sm dark:text-amber-300">·  Blue Education  ·  Student Visas  ·  Desktop 1280px</span>
+        </div>
+        <span class="text-amber-500 font-mono text-xs dark:text-amber-400">Layout &amp; copy reference — not final design</span>
+      </div>
+
+      <div id="nav-placeholder"></div>
+
+      <main id="main-content">
+
+        <!-- ══════════════════════════════════════════════════
+             §1  HERO
+        ══════════════════════════════════════════════════ -->
+        <div class="wf-bar">§1 · Hero — Full-width, left-aligned text overlay</div>
+        <section aria-labelledby="hero-h">
+          <div class="img-ph relative flex flex-col justify-end" style="height:400px; background-color:#374151;">
+            <div class="absolute inset-0" style="background:rgba(17,24,39,0.60);"></div>
+            <div class="relative z-10 px-16 pb-14" style="max-width:700px;">
+              <nav aria-label="Breadcrumb" class="mb-4">
+                <ol class="flex items-center gap-2 text-sm text-gray-300 dark:text-slate-500">
+                  <li><a href="./index.html" class="hover:underline">Home</a></li>
+                  <li>/</li>
+                  <li><a href="./services.html" class="hover:underline">Services</a></li>
+                  <li>/</li>
+                  <li><a href="./services-migration.html" class="hover:underline">Migration</a></li>
+                  <li>/</li>
+                  <li class="text-white font-medium">Student Visas</li>
+                </ol>
+              </nav>
+              <p class="text-pretty font-mono text-gray-400 mb-3 dark:text-slate-400" style="font-size:10px;">[BG IMAGE: Student with passport and acceptance letter]</p>
+              <h1 id="hero-h" class="text-pretty text-4xl font-bold text-white mb-4 leading-tight">Study in Australia starts with the right visa application.</h1>
+              <p class="text-pretty text-xl text-gray-200">Registered migration agents handle your Subclass 500 application end to end — eligibility, documents, GTE statement, and lodgement.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- ══════════════════════════════════════════════════
+             §2  WHAT IS A STUDENT VISA?
+        ══════════════════════════════════════════════════ -->
+        <div class="wf-bar">§2 · What Is a Student Visa? — 60/40 text left, key facts card right</div>
+        <section aria-labelledby="what-is-h" class="px-16 py-16 bg-white dark:bg-slate-800">
+          <div class="flex gap-12 items-start">
+            <!-- Text — 60% -->
+            <div style="flex:3;">
+              <h2 id="what-is-h" class="text-pretty text-3xl font-bold text-gray-900 mb-6 dark:text-slate-100">What Is a Student Visa?</h2>
+              <p class="text-pretty text-gray-600 leading-relaxed mb-4 dark:text-slate-400">The Student Visa (Subclass 500) allows international students to study full-time at a registered Australian institution — covering courses from primary school through to doctoral programmes.</p>
+              <p class="text-pretty text-gray-600 leading-relaxed dark:text-slate-400">A well-prepared application moves through the system cleanly. Your advisor handles the document compilation, GTE statement, and lodgement so nothing gets missed.</p>
+            </div>
+            <!-- Key Facts card — 40% -->
+            <div style="flex:2;">
+              <div class="bg-blue-50 border border-blue-200 rounded-xl p-7 dark:bg-blue-950 dark:border-blue-800">
+                <h3 class="text-pretty font-bold text-gray-900 mb-5 dark:text-slate-100">Key Facts — Subclass 500</h3>
+                <dl class="space-y-3 text-sm">
+                  <div class="flex justify-between">
+                    <dt class="text-gray-500 dark:text-slate-500">Visa subclass</dt>
+                    <dd class="font-semibold text-gray-800 dark:text-slate-200">500</dd>
+                  </div>
+                  <div class="flex justify-between border-t border-blue-100 pt-3">
+                    <dt class="text-gray-500 dark:text-slate-500">Duration</dt>
+                    <dd class="font-semibold text-gray-800 dark:text-slate-200">Course length + buffer</dd>
+                  </div>
+                  <div class="flex justify-between border-t border-blue-100 pt-3">
+                    <dt class="text-gray-500 dark:text-slate-500">Work rights</dt>
+                    <dd class="font-semibold text-gray-800 text-right dark:text-slate-200" style="max-width:200px;">48 hrs/fortnight; unlimited during scheduled breaks</dd>
+                  </div>
+                  <div class="flex justify-between border-t border-blue-100 pt-3">
+                    <dt class="text-gray-500 dark:text-slate-500">Family inclusion</dt>
+                    <dd class="font-semibold text-gray-800 dark:text-slate-200">Eligible dependants</dd>
+                  </div>
+                  <div class="flex justify-between border-t border-blue-100 pt-3">
+                    <dt class="text-gray-500 dark:text-slate-500">Health insurance</dt>
+                    <dd class="font-semibold text-gray-800 dark:text-slate-200">OSHC mandatory</dd>
+                  </div>
+                  <div class="flex justify-between border-t border-blue-100 pt-3">
+                    <dt class="text-gray-500 dark:text-slate-500">Typical processing</dt>
+                    <dd class="font-semibold text-gray-800 dark:text-slate-200">4–8 weeks</dd>
+                  </div>
+                </dl>
+                <p class="text-pretty text-xs text-gray-500 mt-4 leading-relaxed dark:text-slate-500">OSHC is mandatory for the duration of your visa. We arrange OSHC through our <a href="./services-student-support.html" class="text-blue-600 hover:underline dark:text-blue-400">student support services →</a></p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ══════════════════════════════════════════════════
+             §3  HOW WE HELP — 5-step vertical timeline
+        ══════════════════════════════════════════════════ -->
+        <div class="wf-bar">§3 · How We Help — vertical 5-step timeline</div>
+        <section aria-labelledby="how-we-help-h" class="px-16 py-16 bg-gray-50 dark:bg-slate-900">
+          <h2 id="how-we-help-h" class="text-pretty text-3xl font-bold text-gray-900 mb-12 dark:text-slate-100">How We Help</h2>
+          <div class="max-w-2xl space-y-0">
+
+            <div class="flex gap-6">
+              <div class="flex flex-col items-center">
+                <div class="w-10 h-10 bg-blue-700 text-white rounded-full flex items-center justify-center font-bold text-sm shrink-0">1</div>
+                <div class="w-0.5 bg-blue-200 flex-1 my-2"></div>
+              </div>
+              <div class="pb-10">
+                <h3 class="text-pretty font-bold text-gray-900 text-lg mb-1 dark:text-slate-100">Eligibility Assessment</h3>
+                <p class="text-pretty text-gray-600 text-sm leading-relaxed dark:text-slate-400">We review your situation and confirm you meet the requirements before any application work begins.</p>
+              </div>
+            </div>
+
+            <div class="flex gap-6">
+              <div class="flex flex-col items-center">
+                <div class="w-10 h-10 bg-blue-700 text-white rounded-full flex items-center justify-center font-bold text-sm shrink-0">2</div>
+                <div class="w-0.5 bg-blue-200 flex-1 my-2"></div>
+              </div>
+              <div class="pb-10">
+                <h3 class="text-pretty font-bold text-gray-900 text-lg mb-1 dark:text-slate-100">Document Compilation</h3>
+                <p class="text-pretty text-gray-600 text-sm leading-relaxed dark:text-slate-400">Academic transcripts, financial evidence, health checks, character documents — we provide the checklist and verify everything.</p>
+              </div>
+            </div>
+
+            <div class="flex gap-6">
+              <div class="flex flex-col items-center">
+                <div class="w-10 h-10 bg-blue-700 text-white rounded-full flex items-center justify-center font-bold text-sm shrink-0">3</div>
+                <div class="w-0.5 bg-blue-200 flex-1 my-2"></div>
+              </div>
+              <div class="pb-10">
+                <h3 class="text-pretty font-bold text-gray-900 text-lg mb-1 dark:text-slate-100">GTE Statement</h3>
+                <p class="text-pretty text-gray-600 text-sm leading-relaxed dark:text-slate-400">The Genuine Temporary Entrant statement is the Department of Home Affairs' way of assessing whether you genuinely intend to study and return home. We help you prepare one that's clear, credible, and specific to your situation.</p>
+              </div>
+            </div>
+
+            <div class="flex gap-6">
+              <div class="flex flex-col items-center">
+                <div class="w-10 h-10 bg-blue-700 text-white rounded-full flex items-center justify-center font-bold text-sm shrink-0">4</div>
+                <div class="w-0.5 bg-blue-200 flex-1 my-2"></div>
+              </div>
+              <div class="pb-10">
+                <h3 class="text-pretty font-bold text-gray-900 text-lg mb-1 dark:text-slate-100">Application Lodgement</h3>
+                <p class="text-pretty text-gray-600 text-sm leading-relaxed dark:text-slate-400">We complete and submit your application with all supporting documents properly formatted and certified.</p>
+              </div>
+            </div>
+
+            <div class="flex gap-6">
+              <div class="flex flex-col items-center">
+                <div class="w-10 h-10 bg-blue-700 text-white rounded-full flex items-center justify-center font-bold text-sm shrink-0">5</div>
+              </div>
+              <div class="pb-4">
+                <h3 class="text-pretty font-bold text-gray-900 text-lg mb-1 dark:text-slate-100">After Lodgement</h3>
+                <p class="text-pretty text-gray-600 text-sm leading-relaxed mb-2 dark:text-slate-400">We monitor your application and respond to any Department of Home Affairs requests on your behalf — until your visa is granted.</p>
+                <a href="./services-migration-graduate-work.html" class="text-blue-600 text-sm hover:underline dark:text-blue-400">Once granted: Graduate work visas →</a>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- ══════════════════════════════════════════════════
+             §4  REQUIREMENTS SNAPSHOT
+        ══════════════════════════════════════════════════ -->
+        <div class="wf-bar">§4 · Requirements Snapshot — 2-column icon + text feature grid</div>
+        <section aria-labelledby="requirements-h" class="px-16 py-16 bg-white dark:bg-slate-800">
+          <h2 id="requirements-h" class="text-pretty text-3xl font-bold text-gray-900 mb-10 dark:text-slate-100">Requirements Snapshot</h2>
+          <div class="grid grid-cols-2 gap-7">
+
+            <div class="flex gap-5 items-start">
+              <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center shrink-0 dark:bg-blue-900">
+                <span class="font-mono text-blue-600 text-xs dark:text-blue-400">[icon]</span>
+              </div>
+              <div>
+                <h3 class="text-pretty font-bold text-gray-900 mb-2 dark:text-slate-100">Financial Capacity</h3>
+                <p class="text-pretty text-gray-600 text-sm leading-relaxed dark:text-slate-400">Evidence covering tuition, living costs, and travel expenses for the duration of your studies.</p>
+              </div>
+            </div>
+
+            <div class="flex gap-5 items-start">
+              <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center shrink-0 dark:bg-blue-900">
+                <span class="font-mono text-blue-600 text-xs dark:text-blue-400">[icon]</span>
+              </div>
+              <div>
+                <h3 class="text-pretty font-bold text-gray-900 mb-2 dark:text-slate-100">English Proficiency</h3>
+                <p class="text-pretty text-gray-600 text-sm leading-relaxed dark:text-slate-400"><a href="./services-education-english.html" class="text-blue-600 hover:underline dark:text-blue-400">IELTS, TOEFL, PTE, or Cambridge</a> results meeting course and visa requirements.</p>
+              </div>
+            </div>
+
+            <div class="flex gap-5 items-start">
+              <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center shrink-0 dark:bg-blue-900">
+                <span class="font-mono text-blue-600 text-xs dark:text-blue-400">[icon]</span>
+              </div>
+              <div>
+                <h3 class="text-pretty font-bold text-gray-900 mb-2 dark:text-slate-100">Health &amp; Character</h3>
+                <p class="text-pretty text-gray-600 text-sm leading-relaxed dark:text-slate-400">Medical examination ($240–$380) and police clearance certificates from countries you've lived in.</p>
+              </div>
+            </div>
+
+            <div class="flex gap-5 items-start">
+              <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center shrink-0 dark:bg-blue-900">
+                <span class="font-mono text-blue-600 text-xs dark:text-blue-400">[icon]</span>
+              </div>
+              <div>
+                <h3 class="text-pretty font-bold text-gray-900 mb-2 dark:text-slate-100">Confirmation of Enrolment</h3>
+                <p class="text-pretty text-gray-600 text-sm leading-relaxed dark:text-slate-400">A valid CoE from a CRICOS-registered institution. We help you secure enrolment through our <a href="./services-education.html" class="text-blue-600 hover:underline dark:text-blue-400">education services →</a></p>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- ══════════════════════════════════════════════════
+             §5  WHAT COMES NEXT?
+        ══════════════════════════════════════════════════ -->
+        <div class="wf-bar">§5 · What Comes Next? — 2 linked cards</div>
+        <section aria-labelledby="next-h" class="px-16 py-14 bg-gray-50 dark:bg-slate-900">
+          <h2 id="next-h" class="text-pretty text-2xl font-bold text-gray-900 mb-4 dark:text-slate-100">What Comes Next?</h2>
+          <p class="text-pretty text-gray-600 mb-8 dark:text-slate-400">Once you're enrolled and studying, the next milestone is what happens after graduation.</p>
+          <div class="flex gap-6">
+            <a href="./services-migration-graduate-work.html" class="flex-1 bg-white border border-gray-200 rounded-xl p-6 hover:shadow-md hover:border-blue-300 transition-all block dark:bg-slate-800 dark:border-slate-700">
+              <h3 class="text-pretty font-bold text-gray-900 mb-2 dark:text-slate-100">Post-study work visas →</h3>
+              <p class="text-pretty text-gray-600 text-sm dark:text-slate-400">Your options after graduation — staying in Australia on a work visa.</p>
+            </a>
+            <a href="./services-student-support.html" class="flex-1 bg-white border border-gray-200 rounded-xl p-6 hover:shadow-md hover:border-blue-300 transition-all block dark:bg-slate-800 dark:border-slate-700">
+              <h3 class="text-pretty font-bold text-gray-900 mb-2 dark:text-slate-100">Support during your studies →</h3>
+              <p class="text-pretty text-gray-600 text-sm dark:text-slate-400">Accommodation, welfare monitoring, and ongoing advisor support.</p>
+            </a>
+          </div>
+        </section>
+
+        <!-- ══════════════════════════════════════════════════
+             §6  CTA BANNER
+        ══════════════════════════════════════════════════ -->
+        <div class="wf-bar">§6 · CTA Banner</div>
+        <section aria-labelledby="cta-h" class="py-16 px-8 text-center" style="background:#1e3a5f;">
+          <h2 id="cta-h" class="text-pretty text-4xl font-bold text-white mb-4">Ready to apply?</h2>
+          <p class="text-pretty text-lg mb-8 mx-auto" style="color:#93c5fd; max-width:540px;">We assess your eligibility, give you a clear document checklist, and lodge your application. No guesswork on your end.</p>
+          <div class="flex gap-4 justify-center">
+            <a href="./contact.html" class="bg-white font-bold px-8 py-3 rounded text-base hover:bg-gray-100 dark:bg-slate-800" style="color:#1e3a5f;">Start My Student Visa Application</a>
+            <a href="tel:+61863810030" class="border-2 border-white text-white font-semibold px-8 py-3 rounded text-base">Call +61 8 6381 0030</a>
+          </div>
+        </section>
+
+      </main>
+
+      <div id="footer-placeholder"></div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         MOBILE CANVAS — 390px
+    ═══════════════════════════════════════════════════════════════ -->
+    <div style="width:390px; background:var(--base); color:var(--base-foreground);" class="shadow-2xl shrink-0 sticky top-8">
+      <div class="flex items-center justify-between px-4 py-2 border-b-2 border-amber-300 bg-amber-50 dark:border-amber-800 dark:bg-amber-950">
+        <span class="font-bold text-amber-800 tracking-widest text-xs dark:text-amber-200">WIREFRAME</span>
+        <span class="text-amber-600 font-mono" style="font-size:8px;">Mobile 390px</span>
+      </div>
+
+      <div id="nav-placeholder-m"></div>
+
+      <main>
+
+        <!-- §1 Hero -->
+        <div class="wf-bar">§1 · Hero</div>
+        <section class="img-ph relative" style="height:260px; background-color:#374151;">
+          <div class="absolute inset-0" style="background:rgba(17,24,39,0.65);"></div>
+          <div class="relative z-10 flex flex-col justify-end h-full px-4 pb-8">
+            <nav aria-label="Breadcrumb" class="mb-3">
+              <ol class="flex items-center gap-1 text-xs text-gray-300 dark:text-slate-500">
+                <li><a href="./services-migration.html">Migration</a></li><li>/</li>
+                <li class="text-white">Student Visas</li>
+              </ol>
+            </nav>
+            <h1 class="text-pretty text-2xl font-bold text-white mb-2 leading-tight">Study in Australia starts with the right visa application.</h1>
+            <p class="text-pretty text-sm text-gray-300 dark:text-slate-500">Subclass 500 — eligibility, documents, GTE, lodgement.</p>
+          </div>
+        </section>
+
+        <!-- §2 What Is a Student Visa -->
+        <div class="wf-bar">§2 · What Is a Student Visa?</div>
+        <section class="px-4 py-8 bg-white dark:bg-slate-800">
+          <h2 class="text-pretty text-xl font-bold text-gray-900 mb-4 dark:text-slate-100">What Is a Student Visa?</h2>
+          <p class="text-pretty text-sm text-gray-600 mb-5 dark:text-slate-400">The Student Visa (Subclass 500) allows full-time study at a registered Australian institution — from primary school to doctoral programmes.</p>
+          <div class="bg-blue-50 border border-blue-200 rounded-xl p-5 dark:bg-blue-950 dark:border-blue-800">
+            <h3 class="text-pretty font-bold text-gray-900 text-sm mb-4 dark:text-slate-100">Key Facts — Subclass 500</h3>
+            <div class="space-y-2 text-xs">
+              <div class="flex justify-between"><span class="text-gray-500 dark:text-slate-500">Visa subclass</span><span class="font-semibold text-gray-800 dark:text-slate-200">500</span></div>
+              <div class="flex justify-between border-t border-blue-100 pt-2"><span class="text-gray-500 dark:text-slate-500">Duration</span><span class="font-semibold text-gray-800 dark:text-slate-200">Course length + buffer</span></div>
+              <div class="flex justify-between border-t border-blue-100 pt-2"><span class="text-gray-500 dark:text-slate-500">Work rights</span><span class="font-semibold text-gray-800 dark:text-slate-200">48 hrs/fortnight</span></div>
+              <div class="flex justify-between border-t border-blue-100 pt-2"><span class="text-gray-500 dark:text-slate-500">Health insurance</span><span class="font-semibold text-gray-800 dark:text-slate-200">OSHC mandatory</span></div>
+              <div class="flex justify-between border-t border-blue-100 pt-2"><span class="text-gray-500 dark:text-slate-500">Processing</span><span class="font-semibold text-gray-800 dark:text-slate-200">4–8 weeks</span></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- §3 How We Help -->
+        <div class="wf-bar">§3 · How We Help</div>
+        <section class="px-4 py-8 bg-gray-50 dark:bg-slate-900">
+          <h2 class="text-pretty text-xl font-bold text-gray-900 mb-6 dark:text-slate-100">How We Help</h2>
+          <div class="space-y-0">
+            <div class="flex gap-4 pb-5">
+              <div class="flex flex-col items-center">
+                <div class="w-8 h-8 bg-blue-700 text-white rounded-full flex items-center justify-center text-xs font-bold shrink-0">1</div>
+                <div class="w-0.5 bg-blue-200 flex-1 mt-2"></div>
+              </div>
+              <div>
+                <h3 class="text-pretty font-bold text-gray-900 text-sm mb-1 dark:text-slate-100">Eligibility Assessment</h3>
+                <p class="text-pretty text-xs text-gray-600 dark:text-slate-400">We confirm you meet requirements before any application work begins.</p>
+              </div>
+            </div>
+            <div class="flex gap-4 pb-5">
+              <div class="flex flex-col items-center">
+                <div class="w-8 h-8 bg-blue-700 text-white rounded-full flex items-center justify-center text-xs font-bold shrink-0">2</div>
+                <div class="w-0.5 bg-blue-200 flex-1 mt-2"></div>
+              </div>
+              <div>
+                <h3 class="text-pretty font-bold text-gray-900 text-sm mb-1 dark:text-slate-100">Document Compilation</h3>
+                <p class="text-pretty text-xs text-gray-600 dark:text-slate-400">Transcripts, financial evidence, health checks, character documents.</p>
+              </div>
+            </div>
+            <div class="flex gap-4 pb-5">
+              <div class="flex flex-col items-center">
+                <div class="w-8 h-8 bg-blue-700 text-white rounded-full flex items-center justify-center text-xs font-bold shrink-0">3</div>
+                <div class="w-0.5 bg-blue-200 flex-1 mt-2"></div>
+              </div>
+              <div>
+                <h3 class="text-pretty font-bold text-gray-900 text-sm mb-1 dark:text-slate-100">GTE Statement</h3>
+                <p class="text-pretty text-xs text-gray-600 dark:text-slate-400">Genuine Temporary Entrant statement — clear, credible, specific to your situation.</p>
+              </div>
+            </div>
+            <div class="flex gap-4 pb-5">
+              <div class="flex flex-col items-center">
+                <div class="w-8 h-8 bg-blue-700 text-white rounded-full flex items-center justify-center text-xs font-bold shrink-0">4</div>
+                <div class="w-0.5 bg-blue-200 flex-1 mt-2"></div>
+              </div>
+              <div>
+                <h3 class="text-pretty font-bold text-gray-900 text-sm mb-1 dark:text-slate-100">Application Lodgement</h3>
+                <p class="text-pretty text-xs text-gray-600 dark:text-slate-400">Complete and submit with all documents properly formatted.</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <div class="w-8 h-8 bg-blue-700 text-white rounded-full flex items-center justify-center text-xs font-bold shrink-0">5</div>
+              <div>
+                <h3 class="text-pretty font-bold text-gray-900 text-sm mb-1 dark:text-slate-100">After Lodgement</h3>
+                <p class="text-pretty text-xs text-gray-600 mb-1 dark:text-slate-400">We monitor and respond to DHA requests until your visa is granted.</p>
+                <a href="./services-migration-graduate-work.html" class="text-blue-600 text-xs dark:text-blue-400">Graduate work visas →</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- §4 Requirements -->
+        <div class="wf-bar">§4 · Requirements Snapshot</div>
+        <section class="px-4 py-8 bg-white dark:bg-slate-800">
+          <h2 class="text-pretty text-xl font-bold text-gray-900 mb-5 dark:text-slate-100">Requirements</h2>
+          <div class="space-y-4">
+            <div class="border border-gray-200 rounded-lg p-4 bg-gray-50 dark:border-slate-700 dark:bg-slate-900">
+              <h3 class="text-pretty font-bold text-gray-900 text-sm mb-1 dark:text-slate-100">Financial Capacity</h3>
+              <p class="text-pretty text-xs text-gray-600 dark:text-slate-400">Tuition, living costs, and travel for the duration of your studies.</p>
+            </div>
+            <div class="border border-gray-200 rounded-lg p-4 bg-gray-50 dark:border-slate-700 dark:bg-slate-900">
+              <h3 class="text-pretty font-bold text-gray-900 text-sm mb-1 dark:text-slate-100">English Proficiency</h3>
+              <p class="text-pretty text-xs text-gray-600 dark:text-slate-400">IELTS, TOEFL, PTE, or Cambridge. Results meeting course and visa requirements.</p>
+            </div>
+            <div class="border border-gray-200 rounded-lg p-4 bg-gray-50 dark:border-slate-700 dark:bg-slate-900">
+              <h3 class="text-pretty font-bold text-gray-900 text-sm mb-1 dark:text-slate-100">Health &amp; Character</h3>
+              <p class="text-pretty text-xs text-gray-600 dark:text-slate-400">Medical exam ($240–$380) and police clearance from countries you've lived in.</p>
+            </div>
+            <div class="border border-gray-200 rounded-lg p-4 bg-gray-50 dark:border-slate-700 dark:bg-slate-900">
+              <h3 class="text-pretty font-bold text-gray-900 text-sm mb-1 dark:text-slate-100">Confirmation of Enrolment</h3>
+              <p class="text-pretty text-xs text-gray-600 dark:text-slate-400">Valid CoE from a CRICOS-registered institution. We help secure enrolment.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- §5 What Comes Next -->
+        <div class="wf-bar">§5 · What Comes Next?</div>
+        <section class="px-4 py-8 bg-gray-50 dark:bg-slate-900">
+          <h2 class="text-pretty text-xl font-bold text-gray-900 mb-4 dark:text-slate-100">What Comes Next?</h2>
+          <div class="space-y-3">
+            <a href="./services-migration-graduate-work.html" class="block bg-white border border-gray-200 rounded-xl p-5 hover:border-blue-300 dark:bg-slate-800 dark:border-slate-700">
+              <h3 class="text-pretty font-bold text-gray-900 text-sm mb-1 dark:text-slate-100">Post-study work visas →</h3>
+              <p class="text-pretty text-xs text-gray-600 dark:text-slate-400">Your options after graduation — staying in Australia on a work visa.</p>
+            </a>
+            <a href="./services-student-support.html" class="block bg-white border border-gray-200 rounded-xl p-5 hover:border-blue-300 dark:bg-slate-800 dark:border-slate-700">
+              <h3 class="text-pretty font-bold text-gray-900 text-sm mb-1 dark:text-slate-100">Support during your studies →</h3>
+              <p class="text-pretty text-xs text-gray-600 dark:text-slate-400">Accommodation, welfare, and advisor support throughout.</p>
+            </a>
+          </div>
+        </section>
+
+        <!-- §6 CTA -->
+        <div class="wf-bar">§6 · CTA Banner</div>
+        <section class="py-12 px-4 text-center" style="background:#1e3a5f;">
+          <h2 class="text-pretty text-2xl font-bold text-white mb-3">Ready to apply?</h2>
+          <p class="text-pretty text-sm mb-6" style="color:#93c5fd;">We assess eligibility, give you a checklist, and lodge your application. No guesswork.</p>
+          <div class="space-y-3">
+            <a href="./contact.html" class="block bg-white font-bold px-6 py-3 rounded text-sm dark:bg-slate-800" style="color:#1e3a5f;">Start My Student Visa Application</a>
+            <a href="tel:+61863810030" class="block border-2 border-white text-white font-semibold px-6 py-3 rounded text-sm">Call +61 8 6381 0030</a>
+          </div>
+        </section>
+
+      </main>
+
+      <div id="footer-placeholder-m"></div>
+    </div>
+
+  </div>
+  <script src="./assets/site.js"></script>
+</body>
+</html>

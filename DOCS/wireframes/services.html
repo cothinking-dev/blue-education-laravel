@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services — Blue Education Wireframe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/tokens.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: { extend: {
+        colors: {
+          primary:   { DEFAULT: 'var(--primary)',   foreground: 'var(--primary-foreground)' },
+          secondary: { DEFAULT: 'var(--secondary)', foreground: 'var(--secondary-foreground)' },
+          base:      { DEFAULT: 'var(--base)',      foreground: 'var(--base-foreground)' },
+          muted:     { DEFAULT: 'var(--muted)',     foreground: 'var(--muted-foreground)' },
+        },
+        borderRadius: {
+          corner: 'var(--corner)', 'corner-lg': 'var(--corner-lg)', 'corner-full': 'var(--corner-full)',
+        },
+        fontFamily: { sans: ['Inter', 'sans-serif'] },
+      }}
+    }
+  </script>
+  <style>
+    .img-ph {
+      background-color: #d1d5db;
+      background-image: repeating-linear-gradient(-55deg, transparent, transparent 8px, rgba(0,0,0,0.04) 8px, rgba(0,0,0,0.04) 9px);
+    }
+    .wf-bar {
+      font-family: 'Courier New', monospace; font-size: 9px; font-weight: bold;
+      text-transform: uppercase; letter-spacing: 0.12em; color: #3b82f6; background: #eff6ff;
+      border-top: 1px solid #bfdbfe; border-bottom: 1px solid #bfdbfe; padding: 4px 32px;
+    }
+  </style>
+</head>
+<body class="bg-neutral-300 py-8 font-sans">
+  <div class="flex gap-8 items-start mx-auto px-8" style="width: max-content;">
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         DESKTOP CANVAS — 1280px
+    ═══════════════════════════════════════════════════════════════ -->
+    <div style="width:1280px; background:var(--base); color:var(--base-foreground);" class="shadow-2xl shrink-0">
+
+      <div class="flex items-center justify-between px-8 py-2 border-b-2 border-amber-300 bg-amber-50 dark:border-amber-800 dark:bg-amber-950">
+        <div class="flex items-center gap-3">
+          <span class="font-bold text-amber-800 tracking-widest text-sm dark:text-amber-200">WIREFRAME</span>
+          <span class="text-amber-700 text-sm dark:text-amber-300">·  Blue Education  ·  Services  ·  Desktop 1280px</span>
+        </div>
+        <span class="text-amber-500 font-mono text-xs dark:text-amber-400">Layout &amp; copy reference — not final design</span>
+      </div>
+
+      <div id="nav-placeholder"></div>
+
+      <main id="main-content">
+
+        <!-- ══════════════════════════════════════════════════
+             §1  HERO
+        ══════════════════════════════════════════════════ -->
+        <div class="wf-bar">§1 · Hero — Centered text, statement headline</div>
+        <section aria-labelledby="hero-h" class="py-24 px-16 text-center" style="background:#1e3a5f;">
+          <nav aria-label="Breadcrumb" class="mb-6">
+            <ol class="flex items-center justify-center gap-2 text-sm" style="color:#93c5fd;">
+              <li><a href="./index.html" class="hover:underline">Home</a></li>
+              <li aria-hidden="true">/</li>
+              <li class="text-white font-medium">Services</li>
+            </ol>
+          </nav>
+          <h1 id="hero-h" class="text-pretty text-5xl font-bold text-white mb-6 leading-tight" style="max-width:800px; margin-left:auto; margin-right:auto;">Everything you need for Australia.<br/>Under one roof.</h1>
+          <p class="text-pretty text-xl mx-auto leading-relaxed" style="color:#93c5fd; max-width:660px;">Most agencies cover one service. We cover education, migration, career, and student support — coordinated by a single dedicated advisor.</p>
+        </section>
+
+        <!-- ══════════════════════════════════════════════════
+             §2  SERVICE CARDS
+        ══════════════════════════════════════════════════ -->
+        <div class="wf-bar">§2 · Service Cards — 4 large clickable cards linking to sub-pages</div>
+        <section aria-labelledby="services-grid-h" class="px-16 py-16 bg-white dark:bg-slate-800">
+          <h2 id="services-grid-h" class="text-pretty text-3xl font-bold text-gray-900 mb-10 text-center dark:text-slate-100">Our Services</h2>
+          <div class="grid grid-cols-2 gap-8">
+
+            <!-- Education Services -->
+            <article class="border border-gray-200 rounded-xl overflow-hidden hover:shadow-lg transition-shadow dark:border-slate-700">
+              <a href="./services-education.html" class="block">
+                <div class="img-ph flex items-end justify-start px-6 py-4" style="height:200px;" role="img" aria-label="Students on Australian university campus">
+                  <span class="font-mono text-gray-400 text-xs dark:text-slate-400">[IMAGE: University campus, diverse students]</span>
+                </div>
+                <div class="p-8">
+                  <div class="flex items-center gap-3 mb-4">
+                    <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center dark:bg-blue-900">
+                      <span class="font-mono text-blue-600 text-xs dark:text-blue-400">[icon]</span>
+                    </div>
+                    <h3 class="text-pretty text-xl font-bold text-gray-900 dark:text-slate-100">Education Services</h3>
+                  </div>
+                  <p class="text-pretty text-gray-600 mb-4 leading-relaxed dark:text-slate-400">From primary school through to postgraduate degrees. We assess your goals, match you to the right institution, handle applications and enrolment, and stay with you throughout your studies.</p>
+                  <div class="flex flex-wrap gap-2 mb-5">
+                    <span class="bg-blue-50 text-blue-700 text-xs px-3 py-1 rounded-full dark:bg-blue-950 dark:text-blue-300">School Placements</span>
+                    <span class="bg-blue-50 text-blue-700 text-xs px-3 py-1 rounded-full dark:bg-blue-950 dark:text-blue-300">English &amp; Foundation</span>
+                    <span class="bg-blue-50 text-blue-700 text-xs px-3 py-1 rounded-full dark:bg-blue-950 dark:text-blue-300">VET / TAFE</span>
+                    <span class="bg-blue-50 text-blue-700 text-xs px-3 py-1 rounded-full dark:bg-blue-950 dark:text-blue-300">University Degrees</span>
+                  </div>
+                  <span class="text-blue-600 font-semibold text-sm dark:text-blue-400">Explore Education Services →</span>
+                </div>
+              </a>
+            </article>
+
+            <!-- Migration & Visas -->
+            <article class="border border-gray-200 rounded-xl overflow-hidden hover:shadow-lg transition-shadow dark:border-slate-700">
+              <a href="./services-migration.html" class="block">
+                <div class="img-ph flex items-end justify-start px-6 py-4" style="height:200px;" role="img" aria-label="Passport and Australian visa documents">
+                  <span class="font-mono text-gray-400 text-xs dark:text-slate-400">[IMAGE: Passport, boarding pass, Australian landmarks]</span>
+                </div>
+                <div class="p-8">
+                  <div class="flex items-center gap-3 mb-4">
+                    <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center dark:bg-blue-900">
+                      <span class="font-mono text-blue-600 text-xs dark:text-blue-400">[icon]</span>
+                    </div>
+                    <h3 class="text-pretty text-xl font-bold text-gray-900 dark:text-slate-100">Migration &amp; Visas</h3>
+                  </div>
+                  <p class="text-pretty text-gray-600 mb-4 leading-relaxed dark:text-slate-400">Registered migration agents with 28 years of successful applications. Student visas, graduate work visas, employer sponsorship, and permanent residence — managed end to end.</p>
+                  <div class="flex flex-wrap gap-2 mb-5">
+                    <span class="bg-blue-50 text-blue-700 text-xs px-3 py-1 rounded-full dark:bg-blue-950 dark:text-blue-300">Student Visas</span>
+                    <span class="bg-blue-50 text-blue-700 text-xs px-3 py-1 rounded-full dark:bg-blue-950 dark:text-blue-300">Graduate Work Visas</span>
+                    <span class="bg-blue-50 text-blue-700 text-xs px-3 py-1 rounded-full dark:bg-blue-950 dark:text-blue-300">Permanent Residence</span>
+                  </div>
+                  <span class="text-blue-600 font-semibold text-sm dark:text-blue-400">Explore Migration &amp; Visas →</span>
+                </div>
+              </a>
+            </article>
+
+            <!-- Career Services -->
+            <article class="border border-gray-200 rounded-xl overflow-hidden hover:shadow-lg transition-shadow dark:border-slate-700">
+              <a href="./services-career.html" class="block">
+                <div class="img-ph flex items-end justify-start px-6 py-4" style="height:200px;" role="img" aria-label="Professional in Australian workplace">
+                  <span class="font-mono text-gray-400 text-xs dark:text-slate-400">[IMAGE: Professional in Australian office setting]</span>
+                </div>
+                <div class="p-8">
+                  <div class="flex items-center gap-3 mb-4">
+                    <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center dark:bg-blue-900">
+                      <span class="font-mono text-blue-600 text-xs dark:text-blue-400">[icon]</span>
+                    </div>
+                    <h3 class="text-pretty text-xl font-bold text-gray-900 dark:text-slate-100">Career Services</h3>
+                  </div>
+                  <p class="text-pretty text-gray-600 mb-4 leading-relaxed dark:text-slate-400">Resume writing, job placement support, interview coaching, and executive internship programmes. Connecting graduates and skilled workers to Australian employers.</p>
+                  <div class="flex flex-wrap gap-2 mb-5">
+                    <span class="bg-blue-50 text-blue-700 text-xs px-3 py-1 rounded-full dark:bg-blue-950 dark:text-blue-300">Job Placement</span>
+                    <span class="bg-blue-50 text-blue-700 text-xs px-3 py-1 rounded-full dark:bg-blue-950 dark:text-blue-300">Resume Support</span>
+                    <span class="bg-blue-50 text-blue-700 text-xs px-3 py-1 rounded-full dark:bg-blue-950 dark:text-blue-300">Executive Internships</span>
+                  </div>
+                  <span class="text-blue-600 font-semibold text-sm dark:text-blue-400">Explore Career Services →</span>
+                </div>
+              </a>
+            </article>
+
+            <!-- Student Support -->
+            <article class="border border-gray-200 rounded-xl overflow-hidden hover:shadow-lg transition-shadow dark:border-slate-700">
+              <a href="./services-student-support.html" class="block">
+                <div class="img-ph flex items-end justify-start px-6 py-4" style="height:200px;" role="img" aria-label="Student being supported by advisor">
+                  <span class="font-mono text-gray-400 text-xs dark:text-slate-400">[IMAGE: Student meeting with support advisor]</span>
+                </div>
+                <div class="p-8">
+                  <div class="flex items-center gap-3 mb-4">
+                    <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center dark:bg-blue-900">
+                      <span class="font-mono text-blue-600 text-xs dark:text-blue-400">[icon]</span>
+                    </div>
+                    <h3 class="text-pretty text-xl font-bold text-gray-900 dark:text-slate-100">Student Support</h3>
+                  </div>
+                  <p class="text-pretty text-gray-600 mb-4 leading-relaxed dark:text-slate-400">Accommodation, guardianship, welfare monitoring, and cultural adaptation. For students and parents who need peace of mind before and during their time in Australia.</p>
+                  <div class="flex flex-wrap gap-2 mb-5">
+                    <span class="bg-blue-50 text-blue-700 text-xs px-3 py-1 rounded-full dark:bg-blue-950 dark:text-blue-300">Accommodation</span>
+                    <span class="bg-blue-50 text-blue-700 text-xs px-3 py-1 rounded-full dark:bg-blue-950 dark:text-blue-300">Guardianship</span>
+                    <span class="bg-blue-50 text-blue-700 text-xs px-3 py-1 rounded-full dark:bg-blue-950 dark:text-blue-300">Welfare Support</span>
+                  </div>
+                  <span class="text-blue-600 font-semibold text-sm dark:text-blue-400">Explore Student Support →</span>
+                </div>
+              </a>
+            </article>
+
+          </div>
+        </section>
+
+        <!-- ══════════════════════════════════════════════════
+             §3  WHY INTEGRATED MATTERS
+        ══════════════════════════════════════════════════ -->
+        <div class="wf-bar">§3 · Why Integrated Matters — text block with key points</div>
+        <section aria-labelledby="integrated-h" class="px-16 py-16 bg-gray-50 dark:bg-slate-900">
+          <div class="max-w-3xl mx-auto text-center">
+            <h2 id="integrated-h" class="text-pretty text-3xl font-bold text-gray-900 mb-6 dark:text-slate-100">Why having it all under one roof matters</h2>
+            <p class="text-pretty text-gray-600 text-lg leading-relaxed mb-8 dark:text-slate-400">When your education, visa, and career planning are handled by three separate agencies, things fall through the gaps. A course change affects your visa. A visa condition affects your work rights. Your qualification affects your migration pathway. None of those are independent decisions — they're all connected.</p>
+            <p class="text-pretty text-gray-600 text-lg leading-relaxed mb-10 dark:text-slate-400">At Blue Education, your advisor knows the full picture. When you ask about a degree, they're already thinking about your visa pathway and post-graduation options. When your circumstances change, we adjust the whole plan — not just one part of it.</p>
+            <div class="grid grid-cols-3 gap-6 text-left">
+              <div class="bg-white border border-gray-200 rounded-lg p-6 dark:bg-slate-800 dark:border-slate-700">
+                <p class="text-pretty font-bold text-gray-900 mb-2 dark:text-slate-100">One advisor, full context</p>
+                <p class="text-pretty text-gray-600 text-sm dark:text-slate-400">Your advisor tracks your education, visa status, and career goals — all in one place.</p>
+              </div>
+              <div class="bg-white border border-gray-200 rounded-lg p-6 dark:bg-slate-800 dark:border-slate-700">
+                <p class="text-pretty font-bold text-gray-900 mb-2 dark:text-slate-100">Coordinated decisions</p>
+                <p class="text-pretty text-gray-600 text-sm dark:text-slate-400">Education and migration recommendations are made together, not in isolation.</p>
+              </div>
+              <div class="bg-white border border-gray-200 rounded-lg p-6 dark:bg-slate-800 dark:border-slate-700">
+                <p class="text-pretty font-bold text-gray-900 mb-2 dark:text-slate-100">Fewer surprises</p>
+                <p class="text-pretty text-gray-600 text-sm dark:text-slate-400">We identify potential issues before they become problems — across all your services.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ══════════════════════════════════════════════════
+             §4  CTA BANNER
+        ══════════════════════════════════════════════════ -->
+        <div class="wf-bar">§4 · CTA Banner — Not sure which service you need?</div>
+        <section aria-labelledby="cta-h" class="py-16 px-8 text-center" style="background:#1e3a5f;">
+          <h2 id="cta-h" class="text-pretty text-4xl font-bold text-white mb-4">Not sure which service you need?</h2>
+          <p class="text-pretty text-lg mb-8 mx-auto" style="color:#93c5fd; max-width:540px;">Most people aren't. We'll assess your situation in one conversation.</p>
+          <div class="flex gap-4 justify-center">
+            <a href="./contact.html" class="bg-white font-bold px-8 py-3 rounded text-base hover:bg-gray-100 dark:bg-slate-800" style="color:#1e3a5f;">Book a Consultation</a>
+            <a href="tel:+61863810030" class="border-2 border-white text-white font-semibold px-8 py-3 rounded text-base">Call +61 8 6381 0030</a>
+          </div>
+        </section>
+
+      </main>
+
+      <div id="footer-placeholder"></div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         MOBILE CANVAS — 390px
+    ═══════════════════════════════════════════════════════════════ -->
+    <div style="width:390px; background:var(--base); color:var(--base-foreground);" class="shadow-2xl shrink-0 sticky top-8">
+      <div class="flex items-center justify-between px-4 py-2 border-b-2 border-amber-300 bg-amber-50 dark:border-amber-800 dark:bg-amber-950">
+        <span class="font-bold text-amber-800 tracking-widest text-xs dark:text-amber-200">WIREFRAME</span>
+        <span class="text-amber-600 font-mono" style="font-size:8px;">Mobile 390px</span>
+      </div>
+
+      <div id="nav-placeholder-m"></div>
+
+      <main>
+
+        <!-- §1 Hero -->
+        <div class="wf-bar">§1 · Hero</div>
+        <section class="py-14 px-4 text-center" style="background:#1e3a5f;">
+          <nav aria-label="Breadcrumb" class="mb-4">
+            <ol class="flex items-center justify-center gap-1 text-xs" style="color:#93c5fd;">
+              <li><a href="./index.html" class="hover:underline">Home</a></li>
+              <li>/</li>
+              <li class="text-white">Services</li>
+            </ol>
+          </nav>
+          <h1 class="text-pretty text-3xl font-bold text-white mb-4 leading-tight">Everything you need for Australia. Under one roof.</h1>
+          <p class="text-pretty text-sm leading-relaxed" style="color:#93c5fd;">Most agencies cover one service. We cover education, migration, career, and student support — coordinated by one advisor.</p>
+        </section>
+
+        <!-- §2 Service Cards — stacked -->
+        <div class="wf-bar">§2 · Service Cards</div>
+        <section class="px-4 py-8 bg-white space-y-5 dark:bg-slate-800">
+          <h2 class="text-pretty text-xl font-bold text-gray-900 mb-5 dark:text-slate-100">Our Services</h2>
+
+          <article class="border border-gray-200 rounded-xl overflow-hidden dark:border-slate-700">
+            <a href="./services-education.html" class="block">
+              <div class="img-ph flex items-end px-4 py-3" style="height:140px;" role="img" aria-label="University campus students">
+                <span class="font-mono text-gray-400 text-xs dark:text-slate-400">[IMAGE: University campus]</span>
+              </div>
+              <div class="p-5">
+                <h3 class="text-pretty text-base font-bold text-gray-900 mb-2 dark:text-slate-100">Education Services</h3>
+                <p class="text-pretty text-sm text-gray-600 mb-3 dark:text-slate-400">School to PhD — we match you to the right institution and handle the rest.</p>
+                <span class="text-blue-600 font-semibold text-sm dark:text-blue-400">Explore →</span>
+              </div>
+            </a>
+          </article>
+
+          <article class="border border-gray-200 rounded-xl overflow-hidden dark:border-slate-700">
+            <a href="./services-migration.html" class="block">
+              <div class="img-ph flex items-end px-4 py-3" style="height:140px;" role="img" aria-label="Passport and visa documents">
+                <span class="font-mono text-gray-400 text-xs dark:text-slate-400">[IMAGE: Passport, visa]</span>
+              </div>
+              <div class="p-5">
+                <h3 class="text-pretty text-base font-bold text-gray-900 mb-2 dark:text-slate-100">Migration &amp; Visas</h3>
+                <p class="text-pretty text-sm text-gray-600 mb-3 dark:text-slate-400">Student visas to permanent residence — registered agents, end to end.</p>
+                <span class="text-blue-600 font-semibold text-sm dark:text-blue-400">Explore →</span>
+              </div>
+            </a>
+          </article>
+
+          <article class="border border-gray-200 rounded-xl overflow-hidden dark:border-slate-700">
+            <a href="./services-career.html" class="block">
+              <div class="img-ph flex items-end px-4 py-3" style="height:140px;" role="img" aria-label="Professional in Australian office">
+                <span class="font-mono text-gray-400 text-xs dark:text-slate-400">[IMAGE: Australian office]</span>
+              </div>
+              <div class="p-5">
+                <h3 class="text-pretty text-base font-bold text-gray-900 mb-2 dark:text-slate-100">Career Services</h3>
+                <p class="text-pretty text-sm text-gray-600 mb-3 dark:text-slate-400">Job placement, resume support, and executive internships.</p>
+                <span class="text-blue-600 font-semibold text-sm dark:text-blue-400">Explore →</span>
+              </div>
+            </a>
+          </article>
+
+          <article class="border border-gray-200 rounded-xl overflow-hidden dark:border-slate-700">
+            <a href="./services-student-support.html" class="block">
+              <div class="img-ph flex items-end px-4 py-3" style="height:140px;" role="img" aria-label="Student support advisor">
+                <span class="font-mono text-gray-400 text-xs dark:text-slate-400">[IMAGE: Advisor with student]</span>
+              </div>
+              <div class="p-5">
+                <h3 class="text-pretty text-base font-bold text-gray-900 mb-2 dark:text-slate-100">Student Support</h3>
+                <p class="text-pretty text-sm text-gray-600 mb-3 dark:text-slate-400">Accommodation, guardianship, and welfare for students in Australia.</p>
+                <span class="text-blue-600 font-semibold text-sm dark:text-blue-400">Explore →</span>
+              </div>
+            </a>
+          </article>
+        </section>
+
+        <!-- §3 Why integrated -->
+        <div class="wf-bar">§3 · Why Integrated Matters</div>
+        <section class="px-4 py-8 bg-gray-50 dark:bg-slate-900">
+          <h2 class="text-pretty text-xl font-bold text-gray-900 mb-4 dark:text-slate-100">Why having it all under one roof matters</h2>
+          <p class="text-pretty text-sm text-gray-600 leading-relaxed mb-4 dark:text-slate-400">When your education, visa, and career planning are handled by three separate agencies, things fall through the gaps. At Blue Education, your advisor knows the full picture.</p>
+          <div class="space-y-3">
+            <div class="bg-white border border-gray-200 rounded p-4 dark:bg-slate-800 dark:border-slate-700">
+              <p class="text-pretty font-semibold text-gray-900 text-sm mb-1 dark:text-slate-100">One advisor, full context</p>
+              <p class="text-pretty text-xs text-gray-600 dark:text-slate-400">Your advisor tracks education, visa status, and career goals — all in one place.</p>
+            </div>
+            <div class="bg-white border border-gray-200 rounded p-4 dark:bg-slate-800 dark:border-slate-700">
+              <p class="text-pretty font-semibold text-gray-900 text-sm mb-1 dark:text-slate-100">Coordinated decisions</p>
+              <p class="text-pretty text-xs text-gray-600 dark:text-slate-400">Education and migration recommendations are made together, not in isolation.</p>
+            </div>
+            <div class="bg-white border border-gray-200 rounded p-4 dark:bg-slate-800 dark:border-slate-700">
+              <p class="text-pretty font-semibold text-gray-900 text-sm mb-1 dark:text-slate-100">Fewer surprises</p>
+              <p class="text-pretty text-xs text-gray-600 dark:text-slate-400">We identify potential issues before they become problems.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- §4 CTA -->
+        <div class="wf-bar">§4 · CTA Banner</div>
+        <section class="py-12 px-4 text-center" style="background:#1e3a5f;">
+          <h2 class="text-pretty text-2xl font-bold text-white mb-3">Not sure which service you need?</h2>
+          <p class="text-pretty text-sm mb-6" style="color:#93c5fd;">Most people aren't. We'll assess your situation in one conversation.</p>
+          <div class="space-y-3">
+            <a href="./contact.html" class="block bg-white font-bold px-6 py-3 rounded text-sm dark:bg-slate-800" style="color:#1e3a5f;">Book a Consultation</a>
+            <a href="tel:+61863810030" class="block border-2 border-white text-white font-semibold px-6 py-3 rounded text-sm">Call +61 8 6381 0030</a>
+          </div>
+        </section>
+
+      </main>
+
+      <div id="footer-placeholder-m"></div>
+    </div>
+
+  </div>
+  <script src="./assets/site.js"></script>
+</body>
+</html>

@@ -1,1 +1,1 @@
-
+in addtion to zoom funcitons, also add dark mode /light mode toggle. Also, mobile phone header hamburger menu can't be toggled, and the footer is also not correct. Im not sure if it's a viewport issue or a code issue. Investigate

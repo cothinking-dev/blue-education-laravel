@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home — Blue Education Wireframe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/tokens.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: { extend: {
+        colors: {
+          primary:   { DEFAULT: 'var(--primary)',   foreground: 'var(--primary-foreground)' },
+          secondary: { DEFAULT: 'var(--secondary)', foreground: 'var(--secondary-foreground)' },
+          base:      { DEFAULT: 'var(--base)',      foreground: 'var(--base-foreground)' },
+          muted:     { DEFAULT: 'var(--muted)',     foreground: 'var(--muted-foreground)' },
+        },
+        borderRadius: {
+          corner:       'var(--corner)',
+          'corner-lg':  'var(--corner-lg)',
+          'corner-full':'var(--corner-full)',
+        },
+        fontFamily: { sans: ['Inter', 'sans-serif'] },
+      }}
+    }
+  </script>
+  <style>
+    .img-ph {
+      background-color: #d1d5db;
+      background-image: repeating-linear-gradient(
+        -55deg, transparent, transparent 8px,
+        rgba(0,0,0,0.04) 8px, rgba(0,0,0,0.04) 9px
+      );
+    }
+    .wf-bar {
+      font-family: 'Courier New', monospace;
+      font-size: 9px; font-weight: bold;
+      text-transform: uppercase; letter-spacing: 0.12em;
+      color: #3b82f6; background: #eff6ff;
+      border-top: 1px solid #bfdbfe;
+      border-bottom: 1px solid #bfdbfe;
+      padding: 4px 32px;
+    }
+  </style>
+</head>
+<body class="bg-neutral-300 py-8 font-sans">
+
+  <div class="flex gap-8 items-start mx-auto px-8" style="width: max-content;">
+
+    <!-- ═══════════════════════════════════════════════════════
+         DESKTOP CANVAS — 1280px
+    ═══════════════════════════════════════════════════════ -->
+    <div style="width:1280px; background:var(--base); color:var(--base-foreground);" class="shadow-2xl shrink-0">
+
+      <!-- Wireframe notice -->
+      <div class="flex items-center justify-between px-8 py-2 border-b-2 border-amber-300 bg-amber-50 dark:border-amber-800 dark:bg-amber-950">
+        <div class="flex items-center gap-3">
+          <span class="font-bold text-amber-800 tracking-widest text-sm dark:text-amber-200">WIREFRAME</span>
+          <span class="text-amber-700 text-sm dark:text-amber-300">·  Blue Education  ·  Home  ·  Desktop 1280px</span>
+        </div>
+        <span class="text-amber-500 font-mono text-xs dark:text-amber-400">Layout &amp; copy reference — not final design</span>
+      </div>
+
+      <div id="nav-placeholder"></div>
+
+      <main id="main-content">
+
+        <!-- §1 Hero -->
+        <div class="wf-bar">§1 · Hero — Full-width background image + centered overlay</div>
+        <section aria-label="Hero" class="img-ph relative flex flex-col items-center justify-center text-center" style="height:460px; background-color:#374151;">
+          <div class="absolute inset-0" style="background:rgba(17,24,39,0.58);"></div>
+          <div class="relative z-10 px-8" style="max-width:780px;">
+            <p class="text-pretty font-mono text-gray-400 mb-4 dark:text-slate-400" style="font-size:10px; letter-spacing:0.1em;">[BG IMAGE: Students on campus — diverse group, Perth skyline]</p>
+            <h1 class="text-pretty text-5xl font-bold text-white mb-5 leading-tight">Your Future in Australia Starts Here</h1>
+            <p class="text-pretty text-xl text-gray-200 mb-8">Independent education, career, and migration advice from Perth, Western Australia. Since 1998.</p>
+            <div class="flex gap-4 justify-center">
+              <a href="./contact.html" class="bg-blue-600 text-white font-semibold px-8 py-3 rounded text-base hover:bg-blue-700">Book a Consultation</a>
+              <a href="./services-education.html" class="border-2 border-white text-white font-semibold px-8 py-3 rounded text-base hover:bg-white hover:text-gray-900 transition-colors">Explore Our Services</a>
+            </div>
+          </div>
+        </section>
+
+        <!-- §2 Social Proof Bar -->
+        <div class="wf-bar">§2 · Social Proof Bar — 5 stats, horizontal strip</div>
+        <section aria-label="Key statistics" class="bg-gray-800 py-8 px-8">
+          <div class="flex justify-around text-center">
+            <div><div class="text-3xl font-bold text-white">Nearly 30</div><div class="text-gray-400 text-sm mt-1 dark:text-slate-400">Years of service</div></div>
+            <div class="border-l border-gray-600"></div>
+            <div><div class="text-3xl font-bold text-white">40+</div><div class="text-gray-400 text-sm mt-1 dark:text-slate-400">Client countries</div></div>
+            <div class="border-l border-gray-600"></div>
+            <div><div class="text-3xl font-bold text-white">1,100+</div><div class="text-gray-400 text-sm mt-1 dark:text-slate-400">Australian institutions</div></div>
+            <div class="border-l border-gray-600"></div>
+            <div><div class="text-3xl font-bold text-white">7</div><div class="text-gray-400 text-sm mt-1 dark:text-slate-400">Top 100 universities</div></div>
+            <div class="border-l border-gray-600"></div>
+            <div><div class="text-3xl font-bold text-white">24/7</div><div class="text-gray-400 text-sm mt-1 dark:text-slate-400">Emergency support</div></div>
+          </div>
+        </section>
+
+        <!-- §3 What We Do -->
+        <div class="wf-bar">§3 · What We Do — 2×2 Bento Grid (icon + heading + copy + link)</div>
+        <section aria-labelledby="what-we-do-h" class="px-16 py-14 bg-white dark:bg-slate-800">
+          <h2 id="what-we-do-h" class="text-pretty text-3xl font-bold text-gray-900 mb-10 dark:text-slate-100">What We Do</h2>
+          <div class="grid grid-cols-2 gap-6">
+            <article class="border border-gray-200 rounded-lg p-8 bg-gray-50 dark:border-slate-700 dark:bg-slate-900">
+              <div class="w-10 h-10 bg-gray-300 rounded mb-5 flex items-center justify-center" role="img" aria-label="Education icon"><span class="font-mono text-gray-500 dark:text-slate-500" style="font-size:9px;">[icon]</span></div>
+              <h3 class="text-pretty text-xl font-bold text-gray-900 mb-3 dark:text-slate-100">Education Services</h3>
+              <p class="text-pretty text-gray-600 mb-5 text-sm leading-relaxed dark:text-slate-400">Primary school to PhD. We help you find the right institution and program for your goals.</p>
+              <a href="./services-education.html" class="text-blue-600 font-medium text-sm hover:underline dark:text-blue-400">Explore education pathways →</a>
+            </article>
+            <article class="border border-gray-200 rounded-lg p-8 bg-gray-50 dark:border-slate-700 dark:bg-slate-900">
+              <div class="w-10 h-10 bg-gray-300 rounded mb-5 flex items-center justify-center" role="img" aria-label="Migration icon"><span class="font-mono text-gray-500 dark:text-slate-500" style="font-size:9px;">[icon]</span></div>
+              <h3 class="text-pretty text-xl font-bold text-gray-900 mb-3 dark:text-slate-100">Migration &amp; Visas</h3>
+              <p class="text-pretty text-gray-600 mb-5 text-sm leading-relaxed dark:text-slate-400">Not sure which visa you need? We'll assess your situation and help you handle the application.</p>
+              <a href="./services-migration.html" class="text-blue-600 font-medium text-sm hover:underline dark:text-blue-400">See visa options →</a>
+            </article>
+            <article class="border border-gray-200 rounded-lg p-8 bg-gray-50 dark:border-slate-700 dark:bg-slate-900">
+              <div class="w-10 h-10 bg-gray-300 rounded mb-5 flex items-center justify-center" role="img" aria-label="Career icon"><span class="font-mono text-gray-500 dark:text-slate-500" style="font-size:9px;">[icon]</span></div>
+              <h3 class="text-pretty text-xl font-bold text-gray-900 mb-3 dark:text-slate-100">Career Services</h3>
+              <p class="text-pretty text-gray-600 mb-5 text-sm leading-relaxed dark:text-slate-400">We help graduates build a career in Australia. Your Australian qualification is only useful if you can work with it.</p>
+              <a href="./services-career.html" class="text-blue-600 font-medium text-sm hover:underline dark:text-blue-400">Build your career →</a>
+            </article>
+            <article class="border border-gray-200 rounded-lg p-8 bg-gray-50 dark:border-slate-700 dark:bg-slate-900">
+              <div class="w-10 h-10 bg-gray-300 rounded mb-5 flex items-center justify-center" role="img" aria-label="Support icon"><span class="font-mono text-gray-500 dark:text-slate-500" style="font-size:9px;">[icon]</span></div>
+              <h3 class="text-pretty text-xl font-bold text-gray-900 mb-3 dark:text-slate-100">Student Support</h3>
+              <p class="text-pretty text-gray-600 mb-5 text-sm leading-relaxed dark:text-slate-400">We cover everything a student needs. Accommodation, guardianship, health cover, airport transfers, and a 24/7 emergency line.</p>
+              <a href="./services-student-support.html" class="text-blue-600 font-medium text-sm hover:underline dark:text-blue-400">See support services →</a>
+            </article>
+          </div>
+        </section>
+
+        <!-- §4 How We Care -->
+        <div class="wf-bar">§4 · How We Care — 60/40 two-column (text left, image right)</div>
+        <section aria-labelledby="how-we-care-h" class="px-16 py-14 bg-gray-50 dark:bg-slate-900" style="display:flex; gap:48px; align-items:stretch;">
+          <div style="flex:0 0 60%;">
+            <h2 id="how-we-care-h" class="text-pretty text-3xl font-bold text-gray-900 mb-6 dark:text-slate-100">28 years of experience we stand behind.</h2>
+            <p class="text-pretty text-gray-600 mb-4 text-sm leading-relaxed dark:text-slate-400">Since 1998, we've operated on one principle: give honest advice.</p>
+            <p class="text-pretty text-gray-600 mb-4 text-sm leading-relaxed dark:text-slate-400">Every client is assigned a dedicated advisor who coordinates your education, visa, and career plan — start to finish. No handoffs between agencies means no need to re-explain your situation over and over again.</p>
+            <p class="text-pretty text-gray-600 mb-4 text-sm leading-relaxed dark:text-slate-400">That means telling you when a visa application won't succeed, a course isn't the right fit, or a better path exists — before you commit to the wrong one.</p>
+            <p class="text-pretty text-gray-600 mb-6 text-sm leading-relaxed dark:text-slate-400">That's earned the trust of clients from 40+ countries — scholars who came back, and brought others — for decisions that shaped their lives.</p>
+            <a href="./about.html" class="text-blue-600 font-semibold text-sm hover:underline dark:text-blue-400">Learn our story →</a>
+          </div>
+          <div class="img-ph rounded-lg flex items-center justify-center text-center text-gray-500 font-mono text-sm dark:text-slate-500" style="flex:1; min-height:360px;" role="img" aria-label="Glen in consultation with a student">[IMAGE: Glen in consultation<br>with a student]</div>
+        </section>
+
+        <!-- §5 Featured Programs -->
+        <div class="wf-bar">§5 · Featured Programs — 2 horizontal cards, side-by-side</div>
+        <section aria-labelledby="featured-programs-h" class="px-16 py-14 bg-white dark:bg-slate-800">
+          <h2 id="featured-programs-h" class="text-pretty text-3xl font-bold text-gray-900 mb-10 dark:text-slate-100">Featured Programs</h2>
+          <div class="grid grid-cols-2 gap-8">
+            <article class="border border-gray-200 rounded-lg overflow-hidden dark:border-slate-700">
+              <div class="img-ph flex items-center justify-center text-gray-500 font-mono text-sm text-center dark:text-slate-500" style="height:210px;" role="img" aria-label="Students in school uniform with Australian buddies in classroom">[IMAGE: Students in school uniform<br>with Australian buddies, classroom]</div>
+              <div class="p-7">
+                <span class="text-xs font-bold text-blue-600 bg-blue-50 border border-blue-200 rounded px-2 py-1 mb-4 inline-block dark:text-blue-400 dark:bg-blue-950 dark:border-blue-800">14-Day Immersion</span>
+                <h3 class="text-pretty text-xl font-bold text-gray-900 mb-3 dark:text-slate-100">Buddy Programme</h3>
+                <p class="text-pretty text-gray-600 mb-5 text-sm leading-relaxed dark:text-slate-400">14 days at an Australian homestay — classroom integration and cultural immersion. Built in partnership with Anglican Schools.</p>
+                <a href="./programs-buddy.html" class="text-blue-600 font-semibold text-sm hover:underline dark:text-blue-400">Discover the Buddy Programme →</a>
+              </div>
+            </article>
+            <article class="border border-gray-200 rounded-lg overflow-hidden dark:border-slate-700">
+              <div class="img-ph flex items-center justify-center text-gray-500 font-mono text-sm text-center dark:text-slate-500" style="height:210px;" role="img" aria-label="Students in graduation attire, WA landscape">[IMAGE: Students in graduation attire,<br>WA landscape]</div>
+              <div class="p-7">
+                <span class="text-xs font-bold text-blue-600 bg-blue-50 border border-blue-200 rounded px-2 py-1 mb-4 inline-block dark:text-blue-400 dark:bg-blue-950 dark:border-blue-800">International Curriculum</span>
+                <h3 class="text-pretty text-xl font-bold text-gray-900 mb-3 dark:text-slate-100">SCSA Associate</h3>
+                <p class="text-pretty text-gray-600 mb-5 text-sm leading-relaxed dark:text-slate-400">Complete the Western Australian Certificate of Education (WACE) from your home country. Officially recognised and globally respected.</p>
+                <a href="./programs-scsa.html" class="text-blue-600 font-semibold text-sm hover:underline dark:text-blue-400">Learn about SCSA →</a>
+              </div>
+            </article>
+          </div>
+          <div class="mt-8 text-center">
+            <a href="./programs.html" class="text-blue-600 font-semibold hover:underline dark:text-blue-400">See all programmes →</a>
+          </div>
+        </section>
+
+        <!-- §6 Why Western Australia -->
+        <div class="wf-bar">§6 · Why Western Australia — 5-card bento grid (varied sizes)</div>
+        <section aria-labelledby="why-wa-h" class="px-16 py-14 bg-gray-50 dark:bg-slate-900">
+          <h2 id="why-wa-h" class="text-pretty text-3xl font-bold text-gray-900 mb-10 dark:text-slate-100">Why Western Australia</h2>
+          <div class="grid grid-cols-3 gap-6 mb-6">
+            <article class="col-span-2 border border-gray-200 rounded-lg p-8 bg-white dark:border-slate-700 dark:bg-slate-800">
+              <h3 class="text-pretty text-lg font-bold text-gray-900 mb-3 dark:text-slate-100">Perth regularly features among the world's most liveable cities.</h3>
+              <p class="text-pretty text-gray-600 text-sm leading-relaxed dark:text-slate-400">Clean air, short commutes, a safe city, and a genuinely multicultural community. Students who come here tend to stay.</p>
+            </article>
+            <article class="border border-gray-200 rounded-lg p-8 bg-white dark:border-slate-700 dark:bg-slate-800">
+              <h3 class="text-pretty text-lg font-bold text-gray-900 mb-3 dark:text-slate-100">Four globally recognised universities. All in Perth.</h3>
+              <p class="text-pretty text-gray-600 text-sm leading-relaxed dark:text-slate-400">UWA, Curtin, Murdoch, and ECU offer qualifications accepted by employers and institutions in every major market.</p>
+            </article>
+          </div>
+          <div class="grid grid-cols-3 gap-6">
+            <article class="border border-gray-200 rounded-lg p-8 bg-white dark:border-slate-700 dark:bg-slate-800">
+              <h3 class="text-pretty text-lg font-bold text-gray-900 mb-3 dark:text-slate-100">Your degree comes with time to use it.</h3>
+              <p class="text-pretty text-gray-600 text-sm leading-relaxed dark:text-slate-400">Graduates receive 2–4 years of unrestricted work rights — enough to build real experience, establish connections, and weigh your options properly.</p>
+            </article>
+            <article class="border border-gray-200 rounded-lg p-8 bg-white dark:border-slate-700 dark:bg-slate-800">
+              <h3 class="text-pretty text-lg font-bold text-gray-900 mb-3 dark:text-slate-100">A job market that needs skilled graduates.</h3>
+              <p class="text-pretty text-gray-600 text-sm leading-relaxed dark:text-slate-400">Western Australia's resources, healthcare, construction, and professional services sectors are all expanding. The demand for qualified people is genuine and growing.</p>
+            </article>
+            <article class="border border-gray-200 rounded-lg p-8 bg-white dark:border-slate-700 dark:bg-slate-800">
+              <h3 class="text-pretty text-lg font-bold text-gray-900 mb-3 dark:text-slate-100">One curriculum. K to PhD.</h3>
+              <p class="text-pretty text-gray-600 text-sm leading-relaxed dark:text-slate-400">WA's SCSA-governed framework covers every stage — from primary school through to doctoral research. Structured, regulated, and recognised internationally.</p>
+            </article>
+          </div>
+          <div class="mt-8">
+            <a href="./why-australia.html" class="text-blue-600 font-semibold text-sm hover:underline dark:text-blue-400">See why Western Australia →</a>
+          </div>
+        </section>
+
+        <!-- §7 Testimonials -->
+        <div class="wf-bar">§7 · Testimonials — 3 visible cards (5 total, carousel on mobile)</div>
+        <section aria-labelledby="testimonials-h" class="px-16 py-14 bg-white dark:bg-slate-800">
+          <h2 id="testimonials-h" class="text-pretty text-3xl font-bold text-gray-900 mb-10 dark:text-slate-100">What Our Clients Say</h2>
+          <div class="grid grid-cols-3 gap-6">
+            <article class="border border-gray-200 rounded-lg p-6 bg-gray-50 dark:border-slate-700 dark:bg-slate-900">
+              <blockquote class="text-pretty text-gray-700 text-sm mb-5 italic leading-relaxed dark:text-slate-300">"The team went above and beyond, helping me find my course of interest and arrange a scholarship to UWA within 2 weeks."</blockquote>
+              <footer class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-blue-100 border border-blue-200 flex items-center justify-center text-blue-700 font-bold text-sm flex-shrink-0 dark:bg-blue-900 dark:border-blue-800 dark:text-blue-300" aria-hidden="true">NL</div>
+                <div><cite class="text-pretty font-semibold text-gray-800 text-sm not-italic dark:text-slate-200">N.L.</cite><div class="text-gray-500 text-xs dark:text-slate-500">Malaysia · Bachelor of Commerce, UWA</div></div>
+              </footer>
+            </article>
+            <article class="border border-gray-200 rounded-lg p-6 bg-gray-50 dark:border-slate-700 dark:bg-slate-900">
+              <blockquote class="text-pretty text-gray-700 text-sm mb-5 italic leading-relaxed dark:text-slate-300">"Where would I be without the team at Blue Education? They have helped me so much through my time in Perth, that they are now like family. They are always there for me, whatever I need."</blockquote>
+              <footer class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-blue-100 border border-blue-200 flex items-center justify-center text-blue-700 font-bold text-sm flex-shrink-0 dark:bg-blue-900 dark:border-blue-800 dark:text-blue-300" aria-hidden="true">HT</div>
+                <div><cite class="text-pretty font-semibold text-gray-800 text-sm not-italic dark:text-slate-200">H.T.</cite><div class="text-gray-500 text-xs dark:text-slate-500">Japan · MBA, Curtin University</div></div>
+              </footer>
+            </article>
+            <article class="border border-gray-200 rounded-lg p-6 bg-gray-50 dark:border-slate-700 dark:bg-slate-900">
+              <blockquote class="text-pretty text-gray-700 text-sm mb-5 italic leading-relaxed dark:text-slate-300">"Blue Education made my dream of becoming a Registered Nurse come true."</blockquote>
+              <footer class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-blue-100 border border-blue-200 flex items-center justify-center text-blue-700 font-bold text-sm flex-shrink-0 dark:bg-blue-900 dark:border-blue-800 dark:text-blue-300" aria-hidden="true">SW</div>
+                <div><cite class="text-pretty font-semibold text-gray-800 text-sm not-italic dark:text-slate-200">S.W.</cite><div class="text-gray-500 text-xs dark:text-slate-500">Singapore · Bachelor of Nursing, ECU</div></div>
+              </footer>
+            </article>
+          </div>
+          <p class="text-pretty text-center font-mono text-gray-400 mt-5 dark:text-slate-400" style="font-size:10px;">[Carousel — 5 testimonials total · 3 visible on desktop · 1 visible on mobile]</p>
+        </section>
+
+        <!-- §8 Partners -->
+        <div class="wf-bar">§8 · Partners — Logo strip (grayscale)</div>
+        <section aria-labelledby="partners-h" class="px-16 py-12 bg-gray-50 border-y border-gray-200 dark:bg-slate-900 dark:border-slate-700">
+          <p id="partners-h" class="text-pretty text-center text-gray-500 text-sm mb-8 dark:text-slate-500">Partnered with leading Western Australian institutions.</p>
+          <div class="flex items-center justify-around gap-6" role="list" aria-label="Partner institutions">
+            <div role="listitem"><img src="./assets/partners/uwa-logo.svg"     alt="University of Western Australia" style="height:48px; object-fit:contain; filter:grayscale(100%); opacity:0.55;" /></div>
+            <div role="listitem"><img src="./assets/partners/curtin-logo.webp" alt="Curtin University"               style="height:48px; object-fit:contain; filter:grayscale(100%); opacity:0.55;" /></div>
+            <div role="listitem"><img src="./assets/partners/murdoch-logo.svg" alt="Murdoch University"              style="height:48px; object-fit:contain; filter:grayscale(100%); opacity:0.55;" /></div>
+            <div role="listitem"><img src="./assets/partners/ecu-logo.png"     alt="Edith Cowan University"          style="height:48px; object-fit:contain; filter:grayscale(100%); opacity:0.55;" /></div>
+            <div role="listitem"><img src="./assets/partners/nmtafe-logo.svg"  alt="North Metropolitan TAFE"         style="height:48px; object-fit:contain; filter:grayscale(100%); opacity:0.55;" /></div>
+          </div>
+          <p class="text-pretty text-center font-mono text-gray-400 mt-5 dark:text-slate-400" style="font-size:10px;">[Auto-scrolling infinite strip on final build · Curtin logo low-res — replace with Curtin brand team file]</p>
+        </section>
+
+        <!-- §9 Blog -->
+        <div class="wf-bar">§9 · Latest From the Blog — 3-column card grid (dynamic)</div>
+        <section aria-labelledby="blog-h" class="px-16 py-14 bg-white dark:bg-slate-800">
+          <div class="flex items-center justify-between mb-10">
+            <h2 id="blog-h" class="text-pretty text-3xl font-bold text-gray-900 dark:text-slate-100">Latest From the Blog</h2>
+            <a href="./blog.html" class="text-blue-600 font-semibold text-sm hover:underline dark:text-blue-400">View all articles →</a>
+          </div>
+          <p class="text-pretty font-mono text-gray-400 mb-7 dark:text-slate-400" style="font-size:10px;">[Dynamic — pulls latest 3 published blog posts]</p>
+          <div class="grid grid-cols-3 gap-6">
+            <article class="border border-gray-200 rounded-lg overflow-hidden dark:border-slate-700">
+              <div class="img-ph flex items-center justify-center text-gray-500 font-mono text-sm dark:text-slate-500" style="height:190px;" role="img" aria-label="Blog post image placeholder">[Blog post image]</div>
+              <div class="p-5"><span class="font-mono text-gray-400 mb-2 block dark:text-slate-400" style="font-size:10px;">DD Month YYYY</span><h3 class="text-pretty font-bold text-gray-800 mb-2 text-base dark:text-slate-200">Blog Post Title</h3><p class="text-pretty text-gray-500 text-sm leading-relaxed dark:text-slate-500">Short excerpt from the blog post goes here…</p></div>
+            </article>
+            <article class="border border-gray-200 rounded-lg overflow-hidden dark:border-slate-700">
+              <div class="img-ph flex items-center justify-center text-gray-500 font-mono text-sm dark:text-slate-500" style="height:190px;" role="img" aria-label="Blog post image placeholder">[Blog post image]</div>
+              <div class="p-5"><span class="font-mono text-gray-400 mb-2 block dark:text-slate-400" style="font-size:10px;">DD Month YYYY</span><h3 class="text-pretty font-bold text-gray-800 mb-2 text-base dark:text-slate-200">Blog Post Title</h3><p class="text-pretty text-gray-500 text-sm leading-relaxed dark:text-slate-500">Short excerpt from the blog post goes here…</p></div>
+            </article>
+            <article class="border border-gray-200 rounded-lg overflow-hidden dark:border-slate-700">
+              <div class="img-ph flex items-center justify-center text-gray-500 font-mono text-sm dark:text-slate-500" style="height:190px;" role="img" aria-label="Blog post image placeholder">[Blog post image]</div>
+              <div class="p-5"><span class="font-mono text-gray-400 mb-2 block dark:text-slate-400" style="font-size:10px;">DD Month YYYY</span><h3 class="text-pretty font-bold text-gray-800 mb-2 text-base dark:text-slate-200">Blog Post Title</h3><p class="text-pretty text-gray-500 text-sm leading-relaxed dark:text-slate-500">Short excerpt from the blog post goes here…</p></div>
+            </article>
+          </div>
+        </section>
+
+        <!-- §10 Final CTA -->
+        <div class="wf-bar">§10 · Final CTA Banner — Full-width, centered, contrasting bg</div>
+        <section aria-labelledby="cta-h" class="py-16 px-8 text-center" style="background:#1e3a5f;">
+          <h2 id="cta-h" class="text-pretty text-4xl font-bold text-white mb-4">Not sure where to start?</h2>
+          <p class="text-pretty text-lg mb-8 mx-auto" style="color:#93c5fd; max-width:540px;">Most people aren't. Book a conversation with us and we'll map out your options honestly — whatever they turn out to be.</p>
+          <div class="flex gap-4 justify-center">
+            <a href="./contact.html" class="bg-white font-bold px-8 py-3 rounded text-base hover:bg-gray-100 dark:bg-slate-800" style="color:#1e3a5f;">Book a Consultation</a>
+            <a href="tel:+61863810030" class="border-2 border-white text-white font-semibold px-8 py-3 rounded text-base hover:bg-white hover:text-gray-900 transition-colors">Call +61 8 6381 0030</a>
+          </div>
+        </section>
+
+      </main>
+
+      <div id="footer-placeholder"></div>
+    </div><!-- end desktop canvas -->
+
+    <!-- ═══════════════════════════════════════════════════════
+         MOBILE CANVAS — 390px
+    ═══════════════════════════════════════════════════════ -->
+    <div style="width:390px; background:var(--base); color:var(--base-foreground);" class="shadow-2xl shrink-0 sticky top-8">
+
+      <!-- Wireframe notice -->
+      <div class="flex items-center justify-between px-4 py-2 border-b-2 border-amber-300 bg-amber-50 dark:border-amber-800 dark:bg-amber-950">
+        <span class="font-bold text-amber-800 tracking-widest text-xs dark:text-amber-200">WIREFRAME</span>
+        <span class="text-amber-600 font-mono" style="font-size:8px;">Mobile 390px</span>
+      </div>
+
+      <div id="nav-placeholder-m"></div>
+
+      <main>
+
+        <!-- Hero -->
+        <div class="wf-bar">§1 · Hero</div>
+        <div class="img-ph relative flex flex-col items-center justify-center text-center" style="height:280px; background-color:#374151;">
+          <div class="absolute inset-0" style="background:rgba(17,24,39,0.62);"></div>
+          <div class="relative z-10 px-5">
+            <h1 class="text-pretty text-2xl font-bold text-white mb-3 leading-tight">Your Future in Australia Starts Here</h1>
+            <p class="text-pretty text-sm text-gray-200 mb-5">Independent education, career, and migration advice. Since 1998.</p>
+            <a href="./contact.html" class="bg-blue-600 text-white font-semibold px-6 py-2.5 rounded text-sm block w-full mb-2 text-center">Book a Consultation</a>
+            <a href="./services-education.html" class="border border-white text-white font-medium px-6 py-2.5 rounded text-sm block w-full text-center">Explore Services</a>
+          </div>
+        </div>
+
+        <!-- Stats -->
+        <div class="wf-bar">§2 · Social Proof Bar</div>
+        <div class="bg-gray-800 py-5 px-4">
+          <div class="grid grid-cols-2 gap-3 text-center text-white">
+            <div><div class="text-xl font-bold">Nearly 30</div><div class="text-gray-400 text-xs dark:text-slate-400">Years of service</div></div>
+            <div><div class="text-xl font-bold">40+</div><div class="text-gray-400 text-xs dark:text-slate-400">Client countries</div></div>
+            <div><div class="text-xl font-bold">1,100+</div><div class="text-gray-400 text-xs dark:text-slate-400">Institutions</div></div>
+            <div><div class="text-xl font-bold">24/7</div><div class="text-gray-400 text-xs dark:text-slate-400">Emergency support</div></div>
+          </div>
+        </div>
+
+        <!-- What We Do -->
+        <div class="wf-bar">§3 · What We Do</div>
+        <div class="px-4 py-8 bg-white dark:bg-slate-800">
+          <h2 class="text-pretty text-xl font-bold text-gray-900 mb-5 dark:text-slate-100">What We Do</h2>
+          <div class="space-y-3">
+            <a href="./services-education.html" class="flex items-center justify-between p-4 border border-gray-200 rounded-lg bg-gray-50 hover:border-blue-300 dark:border-slate-700 dark:bg-slate-900">
+              <span class="font-semibold text-gray-800 text-sm dark:text-slate-200">Education Services</span>
+              <span class="text-blue-600 text-sm dark:text-blue-400">→</span>
+            </a>
+            <a href="./services-migration.html" class="flex items-center justify-between p-4 border border-gray-200 rounded-lg bg-gray-50 hover:border-blue-300 dark:border-slate-700 dark:bg-slate-900">
+              <span class="font-semibold text-gray-800 text-sm dark:text-slate-200">Migration &amp; Visas</span>
+              <span class="text-blue-600 text-sm dark:text-blue-400">→</span>
+            </a>
+            <a href="./services-career.html" class="flex items-center justify-between p-4 border border-gray-200 rounded-lg bg-gray-50 hover:border-blue-300 dark:border-slate-700 dark:bg-slate-900">
+              <span class="font-semibold text-gray-800 text-sm dark:text-slate-200">Career Services</span>
+              <span class="text-blue-600 text-sm dark:text-blue-400">→</span>
+            </a>
+            <a href="./services-student-support.html" class="flex items-center justify-between p-4 border border-gray-200 rounded-lg bg-gray-50 hover:border-blue-300 dark:border-slate-700 dark:bg-slate-900">
+              <span class="font-semibold text-gray-800 text-sm dark:text-slate-200">Student Support</span>
+              <span class="text-blue-600 text-sm dark:text-blue-400">→</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- How We Care -->
+        <div class="wf-bar">§4 · How We Care</div>
+        <div class="px-4 py-8 bg-gray-50 dark:bg-slate-900">
+          <h2 class="text-pretty text-xl font-bold text-gray-900 mb-4 dark:text-slate-100">28 years of experience we stand behind.</h2>
+          <p class="text-pretty text-gray-600 text-sm leading-relaxed mb-4 dark:text-slate-400">Since 1998, we've operated on one principle: give honest advice. Every client is assigned a dedicated advisor who coordinates your education, visa, and career plan — start to finish.</p>
+          <a href="./about.html" class="text-blue-600 font-semibold text-sm hover:underline dark:text-blue-400">Learn our story →</a>
+        </div>
+
+        <!-- Featured Programs -->
+        <div class="wf-bar">§5 · Featured Programs</div>
+        <div class="px-4 py-8 bg-white dark:bg-slate-800">
+          <h2 class="text-pretty text-xl font-bold text-gray-900 mb-5 dark:text-slate-100">Featured Programs</h2>
+          <div class="space-y-4">
+            <article class="border border-gray-200 rounded-lg overflow-hidden dark:border-slate-700">
+              <div class="img-ph flex items-center justify-center text-gray-500 font-mono text-xs text-center dark:text-slate-500" style="height:140px;" role="img" aria-label="Buddy Programme image">[Buddy Programme image]</div>
+              <div class="p-4">
+                <span class="text-xs font-bold text-blue-600 bg-blue-50 border border-blue-200 rounded px-2 py-0.5 mb-2 inline-block dark:text-blue-400 dark:bg-blue-950 dark:border-blue-800">14-Day Immersion</span>
+                <h3 class="text-pretty font-bold text-gray-900 mb-2 dark:text-slate-100">Buddy Programme</h3>
+                <p class="text-pretty text-gray-600 text-xs mb-3 leading-relaxed dark:text-slate-400">14 days at an Australian homestay — classroom integration and cultural immersion.</p>
+                <a href="./programs-buddy.html" class="text-blue-600 font-semibold text-sm hover:underline dark:text-blue-400">Learn more →</a>
+              </div>
+            </article>
+            <article class="border border-gray-200 rounded-lg overflow-hidden dark:border-slate-700">
+              <div class="img-ph flex items-center justify-center text-gray-500 font-mono text-xs text-center dark:text-slate-500" style="height:140px;" role="img" aria-label="SCSA Associate image">[SCSA Associate image]</div>
+              <div class="p-4">
+                <span class="text-xs font-bold text-blue-600 bg-blue-50 border border-blue-200 rounded px-2 py-0.5 mb-2 inline-block dark:text-blue-400 dark:bg-blue-950 dark:border-blue-800">International Curriculum</span>
+                <h3 class="text-pretty font-bold text-gray-900 mb-2 dark:text-slate-100">SCSA Associate</h3>
+                <p class="text-pretty text-gray-600 text-xs mb-3 leading-relaxed dark:text-slate-400">Complete the WACE from your home country. Officially recognised and globally respected.</p>
+                <a href="./programs-scsa.html" class="text-blue-600 font-semibold text-sm hover:underline dark:text-blue-400">Learn more →</a>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- CTA -->
+        <div class="wf-bar">§6 · Final CTA Banner</div>
+        <div class="px-4 py-10 text-center" style="background:#1e3a5f;">
+          <h2 class="text-pretty text-2xl font-bold text-white mb-3">Not sure where to start?</h2>
+          <p class="text-pretty text-sm mb-6" style="color:#93c5fd;">Book a conversation and we'll map out your options honestly.</p>
+          <a href="./contact.html" class="bg-white font-bold px-6 py-3 rounded text-sm block w-full mb-3 text-center dark:bg-slate-800" style="color:#1e3a5f;">Book a Consultation</a>
+          <a href="tel:+61863810030" class="border border-white text-white font-medium px-6 py-2.5 rounded text-sm block w-full text-center">Call +61 8 6381 0030</a>
+        </div>
+
+      </main>
+
+      <div id="footer-placeholder-m"></div>
+    </div><!-- end mobile canvas -->
+
+  </div>
+
+  <script src="./assets/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Team — Blue Education Wireframe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/tokens.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: { extend: {
+        colors: {
+          primary:   { DEFAULT: 'var(--primary)',   foreground: 'var(--primary-foreground)' },
+          secondary: { DEFAULT: 'var(--secondary)', foreground: 'var(--secondary-foreground)' },
+          base:      { DEFAULT: 'var(--base)',      foreground: 'var(--base-foreground)' },
+          muted:     { DEFAULT: 'var(--muted)',     foreground: 'var(--muted-foreground)' },
+        },
+        borderRadius: {
+          corner: 'var(--corner)', 'corner-lg': 'var(--corner-lg)', 'corner-full': 'var(--corner-full)',
+        },
+        fontFamily: { sans: ['Inter', 'sans-serif'] },
+      }}
+    }
+  </script>
+  <style>
+    .img-ph {
+      background-color: #d1d5db;
+      background-image: repeating-linear-gradient(-55deg, transparent, transparent 8px, rgba(0,0,0,0.04) 8px, rgba(0,0,0,0.04) 9px);
+    }
+    .wf-bar {
+      font-family: 'Courier New', monospace; font-size: 9px; font-weight: bold;
+      text-transform: uppercase; letter-spacing: 0.12em; color: #3b82f6; background: #eff6ff;
+      border-top: 1px solid #bfdbfe; border-bottom: 1px solid #bfdbfe; padding: 4px 32px;
+    }
+  </style>
+</head>
+<body class="bg-neutral-300 py-8 font-sans">
+  <div class="flex gap-8 items-start mx-auto px-8" style="width: max-content;">
+
+    <!-- DESKTOP CANVAS — 1280px -->
+    <div style="width:1280px; background:var(--base); color:var(--base-foreground);" class="shadow-2xl shrink-0">
+      <div class="flex items-center justify-between px-8 py-2 border-b-2 border-amber-300 bg-amber-50 dark:border-amber-800 dark:bg-amber-950">
+        <div class="flex items-center gap-3">
+          <span class="font-bold text-amber-800 tracking-widest text-sm dark:text-amber-200">WIREFRAME</span>
+          <span class="text-amber-700 text-sm dark:text-amber-300">·  Blue Education  ·  Our Team  ·  Desktop 1280px</span>
+        </div>
+        <span class="text-amber-500 font-mono text-xs dark:text-amber-400">Layout &amp; copy reference — not final design</span>
+      </div>
+      <div id="nav-placeholder"></div>
+      <main id="main-content">
+
+        <!-- §1 HERO -->
+        <div class="wf-bar">§1 · Hero — Full-width, subtle, centered text, light background</div>
+        <section aria-labelledby="hero-h" class="px-16 py-20 text-center" style="background: linear-gradient(180deg, #eff6ff 0%, #ffffff 100%);">
+          <nav aria-label="Breadcrumb" class="mb-6 flex justify-center">
+            <ol class="flex items-center gap-2 text-sm text-gray-500 dark:text-slate-500">
+              <li><a href="./index.html" class="hover:text-blue-700 dark:hover:text-blue-300">Home</a></li>
+              <li class="text-gray-400 dark:text-slate-400">/</li>
+              <li><a href="./about.html" class="hover:text-blue-700 dark:hover:text-blue-300">About</a></li>
+              <li class="text-gray-400 dark:text-slate-400">/</li>
+              <li class="text-gray-800 font-medium dark:text-slate-200" aria-current="page">Our Team</li>
+            </ol>
+          </nav>
+          <div class="img-ph rounded-xl mb-8 flex items-center justify-center text-center text-gray-500 font-mono text-sm mx-auto dark:text-slate-500" style="height:280px; max-width:900px;" role="img" aria-label="Group team photo — international and Australian staff">
+            [IMAGE: Group team photo — international + Australian staff]
+          </div>
+          <h1 id="hero-h" class="text-pretty text-5xl font-bold text-gray-900 mb-5 leading-tight dark:text-slate-100">Multilingual specialists. Five countries. One mission.</h1>
+          <p class="text-pretty text-xl text-gray-600 mb-4 leading-relaxed mx-auto dark:text-slate-400" style="max-width:680px;">Education, migration, and career experts — headquartered in Perth, represented across Asia, Africa, and the Pacific.</p>
+          <p class="text-pretty text-gray-600 leading-relaxed mx-auto dark:text-slate-400" style="max-width:760px;">Our team spans continents, industries, and languages. From Registered Migration Agents to chartered accountants, solicitors to career counsellors — we bring real-world expertise to every consultation. Most of us are multilingual. All of us are committed to getting it right for you.</p>
+        </section>
+
+        <!-- §2 AUSTRALIAN TEAM -->
+        <div class="wf-bar">§2 · Australian Team — Leadership grid, photo top, bio below</div>
+        <section aria-labelledby="au-team-h" class="px-16 py-14 bg-white dark:bg-slate-800">
+          <h2 id="au-team-h" class="text-pretty text-3xl font-bold text-gray-900 mb-10 dark:text-slate-100">Australian Team</h2>
+          <div class="grid grid-cols-4 gap-6">
+
+            <!-- Glen Ong -->
+            <article class="border border-gray-200 rounded-xl overflow-hidden dark:border-slate-700">
+              <div class="img-ph flex items-center justify-center text-center text-gray-500 font-mono text-xs dark:text-slate-500" style="height:200px;" role="img" aria-label="Glen Ong headshot, Managing Director">
+                [PHOTO: Glen Ong]
+              </div>
+              <div class="p-5">
+                <div class="inline-block bg-blue-50 border border-blue-200 text-blue-700 text-xs font-bold px-2 py-0.5 rounded mb-3 dark:bg-blue-950 dark:border-blue-800 dark:text-blue-300">Managing Director · MARN 1385471</div>
+                <h3 class="text-pretty font-bold text-gray-900 text-base mb-1 dark:text-slate-100">Glen Ong</h3>
+                <p class="text-pretty text-blue-600 text-xs font-medium mb-1 dark:text-blue-400">Registered Migration Agent</p>
+                <p class="text-pretty text-gray-500 text-xs mb-3 dark:text-slate-500">English · Cantonese · Bahasa Malaysia</p>
+                <p class="text-pretty text-gray-600 text-xs leading-relaxed dark:text-slate-400">Nearly 20 years of experience across private and government education sectors. Student visas, skilled migration, family and partner visas, and resident return visas. BCom (Marketing), BArts (Asian Studies) — Curtin University.</p>
+              </div>
+            </article>
+
+            <!-- Monica Gaikwad -->
+            <article class="border border-gray-200 rounded-xl overflow-hidden dark:border-slate-700">
+              <div class="img-ph flex items-center justify-center text-center text-gray-500 font-mono text-xs dark:text-slate-500" style="height:200px;" role="img" aria-label="Monica Gaikwad headshot, Associate Counsellor">
+                [PHOTO: Monica Gaikwad]
+              </div>
+              <div class="p-5">
+                <div class="inline-block bg-gray-50 border border-gray-200 text-gray-600 text-xs font-bold px-2 py-0.5 rounded mb-3 dark:bg-slate-900 dark:border-slate-700 dark:text-slate-400">Associate Counsellor</div>
+                <h3 class="text-pretty font-bold text-gray-900 text-base mb-1 dark:text-slate-100">Monica Gaikwad</h3>
+                <p class="text-pretty text-gray-500 text-xs mb-3 dark:text-slate-500">English · Hindi · Marathi</p>
+                <p class="text-pretty text-gray-600 text-xs leading-relaxed dark:text-slate-400">Originally from India, grew up in Kuwait before moving to Australia. Joined Blue through the Executive Internship Programme. Supports students through study and enrolment journeys. MBA — Curtin University.</p>
+              </div>
+            </article>
+
+            <!-- Flora Wang -->
+            <article class="border border-gray-200 rounded-xl overflow-hidden dark:border-slate-700">
+              <div class="img-ph flex items-center justify-center text-center text-gray-500 font-mono text-xs dark:text-slate-500" style="height:200px;" role="img" aria-label="Flora Wang headshot, Marketing Executive and Counsellor">
+                [PHOTO: Flora Wang]
+              </div>
+              <div class="p-5">
+                <div class="inline-block bg-gray-50 border border-gray-200 text-gray-600 text-xs font-bold px-2 py-0.5 rounded mb-3 dark:bg-slate-900 dark:border-slate-700 dark:text-slate-400">Marketing Executive · Counsellor</div>
+                <h3 class="text-pretty font-bold text-gray-900 text-base mb-1 dark:text-slate-100">Flora Wang</h3>
+                <p class="text-pretty text-gray-500 text-xs mb-3 dark:text-slate-500">English · Mandarin · Cantonese</p>
+                <p class="text-pretty text-gray-600 text-xs leading-relaxed dark:text-slate-400">Education Counsellor dedicated to helping students find the right pathway. Originally from China, lived and studied in the United States. Master of Marketing — Edith Cowan University.</p>
+              </div>
+            </article>
+
+            <!-- Shen Sekhon -->
+            <article class="border border-gray-200 rounded-xl overflow-hidden dark:border-slate-700">
+              <div class="img-ph flex items-center justify-center text-center text-gray-500 font-mono text-xs dark:text-slate-500" style="height:200px;" role="img" aria-label="Shen Sekhon headshot, Associate Counsellor">
+                [PHOTO: Shen Sekhon]
+              </div>
+              <div class="p-5">
+                <div class="inline-block bg-gray-50 border border-gray-200 text-gray-600 text-xs font-bold px-2 py-0.5 rounded mb-3 dark:bg-slate-900 dark:border-slate-700 dark:text-slate-400">Associate Counsellor</div>
+                <h3 class="text-pretty font-bold text-gray-900 text-base mb-1 dark:text-slate-100">Shen Sekhon</h3>
+                <p class="text-pretty text-gray-500 text-xs mb-3 dark:text-slate-500">English · Bahasa Malaysia</p>
+                <p class="text-pretty text-gray-600 text-xs leading-relaxed dark:text-slate-400">Over 20 years in international higher education. 14 years at Curtin University as Marketing &amp; Communications Manager. MBA — Curtin University. Regularly travels between Kuala Lumpur and Perth.</p>
+              </div>
+            </article>
+
+          </div>
+        </section>
+
+        <!-- §3 INTERNATIONAL OPERATIONS -->
+        <div class="wf-bar">§3 · International Operations — Section intro + 2-3 column team grid with region tags</div>
+        <section aria-labelledby="intl-h" class="px-16 py-14 bg-gray-50 dark:bg-slate-900">
+          <h2 id="intl-h" class="text-pretty text-3xl font-bold text-gray-900 mb-4 dark:text-slate-100">International Operations</h2>
+          <p class="text-pretty text-gray-600 mb-10 text-lg leading-relaxed dark:text-slate-400" style="max-width:800px;">Blue's international reach is powered by a team of regional representatives who provide localised support — in your language, in your time zone, with on-the-ground knowledge of your country's education and migration landscape.</p>
+
+          <!-- Sonia — full width lead -->
+          <article class="bg-white rounded-xl border border-gray-200 p-8 mb-6 flex items-start gap-8 dark:bg-slate-800 dark:border-slate-700">
+            <div class="img-ph rounded-xl shrink-0 flex items-center justify-center text-center text-gray-500 font-mono text-xs dark:text-slate-500" style="width:160px; height:200px;" role="img" aria-label="Sonia Ong headshot, Executive Director International Operations">
+              [PHOTO: Sonia Ong]
+            </div>
+            <div style="flex:1;">
+              <div class="inline-block bg-blue-50 border border-blue-200 text-blue-700 text-xs font-bold px-2 py-0.5 rounded mb-3 dark:bg-blue-950 dark:border-blue-800 dark:text-blue-300">Executive Director · International Operations</div>
+              <h3 class="text-pretty font-bold text-gray-900 text-xl mb-1 dark:text-slate-100">Sonia Ong</h3>
+              <p class="text-pretty text-blue-600 text-sm font-medium mb-2 dark:text-blue-400">Global (offshore operations lead)</p>
+              <p class="text-pretty text-gray-500 text-xs mb-4 dark:text-slate-500">English · Mandarin · Cantonese · Bahasa Malaysia · Bahasa Indonesia</p>
+              <p class="text-pretty text-gray-600 text-sm leading-relaxed dark:text-slate-400">Sonia leads Blue's offshore initiatives, bringing over 20 years of experience in strategy, risk, and governance consulting. Her background spans multi-national corporations, public listed companies, and senior management advisory across Asia. MBA — Deakin University; BCom — UWA; CPA (Australia); Chartered Accountant (Malaysia). She speaks fluently in 5 languages and continues to travel across Asia conducting governance and risk training for directors and senior executives.</p>
+            </div>
+          </article>
+
+          <div class="grid grid-cols-3 gap-5">
+
+            <!-- Elaine Ho -->
+            <article class="bg-white rounded-xl border border-gray-200 overflow-hidden dark:bg-slate-800 dark:border-slate-700">
+              <div class="img-ph flex items-center justify-center text-center text-gray-500 font-mono text-xs dark:text-slate-500" style="height:160px;" role="img" aria-label="Elaine Ho headshot, Regional Head Malaysia">
+                [PHOTO: Elaine Ho]
+              </div>
+              <div class="p-5">
+                <div class="inline-block bg-gray-50 border border-gray-200 text-gray-600 text-xs font-bold px-2 py-0.5 rounded mb-2 dark:bg-slate-900 dark:border-slate-700 dark:text-slate-400">Regional Head, Malaysia</div>
+                <h3 class="text-pretty font-bold text-gray-900 text-sm mb-1 dark:text-slate-100">Elaine Ho</h3>
+                <p class="text-pretty text-gray-500 text-xs mb-2 dark:text-slate-500">English · Malay · Cantonese</p>
+                <p class="text-pretty text-gray-600 text-xs leading-relaxed dark:text-slate-400">Barrister at Law (Lincoln's Inn). Procurement and governance with United Nations and major Asia Pacific airline. Legal, international, and education expertise combined.</p>
+              </div>
+            </article>
+
+            <!-- Monica Low -->
+            <article class="bg-white rounded-xl border border-gray-200 overflow-hidden dark:bg-slate-800 dark:border-slate-700">
+              <div class="img-ph flex items-center justify-center text-center text-gray-500 font-mono text-xs dark:text-slate-500" style="height:160px;" role="img" aria-label="Monica Low headshot, Associate Counsellor Malaysia">
+                [PHOTO: Monica Low]
+              </div>
+              <div class="p-5">
+                <div class="inline-block bg-gray-50 border border-gray-200 text-gray-600 text-xs font-bold px-2 py-0.5 rounded mb-2 dark:bg-slate-900 dark:border-slate-700 dark:text-slate-400">Associate Counsellor, Malaysia</div>
+                <h3 class="text-pretty font-bold text-gray-900 text-sm mb-1 dark:text-slate-100">Monica Low</h3>
+                <p class="text-pretty text-gray-500 text-xs mb-2 dark:text-slate-500">English · Bahasa Malaysia · Mandarin · Cantonese</p>
+                <p class="text-pretty text-gray-600 text-xs leading-relaxed dark:text-slate-400">BSc Hospitality — Purdue University. Banking and financial sector. Multilingual fluency across Southeast Asia student markets.</p>
+              </div>
+            </article>
+
+            <!-- Hana Hursepuny -->
+            <article class="bg-white rounded-xl border border-gray-200 overflow-hidden dark:bg-slate-800 dark:border-slate-700">
+              <div class="img-ph flex items-center justify-center text-center text-gray-500 font-mono text-xs dark:text-slate-500" style="height:160px;" role="img" aria-label="Hana Hursepuny headshot, Indonesia Representative">
+                [PHOTO: Hana Hursepuny]
+              </div>
+              <div class="p-5">
+                <div class="inline-block bg-gray-50 border border-gray-200 text-gray-600 text-xs font-bold px-2 py-0.5 rounded mb-2 dark:bg-slate-900 dark:border-slate-700 dark:text-slate-400">Executive Assistant · Indonesia Representative</div>
+                <h3 class="text-pretty font-bold text-gray-900 text-sm mb-1 dark:text-slate-100">Hana Hursepuny</h3>
+                <p class="text-pretty text-gray-500 text-xs mb-2 dark:text-slate-500">English · Indonesian</p>
+                <p class="text-pretty text-gray-600 text-xs leading-relaxed dark:text-slate-400">Started as an intern and grew into Blue's expert on enrolment process requirements and student visa guidelines. Translator for Indonesian and Malaysian students on study tours.</p>
+              </div>
+            </article>
+
+            <!-- Minami Sakamoto -->
+            <article class="bg-white rounded-xl border border-gray-200 overflow-hidden dark:bg-slate-800 dark:border-slate-700">
+              <div class="img-ph flex items-center justify-center text-center text-gray-500 font-mono text-xs dark:text-slate-500" style="height:160px;" role="img" aria-label="Minami Sakamoto headshot, Associate Counsellor Japan">
+                [PHOTO: Minami Sakamoto]
+              </div>
+              <div class="p-5">
+                <div class="inline-block bg-gray-50 border border-gray-200 text-gray-600 text-xs font-bold px-2 py-0.5 rounded mb-2 dark:bg-slate-900 dark:border-slate-700 dark:text-slate-400">Associate Counsellor, Japan</div>
+                <h3 class="text-pretty font-bold text-gray-900 text-sm mb-1 dark:text-slate-100">Minami Sakamoto</h3>
+                <p class="text-pretty text-gray-500 text-xs mb-2 dark:text-slate-500">Japanese · English</p>
+                <p class="text-pretty text-gray-600 text-xs leading-relaxed dark:text-slate-400">First came to Australia to study English, then joined Blue as an intern. Has also studied in France and New York. Supports Japanese students in their language, on their terms.</p>
+              </div>
+            </article>
+
+            <!-- Nino Sekyere-Boakye -->
+            <article class="bg-white rounded-xl border border-gray-200 overflow-hidden dark:bg-slate-800 dark:border-slate-700">
+              <div class="img-ph flex items-center justify-center text-center text-gray-500 font-mono text-xs dark:text-slate-500" style="height:160px;" role="img" aria-label="Nino Sekyere-Boakye headshot, Regional Director Ghana">
+                [PHOTO: Nino Sekyere-Boakye]
+              </div>
+              <div class="p-5">
+                <div class="inline-block bg-blue-50 border border-blue-200 text-blue-700 text-xs font-bold px-2 py-0.5 rounded mb-2 dark:bg-blue-950 dark:border-blue-800 dark:text-blue-300">Regional Director, Ghana · MARN 0959773</div>
+                <h3 class="text-pretty font-bold text-gray-900 text-sm mb-1 dark:text-slate-100">Nino Sekyere-Boakye</h3>
+                <p class="text-pretty text-gray-500 text-xs mb-2 dark:text-slate-500">English · French (conversational)</p>
+                <p class="text-pretty text-gray-600 text-xs leading-relaxed dark:text-slate-400">Registered Migration Agent. Academician and researcher. Over a decade helping African students pursue education in Australia. Worked in 25+ African countries. Master of Professional Marketing — ECU.</p>
+              </div>
+            </article>
+
+            <!-- Elijah Chongo -->
+            <article class="bg-white rounded-xl border border-gray-200 overflow-hidden dark:bg-slate-800 dark:border-slate-700">
+              <div class="img-ph flex items-center justify-center text-center text-gray-500 font-mono text-xs dark:text-slate-500" style="height:160px;" role="img" aria-label="Elijah Chongo headshot, Regional Head Zambia">
+                [PHOTO: Elijah Chongo]
+              </div>
+              <div class="p-5">
+                <div class="inline-block bg-gray-50 border border-gray-200 text-gray-600 text-xs font-bold px-2 py-0.5 rounded mb-2 dark:bg-slate-900 dark:border-slate-700 dark:text-slate-400">Regional Head, Zambia</div>
+                <h3 class="text-pretty font-bold text-gray-900 text-sm mb-1 dark:text-slate-100">Elijah Chongo</h3>
+                <p class="text-pretty text-gray-500 text-xs mb-2 dark:text-slate-500">English · ici Bemba · ci Nyanja</p>
+                <p class="text-pretty text-gray-600 text-xs leading-relaxed dark:text-slate-400">Based in Lusaka. Over 20 years of research, risk management, and strategic advisory. Assists clients across Zambia and neighbouring countries planning their pathway to Australia.</p>
+              </div>
+            </article>
+
+            <!-- Priscilla Mwansa -->
+            <article class="bg-white rounded-xl border border-gray-200 overflow-hidden dark:bg-slate-800 dark:border-slate-700">
+              <div class="img-ph flex items-center justify-center text-center text-gray-500 font-mono text-xs dark:text-slate-500" style="height:160px;" role="img" aria-label="Priscilla Mwansa headshot, Regional Advisor Lusaka">
+                [PHOTO: Priscilla Mwansa]
+              </div>
+              <div class="p-5">
+                <div class="inline-block bg-gray-50 border border-gray-200 text-gray-600 text-xs font-bold px-2 py-0.5 rounded mb-2 dark:bg-slate-900 dark:border-slate-700 dark:text-slate-400">Regional Advisor, Lusaka · Senior Counsellor</div>
+                <h3 class="text-pretty font-bold text-gray-900 text-sm mb-1 dark:text-slate-100">Priscilla Bwalya Mwansa</h3>
+                <p class="text-pretty text-gray-500 text-xs mb-2 dark:text-slate-500">English · ici Bemba</p>
+                <p class="text-pretty text-gray-600 text-xs leading-relaxed dark:text-slate-400">Chartered Accountant (ZICA). Bachelor of Accounting — Copperbelt University. MBA in progress. Unique insight into both career planning and the financial considerations of studying abroad.</p>
+              </div>
+            </article>
+
+            <!-- Sherene Chan -->
+            <article class="bg-white rounded-xl border border-gray-200 overflow-hidden dark:bg-slate-800 dark:border-slate-700">
+              <div class="img-ph flex items-center justify-center text-center text-gray-500 font-mono text-xs dark:text-slate-500" style="height:160px;" role="img" aria-label="Sherene Chan headshot, Regional Head New Zealand">
+                [PHOTO: Sherene Chan]
+              </div>
+              <div class="p-5">
+                <div class="inline-block bg-gray-50 border border-gray-200 text-gray-600 text-xs font-bold px-2 py-0.5 rounded mb-2 dark:bg-slate-900 dark:border-slate-700 dark:text-slate-400">Regional Head, New Zealand</div>
+                <h3 class="text-pretty font-bold text-gray-900 text-sm mb-1 dark:text-slate-100">Sherene Chan</h3>
+                <p class="text-pretty text-gray-500 text-xs mb-2 dark:text-slate-500">English · Malay · Cantonese</p>
+                <p class="text-pretty text-gray-600 text-xs leading-relaxed dark:text-slate-400">Based in Auckland. MBA — University of South Australia. Big 4 consultant. Stakeholder management with UNDP, Khazanah Nasional, Petronas. Firsthand migrant perspective on life in New Zealand.</p>
+              </div>
+            </article>
+
+          </div>
+        </section>
+
+        <!-- §4 MIGRATION & LEGAL SPECIALISTS -->
+        <div class="wf-bar">§4 · Migration &amp; Legal Specialists — Two-column feature cards, distinct styling</div>
+        <section aria-labelledby="legal-h" class="px-16 py-14 bg-white dark:bg-slate-800">
+          <h2 id="legal-h" class="text-pretty text-3xl font-bold text-gray-900 mb-4 dark:text-slate-100">Migration &amp; Legal Specialists</h2>
+          <p class="text-pretty text-gray-600 mb-10 leading-relaxed dark:text-slate-400" style="max-width:800px;">Blue's migration and legal specialists are fully registered and credentialled. Whether you need visa advice, migration strategy, or legal representation — we have qualified professionals on the team.</p>
+          <div class="grid grid-cols-2 gap-6">
+
+            <!-- Mansheel Kaur -->
+            <article class="border-2 border-blue-800 rounded-xl overflow-hidden">
+              <div class="px-5 py-2 flex items-center gap-3" style="background:#1e3a5f;">
+                <span class="text-white text-xs font-bold uppercase tracking-widest">Solicitor · Immigration Lawyer</span>
+              </div>
+              <div class="p-7 flex items-start gap-6">
+                <div class="img-ph rounded-xl shrink-0 flex items-center justify-center text-center text-gray-500 font-mono text-xs dark:text-slate-500" style="width:120px; height:160px;" role="img" aria-label="Mansheel Kaur headshot, Solicitor and Immigration Lawyer">
+                  [PHOTO: Mansheel Kaur]
+                </div>
+                <div>
+                  <h3 class="text-pretty font-bold text-gray-900 text-xl mb-1 dark:text-slate-100">Mansheel Kaur</h3>
+                  <p class="text-pretty text-blue-600 text-sm font-medium mb-2 dark:text-blue-400">Solicitor (NSW) · Advocate &amp; Solicitor (Malaysia)</p>
+                  <p class="text-pretty text-gray-500 text-xs mb-4 dark:text-slate-500">English · Malay · Indonesian · Punjabi · Hindi</p>
+                  <p class="text-pretty text-gray-600 text-sm leading-relaxed dark:text-slate-400">Over 35 years of legal experience spanning Australia and Malaysia. Business migration, skilled migration, family and partner visas, contributory parent visas. LL.B &amp; Bachelor of Jurisprudence — Monash University. Notary Public. Accredited Mediator. Associate of the Chartered Institute of Arbitrators (UK).</p>
+                </div>
+              </div>
+            </article>
+
+            <!-- Arwinder Pal Singh -->
+            <article class="border-2 border-blue-800 rounded-xl overflow-hidden">
+              <div class="px-5 py-2 flex items-center gap-3" style="background:#1e3a5f;">
+                <span class="text-white text-xs font-bold uppercase tracking-widest">Registered Migration Agent · MARN 1574550</span>
+              </div>
+              <div class="p-7 flex items-start gap-6">
+                <div class="img-ph rounded-xl shrink-0 flex items-center justify-center text-center text-gray-500 font-mono text-xs dark:text-slate-500" style="width:120px; height:160px;" role="img" aria-label="Arwinder Pal Singh headshot, Registered Migration Agent">
+                  [PHOTO: Arwinder Singh]
+                </div>
+                <div>
+                  <h3 class="text-pretty font-bold text-gray-900 text-xl mb-1 dark:text-slate-100">Arwinder Pal Singh</h3>
+                  <p class="text-pretty text-blue-600 text-sm font-medium mb-2 dark:text-blue-400">Registered Migration Agent MARN 1574550</p>
+                  <p class="text-pretty text-gray-500 text-xs mb-4 dark:text-slate-500">English · Hindi · Punjabi</p>
+                  <p class="text-pretty text-gray-600 text-sm leading-relaxed dark:text-slate-400">Comprehensive track record across employer-sponsored programs, skilled migration, family migration, student visas, and AAT matters. Bachelor of Computer Science — GND University; Master of Engineering — UniSA; Juris Doctor (in progress) — Deakin University.</p>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </section>
+
+        <!-- §5 OUR EXPERTISE -->
+        <div class="wf-bar">§5 · Our Expertise — Three-column feature strip</div>
+        <section aria-labelledby="expertise-h" class="px-16 py-14 bg-gray-50 dark:bg-slate-900">
+          <h2 id="expertise-h" class="text-pretty text-3xl font-bold text-gray-900 mb-10 text-center dark:text-slate-100">Our Expertise</h2>
+          <div class="grid grid-cols-3 gap-8">
+            <article class="bg-white rounded-xl p-8 border border-gray-200 text-center dark:bg-slate-800 dark:border-slate-700">
+              <div class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center mx-auto mb-5 dark:bg-blue-900">
+                <span class="font-mono text-blue-700 text-xs font-bold dark:text-blue-300">[edu]</span>
+              </div>
+              <h3 class="text-pretty font-bold text-gray-900 text-lg mb-3 dark:text-slate-100">Education Specialists</h3>
+              <p class="text-pretty text-gray-600 text-sm leading-relaxed dark:text-slate-400">Institution matching. Pathway planning. Course selection. We know the Australian education system inside out — from English language programmes to postgraduate degrees.</p>
+            </article>
+            <article class="bg-white rounded-xl p-8 border border-gray-200 text-center dark:bg-slate-800 dark:border-slate-700">
+              <div class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center mx-auto mb-5 dark:bg-blue-900">
+                <span class="font-mono text-blue-700 text-xs font-bold dark:text-blue-300">[career]</span>
+              </div>
+              <h3 class="text-pretty font-bold text-gray-900 text-lg mb-3 dark:text-slate-100">Career Specialists</h3>
+              <p class="text-pretty text-gray-600 text-sm leading-relaxed dark:text-slate-400">Job readiness. Employer connections. Career mapping. We bridge the gap between qualification and employment, with real-world insight into the Australian job market.</p>
+            </article>
+            <article class="bg-white rounded-xl p-8 border border-gray-200 text-center dark:bg-slate-800 dark:border-slate-700">
+              <div class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center mx-auto mb-5 dark:bg-blue-900">
+                <span class="font-mono text-blue-700 text-xs font-bold dark:text-blue-300">[visa]</span>
+              </div>
+              <h3 class="text-pretty font-bold text-gray-900 text-lg mb-3 dark:text-slate-100">Migration Specialists</h3>
+              <p class="text-pretty text-gray-600 text-sm leading-relaxed dark:text-slate-400">Registered agents. Visa applications. Legal compliance. Blue holds MARN 1385471 and QEAC S165. We navigate the system so you don't have to.</p>
+            </article>
+          </div>
+        </section>
+
+        <!-- §6 INTERNATIONAL OFFICES TABLE -->
+        <div class="wf-bar">§6 · International Offices — Reference table</div>
+        <section aria-labelledby="offices-h" class="px-16 py-14 bg-white dark:bg-slate-800">
+          <h2 id="offices-h" class="text-pretty text-3xl font-bold text-gray-900 mb-8 dark:text-slate-100">International Offices</h2>
+          <div class="overflow-hidden rounded-xl border border-gray-200 dark:border-slate-700">
+            <table class="w-full text-sm">
+              <thead>
+                <tr class="bg-gray-50 border-b border-gray-200 dark:bg-slate-900 dark:border-slate-700">
+                  <th class="text-left px-6 py-4 font-semibold text-gray-700 dark:text-slate-300">Location</th>
+                  <th class="text-left px-6 py-4 font-semibold text-gray-700 dark:text-slate-300">Representative(s)</th>
+                  <th class="text-left px-6 py-4 font-semibold text-gray-700 dark:text-slate-300">Market Coverage</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-gray-100">
+                <tr class="bg-blue-50 dark:bg-blue-950"><td class="px-6 py-4 font-medium text-gray-900 dark:text-slate-100">Perth, WA (HQ)</td><td class="px-6 py-4 text-gray-600 dark:text-slate-400">Glen Ong, Monica G, Flora, Shen</td><td class="px-6 py-4 text-gray-600 dark:text-slate-400">Australia-wide</td></tr>
+                <tr><td class="px-6 py-4 font-medium text-gray-900 dark:text-slate-100">Global (Offshore)</td><td class="px-6 py-4 text-gray-600 dark:text-slate-400">Sonia Ong (Executive Director)</td><td class="px-6 py-4 text-gray-600 dark:text-slate-400">International operations</td></tr>
+                <tr class="bg-gray-50 dark:bg-slate-900"><td class="px-6 py-4 font-medium text-gray-900 dark:text-slate-100">Malaysia</td><td class="px-6 py-4 text-gray-600 dark:text-slate-400">Elaine Ho, Monica Low</td><td class="px-6 py-4 text-gray-600 dark:text-slate-400">Southeast Asia</td></tr>
+                <tr><td class="px-6 py-4 font-medium text-gray-900 dark:text-slate-100">Indonesia</td><td class="px-6 py-4 text-gray-600 dark:text-slate-400">Hana Hursepuny</td><td class="px-6 py-4 text-gray-600 dark:text-slate-400">Indonesia, Malaysia</td></tr>
+                <tr class="bg-gray-50 dark:bg-slate-900"><td class="px-6 py-4 font-medium text-gray-900 dark:text-slate-100">Japan</td><td class="px-6 py-4 text-gray-600 dark:text-slate-400">Minami Sakamoto</td><td class="px-6 py-4 text-gray-600 dark:text-slate-400">Japan, Northeast Asia</td></tr>
+                <tr><td class="px-6 py-4 font-medium text-gray-900 dark:text-slate-100">Ghana</td><td class="px-6 py-4 text-gray-600 dark:text-slate-400">Nino Sekyere-Boakye (MARN)</td><td class="px-6 py-4 text-gray-600 dark:text-slate-400">West Africa, Africa-wide</td></tr>
+                <tr class="bg-gray-50 dark:bg-slate-900"><td class="px-6 py-4 font-medium text-gray-900 dark:text-slate-100">Zambia</td><td class="px-6 py-4 text-gray-600 dark:text-slate-400">Elijah Chongo, Priscilla Mwansa</td><td class="px-6 py-4 text-gray-600 dark:text-slate-400">Zambia, Southern Africa</td></tr>
+                <tr><td class="px-6 py-4 font-medium text-gray-900 dark:text-slate-100">New Zealand</td><td class="px-6 py-4 text-gray-600 dark:text-slate-400">Sherene Chan</td><td class="px-6 py-4 text-gray-600 dark:text-slate-400">New Zealand, Oceania</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- §7 CREDENTIALS STRIP -->
+        <div class="wf-bar">§7 · Credentials &amp; Registrations — Trust strip</div>
+        <section aria-labelledby="creds-h" class="px-16 py-8 bg-gray-50 border-y border-gray-200 dark:bg-slate-900 dark:border-slate-700">
+          <h2 id="creds-h" class="text-pretty sr-only">Credentials and registrations</h2>
+          <div class="flex items-center gap-8 flex-wrap">
+            <span class="text-gray-500 text-xs font-medium uppercase tracking-wider dark:text-slate-500">Registrations:</span>
+            <span class="font-mono text-xs bg-white border border-gray-200 rounded px-3 py-1.5 text-gray-600 dark:bg-slate-800 dark:border-slate-700 dark:text-slate-400">MARN 1385471 — Glen Ong</span>
+            <span class="font-mono text-xs bg-white border border-gray-200 rounded px-3 py-1.5 text-gray-600 dark:bg-slate-800 dark:border-slate-700 dark:text-slate-400">MARN 0959773 — Nino Sekyere-Boakye</span>
+            <span class="font-mono text-xs bg-white border border-gray-200 rounded px-3 py-1.5 text-gray-600 dark:bg-slate-800 dark:border-slate-700 dark:text-slate-400">MARN 1574550 — Arwinder Pal Singh</span>
+            <span class="font-mono text-xs bg-white border border-gray-200 rounded px-3 py-1.5 text-gray-600 dark:bg-slate-800 dark:border-slate-700 dark:text-slate-400">QEAC S165</span>
+            <span class="font-mono text-xs bg-white border border-gray-200 rounded px-3 py-1.5 text-gray-600 dark:bg-slate-800 dark:border-slate-700 dark:text-slate-400">MARA Registered</span>
+          </div>
+        </section>
+
+        <!-- §8 CTA BANNER -->
+        <div class="wf-bar">§8 · CTA Banner</div>
+        <section aria-labelledby="cta-h" class="py-16 px-8 text-center" style="background:#1e3a5f;">
+          <h2 id="cta-h" class="text-pretty text-4xl font-bold text-white mb-4">Talk to someone who speaks your language.</h2>
+          <p class="text-pretty text-lg mb-8 mx-auto" style="color:#93c5fd; max-width:540px;">Our team members are based in Perth, Malaysia, Indonesia, Japan, Ghana, Zambia, and New Zealand. We'll connect you with the right adviser for your situation.</p>
+          <div class="flex gap-4 justify-center">
+            <a href="./contact.html" class="bg-white font-bold px-8 py-3 rounded text-base hover:bg-gray-100 dark:bg-slate-800" style="color:#1e3a5f;">Book a Consultation</a>
+            <a href="tel:+61863810030" class="border-2 border-white text-white font-semibold px-8 py-3 rounded text-base">Call +61 8 6381 0030</a>
+          </div>
+        </section>
+
+      </main>
+      <div id="footer-placeholder"></div>
+    </div>
+
+    <!-- MOBILE CANVAS — 390px -->
+    <div style="width:390px; background:var(--base); color:var(--base-foreground);" class="shadow-2xl shrink-0 sticky top-8">
+      <div class="flex items-center justify-between px-4 py-2 border-b-2 border-amber-300 bg-amber-50 dark:border-amber-800 dark:bg-amber-950">
+        <span class="font-bold text-amber-800 tracking-widest text-xs dark:text-amber-200">WIREFRAME</span>
+        <span class="text-amber-600 font-mono" style="font-size:8px;">Mobile 390px</span>
+      </div>
+      <div id="nav-placeholder-m"></div>
+      <main>
+
+        <div class="wf-bar">§1 · Hero</div>
+        <section aria-labelledby="hero-h-m" class="px-4 py-8 text-center" style="background: linear-gradient(180deg, #eff6ff 0%, #ffffff 100%);">
+          <nav aria-label="Breadcrumb" class="mb-4 flex justify-center">
+            <ol class="flex items-center gap-1 text-xs text-gray-500 dark:text-slate-500">
+              <li><a href="./index.html" class="hover:text-blue-700 dark:hover:text-blue-300">Home</a></li>
+              <li class="text-gray-400 dark:text-slate-400">/</li>
+              <li><a href="./about.html" class="hover:text-blue-700 dark:hover:text-blue-300">About</a></li>
+              <li class="text-gray-400 dark:text-slate-400">/</li>
+              <li class="text-gray-800 font-medium dark:text-slate-200" aria-current="page">Our Team</li>
+            </ol>
+          </nav>
+          <div class="img-ph rounded-lg mb-5 flex items-center justify-center text-center text-gray-500 font-mono text-xs mx-auto dark:text-slate-500" style="height:180px;" role="img" aria-label="Group team photo Blue Education">
+            [IMAGE: Group team photo]
+          </div>
+          <h1 id="hero-h-m" class="text-pretty text-2xl font-bold text-gray-900 mb-3 leading-tight dark:text-slate-100">Multilingual specialists. Five countries. One mission.</h1>
+          <p class="text-pretty text-sm text-gray-600 leading-relaxed dark:text-slate-400">Education, migration, and career experts — headquartered in Perth, represented across Asia, Africa, and the Pacific.</p>
+        </section>
+
+        <div class="wf-bar">§2 · Australian Team</div>
+        <section aria-labelledby="au-team-h-m" class="px-4 py-8 bg-white dark:bg-slate-800">
+          <h2 id="au-team-h-m" class="text-pretty text-xl font-bold text-gray-900 mb-5 dark:text-slate-100">Australian Team</h2>
+          <div class="space-y-4">
+            <article class="border border-gray-200 rounded-xl p-4 flex items-start gap-4 dark:border-slate-700">
+              <div class="img-ph rounded-lg shrink-0 flex items-center justify-center text-gray-500 font-mono text-xs dark:text-slate-500" style="width:64px; height:80px;" role="img" aria-label="Glen Ong">
+                [Glen]
+              </div>
+              <div>
+                <div class="text-xs font-bold text-blue-700 mb-1 dark:text-blue-300">Managing Director · MARN 1385471</div>
+                <h3 class="text-pretty font-bold text-gray-900 text-sm mb-0.5 dark:text-slate-100">Glen Ong</h3>
+                <p class="text-pretty text-gray-500 text-xs mb-2 dark:text-slate-500">English · Cantonese · Bahasa Malaysia</p>
+                <p class="text-pretty text-gray-600 text-xs leading-relaxed dark:text-slate-400">Nearly 20 years across education sectors. Student visas, skilled migration, family visas.</p>
+              </div>
+            </article>
+            <article class="border border-gray-200 rounded-xl p-4 flex items-start gap-4 dark:border-slate-700">
+              <div class="img-ph rounded-lg shrink-0 flex items-center justify-center text-gray-500 font-mono text-xs dark:text-slate-500" style="width:64px; height:80px;" role="img" aria-label="Monica Gaikwad">
+                [Monica G]
+              </div>
+              <div>
+                <div class="text-xs font-bold text-gray-600 mb-1 dark:text-slate-400">Associate Counsellor</div>
+                <h3 class="text-pretty font-bold text-gray-900 text-sm mb-0.5 dark:text-slate-100">Monica Gaikwad</h3>
+                <p class="text-pretty text-gray-500 text-xs mb-2 dark:text-slate-500">English · Hindi · Marathi</p>
+                <p class="text-pretty text-gray-600 text-xs leading-relaxed dark:text-slate-400">Joined via EIP. Supports students through study and enrolment. MBA — Curtin.</p>
+              </div>
+            </article>
+            <article class="border border-gray-200 rounded-xl p-4 flex items-start gap-4 dark:border-slate-700">
+              <div class="img-ph rounded-lg shrink-0 flex items-center justify-center text-gray-500 font-mono text-xs dark:text-slate-500" style="width:64px; height:80px;" role="img" aria-label="Flora Wang">
+                [Flora]
+              </div>
+              <div>
+                <div class="text-xs font-bold text-gray-600 mb-1 dark:text-slate-400">Marketing Executive · Counsellor</div>
+                <h3 class="text-pretty font-bold text-gray-900 text-sm mb-0.5 dark:text-slate-100">Flora Wang</h3>
+                <p class="text-pretty text-gray-500 text-xs mb-2 dark:text-slate-500">English · Mandarin · Cantonese</p>
+                <p class="text-pretty text-gray-600 text-xs leading-relaxed dark:text-slate-400">Education Counsellor. Originally from China. Lived in the US. Master of Marketing — ECU.</p>
+              </div>
+            </article>
+            <article class="border border-gray-200 rounded-xl p-4 flex items-start gap-4 dark:border-slate-700">
+              <div class="img-ph rounded-lg shrink-0 flex items-center justify-center text-gray-500 font-mono text-xs dark:text-slate-500" style="width:64px; height:80px;" role="img" aria-label="Shen Sekhon">
+                [Shen]
+              </div>
+              <div>
+                <div class="text-xs font-bold text-gray-600 mb-1 dark:text-slate-400">Associate Counsellor</div>
+                <h3 class="text-pretty font-bold text-gray-900 text-sm mb-0.5 dark:text-slate-100">Shen Sekhon</h3>
+                <p class="text-pretty text-gray-500 text-xs mb-2 dark:text-slate-500">English · Bahasa Malaysia</p>
+                <p class="text-pretty text-gray-600 text-xs leading-relaxed dark:text-slate-400">20+ years in international higher education. 14 years at Curtin University.</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <div class="wf-bar">§3 · International Team</div>
+        <section aria-labelledby="intl-h-m" class="px-4 py-8 bg-gray-50 dark:bg-slate-900">
+          <h2 id="intl-h-m" class="text-pretty text-xl font-bold text-gray-900 mb-5 dark:text-slate-100">International Operations</h2>
+          <div class="space-y-3">
+            <article class="bg-white rounded-lg p-4 border border-gray-200 dark:bg-slate-800 dark:border-slate-700">
+              <div class="text-xs font-bold text-blue-700 mb-0.5 dark:text-blue-300">Executive Director · Global</div>
+              <h3 class="text-pretty font-bold text-gray-900 text-sm dark:text-slate-100">Sonia Ong</h3>
+              <p class="text-pretty text-gray-500 text-xs dark:text-slate-500">5 languages · Strategy &amp; governance, 20+ years</p>
+            </article>
+            <article class="bg-white rounded-lg p-4 border border-gray-200 dark:bg-slate-800 dark:border-slate-700">
+              <div class="text-xs font-bold text-gray-600 mb-0.5 dark:text-slate-400">Regional Head, Malaysia</div>
+              <h3 class="text-pretty font-bold text-gray-900 text-sm dark:text-slate-100">Elaine Ho</h3>
+              <p class="text-pretty text-gray-500 text-xs dark:text-slate-500">Barrister at Law (Lincoln's Inn) · UN &amp; airline governance</p>
+            </article>
+            <article class="bg-white rounded-lg p-4 border border-gray-200 dark:bg-slate-800 dark:border-slate-700">
+              <div class="text-xs font-bold text-gray-600 mb-0.5 dark:text-slate-400">Associate Counsellor, Malaysia</div>
+              <h3 class="text-pretty font-bold text-gray-900 text-sm dark:text-slate-100">Monica Low</h3>
+              <p class="text-pretty text-gray-500 text-xs dark:text-slate-500">4 languages · BSc Hospitality — Purdue University</p>
+            </article>
+            <article class="bg-white rounded-lg p-4 border border-gray-200 dark:bg-slate-800 dark:border-slate-700">
+              <div class="text-xs font-bold text-gray-600 mb-0.5 dark:text-slate-400">Indonesia Representative</div>
+              <h3 class="text-pretty font-bold text-gray-900 text-sm dark:text-slate-100">Hana Hursepuny</h3>
+              <p class="text-pretty text-gray-500 text-xs dark:text-slate-500">English · Indonesian · Enrolment &amp; visa expert</p>
+            </article>
+            <article class="bg-white rounded-lg p-4 border border-gray-200 dark:bg-slate-800 dark:border-slate-700">
+              <div class="text-xs font-bold text-gray-600 mb-0.5 dark:text-slate-400">Associate Counsellor, Japan</div>
+              <h3 class="text-pretty font-bold text-gray-900 text-sm dark:text-slate-100">Minami Sakamoto</h3>
+              <p class="text-pretty text-gray-500 text-xs dark:text-slate-500">Japanese · English · Former international student</p>
+            </article>
+            <article class="bg-white rounded-lg p-4 border border-gray-200 dark:bg-slate-800 dark:border-slate-700">
+              <div class="text-xs font-bold text-blue-700 mb-0.5 dark:text-blue-300">Regional Director, Ghana · MARN 0959773</div>
+              <h3 class="text-pretty font-bold text-gray-900 text-sm dark:text-slate-100">Nino Sekyere-Boakye</h3>
+              <p class="text-pretty text-gray-500 text-xs dark:text-slate-500">Registered Migration Agent · 25+ African countries</p>
+            </article>
+            <article class="bg-white rounded-lg p-4 border border-gray-200 dark:bg-slate-800 dark:border-slate-700">
+              <div class="text-xs font-bold text-gray-600 mb-0.5 dark:text-slate-400">Regional Head, Zambia</div>
+              <h3 class="text-pretty font-bold text-gray-900 text-sm dark:text-slate-100">Elijah Chongo</h3>
+              <p class="text-pretty text-gray-500 text-xs dark:text-slate-500">Zambia &amp; Southern Africa · 20+ years advisory</p>
+            </article>
+            <article class="bg-white rounded-lg p-4 border border-gray-200 dark:bg-slate-800 dark:border-slate-700">
+              <div class="text-xs font-bold text-gray-600 mb-0.5 dark:text-slate-400">Senior Counsellor, Lusaka</div>
+              <h3 class="text-pretty font-bold text-gray-900 text-sm dark:text-slate-100">Priscilla Bwalya Mwansa</h3>
+              <p class="text-pretty text-gray-500 text-xs dark:text-slate-500">Chartered Accountant · MBA in progress</p>
+            </article>
+            <article class="bg-white rounded-lg p-4 border border-gray-200 dark:bg-slate-800 dark:border-slate-700">
+              <div class="text-xs font-bold text-gray-600 mb-0.5 dark:text-slate-400">Regional Head, New Zealand</div>
+              <h3 class="text-pretty font-bold text-gray-900 text-sm dark:text-slate-100">Sherene Chan</h3>
+              <p class="text-pretty text-gray-500 text-xs dark:text-slate-500">Auckland · MBA · Big 4 · UNDP experience</p>
+            </article>
+          </div>
+        </section>
+
+        <div class="wf-bar">§4 · Legal Specialists</div>
+        <section aria-labelledby="legal-h-m" class="px-4 py-8 bg-white dark:bg-slate-800">
+          <h2 id="legal-h-m" class="text-pretty text-xl font-bold text-gray-900 mb-5 dark:text-slate-100">Migration &amp; Legal Specialists</h2>
+          <div class="space-y-4">
+            <article class="border-2 border-blue-800 rounded-xl p-5">
+              <div class="text-xs font-bold text-blue-800 mb-2 uppercase tracking-wide dark:text-blue-200">Solicitor · Immigration Lawyer</div>
+              <h3 class="text-pretty font-bold text-gray-900 text-sm mb-0.5 dark:text-slate-100">Mansheel Kaur</h3>
+              <p class="text-pretty text-gray-500 text-xs mb-2 dark:text-slate-500">5 languages · Solicitor NSW &amp; Malaysia · Notary Public</p>
+              <p class="text-pretty text-gray-600 text-xs leading-relaxed dark:text-slate-400">35+ years. Business migration, skilled, family, partner, and parent visas. LL.B — Monash University.</p>
+            </article>
+            <article class="border-2 border-blue-800 rounded-xl p-5">
+              <div class="text-xs font-bold text-blue-800 mb-2 uppercase tracking-wide dark:text-blue-200">Registered Migration Agent · MARN 1574550</div>
+              <h3 class="text-pretty font-bold text-gray-900 text-sm mb-0.5 dark:text-slate-100">Arwinder Pal Singh</h3>
+              <p class="text-pretty text-gray-500 text-xs mb-2 dark:text-slate-500">English · Hindi · Punjabi</p>
+              <p class="text-pretty text-gray-600 text-xs leading-relaxed dark:text-slate-400">Employer-sponsored, skilled migration, family, student visas, AAT matters. Engineer + JD background.</p>
+            </article>
+          </div>
+        </section>
+
+        <div class="wf-bar">§5 · CTA Banner</div>
+        <section aria-labelledby="cta-h-m" class="py-12 px-4 text-center" style="background:#1e3a5f;">
+          <h2 id="cta-h-m" class="text-pretty text-2xl font-bold text-white mb-3">Talk to someone who speaks your language.</h2>
+          <p class="text-pretty text-sm mb-6" style="color:#93c5fd;">We'll connect you with the right adviser for your situation.</p>
+          <a href="./contact.html" class="block w-full text-center bg-white font-bold px-6 py-3 rounded text-sm mb-3 dark:bg-slate-800" style="color:#1e3a5f;">Book a Consultation</a>
+          <a href="tel:+61863810030" class="block w-full text-center border-2 border-white text-white font-semibold px-6 py-3 rounded text-sm">Call +61 8 6381 0030</a>
+        </section>
+
+      </main>
+      <div id="footer-placeholder-m"></div>
+    </div>
+  </div>
+  <script src="./assets/site.js"></script>
+</body>
+</html>

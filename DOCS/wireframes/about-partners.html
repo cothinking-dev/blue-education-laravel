@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Partners — Blue Education Wireframe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/tokens.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: { extend: {
+        colors: {
+          primary:   { DEFAULT: 'var(--primary)',   foreground: 'var(--primary-foreground)' },
+          secondary: { DEFAULT: 'var(--secondary)', foreground: 'var(--secondary-foreground)' },
+          base:      { DEFAULT: 'var(--base)',      foreground: 'var(--base-foreground)' },
+          muted:     { DEFAULT: 'var(--muted)',     foreground: 'var(--muted-foreground)' },
+        },
+        borderRadius: {
+          corner: 'var(--corner)', 'corner-lg': 'var(--corner-lg)', 'corner-full': 'var(--corner-full)',
+        },
+        fontFamily: { sans: ['Inter', 'sans-serif'] },
+      }}
+    }
+  </script>
+  <style>
+    .img-ph {
+      background-color: #d1d5db;
+      background-image: repeating-linear-gradient(-55deg, transparent, transparent 8px, rgba(0,0,0,0.04) 8px, rgba(0,0,0,0.04) 9px);
+    }
+    .wf-bar {
+      font-family: 'Courier New', monospace; font-size: 9px; font-weight: bold;
+      text-transform: uppercase; letter-spacing: 0.12em; color: #3b82f6; background: #eff6ff;
+      border-top: 1px solid #bfdbfe; border-bottom: 1px solid #bfdbfe; padding: 4px 32px;
+    }
+    .logo-ph {
+      background: #f3f4f6;
+      border: 1px solid #e5e7eb;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Courier New', monospace;
+      font-size: 10px;
+      color: #9ca3af;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body class="bg-neutral-300 py-8 font-sans">
+  <div class="flex gap-8 items-start mx-auto px-8" style="width: max-content;">
+
+    <!-- DESKTOP CANVAS — 1280px -->
+    <div style="width:1280px; background:var(--base); color:var(--base-foreground);" class="shadow-2xl shrink-0">
+      <div class="flex items-center justify-between px-8 py-2 border-b-2 border-amber-300 bg-amber-50 dark:border-amber-800 dark:bg-amber-950">
+        <div class="flex items-center gap-3">
+          <span class="font-bold text-amber-800 tracking-widest text-sm dark:text-amber-200">WIREFRAME</span>
+          <span class="text-amber-700 text-sm dark:text-amber-300">·  Blue Education  ·  Our Partners  ·  Desktop 1280px</span>
+        </div>
+        <span class="text-amber-500 font-mono text-xs dark:text-amber-400">Layout &amp; copy reference — not final design</span>
+      </div>
+      <div id="nav-placeholder"></div>
+      <main id="main-content">
+
+        <!-- §1 HERO -->
+        <div class="wf-bar">§1 · Hero — Subtle, clean, centered text, light background</div>
+        <section aria-labelledby="hero-h" class="px-16 py-20 text-center" style="background: linear-gradient(180deg, #eff6ff 0%, #ffffff 100%);">
+          <nav aria-label="Breadcrumb" class="mb-6 flex justify-center">
+            <ol class="flex items-center gap-2 text-sm text-gray-500 dark:text-slate-500">
+              <li><a href="./index.html" class="hover:text-blue-700 dark:hover:text-blue-300">Home</a></li>
+              <li class="text-gray-400 dark:text-slate-400">/</li>
+              <li><a href="./about.html" class="hover:text-blue-700 dark:hover:text-blue-300">About</a></li>
+              <li class="text-gray-400 dark:text-slate-400">/</li>
+              <li class="text-gray-800 font-medium dark:text-slate-200" aria-current="page">Our Partners</li>
+            </ol>
+          </nav>
+          <h1 id="hero-h" class="text-pretty text-5xl font-bold text-gray-900 mb-6 leading-tight dark:text-slate-100">28 years of institutional partnerships. Industry accredited.</h1>
+          <p class="text-pretty text-xl text-gray-600 mx-auto leading-relaxed dark:text-slate-400" style="max-width:640px;">Direct relationships with Australian universities, TAFEs, and RTOs. Professional credentials that back it up.</p>
+        </section>
+
+        <!-- §2 INSTITUTIONAL PARTNERS — UNIVERSITIES -->
+        <div class="wf-bar">§2 · Institutional Partners — Universities logo grid</div>
+        <section aria-labelledby="partners-h" class="px-16 py-14 bg-white dark:bg-slate-800">
+          <h2 id="partners-h" class="text-pretty text-3xl font-bold text-gray-900 mb-4 dark:text-slate-100">Institutional Partners</h2>
+
+          <h3 class="text-pretty text-xl font-semibold text-gray-800 mb-4 mt-8 dark:text-slate-200">Universities</h3>
+          <p class="text-pretty text-gray-600 mb-8 leading-relaxed dark:text-slate-400">Blue Education works with all five Western Australian universities and a broader network of partner institutions across Australia. Access to over 1,100 institutions and 20,000 programmes means your options aren't limited to what one agent happens to represent.</p>
+
+          <!-- WA Universities -->
+          <div class="mb-6">
+            <div class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-4 dark:text-slate-400">Western Australian Universities</div>
+            <div class="grid grid-cols-5 gap-4">
+              <div class="logo-ph rounded-xl p-6 text-center" style="height:100px;">
+                [UWA LOGO]<br><span style="font-size:8px;">University of Western Australia</span>
+              </div>
+              <div class="logo-ph rounded-xl p-6 text-center" style="height:100px;">
+                [CURTIN LOGO]<br><span style="font-size:8px;">Curtin University</span>
+              </div>
+              <div class="logo-ph rounded-xl p-6 text-center" style="height:100px;">
+                [MURDOCH LOGO]<br><span style="font-size:8px;">Murdoch University</span>
+              </div>
+              <div class="logo-ph rounded-xl p-6 text-center" style="height:100px;">
+                [ECU LOGO]<br><span style="font-size:8px;">Edith Cowan University</span>
+              </div>
+              <div class="logo-ph rounded-xl p-6 text-center" style="height:100px;">
+                [NOTRE DAME LOGO]<br><span style="font-size:8px;">Notre Dame Australia</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Additional partners -->
+          <div class="mb-10">
+            <div class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-4 dark:text-slate-400">Additional National Partners</div>
+            <div class="grid grid-cols-6 gap-4">
+              <div class="logo-ph rounded-xl p-4 text-center" style="height:80px;">[PARTNER LOGO]<br><span style="font-size:7px;">TBC</span></div>
+              <div class="logo-ph rounded-xl p-4 text-center" style="height:80px;">[PARTNER LOGO]<br><span style="font-size:7px;">TBC</span></div>
+              <div class="logo-ph rounded-xl p-4 text-center" style="height:80px;">[PARTNER LOGO]<br><span style="font-size:7px;">TBC</span></div>
+              <div class="logo-ph rounded-xl p-4 text-center" style="height:80px;">[PARTNER LOGO]<br><span style="font-size:7px;">TBC</span></div>
+              <div class="logo-ph rounded-xl p-4 text-center" style="height:80px;">[PARTNER LOGO]<br><span style="font-size:7px;">TBC</span></div>
+              <div class="logo-ph rounded-xl p-4 text-center" style="height:80px;">[PARTNER LOGO]<br><span style="font-size:7px;">TBC</span></div>
+            </div>
+            <p class="text-pretty font-mono text-gray-400 mt-3 dark:text-slate-400" style="font-size:10px;">[Additional national partner logos — to be supplied by client. Full list to be confirmed.]</p>
+          </div>
+
+          <!-- TAFE & Training Providers -->
+          <h3 class="text-pretty text-xl font-semibold text-gray-800 mb-4 dark:text-slate-200">TAFE &amp; Training Providers</h3>
+          <p class="text-pretty text-gray-600 mb-6 leading-relaxed dark:text-slate-400">Direct relationships with TAFE WA and registered training organisations across Western Australia and nationally. VET applications handled the same way as university placements — with the same advisor, start to finish.</p>
+          <div class="grid grid-cols-5 gap-4">
+            <div class="logo-ph rounded-xl p-6 text-center" style="height:90px;">
+              [TAFE WA LOGO]<br><span style="font-size:7px;">TAFE WA</span>
+            </div>
+            <div class="logo-ph rounded-xl p-4 text-center" style="height:90px;">[RTO LOGO]<br><span style="font-size:7px;">TBC</span></div>
+            <div class="logo-ph rounded-xl p-4 text-center" style="height:90px;">[RTO LOGO]<br><span style="font-size:7px;">TBC</span></div>
+            <div class="logo-ph rounded-xl p-4 text-center" style="height:90px;">[RTO LOGO]<br><span style="font-size:7px;">TBC</span></div>
+            <div class="logo-ph rounded-xl p-4 text-center" style="height:90px;">[RTO LOGO]<br><span style="font-size:7px;">TBC</span></div>
+          </div>
+          <p class="text-pretty font-mono text-gray-400 mt-3 dark:text-slate-400" style="font-size:10px;">[TAFE WA and RTO partner logos — to be supplied by client.]</p>
+        </section>
+
+        <!-- §3 PROFESSIONAL CREDENTIALS -->
+        <div class="wf-bar">§3 · Professional Credentials — Feature list, logo left, text right</div>
+        <section aria-labelledby="creds-h" class="px-16 py-14 bg-gray-50 dark:bg-slate-900">
+          <h2 id="creds-h" class="text-pretty text-3xl font-bold text-gray-900 mb-10 dark:text-slate-100">Professional Credentials</h2>
+          <div class="space-y-5">
+
+            <article class="bg-white rounded-xl border border-gray-200 p-7 flex items-start gap-8 dark:bg-slate-800 dark:border-slate-700">
+              <div class="logo-ph rounded-xl shrink-0 flex items-center justify-center text-center" style="width:120px; height:80px; font-size:11px;">
+                [QEAC LOGO]
+              </div>
+              <div>
+                <h3 class="text-pretty font-bold text-gray-900 text-xl mb-2 dark:text-slate-100">QEAC Certified</h3>
+                <p class="text-pretty text-gray-600 leading-relaxed dark:text-slate-400">Qualified Education Agent Counsellor — the premier professional qualification for education agents in Australia. QEAC S165.</p>
+              </div>
+            </article>
+
+            <article class="bg-white rounded-xl border border-gray-200 p-7 flex items-start gap-8 dark:bg-slate-800 dark:border-slate-700">
+              <div class="logo-ph rounded-xl shrink-0 flex items-center justify-center text-center" style="width:120px; height:80px; font-size:9px;">
+                [MIGRATION ALLIANCE LOGO]
+              </div>
+              <div>
+                <h3 class="text-pretty font-bold text-gray-900 text-xl mb-2 dark:text-slate-100">Migration Alliance</h3>
+                <p class="text-pretty text-gray-600 leading-relaxed dark:text-slate-400">Australia's largest professional body for migration agents. Access to current industry knowledge, professional development, and peer networks.</p>
+              </div>
+            </article>
+
+            <article class="bg-white rounded-xl border border-gray-200 p-7 flex items-start gap-8 dark:bg-slate-800 dark:border-slate-700">
+              <div class="logo-ph rounded-xl shrink-0 flex items-center justify-center text-center" style="width:120px; height:80px; font-size:11px;">
+                [MIA LOGO]
+              </div>
+              <div>
+                <h3 class="text-pretty font-bold text-gray-900 text-xl mb-2 dark:text-slate-100">Migration Institute of Australia</h3>
+                <p class="text-pretty text-gray-600 leading-relaxed dark:text-slate-400">The MIA represents the highest professional and ethical standards in migration advice and services.</p>
+              </div>
+            </article>
+
+            <article class="bg-white rounded-xl border border-gray-200 p-7 flex items-start gap-8 dark:bg-slate-800 dark:border-slate-700">
+              <div class="logo-ph rounded-xl shrink-0 flex items-center justify-center text-center" style="width:120px; height:80px; font-size:9px;">
+                [ABA LOGO]
+              </div>
+              <div>
+                <h3 class="text-pretty font-bold text-gray-900 text-xl mb-2 dark:text-slate-100">Australian Bar Association</h3>
+                <p class="text-pretty text-gray-600 leading-relaxed dark:text-slate-400">Access to legal expertise relevant to education and migration matters.</p>
+              </div>
+            </article>
+
+          </div>
+        </section>
+
+        <!-- §4 INTERNATIONAL OFFICES MAP -->
+        <div class="wf-bar">§4 · International Offices — Map graphic with location pins + table</div>
+        <section aria-labelledby="offices-h" class="px-16 py-14 bg-white dark:bg-slate-800">
+          <h2 id="offices-h" class="text-pretty text-3xl font-bold text-gray-900 mb-10 dark:text-slate-100">International Offices</h2>
+          <div class="flex gap-10 items-start">
+
+            <!-- Map placeholder -->
+            <div class="img-ph rounded-xl flex items-center justify-center text-center text-gray-500 font-mono text-sm shrink-0 dark:text-slate-500" style="width:560px; height:340px;" role="img" aria-label="World map showing Blue Education office locations: Perth HQ, Japan, New Zealand, Zambia, Indonesia, Malaysia">
+              [MAP: World map with labeled pins<br>Perth HQ · Japan · New Zealand<br>Zambia · Indonesia · Malaysia]
+            </div>
+
+            <!-- Location table -->
+            <div style="flex:1;">
+              <div class="overflow-hidden rounded-xl border border-gray-200 dark:border-slate-700">
+                <table class="w-full text-sm">
+                  <thead>
+                    <tr class="bg-gray-50 border-b border-gray-200 dark:bg-slate-900 dark:border-slate-700">
+                      <th class="text-left px-5 py-4 font-semibold text-gray-700 dark:text-slate-300">Location</th>
+                      <th class="text-left px-5 py-4 font-semibold text-gray-700 dark:text-slate-300">Representative</th>
+                      <th class="text-left px-5 py-4 font-semibold text-gray-700 dark:text-slate-300">Coverage</th>
+                    </tr>
+                  </thead>
+                  <tbody class="divide-y divide-gray-100">
+                    <tr class="bg-blue-50 dark:bg-blue-950"><td class="px-5 py-3 font-medium text-gray-900 dark:text-slate-100">Perth, WA (HQ)</td><td class="px-5 py-3 text-gray-600 dark:text-slate-400">Glen + core team</td><td class="px-5 py-3 text-gray-600 dark:text-slate-400">Australia-wide</td></tr>
+                    <tr><td class="px-5 py-3 font-medium text-gray-900 dark:text-slate-100">Japan</td><td class="px-5 py-3 text-gray-600 dark:text-slate-400">Minami Sakamoto</td><td class="px-5 py-3 text-gray-600 dark:text-slate-400">Northeast Asia</td></tr>
+                    <tr class="bg-gray-50 dark:bg-slate-900"><td class="px-5 py-3 font-medium text-gray-900 dark:text-slate-100">New Zealand</td><td class="px-5 py-3 text-gray-600 dark:text-slate-400">Sherene Chan</td><td class="px-5 py-3 text-gray-600 dark:text-slate-400">Oceania</td></tr>
+                    <tr><td class="px-5 py-3 font-medium text-gray-900 dark:text-slate-100">Zambia</td><td class="px-5 py-3 text-gray-600 dark:text-slate-400">Elijah Chongo, Priscilla Mwansa</td><td class="px-5 py-3 text-gray-600 dark:text-slate-400">Southern Africa</td></tr>
+                    <tr class="bg-gray-50 dark:bg-slate-900"><td class="px-5 py-3 font-medium text-gray-900 dark:text-slate-100">Indonesia</td><td class="px-5 py-3 text-gray-600 dark:text-slate-400">Hana Hursepuny</td><td class="px-5 py-3 text-gray-600 dark:text-slate-400">Southeast Asia</td></tr>
+                    <tr><td class="px-5 py-3 font-medium text-gray-900 dark:text-slate-100">Malaysia</td><td class="px-5 py-3 text-gray-600 dark:text-slate-400">Elaine Ho, Monica Low</td><td class="px-5 py-3 text-gray-600 dark:text-slate-400">Southeast Asia</td></tr>
+                    <tr class="bg-gray-50 dark:bg-slate-900"><td class="px-5 py-3 font-medium text-gray-900 dark:text-slate-100">Ghana</td><td class="px-5 py-3 text-gray-600 dark:text-slate-400">Nino Sekyere-Boakye</td><td class="px-5 py-3 text-gray-600 dark:text-slate-400">West Africa, Africa-wide</td></tr>
+                  </tbody>
+                </table>
+              </div>
+              <p class="text-pretty text-gray-500 text-sm mt-4 dark:text-slate-500">
+                <a href="./about-team.html" class="text-blue-600 hover:underline font-medium dark:text-blue-400">Meet the full team →</a>
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- §5 CTA BANNER -->
+        <div class="wf-bar">§5 · CTA Banner</div>
+        <section aria-labelledby="cta-h" class="py-16 px-8 text-center" style="background:#1e3a5f;">
+          <h2 id="cta-h" class="text-pretty text-4xl font-bold text-white mb-4">Partner with Blue Education.</h2>
+          <p class="text-pretty text-lg mb-8 mx-auto" style="color:#93c5fd; max-width:540px;">We work with institutions and organisations committed to student outcomes. Contact us to start a conversation.</p>
+          <div class="flex gap-4 justify-center">
+            <a href="./contact.html" class="bg-white font-bold px-8 py-3 rounded text-base hover:bg-gray-100 dark:bg-slate-800" style="color:#1e3a5f;">Partner With Us</a>
+            <a href="./contact.html" class="border-2 border-white text-white font-semibold px-8 py-3 rounded text-base">Contact Our Team</a>
+          </div>
+        </section>
+
+      </main>
+      <div id="footer-placeholder"></div>
+    </div>
+
+    <!-- MOBILE CANVAS — 390px -->
+    <div style="width:390px; background:var(--base); color:var(--base-foreground);" class="shadow-2xl shrink-0 sticky top-8">
+      <div class="flex items-center justify-between px-4 py-2 border-b-2 border-amber-300 bg-amber-50 dark:border-amber-800 dark:bg-amber-950">
+        <span class="font-bold text-amber-800 tracking-widest text-xs dark:text-amber-200">WIREFRAME</span>
+        <span class="text-amber-600 font-mono" style="font-size:8px;">Mobile 390px</span>
+      </div>
+      <div id="nav-placeholder-m"></div>
+      <main>
+
+        <div class="wf-bar">§1 · Hero</div>
+        <section aria-labelledby="hero-h-m" class="px-4 py-10 text-center" style="background: linear-gradient(180deg, #eff6ff 0%, #ffffff 100%);">
+          <nav aria-label="Breadcrumb" class="mb-4 flex justify-center">
+            <ol class="flex items-center gap-1 text-xs text-gray-500 dark:text-slate-500">
+              <li><a href="./index.html" class="hover:text-blue-700 dark:hover:text-blue-300">Home</a></li>
+              <li class="text-gray-400 dark:text-slate-400">/</li>
+              <li><a href="./about.html" class="hover:text-blue-700 dark:hover:text-blue-300">About</a></li>
+              <li class="text-gray-400 dark:text-slate-400">/</li>
+              <li class="text-gray-800 font-medium dark:text-slate-200" aria-current="page">Our Partners</li>
+            </ol>
+          </nav>
+          <h1 id="hero-h-m" class="text-pretty text-2xl font-bold text-gray-900 mb-3 leading-tight dark:text-slate-100">28 years of institutional partnerships. Industry accredited.</h1>
+          <p class="text-pretty text-sm text-gray-600 leading-relaxed dark:text-slate-400">Direct relationships with Australian universities, TAFEs, and RTOs.</p>
+        </section>
+
+        <div class="wf-bar">§2 · University Partners</div>
+        <section aria-labelledby="partners-h-m" class="px-4 py-8 bg-white dark:bg-slate-800">
+          <h2 id="partners-h-m" class="text-pretty text-xl font-bold text-gray-900 mb-4 dark:text-slate-100">University Partners</h2>
+          <p class="text-pretty text-sm text-gray-600 mb-5 leading-relaxed dark:text-slate-400">Blue Education works with all five WA universities and a broader network nationally. Access to 1,100+ institutions and 20,000+ programmes.</p>
+          <div class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-3 dark:text-slate-400">WA Universities</div>
+          <div class="grid grid-cols-2 gap-3 mb-5">
+            <div class="logo-ph rounded-lg p-3 text-center" style="height:64px;">[UWA]<br><span style="font-size:7px;">Uni of WA</span></div>
+            <div class="logo-ph rounded-lg p-3 text-center" style="height:64px;">[CURTIN]<br><span style="font-size:7px;">Curtin University</span></div>
+            <div class="logo-ph rounded-lg p-3 text-center" style="height:64px;">[MURDOCH]<br><span style="font-size:7px;">Murdoch University</span></div>
+            <div class="logo-ph rounded-lg p-3 text-center" style="height:64px;">[ECU]<br><span style="font-size:7px;">Edith Cowan Uni</span></div>
+            <div class="logo-ph rounded-lg p-3 text-center col-span-2" style="height:64px;">[NOTRE DAME]<br><span style="font-size:7px;">Notre Dame Australia</span></div>
+          </div>
+          <p class="text-pretty font-mono text-gray-400 mb-5 dark:text-slate-400" style="font-size:9px;">[Additional national partner logos — to be supplied by client]</p>
+          <div class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-3 dark:text-slate-400">TAFE &amp; Training Providers</div>
+          <div class="grid grid-cols-2 gap-3">
+            <div class="logo-ph rounded-lg p-3 text-center" style="height:56px;">[TAFE WA]</div>
+            <div class="logo-ph rounded-lg p-3 text-center" style="height:56px;">[RTO — TBC]</div>
+          </div>
+          <p class="text-pretty font-mono text-gray-400 mt-3 dark:text-slate-400" style="font-size:9px;">[TAFE WA and RTO logos — to be supplied by client]</p>
+        </section>
+
+        <div class="wf-bar">§3 · Professional Credentials</div>
+        <section aria-labelledby="creds-h-m" class="px-4 py-8 bg-gray-50 dark:bg-slate-900">
+          <h2 id="creds-h-m" class="text-pretty text-xl font-bold text-gray-900 mb-5 dark:text-slate-100">Professional Credentials</h2>
+          <div class="space-y-4">
+            <article class="bg-white rounded-xl border border-gray-200 p-5 dark:bg-slate-800 dark:border-slate-700">
+              <div class="logo-ph rounded-lg mb-3 flex items-center justify-center" style="height:48px; font-size:10px;">[QEAC LOGO]</div>
+              <h3 class="text-pretty font-bold text-gray-900 text-sm mb-1 dark:text-slate-100">QEAC Certified</h3>
+              <p class="text-pretty text-gray-600 text-xs leading-relaxed dark:text-slate-400">Qualified Education Agent Counsellor — the premier professional qualification for education agents in Australia. QEAC S165.</p>
+            </article>
+            <article class="bg-white rounded-xl border border-gray-200 p-5 dark:bg-slate-800 dark:border-slate-700">
+              <div class="logo-ph rounded-lg mb-3 flex items-center justify-center" style="height:48px; font-size:9px;">[MIGRATION ALLIANCE]</div>
+              <h3 class="text-pretty font-bold text-gray-900 text-sm mb-1 dark:text-slate-100">Migration Alliance</h3>
+              <p class="text-pretty text-gray-600 text-xs leading-relaxed dark:text-slate-400">Australia's largest professional body for migration agents.</p>
+            </article>
+            <article class="bg-white rounded-xl border border-gray-200 p-5 dark:bg-slate-800 dark:border-slate-700">
+              <div class="logo-ph rounded-lg mb-3 flex items-center justify-center" style="height:48px; font-size:10px;">[MIA LOGO]</div>
+              <h3 class="text-pretty font-bold text-gray-900 text-sm mb-1 dark:text-slate-100">Migration Institute of Australia</h3>
+              <p class="text-pretty text-gray-600 text-xs leading-relaxed dark:text-slate-400">Highest professional and ethical standards in migration advice.</p>
+            </article>
+            <article class="bg-white rounded-xl border border-gray-200 p-5 dark:bg-slate-800 dark:border-slate-700">
+              <div class="logo-ph rounded-lg mb-3 flex items-center justify-center" style="height:48px; font-size:10px;">[ABA LOGO]</div>
+              <h3 class="text-pretty font-bold text-gray-900 text-sm mb-1 dark:text-slate-100">Australian Bar Association</h3>
+              <p class="text-pretty text-gray-600 text-xs leading-relaxed dark:text-slate-400">Legal expertise relevant to education and migration matters.</p>
+            </article>
+          </div>
+        </section>
+
+        <div class="wf-bar">§4 · International Offices</div>
+        <section aria-labelledby="offices-h-m" class="px-4 py-8 bg-white dark:bg-slate-800">
+          <h2 id="offices-h-m" class="text-pretty text-xl font-bold text-gray-900 mb-5 dark:text-slate-100">International Offices</h2>
+          <div class="overflow-hidden rounded-xl border border-gray-200 dark:border-slate-700">
+            <table class="w-full text-xs">
+              <thead>
+                <tr class="bg-gray-50 border-b border-gray-200 dark:bg-slate-900 dark:border-slate-700">
+                  <th class="text-left px-4 py-3 font-semibold text-gray-700 dark:text-slate-300">Location</th>
+                  <th class="text-left px-4 py-3 font-semibold text-gray-700 dark:text-slate-300">Coverage</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-gray-100">
+                <tr class="bg-blue-50 dark:bg-blue-950"><td class="px-4 py-3 font-medium text-gray-900 dark:text-slate-100">Perth, WA (HQ)</td><td class="px-4 py-3 text-gray-600 dark:text-slate-400">Australia-wide</td></tr>
+                <tr><td class="px-4 py-3 font-medium text-gray-900 dark:text-slate-100">Japan</td><td class="px-4 py-3 text-gray-600 dark:text-slate-400">Northeast Asia</td></tr>
+                <tr class="bg-gray-50 dark:bg-slate-900"><td class="px-4 py-3 font-medium text-gray-900 dark:text-slate-100">New Zealand</td><td class="px-4 py-3 text-gray-600 dark:text-slate-400">Oceania</td></tr>
+                <tr><td class="px-4 py-3 font-medium text-gray-900 dark:text-slate-100">Zambia</td><td class="px-4 py-3 text-gray-600 dark:text-slate-400">Southern Africa</td></tr>
+                <tr class="bg-gray-50 dark:bg-slate-900"><td class="px-4 py-3 font-medium text-gray-900 dark:text-slate-100">Indonesia</td><td class="px-4 py-3 text-gray-600 dark:text-slate-400">Southeast Asia</td></tr>
+                <tr><td class="px-4 py-3 font-medium text-gray-900 dark:text-slate-100">Malaysia</td><td class="px-4 py-3 text-gray-600 dark:text-slate-400">Southeast Asia</td></tr>
+                <tr class="bg-gray-50 dark:bg-slate-900"><td class="px-4 py-3 font-medium text-gray-900 dark:text-slate-100">Ghana</td><td class="px-4 py-3 text-gray-600 dark:text-slate-400">West Africa</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <a href="./about-team.html" class="text-blue-600 font-medium text-sm mt-4 inline-block hover:underline dark:text-blue-400">Meet the full team →</a>
+        </section>
+
+        <div class="wf-bar">§5 · CTA Banner</div>
+        <section aria-labelledby="cta-h-m" class="py-12 px-4 text-center" style="background:#1e3a5f;">
+          <h2 id="cta-h-m" class="text-pretty text-2xl font-bold text-white mb-3">Partner with Blue Education.</h2>
+          <p class="text-pretty text-sm mb-6" style="color:#93c5fd;">We work with institutions and organisations committed to student outcomes.</p>
+          <a href="./contact.html" class="block w-full text-center bg-white font-bold px-6 py-3 rounded text-sm mb-3 dark:bg-slate-800" style="color:#1e3a5f;">Partner With Us</a>
+          <a href="./contact.html" class="block w-full text-center border-2 border-white text-white font-semibold px-6 py-3 rounded text-sm">Contact Our Team</a>
+        </section>
+
+      </main>
+      <div id="footer-placeholder-m"></div>
+    </div>
+  </div>
+  <script src="./assets/site.js"></script>
+</body>
+</html>

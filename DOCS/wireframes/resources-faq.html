@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FAQ — Blue Education Wireframe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/tokens.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: { extend: {
+        colors: {
+          primary:   { DEFAULT: 'var(--primary)',   foreground: 'var(--primary-foreground)' },
+          secondary: { DEFAULT: 'var(--secondary)', foreground: 'var(--secondary-foreground)' },
+          base:      { DEFAULT: 'var(--base)',      foreground: 'var(--base-foreground)' },
+          muted:     { DEFAULT: 'var(--muted)',     foreground: 'var(--muted-foreground)' },
+        },
+        borderRadius: {
+          corner: 'var(--corner)', 'corner-lg': 'var(--corner-lg)', 'corner-full':'var(--corner-full)',
+        },
+        fontFamily: { sans: ['Inter', 'sans-serif'] },
+      }}
+    }
+  </script>
+  <style>
+    .img-ph {
+      background-color: #d1d5db;
+      background-image: repeating-linear-gradient(-55deg, transparent, transparent 8px, rgba(0,0,0,0.04) 8px, rgba(0,0,0,0.04) 9px);
+    }
+    .wf-bar {
+      font-family: 'Courier New', monospace; font-size: 9px; font-weight: bold;
+      text-transform: uppercase; letter-spacing: 0.12em; color: #3b82f6; background: #eff6ff;
+      border-top: 1px solid #bfdbfe; border-bottom: 1px solid #bfdbfe; padding: 4px 32px;
+    }
+    details > summary {
+      list-style: none;
+      cursor: pointer;
+    }
+    details > summary::-webkit-details-marker { display: none; }
+    details[open] > summary .chevron { transform: rotate(180deg); }
+    .chevron { transition: transform 0.2s ease; display: inline-block; }
+  </style>
+</head>
+<body class="bg-neutral-300 py-8 font-sans">
+  <div class="flex gap-8 items-start mx-auto px-8" style="width: max-content;">
+
+    <!-- ═══════════════════════════════════════════════
+         DESKTOP CANVAS — 1280px
+    ═══════════════════════════════════════════════ -->
+    <div style="width:1280px; background:var(--base); color:var(--base-foreground);" class="shadow-2xl shrink-0">
+      <div class="flex items-center justify-between px-8 py-2 border-b-2 border-amber-300 bg-amber-50 dark:border-amber-800 dark:bg-amber-950">
+        <div class="flex items-center gap-3">
+          <span class="font-bold text-amber-800 tracking-widest text-sm dark:text-amber-200">WIREFRAME</span>
+          <span class="text-amber-700 text-sm dark:text-amber-300">·  Blue Education  ·  FAQ  ·  Desktop 1280px</span>
+        </div>
+        <span class="text-amber-500 font-mono text-xs dark:text-amber-400">Layout &amp; copy reference — not final design</span>
+      </div>
+
+      <div id="nav-placeholder"></div>
+
+      <main id="main-content">
+
+        <!-- ════════════════════════════════════════════════════
+             §1  HERO
+        ════════════════════════════════════════════════════ -->
+        <div class="wf-bar">§1 · Hero — Centered heading, clean background</div>
+        <section aria-labelledby="hero-h" class="px-16 py-16 bg-gray-50 border-b border-gray-200 text-center dark:bg-slate-900 dark:border-slate-700">
+          <p class="text-pretty text-xs font-bold text-blue-600 uppercase tracking-widest mb-3 dark:text-blue-400">Resources</p>
+          <h1 id="hero-h" class="text-pretty text-5xl font-bold text-gray-900 mb-5 leading-tight dark:text-slate-100">Frequently Asked Questions</h1>
+          <p class="text-pretty text-xl text-gray-600 mx-auto leading-relaxed dark:text-slate-400" style="max-width:600px;">Find answers to common questions about studying, working, and living in Australia.</p>
+        </section>
+
+        <!-- ════════════════════════════════════════════════════
+             §2  CATEGORY TABS
+        ════════════════════════════════════════════════════ -->
+        <div class="wf-bar">§2 · Category Tabs — [Tabs — JS behaviour in final build]</div>
+        <section aria-label="FAQ categories" class="px-16 py-6 bg-white border-b border-gray-200 dark:bg-slate-800 dark:border-slate-700">
+          <nav aria-label="FAQ category tabs" class="flex gap-1">
+            <button type="button" class="bg-blue-600 text-white text-sm font-semibold px-6 py-2.5 rounded-t-lg">Education</button>
+            <button type="button" class="bg-gray-100 border border-gray-200 border-b-0 text-gray-600 text-sm font-medium px-6 py-2.5 rounded-t-lg hover:bg-gray-200 dark:bg-slate-800 dark:border-slate-700 dark:text-slate-400">Migration &amp; Visas</button>
+            <button type="button" class="bg-gray-100 border border-gray-200 border-b-0 text-gray-600 text-sm font-medium px-6 py-2.5 rounded-t-lg hover:bg-gray-200 dark:bg-slate-800 dark:border-slate-700 dark:text-slate-400">Career Services</button>
+            <button type="button" class="bg-gray-100 border border-gray-200 border-b-0 text-gray-600 text-sm font-medium px-6 py-2.5 rounded-t-lg hover:bg-gray-200 dark:bg-slate-800 dark:border-slate-700 dark:text-slate-400">Student Support</button>
+            <button type="button" class="bg-gray-100 border border-gray-200 border-b-0 text-gray-600 text-sm font-medium px-6 py-2.5 rounded-t-lg hover:bg-gray-200 dark:bg-slate-800 dark:border-slate-700 dark:text-slate-400">Fees</button>
+          </nav>
+          <p class="text-pretty font-mono text-gray-400 mt-2 dark:text-slate-400" style="font-size:9px;">[Tabs — clicking a tab reveals the relevant accordion section. All sections shown expanded in wireframe for review.]</p>
+        </section>
+
+        <!-- ════════════════════════════════════════════════════
+             §3  EDUCATION FAQs
+        ════════════════════════════════════════════════════ -->
+        <div class="wf-bar">§3 · Education FAQs — Accordion (details/summary)</div>
+        <section aria-labelledby="edu-faq-h" class="px-16 py-14 bg-white border-b border-gray-100 dark:bg-slate-800 dark:border-slate-800">
+          <h2 id="edu-faq-h" class="text-pretty text-2xl font-bold text-gray-900 mb-8 dark:text-slate-100">Education</h2>
+          <div class="space-y-3" style="max-width:860px;">
+
+            <details open class="border border-gray-200 rounded-lg dark:border-slate-700">
+              <summary class="flex items-center justify-between px-6 py-4 font-semibold text-gray-900 text-base select-none dark:text-slate-100">
+                How do I choose the right course?
+                <svg class="chevron w-5 h-5 text-blue-600 shrink-0 ml-4 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-6 pb-5 text-gray-600 text-sm leading-relaxed border-t border-gray-100 dark:text-slate-400 dark:border-slate-800">
+                <p class="text-pretty pt-4">We assess your background, goals, and budget and recommend matching programs from 1,100+ institutions and 20,000+ programs.</p>
+              </div>
+            </details>
+
+            <details open class="border border-gray-200 rounded-lg dark:border-slate-700">
+              <summary class="flex items-center justify-between px-6 py-4 font-semibold text-gray-900 text-base select-none dark:text-slate-100">
+                What English level do I need?
+                <svg class="chevron w-5 h-5 text-blue-600 shrink-0 ml-4 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-6 pb-5 text-gray-600 text-sm leading-relaxed border-t border-gray-100 dark:text-slate-400 dark:border-slate-800">
+                <p class="text-pretty pt-4 mb-4">Accepted tests: IELTS, TOEFL, Cambridge CAE, Pearson PTE. Scores valid for 2 years.</p>
+                <div class="overflow-x-auto">
+                  <table class="w-full text-sm border border-gray-200 rounded dark:border-slate-700">
+                    <caption class="sr-only">Minimum IELTS scores by program level</caption>
+                    <thead class="bg-gray-50 dark:bg-slate-900">
+                      <tr>
+                        <th scope="col" class="text-left px-4 py-2 font-semibold text-gray-700 border-b border-gray-200 dark:text-slate-300 dark:border-slate-700">Program Level</th>
+                        <th scope="col" class="text-left px-4 py-2 font-semibold text-gray-700 border-b border-gray-200 dark:text-slate-300 dark:border-slate-700">IELTS Minimum</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="border-b border-gray-100 dark:border-slate-800"><td class="px-4 py-2">Foundation</td><td class="px-4 py-2">5.0 – 5.5</td></tr>
+                      <tr class="border-b border-gray-100 bg-gray-50 dark:border-slate-800 dark:bg-slate-900"><td class="px-4 py-2">VET/TAFE</td><td class="px-4 py-2">5.5 – 6.0</td></tr>
+                      <tr class="border-b border-gray-100 dark:border-slate-800"><td class="px-4 py-2">Bachelor</td><td class="px-4 py-2">6.5</td></tr>
+                      <tr class="border-b border-gray-100 bg-gray-50 dark:border-slate-800 dark:bg-slate-900"><td class="px-4 py-2">Graduate Cert/Diploma</td><td class="px-4 py-2">6.5 – 7.0</td></tr>
+                      <tr><td class="px-4 py-2">Master/Doctoral</td><td class="px-4 py-2">6.5 – 7.0</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+                <p class="text-pretty mt-3">Not at the required level? ELICOS courses (10–30 weeks) can bridge the gap. <a href="./services-education-english.html" class="text-blue-600 hover:underline dark:text-blue-400">English &amp; Foundation &rarr;</a></p>
+              </div>
+            </details>
+
+            <details open class="border border-gray-200 rounded-lg dark:border-slate-700">
+              <summary class="flex items-center justify-between px-6 py-4 font-semibold text-gray-900 text-base select-none dark:text-slate-100">
+                Can I change courses after I start?
+                <svg class="chevron w-5 h-5 text-blue-600 shrink-0 ml-4 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-6 pb-5 text-gray-600 text-sm leading-relaxed border-t border-gray-100 dark:text-slate-400 dark:border-slate-800">
+                <p class="text-pretty pt-4">Usually yes, but it may affect your visa conditions. Talk to us before making any changes.</p>
+              </div>
+            </details>
+
+          </div>
+        </section>
+
+        <!-- ════════════════════════════════════════════════════
+             §4  MIGRATION FAQs
+        ════════════════════════════════════════════════════ -->
+        <div class="wf-bar">§4 · Migration &amp; Visas FAQs — Accordion</div>
+        <section aria-labelledby="migration-faq-h" class="px-16 py-14 bg-gray-50 border-b border-gray-100 dark:bg-slate-900 dark:border-slate-800">
+          <h2 id="migration-faq-h" class="text-pretty text-2xl font-bold text-gray-900 mb-8 dark:text-slate-100">Migration &amp; Visas</h2>
+          <div class="space-y-3" style="max-width:860px;">
+
+            <details open class="border border-gray-200 rounded-lg bg-white dark:border-slate-700 dark:bg-slate-800">
+              <summary class="flex items-center justify-between px-6 py-4 font-semibold text-gray-900 text-base select-none dark:text-slate-100">
+                How long does a student visa take?
+                <svg class="chevron w-5 h-5 text-blue-600 shrink-0 ml-4 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-6 pb-5 text-gray-600 text-sm leading-relaxed border-t border-gray-100 dark:text-slate-400 dark:border-slate-800">
+                <p class="text-pretty pt-4">4–8 weeks typical. We review applications for completeness before submission to avoid delays.</p>
+              </div>
+            </details>
+
+            <details open class="border border-gray-200 rounded-lg bg-white dark:border-slate-700 dark:bg-slate-800">
+              <summary class="flex items-center justify-between px-6 py-4 font-semibold text-gray-900 text-base select-none dark:text-slate-100">
+                Can I work while studying?
+                <svg class="chevron w-5 h-5 text-blue-600 shrink-0 ml-4 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-6 pb-5 text-gray-600 text-sm leading-relaxed border-t border-gray-100 dark:text-slate-400 dark:border-slate-800">
+                <p class="text-pretty pt-4">Yes. Student visa holders can work up to 48 hours per fortnight during term and unlimited hours during breaks.</p>
+              </div>
+            </details>
+
+            <details open class="border border-gray-200 rounded-lg bg-white dark:border-slate-700 dark:bg-slate-800">
+              <summary class="flex items-center justify-between px-6 py-4 font-semibold text-gray-900 text-base select-none dark:text-slate-100">
+                What happens after I graduate?
+                <svg class="chevron w-5 h-5 text-blue-600 shrink-0 ml-4 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-6 pb-5 text-gray-600 text-sm leading-relaxed border-t border-gray-100 dark:text-slate-400 dark:border-slate-800">
+                <p class="text-pretty pt-4 mb-4">You may be eligible for a Graduate/Post-Study Work Visa (Subclass 485). Two streams:</p>
+                <p class="text-pretty mb-3"><strong class="text-gray-900 dark:text-slate-100">Graduate Work Stream:</strong> 18 months — for graduates with skills on the skilled occupation list.</p>
+                <p class="text-pretty mb-3"><strong class="text-gray-900 dark:text-slate-100">Post-Study Work Stream:</strong></p>
+                <div class="overflow-x-auto">
+                  <table class="w-full text-sm border border-gray-200 rounded dark:border-slate-700">
+                    <caption class="sr-only">Post-Study Work Stream visa duration by qualification</caption>
+                    <thead class="bg-gray-50 dark:bg-slate-900">
+                      <tr>
+                        <th scope="col" class="text-left px-4 py-2 font-semibold text-gray-700 border-b border-gray-200 dark:text-slate-300 dark:border-slate-700">Qualification</th>
+                        <th scope="col" class="text-left px-4 py-2 font-semibold text-gray-700 border-b border-gray-200 dark:text-slate-300 dark:border-slate-700">Duration</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="border-b border-gray-100 dark:border-slate-800"><td class="px-4 py-2">Bachelor</td><td class="px-4 py-2">2 years</td></tr>
+                      <tr class="border-b border-gray-100 bg-gray-50 dark:border-slate-800 dark:bg-slate-900"><td class="px-4 py-2">Master</td><td class="px-4 py-2">3 years</td></tr>
+                      <tr><td class="px-4 py-2">Doctoral</td><td class="px-4 py-2">4 years</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+                <p class="text-pretty mt-3">Both streams provide full work rights and a pathway to permanent residency. <a href="./services-migration-graduate-work.html" class="text-blue-600 hover:underline dark:text-blue-400">Graduate &amp; Work Visas &rarr;</a></p>
+              </div>
+            </details>
+
+          </div>
+        </section>
+
+        <!-- ════════════════════════════════════════════════════
+             §5  CAREER FAQs
+        ════════════════════════════════════════════════════ -->
+        <div class="wf-bar">§5 · Career FAQs — Accordion</div>
+        <section aria-labelledby="career-faq-h" class="px-16 py-14 bg-white border-b border-gray-100 dark:bg-slate-800 dark:border-slate-800">
+          <h2 id="career-faq-h" class="text-pretty text-2xl font-bold text-gray-900 mb-8 dark:text-slate-100">Career Services</h2>
+          <div class="space-y-3" style="max-width:860px;">
+
+            <details open class="border border-gray-200 rounded-lg dark:border-slate-700">
+              <summary class="flex items-center justify-between px-6 py-4 font-semibold text-gray-900 text-base select-none dark:text-slate-100">
+                Do you guarantee job placement?
+                <svg class="chevron w-5 h-5 text-blue-600 shrink-0 ml-4 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-6 pb-5 text-gray-600 text-sm leading-relaxed border-t border-gray-100 dark:text-slate-400 dark:border-slate-800">
+                <p class="text-pretty pt-4">No. We provide career counselling, job readiness training, employer introductions, and internship placements. These significantly improve employment prospects but do not guarantee placement.</p>
+              </div>
+            </details>
+
+            <details open class="border border-gray-200 rounded-lg dark:border-slate-700">
+              <summary class="flex items-center justify-between px-6 py-4 font-semibold text-gray-900 text-base select-none dark:text-slate-100">
+                When should I start career planning?
+                <svg class="chevron w-5 h-5 text-blue-600 shrink-0 ml-4 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-6 pb-5 text-gray-600 text-sm leading-relaxed border-t border-gray-100 dark:text-slate-400 dark:border-slate-800">
+                <p class="text-pretty pt-4">Before choosing your course. Career goals should drive education decisions, not the other way around.</p>
+              </div>
+            </details>
+
+          </div>
+        </section>
+
+        <!-- ════════════════════════════════════════════════════
+             §6  STUDENT SUPPORT FAQs
+        ════════════════════════════════════════════════════ -->
+        <div class="wf-bar">§6 · Student Support FAQs — Accordion</div>
+        <section aria-labelledby="support-faq-h" class="px-16 py-14 bg-gray-50 border-b border-gray-100 dark:bg-slate-900 dark:border-slate-800">
+          <h2 id="support-faq-h" class="text-pretty text-2xl font-bold text-gray-900 mb-8 dark:text-slate-100">Student Support</h2>
+          <div class="space-y-3" style="max-width:860px;">
+
+            <details open class="border border-gray-200 rounded-lg bg-white dark:border-slate-700 dark:bg-slate-800">
+              <summary class="flex items-center justify-between px-6 py-4 font-semibold text-gray-900 text-base select-none dark:text-slate-100">
+                What if there is an emergency?
+                <svg class="chevron w-5 h-5 text-blue-600 shrink-0 ml-4 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-6 pb-5 text-gray-600 text-sm leading-relaxed border-t border-gray-100 dark:text-slate-400 dark:border-slate-800">
+                <p class="text-pretty pt-4">24/7 emergency hotline. Multilingual support. All Blue Education clients covered.</p>
+              </div>
+            </details>
+
+            <details open class="border border-gray-200 rounded-lg bg-white dark:border-slate-700 dark:bg-slate-800">
+              <summary class="flex items-center justify-between px-6 py-4 font-semibold text-gray-900 text-base select-none dark:text-slate-100">
+                Do you provide accommodation?
+                <svg class="chevron w-5 h-5 text-blue-600 shrink-0 ml-4 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-6 pb-5 text-gray-600 text-sm leading-relaxed border-t border-gray-100 dark:text-slate-400 dark:border-slate-800">
+                <p class="text-pretty pt-4">Yes. Through the Australian Homestay Network — vetted families, meals included. Guardianship arranged for under-18 students through Professional Student Care Australia or International Student Alliance. <a href="./services-student-support.html" class="text-blue-600 hover:underline dark:text-blue-400">Student support services &rarr;</a></p>
+              </div>
+            </details>
+
+          </div>
+        </section>
+
+        <!-- ════════════════════════════════════════════════════
+             §7  FEES FAQs
+        ════════════════════════════════════════════════════ -->
+        <div class="wf-bar">§7 · Fees &amp; Costs FAQs — Accordion</div>
+        <section aria-labelledby="fees-faq-h" class="px-16 py-14 bg-white border-b border-gray-100 dark:bg-slate-800 dark:border-slate-800">
+          <h2 id="fees-faq-h" class="text-pretty text-2xl font-bold text-gray-900 mb-8 dark:text-slate-100">Fees &amp; Costs</h2>
+          <div class="space-y-3" style="max-width:860px;">
+
+            <details open class="border border-gray-200 rounded-lg dark:border-slate-700">
+              <summary class="flex items-center justify-between px-6 py-4 font-semibold text-gray-900 text-base select-none dark:text-slate-100">
+                How much does Blue Education charge?
+                <svg class="chevron w-5 h-5 text-blue-600 shrink-0 ml-4 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-6 pb-5 text-gray-600 text-sm leading-relaxed border-t border-gray-100 dark:text-slate-400 dark:border-slate-800">
+                <p class="text-pretty pt-4">Varies by service and complexity. Initial consultation is free. Full fee breakdown provided before any commitment.</p>
+              </div>
+            </details>
+
+            <details open class="border border-gray-200 rounded-lg dark:border-slate-700">
+              <summary class="flex items-center justify-between px-6 py-4 font-semibold text-gray-900 text-base select-none dark:text-slate-100">
+                What other costs should I budget for?
+                <svg class="chevron w-5 h-5 text-blue-600 shrink-0 ml-4 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-6 pb-5 text-gray-600 text-sm leading-relaxed border-t border-gray-100 dark:text-slate-400 dark:border-slate-800">
+                <ul class="pt-4 space-y-1 list-disc list-inside">
+                  <li>Tuition (paid to institution)</li>
+                  <li>Accommodation</li>
+                  <li>OSHC (mandatory health insurance)</li>
+                  <li>Living expenses</li>
+                  <li>Visa application fees</li>
+                  <li>Medical examination ($240–$380)</li>
+                </ul>
+                <p class="text-pretty mt-3"><a href="./fees.html" class="text-blue-600 hover:underline dark:text-blue-400">Fees &amp; Investment &rarr;</a></p>
+              </div>
+            </details>
+
+          </div>
+        </section>
+
+        <!-- ════════════════════════════════════════════════════
+             §8  STILL HAVE QUESTIONS CTA
+        ════════════════════════════════════════════════════ -->
+        <div class="wf-bar">§8 · Still Have Questions? — Inline CTA block</div>
+        <section aria-labelledby="cta-h" class="py-16 px-8 text-center" style="background:#1e3a5f;">
+          <h2 id="cta-h" class="text-pretty text-4xl font-bold text-white mb-4">Still have questions?</h2>
+          <p class="text-pretty text-lg mb-8 mx-auto" style="color:#93c5fd; max-width:540px;">Contact us directly. We respond to all enquiries within one business day.</p>
+          <div class="flex gap-4 justify-center">
+            <a href="./contact.html" class="bg-white font-bold px-8 py-3 rounded text-base hover:bg-gray-100 dark:bg-slate-800" style="color:#1e3a5f;">Contact Us</a>
+            <a href="tel:+61863810030" class="border-2 border-white text-white font-semibold px-8 py-3 rounded text-base">Call +61 8 6381 0030</a>
+          </div>
+        </section>
+
+      </main>
+
+      <div id="footer-placeholder"></div>
+    </div>
+    <!-- end DESKTOP CANVAS -->
+
+    <!-- ═══════════════════════════════════════════════
+         MOBILE CANVAS — 390px
+    ═══════════════════════════════════════════════ -->
+    <div style="width:390px; background:var(--base); color:var(--base-foreground);" class="shadow-2xl shrink-0 sticky top-8">
+      <div class="flex items-center justify-between px-4 py-2 border-b-2 border-amber-300 bg-amber-50 dark:border-amber-800 dark:bg-amber-950">
+        <span class="font-bold text-amber-800 tracking-widest text-xs dark:text-amber-200">WIREFRAME</span>
+        <span class="text-amber-600 font-mono" style="font-size:8px;">Mobile 390px</span>
+      </div>
+
+      <div id="nav-placeholder-m"></div>
+
+      <main>
+
+        <!-- §1 Hero — mobile -->
+        <div class="wf-bar">§1 · Hero</div>
+        <section aria-labelledby="hero-h-m" class="px-5 py-10 bg-gray-50 text-center dark:bg-slate-900">
+          <p class="text-pretty text-xs font-bold text-blue-600 uppercase tracking-widest mb-2 dark:text-blue-400">Resources</p>
+          <h1 id="hero-h-m" class="text-pretty text-3xl font-bold text-gray-900 mb-3 leading-tight dark:text-slate-100">Frequently Asked Questions</h1>
+          <p class="text-pretty text-sm text-gray-600 dark:text-slate-400">Quick answers for international students, parents, and professionals.</p>
+        </section>
+
+        <!-- §2 Category Tabs — mobile scrollable -->
+        <div class="wf-bar">§2 · Category Tabs (scrollable)</div>
+        <section aria-label="FAQ categories" class="px-5 py-4 bg-white border-t border-gray-200 overflow-x-auto dark:bg-slate-800 dark:border-slate-700">
+          <nav aria-label="FAQ categories" class="flex gap-2 min-w-max">
+            <button type="button" class="bg-blue-600 text-white text-xs font-semibold px-4 py-2 rounded-full whitespace-nowrap">Education</button>
+            <button type="button" class="bg-gray-100 border border-gray-200 text-gray-600 text-xs px-4 py-2 rounded-full whitespace-nowrap dark:bg-slate-800 dark:border-slate-700 dark:text-slate-400">Migration</button>
+            <button type="button" class="bg-gray-100 border border-gray-200 text-gray-600 text-xs px-4 py-2 rounded-full whitespace-nowrap dark:bg-slate-800 dark:border-slate-700 dark:text-slate-400">Career</button>
+            <button type="button" class="bg-gray-100 border border-gray-200 text-gray-600 text-xs px-4 py-2 rounded-full whitespace-nowrap dark:bg-slate-800 dark:border-slate-700 dark:text-slate-400">Support</button>
+            <button type="button" class="bg-gray-100 border border-gray-200 text-gray-600 text-xs px-4 py-2 rounded-full whitespace-nowrap dark:bg-slate-800 dark:border-slate-700 dark:text-slate-400">Fees</button>
+          </nav>
+        </section>
+
+        <!-- §3 Education FAQs — mobile -->
+        <div class="wf-bar">§3 · Education FAQs</div>
+        <section aria-labelledby="edu-faq-h-m" class="px-5 py-8 bg-white border-t border-gray-200 dark:bg-slate-800 dark:border-slate-700">
+          <h2 id="edu-faq-h-m" class="text-pretty text-lg font-bold text-gray-900 mb-4 dark:text-slate-100">Education</h2>
+          <div class="space-y-2">
+
+            <details open class="border border-gray-200 rounded-lg dark:border-slate-700">
+              <summary class="flex items-center justify-between px-4 py-3 font-semibold text-gray-900 text-sm select-none dark:text-slate-100">
+                How do I choose the right course?
+                <svg class="chevron w-4 h-4 text-blue-600 shrink-0 ml-2 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-4 pb-4 text-gray-600 text-xs leading-relaxed border-t border-gray-100 dark:text-slate-400 dark:border-slate-800">
+                <p class="text-pretty pt-3">We assess your background, goals, and budget and recommend matching programs from 1,100+ institutions and 20,000+ programs.</p>
+              </div>
+            </details>
+
+            <details open class="border border-gray-200 rounded-lg dark:border-slate-700">
+              <summary class="flex items-center justify-between px-4 py-3 font-semibold text-gray-900 text-sm select-none dark:text-slate-100">
+                What English level do I need?
+                <svg class="chevron w-4 h-4 text-blue-600 shrink-0 ml-2 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-4 pb-4 text-gray-600 text-xs leading-relaxed border-t border-gray-100 dark:text-slate-400 dark:border-slate-800">
+                <p class="text-pretty pt-3 mb-2">IELTS minimum scores by program:</p>
+                <table class="w-full text-xs border border-gray-200 rounded mb-2 dark:border-slate-700">
+                  <caption class="sr-only">Minimum IELTS scores by program level</caption>
+                  <thead class="bg-gray-50 dark:bg-slate-900">
+                    <tr>
+                      <th scope="col" class="text-left px-3 py-1.5 font-semibold border-b border-gray-200 dark:border-slate-700">Program</th>
+                      <th scope="col" class="text-left px-3 py-1.5 font-semibold border-b border-gray-200 dark:border-slate-700">IELTS</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="border-b border-gray-100 dark:border-slate-800"><td class="px-3 py-1.5">Foundation</td><td class="px-3 py-1.5">5.0–5.5</td></tr>
+                    <tr class="border-b border-gray-100 bg-gray-50 dark:border-slate-800 dark:bg-slate-900"><td class="px-3 py-1.5">VET/TAFE</td><td class="px-3 py-1.5">5.5–6.0</td></tr>
+                    <tr class="border-b border-gray-100 dark:border-slate-800"><td class="px-3 py-1.5">Bachelor</td><td class="px-3 py-1.5">6.5</td></tr>
+                    <tr class="border-b border-gray-100 bg-gray-50 dark:border-slate-800 dark:bg-slate-900"><td class="px-3 py-1.5">Grad Cert/Dip</td><td class="px-3 py-1.5">6.5–7.0</td></tr>
+                    <tr><td class="px-3 py-1.5">Master/PhD</td><td class="px-3 py-1.5">6.5–7.0</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </details>
+
+            <details open class="border border-gray-200 rounded-lg dark:border-slate-700">
+              <summary class="flex items-center justify-between px-4 py-3 font-semibold text-gray-900 text-sm select-none dark:text-slate-100">
+                Can I change courses after I start?
+                <svg class="chevron w-4 h-4 text-blue-600 shrink-0 ml-2 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-4 pb-4 text-gray-600 text-xs leading-relaxed border-t border-gray-100 dark:text-slate-400 dark:border-slate-800">
+                <p class="text-pretty pt-3">Usually yes, but it may affect your visa conditions. Talk to us before making any changes.</p>
+              </div>
+            </details>
+
+          </div>
+        </section>
+
+        <!-- §4 Migration FAQs — mobile -->
+        <div class="wf-bar">§4 · Migration FAQs</div>
+        <section aria-labelledby="migration-faq-h-m" class="px-5 py-8 bg-gray-50 border-t border-gray-200 dark:bg-slate-900 dark:border-slate-700">
+          <h2 id="migration-faq-h-m" class="text-pretty text-lg font-bold text-gray-900 mb-4 dark:text-slate-100">Migration &amp; Visas</h2>
+          <div class="space-y-2">
+
+            <details open class="border border-gray-200 rounded-lg bg-white dark:border-slate-700 dark:bg-slate-800">
+              <summary class="flex items-center justify-between px-4 py-3 font-semibold text-gray-900 text-sm select-none dark:text-slate-100">
+                How long does a student visa take?
+                <svg class="chevron w-4 h-4 text-blue-600 shrink-0 ml-2 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-4 pb-4 text-gray-600 text-xs leading-relaxed border-t border-gray-100 dark:text-slate-400 dark:border-slate-800">
+                <p class="text-pretty pt-3">4–8 weeks typical. We review applications for completeness before submission.</p>
+              </div>
+            </details>
+
+            <details open class="border border-gray-200 rounded-lg bg-white dark:border-slate-700 dark:bg-slate-800">
+              <summary class="flex items-center justify-between px-4 py-3 font-semibold text-gray-900 text-sm select-none dark:text-slate-100">
+                Can I work while studying?
+                <svg class="chevron w-4 h-4 text-blue-600 shrink-0 ml-2 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-4 pb-4 text-gray-600 text-xs leading-relaxed border-t border-gray-100 dark:text-slate-400 dark:border-slate-800">
+                <p class="text-pretty pt-3">Yes. Up to 48 hours per fortnight during term, unlimited hours during breaks.</p>
+              </div>
+            </details>
+
+            <details open class="border border-gray-200 rounded-lg bg-white dark:border-slate-700 dark:bg-slate-800">
+              <summary class="flex items-center justify-between px-4 py-3 font-semibold text-gray-900 text-sm select-none dark:text-slate-100">
+                What happens after I graduate?
+                <svg class="chevron w-4 h-4 text-blue-600 shrink-0 ml-2 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-4 pb-4 text-gray-600 text-xs leading-relaxed border-t border-gray-100 dark:text-slate-400 dark:border-slate-800">
+                <p class="text-pretty pt-3">Subclass 485 Graduate Work Visa: 18 months. Post-Study Work Stream: 2 years (Bachelor), 3 years (Master), 4 years (Doctoral). Both provide full work rights and a PR pathway.</p>
+              </div>
+            </details>
+
+          </div>
+        </section>
+
+        <!-- §5–6 Career & Support FAQs — mobile combined -->
+        <div class="wf-bar">§5–6 · Career &amp; Support FAQs</div>
+        <section aria-labelledby="career-support-h-m" class="px-5 py-8 bg-white border-t border-gray-200 dark:bg-slate-800 dark:border-slate-700">
+          <h2 id="career-support-h-m" class="text-pretty text-lg font-bold text-gray-900 mb-4 dark:text-slate-100">Career &amp; Support</h2>
+          <div class="space-y-2">
+
+            <details open class="border border-gray-200 rounded-lg dark:border-slate-700">
+              <summary class="flex items-center justify-between px-4 py-3 font-semibold text-gray-900 text-sm select-none dark:text-slate-100">
+                Do you guarantee job placement?
+                <svg class="chevron w-4 h-4 text-blue-600 shrink-0 ml-2 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-4 pb-4 text-gray-600 text-xs leading-relaxed border-t border-gray-100 dark:text-slate-400 dark:border-slate-800">
+                <p class="text-pretty pt-3">No. We provide career counselling, employer introductions, and internship placements — these significantly improve prospects without guaranteeing placement.</p>
+              </div>
+            </details>
+
+            <details open class="border border-gray-200 rounded-lg dark:border-slate-700">
+              <summary class="flex items-center justify-between px-4 py-3 font-semibold text-gray-900 text-sm select-none dark:text-slate-100">
+                Do you provide accommodation?
+                <svg class="chevron w-4 h-4 text-blue-600 shrink-0 ml-2 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-4 pb-4 text-gray-600 text-xs leading-relaxed border-t border-gray-100 dark:text-slate-400 dark:border-slate-800">
+                <p class="text-pretty pt-3">Yes. Australian Homestay Network — vetted families, meals included. Guardianship arranged for under-18 students.</p>
+              </div>
+            </details>
+
+          </div>
+        </section>
+
+        <!-- §7 Fees FAQs — mobile -->
+        <div class="wf-bar">§7 · Fees FAQs</div>
+        <section aria-labelledby="fees-faq-h-m" class="px-5 py-8 bg-gray-50 border-t border-gray-200 dark:bg-slate-900 dark:border-slate-700">
+          <h2 id="fees-faq-h-m" class="text-pretty text-lg font-bold text-gray-900 mb-4 dark:text-slate-100">Fees &amp; Costs</h2>
+          <div class="space-y-2">
+
+            <details open class="border border-gray-200 rounded-lg bg-white dark:border-slate-700 dark:bg-slate-800">
+              <summary class="flex items-center justify-between px-4 py-3 font-semibold text-gray-900 text-sm select-none dark:text-slate-100">
+                How much does Blue Education charge?
+                <svg class="chevron w-4 h-4 text-blue-600 shrink-0 ml-2 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-4 pb-4 text-gray-600 text-xs leading-relaxed border-t border-gray-100 dark:text-slate-400 dark:border-slate-800">
+                <p class="text-pretty pt-3">Varies by service. Initial consultation is free. Full fee breakdown before any commitment.</p>
+              </div>
+            </details>
+
+            <details open class="border border-gray-200 rounded-lg bg-white dark:border-slate-700 dark:bg-slate-800">
+              <summary class="flex items-center justify-between px-4 py-3 font-semibold text-gray-900 text-sm select-none dark:text-slate-100">
+                What other costs should I budget for?
+                <svg class="chevron w-4 h-4 text-blue-600 shrink-0 ml-2 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-4 pb-4 text-gray-600 text-xs leading-relaxed border-t border-gray-100 dark:text-slate-400 dark:border-slate-800">
+                <ul class="pt-3 space-y-1 list-disc list-inside">
+                  <li>Tuition</li><li>Accommodation</li><li>OSHC</li><li>Living expenses</li>
+                  <li>Visa fees</li><li>Medical exam ($240–$380)</li>
+                </ul>
+              </div>
+            </details>
+
+          </div>
+        </section>
+
+        <!-- §8 CTA — mobile -->
+        <div class="wf-bar">§8 · Still Have Questions?</div>
+        <section aria-labelledby="cta-h-m" class="px-5 py-12 text-center" style="background:#1e3a5f;">
+          <h2 id="cta-h-m" class="text-pretty text-2xl font-bold text-white mb-3">Still have questions?</h2>
+          <p class="text-pretty text-sm mb-6 mx-auto" style="color:#93c5fd;">We respond to all enquiries within one business day.</p>
+          <div class="flex flex-col gap-3">
+            <a href="./contact.html" class="bg-white font-bold px-6 py-3 rounded text-sm dark:bg-slate-800" style="color:#1e3a5f;">Contact Us</a>
+            <a href="tel:+61863810030" class="border-2 border-white text-white font-semibold px-6 py-3 rounded text-sm">Call +61 8 6381 0030</a>
+          </div>
+        </section>
+
+      </main>
+
+      <div id="footer-placeholder-m"></div>
+    </div>
+    <!-- end MOBILE CANVAS -->
+
+  </div>
+  <script src="./assets/site.js"></script>
+</body>
+</html>

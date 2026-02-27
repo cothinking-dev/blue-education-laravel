@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Career Services — Blue Education Wireframe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/tokens.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: { extend: {
+        colors: {
+          primary:   { DEFAULT: 'var(--primary)',   foreground: 'var(--primary-foreground)' },
+          secondary: { DEFAULT: 'var(--secondary)', foreground: 'var(--secondary-foreground)' },
+          base:      { DEFAULT: 'var(--base)',      foreground: 'var(--base-foreground)' },
+          muted:     { DEFAULT: 'var(--muted)',     foreground: 'var(--muted-foreground)' },
+        },
+        borderRadius: {
+          corner: 'var(--corner)', 'corner-lg': 'var(--corner-lg)', 'corner-full': 'var(--corner-full)',
+        },
+        fontFamily: { sans: ['Inter', 'sans-serif'] },
+      }}
+    }
+  </script>
+  <style>
+    .img-ph {
+      background-color: #d1d5db;
+      background-image: repeating-linear-gradient(-55deg, transparent, transparent 8px, rgba(0,0,0,0.04) 8px, rgba(0,0,0,0.04) 9px);
+    }
+    .wf-bar {
+      font-family: 'Courier New', monospace; font-size: 9px; font-weight: bold;
+      text-transform: uppercase; letter-spacing: 0.12em; color: #3b82f6; background: #eff6ff;
+      border-top: 1px solid #bfdbfe; border-bottom: 1px solid #bfdbfe; padding: 4px 32px;
+    }
+  </style>
+</head>
+<body class="bg-neutral-300 py-8 font-sans">
+  <div class="flex gap-8 items-start mx-auto px-8" style="width: max-content;">
+
+    <!-- DESKTOP CANVAS — 1280px -->
+    <div style="width:1280px; background:var(--base); color:var(--base-foreground);" class="shadow-2xl shrink-0">
+      <div class="flex items-center justify-between px-8 py-2 border-b-2 border-amber-300 bg-amber-50 dark:border-amber-800 dark:bg-amber-950">
+        <div class="flex items-center gap-3">
+          <span class="font-bold text-amber-800 tracking-widest text-sm dark:text-amber-200">WIREFRAME</span>
+          <span class="text-amber-700 text-sm dark:text-amber-300">·  Blue Education  ·  Career Services  ·  Desktop 1280px</span>
+        </div>
+        <span class="text-amber-500 font-mono text-xs dark:text-amber-400">Layout &amp; copy reference — not final design</span>
+      </div>
+      <div id="nav-placeholder"></div>
+      <main id="main-content">
+
+        <!-- §1 HERO -->
+        <div class="wf-bar">§1 · Hero — Full-width, left-aligned text + image right</div>
+        <section aria-labelledby="hero-h" class="flex items-stretch" style="min-height:420px;">
+          <div class="flex flex-col justify-center px-16 py-14" style="flex:0 0 58%;">
+            <nav aria-label="Breadcrumb" class="mb-6">
+              <ol class="flex items-center gap-2 text-sm text-gray-500 dark:text-slate-500">
+                <li><a href="./index.html" class="hover:text-blue-700 dark:hover:text-blue-300">Home</a></li>
+                <li aria-hidden="true" class="text-gray-400 dark:text-slate-400">/</li>
+                <li><a href="./services-education.html" class="hover:text-blue-700 dark:hover:text-blue-300">Services</a></li>
+                <li aria-hidden="true" class="text-gray-400 dark:text-slate-400">/</li>
+                <li class="text-gray-800 font-medium dark:text-slate-200" aria-current="page">Career Services</li>
+              </ol>
+            </nav>
+            <h1 id="hero-h" class="text-pretty text-5xl font-bold text-gray-900 mb-6 leading-tight dark:text-slate-100">Turn your Australian qualification into an Australian career.</h1>
+            <p class="text-pretty text-xl text-gray-600 mb-8 leading-relaxed dark:text-slate-400" style="max-width:520px;">Getting qualified is the start. From skills gap analysis and employer introductions to graduate work visa support — every step of the path from study to employment, handled by a dedicated team.</p>
+            <div class="flex gap-4">
+              <a href="./contact.html" class="bg-blue-600 text-white font-semibold px-8 py-3 rounded text-base hover:bg-blue-700">Book a Career Assessment</a>
+              <a href="tel:+61863810030" class="border-2 border-gray-800 text-gray-800 font-semibold px-8 py-3 rounded text-base hover:bg-gray-50 dark:text-slate-200">Call +61 8 6381 0030</a>
+            </div>
+          </div>
+          <div class="img-ph flex items-center justify-center text-center text-gray-500 font-mono text-sm dark:text-slate-500" style="flex:1; min-height:420px;">
+            [IMAGE: Professional handshake,<br>Australian office environment]
+          </div>
+        </section>
+
+        <!-- §2 CAREER PATHWAY TIMELINE -->
+        <div class="wf-bar">§2 · The Career Pathway — Horizontal timeline, 6 stages</div>
+        <section aria-labelledby="pathway-h" class="px-16 py-14 bg-gray-50 dark:bg-slate-900">
+          <h2 id="pathway-h" class="text-pretty text-3xl font-bold text-gray-900 mb-2 dark:text-slate-100">The Career Pathway</h2>
+          <p class="text-pretty text-gray-600 mb-12 text-base dark:text-slate-400">Six structured stages — from assessing your starting point to advancing your career in Australia.</p>
+          <div class="relative">
+            <!-- Connector line -->
+            <div class="absolute top-8 left-0 right-0 h-0.5 bg-blue-200" style="margin: 0 48px;"></div>
+            <div class="grid grid-cols-6 gap-4 relative">
+
+              <article class="bg-white rounded-lg p-5 border border-gray-200 shadow-sm text-center relative dark:bg-slate-800 dark:border-slate-700">
+                <div class="w-14 h-14 rounded-full bg-blue-600 text-white font-bold text-lg flex items-center justify-center mx-auto mb-4 relative z-10">1</div>
+                <h3 class="text-pretty font-bold text-gray-900 mb-2 text-sm dark:text-slate-100">Assess &amp; Plan</h3>
+                <p class="text-pretty text-gray-600 text-xs leading-relaxed dark:text-slate-400">One-on-one session to map your skills against your goals. We identify gaps, outline realistic pathways, and review your resume before you start applying.</p>
+              </article>
+
+              <article class="bg-white rounded-lg p-5 border border-gray-200 shadow-sm text-center relative dark:bg-slate-800 dark:border-slate-700">
+                <div class="w-14 h-14 rounded-full bg-blue-600 text-white font-bold text-lg flex items-center justify-center mx-auto mb-4 relative z-10">2</div>
+                <h3 class="text-pretty font-bold text-gray-900 mb-2 text-sm dark:text-slate-100">Prepare</h3>
+                <p class="text-pretty text-gray-600 text-xs leading-relaxed dark:text-slate-400">Interview techniques, professional networking, LinkedIn optimisation — plus the unwritten expectations that affect how you're perceived from day one.</p>
+              </article>
+
+              <article class="bg-white rounded-lg p-5 border border-gray-200 shadow-sm text-center relative dark:bg-slate-800 dark:border-slate-700">
+                <div class="w-14 h-14 rounded-full bg-blue-600 text-white font-bold text-lg flex items-center justify-center mx-auto mb-4 relative z-10">3</div>
+                <h3 class="text-pretty font-bold text-gray-900 mb-2 text-sm dark:text-slate-100">Build Experience</h3>
+                <p class="text-pretty text-gray-600 text-xs leading-relaxed dark:text-slate-400">Industry-specific internships and work placements give you the Australian work history that makes your resume credible to local employers.</p>
+              </article>
+
+              <article class="bg-white rounded-lg p-5 border border-gray-200 shadow-sm text-center relative dark:bg-slate-800 dark:border-slate-700">
+                <div class="w-14 h-14 rounded-full bg-blue-600 text-white font-bold text-lg flex items-center justify-center mx-auto mb-4 relative z-10">4</div>
+                <h3 class="text-pretty font-bold text-gray-900 mb-2 text-sm dark:text-slate-100">Connect with Employers</h3>
+                <p class="text-pretty text-gray-600 text-xs leading-relaxed dark:text-slate-400">Direct introductions to employers we work with — not job boards, not cold applications. Recruitment support guided by advisors who know your field.</p>
+              </article>
+
+              <article class="bg-white rounded-lg p-5 border border-gray-200 shadow-sm text-center relative dark:bg-slate-800 dark:border-slate-700">
+                <div class="w-14 h-14 rounded-full bg-blue-600 text-white font-bold text-lg flex items-center justify-center mx-auto mb-4 relative z-10">5</div>
+                <h3 class="text-pretty font-bold text-gray-900 mb-2 text-sm dark:text-slate-100">Secure Your Visa</h3>
+                <p class="text-pretty text-gray-600 text-xs leading-relaxed dark:text-slate-400">Your career plan and your visa must align. We assess your work visa eligibility, prepare your application, and coordinate employer sponsorship where required.</p>
+              </article>
+
+              <article class="bg-white rounded-lg p-5 border border-gray-200 shadow-sm text-center relative dark:bg-slate-800 dark:border-slate-700">
+                <div class="w-14 h-14 rounded-full bg-blue-800 text-white font-bold text-lg flex items-center justify-center mx-auto mb-4 relative z-10">6</div>
+                <h3 class="text-pretty font-bold text-gray-900 mb-2 text-sm dark:text-slate-100">Advance Your Career</h3>
+                <p class="text-pretty text-gray-600 text-xs leading-relaxed dark:text-slate-400">The Executive Internship Programme offers senior-level placements with executive mentorship for business graduates and experienced professionals. Limited places, twice a year.</p>
+              </article>
+
+            </div>
+          </div>
+        </section>
+
+        <!-- §3 EXECUTIVE INTERNSHIP HIGHLIGHT -->
+        <div class="wf-bar">§3 · Executive Internship Programme — Highlight card, premium styling</div>
+        <section aria-labelledby="eip-h" class="px-16 py-14 bg-white dark:bg-slate-800">
+          <div class="rounded-xl border-2 border-blue-800 p-12" style="background: linear-gradient(135deg, #1e3a5f 0%, #1e40af 100%);">
+            <div class="flex items-start justify-between gap-10">
+              <div style="flex:1;">
+                <div class="inline-block bg-blue-400 text-blue-900 text-xs font-bold uppercase tracking-widest px-3 py-1 rounded mb-5">Premium Program</div>
+                <h2 id="eip-h" class="text-pretty text-3xl font-bold text-white mb-5">The Executive Internship Programme</h2>
+                <p class="text-pretty text-blue-100 text-lg mb-4 leading-relaxed">For business graduates and experienced professionals who want more than entry-level experience. Strategic placements with Australian employers, executive mentorship through our EIP partners, and a structured programme that runs twice a year.</p>
+                <p class="text-pretty text-blue-200 mb-8">Places are limited. Applications open before each intake.</p>
+                <a href="./programs-executive-internship.html" class="inline-block bg-white text-blue-900 font-bold px-8 py-3 rounded text-base hover:bg-blue-50 dark:bg-slate-800 dark:hover:bg-blue-900">Learn more about the Executive Internship Programme →</a>
+              </div>
+              <div class="img-ph rounded-xl flex items-center justify-center text-center text-gray-500 font-mono text-sm shrink-0 dark:text-slate-500" style="width:340px; height:240px;">
+                [IMAGE: Professional setting,<br>Perth CBD executive environment]
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- §4 CTA BANNER -->
+        <div class="wf-bar">§4 · CTA Banner — Full-width, centered</div>
+        <section aria-labelledby="cta-h" class="py-16 px-8 text-center" style="background:#1e3a5f;">
+          <h2 id="cta-h" class="text-pretty text-4xl font-bold text-white mb-4">Your career in Australia starts with a plan.</h2>
+          <p class="text-pretty text-lg mb-8 mx-auto" style="color:#93c5fd; max-width:540px;">We map your skills against Australian employment pathways and identify your work visa options before you're under pressure to figure it out alone.</p>
+          <div class="flex gap-4 justify-center">
+            <a href="./contact.html" class="bg-white font-bold px-8 py-3 rounded text-base hover:bg-gray-100 dark:bg-slate-800" style="color:#1e3a5f;">Book a Career Assessment</a>
+            <a href="tel:+61863810030" class="border-2 border-white text-white font-semibold px-8 py-3 rounded text-base">Call +61 8 6381 0030</a>
+          </div>
+        </section>
+
+      </main>
+      <div id="footer-placeholder"></div>
+    </div>
+
+    <!-- MOBILE CANVAS — 390px -->
+    <div style="width:390px; background:var(--base); color:var(--base-foreground);" class="shadow-2xl shrink-0 sticky top-8">
+      <div class="flex items-center justify-between px-4 py-2 border-b-2 border-amber-300 bg-amber-50 dark:border-amber-800 dark:bg-amber-950">
+        <span class="font-bold text-amber-800 tracking-widest text-xs dark:text-amber-200">WIREFRAME</span>
+        <span class="text-amber-600 font-mono" style="font-size:8px;">Mobile 390px</span>
+      </div>
+      <div id="nav-placeholder-m"></div>
+      <main>
+
+        <!-- §1 HERO mobile -->
+        <div class="wf-bar">§1 · Hero</div>
+        <section aria-labelledby="hero-h-m" class="px-4 py-10">
+          <nav aria-label="Breadcrumb" class="mb-4">
+            <ol class="flex items-center gap-1 text-xs text-gray-500 flex-wrap dark:text-slate-500">
+              <li><a href="./index.html" class="hover:text-blue-700 dark:hover:text-blue-300">Home</a></li>
+              <li class="text-gray-400 dark:text-slate-400">/</li>
+              <li><a href="./services-education.html" class="hover:text-blue-700 dark:hover:text-blue-300">Services</a></li>
+              <li class="text-gray-400 dark:text-slate-400">/</li>
+              <li class="text-gray-800 font-medium dark:text-slate-200" aria-current="page">Career Services</li>
+            </ol>
+          </nav>
+          <h1 id="hero-h-m" class="text-pretty text-3xl font-bold text-gray-900 mb-4 leading-tight dark:text-slate-100">Turn your Australian qualification into an Australian career.</h1>
+          <p class="text-pretty text-sm text-gray-600 mb-6 leading-relaxed dark:text-slate-400">Getting qualified is the start. From skills gap analysis and employer introductions to graduate work visa support — every step of the path from study to employment, handled by a dedicated team.</p>
+          <div class="img-ph rounded-lg flex items-center justify-center text-center text-gray-500 font-mono text-xs mb-6 dark:text-slate-500" style="height:200px;">
+            [IMAGE: Professional handshake, Australian office]
+          </div>
+          <a href="./contact.html" class="block w-full text-center bg-blue-600 text-white font-semibold px-6 py-3 rounded text-sm mb-3">Book a Career Assessment</a>
+          <a href="tel:+61863810030" class="block w-full text-center border-2 border-gray-800 text-gray-800 font-semibold px-6 py-3 rounded text-sm dark:text-slate-200">Call +61 8 6381 0030</a>
+        </section>
+
+        <!-- §2 PATHWAY mobile -->
+        <div class="wf-bar">§2 · Career Pathway</div>
+        <section aria-labelledby="pathway-h-m" class="px-4 py-8 bg-gray-50 dark:bg-slate-900">
+          <h2 id="pathway-h-m" class="text-pretty text-2xl font-bold text-gray-900 mb-2 dark:text-slate-100">The Career Pathway</h2>
+          <p class="text-pretty text-sm text-gray-600 mb-6 dark:text-slate-400">Six stages from assessment to career advancement.</p>
+          <div class="space-y-4">
+            <article class="bg-white rounded-lg p-4 border border-gray-200 dark:bg-slate-800 dark:border-slate-700">
+              <div class="flex items-start gap-3">
+                <div class="w-10 h-10 rounded-full bg-blue-600 text-white font-bold flex items-center justify-center shrink-0 text-sm">1</div>
+                <div>
+                  <h3 class="text-pretty font-bold text-gray-900 text-sm mb-1 dark:text-slate-100">Assess &amp; Plan</h3>
+                  <p class="text-pretty text-gray-600 text-xs leading-relaxed dark:text-slate-400">One-on-one session to map your skills against your goals. We identify gaps and outline realistic pathways.</p>
+                </div>
+              </div>
+            </article>
+            <article class="bg-white rounded-lg p-4 border border-gray-200 dark:bg-slate-800 dark:border-slate-700">
+              <div class="flex items-start gap-3">
+                <div class="w-10 h-10 rounded-full bg-blue-600 text-white font-bold flex items-center justify-center shrink-0 text-sm">2</div>
+                <div>
+                  <h3 class="text-pretty font-bold text-gray-900 text-sm mb-1 dark:text-slate-100">Prepare</h3>
+                  <p class="text-pretty text-gray-600 text-xs leading-relaxed dark:text-slate-400">Interview techniques, networking, LinkedIn — plus the unwritten expectations that shape first impressions.</p>
+                </div>
+              </div>
+            </article>
+            <article class="bg-white rounded-lg p-4 border border-gray-200 dark:bg-slate-800 dark:border-slate-700">
+              <div class="flex items-start gap-3">
+                <div class="w-10 h-10 rounded-full bg-blue-600 text-white font-bold flex items-center justify-center shrink-0 text-sm">3</div>
+                <div>
+                  <h3 class="text-pretty font-bold text-gray-900 text-sm mb-1 dark:text-slate-100">Build Experience</h3>
+                  <p class="text-pretty text-gray-600 text-xs leading-relaxed dark:text-slate-400">Industry internships and placements that give you credible Australian work history.</p>
+                </div>
+              </div>
+            </article>
+            <article class="bg-white rounded-lg p-4 border border-gray-200 dark:bg-slate-800 dark:border-slate-700">
+              <div class="flex items-start gap-3">
+                <div class="w-10 h-10 rounded-full bg-blue-600 text-white font-bold flex items-center justify-center shrink-0 text-sm">4</div>
+                <div>
+                  <h3 class="text-pretty font-bold text-gray-900 text-sm mb-1 dark:text-slate-100">Connect with Employers</h3>
+                  <p class="text-pretty text-gray-600 text-xs leading-relaxed dark:text-slate-400">Direct introductions — not job boards. Guided by advisors who know your field.</p>
+                </div>
+              </div>
+            </article>
+            <article class="bg-white rounded-lg p-4 border border-gray-200 dark:bg-slate-800 dark:border-slate-700">
+              <div class="flex items-start gap-3">
+                <div class="w-10 h-10 rounded-full bg-blue-600 text-white font-bold flex items-center justify-center shrink-0 text-sm">5</div>
+                <div>
+                  <h3 class="text-pretty font-bold text-gray-900 text-sm mb-1 dark:text-slate-100">Secure Your Visa</h3>
+                  <p class="text-pretty text-gray-600 text-xs leading-relaxed dark:text-slate-400">Visa eligibility assessment, application preparation, and employer sponsorship coordination.</p>
+                </div>
+              </div>
+            </article>
+            <article class="bg-white rounded-lg p-4 border border-gray-200 dark:bg-slate-800 dark:border-slate-700">
+              <div class="flex items-start gap-3">
+                <div class="w-10 h-10 rounded-full bg-blue-800 text-white font-bold flex items-center justify-center shrink-0 text-sm">6</div>
+                <div>
+                  <h3 class="text-pretty font-bold text-gray-900 text-sm mb-1 dark:text-slate-100">Advance Your Career</h3>
+                  <p class="text-pretty text-gray-600 text-xs leading-relaxed dark:text-slate-400">Executive Internship Programme — senior-level placements with executive mentorship. Limited places, twice a year.</p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- §3 EIP mobile -->
+        <div class="wf-bar">§3 · Executive Internship Highlight</div>
+        <section aria-labelledby="eip-h-m" class="px-4 py-8">
+          <div class="rounded-xl p-6" style="background: #1e3a5f;">
+            <div class="inline-block bg-blue-400 text-blue-900 text-xs font-bold uppercase tracking-wider px-2 py-1 rounded mb-4">Premium Program</div>
+            <h2 id="eip-h-m" class="text-pretty text-xl font-bold text-white mb-3">The Executive Internship Programme</h2>
+            <p class="text-pretty text-blue-100 text-sm mb-4 leading-relaxed">Strategic placements with Australian employers, executive mentorship, and a structured programme that runs twice a year. Places are limited.</p>
+            <a href="./programs-executive-internship.html" class="inline-block bg-white text-blue-900 font-bold px-5 py-2 rounded text-sm dark:bg-slate-800">Learn more →</a>
+          </div>
+        </section>
+
+        <!-- §4 CTA mobile -->
+        <div class="wf-bar">§4 · CTA Banner</div>
+        <section aria-labelledby="cta-h-m" class="py-12 px-4 text-center" style="background:#1e3a5f;">
+          <h2 id="cta-h-m" class="text-pretty text-2xl font-bold text-white mb-3">Your career in Australia starts with a plan.</h2>
+          <p class="text-pretty text-sm mb-6" style="color:#93c5fd;">We map your skills against Australian employment pathways before you're under pressure to figure it out alone.</p>
+          <a href="./contact.html" class="block w-full text-center bg-white font-bold px-6 py-3 rounded text-sm mb-3 dark:bg-slate-800" style="color:#1e3a5f;">Book a Career Assessment</a>
+          <a href="tel:+61863810030" class="block w-full text-center border-2 border-white text-white font-semibold px-6 py-3 rounded text-sm">Call +61 8 6381 0030</a>
+        </section>
+
+      </main>
+      <div id="footer-placeholder-m"></div>
+    </div>
+  </div>
+  <script src="./assets/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Why Australia — Blue Education Wireframe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/tokens.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: { extend: {
+        colors: {
+          primary:   { DEFAULT: 'var(--primary)',   foreground: 'var(--primary-foreground)' },
+          secondary: { DEFAULT: 'var(--secondary)', foreground: 'var(--secondary-foreground)' },
+          base:      { DEFAULT: 'var(--base)',      foreground: 'var(--base-foreground)' },
+          muted:     { DEFAULT: 'var(--muted)',     foreground: 'var(--muted-foreground)' },
+        },
+        borderRadius: {
+          corner: 'var(--corner)', 'corner-lg': 'var(--corner-lg)', 'corner-full': 'var(--corner-full)',
+        },
+        fontFamily: { sans: ['Inter', 'sans-serif'] },
+      }}
+    }
+  </script>
+  <style>
+    .img-ph {
+      background-color: #d1d5db;
+      background-image: repeating-linear-gradient(-55deg, transparent, transparent 8px, rgba(0,0,0,0.04) 8px, rgba(0,0,0,0.04) 9px);
+    }
+    .wf-bar {
+      font-family: 'Courier New', monospace; font-size: 9px; font-weight: bold;
+      text-transform: uppercase; letter-spacing: 0.12em; color: #3b82f6; background: #eff6ff;
+      border-top: 1px solid #bfdbfe; border-bottom: 1px solid #bfdbfe; padding: 4px 32px;
+    }
+  </style>
+</head>
+<body class="bg-neutral-300 py-8 font-sans">
+  <div class="flex gap-8 items-start mx-auto px-8" style="width: max-content;">
+
+    <!-- DESKTOP CANVAS — 1280px -->
+    <div style="width:1280px; background:var(--base); color:var(--base-foreground);" class="shadow-2xl shrink-0">
+      <div class="flex items-center justify-between px-8 py-2 border-b-2 border-amber-300 bg-amber-50 dark:border-amber-800 dark:bg-amber-950">
+        <div class="flex items-center gap-3">
+          <span class="font-bold text-amber-800 tracking-widest text-sm dark:text-amber-200">WIREFRAME</span>
+          <span class="text-amber-700 text-sm dark:text-amber-300">·  Blue Education  ·  Why Australia  ·  Desktop 1280px</span>
+        </div>
+        <span class="text-amber-500 font-mono text-xs dark:text-amber-400">Layout &amp; copy reference — not final design</span>
+      </div>
+      <div id="nav-placeholder"></div>
+      <main id="main-content">
+
+        <!-- §1 HERO -->
+        <div class="wf-bar">§1 · Hero — Full-width landscape imagery, centered text</div>
+        <section aria-labelledby="hero-h" class="relative flex flex-col items-center justify-center text-center" style="min-height:460px;">
+          <div class="img-ph absolute inset-0" role="img" aria-label="Iconic Australian landscape — Perth skyline, beach, or university campus"></div>
+          <div class="absolute inset-0" style="background:rgba(15,23,42,0.60);"></div>
+          <div class="relative z-10 px-8 py-14" style="max-width:780px;">
+            <h1 id="hero-h" class="text-pretty text-5xl font-bold text-white mb-6 leading-tight">Five things Australia gets right for international students.</h1>
+            <p class="text-pretty text-xl leading-relaxed" style="color:#bfdbfe;">Globally recognised degrees, post-study work rights, and a quality of life that consistently ranks among the world's best. Western Australia included.</p>
+          </div>
+        </section>
+
+        <!-- §2 FIVE REASONS — ALTERNATING ROWS -->
+        <div class="wf-bar">§2 · Five Reasons — Alternating two-column rows, numbered</div>
+        <section aria-labelledby="reasons-h" class="px-16 py-14 bg-white dark:bg-slate-800">
+          <h2 id="reasons-h" class="text-pretty sr-only">Five reasons to study in Australia</h2>
+
+          <!-- Reason 01 -->
+          <article aria-labelledby="r1-h" class="flex items-center gap-16 py-12 border-b border-gray-100 dark:border-slate-800">
+            <div style="flex:0 0 50%;">
+              <div class="text-8xl font-bold text-blue-100 leading-none mb-4">01</div>
+              <h3 id="r1-h" class="text-pretty text-2xl font-bold text-gray-900 mb-5 dark:text-slate-100">Globally recognised qualifications</h3>
+              <p class="text-pretty text-gray-600 leading-relaxed mb-4 dark:text-slate-400">Nine Australian universities rank in the QS World University Rankings top 100 — six of them in the top 50. Every institution is regulated by TEQSA, Australia's national quality assurance framework, ensuring standards that employers and institutions worldwide recognise.</p>
+              <p class="text-pretty text-gray-700 font-medium dark:text-slate-300">An Australian degree travels well. That's the point.</p>
+            </div>
+            <div class="img-ph rounded-xl flex items-center justify-center text-center text-gray-500 font-mono text-sm dark:text-slate-500" style="flex:1; height:320px;" role="img" aria-label="University lecture hall with diverse students">
+              [IMAGE: University lecture hall,<br>diverse students]
+            </div>
+          </article>
+
+          <!-- Reason 02 -->
+          <article aria-labelledby="r2-h" class="flex items-center gap-16 py-12 border-b border-gray-100 dark:border-slate-800">
+            <div class="img-ph rounded-xl flex items-center justify-center text-center text-gray-500 font-mono text-sm dark:text-slate-500" style="flex:0 0 40%; height:300px;" role="img" aria-label="Campus variety — modern architecture, labs, outdoor learning">
+              [IMAGE: Campus variety,<br>modern architecture, labs]
+            </div>
+            <div style="flex:1;">
+              <div class="text-8xl font-bold text-blue-100 leading-none mb-4">02</div>
+              <h3 id="r2-h" class="text-pretty text-2xl font-bold text-gray-900 mb-5 dark:text-slate-100">More choice than almost anywhere</h3>
+              <p class="text-pretty text-gray-600 leading-relaxed dark:text-slate-400">1,100+ institutions. 20,000+ programs. From 10-week English language courses to doctoral research, vocational training to executive education — Australia offers a pathway for every ambition, every level, every budget.</p>
+            </div>
+          </article>
+
+          <!-- Reason 03 -->
+          <article aria-labelledby="r3-h" class="flex items-center gap-16 py-12 border-b border-gray-100 dark:border-slate-800">
+            <div style="flex:0 0 50%;">
+              <div class="text-8xl font-bold text-blue-100 leading-none mb-4">03</div>
+              <h3 id="r3-h" class="text-pretty text-2xl font-bold text-gray-900 mb-5 dark:text-slate-100">Work while you study — and after</h3>
+              <p class="text-pretty text-gray-600 leading-relaxed mb-6 dark:text-slate-400">Australia actively encourages international students to work. After graduation, the Post-Study Work Visa (Subclass 485) gives you real time to build your career:</p>
+              <div class="overflow-hidden rounded-xl border border-gray-200 dark:border-slate-700">
+                <table class="w-full text-sm">
+                  <thead>
+                    <tr class="bg-blue-700 text-white">
+                      <th class="text-left px-5 py-3 font-semibold">Qualification</th>
+                      <th class="text-left px-5 py-3 font-semibold">Post-Study Work Visa</th>
+                    </tr>
+                  </thead>
+                  <tbody class="divide-y divide-gray-100">
+                    <tr><td class="px-5 py-3 text-gray-700 dark:text-slate-300">Bachelor Degree</td><td class="px-5 py-3 text-gray-600 dark:text-slate-400">2 years</td></tr>
+                    <tr class="bg-gray-50 dark:bg-slate-900"><td class="px-5 py-3 text-gray-700 dark:text-slate-300">Master Degree</td><td class="px-5 py-3 text-gray-600 dark:text-slate-400">3 years</td></tr>
+                    <tr><td class="px-5 py-3 text-gray-700 dark:text-slate-300">Doctoral Degree</td><td class="px-5 py-3 text-gray-600 dark:text-slate-400">4 years</td></tr>
+                  </tbody>
+                </table>
+              </div>
+              <p class="text-pretty text-gray-600 mt-4 text-sm leading-relaxed dark:text-slate-400">The Graduate Work Stream provides 18 months for graduates with skills on the relevant occupation lists. Either way, it's a genuine career launchpad.</p>
+            </div>
+            <div class="img-ph rounded-xl flex items-center justify-center text-center text-gray-500 font-mono text-sm dark:text-slate-500" style="flex:1; height:340px;" role="img" aria-label="Young professional in office setting, Australian city background">
+              [IMAGE: Young professional,<br>Australian city office setting]
+            </div>
+          </article>
+
+          <!-- Reason 04 -->
+          <article aria-labelledby="r4-h" class="flex items-center gap-16 py-12 border-b border-gray-100 dark:border-slate-800">
+            <div class="img-ph rounded-xl flex items-center justify-center text-center text-gray-500 font-mono text-sm dark:text-slate-500" style="flex:0 0 40%; height:300px;" role="img" aria-label="Perth coastline, outdoor lifestyle, café culture">
+              [IMAGE: Perth coastline,<br>outdoor lifestyle, café culture]
+            </div>
+            <div style="flex:1;">
+              <div class="text-8xl font-bold text-blue-100 leading-none mb-4">04</div>
+              <h3 id="r4-h" class="text-pretty text-2xl font-bold text-gray-900 mb-5 dark:text-slate-100">A lifestyle that's hard to beat</h3>
+              <p class="text-pretty text-gray-600 leading-relaxed dark:text-slate-400">The 2025 EIU Global Liveability Index placed three Australian cities in the world's top 10. Melbourne fourth. Sydney sixth. Adelaide ninth. The factors assessed: stability, healthcare, culture, education, and infrastructure. Australia performs well across all of them.</p>
+            </div>
+          </article>
+
+          <!-- Reason 05 -->
+          <article aria-labelledby="r5-h" class="flex items-center gap-16 py-12">
+            <div style="flex:0 0 50%;">
+              <div class="text-8xl font-bold text-blue-100 leading-none mb-4">05</div>
+              <h3 id="r5-h" class="text-pretty text-2xl font-bold text-gray-900 mb-5 dark:text-slate-100">Affordable compared to the alternatives</h3>
+              <p class="text-pretty text-gray-600 leading-relaxed dark:text-slate-400">Australia offers competitive tuition fees across its university sector — from AUD $20,000 per year for many undergraduate programs. Perth and regional cities offer a lower cost of living than Australia's east coast capitals. The combination makes a meaningful difference over a two to four year degree.</p>
+            </div>
+            <div class="img-ph rounded-xl flex items-center justify-center text-center text-gray-500 font-mono text-sm dark:text-slate-500" style="flex:1; height:280px;" role="img" aria-label="City comparison graphic or cost-of-living infographic">
+              [IMAGE: Cost comparison graphic<br>or city infographic]
+            </div>
+          </article>
+
+        </section>
+
+        <!-- §3 PERTH & WESTERN AUSTRALIA -->
+        <div class="wf-bar">§3 · Perth &amp; Western Australia — Two-column, text left, comparison table right</div>
+        <section aria-labelledby="perth-h" class="px-16 py-14 bg-gray-50 dark:bg-slate-900" style="display:flex; gap:56px; align-items:start;">
+          <div style="flex:0 0 50%;">
+            <div class="text-sm font-bold text-blue-600 uppercase tracking-widest mb-3 dark:text-blue-400">The Golden State of Education</div>
+            <h2 id="perth-h" class="text-pretty text-3xl font-bold text-gray-900 mb-6 dark:text-slate-100">Why Perth.</h2>
+            <p class="text-pretty text-gray-600 leading-relaxed mb-5 dark:text-slate-400">Perth is Western Australia's capital and Blue Education's home base. It's also one of the most underrated study destinations in Australia — four globally ranked universities, a thriving job market across mining, technology, healthcare, and education, and a liveability ranking that consistently places it among the world's top 15 cities.</p>
+            <div class="img-ph rounded-xl flex items-center justify-center text-center text-gray-500 font-mono text-sm mt-6 dark:text-slate-500" style="height:260px;" role="img" aria-label="Perth city skyline, Kings Park, Swan River">
+              [IMAGE: Perth city skyline,<br>Kings Park, Swan River]
+            </div>
+          </div>
+          <div style="flex:1;">
+            <h3 class="text-pretty font-bold text-gray-900 mb-5 text-lg dark:text-slate-100">Perth Advantage</h3>
+            <div class="overflow-hidden rounded-xl border border-gray-200 bg-white dark:border-slate-700 dark:bg-slate-800">
+              <table class="w-full text-sm">
+                <tbody class="divide-y divide-gray-100">
+                  <tr><td class="px-5 py-4 font-medium text-gray-700 dark:text-slate-300">Cost of living</td><td class="px-5 py-4 text-gray-600 dark:text-slate-400">Lower than Sydney and Melbourne</td></tr>
+                  <tr class="bg-gray-50 dark:bg-slate-900"><td class="px-5 py-4 font-medium text-gray-700 dark:text-slate-300">Class sizes</td><td class="px-5 py-4 text-gray-600 dark:text-slate-400">Smaller, more personal attention</td></tr>
+                  <tr><td class="px-5 py-4 font-medium text-gray-700 dark:text-slate-300">Safety</td><td class="px-5 py-4 text-gray-600 dark:text-slate-400">Lower crime rate than most eastern Australian capitals</td></tr>
+                  <tr class="bg-gray-50 dark:bg-slate-900"><td class="px-5 py-4 font-medium text-gray-700 dark:text-slate-300">Job market</td><td class="px-5 py-4 text-gray-600 dark:text-slate-400">Mining, technology, healthcare, education</td></tr>
+                  <tr><td class="px-5 py-4 font-medium text-gray-700 dark:text-slate-300">Climate</td><td class="px-5 py-4 text-gray-600 dark:text-slate-400">Year-round sunshine</td></tr>
+                  <tr class="bg-gray-50 dark:bg-slate-900"><td class="px-5 py-4 font-medium text-gray-700 dark:text-slate-300">Blue Education HQ</td><td class="px-5 py-4 text-gray-600 dark:text-slate-400">On-ground support and local expertise</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <!-- §4 MULTICULTURAL BY DESIGN -->
+        <div class="wf-bar">§4 · Multicultural by Design — Feature strip, 3 columns</div>
+        <section aria-labelledby="multicultural-h" class="px-16 py-14 bg-white dark:bg-slate-800">
+          <h2 id="multicultural-h" class="text-pretty text-2xl font-bold text-gray-900 mb-10 text-center dark:text-slate-100">Multicultural by Design</h2>
+          <div class="grid grid-cols-3 gap-8">
+            <article class="text-center p-7 rounded-xl bg-gray-50 border border-gray-200 dark:bg-slate-900 dark:border-slate-700">
+              <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4 dark:bg-blue-900">
+                <span class="font-mono text-blue-600 text-xs font-bold dark:text-blue-400">[globe]</span>
+              </div>
+              <h3 class="text-pretty font-bold text-gray-900 mb-3 dark:text-slate-100">Culturally diverse</h3>
+              <p class="text-pretty text-gray-600 text-sm leading-relaxed dark:text-slate-400">One of the most multicultural countries on earth.</p>
+            </article>
+            <article class="text-center p-7 rounded-xl bg-gray-50 border border-gray-200 dark:bg-slate-900 dark:border-slate-700">
+              <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4 dark:bg-blue-900">
+                <span class="font-mono text-blue-600 text-xs font-bold dark:text-blue-400">[speak]</span>
+              </div>
+              <h3 class="text-pretty font-bold text-gray-900 mb-3 dark:text-slate-100">English immersion</h3>
+              <p class="text-pretty text-gray-600 text-sm leading-relaxed dark:text-slate-400">Full daily immersion in the global language of business and science.</p>
+            </article>
+            <article class="text-center p-7 rounded-xl bg-gray-50 border border-gray-200 dark:bg-slate-900 dark:border-slate-700">
+              <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4 dark:bg-blue-900">
+                <span class="font-mono text-blue-600 text-xs font-bold dark:text-blue-400">[shield]</span>
+              </div>
+              <h3 class="text-pretty font-bold text-gray-900 mb-3 dark:text-slate-100">Legal protections</h3>
+              <p class="text-pretty text-gray-600 text-sm leading-relaxed dark:text-slate-400">Strong anti-discrimination laws. International student rights protected at every level.</p>
+            </article>
+          </div>
+        </section>
+
+        <!-- §5 CTA BANNER -->
+        <div class="wf-bar">§5 · CTA Banner</div>
+        <section aria-labelledby="cta-h" class="py-16 px-8 text-center" style="background:#1e3a5f;">
+          <h2 id="cta-h" class="text-pretty text-4xl font-bold text-white mb-4">Talk to someone who knows Western Australia.</h2>
+          <p class="text-pretty text-lg mb-8 mx-auto" style="color:#93c5fd; max-width:540px;">Perth-based advisors with 28 years of experience, serving clients from 40+ countries. We'll tell you what fits your situation — no guesswork.</p>
+          <div class="flex gap-4 justify-center">
+            <a href="./contact.html" class="bg-white font-bold px-8 py-3 rounded text-base hover:bg-gray-100 dark:bg-slate-800" style="color:#1e3a5f;">Book an Education Assessment</a>
+            <a href="./services-education.html" class="border-2 border-white text-white font-semibold px-8 py-3 rounded text-base">Explore Education Services</a>
+          </div>
+        </section>
+
+      </main>
+      <div id="footer-placeholder"></div>
+    </div>
+
+    <!-- MOBILE CANVAS — 390px -->
+    <div style="width:390px; background:var(--base); color:var(--base-foreground);" class="shadow-2xl shrink-0 sticky top-8">
+      <div class="flex items-center justify-between px-4 py-2 border-b-2 border-amber-300 bg-amber-50 dark:border-amber-800 dark:bg-amber-950">
+        <span class="font-bold text-amber-800 tracking-widest text-xs dark:text-amber-200">WIREFRAME</span>
+        <span class="text-amber-600 font-mono" style="font-size:8px;">Mobile 390px</span>
+      </div>
+      <div id="nav-placeholder-m"></div>
+      <main>
+
+        <div class="wf-bar">§1 · Hero</div>
+        <section aria-labelledby="hero-h-m" class="relative flex flex-col items-center justify-center text-center" style="min-height:280px;">
+          <div class="img-ph absolute inset-0" role="img" aria-label="Perth skyline or Australian landscape"></div>
+          <div class="absolute inset-0" style="background:rgba(15,23,42,0.62);"></div>
+          <div class="relative z-10 px-4 py-10">
+            <h1 id="hero-h-m" class="text-pretty text-2xl font-bold text-white mb-3 leading-tight">Five things Australia gets right for international students.</h1>
+            <p class="text-pretty text-sm leading-relaxed" style="color:#bfdbfe;">Globally recognised degrees, post-study work rights, and world-class liveability.</p>
+          </div>
+        </section>
+
+        <div class="wf-bar">§2 · Five Reasons</div>
+        <section aria-labelledby="reasons-h-m" class="px-4 py-8 bg-white dark:bg-slate-800">
+          <h2 id="reasons-h-m" class="text-pretty text-xl font-bold text-gray-900 mb-6 dark:text-slate-100">Five Reasons to Study in Australia</h2>
+          <div class="space-y-6">
+            <article aria-labelledby="r1-h-m" class="border-l-4 border-blue-600 pl-5">
+              <div class="text-4xl font-bold text-blue-100 leading-none">01</div>
+              <h3 id="r1-h-m" class="text-pretty font-bold text-gray-900 text-base mb-2 dark:text-slate-100">Globally recognised qualifications</h3>
+              <p class="text-pretty text-gray-600 text-xs leading-relaxed dark:text-slate-400">Nine Australian universities in the QS top 100. Regulated by TEQSA. An Australian degree travels well.</p>
+            </article>
+            <article aria-labelledby="r2-h-m" class="border-l-4 border-blue-600 pl-5">
+              <div class="text-4xl font-bold text-blue-100 leading-none">02</div>
+              <h3 id="r2-h-m" class="text-pretty font-bold text-gray-900 text-base mb-2 dark:text-slate-100">More choice than almost anywhere</h3>
+              <p class="text-pretty text-gray-600 text-xs leading-relaxed dark:text-slate-400">1,100+ institutions. 20,000+ programs. From 10-week English courses to doctoral research.</p>
+            </article>
+            <article aria-labelledby="r3-h-m" class="border-l-4 border-blue-600 pl-5">
+              <div class="text-4xl font-bold text-blue-100 leading-none">03</div>
+              <h3 id="r3-h-m" class="text-pretty font-bold text-gray-900 text-base mb-2 dark:text-slate-100">Work while you study — and after</h3>
+              <p class="text-pretty text-gray-600 text-xs leading-relaxed mb-3 dark:text-slate-400">Post-Study Work Visa: 2 years (Bachelor), 3 years (Master), 4 years (Doctoral). A genuine career launchpad.</p>
+            </article>
+            <article aria-labelledby="r4-h-m" class="border-l-4 border-blue-600 pl-5">
+              <div class="text-4xl font-bold text-blue-100 leading-none">04</div>
+              <h3 id="r4-h-m" class="text-pretty font-bold text-gray-900 text-base mb-2 dark:text-slate-100">A lifestyle that's hard to beat</h3>
+              <p class="text-pretty text-gray-600 text-xs leading-relaxed dark:text-slate-400">Three Australian cities in the 2025 EIU top 10. Melbourne 4th. Sydney 6th. Adelaide 9th.</p>
+            </article>
+            <article aria-labelledby="r5-h-m" class="border-l-4 border-blue-600 pl-5">
+              <div class="text-4xl font-bold text-blue-100 leading-none">05</div>
+              <h3 id="r5-h-m" class="text-pretty font-bold text-gray-900 text-base mb-2 dark:text-slate-100">Affordable compared to alternatives</h3>
+              <p class="text-pretty text-gray-600 text-xs leading-relaxed dark:text-slate-400">From AUD $20,000/year for many undergraduate programs. Perth's cost of living is lower than Sydney and Melbourne.</p>
+            </article>
+          </div>
+        </section>
+
+        <div class="wf-bar">§3 · Why Perth</div>
+        <section aria-labelledby="perth-h-m" class="px-4 py-8 bg-gray-50 dark:bg-slate-900">
+          <div class="text-xs font-bold text-blue-600 uppercase tracking-widest mb-2 dark:text-blue-400">The Golden State of Education</div>
+          <h2 id="perth-h-m" class="text-pretty text-xl font-bold text-gray-900 mb-4 dark:text-slate-100">Why Perth.</h2>
+          <div class="img-ph rounded-lg mb-4 flex items-center justify-center text-center text-gray-500 font-mono text-xs dark:text-slate-500" style="height:160px;" role="img" aria-label="Perth city skyline">
+            [IMAGE: Perth skyline,<br>Kings Park]
+          </div>
+          <p class="text-pretty text-sm text-gray-600 mb-5 leading-relaxed dark:text-slate-400">Four globally ranked universities, a thriving job market, and a liveability ranking that consistently places Perth among the world's top 15 cities.</p>
+          <div class="bg-white rounded-xl border border-gray-200 overflow-hidden dark:bg-slate-800 dark:border-slate-700">
+            <table class="w-full text-xs">
+              <tbody class="divide-y divide-gray-100">
+                <tr><td class="px-4 py-3 font-medium text-gray-700 dark:text-slate-300">Cost of living</td><td class="px-4 py-3 text-gray-600 dark:text-slate-400">Lower than Sydney &amp; Melbourne</td></tr>
+                <tr class="bg-gray-50 dark:bg-slate-900"><td class="px-4 py-3 font-medium text-gray-700 dark:text-slate-300">Safety</td><td class="px-4 py-3 text-gray-600 dark:text-slate-400">Lower crime than eastern capitals</td></tr>
+                <tr><td class="px-4 py-3 font-medium text-gray-700 dark:text-slate-300">Job market</td><td class="px-4 py-3 text-gray-600 dark:text-slate-400">Mining, tech, healthcare, education</td></tr>
+                <tr class="bg-gray-50 dark:bg-slate-900"><td class="px-4 py-3 font-medium text-gray-700 dark:text-slate-300">Climate</td><td class="px-4 py-3 text-gray-600 dark:text-slate-400">Year-round sunshine</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <div class="wf-bar">§4 · CTA Banner</div>
+        <section aria-labelledby="cta-h-m" class="py-12 px-4 text-center" style="background:#1e3a5f;">
+          <h2 id="cta-h-m" class="text-pretty text-2xl font-bold text-white mb-3">Talk to someone who knows Western Australia.</h2>
+          <p class="text-pretty text-sm mb-6" style="color:#93c5fd;">Perth-based advisors with 28 years of experience. We'll tell you what fits your situation.</p>
+          <a href="./contact.html" class="block w-full text-center bg-white font-bold px-6 py-3 rounded text-sm mb-3 dark:bg-slate-800" style="color:#1e3a5f;">Book an Education Assessment</a>
+          <a href="./services-education.html" class="block w-full text-center border-2 border-white text-white font-semibold px-6 py-3 rounded text-sm">Explore Education Services</a>
+        </section>
+
+      </main>
+      <div id="footer-placeholder-m"></div>
+    </div>
+  </div>
+  <script src="./assets/site.js"></script>
+</body>
+</html>

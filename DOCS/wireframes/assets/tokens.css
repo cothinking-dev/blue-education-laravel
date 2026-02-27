@@ -1,0 +1,22 @@
+:root {
+  --primary:              #1e3a8a;
+  --primary-foreground:   #ffffff;
+  --secondary:            #3b82f6;
+  --secondary-foreground: #ffffff;
+  --base:                 #ffffff;
+  --base-foreground:      #0f172a;
+  --muted:                #f3f4f6;
+  --muted-foreground:     #6b7280;
+  --corner:               0.5rem;
+  --corner-lg:            1rem;
+  --corner-full:          9999px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --base:              #0f172a;
+    --base-foreground:   #f1f5f9;
+    --muted:             #1e293b;
+    --muted-foreground:  #94a3b8;
+  }
+}

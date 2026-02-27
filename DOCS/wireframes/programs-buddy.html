@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Buddy Programme — Blue Education Wireframe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/tokens.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: { extend: {
+        colors: {
+          primary:   { DEFAULT: 'var(--primary)',   foreground: 'var(--primary-foreground)' },
+          secondary: { DEFAULT: 'var(--secondary)', foreground: 'var(--secondary-foreground)' },
+          base:      { DEFAULT: 'var(--base)',      foreground: 'var(--base-foreground)' },
+          muted:     { DEFAULT: 'var(--muted)',     foreground: 'var(--muted-foreground)' },
+        },
+        borderRadius: {
+          corner: 'var(--corner)', 'corner-lg': 'var(--corner-lg)', 'corner-full': 'var(--corner-full)',
+        },
+        fontFamily: { sans: ['Inter', 'sans-serif'] },
+      }}
+    }
+  </script>
+  <style>
+    .img-ph {
+      background-color: #d1d5db;
+      background-image: repeating-linear-gradient(-55deg, transparent, transparent 8px, rgba(0,0,0,0.04) 8px, rgba(0,0,0,0.04) 9px);
+    }
+    .wf-bar {
+      font-family: 'Courier New', monospace; font-size: 9px; font-weight: bold;
+      text-transform: uppercase; letter-spacing: 0.12em; color: #3b82f6; background: #eff6ff;
+      border-top: 1px solid #bfdbfe; border-bottom: 1px solid #bfdbfe; padding: 4px 32px;
+    }
+  </style>
+</head>
+<body class="bg-neutral-300 py-8 font-sans">
+  <div class="flex gap-8 items-start mx-auto px-8" style="width: max-content;">
+
+    <!-- DESKTOP CANVAS — 1280px -->
+    <div style="width:1280px; background:var(--base); color:var(--base-foreground);" class="shadow-2xl shrink-0">
+      <div class="flex items-center justify-between px-8 py-2 border-b-2 border-amber-300 bg-amber-50 dark:border-amber-800 dark:bg-amber-950">
+        <div class="flex items-center gap-3">
+          <span class="font-bold text-amber-800 tracking-widest text-sm dark:text-amber-200">WIREFRAME</span>
+          <span class="text-amber-700 text-sm dark:text-amber-300">·  Blue Education  ·  Buddy Programme  ·  Desktop 1280px</span>
+        </div>
+        <span class="text-amber-500 font-mono text-xs dark:text-amber-400">Layout &amp; copy reference — not final design</span>
+      </div>
+      <div id="nav-placeholder"></div>
+      <main id="main-content">
+
+        <!-- §1 HERO -->
+        <div class="wf-bar">§1 · Hero — Full-width lifestyle image, left-aligned text</div>
+        <section aria-labelledby="hero-h" class="flex items-stretch" style="min-height:440px;">
+          <div class="flex flex-col justify-center px-16 py-14" style="flex:0 0 55%;">
+            <nav aria-label="Breadcrumb" class="mb-6">
+              <ol class="flex items-center gap-2 text-sm text-gray-500 dark:text-slate-500">
+                <li><a href="./index.html" class="hover:text-blue-700 dark:hover:text-blue-300">Home</a></li>
+                <li class="text-gray-400 dark:text-slate-400">/</li>
+                <li><a href="./programs.html" class="hover:text-blue-700 dark:hover:text-blue-300">Programs</a></li>
+                <li class="text-gray-400 dark:text-slate-400">/</li>
+                <li class="text-gray-800 font-medium dark:text-slate-200" aria-current="page">Buddy Programme</li>
+              </ol>
+            </nav>
+            <span class="text-xs font-bold text-blue-700 bg-blue-50 border border-blue-200 rounded px-2 py-1 mb-5 inline-block w-fit dark:text-blue-300 dark:bg-blue-950 dark:border-blue-800">14-Day Immersion · Anglican Schools</span>
+            <h1 id="hero-h" class="text-pretty text-5xl font-bold text-gray-900 mb-6 leading-tight dark:text-slate-100">Two weeks. Real school. Real families. Real Western Australia.</h1>
+            <p class="text-pretty text-xl text-gray-600 mb-8 leading-relaxed dark:text-slate-400" style="max-width:500px;">High school students join Australian classrooms, live with vetted homestay families, and explore Western Australia through structured field trips — all within a supervised 14-day programme run in partnership with Anglican Schools.</p>
+            <div class="flex gap-4">
+              <a href="./contact.html" class="bg-blue-600 text-white font-semibold px-8 py-3 rounded text-base hover:bg-blue-700">Enquire About the Buddy Programme</a>
+            </div>
+          </div>
+          <div class="img-ph flex items-center justify-center text-center text-gray-500 font-mono text-sm dark:text-slate-500" style="flex:1;" role="img" aria-label="International student with Australian buddy in school setting, laughing">
+            [IMAGE: International student<br>with Australian buddy,<br>school setting]
+          </div>
+        </section>
+
+        <!-- §2 WHAT IS IT / PROGRAMME SUMMARY -->
+        <div class="wf-bar">§2 · What Is the Buddy Programme — Two-column, text left, summary table right</div>
+        <section aria-labelledby="what-h" class="px-16 py-14 bg-gray-50 dark:bg-slate-900" style="display:flex; gap:56px; align-items:start;">
+          <div style="flex:0 0 55%;">
+            <h2 id="what-h" class="text-pretty text-3xl font-bold text-gray-900 mb-6 dark:text-slate-100">What Is the Buddy Programme?</h2>
+            <p class="text-pretty text-gray-600 leading-relaxed mb-5 dark:text-slate-400">Two weeks inside Australian school life. Morning sessions focus on English and Australian culture. Afternoons are spent in regular high school classes, alongside local students.</p>
+            <p class="text-pretty text-gray-600 leading-relaxed dark:text-slate-400">Homestay accommodation — with meals provided and homestay families approved through police background checks — ensures the experience is safe, supported, and authentic.</p>
+          </div>
+          <div style="flex:1;">
+            <div class="bg-white rounded-xl border border-gray-200 overflow-hidden shadow-sm dark:bg-slate-800 dark:border-slate-700">
+              <div class="bg-blue-700 px-5 py-3">
+                <h3 class="text-pretty font-bold text-white text-sm uppercase tracking-wide">Programme Summary</h3>
+              </div>
+              <table class="w-full text-sm">
+                <tbody class="divide-y divide-gray-100">
+                  <tr><td class="px-5 py-3 font-medium text-gray-700 w-1/2 dark:text-slate-300">Duration</td><td class="px-5 py-3 text-gray-600 dark:text-slate-400">14 days</td></tr>
+                  <tr class="bg-gray-50 dark:bg-slate-900"><td class="px-5 py-3 font-medium text-gray-700 dark:text-slate-300">Age group</td><td class="px-5 py-3 text-gray-600 dark:text-slate-400">High school students</td></tr>
+                  <tr><td class="px-5 py-3 font-medium text-gray-700 dark:text-slate-300">Accommodation</td><td class="px-5 py-3 text-gray-600 dark:text-slate-400">Homestay (meals included)</td></tr>
+                  <tr class="bg-gray-50 dark:bg-slate-900"><td class="px-5 py-3 font-medium text-gray-700 dark:text-slate-300">School partner</td><td class="px-5 py-3 text-gray-600 dark:text-slate-400">Anglican Schools</td></tr>
+                  <tr><td class="px-5 py-3 font-medium text-gray-700 dark:text-slate-300">Certificate</td><td class="px-5 py-3 text-gray-600 dark:text-slate-400">Certificate of completion</td></tr>
+                  <tr class="bg-gray-50 dark:bg-slate-900"><td class="px-5 py-3 font-medium text-gray-700 dark:text-slate-300">Voluntary work</td><td class="px-5 py-3 text-gray-600 dark:text-slate-400">Yes, through local councils</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <!-- §3 YOUR 14 DAYS -->
+        <div class="wf-bar">§3 · Your 14 Days — Two-column split, Morning / Afternoon</div>
+        <section aria-labelledby="schedule-h" class="px-16 py-14 bg-white dark:bg-slate-800">
+          <h2 id="schedule-h" class="text-pretty text-3xl font-bold text-gray-900 mb-10 dark:text-slate-100">Your 14 Days</h2>
+          <div class="grid grid-cols-2 gap-8">
+            <article class="border border-blue-200 rounded-xl p-8 bg-blue-50 dark:border-blue-800 dark:bg-blue-950">
+              <div class="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center mb-5">
+                <span class="font-mono text-white text-xs font-bold">[sun]</span>
+              </div>
+              <h3 class="text-pretty text-xl font-bold text-blue-900 mb-4">Mornings: English Language &amp; Culture</h3>
+              <p class="text-pretty text-blue-800 text-sm leading-relaxed mb-5 dark:text-blue-200">Structured lessons built around Australian context — history, culture, geography, and wildlife. Grammar, vocabulary, and sentence structure taught practically, not in isolation.</p>
+              <ul class="space-y-2 text-blue-800 text-sm dark:text-blue-200">
+                <li class="flex items-start gap-2"><span class="text-blue-500 font-bold">—</span>Australian history, geography, and wildlife as lesson themes</li>
+                <li class="flex items-start gap-2"><span class="text-blue-500 font-bold">—</span>Vocabulary, grammar, and sentence structure</li>
+                <li class="flex items-start gap-2"><span class="text-blue-500 font-bold">—</span>Communication skills through interactive class discussion</li>
+              </ul>
+            </article>
+            <article class="border border-gray-200 rounded-xl p-8 bg-gray-50 dark:border-slate-700 dark:bg-slate-900">
+              <div class="w-12 h-12 bg-gray-600 rounded-xl flex items-center justify-center mb-5">
+                <span class="font-mono text-white text-xs font-bold">[users]</span>
+              </div>
+              <h3 class="text-pretty text-xl font-bold text-gray-900 mb-4 dark:text-slate-100">Afternoons: High School Integration</h3>
+              <p class="text-pretty text-gray-600 text-sm leading-relaxed mb-5 dark:text-slate-400">Students join regular Australian high school classes — Science, Maths, and other subjects, all in English. The point is participation, not observation: same lessons, same teachers, same expectations as local students.</p>
+              <ul class="space-y-2 text-gray-700 text-sm dark:text-slate-300">
+                <li class="flex items-start gap-2"><span class="text-blue-600 font-bold dark:text-blue-400">—</span>Standard academic classes alongside Australian peers</li>
+                <li class="flex items-start gap-2"><span class="text-blue-600 font-bold dark:text-blue-400">—</span>All subjects taught in English (including Science, Maths)</li>
+                <li class="flex items-start gap-2"><span class="text-blue-600 font-bold dark:text-blue-400">—</span>Social and cross-cultural skills in a real school environment</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <!-- §4 BEYOND THE CLASSROOM -->
+        <div class="wf-bar">§4 · Beyond the Classroom — BentoBox 3 cards with images</div>
+        <section aria-labelledby="beyond-h" class="px-16 py-14 bg-gray-50 dark:bg-slate-900">
+          <h2 id="beyond-h" class="text-pretty text-3xl font-bold text-gray-900 mb-10 dark:text-slate-100">Beyond the Classroom</h2>
+          <div class="grid grid-cols-3 gap-6">
+
+            <article class="bg-white rounded-xl overflow-hidden border border-gray-200 dark:bg-slate-800 dark:border-slate-700">
+              <div class="img-ph flex items-center justify-center text-center text-gray-500 font-mono text-xs dark:text-slate-500" style="height:200px;" role="img" aria-label="Family dinner table, warm lighting, Australian homestay">
+                [IMAGE: Family dinner table,<br>warm lighting]
+              </div>
+              <div class="p-6">
+                <h3 class="text-pretty font-bold text-gray-900 mb-2 text-lg dark:text-slate-100">Homestay Experience</h3>
+                <p class="text-pretty text-gray-600 text-sm leading-relaxed dark:text-slate-400">Police-cleared homestay families provide meals, emotional support, and a genuine share of Australian family life — including weekend activities. Students are looked after, not just housed.</p>
+              </div>
+            </article>
+
+            <article class="bg-white rounded-xl overflow-hidden border border-gray-200 dark:bg-slate-800 dark:border-slate-700">
+              <div class="img-ph flex items-center justify-center text-center text-gray-500 font-mono text-xs dark:text-slate-500" style="height:200px;" role="img" aria-label="Students at outdoor landmark, coastal Western Australia">
+                [IMAGE: Students at outdoor<br>landmark, coastal WA]
+              </div>
+              <div class="p-6">
+                <h3 class="text-pretty font-bold text-gray-900 mb-2 text-lg dark:text-slate-100">Local Field Trips</h3>
+                <p class="text-pretty text-gray-600 text-sm leading-relaxed dark:text-slate-400">Caversham Wildlife Park, Rottnest Island, The Pinnacles, King's Park, Fremantle Market, and a Penguin and Sea Lion Cruise — each chosen to connect to the cultural and environmental themes taught in class.</p>
+              </div>
+            </article>
+
+            <article class="bg-white rounded-xl overflow-hidden border border-gray-200 dark:bg-slate-800 dark:border-slate-700">
+              <div class="img-ph flex items-center justify-center text-center text-gray-500 font-mono text-xs dark:text-slate-500" style="height:200px;" role="img" aria-label="Students helping at community volunteer event">
+                [IMAGE: Students helping<br>at community event]
+              </div>
+              <div class="p-6">
+                <h3 class="text-pretty font-bold text-gray-900 mb-2 text-lg dark:text-slate-100">Voluntary Work</h3>
+                <p class="text-pretty text-gray-600 text-sm leading-relaxed dark:text-slate-400">Students who want to go further can arrange voluntary work with local councils. The voluntary work certificate has practical value — it strengthens CV and scholarship applications.</p>
+              </div>
+            </article>
+
+          </div>
+        </section>
+
+        <!-- §5 WHY IT MATTERS -->
+        <div class="wf-bar">§5 · Why It Matters — Feature list with icon + heading + one-liner</div>
+        <section aria-labelledby="why-h" class="px-16 py-14 bg-white dark:bg-slate-800">
+          <h2 id="why-h" class="text-pretty text-3xl font-bold text-gray-900 mb-8 dark:text-slate-100">Why It Matters</h2>
+          <div class="space-y-4">
+            <div class="flex items-start gap-5 p-5 rounded-xl bg-gray-50 border border-gray-200 dark:bg-slate-900 dark:border-slate-700">
+              <div class="w-8 h-8 rounded-full bg-blue-600 text-white text-xs font-bold flex items-center justify-center shrink-0 mt-0.5">1</div>
+              <div>
+                <p class="text-pretty font-bold text-gray-900 text-sm mb-1 dark:text-slate-100">Test before you commit</p>
+                <p class="text-pretty text-gray-600 text-sm dark:text-slate-400">Experience Australian education without a multi-year enrolment.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-5 p-5 rounded-xl bg-gray-50 border border-gray-200 dark:bg-slate-900 dark:border-slate-700">
+              <div class="w-8 h-8 rounded-full bg-blue-600 text-white text-xs font-bold flex items-center justify-center shrink-0 mt-0.5">2</div>
+              <div>
+                <p class="text-pretty font-bold text-gray-900 text-sm mb-1 dark:text-slate-100">Build real English skills</p>
+                <p class="text-pretty text-gray-600 text-sm dark:text-slate-400">Practical, immersive language development in 14 days of genuine classroom use.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-5 p-5 rounded-xl bg-gray-50 border border-gray-200 dark:bg-slate-900 dark:border-slate-700">
+              <div class="w-8 h-8 rounded-full bg-blue-600 text-white text-xs font-bold flex items-center justify-center shrink-0 mt-0.5">3</div>
+              <div>
+                <p class="text-pretty font-bold text-gray-900 text-sm mb-1 dark:text-slate-100">Strengthen applications</p>
+                <p class="text-pretty text-gray-600 text-sm dark:text-slate-400">Voluntary work certificate and programme certificate support future university and scholarship submissions.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-5 p-5 rounded-xl bg-gray-50 border border-gray-200 dark:bg-slate-900 dark:border-slate-700">
+              <div class="w-8 h-8 rounded-full bg-blue-600 text-white text-xs font-bold flex items-center justify-center shrink-0 mt-0.5">4</div>
+              <div>
+                <p class="text-pretty font-bold text-gray-900 text-sm mb-1 dark:text-slate-100">Adapt, not just observe</p>
+                <p class="text-pretty text-gray-600 text-sm dark:text-slate-400">Participating as a student, not a visitor, builds the kind of independence that carries forward.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-5 p-5 rounded-xl bg-gray-50 border border-gray-200 dark:bg-slate-900 dark:border-slate-700">
+              <div class="w-8 h-8 rounded-full bg-blue-600 text-white text-xs font-bold flex items-center justify-center shrink-0 mt-0.5">5</div>
+              <div>
+                <p class="text-pretty font-bold text-gray-900 text-sm mb-1 dark:text-slate-100">Make connections that last</p>
+                <p class="text-pretty text-gray-600 text-sm dark:text-slate-400">With Australian classmates and homestay families in a supervised environment.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-5 p-5 rounded-xl bg-gray-50 border border-gray-200 dark:bg-slate-900 dark:border-slate-700">
+              <div class="w-8 h-8 rounded-full bg-blue-600 text-white text-xs font-bold flex items-center justify-center shrink-0 mt-0.5">6</div>
+              <div>
+                <p class="text-pretty font-bold text-gray-900 text-sm mb-1 dark:text-slate-100">Anglican Schools partnership</p>
+                <p class="text-pretty text-gray-600 text-sm dark:text-slate-400">Established pastoral care, vetted homestay families, and a programme that has run with the same school network since its founding.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- §6 ALSO RELEVANT -->
+        <div class="wf-bar">§6 · Also Relevant — Related links</div>
+        <section aria-label="Related pages" class="px-16 py-8 bg-gray-50 border-t border-gray-200 dark:bg-slate-900 dark:border-slate-700">
+          <p class="text-pretty text-sm text-gray-500 mb-3 font-medium dark:text-slate-500">Also relevant:</p>
+          <div class="flex gap-6">
+            <a href="./services-student-support.html" class="text-blue-600 font-medium text-sm hover:underline dark:text-blue-400">Student support services →</a>
+            <a href="./programs-study-tours.html" class="text-blue-600 font-medium text-sm hover:underline dark:text-blue-400">Study tours →</a>
+            <a href="./services-education-english.html" class="text-blue-600 font-medium text-sm hover:underline dark:text-blue-400">English programmes →</a>
+          </div>
+        </section>
+
+        <!-- §7 CTA BANNER -->
+        <div class="wf-bar">§7 · CTA Banner — Full-width</div>
+        <section aria-labelledby="cta-h" class="py-16 px-8 text-center" style="background:#1e3a5f;">
+          <h2 id="cta-h" class="text-pretty text-4xl font-bold text-white mb-4">Limited places each intake.</h2>
+          <p class="text-pretty text-lg mb-8 mx-auto" style="color:#93c5fd; max-width:540px;">Contact us to confirm availability for the upcoming intake and receive programme dates, costs, and enrolment details.</p>
+          <div class="flex gap-4 justify-center">
+            <a href="./contact.html" class="bg-white font-bold px-8 py-3 rounded text-base hover:bg-gray-100 dark:bg-slate-800" style="color:#1e3a5f;">Enquire About the Buddy Programme</a>
+            <a href="tel:+61863810030" class="border-2 border-white text-white font-semibold px-8 py-3 rounded text-base">Call +61 8 6381 0030</a>
+          </div>
+        </section>
+
+      </main>
+      <div id="footer-placeholder"></div>
+    </div>
+
+    <!-- MOBILE CANVAS — 390px -->
+    <div style="width:390px; background:var(--base); color:var(--base-foreground);" class="shadow-2xl shrink-0 sticky top-8">
+      <div class="flex items-center justify-between px-4 py-2 border-b-2 border-amber-300 bg-amber-50 dark:border-amber-800 dark:bg-amber-950">
+        <span class="font-bold text-amber-800 tracking-widest text-xs dark:text-amber-200">WIREFRAME</span>
+        <span class="text-amber-600 font-mono" style="font-size:8px;">Mobile 390px</span>
+      </div>
+      <div id="nav-placeholder-m"></div>
+      <main>
+
+        <!-- §1 HERO mobile -->
+        <div class="wf-bar">§1 · Hero</div>
+        <section aria-labelledby="hero-h-m" class="px-4 py-8">
+          <nav aria-label="Breadcrumb" class="mb-4">
+            <ol class="flex items-center gap-1 text-xs text-gray-500 flex-wrap dark:text-slate-500">
+              <li><a href="./index.html" class="hover:text-blue-700 dark:hover:text-blue-300">Home</a></li>
+              <li class="text-gray-400 dark:text-slate-400">/</li>
+              <li><a href="./programs.html" class="hover:text-blue-700 dark:hover:text-blue-300">Programs</a></li>
+              <li class="text-gray-400 dark:text-slate-400">/</li>
+              <li class="text-gray-800 font-medium dark:text-slate-200" aria-current="page">Buddy Programme</li>
+            </ol>
+          </nav>
+          <div class="img-ph rounded-lg mb-5 flex items-center justify-center text-center text-gray-500 font-mono text-xs dark:text-slate-500" style="height:200px;" role="img" aria-label="International student with Australian buddy in school">
+            [IMAGE: International student<br>with Australian buddy]
+          </div>
+          <span class="text-xs font-bold text-blue-700 bg-blue-50 border border-blue-200 rounded px-2 py-1 mb-4 inline-block dark:text-blue-300 dark:bg-blue-950 dark:border-blue-800">14-Day Immersion · Anglican Schools</span>
+          <h1 id="hero-h-m" class="text-pretty text-3xl font-bold text-gray-900 mb-4 leading-tight dark:text-slate-100">Two weeks. Real school. Real families. Real Western Australia.</h1>
+          <p class="text-pretty text-sm text-gray-600 mb-6 leading-relaxed dark:text-slate-400">High school students join Australian classrooms, live with vetted homestay families, and explore Western Australia — within a supervised 14-day programme.</p>
+          <a href="./contact.html" class="block w-full text-center bg-blue-600 text-white font-semibold px-6 py-3 rounded text-sm">Enquire About the Buddy Programme</a>
+        </section>
+
+        <!-- §2 WHAT IS IT mobile -->
+        <div class="wf-bar">§2 · Programme Summary</div>
+        <section aria-labelledby="what-h-m" class="px-4 py-8 bg-gray-50 dark:bg-slate-900">
+          <h2 id="what-h-m" class="text-pretty text-xl font-bold text-gray-900 mb-4 dark:text-slate-100">Programme Summary</h2>
+          <p class="text-pretty text-sm text-gray-600 mb-5 leading-relaxed dark:text-slate-400">Morning sessions focus on English and culture. Afternoons are spent in regular high school classes, alongside local students. All homestay families are police-background-checked.</p>
+          <div class="bg-white rounded-xl border border-gray-200 overflow-hidden dark:bg-slate-800 dark:border-slate-700">
+            <table class="w-full text-xs">
+              <tbody class="divide-y divide-gray-100">
+                <tr><td class="px-4 py-3 font-medium text-gray-700 dark:text-slate-300">Duration</td><td class="px-4 py-3 text-gray-600 dark:text-slate-400">14 days</td></tr>
+                <tr class="bg-gray-50 dark:bg-slate-900"><td class="px-4 py-3 font-medium text-gray-700 dark:text-slate-300">Age group</td><td class="px-4 py-3 text-gray-600 dark:text-slate-400">High school students</td></tr>
+                <tr><td class="px-4 py-3 font-medium text-gray-700 dark:text-slate-300">Accommodation</td><td class="px-4 py-3 text-gray-600 dark:text-slate-400">Homestay (meals included)</td></tr>
+                <tr class="bg-gray-50 dark:bg-slate-900"><td class="px-4 py-3 font-medium text-gray-700 dark:text-slate-300">School partner</td><td class="px-4 py-3 text-gray-600 dark:text-slate-400">Anglican Schools</td></tr>
+                <tr><td class="px-4 py-3 font-medium text-gray-700 dark:text-slate-300">Certificate</td><td class="px-4 py-3 text-gray-600 dark:text-slate-400">Certificate of completion</td></tr>
+                <tr class="bg-gray-50 dark:bg-slate-900"><td class="px-4 py-3 font-medium text-gray-700 dark:text-slate-300">Voluntary work</td><td class="px-4 py-3 text-gray-600 dark:text-slate-400">Yes, through local councils</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- §3 YOUR 14 DAYS mobile -->
+        <div class="wf-bar">§3 · Your 14 Days</div>
+        <section aria-labelledby="schedule-h-m" class="px-4 py-8 bg-white dark:bg-slate-800">
+          <h2 id="schedule-h-m" class="text-pretty text-xl font-bold text-gray-900 mb-5 dark:text-slate-100">Your 14 Days</h2>
+          <div class="space-y-4">
+            <article class="border border-blue-200 rounded-xl p-5 bg-blue-50 dark:border-blue-800 dark:bg-blue-950">
+              <h3 class="text-pretty font-bold text-blue-900 text-sm mb-2">Mornings: English Language &amp; Culture</h3>
+              <p class="text-pretty text-blue-800 text-xs leading-relaxed dark:text-blue-200">Australian history, geography, and wildlife as lesson themes. Vocabulary, grammar, and communication skills through interactive discussion.</p>
+            </article>
+            <article class="border border-gray-200 rounded-xl p-5 bg-gray-50 dark:border-slate-700 dark:bg-slate-900">
+              <h3 class="text-pretty font-bold text-gray-900 text-sm mb-2 dark:text-slate-100">Afternoons: High School Integration</h3>
+              <p class="text-pretty text-gray-600 text-xs leading-relaxed dark:text-slate-400">Standard academic classes alongside Australian peers — Science, Maths, and other subjects. Same lessons, same teachers, same expectations.</p>
+            </article>
+          </div>
+        </section>
+
+        <!-- §4 BEYOND THE CLASSROOM mobile -->
+        <div class="wf-bar">§4 · Beyond the Classroom</div>
+        <section aria-labelledby="beyond-h-m" class="px-4 py-8 bg-gray-50 dark:bg-slate-900">
+          <h2 id="beyond-h-m" class="text-pretty text-xl font-bold text-gray-900 mb-5 dark:text-slate-100">Beyond the Classroom</h2>
+          <div class="space-y-4">
+            <article class="bg-white rounded-xl overflow-hidden border border-gray-200 dark:bg-slate-800 dark:border-slate-700">
+              <div class="img-ph flex items-center justify-center text-center text-gray-500 font-mono text-xs dark:text-slate-500" style="height:140px;" role="img" aria-label="Family dinner table, Australian homestay">
+                [IMAGE: Homestay family dinner]
+              </div>
+              <div class="p-4">
+                <h3 class="text-pretty font-bold text-gray-900 text-sm mb-1 dark:text-slate-100">Homestay Experience</h3>
+                <p class="text-pretty text-gray-600 text-xs leading-relaxed dark:text-slate-400">Police-cleared families, meals, support, and genuine family life.</p>
+              </div>
+            </article>
+            <article class="bg-white rounded-xl overflow-hidden border border-gray-200 dark:bg-slate-800 dark:border-slate-700">
+              <div class="img-ph flex items-center justify-center text-center text-gray-500 font-mono text-xs dark:text-slate-500" style="height:140px;" role="img" aria-label="Students at coastal WA landmark">
+                [IMAGE: Local field trips, WA]
+              </div>
+              <div class="p-4">
+                <h3 class="text-pretty font-bold text-gray-900 text-sm mb-1 dark:text-slate-100">Local Field Trips</h3>
+                <p class="text-pretty text-gray-600 text-xs leading-relaxed dark:text-slate-400">Rottnest Island, The Pinnacles, King's Park, Fremantle Market, and more.</p>
+              </div>
+            </article>
+            <article class="bg-white rounded-xl overflow-hidden border border-gray-200 dark:bg-slate-800 dark:border-slate-700">
+              <div class="img-ph flex items-center justify-center text-center text-gray-500 font-mono text-xs dark:text-slate-500" style="height:140px;" role="img" aria-label="Students helping at community event">
+                [IMAGE: Voluntary work]
+              </div>
+              <div class="p-4">
+                <h3 class="text-pretty font-bold text-gray-900 text-sm mb-1 dark:text-slate-100">Voluntary Work</h3>
+                <p class="text-pretty text-gray-600 text-xs leading-relaxed dark:text-slate-400">Certificate strengthens CV and scholarship applications.</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- §5 CTA mobile -->
+        <div class="wf-bar">§5 · CTA Banner</div>
+        <section aria-labelledby="cta-h-m" class="py-12 px-4 text-center" style="background:#1e3a5f;">
+          <h2 id="cta-h-m" class="text-pretty text-2xl font-bold text-white mb-3">Limited places each intake.</h2>
+          <p class="text-pretty text-sm mb-6" style="color:#93c5fd;">Contact us to confirm availability and receive programme dates, costs, and enrolment details.</p>
+          <a href="./contact.html" class="block w-full text-center bg-white font-bold px-6 py-3 rounded text-sm mb-3 dark:bg-slate-800" style="color:#1e3a5f;">Enquire About the Buddy Programme</a>
+          <a href="tel:+61863810030" class="block w-full text-center border-2 border-white text-white font-semibold px-6 py-3 rounded text-sm">Call +61 8 6381 0030</a>
+        </section>
+
+      </main>
+      <div id="footer-placeholder-m"></div>
+    </div>
+  </div>
+  <script src="./assets/site.js"></script>
+</body>
+</html>

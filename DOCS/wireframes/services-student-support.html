@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Support — Blue Education Wireframe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/tokens.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: { extend: {
+        colors: {
+          primary:   { DEFAULT: 'var(--primary)',   foreground: 'var(--primary-foreground)' },
+          secondary: { DEFAULT: 'var(--secondary)', foreground: 'var(--secondary-foreground)' },
+          base:      { DEFAULT: 'var(--base)',      foreground: 'var(--base-foreground)' },
+          muted:     { DEFAULT: 'var(--muted)',     foreground: 'var(--muted-foreground)' },
+        },
+        borderRadius: {
+          corner: 'var(--corner)', 'corner-lg': 'var(--corner-lg)', 'corner-full': 'var(--corner-full)',
+        },
+        fontFamily: { sans: ['Inter', 'sans-serif'] },
+      }}
+    }
+  </script>
+  <style>
+    .img-ph {
+      background-color: #d1d5db;
+      background-image: repeating-linear-gradient(-55deg, transparent, transparent 8px, rgba(0,0,0,0.04) 8px, rgba(0,0,0,0.04) 9px);
+    }
+    .wf-bar {
+      font-family: 'Courier New', monospace; font-size: 9px; font-weight: bold;
+      text-transform: uppercase; letter-spacing: 0.12em; color: #3b82f6; background: #eff6ff;
+      border-top: 1px solid #bfdbfe; border-bottom: 1px solid #bfdbfe; padding: 4px 32px;
+    }
+  </style>
+</head>
+<body class="bg-neutral-300 py-8 font-sans">
+  <div class="flex gap-8 items-start mx-auto px-8" style="width: max-content;">
+
+    <!-- DESKTOP CANVAS — 1280px -->
+    <div style="width:1280px; background:var(--base); color:var(--base-foreground);" class="shadow-2xl shrink-0">
+      <div class="flex items-center justify-between px-8 py-2 border-b-2 border-amber-300 bg-amber-50 dark:border-amber-800 dark:bg-amber-950">
+        <div class="flex items-center gap-3">
+          <span class="font-bold text-amber-800 tracking-widest text-sm dark:text-amber-200">WIREFRAME</span>
+          <span class="text-amber-700 text-sm dark:text-amber-300">·  Blue Education  ·  Student Support  ·  Desktop 1280px</span>
+        </div>
+        <span class="text-amber-500 font-mono text-xs dark:text-amber-400">Layout &amp; copy reference — not final design</span>
+      </div>
+      <div id="nav-placeholder"></div>
+      <main id="main-content">
+
+        <!-- §1 HERO -->
+        <div class="wf-bar">§1 · Hero — Centered text + image background</div>
+        <section aria-labelledby="hero-h" class="relative flex flex-col items-center justify-center text-center" style="min-height:400px;">
+          <div class="img-ph absolute inset-0" role="img" aria-label="Student being welcomed at airport, or settling into homestay"></div>
+          <div class="absolute inset-0" style="background:rgba(15,23,42,0.62);"></div>
+          <div class="relative z-10 px-8 py-14" style="max-width:720px;">
+            <nav aria-label="Breadcrumb" class="mb-6">
+              <ol class="flex items-center gap-2 text-sm justify-center" style="color:#93c5fd;">
+                <li><a href="./index.html" class="hover:text-white dark:hover:text-slate-100">Home</a></li>
+                <li class="opacity-50">/</li>
+                <li><a href="./services-education.html" class="hover:text-white dark:hover:text-slate-100">Services</a></li>
+                <li class="opacity-50">/</li>
+                <li class="text-white font-medium" aria-current="page">Student Support</li>
+              </ol>
+            </nav>
+            <h1 id="hero-h" class="text-pretty text-5xl font-bold text-white mb-5 leading-tight">Student support services in Australia.</h1>
+            <p class="text-pretty text-xl leading-relaxed" style="color:#bfdbfe;">Accommodation. Guardianship. Health cover. Airport transfers. Translation. 24/7 emergency line. All arranged before arrival.</p>
+          </div>
+        </section>
+
+        <!-- §2 SUPPORT SERVICES BENTO -->
+        <div class="wf-bar">§2 · Support Services — BentoBox 3×2 grid, icon-topped cards</div>
+        <section aria-labelledby="services-h" class="px-16 py-14 bg-white dark:bg-slate-800">
+          <h2 id="services-h" class="text-pretty text-3xl font-bold text-gray-900 mb-10 dark:text-slate-100">What's included</h2>
+          <div class="grid grid-cols-3 gap-6">
+
+            <article class="border border-gray-200 rounded-xl p-7 bg-gray-50 dark:border-slate-700 dark:bg-slate-900">
+              <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4 dark:bg-blue-900">
+                <span class="font-mono text-blue-600 text-xs font-bold dark:text-blue-400">[home]</span>
+              </div>
+              <h3 class="text-pretty text-lg font-bold text-gray-900 mb-3 dark:text-slate-100">Accommodation</h3>
+              <p class="text-pretty text-gray-600 text-sm leading-relaxed dark:text-slate-400">Vetted homestay families through the Australian Homestay Network. Safe, supportive living environment. Meals included. Short-term and long-term arrangements available.</p>
+              <a href="./programs-buddy.html" class="text-blue-600 font-medium text-sm mt-3 inline-block hover:underline dark:text-blue-400">See Buddy Programme homestay →</a>
+            </article>
+
+            <article class="border border-gray-200 rounded-xl p-7 bg-gray-50 dark:border-slate-700 dark:bg-slate-900">
+              <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4 dark:bg-blue-900">
+                <span class="font-mono text-blue-600 text-xs font-bold dark:text-blue-400">[shield]</span>
+              </div>
+              <h3 class="text-pretty text-lg font-bold text-gray-900 mb-3 dark:text-slate-100">Guardianship (Under 18)</h3>
+              <p class="text-pretty text-gray-600 text-sm leading-relaxed dark:text-slate-400">Legal guardianship through Professional Student Care Australia or International Student Alliance. Welfare monitoring, school liaison, parental reporting. Required by the Department of Home Affairs for unaccompanied minor students.</p>
+            </article>
+
+            <article class="border border-gray-200 rounded-xl p-7 bg-gray-50 dark:border-slate-700 dark:bg-slate-900">
+              <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4 dark:bg-blue-900">
+                <span class="font-mono text-blue-600 text-xs font-bold dark:text-blue-400">[phone]</span>
+              </div>
+              <h3 class="text-pretty text-lg font-bold text-gray-900 mb-3 dark:text-slate-100">24/7 Emergency Hotline</h3>
+              <p class="text-pretty text-gray-600 text-sm leading-relaxed dark:text-slate-400">Round-the-clock crisis support. Multilingual assistance. Coordination with local emergency services. Available to all Blue Education clients.</p>
+            </article>
+
+            <article class="border border-gray-200 rounded-xl p-7 bg-gray-50 dark:border-slate-700 dark:bg-slate-900">
+              <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4 dark:bg-blue-900">
+                <span class="font-mono text-blue-600 text-xs font-bold dark:text-blue-400">[plane]</span>
+              </div>
+              <h3 class="text-pretty text-lg font-bold text-gray-900 mb-3 dark:text-slate-100">Airport Transfers</h3>
+              <p class="text-pretty text-gray-600 text-sm leading-relaxed dark:text-slate-400">Meet and greet at the airport. Direct transfer to accommodation. Luggage assistance included.</p>
+            </article>
+
+            <article class="border border-gray-200 rounded-xl p-7 bg-gray-50 dark:border-slate-700 dark:bg-slate-900">
+              <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4 dark:bg-blue-900">
+                <span class="font-mono text-blue-600 text-xs font-bold dark:text-blue-400">[heart]</span>
+              </div>
+              <h3 class="text-pretty text-lg font-bold text-gray-900 mb-3 dark:text-slate-100">Health Insurance (OSHC)</h3>
+              <p class="text-pretty text-gray-600 text-sm leading-relaxed dark:text-slate-400">Overseas Student Health Cover — mandatory for all student visas. We arrange cover through OSHC Australia, Annalink, and Konpare — and handle policy selection, enrolment, claims assistance, and renewal.</p>
+            </article>
+
+            <article class="border border-gray-200 rounded-xl p-7 bg-gray-50 dark:border-slate-700 dark:bg-slate-900">
+              <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4 dark:bg-blue-900">
+                <span class="font-mono text-blue-600 text-xs font-bold dark:text-blue-400">[file]</span>
+              </div>
+              <h3 class="text-pretty text-lg font-bold text-gray-900 mb-3 dark:text-slate-100">Document Translation</h3>
+              <p class="text-pretty text-gray-600 text-sm leading-relaxed dark:text-slate-400">NAATI-certified translations for academic, legal, and visa documents. Accepted by all Australian authorities. Fast turnaround.</p>
+            </article>
+
+          </div>
+        </section>
+
+        <!-- §3 ORIENTATION & ONBOARDING -->
+        <div class="wf-bar">§3 · Orientation &amp; Onboarding — Two-column, text left, image right</div>
+        <section aria-labelledby="orientation-h" class="px-16 py-14 bg-gray-50 dark:bg-slate-900" style="display:flex; gap:48px; align-items:center;">
+          <div style="flex:0 0 55%;">
+            <h2 id="orientation-h" class="text-pretty text-3xl font-bold text-gray-900 mb-5 dark:text-slate-100">Orientation &amp; Onboarding</h2>
+            <p class="text-pretty text-gray-600 mb-5 leading-relaxed dark:text-slate-400">Comprehensive introduction to life and study in Australia for all new arrivals:</p>
+            <ul class="space-y-3 text-gray-700 text-sm dark:text-slate-300">
+              <li class="flex items-start gap-2"><span class="text-blue-600 font-bold mt-0.5 dark:text-blue-400">—</span>Campus and local area familiarisation</li>
+              <li class="flex items-start gap-2"><span class="text-blue-600 font-bold mt-0.5 dark:text-blue-400">—</span>Banking and essential services setup</li>
+              <li class="flex items-start gap-2"><span class="text-blue-600 font-bold mt-0.5 dark:text-blue-400">—</span>Public transport guidance</li>
+              <li class="flex items-start gap-2"><span class="text-blue-600 font-bold mt-0.5 dark:text-blue-400">—</span>Australian lifestyle and culture introduction</li>
+              <li class="flex items-start gap-2"><span class="text-blue-600 font-bold mt-0.5 dark:text-blue-400">—</span>Student support services overview</li>
+              <li class="flex items-start gap-2"><span class="text-blue-600 font-bold mt-0.5 dark:text-blue-400">—</span>Personal development programs for confidence and community</li>
+            </ul>
+          </div>
+          <div class="img-ph rounded-xl flex items-center justify-center text-center text-gray-500 font-mono text-sm dark:text-slate-500" style="flex:1; min-height:300px;" role="img" aria-label="Students in group orientation session">
+            [IMAGE: Students in group<br>orientation session]
+          </div>
+        </section>
+
+        <!-- §4 FOR PARENTS -->
+        <div class="wf-bar">§4 · For Parents — Two-column, text left, image right</div>
+        <section aria-labelledby="parents-h" class="px-16 py-14 bg-white dark:bg-slate-800" style="display:flex; gap:48px; align-items:center;">
+          <div style="flex:0 0 60%;">
+            <h2 id="parents-h" class="text-pretty text-3xl font-bold text-gray-900 mb-5 dark:text-slate-100">For Parents</h2>
+            <p class="text-pretty text-gray-600 mb-6 leading-relaxed dark:text-slate-400">Sending your child to study in Australia is a significant decision. Here's how we look after them:</p>
+            <ul class="space-y-4 text-gray-700 dark:text-slate-300">
+              <li class="flex items-start gap-3">
+                <span class="w-2 h-2 rounded-full bg-blue-600 mt-2 shrink-0"></span>
+                <span class="text-sm leading-relaxed"><strong>24/7 emergency hotline</strong> — for parents and students, any time</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="w-2 h-2 rounded-full bg-blue-600 mt-2 shrink-0"></span>
+                <span class="text-sm leading-relaxed"><strong>Regular welfare reports</strong> — school updates and wellbeing checks</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="w-2 h-2 rounded-full bg-blue-600 mt-2 shrink-0"></span>
+                <span class="text-sm leading-relaxed"><strong>Direct communication</strong> with guardianship providers</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="w-2 h-2 rounded-full bg-blue-600 mt-2 shrink-0"></span>
+                <span class="text-sm leading-relaxed"><strong>On-ground support</strong> in Perth and across major Australian cities</span>
+              </li>
+            </ul>
+          </div>
+          <div class="img-ph rounded-xl flex items-center justify-center text-center text-gray-500 font-mono text-sm dark:text-slate-500" style="flex:1; min-height:280px;" role="img" aria-label="Parent video-calling with child studying in Australia">
+            [IMAGE: Parent video-calling<br>with child in Australia]
+          </div>
+        </section>
+
+        <!-- §5 SUPPORT JOURNEY TIMELINE -->
+        <div class="wf-bar">§5 · Your Support Journey — Horizontal 3-phase timeline</div>
+        <section aria-labelledby="journey-h" class="px-16 py-14 bg-gray-50 dark:bg-slate-900">
+          <h2 id="journey-h" class="text-pretty text-3xl font-bold text-gray-900 mb-10 text-center dark:text-slate-100">Your Support Journey</h2>
+          <div class="relative">
+            <div class="absolute top-8 left-0 right-0 h-0.5 bg-blue-200" style="margin: 0 80px;"></div>
+            <div class="grid grid-cols-3 gap-8 relative">
+              <article class="bg-white rounded-xl p-8 border border-gray-200 shadow-sm text-center dark:bg-slate-800 dark:border-slate-700">
+                <div class="w-16 h-16 rounded-full bg-blue-600 text-white font-bold text-sm flex items-center justify-center mx-auto mb-5 relative z-10 uppercase tracking-wide">Pre<br>Arrival</div>
+                <h3 class="text-pretty font-bold text-gray-900 mb-3 text-lg dark:text-slate-100">Pre-Arrival</h3>
+                <p class="text-pretty text-gray-600 text-sm leading-relaxed dark:text-slate-400">Documents translated. Accommodation arranged. OSHC enrolled. Visa approved.</p>
+              </article>
+              <article class="bg-white rounded-xl p-8 border border-gray-200 shadow-sm text-center dark:bg-slate-800 dark:border-slate-700">
+                <div class="w-16 h-16 rounded-full bg-blue-600 text-white font-bold text-sm flex items-center justify-center mx-auto mb-5 relative z-10 uppercase tracking-wide">Day 1</div>
+                <h3 class="text-pretty font-bold text-gray-900 mb-3 text-lg dark:text-slate-100">Arrival Day</h3>
+                <p class="text-pretty text-gray-600 text-sm leading-relaxed dark:text-slate-400">Airport pickup. Transfer to accommodation. First-day orientation.</p>
+              </article>
+              <article class="bg-white rounded-xl p-8 border border-gray-200 shadow-sm text-center dark:bg-slate-800 dark:border-slate-700">
+                <div class="w-16 h-16 rounded-full bg-blue-600 text-white font-bold text-sm flex items-center justify-center mx-auto mb-5 relative z-10 uppercase tracking-wide">Ongoing</div>
+                <h3 class="text-pretty font-bold text-gray-900 mb-3 text-lg dark:text-slate-100">Ongoing</h3>
+                <p class="text-pretty text-gray-600 text-sm leading-relaxed dark:text-slate-400">24/7 hotline. Welfare monitoring. Cultural adaptation support. Personal development programs.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- §6 COST CONSIDERATIONS -->
+        <div class="wf-bar">§6 · Cost Considerations — Reference table</div>
+        <section aria-labelledby="costs-h" class="px-16 py-14 bg-white dark:bg-slate-800">
+          <h2 id="costs-h" class="text-pretty text-3xl font-bold text-gray-900 mb-6 dark:text-slate-100">Cost Considerations</h2>
+          <div class="overflow-hidden rounded-xl border border-gray-200 dark:border-slate-700">
+            <table class="w-full text-sm">
+              <thead>
+                <tr class="bg-gray-50 border-b border-gray-200 dark:bg-slate-900 dark:border-slate-700">
+                  <th class="text-left px-6 py-4 font-semibold text-gray-700 dark:text-slate-300">Item</th>
+                  <th class="text-left px-6 py-4 font-semibold text-gray-700 dark:text-slate-300">Notes</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-gray-100">
+                <tr class="hover:bg-gray-50">
+                  <td class="px-6 py-4 font-medium text-gray-900 dark:text-slate-100">Accommodation</td>
+                  <td class="px-6 py-4 text-gray-600 dark:text-slate-400">Fees vary by homestay arrangement and duration</td>
+                </tr>
+                <tr class="hover:bg-gray-50">
+                  <td class="px-6 py-4 font-medium text-gray-900 dark:text-slate-100">Guardianship</td>
+                  <td class="px-6 py-4 text-gray-600 dark:text-slate-400">Required for under-18 students; fees vary</td>
+                </tr>
+                <tr class="hover:bg-gray-50">
+                  <td class="px-6 py-4 font-medium text-gray-900 dark:text-slate-100">OSHC</td>
+                  <td class="px-6 py-4 text-gray-600 dark:text-slate-400">Mandatory; fees depend on provider and duration</td>
+                </tr>
+                <tr class="hover:bg-gray-50">
+                  <td class="px-6 py-4 font-medium text-gray-900 dark:text-slate-100">Medical examinations</td>
+                  <td class="px-6 py-4 text-gray-600 dark:text-slate-400">$240–$380 depending on assessment type</td>
+                </tr>
+                <tr class="hover:bg-gray-50">
+                  <td class="px-6 py-4 font-medium text-gray-900 dark:text-slate-100">Translation, airport transfers, 24/7 hotline</td>
+                  <td class="px-6 py-4 text-gray-600 dark:text-slate-400">Additional service fees apply</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="text-pretty text-gray-500 text-sm mt-5 leading-relaxed dark:text-slate-500">Items above are costs payable directly to providers — homestay families, guardianship organisations, OSHC providers, medical clinics. Blue Education's service fees for advisory, application management, and ongoing support are quoted separately during initial consultation.</p>
+          <a href="./fees.html" class="text-blue-600 font-semibold text-sm mt-3 inline-block hover:underline dark:text-blue-400">See full fees &amp; costs →</a>
+        </section>
+
+        <!-- §7 ALSO RELEVANT -->
+        <div class="wf-bar">§7 · Also Relevant — Related links strip</div>
+        <section aria-label="Related pages" class="px-16 py-8 bg-gray-50 border-t border-gray-200 dark:bg-slate-900 dark:border-slate-700">
+          <p class="text-pretty text-sm text-gray-500 mb-3 font-medium dark:text-slate-500">Also relevant:</p>
+          <div class="flex gap-6">
+            <a href="./programs-buddy.html" class="text-blue-600 font-medium text-sm hover:underline dark:text-blue-400">Buddy Programme →</a>
+            <a href="./services-migration-student-visas.html" class="text-blue-600 font-medium text-sm hover:underline dark:text-blue-400">Student visa support →</a>
+          </div>
+        </section>
+
+        <!-- §8 CTA BANNER -->
+        <div class="wf-bar">§8 · CTA Banner — Full-width</div>
+        <section aria-labelledby="cta-h" class="py-16 px-8 text-center" style="background:#1e3a5f;">
+          <h2 id="cta-h" class="text-pretty text-4xl font-bold text-white mb-4">Get the full picture.</h2>
+          <p class="text-pretty text-lg mb-8 mx-auto" style="color:#93c5fd; max-width:540px;">Contact us with your situation. We'll tell you exactly what support is available and what it costs.</p>
+          <div class="flex gap-4 justify-center">
+            <a href="./contact.html" class="bg-white font-bold px-8 py-3 rounded text-base hover:bg-gray-100 dark:bg-slate-800" style="color:#1e3a5f;">Ask About Support Services</a>
+            <a href="tel:+61863810030" class="border-2 border-white text-white font-semibold px-8 py-3 rounded text-base">Call +61 8 6381 0030</a>
+          </div>
+        </section>
+
+      </main>
+      <div id="footer-placeholder"></div>
+    </div>
+
+    <!-- MOBILE CANVAS — 390px -->
+    <div style="width:390px; background:var(--base); color:var(--base-foreground);" class="shadow-2xl shrink-0 sticky top-8">
+      <div class="flex items-center justify-between px-4 py-2 border-b-2 border-amber-300 bg-amber-50 dark:border-amber-800 dark:bg-amber-950">
+        <span class="font-bold text-amber-800 tracking-widest text-xs dark:text-amber-200">WIREFRAME</span>
+        <span class="text-amber-600 font-mono" style="font-size:8px;">Mobile 390px</span>
+      </div>
+      <div id="nav-placeholder-m"></div>
+      <main>
+
+        <!-- §1 HERO mobile -->
+        <div class="wf-bar">§1 · Hero</div>
+        <section aria-labelledby="hero-h-m" class="px-4 pt-8 pb-10">
+          <nav aria-label="Breadcrumb" class="mb-4">
+            <ol class="flex items-center gap-1 text-xs text-gray-500 flex-wrap dark:text-slate-500">
+              <li><a href="./index.html" class="hover:text-blue-700 dark:hover:text-blue-300">Home</a></li>
+              <li class="text-gray-400 dark:text-slate-400">/</li>
+              <li><a href="./services-education.html" class="hover:text-blue-700 dark:hover:text-blue-300">Services</a></li>
+              <li class="text-gray-400 dark:text-slate-400">/</li>
+              <li class="text-gray-800 font-medium dark:text-slate-200" aria-current="page">Student Support</li>
+            </ol>
+          </nav>
+          <div class="img-ph rounded-lg mb-5 flex items-center justify-center text-center text-gray-500 font-mono text-xs dark:text-slate-500" style="height:180px;" role="img" aria-label="Student being welcomed at airport">
+            [IMAGE: Student welcomed<br>at airport / homestay]
+          </div>
+          <h1 id="hero-h-m" class="text-pretty text-3xl font-bold text-gray-900 mb-3 leading-tight dark:text-slate-100">Student support services in Australia.</h1>
+          <p class="text-pretty text-sm text-gray-600 leading-relaxed dark:text-slate-400">Accommodation. Guardianship. Health cover. Airport transfers. Translation. 24/7 emergency line. All arranged before arrival.</p>
+        </section>
+
+        <!-- §2 SERVICES mobile -->
+        <div class="wf-bar">§2 · Support Services</div>
+        <section aria-labelledby="services-h-m" class="px-4 py-8 bg-gray-50 dark:bg-slate-900">
+          <h2 id="services-h-m" class="text-pretty text-2xl font-bold text-gray-900 mb-6 dark:text-slate-100">What's included</h2>
+          <div class="space-y-4">
+            <article class="bg-white rounded-lg p-4 border border-gray-200 dark:bg-slate-800 dark:border-slate-700">
+              <h3 class="text-pretty font-bold text-gray-900 text-sm mb-2 dark:text-slate-100">Accommodation</h3>
+              <p class="text-pretty text-gray-600 text-xs leading-relaxed dark:text-slate-400">Vetted homestay families. Meals included. Short and long-term arrangements.</p>
+            </article>
+            <article class="bg-white rounded-lg p-4 border border-gray-200 dark:bg-slate-800 dark:border-slate-700">
+              <h3 class="text-pretty font-bold text-gray-900 text-sm mb-2 dark:text-slate-100">Guardianship (Under 18)</h3>
+              <p class="text-pretty text-gray-600 text-xs leading-relaxed dark:text-slate-400">Legal guardianship, welfare monitoring, and school liaison. Required by Home Affairs for unaccompanied minors.</p>
+            </article>
+            <article class="bg-white rounded-lg p-4 border border-gray-200 dark:bg-slate-800 dark:border-slate-700">
+              <h3 class="text-pretty font-bold text-gray-900 text-sm mb-2 dark:text-slate-100">24/7 Emergency Hotline</h3>
+              <p class="text-pretty text-gray-600 text-xs leading-relaxed dark:text-slate-400">Round-the-clock crisis support. Multilingual. Available to all Blue Education clients.</p>
+            </article>
+            <article class="bg-white rounded-lg p-4 border border-gray-200 dark:bg-slate-800 dark:border-slate-700">
+              <h3 class="text-pretty font-bold text-gray-900 text-sm mb-2 dark:text-slate-100">Airport Transfers</h3>
+              <p class="text-pretty text-gray-600 text-xs leading-relaxed dark:text-slate-400">Meet and greet at the airport. Direct transfer to accommodation. Luggage assistance included.</p>
+            </article>
+            <article class="bg-white rounded-lg p-4 border border-gray-200 dark:bg-slate-800 dark:border-slate-700">
+              <h3 class="text-pretty font-bold text-gray-900 text-sm mb-2 dark:text-slate-100">Health Insurance (OSHC)</h3>
+              <p class="text-pretty text-gray-600 text-xs leading-relaxed dark:text-slate-400">Mandatory for student visas. Arranged through OSHC Australia, Annalink, and Konpare.</p>
+            </article>
+            <article class="bg-white rounded-lg p-4 border border-gray-200 dark:bg-slate-800 dark:border-slate-700">
+              <h3 class="text-pretty font-bold text-gray-900 text-sm mb-2 dark:text-slate-100">Document Translation</h3>
+              <p class="text-pretty text-gray-600 text-xs leading-relaxed dark:text-slate-400">NAATI-certified translations. Accepted by all Australian authorities. Fast turnaround.</p>
+            </article>
+          </div>
+        </section>
+
+        <!-- §3 FOR PARENTS mobile -->
+        <div class="wf-bar">§3 · For Parents</div>
+        <section aria-labelledby="parents-h-m" class="px-4 py-8 bg-white dark:bg-slate-800">
+          <h2 id="parents-h-m" class="text-pretty text-2xl font-bold text-gray-900 mb-4 dark:text-slate-100">For Parents</h2>
+          <p class="text-pretty text-sm text-gray-600 mb-5 leading-relaxed dark:text-slate-400">Sending your child to study in Australia is a significant decision. Here's how we look after them:</p>
+          <ul class="space-y-3 text-sm text-gray-700 dark:text-slate-300">
+            <li class="flex items-start gap-2"><span class="text-blue-600 font-bold shrink-0 dark:text-blue-400">—</span><strong>24/7 emergency hotline</strong> — for parents and students</li>
+            <li class="flex items-start gap-2"><span class="text-blue-600 font-bold shrink-0 dark:text-blue-400">—</span><strong>Regular welfare reports</strong> — school updates and wellbeing checks</li>
+            <li class="flex items-start gap-2"><span class="text-blue-600 font-bold shrink-0 dark:text-blue-400">—</span><strong>Direct communication</strong> with guardianship providers</li>
+            <li class="flex items-start gap-2"><span class="text-blue-600 font-bold shrink-0 dark:text-blue-400">—</span><strong>On-ground support</strong> in Perth and major Australian cities</li>
+          </ul>
+        </section>
+
+        <!-- §4 JOURNEY mobile -->
+        <div class="wf-bar">§4 · Support Journey</div>
+        <section aria-labelledby="journey-h-m" class="px-4 py-8 bg-gray-50 dark:bg-slate-900">
+          <h2 id="journey-h-m" class="text-pretty text-2xl font-bold text-gray-900 mb-6 dark:text-slate-100">Your Support Journey</h2>
+          <div class="space-y-4">
+            <article class="bg-white rounded-lg p-4 border border-gray-200 dark:bg-slate-800 dark:border-slate-700">
+              <h3 class="text-pretty font-bold text-blue-800 text-sm mb-1 uppercase tracking-wide dark:text-blue-200">Pre-Arrival</h3>
+              <p class="text-pretty text-gray-600 text-xs leading-relaxed dark:text-slate-400">Documents translated. Accommodation arranged. OSHC enrolled. Visa approved.</p>
+            </article>
+            <article class="bg-white rounded-lg p-4 border border-gray-200 dark:bg-slate-800 dark:border-slate-700">
+              <h3 class="text-pretty font-bold text-blue-800 text-sm mb-1 uppercase tracking-wide dark:text-blue-200">Arrival Day</h3>
+              <p class="text-pretty text-gray-600 text-xs leading-relaxed dark:text-slate-400">Airport pickup. Transfer to accommodation. First-day orientation.</p>
+            </article>
+            <article class="bg-white rounded-lg p-4 border border-gray-200 dark:bg-slate-800 dark:border-slate-700">
+              <h3 class="text-pretty font-bold text-blue-800 text-sm mb-1 uppercase tracking-wide dark:text-blue-200">Ongoing</h3>
+              <p class="text-pretty text-gray-600 text-xs leading-relaxed dark:text-slate-400">24/7 hotline. Welfare monitoring. Cultural adaptation support. Personal development programs.</p>
+            </article>
+          </div>
+        </section>
+
+        <!-- §5 CTA mobile -->
+        <div class="wf-bar">§5 · CTA Banner</div>
+        <section aria-labelledby="cta-h-m" class="py-12 px-4 text-center" style="background:#1e3a5f;">
+          <h2 id="cta-h-m" class="text-pretty text-2xl font-bold text-white mb-3">Get the full picture.</h2>
+          <p class="text-pretty text-sm mb-6" style="color:#93c5fd;">Contact us with your situation. We'll tell you exactly what support is available and what it costs.</p>
+          <a href="./contact.html" class="block w-full text-center bg-white font-bold px-6 py-3 rounded text-sm mb-3 dark:bg-slate-800" style="color:#1e3a5f;">Ask About Support Services</a>
+          <a href="tel:+61863810030" class="block w-full text-center border-2 border-white text-white font-semibold px-6 py-3 rounded text-sm">Call +61 8 6381 0030</a>
+        </section>
+
+      </main>
+      <div id="footer-placeholder-m"></div>
+    </div>
+  </div>
+  <script src="./assets/site.js"></script>
+</body>
+</html>

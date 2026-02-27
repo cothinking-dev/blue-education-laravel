@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>School Programs — Blue Education Wireframe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/tokens.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: { extend: {
+        colors: {
+          primary:   { DEFAULT: 'var(--primary)',   foreground: 'var(--primary-foreground)' },
+          secondary: { DEFAULT: 'var(--secondary)', foreground: 'var(--secondary-foreground)' },
+          base:      { DEFAULT: 'var(--base)',      foreground: 'var(--base-foreground)' },
+          muted:     { DEFAULT: 'var(--muted)',     foreground: 'var(--muted-foreground)' },
+        },
+        borderRadius: {
+          corner: 'var(--corner)', 'corner-lg': 'var(--corner-lg)', 'corner-full': 'var(--corner-full)',
+        },
+        fontFamily: { sans: ['Inter', 'sans-serif'] },
+      }}
+    }
+  </script>
+  <style>
+    .img-ph {
+      background-color: #d1d5db;
+      background-image: repeating-linear-gradient(-55deg, transparent, transparent 8px, rgba(0,0,0,0.04) 8px, rgba(0,0,0,0.04) 9px);
+    }
+    .wf-bar {
+      font-family: 'Courier New', monospace; font-size: 9px; font-weight: bold;
+      text-transform: uppercase; letter-spacing: 0.12em; color: #3b82f6; background: #eff6ff;
+      border-top: 1px solid #bfdbfe; border-bottom: 1px solid #bfdbfe; padding: 4px 32px;
+    }
+  </style>
+</head>
+<body class="bg-neutral-300 py-8 font-sans">
+  <div class="flex gap-8 items-start mx-auto px-8" style="width: max-content;">
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         DESKTOP CANVAS — 1280px
+    ═══════════════════════════════════════════════════════════════ -->
+    <div style="width:1280px; background:var(--base); color:var(--base-foreground);" class="shadow-2xl shrink-0">
+
+      <div class="flex items-center justify-between px-8 py-2 border-b-2 border-amber-300 bg-amber-50 dark:border-amber-800 dark:bg-amber-950">
+        <div class="flex items-center gap-3">
+          <span class="font-bold text-amber-800 tracking-widest text-sm dark:text-amber-200">WIREFRAME</span>
+          <span class="text-amber-700 text-sm dark:text-amber-300">·  Blue Education  ·  School Programs  ·  Desktop 1280px</span>
+        </div>
+        <span class="text-amber-500 font-mono text-xs dark:text-amber-400">Layout &amp; copy reference — not final design</span>
+      </div>
+
+      <div id="nav-placeholder"></div>
+
+      <main id="main-content">
+
+        <!-- ══════════════════════════════════════════════════
+             §1  HERO
+        ══════════════════════════════════════════════════ -->
+        <div class="wf-bar">§1 · Hero — Full-width image, left-aligned text overlay</div>
+        <section aria-labelledby="hero-h">
+          <div class="img-ph relative flex flex-col justify-end" style="height:420px; background-color:#374151;">
+            <div class="absolute inset-0" style="background:rgba(17,24,39,0.60);"></div>
+            <div class="relative z-10 px-16 pb-14" style="max-width:680px;">
+              <nav aria-label="Breadcrumb" class="mb-4">
+                <ol class="flex items-center gap-2 text-sm text-gray-300 dark:text-slate-500">
+                  <li><a href="./index.html" class="hover:underline">Home</a></li>
+                  <li>/</li>
+                  <li><a href="./services.html" class="hover:underline">Services</a></li>
+                  <li>/</li>
+                  <li><a href="./services-education.html" class="hover:underline">Education</a></li>
+                  <li>/</li>
+                  <li class="text-white font-medium">School Programs</li>
+                </ol>
+              </nav>
+              <p class="text-pretty font-mono text-gray-400 mb-3 dark:text-slate-400" style="font-size:10px;">[BG IMAGE: Primary/secondary students in Australian school uniforms]</p>
+              <h1 id="hero-h" class="text-pretty text-4xl font-bold text-white mb-4 leading-tight">A quality Australian education for your child, with a safety net built around them.</h1>
+              <p class="text-pretty text-xl text-gray-200">We handle placement, visa, accommodation, and guardianship — so you're not left worrying from the other side of the world.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- ══════════════════════════════════════════════════
+             §2  THE AUSTRALIAN SCHOOL SYSTEM
+        ══════════════════════════════════════════════════ -->
+        <div class="wf-bar">§2 · Australian School System — 45/55 two-column: diagram left, text right</div>
+        <section aria-labelledby="school-system-h" class="px-16 py-16 bg-white dark:bg-slate-800">
+          <div class="flex gap-14 items-start">
+            <!-- Diagram — 45% -->
+            <div style="flex:9;">
+              <div class="img-ph rounded-xl flex items-center justify-center" style="height:320px;" role="img" aria-label="Visual diagram of Australia's 13-year school system">
+                <div class="text-center px-8">
+                  <span class="font-mono text-gray-400 text-xs block mb-2 dark:text-slate-400">[DIAGRAM: 13-year school system]</span>
+                  <div class="space-y-2 text-xs text-left text-gray-600 dark:text-slate-400">
+                    <div class="bg-white/60 rounded px-3 py-1.5">Preparatory · Foundation · Age ~5</div>
+                    <div class="bg-white/60 rounded px-3 py-1.5">Primary · Years 1–6 · Ages 6–12</div>
+                    <div class="bg-white/60 rounded px-3 py-1.5">Lower Secondary · Years 7–10 · Ages 12–16</div>
+                    <div class="bg-white/60 rounded px-3 py-1.5">Upper Secondary · Years 11–12 · Ages 16–18</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Text — 55% -->
+            <div style="flex:11;">
+              <h2 id="school-system-h" class="text-pretty text-3xl font-bold text-gray-900 mb-6 dark:text-slate-100">The Australian School System</h2>
+              <p class="text-pretty text-gray-600 mb-6 dark:text-slate-400">Australia's school system spans 13 years:</p>
+              <div class="overflow-hidden border border-gray-200 rounded-lg mb-6 dark:border-slate-700">
+                <table class="w-full text-sm">
+                  <thead>
+                    <tr class="bg-gray-100 dark:bg-slate-800">
+                      <th class="px-4 py-3 text-left font-semibold text-gray-700 dark:text-slate-300">Stage</th>
+                      <th class="px-4 py-3 text-left font-semibold text-gray-700 dark:text-slate-300">Years</th>
+                      <th class="px-4 py-3 text-left font-semibold text-gray-700 dark:text-slate-300">Ages</th>
+                      <th class="px-4 py-3 text-left font-semibold text-gray-700 dark:text-slate-300">Focus</th>
+                    </tr>
+                  </thead>
+                  <tbody class="divide-y divide-gray-200 bg-white dark:bg-slate-800">
+                    <tr><td class="px-4 py-3 text-gray-800 dark:text-slate-200">Preparatory</td><td class="px-4 py-3 text-gray-600 dark:text-slate-400">Foundation</td><td class="px-4 py-3 text-gray-600 dark:text-slate-400">~5</td><td class="px-4 py-3 text-gray-600 dark:text-slate-400">Early learning, social development</td></tr>
+                    <tr class="bg-gray-50 dark:bg-slate-900"><td class="px-4 py-3 text-gray-800 dark:text-slate-200">Primary</td><td class="px-4 py-3 text-gray-600 dark:text-slate-400">1–6 (or 1–7)</td><td class="px-4 py-3 text-gray-600 dark:text-slate-400">6–12</td><td class="px-4 py-3 text-gray-600 dark:text-slate-400">Core subjects across all learning areas</td></tr>
+                    <tr><td class="px-4 py-3 text-gray-800 dark:text-slate-200">Lower Secondary</td><td class="px-4 py-3 text-gray-600 dark:text-slate-400">7–10 (or 8–10)</td><td class="px-4 py-3 text-gray-600 dark:text-slate-400">12–16</td><td class="px-4 py-3 text-gray-600 dark:text-slate-400">Broader learning with growing elective choices</td></tr>
+                    <tr class="bg-gray-50 dark:bg-slate-900"><td class="px-4 py-3 text-gray-800 dark:text-slate-200">Upper Secondary</td><td class="px-4 py-3 text-gray-600 dark:text-slate-400">11–12</td><td class="px-4 py-3 text-gray-600 dark:text-slate-400">16–18</td><td class="px-4 py-3 text-gray-600 dark:text-slate-400">Subjects chosen for further education or career</td></tr>
+                  </tbody>
+                </table>
+              </div>
+              <ul class="space-y-2 text-sm text-gray-600 dark:text-slate-400">
+                <li class="flex items-start gap-2"><span class="text-blue-500 font-bold">•</span> Compulsory until age 16 in most states and territories</li>
+                <li class="flex items-start gap-2"><span class="text-blue-500 font-bold">•</span> Public and private schools available — we match your child to the right fit</li>
+                <li class="flex items-start gap-2"><span class="text-blue-500 font-bold">•</span> Blue Education is an SCSA Associate — officially named by SCSA to promote the WA curriculum internationally. <a href="./scsa-associate.html" class="text-blue-600 hover:underline dark:text-blue-400">Learn about SCSA →</a></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- ══════════════════════════════════════════════════
+             §3  WHAT WE HANDLE — Before Arrival
+        ══════════════════════════════════════════════════ -->
+        <div class="wf-bar">§3 · What We Handle — Before Arrival: horizontal 3-step timeline</div>
+        <section aria-labelledby="before-arrival-h" class="px-16 py-16 bg-blue-50 dark:bg-blue-950">
+          <h2 id="before-arrival-h" class="text-pretty text-3xl font-bold text-gray-900 mb-3 dark:text-slate-100">What We Handle</h2>
+          <p class="text-pretty text-gray-500 mb-10 text-sm dark:text-slate-500">Before Arrival — sequential steps your advisor coordinates for you</p>
+          <div class="flex gap-0 items-start">
+
+            <!-- Step 1 -->
+            <div class="flex-1 relative">
+              <div class="flex items-center mb-4">
+                <div class="w-10 h-10 bg-blue-700 text-white rounded-full flex items-center justify-center font-bold text-sm shrink-0">1</div>
+                <div class="flex-1 h-0.5 bg-blue-300 ml-3"></div>
+              </div>
+              <div class="pr-8">
+                <div class="w-8 h-8 bg-white border-2 border-blue-200 rounded flex items-center justify-center mb-3 dark:bg-slate-800 dark:border-blue-800">
+                  <span class="font-mono text-blue-600 text-xs dark:text-blue-400">[icon]</span>
+                </div>
+                <h3 class="text-pretty font-bold text-gray-900 mb-2 dark:text-slate-100">School Selection &amp; Placement</h3>
+                <p class="text-pretty text-gray-600 text-sm leading-relaxed dark:text-slate-400">We match your child to the right school based on location, curriculum, fees, learning profile, and long-term goals. Public and private options across Australia.</p>
+              </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="flex-1 relative">
+              <div class="flex items-center mb-4">
+                <div class="w-10 h-10 bg-blue-700 text-white rounded-full flex items-center justify-center font-bold text-sm shrink-0">2</div>
+                <div class="flex-1 h-0.5 bg-blue-300 ml-3"></div>
+              </div>
+              <div class="pr-8">
+                <div class="w-8 h-8 bg-white border-2 border-blue-200 rounded flex items-center justify-center mb-3 dark:bg-slate-800 dark:border-blue-800">
+                  <span class="font-mono text-blue-600 text-xs dark:text-blue-400">[icon]</span>
+                </div>
+                <h3 class="text-pretty font-bold text-gray-900 mb-2 dark:text-slate-100">Student Visa (Subclass 500)</h3>
+                <p class="text-pretty text-gray-600 text-sm leading-relaxed mb-2 dark:text-slate-400">Full visa application management for minors — documentation, health checks, character requirements, lodgement. We handle the process end to end.</p>
+                <a href="./services-migration-student-visas.html" class="text-blue-600 text-sm hover:underline dark:text-blue-400">Learn about student visas →</a>
+              </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="flex-1">
+              <div class="flex items-center mb-4">
+                <div class="w-10 h-10 bg-blue-700 text-white rounded-full flex items-center justify-center font-bold text-sm shrink-0">3</div>
+              </div>
+              <div class="pr-4">
+                <div class="w-8 h-8 bg-white border-2 border-blue-200 rounded flex items-center justify-center mb-3 dark:bg-slate-800 dark:border-blue-800">
+                  <span class="font-mono text-blue-600 text-xs dark:text-blue-400">[icon]</span>
+                </div>
+                <h3 class="text-pretty font-bold text-gray-900 mb-2 dark:text-slate-100">Accommodation</h3>
+                <p class="text-pretty text-gray-600 text-sm leading-relaxed mb-2 dark:text-slate-400">Homestay placement through the Australian Homestay Network. Vetted families, meals included, safe living environment — all arranged before your child arrives.</p>
+                <a href="./services-student-support.html" class="text-blue-600 text-sm hover:underline dark:text-blue-400">Full accommodation details →</a>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- ══════════════════════════════════════════════════
+             §4  WHAT WE HANDLE — Once They're There
+        ══════════════════════════════════════════════════ -->
+        <div class="wf-bar">§4 · What We Handle — Once They're There: 2×2 card grid (parallel services)</div>
+        <section aria-labelledby="once-there-h" class="px-16 py-16 bg-white dark:bg-slate-800">
+          <h2 id="once-there-h" class="text-pretty text-2xl font-bold text-gray-900 mb-2 dark:text-slate-100">Once They're There</h2>
+          <p class="text-pretty text-gray-500 mb-10 text-sm dark:text-slate-500">These services run in parallel — not a sequence</p>
+          <div class="grid grid-cols-2 gap-6">
+
+            <article class="border border-gray-200 rounded-xl p-7 bg-gray-50 dark:border-slate-700 dark:bg-slate-900">
+              <div class="w-10 h-10 bg-blue-100 rounded flex items-center justify-center mb-4 dark:bg-blue-900">
+                <span class="font-mono text-blue-600 text-xs dark:text-blue-400">[icon]</span>
+              </div>
+              <h3 class="text-pretty font-bold text-gray-900 mb-2 dark:text-slate-100">Guardianship</h3>
+              <p class="text-pretty text-gray-600 text-sm leading-relaxed mb-3 dark:text-slate-400">Legal guardianship arranged through Professional Student Care Australia or International Student Alliance. Required by the Department of Home Affairs for unaccompanied students under 18.</p>
+              <a href="./services-student-support.html" class="text-blue-600 text-sm hover:underline dark:text-blue-400">Full guardianship details →</a>
+            </article>
+
+            <article class="border border-gray-200 rounded-xl p-7 bg-gray-50 dark:border-slate-700 dark:bg-slate-900">
+              <div class="w-10 h-10 bg-blue-100 rounded flex items-center justify-center mb-4 dark:bg-blue-900">
+                <span class="font-mono text-blue-600 text-xs dark:text-blue-400">[icon]</span>
+              </div>
+              <h3 class="text-pretty font-bold text-gray-900 mb-2 dark:text-slate-100">Welfare Monitoring</h3>
+              <p class="text-pretty text-gray-600 text-sm leading-relaxed mb-3 dark:text-slate-400">Regular welfare checks, school liaison, and parental reporting — so you always know how your child is settling in, not just at enrolment time.</p>
+              <a href="./services-student-support.html" class="text-blue-600 text-sm hover:underline dark:text-blue-400">Full welfare support details →</a>
+            </article>
+
+            <article class="border border-gray-200 rounded-xl p-7 bg-gray-50 dark:border-slate-700 dark:bg-slate-900">
+              <div class="w-10 h-10 bg-blue-100 rounded flex items-center justify-center mb-4 dark:bg-blue-900">
+                <span class="font-mono text-blue-600 text-xs dark:text-blue-400">[icon]</span>
+              </div>
+              <h3 class="text-pretty font-bold text-gray-900 mb-2 dark:text-slate-100">Cultural Adaptation</h3>
+              <p class="text-pretty text-gray-600 text-sm leading-relaxed mb-3 dark:text-slate-400">The first weeks in a new country can be disorienting for young students. We provide ongoing integration support. For a structured introduction, our Buddy Programme places students alongside Australian peers for 14 days.</p>
+              <a href="./buddy-programme.html" class="text-blue-600 text-sm hover:underline dark:text-blue-400">Learn about the Buddy Programme →</a>
+            </article>
+
+            <article class="border border-gray-200 rounded-xl p-7 bg-gray-50 dark:border-slate-700 dark:bg-slate-900">
+              <div class="w-10 h-10 bg-blue-100 rounded flex items-center justify-center mb-4 dark:bg-blue-900">
+                <span class="font-mono text-blue-600 text-xs dark:text-blue-400">[icon]</span>
+              </div>
+              <h3 class="text-pretty font-bold text-gray-900 mb-2 dark:text-slate-100">School Transfer &amp; Change of Programme</h3>
+              <p class="text-pretty text-gray-600 text-sm leading-relaxed mb-3 dark:text-slate-400">Already enrolled but need to change schools or programmes? We manage the full transfer — notifying the institution, updating enrolment records, and advising on any visa implications.</p>
+            </article>
+
+          </div>
+        </section>
+
+        <!-- ══════════════════════════════════════════════════
+             §5  FOR PARENTS
+        ══════════════════════════════════════════════════ -->
+        <div class="wf-bar">§5 · For Parents — 60/40 two-column: text left, image right</div>
+        <section aria-labelledby="parents-h" class="px-16 py-16 bg-gray-50 dark:bg-slate-900">
+          <div class="flex gap-14 items-center">
+            <!-- Text — 60% -->
+            <div style="flex:3;">
+              <h2 id="parents-h" class="text-pretty text-3xl font-bold text-gray-900 mb-5 dark:text-slate-100">For Parents</h2>
+              <p class="text-pretty text-gray-600 mb-6 dark:text-slate-400">Sending your child overseas is a significant decision. Here's what we put in place before they board the plane:</p>
+              <ul class="space-y-4 text-sm text-gray-700 dark:text-slate-300">
+                <li class="flex items-start gap-3">
+                  <span class="text-blue-500 font-bold mt-0.5">✓</span>
+                  <span><strong>24/7 emergency hotline</strong> — for parents and students, any time</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-blue-500 font-bold mt-0.5">✓</span>
+                  <span><strong>Regular welfare reports</strong> — school updates and wellbeing checks</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-blue-500 font-bold mt-0.5">✓</span>
+                  <span><strong>Direct communication</strong> with guardianship providers</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-blue-500 font-bold mt-0.5">✓</span>
+                  <span><strong>On-ground support</strong> in Perth and across major Australian cities</span>
+                </li>
+              </ul>
+              <p class="text-pretty text-gray-700 font-semibold mt-6 dark:text-slate-300">Your child is never on their own. Neither are you.</p>
+            </div>
+            <!-- Image — 40% -->
+            <div style="flex:2;">
+              <div class="img-ph rounded-xl flex items-center justify-center" style="height:300px;" role="img" aria-label="Parent video-calling with child in Australia">
+                <span class="font-mono text-gray-400 text-xs dark:text-slate-400">[IMAGE: Parent video-calling with child, or family at airport]</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ══════════════════════════════════════════════════
+             §6  CTA BANNER
+        ══════════════════════════════════════════════════ -->
+        <div class="wf-bar">§6 · CTA Banner</div>
+        <section aria-labelledby="cta-h" class="py-16 px-8 text-center" style="background:#1e3a5f;">
+          <h2 id="cta-h" class="text-pretty text-4xl font-bold text-white mb-4">Start with a conversation.</h2>
+          <p class="text-pretty text-lg mb-8 mx-auto" style="color:#93c5fd; max-width:540px;">Tell us your child's age, year level, and preferences — we'll recommend schools and walk you through exactly what the process involves.</p>
+          <div class="flex gap-4 justify-center">
+            <a href="./contact.html" class="bg-white font-bold px-8 py-3 rounded text-base hover:bg-gray-100 dark:bg-slate-800" style="color:#1e3a5f;">Enquire About School Placements</a>
+            <a href="./buddy-programme.html" class="border-2 border-white text-white font-semibold px-8 py-3 rounded text-base">Explore the Buddy Programme</a>
+          </div>
+        </section>
+
+      </main>
+
+      <div id="footer-placeholder"></div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         MOBILE CANVAS — 390px
+    ═══════════════════════════════════════════════════════════════ -->
+    <div style="width:390px; background:var(--base); color:var(--base-foreground);" class="shadow-2xl shrink-0 sticky top-8">
+      <div class="flex items-center justify-between px-4 py-2 border-b-2 border-amber-300 bg-amber-50 dark:border-amber-800 dark:bg-amber-950">
+        <span class="font-bold text-amber-800 tracking-widest text-xs dark:text-amber-200">WIREFRAME</span>
+        <span class="text-amber-600 font-mono" style="font-size:8px;">Mobile 390px</span>
+      </div>
+
+      <div id="nav-placeholder-m"></div>
+
+      <main>
+
+        <!-- §1 Hero -->
+        <div class="wf-bar">§1 · Hero</div>
+        <section class="img-ph relative" style="height:280px; background-color:#374151;">
+          <div class="absolute inset-0" style="background:rgba(17,24,39,0.65);"></div>
+          <div class="relative z-10 flex flex-col justify-end h-full px-4 pb-8">
+            <nav aria-label="Breadcrumb" class="mb-3">
+              <ol class="flex items-center gap-1 text-xs text-gray-300 dark:text-slate-500">
+                <li><a href="./index.html">Home</a></li><li>/</li>
+                <li><a href="./services-education.html">Education</a></li><li>/</li>
+                <li class="text-white">School</li>
+              </ol>
+            </nav>
+            <h1 class="text-pretty text-2xl font-bold text-white mb-2 leading-tight">A quality Australian education for your child, with a safety net built around them.</h1>
+            <p class="text-pretty text-sm text-gray-300 dark:text-slate-500">We handle placement, visa, accommodation, and guardianship.</p>
+          </div>
+        </section>
+
+        <!-- §2 School System -->
+        <div class="wf-bar">§2 · Australian School System</div>
+        <section class="px-4 py-8 bg-white dark:bg-slate-800">
+          <h2 class="text-pretty text-xl font-bold text-gray-900 mb-4 dark:text-slate-100">The Australian School System</h2>
+          <div class="space-y-2 mb-5">
+            <div class="bg-blue-50 border border-blue-100 rounded px-3 py-2 text-xs text-gray-700 dark:bg-blue-950 dark:text-slate-300">Preparatory · Foundation · Age ~5 · Early learning</div>
+            <div class="bg-blue-50 border border-blue-100 rounded px-3 py-2 text-xs text-gray-700 dark:bg-blue-950 dark:text-slate-300">Primary · Years 1–6 · Ages 6–12 · Core subjects</div>
+            <div class="bg-blue-50 border border-blue-100 rounded px-3 py-2 text-xs text-gray-700 dark:bg-blue-950 dark:text-slate-300">Lower Secondary · Years 7–10 · Ages 12–16</div>
+            <div class="bg-blue-50 border border-blue-100 rounded px-3 py-2 text-xs text-gray-700 dark:bg-blue-950 dark:text-slate-300">Upper Secondary · Years 11–12 · Ages 16–18</div>
+          </div>
+          <ul class="space-y-1 text-xs text-gray-600 dark:text-slate-400">
+            <li>• Compulsory until age 16 in most states</li>
+            <li>• Public and private schools available</li>
+            <li>• Blue Education is an <a href="./scsa-associate.html" class="text-blue-600 dark:text-blue-400">SCSA Associate →</a></li>
+          </ul>
+        </section>
+
+        <!-- §3 Before Arrival -->
+        <div class="wf-bar">§3 · What We Handle — Before Arrival</div>
+        <section class="px-4 py-8 bg-blue-50 dark:bg-blue-950">
+          <h2 class="text-pretty text-xl font-bold text-gray-900 mb-2 dark:text-slate-100">What We Handle</h2>
+          <p class="text-pretty text-xs text-gray-500 mb-5 dark:text-slate-500">Before Arrival</p>
+          <div class="space-y-4">
+            <div class="flex gap-4">
+              <div class="w-7 h-7 bg-blue-700 text-white rounded-full flex items-center justify-center text-xs font-bold shrink-0">1</div>
+              <div>
+                <h3 class="text-pretty font-bold text-gray-900 text-sm mb-1 dark:text-slate-100">School Selection &amp; Placement</h3>
+                <p class="text-pretty text-xs text-gray-600 dark:text-slate-400">Match to the right school based on location, curriculum, fees, and learning profile.</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <div class="w-7 h-7 bg-blue-700 text-white rounded-full flex items-center justify-center text-xs font-bold shrink-0">2</div>
+              <div>
+                <h3 class="text-pretty font-bold text-gray-900 text-sm mb-1 dark:text-slate-100">Student Visa (Subclass 500)</h3>
+                <p class="text-pretty text-xs text-gray-600 mb-1 dark:text-slate-400">Full visa management for minors — documentation through lodgement.</p>
+                <a href="./services-migration-student-visas.html" class="text-blue-600 text-xs hover:underline dark:text-blue-400">Learn about student visas →</a>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <div class="w-7 h-7 bg-blue-700 text-white rounded-full flex items-center justify-center text-xs font-bold shrink-0">3</div>
+              <div>
+                <h3 class="text-pretty font-bold text-gray-900 text-sm mb-1 dark:text-slate-100">Accommodation</h3>
+                <p class="text-pretty text-xs text-gray-600 mb-1 dark:text-slate-400">Homestay through the Australian Homestay Network. Vetted families, meals included.</p>
+                <a href="./services-student-support.html" class="text-blue-600 text-xs hover:underline dark:text-blue-400">Full accommodation details →</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- §4 Once They're There -->
+        <div class="wf-bar">§4 · Once They're There</div>
+        <section class="px-4 py-8 bg-white dark:bg-slate-800">
+          <h2 class="text-pretty text-xl font-bold text-gray-900 mb-5 dark:text-slate-100">Once They're There</h2>
+          <div class="space-y-4">
+            <article class="border border-gray-200 rounded-lg p-4 bg-gray-50 dark:border-slate-700 dark:bg-slate-900">
+              <h3 class="text-pretty font-bold text-gray-900 text-sm mb-1 dark:text-slate-100">Guardianship</h3>
+              <p class="text-pretty text-xs text-gray-600 mb-1 dark:text-slate-400">Legal guardian arranged for unaccompanied students under 18 — required by DHA.</p>
+              <a href="./services-student-support.html" class="text-blue-600 text-xs dark:text-blue-400">Details →</a>
+            </article>
+            <article class="border border-gray-200 rounded-lg p-4 bg-gray-50 dark:border-slate-700 dark:bg-slate-900">
+              <h3 class="text-pretty font-bold text-gray-900 text-sm mb-1 dark:text-slate-100">Welfare Monitoring</h3>
+              <p class="text-pretty text-xs text-gray-600 mb-1 dark:text-slate-400">Regular welfare checks, school liaison, and parental reporting.</p>
+              <a href="./services-student-support.html" class="text-blue-600 text-xs dark:text-blue-400">Details →</a>
+            </article>
+            <article class="border border-gray-200 rounded-lg p-4 bg-gray-50 dark:border-slate-700 dark:bg-slate-900">
+              <h3 class="text-pretty font-bold text-gray-900 text-sm mb-1 dark:text-slate-100">Cultural Adaptation</h3>
+              <p class="text-pretty text-xs text-gray-600 mb-1 dark:text-slate-400">Integration support including the Buddy Programme (14 days with Australian peers).</p>
+              <a href="./buddy-programme.html" class="text-blue-600 text-xs dark:text-blue-400">Buddy Programme →</a>
+            </article>
+            <article class="border border-gray-200 rounded-lg p-4 bg-gray-50 dark:border-slate-700 dark:bg-slate-900">
+              <h3 class="text-pretty font-bold text-gray-900 text-sm mb-1 dark:text-slate-100">School Transfer</h3>
+              <p class="text-pretty text-xs text-gray-600 dark:text-slate-400">Need to change schools? We manage the full transfer including visa implications.</p>
+            </article>
+          </div>
+        </section>
+
+        <!-- §5 For Parents -->
+        <div class="wf-bar">§5 · For Parents</div>
+        <section class="px-4 py-8 bg-gray-50 dark:bg-slate-900">
+          <h2 class="text-pretty text-xl font-bold text-gray-900 mb-4 dark:text-slate-100">For Parents</h2>
+          <div class="img-ph rounded-lg mb-5 flex items-center justify-center" style="height:160px;" role="img" aria-label="Parent video-calling with child">
+            <span class="font-mono text-gray-400 text-xs dark:text-slate-400">[IMAGE: Parent video call with child]</span>
+          </div>
+          <p class="text-pretty text-sm text-gray-600 mb-4 dark:text-slate-400">Sending your child overseas is a significant decision. Here's what we put in place:</p>
+          <ul class="space-y-2 text-sm text-gray-700 dark:text-slate-300">
+            <li><span class="font-bold">24/7 emergency hotline</span> — for parents and students, any time</li>
+            <li><span class="font-bold">Regular welfare reports</span> — school updates and wellbeing checks</li>
+            <li><span class="font-bold">Direct communication</span> with guardianship providers</li>
+            <li><span class="font-bold">On-ground support</span> in Perth and across major Australian cities</li>
+          </ul>
+          <p class="text-pretty text-sm font-semibold text-gray-800 mt-4 dark:text-slate-200">Your child is never on their own. Neither are you.</p>
+        </section>
+
+        <!-- §6 CTA -->
+        <div class="wf-bar">§6 · CTA Banner</div>
+        <section class="py-12 px-4 text-center" style="background:#1e3a5f;">
+          <h2 class="text-pretty text-2xl font-bold text-white mb-3">Start with a conversation.</h2>
+          <p class="text-pretty text-sm mb-6" style="color:#93c5fd;">Tell us your child's age, year level, and preferences — we'll recommend schools and walk you through the process.</p>
+          <div class="space-y-3">
+            <a href="./contact.html" class="block bg-white font-bold px-6 py-3 rounded text-sm dark:bg-slate-800" style="color:#1e3a5f;">Enquire About School Placements</a>
+            <a href="./buddy-programme.html" class="block border-2 border-white text-white font-semibold px-6 py-3 rounded text-sm">Explore the Buddy Programme</a>
+          </div>
+        </section>
+
+      </main>
+
+      <div id="footer-placeholder-m"></div>
+    </div>
+
+  </div>
+  <script src="./assets/site.js"></script>
+</body>
+</html>

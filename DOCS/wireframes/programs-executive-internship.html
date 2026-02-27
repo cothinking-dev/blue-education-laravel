@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Executive Internship Programme — Blue Education Wireframe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/tokens.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: { extend: {
+        colors: {
+          primary:   { DEFAULT: 'var(--primary)',   foreground: 'var(--primary-foreground)' },
+          secondary: { DEFAULT: 'var(--secondary)', foreground: 'var(--secondary-foreground)' },
+          base:      { DEFAULT: 'var(--base)',      foreground: 'var(--base-foreground)' },
+          muted:     { DEFAULT: 'var(--muted)',     foreground: 'var(--muted-foreground)' },
+        },
+        borderRadius: {
+          corner: 'var(--corner)', 'corner-lg': 'var(--corner-lg)', 'corner-full': 'var(--corner-full)',
+        },
+        fontFamily: { sans: ['Inter', 'sans-serif'] },
+      }}
+    }
+  </script>
+  <style>
+    .img-ph {
+      background-color: #d1d5db;
+      background-image: repeating-linear-gradient(-55deg, transparent, transparent 8px, rgba(0,0,0,0.04) 8px, rgba(0,0,0,0.04) 9px);
+    }
+    .wf-bar {
+      font-family: 'Courier New', monospace; font-size: 9px; font-weight: bold;
+      text-transform: uppercase; letter-spacing: 0.12em; color: #3b82f6; background: #eff6ff;
+      border-top: 1px solid #bfdbfe; border-bottom: 1px solid #bfdbfe; padding: 4px 32px;
+    }
+  </style>
+</head>
+<body class="bg-neutral-300 py-8 font-sans">
+  <div class="flex gap-8 items-start mx-auto px-8" style="width: max-content;">
+
+    <!-- DESKTOP CANVAS — 1280px -->
+    <div style="width:1280px; background:var(--base); color:var(--base-foreground);" class="shadow-2xl shrink-0">
+      <div class="flex items-center justify-between px-8 py-2 border-b-2 border-amber-300 bg-amber-50 dark:border-amber-800 dark:bg-amber-950">
+        <div class="flex items-center gap-3">
+          <span class="font-bold text-amber-800 tracking-widest text-sm dark:text-amber-200">WIREFRAME</span>
+          <span class="text-amber-700 text-sm dark:text-amber-300">·  Blue Education  ·  Executive Internship Programme  ·  Desktop 1280px</span>
+        </div>
+        <span class="text-amber-500 font-mono text-xs dark:text-amber-400">Layout &amp; copy reference — not final design</span>
+      </div>
+      <div id="nav-placeholder"></div>
+      <main id="main-content">
+
+        <!-- §1 HERO -->
+        <div class="wf-bar">§1 · Hero — Full-width, left-aligned text, premium treatment</div>
+        <section aria-labelledby="hero-h" class="flex items-stretch" style="min-height:440px; background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 100%);">
+          <div class="flex flex-col justify-center px-16 py-14" style="flex:0 0 58%;">
+            <nav aria-label="Breadcrumb" class="mb-6">
+              <ol class="flex items-center gap-2 text-sm" style="color:#93c5fd;">
+                <li><a href="./index.html" class="hover:text-white dark:hover:text-slate-100">Home</a></li>
+                <li class="opacity-50">/</li>
+                <li><a href="./programs.html" class="hover:text-white dark:hover:text-slate-100">Programs</a></li>
+                <li class="opacity-50">/</li>
+                <li class="text-white font-medium" aria-current="page">Executive Internship</li>
+              </ol>
+            </nav>
+            <div class="inline-block bg-blue-400 text-blue-900 text-xs font-bold uppercase tracking-widest px-3 py-1 rounded mb-5 w-fit">Premium Program · Two Intakes Per Year</div>
+            <h1 id="hero-h" class="text-pretty text-5xl font-bold text-white mb-6 leading-tight">Strategic work experience for business graduates.</h1>
+            <p class="text-pretty text-xl mb-8 leading-relaxed" style="color:#bfdbfe; max-width:520px;">The Executive Internship Programme (EIP) runs twice a year. Places are limited. Open to undergraduate and postgraduate students in business or commerce.</p>
+            <div class="flex gap-4">
+              <a href="./contact.html" class="bg-white text-blue-900 font-bold px-8 py-3 rounded text-base hover:bg-blue-50 dark:bg-slate-800 dark:hover:bg-blue-900">Apply for the Next Intake</a>
+              <a href="tel:+61863810030" class="border-2 border-white text-white font-semibold px-8 py-3 rounded text-base">Call +61 8 6381 0030</a>
+            </div>
+          </div>
+          <div class="img-ph flex items-center justify-center text-center font-mono text-sm" style="flex:1; color:#9ca3af;" role="img" aria-label="Professional setting, Perth CBD or modern Australian office environment">
+            [IMAGE: Perth CBD /<br>modern Australian<br>office environment]
+          </div>
+        </section>
+
+        <!-- §2 WHAT IT IS / KEY FACTS -->
+        <div class="wf-bar">§2 · What It Is — Two-column, text left, key facts right</div>
+        <section aria-labelledby="what-h" class="px-16 py-14 bg-white dark:bg-slate-800" style="display:flex; gap:56px; align-items:start;">
+          <div style="flex:0 0 58%;">
+            <h2 id="what-h" class="text-pretty text-3xl font-bold text-gray-900 mb-6 dark:text-slate-100">What It Is</h2>
+            <p class="text-pretty text-gray-600 leading-relaxed mb-5 dark:text-slate-400">The EIP places business graduates and final-year students with Australian employers for structured, mentored workplace experience. Not entry-level administration — a real position with agreed objectives, a dedicated supervisor, and a formal performance review at the end.</p>
+            <p class="text-pretty text-gray-600 leading-relaxed dark:text-slate-400">The programme is built around our six-phase Employability Booster Programme (EBP), which starts before placement and continues through to review. Blue Education manages the matching, preparation, and employer coordination. You bring the commitment.</p>
+          </div>
+          <div style="flex:1;">
+            <div class="bg-white rounded-xl border-2 border-blue-800 overflow-hidden shadow-sm dark:bg-slate-800">
+              <div class="px-5 py-3" style="background:#1e3a5f;">
+                <h3 class="text-pretty font-bold text-white text-sm uppercase tracking-wide">Key Facts</h3>
+              </div>
+              <table class="w-full text-sm">
+                <tbody class="divide-y divide-gray-100">
+                  <tr><td class="px-5 py-3 font-medium text-gray-700 dark:text-slate-300">Intakes</td><td class="px-5 py-3 text-gray-600 dark:text-slate-400">Twice per year</td></tr>
+                  <tr class="bg-gray-50 dark:bg-slate-900"><td class="px-5 py-3 font-medium text-gray-700 dark:text-slate-300">Places</td><td class="px-5 py-3 text-gray-600 dark:text-slate-400">Limited — assessed intake</td></tr>
+                  <tr><td class="px-5 py-3 font-medium text-gray-700 dark:text-slate-300">Eligible</td><td class="px-5 py-3 text-gray-600 dark:text-slate-400">Undergraduate and postgraduate, business/commerce</td></tr>
+                  <tr class="bg-gray-50 dark:bg-slate-900"><td class="px-5 py-3 font-medium text-gray-700 dark:text-slate-300">Duration</td><td class="px-5 py-3 text-gray-600 dark:text-slate-400">Up to 3 months (min. 16 hours per week)</td></tr>
+                  <tr><td class="px-5 py-3 font-medium text-gray-700 dark:text-slate-300">Partners</td><td class="px-5 py-3 text-gray-600 dark:text-slate-400">Professional Vogue · Employment Advantage</td></tr>
+                  <tr class="bg-gray-50 dark:bg-slate-900"><td class="px-5 py-3 font-medium text-gray-700 dark:text-slate-300">Managed by</td><td class="px-5 py-3 text-gray-600 dark:text-slate-400">Blue Education</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <!-- §3 SIX-PHASE EBP PROCESS -->
+        <div class="wf-bar">§3 · The Six-Phase EBP Process — Vertical timeline, numbered</div>
+        <section aria-labelledby="ebp-h" class="px-16 py-14 bg-gray-50 dark:bg-slate-900">
+          <h2 id="ebp-h" class="text-pretty text-3xl font-bold text-gray-900 mb-4 dark:text-slate-100">The Six-Phase EBP Process</h2>
+          <p class="text-pretty text-gray-600 mb-10 dark:text-slate-400">The Employability Booster Programme starts before placement and runs through to formal review.</p>
+          <div class="grid grid-cols-2 gap-5">
+            <article class="bg-white rounded-xl p-7 border border-gray-200 flex items-start gap-5 dark:bg-slate-800 dark:border-slate-700">
+              <div class="w-12 h-12 rounded-full flex items-center justify-center shrink-0 font-bold text-white text-sm" style="background:#1e3a5f;">1</div>
+              <div>
+                <h3 class="text-pretty font-bold text-gray-900 mb-2 dark:text-slate-100">Phase 1 — Assessment</h3>
+                <p class="text-pretty text-gray-600 text-sm leading-relaxed dark:text-slate-400">Initial review of your background, strengths, and readiness for Australian employment. You complete an Initial Placement Questionnaire and an online readiness module before the programme begins.</p>
+              </div>
+            </article>
+            <article class="bg-white rounded-xl p-7 border border-gray-200 flex items-start gap-5 dark:bg-slate-800 dark:border-slate-700">
+              <div class="w-12 h-12 rounded-full flex items-center justify-center shrink-0 font-bold text-white text-sm" style="background:#1e3a5f;">2</div>
+              <div>
+                <h3 class="text-pretty font-bold text-gray-900 mb-2 dark:text-slate-100">Phase 2 — Readiness</h3>
+                <p class="text-pretty text-gray-600 text-sm leading-relaxed dark:text-slate-400">CV preparation, LinkedIn presence, presentation guidance, and context on Australian workplace culture — what employers expect and how to meet those expectations.</p>
+              </div>
+            </article>
+            <article class="bg-white rounded-xl p-7 border border-gray-200 flex items-start gap-5 dark:bg-slate-800 dark:border-slate-700">
+              <div class="w-12 h-12 rounded-full flex items-center justify-center shrink-0 font-bold text-white text-sm" style="background:#1e3a5f;">3</div>
+              <div>
+                <h3 class="text-pretty font-bold text-gray-900 mb-2 dark:text-slate-100">Phase 3 — Profiling</h3>
+                <p class="text-pretty text-gray-600 text-sm leading-relaxed dark:text-slate-400">We research target organisations, develop approach templates, and match your profile with employers suited to your background and goals.</p>
+              </div>
+            </article>
+            <article class="bg-white rounded-xl p-7 border border-gray-200 flex items-start gap-5 dark:bg-slate-800 dark:border-slate-700">
+              <div class="w-12 h-12 rounded-full flex items-center justify-center shrink-0 font-bold text-white text-sm" style="background:#1e3a5f;">4</div>
+              <div>
+                <h3 class="text-pretty font-bold text-gray-900 mb-2 dark:text-slate-100">Phase 4 — Preparation</h3>
+                <p class="text-pretty text-gray-600 text-sm leading-relaxed dark:text-slate-400">We build a shortlist of target employers with you, prioritise them by fit, and prepare you for interviews and workplace expectations before any approach is made.</p>
+              </div>
+            </article>
+            <article class="bg-white rounded-xl p-7 border border-gray-200 flex items-start gap-5 dark:bg-slate-800 dark:border-slate-700">
+              <div class="w-12 h-12 rounded-full flex items-center justify-center shrink-0 font-bold text-white text-sm" style="background:#1e3a5f;">5</div>
+              <div>
+                <h3 class="text-pretty font-bold text-gray-900 mb-2 dark:text-slate-100">Phase 5 — Placement</h3>
+                <p class="text-pretty text-gray-600 text-sm leading-relaxed dark:text-slate-400">Blue Education facilitates introductions, assists with interview preparation, and coordinates your internship placement once an employer confirms.</p>
+              </div>
+            </article>
+            <article class="bg-white rounded-xl p-7 border border-gray-200 flex items-start gap-5 dark:bg-slate-800 dark:border-slate-700">
+              <div class="w-12 h-12 rounded-full flex items-center justify-center shrink-0 font-bold text-white text-sm" style="background:#1e3a5f;">6</div>
+              <div>
+                <h3 class="text-pretty font-bold text-gray-900 mb-2 dark:text-slate-100">Phase 6 — Review</h3>
+                <p class="text-pretty text-gray-600 text-sm leading-relaxed dark:text-slate-400">Structured performance review at the end of placement. Feedback from your employer, a final debrief with the programme team, and documented outcomes for your records.</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- §4 WHAT YOU GAIN -->
+        <div class="wf-bar">§4 · What You Gain — BentoBox, 3 cards</div>
+        <section aria-labelledby="gain-h" class="px-16 py-14 bg-white dark:bg-slate-800">
+          <h2 id="gain-h" class="text-pretty text-3xl font-bold text-gray-900 mb-10 dark:text-slate-100">What You Gain</h2>
+          <div class="grid grid-cols-3 gap-6">
+            <article class="bg-gray-50 rounded-xl p-7 border border-gray-200 dark:bg-slate-900 dark:border-slate-700">
+              <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4 dark:bg-blue-900">
+                <span class="font-mono text-blue-700 text-xs font-bold dark:text-blue-300">[briefcase]</span>
+              </div>
+              <h3 class="text-pretty font-bold text-gray-900 text-lg mb-3 dark:text-slate-100">Documented Australian Experience</h3>
+              <p class="text-pretty text-gray-600 text-sm leading-relaxed dark:text-slate-400">Placement with a real employer — agreed objectives, a dedicated supervisor, and a formal performance review. The kind of experience that makes your application stand out in the Australian job market.</p>
+            </article>
+            <article class="bg-gray-50 rounded-xl p-7 border border-gray-200 dark:bg-slate-900 dark:border-slate-700">
+              <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4 dark:bg-blue-900">
+                <span class="font-mono text-blue-700 text-xs font-bold dark:text-blue-300">[star]</span>
+              </div>
+              <h3 class="text-pretty font-bold text-gray-900 text-lg mb-3 dark:text-slate-100">Professional Development</h3>
+              <p class="text-pretty text-gray-600 text-sm leading-relaxed dark:text-slate-400">Soft skills training, CV and LinkedIn preparation, and interview coaching before you step into the placement. Delivered through our programme partners.</p>
+            </article>
+            <article class="bg-gray-50 rounded-xl p-7 border border-gray-200 dark:bg-slate-900 dark:border-slate-700">
+              <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4 dark:bg-blue-900">
+                <span class="font-mono text-blue-700 text-xs font-bold dark:text-blue-300">[cert]</span>
+              </div>
+              <h3 class="text-pretty font-bold text-gray-900 text-lg mb-3 dark:text-slate-100">AQF Alignment</h3>
+              <p class="text-pretty text-gray-600 text-sm leading-relaxed dark:text-slate-400">An understanding of how your qualification maps to Australian employer expectations within the Australian Qualifications Framework — and what it means for your post-study visa options.</p>
+            </article>
+          </div>
+        </section>
+
+        <!-- §5 PROGRAMME PARTNERS -->
+        <div class="wf-bar">§5 · Programme Partners — Two partner cards side by side</div>
+        <section aria-labelledby="partners-h" class="px-16 py-14 bg-gray-50 dark:bg-slate-900">
+          <h2 id="partners-h" class="text-pretty text-3xl font-bold text-gray-900 mb-10 dark:text-slate-100">Programme Partners</h2>
+          <div class="grid grid-cols-2 gap-8">
+            <article class="bg-white rounded-xl p-8 border border-gray-200 dark:bg-slate-800 dark:border-slate-700">
+              <div class="img-ph rounded-xl mb-5 flex items-center justify-center text-center text-gray-500 font-mono text-xs dark:text-slate-500" style="height:120px;" role="img" aria-label="Lisa from Professional Vogue, headshot">
+                [PHOTO: Lisa,<br>Professional Vogue]
+              </div>
+              <h3 class="text-pretty font-bold text-gray-900 text-xl mb-1 dark:text-slate-100">Lisa</h3>
+              <p class="text-pretty text-blue-600 font-medium text-sm mb-4 dark:text-blue-400">Professional Vogue</p>
+              <p class="text-pretty text-gray-600 text-sm leading-relaxed dark:text-slate-400">Lisa specialises in employability and soft skills for corporate environments. Professional Vogue programmes focus on presence, presentation, and the practical skills that shape how candidates are received in Western Australian workplaces.</p>
+            </article>
+            <article class="bg-white rounded-xl p-8 border border-gray-200 dark:bg-slate-800 dark:border-slate-700">
+              <div class="img-ph rounded-xl mb-5 flex items-center justify-center text-center text-gray-500 font-mono text-xs dark:text-slate-500" style="height:120px;" role="img" aria-label="Natalia from Employment Advantage, headshot">
+                [PHOTO: Natalia,<br>Employment Advantage]
+              </div>
+              <h3 class="text-pretty font-bold text-gray-900 text-xl mb-1 dark:text-slate-100">Natalia</h3>
+              <p class="text-pretty text-blue-600 font-medium text-sm mb-4 dark:text-blue-400">Employment Advantage</p>
+              <p class="text-pretty text-gray-600 text-sm leading-relaxed dark:text-slate-400">Natalia has more than two decades of experience in education and employment training. Her programmes focus on soft skills, career positioning, and job market readiness. The Employment Advantage Tool has contributed to the placement of candidates across multiple industries.</p>
+            </article>
+          </div>
+        </section>
+
+        <!-- §6 FOR HOST EMPLOYERS -->
+        <div class="wf-bar">§6 · For Host Employers — Two-column feature cards</div>
+        <section aria-labelledby="employers-h" class="px-16 py-14 bg-white dark:bg-slate-800">
+          <h2 id="employers-h" class="text-pretty text-3xl font-bold text-gray-900 mb-10 dark:text-slate-100">For Host Employers</h2>
+          <div class="grid grid-cols-2 gap-8">
+            <article class="border border-gray-200 rounded-xl p-7 bg-gray-50 dark:border-slate-700 dark:bg-slate-900">
+              <h3 class="text-pretty font-bold text-gray-900 text-lg mb-4 dark:text-slate-100">What's Involved</h3>
+              <p class="text-pretty text-gray-600 text-sm leading-relaxed mb-4 dark:text-slate-400">Hosting an EIP intern means providing a supervisor, agreed learning objectives, and a genuine working environment. Blue Education handles the matching, objectives framework, and performance review structure. There is no obligation to hire after placement.</p>
+              <ul class="space-y-2 text-gray-700 text-sm dark:text-slate-300">
+                <li class="flex items-start gap-2"><span class="text-blue-600 font-bold dark:text-blue-400">—</span>Commitment: 16 hours per week for up to 8 weeks</li>
+                <li class="flex items-start gap-2"><span class="text-blue-600 font-bold dark:text-blue-400">—</span>Dedicated mentor or supervisor</li>
+                <li class="flex items-start gap-2"><span class="text-blue-600 font-bold dark:text-blue-400">—</span>Orientation and agreed task expectations</li>
+              </ul>
+            </article>
+            <article class="border border-gray-200 rounded-xl p-7 bg-gray-50 dark:border-slate-700 dark:bg-slate-900">
+              <h3 class="text-pretty font-bold text-gray-900 text-lg mb-4 dark:text-slate-100">What You Gain</h3>
+              <ul class="space-y-3 text-gray-700 text-sm dark:text-slate-300">
+                <li class="flex items-start gap-2"><span class="text-blue-600 font-bold dark:text-blue-400">—</span>Access to motivated, pre-assessed business graduates</li>
+                <li class="flex items-start gap-2"><span class="text-blue-600 font-bold dark:text-blue-400">—</span>An early look at talent before any hiring decision is made</li>
+                <li class="flex items-start gap-2"><span class="text-blue-600 font-bold dark:text-blue-400">—</span>Fresh perspectives and skills from candidates with international education backgrounds</li>
+                <li class="flex items-start gap-2"><span class="text-blue-600 font-bold dark:text-blue-400">—</span>No recruitment cost or hiring obligation</li>
+              </ul>
+              <p class="text-pretty text-gray-500 text-sm mt-5 italic dark:text-slate-500">Interested in hosting an intern? <a href="./contact.html" class="text-blue-600 hover:underline dark:text-blue-400">Contact our team →</a></p>
+            </article>
+          </div>
+        </section>
+
+        <!-- §7 HOW TO APPLY -->
+        <div class="wf-bar">§7 · How to Apply — 3-step numbered process</div>
+        <section aria-labelledby="apply-h" class="px-16 py-14 bg-gray-50 dark:bg-slate-900">
+          <h2 id="apply-h" class="text-pretty text-3xl font-bold text-gray-900 mb-10 dark:text-slate-100">How to Apply</h2>
+          <div class="relative">
+            <div class="absolute top-8 left-0 right-0 h-0.5 bg-blue-200" style="margin: 0 80px;"></div>
+            <div class="grid grid-cols-3 gap-8 relative">
+              <article class="bg-white rounded-xl p-8 border border-gray-200 shadow-sm text-center dark:bg-slate-800 dark:border-slate-700">
+                <div class="w-16 h-16 rounded-full text-white font-bold text-lg flex items-center justify-center mx-auto mb-5 relative z-10" style="background:#1e3a5f;">1</div>
+                <h3 class="text-pretty font-bold text-gray-900 mb-3 dark:text-slate-100">Confirm Intake Dates</h3>
+                <p class="text-pretty text-gray-600 text-sm leading-relaxed dark:text-slate-400">The programme runs twice a year. <a href="./contact.html" class="text-blue-600 hover:underline dark:text-blue-400">Contact us</a> to confirm when the next intake opens and whether applications are currently being accepted.</p>
+              </article>
+              <article class="bg-white rounded-xl p-8 border border-gray-200 shadow-sm text-center dark:bg-slate-800 dark:border-slate-700">
+                <div class="w-16 h-16 rounded-full text-white font-bold text-lg flex items-center justify-center mx-auto mb-5 relative z-10" style="background:#1e3a5f;">2</div>
+                <h3 class="text-pretty font-bold text-gray-900 mb-3 dark:text-slate-100">Submit Your Application</h3>
+                <p class="text-pretty text-gray-600 text-sm leading-relaxed dark:text-slate-400">Send your CV and a brief summary of your goals and the type of placement you're looking for. We assess fit before confirming a place.</p>
+              </article>
+              <article class="bg-white rounded-xl p-8 border border-gray-200 shadow-sm text-center dark:bg-slate-800 dark:border-slate-700">
+                <div class="w-16 h-16 rounded-full text-white font-bold text-lg flex items-center justify-center mx-auto mb-5 relative z-10" style="background:#1e3a5f;">3</div>
+                <h3 class="text-pretty font-bold text-gray-900 mb-3 dark:text-slate-100">Begin the EBP</h3>
+                <p class="text-pretty text-gray-600 text-sm leading-relaxed dark:text-slate-400">Once accepted, your six-phase programme starts with an assessment session. Placement typically follows within the same intake cycle.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- §8 ALSO RELEVANT -->
+        <div class="wf-bar">§8 · Also Relevant</div>
+        <section aria-label="Related pages" class="px-16 py-8 bg-white border-t border-gray-200 dark:bg-slate-800 dark:border-slate-700">
+          <p class="text-pretty text-sm text-gray-500 mb-3 font-medium dark:text-slate-500">Also relevant:</p>
+          <div class="flex gap-6">
+            <a href="./services-career.html" class="text-blue-600 font-medium text-sm hover:underline dark:text-blue-400">Career Services →</a>
+            <a href="./services-migration-graduate-work.html" class="text-blue-600 font-medium text-sm hover:underline dark:text-blue-400">Graduate Work Visas →</a>
+            <a href="./about-partners.html" class="text-blue-600 font-medium text-sm hover:underline dark:text-blue-400">Our Partners →</a>
+          </div>
+        </section>
+
+        <!-- §9 CTA BANNER -->
+        <div class="wf-bar">§9 · CTA Banner</div>
+        <section aria-labelledby="cta-h" class="py-16 px-8 text-center" style="background:#1e3a5f;">
+          <h2 id="cta-h" class="text-pretty text-4xl font-bold text-white mb-4">Two intakes a year. Applications close early.</h2>
+          <p class="text-pretty text-lg mb-8 mx-auto" style="color:#93c5fd; max-width:540px;">Tell us about your background and the type of placement you're aiming for. We'll confirm current intake dates and walk you through the application process.</p>
+          <div class="flex gap-4 justify-center">
+            <a href="./contact.html" class="bg-white font-bold px-8 py-3 rounded text-base hover:bg-gray-100 dark:bg-slate-800" style="color:#1e3a5f;">Apply for the Next Intake</a>
+            <a href="tel:+61863810030" class="border-2 border-white text-white font-semibold px-8 py-3 rounded text-base">Call +61 8 6381 0030</a>
+          </div>
+        </section>
+
+      </main>
+      <div id="footer-placeholder"></div>
+    </div>
+
+    <!-- MOBILE CANVAS — 390px -->
+    <div style="width:390px; background:var(--base); color:var(--base-foreground);" class="shadow-2xl shrink-0 sticky top-8">
+      <div class="flex items-center justify-between px-4 py-2 border-b-2 border-amber-300 bg-amber-50 dark:border-amber-800 dark:bg-amber-950">
+        <span class="font-bold text-amber-800 tracking-widest text-xs dark:text-amber-200">WIREFRAME</span>
+        <span class="text-amber-600 font-mono" style="font-size:8px;">Mobile 390px</span>
+      </div>
+      <div id="nav-placeholder-m"></div>
+      <main>
+
+        <div class="wf-bar">§1 · Hero</div>
+        <section aria-labelledby="hero-h-m" class="px-4 py-8" style="background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 100%);">
+          <nav aria-label="Breadcrumb" class="mb-4">
+            <ol class="flex items-center gap-1 text-xs flex-wrap" style="color:#93c5fd;">
+              <li><a href="./index.html" class="hover:text-white dark:hover:text-slate-100">Home</a></li>
+              <li class="opacity-50">/</li>
+              <li><a href="./programs.html" class="hover:text-white dark:hover:text-slate-100">Programs</a></li>
+              <li class="opacity-50">/</li>
+              <li class="text-white font-medium" aria-current="page">Executive Internship</li>
+            </ol>
+          </nav>
+          <div class="inline-block bg-blue-400 text-blue-900 text-xs font-bold uppercase tracking-wide px-2 py-1 rounded mb-4">Premium Program · Two Intakes Per Year</div>
+          <h1 id="hero-h-m" class="text-pretty text-3xl font-bold text-white mb-4 leading-tight">Strategic work experience for business graduates.</h1>
+          <p class="text-pretty text-sm mb-6 leading-relaxed" style="color:#bfdbfe;">The EIP runs twice a year. Places are limited. Open to undergraduate and postgraduate students in business or commerce.</p>
+          <a href="./contact.html" class="block w-full text-center bg-white text-blue-900 font-bold px-6 py-3 rounded text-sm mb-3 dark:bg-slate-800">Apply for the Next Intake</a>
+          <a href="tel:+61863810030" class="block w-full text-center border-2 border-white text-white font-semibold px-6 py-3 rounded text-sm">Call +61 8 6381 0030</a>
+        </section>
+
+        <div class="wf-bar">§2 · Key Facts</div>
+        <section aria-labelledby="what-h-m" class="px-4 py-8 bg-white dark:bg-slate-800">
+          <h2 id="what-h-m" class="text-pretty text-xl font-bold text-gray-900 mb-4 dark:text-slate-100">What It Is</h2>
+          <p class="text-pretty text-sm text-gray-600 mb-5 leading-relaxed dark:text-slate-400">Structured, mentored workplace experience — not entry-level administration. A real position with agreed objectives, a dedicated supervisor, and a formal performance review.</p>
+          <div class="bg-gray-50 rounded-xl border border-gray-200 overflow-hidden dark:bg-slate-900 dark:border-slate-700">
+            <table class="w-full text-xs">
+              <tbody class="divide-y divide-gray-100">
+                <tr><td class="px-4 py-3 font-medium text-gray-700 dark:text-slate-300">Intakes</td><td class="px-4 py-3 text-gray-600 dark:text-slate-400">Twice per year</td></tr>
+                <tr class="bg-gray-50 dark:bg-slate-900"><td class="px-4 py-3 font-medium text-gray-700 dark:text-slate-300">Places</td><td class="px-4 py-3 text-gray-600 dark:text-slate-400">Limited — assessed intake</td></tr>
+                <tr><td class="px-4 py-3 font-medium text-gray-700 dark:text-slate-300">Eligible</td><td class="px-4 py-3 text-gray-600 dark:text-slate-400">Business/commerce graduates</td></tr>
+                <tr class="bg-gray-50 dark:bg-slate-900"><td class="px-4 py-3 font-medium text-gray-700 dark:text-slate-300">Duration</td><td class="px-4 py-3 text-gray-600 dark:text-slate-400">Up to 3 months (min. 16 hrs/wk)</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <div class="wf-bar">§3 · EBP Six Phases</div>
+        <section aria-labelledby="ebp-h-m" class="px-4 py-8 bg-gray-50 dark:bg-slate-900">
+          <h2 id="ebp-h-m" class="text-pretty text-xl font-bold text-gray-900 mb-5 dark:text-slate-100">The Six-Phase EBP Process</h2>
+          <div class="space-y-3">
+            <article class="bg-white rounded-lg p-4 border border-gray-200 flex items-start gap-3 dark:bg-slate-800 dark:border-slate-700">
+              <div class="w-8 h-8 rounded-full text-white font-bold text-xs flex items-center justify-center shrink-0" style="background:#1e3a5f;">1</div>
+              <div><p class="text-pretty font-bold text-gray-900 text-sm mb-0.5 dark:text-slate-100">Assessment</p><p class="text-pretty text-gray-600 text-xs dark:text-slate-400">Background review, Initial Placement Questionnaire, online readiness module.</p></div>
+            </article>
+            <article class="bg-white rounded-lg p-4 border border-gray-200 flex items-start gap-3 dark:bg-slate-800 dark:border-slate-700">
+              <div class="w-8 h-8 rounded-full text-white font-bold text-xs flex items-center justify-center shrink-0" style="background:#1e3a5f;">2</div>
+              <div><p class="text-pretty font-bold text-gray-900 text-sm mb-0.5 dark:text-slate-100">Readiness</p><p class="text-pretty text-gray-600 text-xs dark:text-slate-400">CV, LinkedIn, presentation, and Australian workplace culture context.</p></div>
+            </article>
+            <article class="bg-white rounded-lg p-4 border border-gray-200 flex items-start gap-3 dark:bg-slate-800 dark:border-slate-700">
+              <div class="w-8 h-8 rounded-full text-white font-bold text-xs flex items-center justify-center shrink-0" style="background:#1e3a5f;">3</div>
+              <div><p class="text-pretty font-bold text-gray-900 text-sm mb-0.5 dark:text-slate-100">Profiling</p><p class="text-pretty text-gray-600 text-xs dark:text-slate-400">Target organisation research and employer matching.</p></div>
+            </article>
+            <article class="bg-white rounded-lg p-4 border border-gray-200 flex items-start gap-3 dark:bg-slate-800 dark:border-slate-700">
+              <div class="w-8 h-8 rounded-full text-white font-bold text-xs flex items-center justify-center shrink-0" style="background:#1e3a5f;">4</div>
+              <div><p class="text-pretty font-bold text-gray-900 text-sm mb-0.5 dark:text-slate-100">Preparation</p><p class="text-pretty text-gray-600 text-xs dark:text-slate-400">Shortlist, prioritise, and interview prep before any approach.</p></div>
+            </article>
+            <article class="bg-white rounded-lg p-4 border border-gray-200 flex items-start gap-3 dark:bg-slate-800 dark:border-slate-700">
+              <div class="w-8 h-8 rounded-full text-white font-bold text-xs flex items-center justify-center shrink-0" style="background:#1e3a5f;">5</div>
+              <div><p class="text-pretty font-bold text-gray-900 text-sm mb-0.5 dark:text-slate-100">Placement</p><p class="text-pretty text-gray-600 text-xs dark:text-slate-400">Employer introductions, interview support, and placement coordination.</p></div>
+            </article>
+            <article class="bg-white rounded-lg p-4 border border-gray-200 flex items-start gap-3 dark:bg-slate-800 dark:border-slate-700">
+              <div class="w-8 h-8 rounded-full text-white font-bold text-xs flex items-center justify-center shrink-0" style="background:#1e3a5f;">6</div>
+              <div><p class="text-pretty font-bold text-gray-900 text-sm mb-0.5 dark:text-slate-100">Review</p><p class="text-pretty text-gray-600 text-xs dark:text-slate-400">Formal performance review, employer feedback, and documented outcomes.</p></div>
+            </article>
+          </div>
+        </section>
+
+        <div class="wf-bar">§4 · How to Apply</div>
+        <section aria-labelledby="apply-h-m" class="px-4 py-8 bg-white dark:bg-slate-800">
+          <h2 id="apply-h-m" class="text-pretty text-xl font-bold text-gray-900 mb-5 dark:text-slate-100">How to Apply</h2>
+          <div class="space-y-4">
+            <div class="flex items-start gap-3 bg-gray-50 rounded-lg p-4 border border-gray-200 dark:bg-slate-900 dark:border-slate-700">
+              <div class="w-8 h-8 rounded-full text-white font-bold text-xs flex items-center justify-center shrink-0" style="background:#1e3a5f;">1</div>
+              <div><p class="text-pretty font-bold text-gray-900 text-sm mb-0.5 dark:text-slate-100">Confirm Intake Dates</p><p class="text-pretty text-gray-600 text-xs dark:text-slate-400">Contact us to confirm when the next intake opens.</p></div>
+            </div>
+            <div class="flex items-start gap-3 bg-gray-50 rounded-lg p-4 border border-gray-200 dark:bg-slate-900 dark:border-slate-700">
+              <div class="w-8 h-8 rounded-full text-white font-bold text-xs flex items-center justify-center shrink-0" style="background:#1e3a5f;">2</div>
+              <div><p class="text-pretty font-bold text-gray-900 text-sm mb-0.5 dark:text-slate-100">Submit Your Application</p><p class="text-pretty text-gray-600 text-xs dark:text-slate-400">Send your CV and goals. We assess fit before confirming a place.</p></div>
+            </div>
+            <div class="flex items-start gap-3 bg-gray-50 rounded-lg p-4 border border-gray-200 dark:bg-slate-900 dark:border-slate-700">
+              <div class="w-8 h-8 rounded-full text-white font-bold text-xs flex items-center justify-center shrink-0" style="background:#1e3a5f;">3</div>
+              <div><p class="text-pretty font-bold text-gray-900 text-sm mb-0.5 dark:text-slate-100">Begin the EBP</p><p class="text-pretty text-gray-600 text-xs dark:text-slate-400">Assessment session first. Placement typically follows within the same intake.</p></div>
+            </div>
+          </div>
+        </section>
+
+        <div class="wf-bar">§5 · CTA Banner</div>
+        <section aria-labelledby="cta-h-m" class="py-12 px-4 text-center" style="background:#1e3a5f;">
+          <h2 id="cta-h-m" class="text-pretty text-2xl font-bold text-white mb-3">Two intakes a year. Applications close early.</h2>
+          <p class="text-pretty text-sm mb-6" style="color:#93c5fd;">Tell us about your background. We'll confirm intake dates and walk you through the process.</p>
+          <a href="./contact.html" class="block w-full text-center bg-white font-bold px-6 py-3 rounded text-sm mb-3 dark:bg-slate-800" style="color:#1e3a5f;">Apply for the Next Intake</a>
+          <a href="tel:+61863810030" class="block w-full text-center border-2 border-white text-white font-semibold px-6 py-3 rounded text-sm">Call +61 8 6381 0030</a>
+        </section>
+
+      </main>
+      <div id="footer-placeholder-m"></div>
+    </div>
+  </div>
+  <script src="./assets/site.js"></script>
+</body>
+</html>

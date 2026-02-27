@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Migration &amp; Visas — Blue Education Wireframe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/tokens.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: { extend: {
+        colors: {
+          primary:   { DEFAULT: 'var(--primary)',   foreground: 'var(--primary-foreground)' },
+          secondary: { DEFAULT: 'var(--secondary)', foreground: 'var(--secondary-foreground)' },
+          base:      { DEFAULT: 'var(--base)',      foreground: 'var(--base-foreground)' },
+          muted:     { DEFAULT: 'var(--muted)',     foreground: 'var(--muted-foreground)' },
+        },
+        borderRadius: {
+          corner: 'var(--corner)', 'corner-lg': 'var(--corner-lg)', 'corner-full': 'var(--corner-full)',
+        },
+        fontFamily: { sans: ['Inter', 'sans-serif'] },
+      }}
+    }
+  </script>
+  <style>
+    .img-ph {
+      background-color: #d1d5db;
+      background-image: repeating-linear-gradient(-55deg, transparent, transparent 8px, rgba(0,0,0,0.04) 8px, rgba(0,0,0,0.04) 9px);
+    }
+    .wf-bar {
+      font-family: 'Courier New', monospace; font-size: 9px; font-weight: bold;
+      text-transform: uppercase; letter-spacing: 0.12em; color: #3b82f6; background: #eff6ff;
+      border-top: 1px solid #bfdbfe; border-bottom: 1px solid #bfdbfe; padding: 4px 32px;
+    }
+  </style>
+</head>
+<body class="bg-neutral-300 py-8 font-sans">
+  <div class="flex gap-8 items-start mx-auto px-8" style="width: max-content;">
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         DESKTOP CANVAS — 1280px
+    ═══════════════════════════════════════════════════════════════ -->
+    <div style="width:1280px; background:var(--base); color:var(--base-foreground);" class="shadow-2xl shrink-0">
+
+      <div class="flex items-center justify-between px-8 py-2 border-b-2 border-amber-300 bg-amber-50 dark:border-amber-800 dark:bg-amber-950">
+        <div class="flex items-center gap-3">
+          <span class="font-bold text-amber-800 tracking-widest text-sm dark:text-amber-200">WIREFRAME</span>
+          <span class="text-amber-700 text-sm dark:text-amber-300">·  Blue Education  ·  Migration &amp; Visas  ·  Desktop 1280px</span>
+        </div>
+        <span class="text-amber-500 font-mono text-xs dark:text-amber-400">Layout &amp; copy reference — not final design</span>
+      </div>
+
+      <div id="nav-placeholder"></div>
+
+      <main id="main-content">
+
+        <!-- ══════════════════════════════════════════════════
+             §1  HERO
+        ══════════════════════════════════════════════════ -->
+        <div class="wf-bar">§1 · Hero — Full-width, left-aligned text overlay</div>
+        <section aria-labelledby="hero-h">
+          <div class="img-ph relative flex flex-col justify-end" style="height:420px; background-color:#374151;">
+            <div class="absolute inset-0" style="background:rgba(17,24,39,0.62);"></div>
+            <div class="relative z-10 px-16 pb-14" style="max-width:700px;">
+              <nav aria-label="Breadcrumb" class="mb-4">
+                <ol class="flex items-center gap-2 text-sm text-gray-300 dark:text-slate-500">
+                  <li><a href="./index.html" class="hover:underline">Home</a></li>
+                  <li>/</li>
+                  <li><a href="./services.html" class="hover:underline">Services</a></li>
+                  <li>/</li>
+                  <li class="text-white font-medium">Migration &amp; Visas</li>
+                </ol>
+              </nav>
+              <p class="text-pretty font-mono text-gray-400 mb-3 dark:text-slate-400" style="font-size:10px;">[BG IMAGE: Passport, boarding pass, Australian landmarks]</p>
+              <h1 id="hero-h" class="text-pretty text-4xl font-bold text-white mb-5 leading-tight">Visa applications that get it right the first time.</h1>
+              <p class="text-pretty text-xl text-gray-200">Registered migration agents with 28 years of successful applications. From student visas to permanent residence, we manage the process end to end.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- ══════════════════════════════════════════════════
+             §2  THE MIGRATION PATHWAY
+        ══════════════════════════════════════════════════ -->
+        <div class="wf-bar">§2 · Migration Pathway — horizontal 4-stage connected timeline</div>
+        <section aria-labelledby="pathway-h" class="px-16 py-16 bg-white dark:bg-slate-800">
+          <h2 id="pathway-h" class="text-pretty text-3xl font-bold text-gray-900 mb-12 dark:text-slate-100">The Migration Pathway</h2>
+          <div class="flex gap-0 items-start">
+
+            <!-- Study -->
+            <div class="flex-1 relative">
+              <div class="flex items-center mb-5">
+                <div class="w-12 h-12 bg-blue-700 text-white rounded-full flex items-center justify-center font-bold shrink-0">
+                  <span class="font-mono text-xs">[icon]</span>
+                </div>
+                <div class="flex-1 h-0.5 bg-blue-200 ml-3"></div>
+              </div>
+              <div class="pr-8">
+                <h3 class="text-pretty font-bold text-gray-900 text-lg mb-2 dark:text-slate-100">Study</h3>
+                <p class="text-pretty text-blue-600 text-xs font-semibold mb-2 dark:text-blue-400">Student Visa — Subclass 500</p>
+                <p class="text-pretty text-gray-600 text-sm leading-relaxed dark:text-slate-400">Enrol in a CRICOS-registered course, study full-time, and work up to 48 hours per fortnight.</p>
+              </div>
+            </div>
+
+            <!-- Graduate -->
+            <div class="flex-1 relative">
+              <div class="flex items-center mb-5">
+                <div class="w-12 h-12 bg-blue-700 text-white rounded-full flex items-center justify-center font-bold shrink-0">
+                  <span class="font-mono text-xs">[icon]</span>
+                </div>
+                <div class="flex-1 h-0.5 bg-blue-200 ml-3"></div>
+              </div>
+              <div class="pr-8">
+                <h3 class="text-pretty font-bold text-gray-900 text-lg mb-2 dark:text-slate-100">Graduate</h3>
+                <p class="text-pretty text-blue-600 text-xs font-semibold mb-2 dark:text-blue-400">Graduate Work Visa — Subclass 485</p>
+                <p class="text-pretty text-gray-600 text-sm leading-relaxed dark:text-slate-400">Remain in Australia for 18 months to 4 years after graduation — depending on your qualification level and visa stream.</p>
+              </div>
+            </div>
+
+            <!-- Work -->
+            <div class="flex-1 relative">
+              <div class="flex items-center mb-5">
+                <div class="w-12 h-12 bg-blue-700 text-white rounded-full flex items-center justify-center font-bold shrink-0">
+                  <span class="font-mono text-xs">[icon]</span>
+                </div>
+                <div class="flex-1 h-0.5 bg-blue-200 ml-3"></div>
+              </div>
+              <div class="pr-8">
+                <h3 class="text-pretty font-bold text-gray-900 text-lg mb-2 dark:text-slate-100">Work</h3>
+                <p class="text-pretty text-blue-600 text-xs font-semibold mb-2 dark:text-blue-400">Subclass 482 or Skilled Migration</p>
+                <p class="text-pretty text-gray-600 text-sm leading-relaxed mb-2 dark:text-slate-400">Your Australian work experience becomes the foundation for the next step.</p>
+                <a href="./services-career.html" class="text-blue-600 text-xs hover:underline dark:text-blue-400">Career services →</a>
+              </div>
+            </div>
+
+            <!-- Settle -->
+            <div class="flex-1">
+              <div class="flex items-center mb-5">
+                <div class="w-12 h-12 bg-green-600 text-white rounded-full flex items-center justify-center font-bold shrink-0">
+                  <span class="font-mono text-xs">[icon]</span>
+                </div>
+              </div>
+              <div class="pr-4">
+                <h3 class="text-pretty font-bold text-gray-900 text-lg mb-2 dark:text-slate-100">Settle</h3>
+                <p class="text-pretty text-blue-600 text-xs font-semibold mb-2 dark:text-blue-400">Permanent Residence</p>
+                <p class="text-pretty text-gray-600 text-sm leading-relaxed dark:text-slate-400">Points-based, employer-sponsored, business, or family pathways — each with different requirements and timelines.</p>
+              </div>
+            </div>
+
+          </div>
+          <p class="text-pretty text-sm text-gray-400 mt-8 italic dark:text-slate-400">Your path may skip steps or combine them. We plan around your specific situation.</p>
+        </section>
+
+        <!-- ══════════════════════════════════════════════════
+             §3  VISA SERVICES — BentoBox 3 cards
+        ══════════════════════════════════════════════════ -->
+        <div class="wf-bar">§3 · Visa Services — 3-column BentoBox cards linking to sub-pages</div>
+        <section aria-labelledby="visa-services-h" class="px-16 py-16 bg-gray-50 dark:bg-slate-900">
+          <h2 id="visa-services-h" class="text-pretty text-3xl font-bold text-gray-900 mb-10 dark:text-slate-100">Visa Services</h2>
+          <div class="grid grid-cols-3 gap-7">
+
+            <!-- Student Visas -->
+            <article class="bg-white border border-gray-200 rounded-xl p-8 hover:shadow-md hover:border-blue-300 transition-all dark:bg-slate-800 dark:border-slate-700">
+              <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-6 dark:bg-blue-900">
+                <span class="font-mono text-blue-600 text-xs dark:text-blue-400">[book]</span>
+              </div>
+              <h3 class="text-pretty text-lg font-bold text-gray-900 mb-3 dark:text-slate-100">Student Visas</h3>
+              <p class="text-pretty text-gray-600 text-sm leading-relaxed mb-5 dark:text-slate-400">Subclass 500 applications for international students enrolling in registered Australian courses. We handle GTE statements, document compilation, and lodgement.</p>
+              <a href="./services-migration-student-visas.html" class="text-blue-600 font-semibold text-sm hover:underline dark:text-blue-400">Student visa details →</a>
+            </article>
+
+            <!-- Graduate & Work Visas -->
+            <article class="bg-white border border-gray-200 rounded-xl p-8 hover:shadow-md hover:border-blue-300 transition-all dark:bg-slate-800 dark:border-slate-700">
+              <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-6 dark:bg-blue-900">
+                <span class="font-mono text-blue-600 text-xs dark:text-blue-400">[brief]</span>
+              </div>
+              <h3 class="text-pretty text-lg font-bold text-gray-900 mb-3 dark:text-slate-100">Graduate &amp; Work Visas</h3>
+              <p class="text-pretty text-gray-600 text-sm leading-relaxed mb-5 dark:text-slate-400">Post-study work visas (Subclass 485), employer-sponsored visas (TSS/482), and Standard Business Sponsor applications.</p>
+              <a href="./services-migration-graduate-work.html" class="text-blue-600 font-semibold text-sm hover:underline dark:text-blue-400">Graduate &amp; work visas →</a>
+            </article>
+
+            <!-- Permanent Residence -->
+            <article class="bg-white border border-gray-200 rounded-xl p-8 hover:shadow-md hover:border-blue-300 transition-all dark:bg-slate-800 dark:border-slate-700">
+              <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-6 dark:bg-blue-900">
+                <span class="font-mono text-blue-600 text-xs dark:text-blue-400">[home]</span>
+              </div>
+              <h3 class="text-pretty text-lg font-bold text-gray-900 mb-3 dark:text-slate-100">Permanent Residence</h3>
+              <p class="text-pretty text-gray-600 text-sm leading-relaxed mb-5 dark:text-slate-400">Skilled migration, business migration, family &amp; partner visas, and resident return visas. Multiple pathways to calling Australia home. We also assist with visa refusals, cancellations, and appeals.</p>
+              <a href="./services-migration-permanent.html" class="text-blue-600 font-semibold text-sm hover:underline dark:text-blue-400">Permanent residence pathways →</a>
+            </article>
+
+          </div>
+          <p class="text-pretty text-sm text-gray-500 mt-6 italic dark:text-slate-500">Also available: Visitor Visas (Subclass 600) for family members and short-term visits to Australia. <a href="./contact.html" class="text-blue-600 hover:underline dark:text-blue-400">Speak to an advisor →</a></p>
+        </section>
+
+        <!-- ══════════════════════════════════════════════════
+             §4  WHY TRUST US
+        ══════════════════════════════════════════════════ -->
+        <div class="wf-bar">§4 · Why Trust Us — 55/45 two-column: text + bullets left, credential badge tiles right</div>
+        <section aria-labelledby="trust-h" class="px-16 py-16 bg-white dark:bg-slate-800">
+          <div class="flex gap-14 items-start">
+            <!-- Text — 55% -->
+            <div style="flex:11;">
+              <h2 id="trust-h" class="text-pretty text-3xl font-bold text-gray-900 mb-5 dark:text-slate-100">Why Trust Us With Your Visa</h2>
+              <p class="text-pretty text-gray-600 leading-relaxed mb-6 dark:text-slate-400">Visa mistakes cost time and money. We tell you what's realistic before you apply — not after something goes wrong.</p>
+              <ul class="space-y-4 text-sm text-gray-700 dark:text-slate-300">
+                <li class="flex items-start gap-3">
+                  <span class="text-blue-500 font-bold mt-0.5">✓</span>
+                  <span><strong>Registered agents</strong> — Migration Alliance, Migration Institute of Australia, QEAC certified</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-blue-500 font-bold mt-0.5">✓</span>
+                  <span><strong>28 years</strong> of successful applications across nearly every visa category</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-blue-500 font-bold mt-0.5">✓</span>
+                  <span><strong>Honest assessments</strong> — if your points are too low, we tell you and show you how to fix it</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-blue-500 font-bold mt-0.5">✓</span>
+                  <span><strong>End-to-end</strong> — education, career, and migration under one roof</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-blue-500 font-bold mt-0.5">✓</span>
+                  <span><strong>Transparent fees</strong> — communicated upfront during initial consultation</span>
+                </li>
+              </ul>
+            </div>
+            <!-- Credential badges — 45% -->
+            <div style="flex:9;">
+              <h3 class="text-pretty font-semibold text-gray-700 mb-5 text-sm dark:text-slate-300">Credentials &amp; Memberships</h3>
+              <p class="text-pretty font-mono text-gray-400 mb-4 dark:text-slate-400" style="font-size:9px;">[Credential badge tiles — logo + org name. Logos to be supplied by client.]</p>
+              <div class="grid grid-cols-2 gap-4">
+                <div class="border border-gray-200 rounded-xl p-5 text-center bg-gray-50 dark:border-slate-700 dark:bg-slate-900">
+                  <div class="img-ph h-16 rounded mb-3 flex items-center justify-center">
+                    <span class="font-mono text-gray-400 text-xs dark:text-slate-400">[logo]</span>
+                  </div>
+                  <p class="text-pretty font-semibold text-gray-800 text-sm dark:text-slate-200">Migration Alliance</p>
+                </div>
+                <div class="border border-gray-200 rounded-xl p-5 text-center bg-gray-50 dark:border-slate-700 dark:bg-slate-900">
+                  <div class="img-ph h-16 rounded mb-3 flex items-center justify-center">
+                    <span class="font-mono text-gray-400 text-xs dark:text-slate-400">[logo]</span>
+                  </div>
+                  <p class="text-pretty font-semibold text-gray-800 text-sm dark:text-slate-200">Migration Institute of Australia (MIA)</p>
+                </div>
+                <div class="border border-gray-200 rounded-xl p-5 text-center bg-gray-50 dark:border-slate-700 dark:bg-slate-900">
+                  <div class="img-ph h-16 rounded mb-3 flex items-center justify-center">
+                    <span class="font-mono text-gray-400 text-xs dark:text-slate-400">[logo]</span>
+                  </div>
+                  <p class="text-pretty font-semibold text-gray-800 text-sm dark:text-slate-200">QEAC Certified</p>
+                </div>
+                <div class="border border-gray-200 rounded-xl p-5 text-center bg-gray-50 dark:border-slate-700 dark:bg-slate-900">
+                  <div class="h-16 flex items-center justify-center mb-3">
+                    <span class="font-bold text-2xl text-blue-700 dark:text-blue-300">28yr</span>
+                  </div>
+                  <p class="text-pretty font-semibold text-gray-800 text-sm dark:text-slate-200">25+ years · 40+ countries</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ══════════════════════════════════════════════════
+             §5  CTA BANNER
+        ══════════════════════════════════════════════════ -->
+        <div class="wf-bar">§5 · CTA Banner</div>
+        <section aria-labelledby="cta-h" class="py-16 px-8 text-center" style="background:#1e3a5f;">
+          <h2 id="cta-h" class="text-pretty text-4xl font-bold text-white mb-4">Get an honest read on your visa options.</h2>
+          <p class="text-pretty text-lg mb-8 mx-auto" style="color:#93c5fd; max-width:540px;">A registered migration agent will assess your situation, identify the right pathway, and tell you if something won't work — before it costs you.</p>
+          <div class="flex gap-4 justify-center">
+            <a href="./contact.html" class="bg-white font-bold px-8 py-3 rounded text-base hover:bg-gray-100 dark:bg-slate-800" style="color:#1e3a5f;">Book a Migration Assessment</a>
+            <a href="tel:+61863810030" class="border-2 border-white text-white font-semibold px-8 py-3 rounded text-base">Call +61 8 6381 0030</a>
+          </div>
+        </section>
+
+      </main>
+
+      <div id="footer-placeholder"></div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         MOBILE CANVAS — 390px
+    ═══════════════════════════════════════════════════════════════ -->
+    <div style="width:390px; background:var(--base); color:var(--base-foreground);" class="shadow-2xl shrink-0 sticky top-8">
+      <div class="flex items-center justify-between px-4 py-2 border-b-2 border-amber-300 bg-amber-50 dark:border-amber-800 dark:bg-amber-950">
+        <span class="font-bold text-amber-800 tracking-widest text-xs dark:text-amber-200">WIREFRAME</span>
+        <span class="text-amber-600 font-mono" style="font-size:8px;">Mobile 390px</span>
+      </div>
+
+      <div id="nav-placeholder-m"></div>
+
+      <main>
+
+        <!-- §1 Hero -->
+        <div class="wf-bar">§1 · Hero</div>
+        <section class="img-ph relative" style="height:260px; background-color:#374151;">
+          <div class="absolute inset-0" style="background:rgba(17,24,39,0.65);"></div>
+          <div class="relative z-10 flex flex-col justify-end h-full px-4 pb-8">
+            <nav aria-label="Breadcrumb" class="mb-3">
+              <ol class="flex items-center gap-1 text-xs text-gray-300 dark:text-slate-500">
+                <li><a href="./index.html">Home</a></li><li>/</li>
+                <li><a href="./services.html">Services</a></li><li>/</li>
+                <li class="text-white">Migration</li>
+              </ol>
+            </nav>
+            <h1 class="text-pretty text-2xl font-bold text-white mb-2">Visa applications that get it right the first time.</h1>
+            <p class="text-pretty text-sm text-gray-300 dark:text-slate-500">Registered migration agents · 28 years · end to end.</p>
+          </div>
+        </section>
+
+        <!-- §2 Migration Pathway -->
+        <div class="wf-bar">§2 · Migration Pathway</div>
+        <section class="px-4 py-8 bg-white dark:bg-slate-800">
+          <h2 class="text-pretty text-xl font-bold text-gray-900 mb-6 dark:text-slate-100">The Migration Pathway</h2>
+          <div class="space-y-0">
+            <div class="flex gap-4 pb-5">
+              <div class="flex flex-col items-center">
+                <div class="w-10 h-10 bg-blue-700 text-white rounded-full flex items-center justify-center text-xs font-bold shrink-0">1</div>
+                <div class="w-0.5 bg-blue-200 flex-1 mt-2"></div>
+              </div>
+              <div>
+                <h3 class="text-pretty font-bold text-gray-900 text-sm mb-0.5 dark:text-slate-100">Study</h3>
+                <p class="text-pretty text-blue-600 text-xs mb-1 dark:text-blue-400">Student Visa — Subclass 500</p>
+                <p class="text-pretty text-xs text-gray-600 dark:text-slate-400">Enrol in a CRICOS-registered course, study full-time.</p>
+              </div>
+            </div>
+            <div class="flex gap-4 pb-5">
+              <div class="flex flex-col items-center">
+                <div class="w-10 h-10 bg-blue-700 text-white rounded-full flex items-center justify-center text-xs font-bold shrink-0">2</div>
+                <div class="w-0.5 bg-blue-200 flex-1 mt-2"></div>
+              </div>
+              <div>
+                <h3 class="text-pretty font-bold text-gray-900 text-sm mb-0.5 dark:text-slate-100">Graduate</h3>
+                <p class="text-pretty text-blue-600 text-xs mb-1 dark:text-blue-400">Graduate Work Visa — Subclass 485</p>
+                <p class="text-pretty text-xs text-gray-600 dark:text-slate-400">18 months to 4 years after graduation.</p>
+              </div>
+            </div>
+            <div class="flex gap-4 pb-5">
+              <div class="flex flex-col items-center">
+                <div class="w-10 h-10 bg-blue-700 text-white rounded-full flex items-center justify-center text-xs font-bold shrink-0">3</div>
+                <div class="w-0.5 bg-blue-200 flex-1 mt-2"></div>
+              </div>
+              <div>
+                <h3 class="text-pretty font-bold text-gray-900 text-sm mb-0.5 dark:text-slate-100">Work</h3>
+                <p class="text-pretty text-blue-600 text-xs mb-1 dark:text-blue-400">Subclass 482 or Skilled Migration</p>
+                <p class="text-pretty text-xs text-gray-600 dark:text-slate-400">Work experience becomes the foundation for the next step.</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <div class="w-10 h-10 bg-green-600 text-white rounded-full flex items-center justify-center text-xs font-bold shrink-0">4</div>
+              <div>
+                <h3 class="text-pretty font-bold text-gray-900 text-sm mb-0.5 dark:text-slate-100">Settle</h3>
+                <p class="text-pretty text-blue-600 text-xs mb-1 dark:text-blue-400">Permanent Residence</p>
+                <p class="text-pretty text-xs text-gray-600 dark:text-slate-400">Points-based, employer-sponsored, business, or family pathways.</p>
+              </div>
+            </div>
+          </div>
+          <p class="text-pretty text-xs text-gray-400 mt-4 italic dark:text-slate-400">Your path may skip steps or combine them. We plan around your specific situation.</p>
+        </section>
+
+        <!-- §3 Visa Services -->
+        <div class="wf-bar">§3 · Visa Services</div>
+        <section class="px-4 py-8 bg-gray-50 dark:bg-slate-900">
+          <h2 class="text-pretty text-xl font-bold text-gray-900 mb-5 dark:text-slate-100">Visa Services</h2>
+          <div class="space-y-4">
+            <article class="bg-white border border-gray-200 rounded-xl p-5 dark:bg-slate-800 dark:border-slate-700">
+              <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mb-3 dark:bg-blue-900">
+                <span class="font-mono text-blue-600 text-xs dark:text-blue-400">[book]</span>
+              </div>
+              <h3 class="text-pretty font-bold text-gray-900 text-sm mb-2 dark:text-slate-100">Student Visas</h3>
+              <p class="text-pretty text-xs text-gray-600 mb-2 dark:text-slate-400">Subclass 500 — GTE statements, document compilation, lodgement.</p>
+              <a href="./services-migration-student-visas.html" class="text-blue-600 text-xs font-semibold dark:text-blue-400">Student visa details →</a>
+            </article>
+            <article class="bg-white border border-gray-200 rounded-xl p-5 dark:bg-slate-800 dark:border-slate-700">
+              <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mb-3 dark:bg-blue-900">
+                <span class="font-mono text-blue-600 text-xs dark:text-blue-400">[brief]</span>
+              </div>
+              <h3 class="text-pretty font-bold text-gray-900 text-sm mb-2 dark:text-slate-100">Graduate &amp; Work Visas</h3>
+              <p class="text-pretty text-xs text-gray-600 mb-2 dark:text-slate-400">Subclass 485, employer-sponsored (TSS/482), Standard Business Sponsor.</p>
+              <a href="./services-migration-graduate-work.html" class="text-blue-600 text-xs font-semibold dark:text-blue-400">Graduate &amp; work visas →</a>
+            </article>
+            <article class="bg-white border border-gray-200 rounded-xl p-5 dark:bg-slate-800 dark:border-slate-700">
+              <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mb-3 dark:bg-blue-900">
+                <span class="font-mono text-blue-600 text-xs dark:text-blue-400">[home]</span>
+              </div>
+              <h3 class="text-pretty font-bold text-gray-900 text-sm mb-2 dark:text-slate-100">Permanent Residence</h3>
+              <p class="text-pretty text-xs text-gray-600 mb-2 dark:text-slate-400">Skilled migration, business, family &amp; partner visas. We also assist with refusals and appeals.</p>
+              <a href="./services-migration-permanent.html" class="text-blue-600 text-xs font-semibold dark:text-blue-400">Permanent residence pathways →</a>
+            </article>
+          </div>
+          <p class="text-pretty text-xs text-gray-400 mt-4 italic dark:text-slate-400">Also available: Visitor Visas (Subclass 600). <a href="./contact.html" class="text-blue-600 dark:text-blue-400">Speak to an advisor →</a></p>
+        </section>
+
+        <!-- §4 Why Trust Us -->
+        <div class="wf-bar">§4 · Why Trust Us</div>
+        <section class="px-4 py-8 bg-white dark:bg-slate-800">
+          <h2 class="text-pretty text-xl font-bold text-gray-900 mb-4 dark:text-slate-100">Why Trust Us With Your Visa</h2>
+          <p class="text-pretty text-sm text-gray-600 mb-5 dark:text-slate-400">Visa mistakes cost time and money. We tell you what's realistic before you apply.</p>
+          <ul class="space-y-3 text-sm text-gray-700 dark:text-slate-300">
+            <li class="flex items-start gap-2"><span class="text-blue-500 font-bold">✓</span><span><strong>Registered agents</strong> — Migration Alliance, MIA, QEAC certified</span></li>
+            <li class="flex items-start gap-2"><span class="text-blue-500 font-bold">✓</span><span><strong>28 years</strong> of successful applications</span></li>
+            <li class="flex items-start gap-2"><span class="text-blue-500 font-bold">✓</span><span><strong>Honest assessments</strong> — we tell you if something won't work</span></li>
+            <li class="flex items-start gap-2"><span class="text-blue-500 font-bold">✓</span><span><strong>End-to-end</strong> — education, career, and migration under one roof</span></li>
+            <li class="flex items-start gap-2"><span class="text-blue-500 font-bold">✓</span><span><strong>Transparent fees</strong> — communicated upfront</span></li>
+          </ul>
+          <div class="grid grid-cols-2 gap-3 mt-6">
+            <div class="border border-gray-200 rounded-lg p-3 text-center bg-gray-50 dark:border-slate-700 dark:bg-slate-900">
+              <div class="img-ph h-10 rounded mb-2 flex items-center justify-center"><span class="font-mono text-gray-400 text-xs dark:text-slate-400">[logo]</span></div>
+              <p class="text-pretty text-xs font-semibold text-gray-700 dark:text-slate-300">Migration Alliance</p>
+            </div>
+            <div class="border border-gray-200 rounded-lg p-3 text-center bg-gray-50 dark:border-slate-700 dark:bg-slate-900">
+              <div class="img-ph h-10 rounded mb-2 flex items-center justify-center"><span class="font-mono text-gray-400 text-xs dark:text-slate-400">[logo]</span></div>
+              <p class="text-pretty text-xs font-semibold text-gray-700 dark:text-slate-300">MIA</p>
+            </div>
+            <div class="border border-gray-200 rounded-lg p-3 text-center bg-gray-50 dark:border-slate-700 dark:bg-slate-900">
+              <div class="img-ph h-10 rounded mb-2 flex items-center justify-center"><span class="font-mono text-gray-400 text-xs dark:text-slate-400">[logo]</span></div>
+              <p class="text-pretty text-xs font-semibold text-gray-700 dark:text-slate-300">QEAC</p>
+            </div>
+            <div class="border border-gray-200 rounded-lg p-3 text-center bg-gray-50 flex flex-col items-center justify-center dark:border-slate-700 dark:bg-slate-900">
+              <p class="text-pretty font-bold text-xl text-blue-700 dark:text-blue-300">28yr</p>
+              <p class="text-pretty text-xs font-semibold text-gray-700 dark:text-slate-300">40+ countries</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- §5 CTA -->
+        <div class="wf-bar">§5 · CTA Banner</div>
+        <section class="py-12 px-4 text-center" style="background:#1e3a5f;">
+          <h2 class="text-pretty text-2xl font-bold text-white mb-3">Get an honest read on your visa options.</h2>
+          <p class="text-pretty text-sm mb-6" style="color:#93c5fd;">A registered agent will assess your situation and tell you if something won't work — before it costs you.</p>
+          <div class="space-y-3">
+            <a href="./contact.html" class="block bg-white font-bold px-6 py-3 rounded text-sm dark:bg-slate-800" style="color:#1e3a5f;">Book a Migration Assessment</a>
+            <a href="tel:+61863810030" class="block border-2 border-white text-white font-semibold px-6 py-3 rounded text-sm">Call +61 8 6381 0030</a>
+          </div>
+        </section>
+
+      </main>
+
+      <div id="footer-placeholder-m"></div>
+    </div>
+
+  </div>
+  <script src="./assets/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog — Blue Education Wireframe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/tokens.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: { extend: {
+        colors: {
+          primary:   { DEFAULT: 'var(--primary)',   foreground: 'var(--primary-foreground)' },
+          secondary: { DEFAULT: 'var(--secondary)', foreground: 'var(--secondary-foreground)' },
+          base:      { DEFAULT: 'var(--base)',      foreground: 'var(--base-foreground)' },
+          muted:     { DEFAULT: 'var(--muted)',     foreground: 'var(--muted-foreground)' },
+        },
+        borderRadius: {
+          corner: 'var(--corner)', 'corner-lg': 'var(--corner-lg)', 'corner-full':'var(--corner-full)',
+        },
+        fontFamily: { sans: ['Inter', 'sans-serif'] },
+      }}
+    }
+  </script>
+  <style>
+    .img-ph {
+      background-color: #d1d5db;
+      background-image: repeating-linear-gradient(-55deg, transparent, transparent 8px, rgba(0,0,0,0.04) 8px, rgba(0,0,0,0.04) 9px);
+    }
+    .wf-bar {
+      font-family: 'Courier New', monospace; font-size: 9px; font-weight: bold;
+      text-transform: uppercase; letter-spacing: 0.12em; color: #3b82f6; background: #eff6ff;
+      border-top: 1px solid #bfdbfe; border-bottom: 1px solid #bfdbfe; padding: 4px 32px;
+    }
+  </style>
+</head>
+<body class="bg-neutral-300 py-8 font-sans">
+  <div class="flex gap-8 items-start mx-auto px-8" style="width: max-content;">
+
+    <!-- ═══════════════════════════════════════════════
+         DESKTOP CANVAS — 1280px
+    ═══════════════════════════════════════════════ -->
+    <div style="width:1280px; background:var(--base); color:var(--base-foreground);" class="shadow-2xl shrink-0">
+      <div class="flex items-center justify-between px-8 py-2 border-b-2 border-amber-300 bg-amber-50 dark:border-amber-800 dark:bg-amber-950">
+        <div class="flex items-center gap-3">
+          <span class="font-bold text-amber-800 tracking-widest text-sm dark:text-amber-200">WIREFRAME</span>
+          <span class="text-amber-700 text-sm dark:text-amber-300">·  Blue Education  ·  Blog  ·  Desktop 1280px</span>
+        </div>
+        <span class="text-amber-500 font-mono text-xs dark:text-amber-400">Layout &amp; copy reference — not final design</span>
+      </div>
+
+      <div id="nav-placeholder"></div>
+
+      <main id="main-content">
+
+        <!-- ════════════════════════════════════════════════════
+             §1  HERO
+        ════════════════════════════════════════════════════ -->
+        <div class="wf-bar">§1 · Hero — Left-aligned heading, clean background, no image</div>
+        <section aria-labelledby="hero-h" class="px-16 py-16 bg-gray-50 border-b border-gray-200 dark:bg-slate-900 dark:border-slate-700">
+          <div style="max-width:680px;">
+            <p class="text-pretty text-xs font-bold text-blue-600 uppercase tracking-widest mb-3 dark:text-blue-400">Resources</p>
+            <h1 id="hero-h" class="text-pretty text-5xl font-bold text-gray-900 mb-5 leading-tight dark:text-slate-100">Blog — Resources for International Students</h1>
+            <p class="text-pretty text-xl text-gray-600 leading-relaxed dark:text-slate-400">Education, migration, careers, and life in Australia.</p>
+          </div>
+        </section>
+
+        <!-- ════════════════════════════════════════════════════
+             §2  FEATURED POST
+        ════════════════════════════════════════════════════ -->
+        <div class="wf-bar">§2 · Featured Post — Large card, full-width, image left / text right</div>
+        <section aria-labelledby="featured-h" class="px-16 py-14 bg-white dark:bg-slate-800">
+          <h2 id="featured-h" class="text-pretty sr-only">Featured post</h2>
+          <article class="border border-gray-200 rounded-lg overflow-hidden flex dark:border-slate-700" style="min-height:320px;">
+            <div class="img-ph flex items-center justify-center text-center text-gray-500 font-mono text-sm shrink-0 dark:text-slate-500" style="width:480px;" role="img" aria-label="Featured blog post image placeholder">
+              [IMAGE: Featured blog post<br>— landscape, relevant to topic]
+            </div>
+            <div class="p-10 flex flex-col justify-center flex-1">
+              <div class="flex items-center gap-3 mb-4">
+                <span class="text-xs font-bold text-blue-600 bg-blue-50 border border-blue-200 rounded-full px-3 py-1 dark:text-blue-400 dark:bg-blue-950 dark:border-blue-800">Migration Updates</span>
+                <span class="text-xs text-gray-400 font-mono dark:text-slate-400">Featured</span>
+              </div>
+              <h3 class="text-pretty text-2xl font-bold text-gray-900 mb-4 leading-snug dark:text-slate-100">
+                What the 2025 Student Visa Changes Mean for International Students
+              </h3>
+              <p class="text-pretty text-gray-600 text-sm leading-relaxed mb-6 dark:text-slate-400">
+                The Department of Home Affairs has updated Subclass 500 requirements for the upcoming academic year. Here is what every prospective student and their family needs to know before lodging an application.
+              </p>
+              <div class="flex items-center gap-6">
+                <span class="text-xs text-gray-400 font-mono dark:text-slate-400">14 February 2025</span>
+                <span class="text-xs text-gray-400 dark:text-slate-400">5 min read</span>
+                <a href="./blog-post.html" class="text-blue-600 font-semibold text-sm hover:underline dark:text-blue-400">Read more &rarr;</a>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <!-- ════════════════════════════════════════════════════
+             §3  CATEGORY FILTER
+        ════════════════════════════════════════════════════ -->
+        <div class="wf-bar">§3 · Category Filter — Tabs / pills · [Filter tabs — JS behaviour in final build]</div>
+        <section aria-label="Filter blog posts by category" class="px-16 py-8 bg-gray-50 border-y border-gray-200 dark:bg-slate-900 dark:border-slate-700">
+          <div class="flex items-center gap-3 flex-wrap">
+            <span class="text-xs font-bold text-gray-500 uppercase tracking-wider mr-2 dark:text-slate-500">Filter:</span>
+            <button type="button" class="bg-blue-600 text-white text-sm font-semibold px-5 py-2 rounded-full">All</button>
+            <button type="button" class="bg-white border border-gray-300 text-gray-600 text-sm font-medium px-5 py-2 rounded-full hover:border-blue-400 hover:text-blue-600 dark:bg-slate-800 dark:border-slate-700 dark:text-slate-400">Education News</button>
+            <button type="button" class="bg-white border border-gray-300 text-gray-600 text-sm font-medium px-5 py-2 rounded-full hover:border-blue-400 hover:text-blue-600 dark:bg-slate-800 dark:border-slate-700 dark:text-slate-400">Migration Updates</button>
+            <button type="button" class="bg-white border border-gray-300 text-gray-600 text-sm font-medium px-5 py-2 rounded-full hover:border-blue-400 hover:text-blue-600 dark:bg-slate-800 dark:border-slate-700 dark:text-slate-400">Student Stories</button>
+            <button type="button" class="bg-white border border-gray-300 text-gray-600 text-sm font-medium px-5 py-2 rounded-full hover:border-blue-400 hover:text-blue-600 dark:bg-slate-800 dark:border-slate-700 dark:text-slate-400">Study Tips</button>
+            <button type="button" class="bg-white border border-gray-300 text-gray-600 text-sm font-medium px-5 py-2 rounded-full hover:border-blue-400 hover:text-blue-600 dark:bg-slate-800 dark:border-slate-700 dark:text-slate-400">Living in Australia</button>
+          </div>
+          <p class="text-pretty font-mono text-gray-400 mt-3 dark:text-slate-400" style="font-size:9px;">[Filter tabs — JS behaviour in final build · clicking a tab filters the grid below]</p>
+        </section>
+
+        <!-- ════════════════════════════════════════════════════
+             §4  POSTS GRID
+        ════════════════════════════════════════════════════ -->
+        <div class="wf-bar">§4 · Posts Grid — 6 cards, 3-column, CMS-driven</div>
+        <section aria-labelledby="posts-h" class="px-16 py-14 bg-white dark:bg-slate-800">
+          <h2 id="posts-h" class="text-pretty sr-only">All posts</h2>
+          <p class="text-pretty font-mono text-gray-400 mb-8 dark:text-slate-400" style="font-size:9px;">[Dynamic — pulls published blog posts filtered by active category tab]</p>
+          <div class="grid grid-cols-3 gap-8">
+
+            <!-- Card 1 -->
+            <article class="border border-gray-200 rounded-lg overflow-hidden flex flex-col dark:border-slate-700">
+              <div class="img-ph flex items-center justify-center text-gray-500 font-mono text-sm dark:text-slate-500" style="height:200px;" role="img" aria-label="Blog post image placeholder">[Blog post image]</div>
+              <div class="p-6 flex flex-col flex-1">
+                <div class="flex items-center gap-3 mb-3">
+                  <span class="text-xs font-bold text-blue-600 bg-blue-50 border border-blue-200 rounded-full px-2 py-0.5 dark:text-blue-400 dark:bg-blue-950 dark:border-blue-800">Education News</span>
+                  <span class="text-xs text-gray-400 font-mono dark:text-slate-400">12 Jan 2025</span>
+                </div>
+                <h3 class="text-pretty font-bold text-gray-900 text-base mb-3 leading-snug dark:text-slate-100">How to Choose the Right Australian University for Your Goals</h3>
+                <p class="text-pretty text-gray-500 text-sm leading-relaxed flex-1 dark:text-slate-500">Picking a university is one of the most consequential decisions you will make. Here is a framework that cuts through the noise.</p>
+                <a href="./blog-post.html" class="text-blue-600 font-semibold text-sm mt-4 hover:underline dark:text-blue-400">Read more &rarr;</a>
+              </div>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="border border-gray-200 rounded-lg overflow-hidden flex flex-col dark:border-slate-700">
+              <div class="img-ph flex items-center justify-center text-gray-500 font-mono text-sm dark:text-slate-500" style="height:200px;" role="img" aria-label="Blog post image placeholder">[Blog post image]</div>
+              <div class="p-6 flex flex-col flex-1">
+                <div class="flex items-center gap-3 mb-3">
+                  <span class="text-xs font-bold text-green-700 bg-green-50 border border-green-200 rounded-full px-2 py-0.5">Study Tips</span>
+                  <span class="text-xs text-gray-400 font-mono dark:text-slate-400">08 Jan 2025</span>
+                </div>
+                <h3 class="text-pretty font-bold text-gray-900 text-base mb-3 leading-snug dark:text-slate-100">Preparing for IELTS: Six Months Out vs Six Weeks Out</h3>
+                <p class="text-pretty text-gray-500 text-sm leading-relaxed flex-1 dark:text-slate-500">What to prioritise at each stage of your IELTS preparation, whether you are starting early or running short on time.</p>
+                <a href="./blog-post.html" class="text-blue-600 font-semibold text-sm mt-4 hover:underline dark:text-blue-400">Read more &rarr;</a>
+              </div>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="border border-gray-200 rounded-lg overflow-hidden flex flex-col dark:border-slate-700">
+              <div class="img-ph flex items-center justify-center text-gray-500 font-mono text-sm dark:text-slate-500" style="height:200px;" role="img" aria-label="Blog post image placeholder">[Blog post image]</div>
+              <div class="p-6 flex flex-col flex-1">
+                <div class="flex items-center gap-3 mb-3">
+                  <span class="text-xs font-bold text-purple-700 bg-purple-50 border border-purple-200 rounded-full px-2 py-0.5">Student Stories</span>
+                  <span class="text-xs text-gray-400 font-mono dark:text-slate-400">03 Jan 2025</span>
+                </div>
+                <h3 class="text-pretty font-bold text-gray-900 text-base mb-3 leading-snug dark:text-slate-100">From Tokyo to Perth: How Hana Found Her Path in Nursing</h3>
+                <p class="text-pretty text-gray-500 text-sm leading-relaxed flex-1 dark:text-slate-500">A first-hand account of navigating English requirements, the registration process, and life in Western Australia.</p>
+                <a href="./blog-post.html" class="text-blue-600 font-semibold text-sm mt-4 hover:underline dark:text-blue-400">Read more &rarr;</a>
+              </div>
+            </article>
+
+            <!-- Card 4 -->
+            <article class="border border-gray-200 rounded-lg overflow-hidden flex flex-col dark:border-slate-700">
+              <div class="img-ph flex items-center justify-center text-gray-500 font-mono text-sm dark:text-slate-500" style="height:200px;" role="img" aria-label="Blog post image placeholder">[Blog post image]</div>
+              <div class="p-6 flex flex-col flex-1">
+                <div class="flex items-center gap-3 mb-3">
+                  <span class="text-xs font-bold text-orange-700 bg-orange-50 border border-orange-200 rounded-full px-2 py-0.5">Living in Australia</span>
+                  <span class="text-xs text-gray-400 font-mono dark:text-slate-400">19 Dec 2024</span>
+                </div>
+                <h3 class="text-pretty font-bold text-gray-900 text-base mb-3 leading-snug dark:text-slate-100">Cost of Living in Perth 2025: A Realistic Student Budget</h3>
+                <p class="text-pretty text-gray-500 text-sm leading-relaxed flex-1 dark:text-slate-500">Rent, food, transport, and social life — broken down honestly so you can plan without surprises.</p>
+                <a href="./blog-post.html" class="text-blue-600 font-semibold text-sm mt-4 hover:underline dark:text-blue-400">Read more &rarr;</a>
+              </div>
+            </article>
+
+            <!-- Card 5 -->
+            <article class="border border-gray-200 rounded-lg overflow-hidden flex flex-col dark:border-slate-700">
+              <div class="img-ph flex items-center justify-center text-gray-500 font-mono text-sm dark:text-slate-500" style="height:200px;" role="img" aria-label="Blog post image placeholder">[Blog post image]</div>
+              <div class="p-6 flex flex-col flex-1">
+                <div class="flex items-center gap-3 mb-3">
+                  <span class="text-xs font-bold text-blue-600 bg-blue-50 border border-blue-200 rounded-full px-2 py-0.5 dark:text-blue-400 dark:bg-blue-950 dark:border-blue-800">Migration Updates</span>
+                  <span class="text-xs text-gray-400 font-mono dark:text-slate-400">11 Dec 2024</span>
+                </div>
+                <h3 class="text-pretty font-bold text-gray-900 text-base mb-3 leading-snug dark:text-slate-100">Subclass 485: What Graduates Need to Know Before Applying</h3>
+                <p class="text-pretty text-gray-500 text-sm leading-relaxed flex-1 dark:text-slate-500">The Post-Study Work Stream is the most direct route from graduation to long-term residency. Here is how to use it.</p>
+                <a href="./blog-post.html" class="text-blue-600 font-semibold text-sm mt-4 hover:underline dark:text-blue-400">Read more &rarr;</a>
+              </div>
+            </article>
+
+            <!-- Card 6 -->
+            <article class="border border-gray-200 rounded-lg overflow-hidden flex flex-col dark:border-slate-700">
+              <div class="img-ph flex items-center justify-center text-gray-500 font-mono text-sm dark:text-slate-500" style="height:200px;" role="img" aria-label="Blog post image placeholder">[Blog post image]</div>
+              <div class="p-6 flex flex-col flex-1">
+                <div class="flex items-center gap-3 mb-3">
+                  <span class="text-xs font-bold text-green-700 bg-green-50 border border-green-200 rounded-full px-2 py-0.5">Study Tips</span>
+                  <span class="text-xs text-gray-400 font-mono dark:text-slate-400">04 Dec 2024</span>
+                </div>
+                <h3 class="text-pretty font-bold text-gray-900 text-base mb-3 leading-snug dark:text-slate-100">Making the Most of Your Australian Workplace: Culture Differences to Know</h3>
+                <p class="text-pretty text-gray-500 text-sm leading-relaxed flex-1 dark:text-slate-500">Australian workplace norms differ from many cultures. Understanding them before you start work makes a measurable difference.</p>
+                <a href="./blog-post.html" class="text-blue-600 font-semibold text-sm mt-4 hover:underline dark:text-blue-400">Read more &rarr;</a>
+              </div>
+            </article>
+
+          </div>
+        </section>
+
+        <!-- ════════════════════════════════════════════════════
+             §5  NEWSLETTER CTA
+        ════════════════════════════════════════════════════ -->
+        <div class="wf-bar">§5 · Newsletter CTA — Centered, email capture, mid-page</div>
+        <section aria-labelledby="newsletter-h" class="px-16 py-16 bg-blue-50 border-y border-blue-100 text-center dark:bg-blue-950">
+          <h2 id="newsletter-h" class="text-pretty text-3xl font-bold text-gray-900 mb-3 dark:text-slate-100">Stay informed.</h2>
+          <p class="text-pretty text-gray-600 text-lg mb-8 mx-auto dark:text-slate-400" style="max-width:480px;">Education, migration, and career updates — delivered to your inbox.</p>
+          <form class="flex gap-3 justify-center" aria-label="Newsletter sign-up">
+            <label for="email-d" class="sr-only">Email address</label>
+            <input id="email-d" type="email" placeholder="your@email.com" class="border border-gray-300 rounded px-4 py-3 text-sm text-gray-700 bg-white focus:outline-none focus:ring-2 focus:ring-blue-400 dark:border-slate-700 dark:text-slate-300 dark:bg-slate-800" style="width:280px;" />
+            <button type="submit" class="bg-blue-600 text-white font-semibold px-6 py-3 rounded text-sm hover:bg-blue-700">Subscribe</button>
+          </form>
+          <p class="text-pretty text-xs text-gray-400 mt-4 dark:text-slate-400">No spam. Unsubscribe any time.</p>
+        </section>
+
+        <!-- ════════════════════════════════════════════════════
+             §6  PAGINATION
+        ════════════════════════════════════════════════════ -->
+        <div class="wf-bar">§6 · Pagination — Previous / numbered / Next</div>
+        <section aria-label="Blog pagination" class="px-16 py-10 bg-white border-b border-gray-200 dark:bg-slate-800 dark:border-slate-700">
+          <nav aria-label="Pagination" class="flex items-center justify-center gap-2">
+            <a href="#" class="flex items-center gap-1 px-4 py-2 border border-gray-300 rounded text-sm text-gray-600 hover:border-blue-400 hover:text-blue-600 dark:border-slate-700 dark:text-slate-400">&larr; Previous</a>
+            <a href="#" class="px-4 py-2 bg-blue-600 text-white font-bold rounded text-sm" aria-current="page">1</a>
+            <a href="#" class="px-4 py-2 border border-gray-300 rounded text-sm text-gray-600 hover:border-blue-400 hover:text-blue-600 dark:border-slate-700 dark:text-slate-400">2</a>
+            <a href="#" class="px-4 py-2 border border-gray-300 rounded text-sm text-gray-600 hover:border-blue-400 hover:text-blue-600 dark:border-slate-700 dark:text-slate-400">3</a>
+            <span class="px-2 text-gray-400 text-sm dark:text-slate-400">&hellip;</span>
+            <a href="#" class="flex items-center gap-1 px-4 py-2 border border-gray-300 rounded text-sm text-gray-600 hover:border-blue-400 hover:text-blue-600 dark:border-slate-700 dark:text-slate-400">Next &rarr;</a>
+          </nav>
+        </section>
+
+        <!-- ════════════════════════════════════════════════════
+             §7  FINAL CTA BANNER
+        ════════════════════════════════════════════════════ -->
+        <div class="wf-bar">§7 · CTA Banner — Full-width, dark background</div>
+        <section aria-labelledby="cta-h" class="py-16 px-8 text-center" style="background:#1e3a5f;">
+          <h2 id="cta-h" class="text-pretty text-4xl font-bold text-white mb-4">Ready to start your Australian journey?</h2>
+          <p class="text-pretty text-lg mb-8 mx-auto" style="color:#93c5fd; max-width:540px;">Talk to a Blue Education advisor about education pathways, visa options, and career planning — all in one place.</p>
+          <div class="flex gap-4 justify-center">
+            <a href="./contact.html" class="bg-white font-bold px-8 py-3 rounded text-base hover:bg-gray-100 dark:bg-slate-800" style="color:#1e3a5f;">Book a Consultation</a>
+            <a href="tel:+61863810030" class="border-2 border-white text-white font-semibold px-8 py-3 rounded text-base">Call +61 8 6381 0030</a>
+          </div>
+        </section>
+
+      </main>
+
+      <div id="footer-placeholder"></div>
+    </div>
+    <!-- end DESKTOP CANVAS -->
+
+    <!-- ═══════════════════════════════════════════════
+         MOBILE CANVAS — 390px
+    ═══════════════════════════════════════════════ -->
+    <div style="width:390px; background:var(--base); color:var(--base-foreground);" class="shadow-2xl shrink-0 sticky top-8">
+      <div class="flex items-center justify-between px-4 py-2 border-b-2 border-amber-300 bg-amber-50 dark:border-amber-800 dark:bg-amber-950">
+        <span class="font-bold text-amber-800 tracking-widest text-xs dark:text-amber-200">WIREFRAME</span>
+        <span class="text-amber-600 font-mono" style="font-size:8px;">Mobile 390px</span>
+      </div>
+
+      <div id="nav-placeholder-m"></div>
+
+      <main>
+
+        <!-- §1 Hero — mobile -->
+        <div class="wf-bar">§1 · Hero</div>
+        <section aria-labelledby="hero-h-m" class="px-5 py-10 bg-gray-50 dark:bg-slate-900">
+          <p class="text-pretty text-xs font-bold text-blue-600 uppercase tracking-widest mb-2 dark:text-blue-400">Resources</p>
+          <h1 id="hero-h-m" class="text-pretty text-3xl font-bold text-gray-900 mb-3 leading-tight dark:text-slate-100">Blog</h1>
+          <p class="text-pretty text-base text-gray-600 dark:text-slate-400">Education, migration, careers, and life in Australia.</p>
+        </section>
+
+        <!-- §2 Featured Post — mobile -->
+        <div class="wf-bar">§2 · Featured Post</div>
+        <section aria-labelledby="featured-h-m" class="px-5 py-8 bg-white border-t border-gray-200 dark:bg-slate-800 dark:border-slate-700">
+          <article>
+            <div class="img-ph rounded-lg mb-4 flex items-center justify-center text-gray-500 font-mono text-xs text-center dark:text-slate-500" style="height:180px;" role="img" aria-label="Featured blog post image">[Featured image]</div>
+            <span class="text-xs font-bold text-blue-600 bg-blue-50 border border-blue-200 rounded-full px-2 py-0.5 dark:text-blue-400 dark:bg-blue-950 dark:border-blue-800">Migration Updates</span>
+            <h2 id="featured-h-m" class="text-pretty text-lg font-bold text-gray-900 mt-3 mb-2 leading-snug dark:text-slate-100">What the 2025 Student Visa Changes Mean for International Students</h2>
+            <p class="text-pretty text-gray-500 text-sm leading-relaxed mb-3 dark:text-slate-500">The Department of Home Affairs has updated Subclass 500 requirements for the upcoming academic year.</p>
+            <div class="flex items-center gap-4 text-xs text-gray-400 font-mono mb-3 dark:text-slate-400">
+              <span>14 Feb 2025</span><span>5 min read</span>
+            </div>
+            <a href="./blog-post.html" class="text-blue-600 font-semibold text-sm hover:underline dark:text-blue-400">Read more &rarr;</a>
+          </article>
+        </section>
+
+        <!-- §3 Category Filter — mobile -->
+        <div class="wf-bar">§3 · Category Filter</div>
+        <section aria-label="Filter by category" class="px-5 py-5 bg-gray-50 border-t border-gray-200 dark:bg-slate-900 dark:border-slate-700">
+          <div class="flex gap-2 flex-wrap">
+            <button type="button" class="bg-blue-600 text-white text-xs font-semibold px-3 py-1.5 rounded-full">All</button>
+            <button type="button" class="bg-white border border-gray-300 text-gray-600 text-xs px-3 py-1.5 rounded-full dark:bg-slate-800 dark:border-slate-700 dark:text-slate-400">Education</button>
+            <button type="button" class="bg-white border border-gray-300 text-gray-600 text-xs px-3 py-1.5 rounded-full dark:bg-slate-800 dark:border-slate-700 dark:text-slate-400">Migration</button>
+            <button type="button" class="bg-white border border-gray-300 text-gray-600 text-xs px-3 py-1.5 rounded-full dark:bg-slate-800 dark:border-slate-700 dark:text-slate-400">Stories</button>
+            <button type="button" class="bg-white border border-gray-300 text-gray-600 text-xs px-3 py-1.5 rounded-full dark:bg-slate-800 dark:border-slate-700 dark:text-slate-400">Tips</button>
+            <button type="button" class="bg-white border border-gray-300 text-gray-600 text-xs px-3 py-1.5 rounded-full dark:bg-slate-800 dark:border-slate-700 dark:text-slate-400">Living in AU</button>
+          </div>
+        </section>
+
+        <!-- §4 Posts — mobile stacked single-column -->
+        <div class="wf-bar">§4 · Posts (stacked, single column)</div>
+        <section aria-labelledby="posts-h-m" class="px-5 py-8 bg-white border-t border-gray-200 space-y-6 dark:bg-slate-800 dark:border-slate-700">
+          <h2 id="posts-h-m" class="text-pretty sr-only">All posts</h2>
+
+          <article class="border border-gray-200 rounded-lg overflow-hidden dark:border-slate-700">
+            <div class="img-ph flex items-center justify-center text-gray-500 font-mono text-xs dark:text-slate-500" style="height:140px;" role="img" aria-label="Blog post image">[Post image]</div>
+            <div class="p-4">
+              <div class="flex items-center gap-2 mb-2">
+                <span class="text-xs font-bold text-blue-600 bg-blue-50 border border-blue-200 rounded-full px-2 py-0.5 dark:text-blue-400 dark:bg-blue-950 dark:border-blue-800">Education News</span>
+                <span class="text-xs text-gray-400 font-mono dark:text-slate-400">12 Jan 2025</span>
+              </div>
+              <h3 class="text-pretty font-bold text-gray-900 text-sm mb-2 dark:text-slate-100">How to Choose the Right Australian University</h3>
+              <p class="text-pretty text-gray-500 text-xs leading-relaxed mb-3 dark:text-slate-500">Picking a university is one of the most consequential decisions you will make.</p>
+              <a href="./blog-post.html" class="text-blue-600 font-semibold text-xs dark:text-blue-400">Read more &rarr;</a>
+            </div>
+          </article>
+
+          <article class="border border-gray-200 rounded-lg overflow-hidden dark:border-slate-700">
+            <div class="img-ph flex items-center justify-center text-gray-500 font-mono text-xs dark:text-slate-500" style="height:140px;" role="img" aria-label="Blog post image">[Post image]</div>
+            <div class="p-4">
+              <div class="flex items-center gap-2 mb-2">
+                <span class="text-xs font-bold text-green-700 bg-green-50 border border-green-200 rounded-full px-2 py-0.5">Study Tips</span>
+                <span class="text-xs text-gray-400 font-mono dark:text-slate-400">08 Jan 2025</span>
+              </div>
+              <h3 class="text-pretty font-bold text-gray-900 text-sm mb-2 dark:text-slate-100">Preparing for IELTS: 6 Months Out vs 6 Weeks Out</h3>
+              <p class="text-pretty text-gray-500 text-xs leading-relaxed mb-3 dark:text-slate-500">What to prioritise at each stage of your IELTS preparation.</p>
+              <a href="./blog-post.html" class="text-blue-600 font-semibold text-xs dark:text-blue-400">Read more &rarr;</a>
+            </div>
+          </article>
+
+          <article class="border border-gray-200 rounded-lg overflow-hidden dark:border-slate-700">
+            <div class="img-ph flex items-center justify-center text-gray-500 font-mono text-xs dark:text-slate-500" style="height:140px;" role="img" aria-label="Blog post image">[Post image]</div>
+            <div class="p-4">
+              <div class="flex items-center gap-2 mb-2">
+                <span class="text-xs font-bold text-purple-700 bg-purple-50 border border-purple-200 rounded-full px-2 py-0.5">Student Stories</span>
+                <span class="text-xs text-gray-400 font-mono dark:text-slate-400">03 Jan 2025</span>
+              </div>
+              <h3 class="text-pretty font-bold text-gray-900 text-sm mb-2 dark:text-slate-100">From Tokyo to Perth: How Hana Found Her Path</h3>
+              <p class="text-pretty text-gray-500 text-xs leading-relaxed mb-3 dark:text-slate-500">A first-hand account of navigating English requirements and life in WA.</p>
+              <a href="./blog-post.html" class="text-blue-600 font-semibold text-xs dark:text-blue-400">Read more &rarr;</a>
+            </div>
+          </article>
+
+        </section>
+
+        <!-- §5 Newsletter — mobile -->
+        <div class="wf-bar">§5 · Newsletter CTA</div>
+        <section aria-labelledby="newsletter-h-m" class="px-5 py-10 bg-blue-50 border-t border-blue-100 text-center dark:bg-blue-950">
+          <h2 id="newsletter-h-m" class="text-pretty text-xl font-bold text-gray-900 mb-2 dark:text-slate-100">Stay informed.</h2>
+          <p class="text-pretty text-gray-600 text-sm mb-5 dark:text-slate-400">Education, migration, and career updates — to your inbox.</p>
+          <form class="flex flex-col gap-3" aria-label="Newsletter sign-up">
+            <label for="email-m" class="sr-only">Email address</label>
+            <input id="email-m" type="email" placeholder="your@email.com" class="border border-gray-300 rounded px-4 py-3 text-sm text-gray-700 bg-white w-full dark:border-slate-700 dark:text-slate-300 dark:bg-slate-800" />
+            <button type="submit" class="bg-blue-600 text-white font-semibold px-6 py-3 rounded text-sm w-full">Subscribe</button>
+          </form>
+        </section>
+
+        <!-- §6 Pagination — mobile -->
+        <div class="wf-bar">§6 · Pagination</div>
+        <section aria-label="Pagination" class="px-5 py-6 bg-white border-t border-gray-200 dark:bg-slate-800 dark:border-slate-700">
+          <nav class="flex items-center justify-between" aria-label="Pagination">
+            <a href="#" class="px-4 py-2 border border-gray-300 rounded text-sm text-gray-600 dark:border-slate-700 dark:text-slate-400">&larr; Prev</a>
+            <div class="flex gap-1">
+              <a href="#" class="px-3 py-2 bg-blue-600 text-white font-bold rounded text-sm" aria-current="page">1</a>
+              <a href="#" class="px-3 py-2 border border-gray-300 rounded text-sm text-gray-600 dark:border-slate-700 dark:text-slate-400">2</a>
+              <a href="#" class="px-3 py-2 border border-gray-300 rounded text-sm text-gray-600 dark:border-slate-700 dark:text-slate-400">3</a>
+            </div>
+            <a href="#" class="px-4 py-2 border border-gray-300 rounded text-sm text-gray-600 dark:border-slate-700 dark:text-slate-400">Next &rarr;</a>
+          </nav>
+        </section>
+
+        <!-- §7 CTA Banner — mobile -->
+        <div class="wf-bar">§7 · CTA Banner</div>
+        <section aria-labelledby="cta-h-m" class="px-5 py-12 text-center" style="background:#1e3a5f;">
+          <h2 id="cta-h-m" class="text-pretty text-2xl font-bold text-white mb-3">Ready to start your Australian journey?</h2>
+          <p class="text-pretty text-sm mb-6 mx-auto" style="color:#93c5fd;">Talk to an advisor about education, visas, and career planning.</p>
+          <div class="flex flex-col gap-3">
+            <a href="./contact.html" class="bg-white font-bold px-6 py-3 rounded text-sm dark:bg-slate-800" style="color:#1e3a5f;">Book a Consultation</a>
+            <a href="tel:+61863810030" class="border-2 border-white text-white font-semibold px-6 py-3 rounded text-sm">Call +61 8 6381 0030</a>
+          </div>
+        </section>
+
+      </main>
+
+      <div id="footer-placeholder-m"></div>
+    </div>
+    <!-- end MOBILE CANVAS -->
+
+  </div>
+  <script src="./assets/site.js"></script>
+</body>
+</html>

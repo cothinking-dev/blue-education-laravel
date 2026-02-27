@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Education Services — Blue Education Wireframe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/tokens.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: { extend: {
+        colors: {
+          primary:   { DEFAULT: 'var(--primary)',   foreground: 'var(--primary-foreground)' },
+          secondary: { DEFAULT: 'var(--secondary)', foreground: 'var(--secondary-foreground)' },
+          base:      { DEFAULT: 'var(--base)',      foreground: 'var(--base-foreground)' },
+          muted:     { DEFAULT: 'var(--muted)',     foreground: 'var(--muted-foreground)' },
+        },
+        borderRadius: {
+          corner: 'var(--corner)', 'corner-lg': 'var(--corner-lg)', 'corner-full': 'var(--corner-full)',
+        },
+        fontFamily: { sans: ['Inter', 'sans-serif'] },
+      }}
+    }
+  </script>
+  <style>
+    .img-ph {
+      background-color: #d1d5db;
+      background-image: repeating-linear-gradient(-55deg, transparent, transparent 8px, rgba(0,0,0,0.04) 8px, rgba(0,0,0,0.04) 9px);
+    }
+    .wf-bar {
+      font-family: 'Courier New', monospace; font-size: 9px; font-weight: bold;
+      text-transform: uppercase; letter-spacing: 0.12em; color: #3b82f6; background: #eff6ff;
+      border-top: 1px solid #bfdbfe; border-bottom: 1px solid #bfdbfe; padding: 4px 32px;
+    }
+  </style>
+</head>
+<body class="bg-neutral-300 py-8 font-sans">
+  <div class="flex gap-8 items-start mx-auto px-8" style="width: max-content;">
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         DESKTOP CANVAS — 1280px
+    ═══════════════════════════════════════════════════════════════ -->
+    <div style="width:1280px; background:var(--base); color:var(--base-foreground);" class="shadow-2xl shrink-0">
+
+      <div class="flex items-center justify-between px-8 py-2 border-b-2 border-amber-300 bg-amber-50 dark:border-amber-800 dark:bg-amber-950">
+        <div class="flex items-center gap-3">
+          <span class="font-bold text-amber-800 tracking-widest text-sm dark:text-amber-200">WIREFRAME</span>
+          <span class="text-amber-700 text-sm dark:text-amber-300">·  Blue Education  ·  Education Services  ·  Desktop 1280px</span>
+        </div>
+        <span class="text-amber-500 font-mono text-xs dark:text-amber-400">Layout &amp; copy reference — not final design</span>
+      </div>
+
+      <div id="nav-placeholder"></div>
+
+      <main id="main-content">
+
+        <!-- ══════════════════════════════════════════════════
+             §1  HERO
+        ══════════════════════════════════════════════════ -->
+        <div class="wf-bar">§1 · Hero — Full-width overlay, centered text</div>
+        <section aria-labelledby="hero-h">
+          <div class="img-ph relative flex flex-col items-center justify-center text-center" style="height:460px; background-color:#374151;">
+            <div class="absolute inset-0" style="background:rgba(17,24,39,0.62);"></div>
+            <div class="relative z-10 px-8" style="max-width:820px;">
+              <nav aria-label="Breadcrumb" class="mb-5">
+                <ol class="flex items-center justify-center gap-2 text-sm text-gray-300 dark:text-slate-500">
+                  <li><a href="./index.html" class="hover:underline text-gray-300 dark:text-slate-500">Home</a></li>
+                  <li>/</li>
+                  <li><a href="./services.html" class="hover:underline text-gray-300 dark:text-slate-500">Services</a></li>
+                  <li>/</li>
+                  <li class="text-white font-medium">Education Services</li>
+                </ol>
+              </nav>
+              <p class="text-pretty font-mono text-gray-400 mb-4 dark:text-slate-400" style="font-size:10px; letter-spacing:0.1em;">[BG IMAGE: University campus, diverse students walking]</p>
+              <h1 id="hero-h" class="text-pretty text-4xl font-bold text-white mb-5 leading-tight">Australia has 1,100+ institutions and 20,000+ programs. Finding the right one takes more than a Google search.</h1>
+              <p class="text-pretty text-xl text-gray-200">We've been navigating this system since 1998. Let us show you where you fit.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- ══════════════════════════════════════════════════
+             §2  HOW WE HELP
+        ══════════════════════════════════════════════════ -->
+        <div class="wf-bar">§2 · How We Help — 55/45 two-column: text left, image right</div>
+        <section aria-labelledby="how-we-help-h" class="px-16 py-16 bg-white dark:bg-slate-800">
+          <div class="flex gap-14 items-center">
+            <!-- Text — 55% -->
+            <div style="flex:11;">
+              <h2 id="how-we-help-h" class="text-pretty text-3xl font-bold text-gray-900 mb-6 dark:text-slate-100">How We Help</h2>
+              <p class="text-pretty text-gray-600 text-lg leading-relaxed mb-5 dark:text-slate-400">Choosing where and what to study in Australia isn't just an education decision — it's a career decision, a migration decision, and a life decision.</p>
+              <p class="text-pretty text-gray-600 leading-relaxed mb-5 dark:text-slate-400">Your advisor maps out institutions and programs against two questions: what career do you want, and what does your visa pathway look like? The course recommendation comes after that — not before.</p>
+              <p class="text-pretty text-gray-600 leading-relaxed dark:text-slate-400">Once you've decided, we take care of the rest — application, enrolment, and student visa included.</p>
+            </div>
+            <!-- Image — 45% -->
+            <div style="flex:9;">
+              <div class="img-ph rounded-xl flex items-center justify-center" style="height:320px;" role="img" aria-label="Counselor in meeting with student">
+                <span class="font-mono text-gray-400 text-xs dark:text-slate-400">[IMAGE: Counselor with student in meeting]</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ══════════════════════════════════════════════════
+             §3  EDUCATION PATHWAYS
+        ══════════════════════════════════════════════════ -->
+        <div class="wf-bar">§3 · Education Pathways — 2×2 grid of image-topped, clickable cards</div>
+        <section aria-labelledby="pathways-h" class="px-16 py-16 bg-gray-50 dark:bg-slate-900">
+          <h2 id="pathways-h" class="text-pretty text-3xl font-bold text-gray-900 mb-3 dark:text-slate-100">Which describes your situation?</h2>
+          <p class="text-pretty text-gray-500 mb-10 text-sm dark:text-slate-500">All options shown — no hidden content.</p>
+          <div class="grid grid-cols-2 gap-7">
+
+            <!-- School -->
+            <article class="bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm hover:shadow-md hover:border-blue-300 transition-all dark:bg-slate-800 dark:border-slate-700">
+              <a href="./services-education-school.html" class="block">
+                <div class="img-ph flex items-end px-5 py-3" style="height:200px;" role="img" aria-label="International student in Australian school classroom">
+                  <span class="font-mono text-gray-400 text-xs dark:text-slate-400">[IMAGE: Young international student in Australian classroom]</span>
+                </div>
+                <div class="p-7">
+                  <h3 class="text-pretty text-lg font-bold text-gray-900 mb-3 dark:text-slate-100">I'm enrolling a child in school</h3>
+                  <p class="text-pretty text-gray-600 text-sm leading-relaxed mb-4 dark:text-slate-400">For students aged 5–18. We handle school selection, accommodation, guardianship, and welfare — so parents know their child is looked after at every stage.</p>
+                  <a href="./services-education-school.html" class="text-blue-600 font-semibold text-sm hover:underline dark:text-blue-400">Learn more →</a>
+                </div>
+              </a>
+            </article>
+
+            <!-- English & Foundation -->
+            <article class="bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm hover:shadow-md hover:border-blue-300 transition-all dark:bg-slate-800 dark:border-slate-700">
+              <a href="./services-education-english.html" class="block">
+                <div class="img-ph flex items-end px-5 py-3" style="height:200px;" role="img" aria-label="International students studying English in a college classroom">
+                  <span class="font-mono text-gray-400 text-xs dark:text-slate-400">[IMAGE: Adult international students studying English in group]</span>
+                </div>
+                <div class="p-7">
+                  <h3 class="text-pretty text-lg font-bold text-gray-900 mb-3 dark:text-slate-100">I need to build my English or bridge to university</h3>
+                  <p class="text-pretty text-gray-600 text-sm leading-relaxed mb-4 dark:text-slate-400">Not quite at university entry level yet? English language courses (10–30 weeks) and foundation programs build the academic skills and IELTS scores that open the door.</p>
+                  <a href="./services-education-english.html" class="text-blue-600 font-semibold text-sm hover:underline dark:text-blue-400">Learn more →</a>
+                </div>
+              </a>
+            </article>
+
+            <!-- VET / TAFE -->
+            <article class="bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm hover:shadow-md hover:border-blue-300 transition-all dark:bg-slate-800 dark:border-slate-700">
+              <a href="./services-education-vet.html" class="block">
+                <div class="img-ph flex items-end px-5 py-3" style="height:200px;" role="img" aria-label="TAFE student working in a vocational training workshop">
+                  <span class="font-mono text-gray-400 text-xs dark:text-slate-400">[IMAGE: TAFE student in hands-on workshop, safety glasses]</span>
+                </div>
+                <div class="p-7">
+                  <h3 class="text-pretty text-lg font-bold text-gray-900 mb-3 dark:text-slate-100">I want a practical, career-focused qualification</h3>
+                  <p class="text-pretty text-gray-600 text-sm leading-relaxed mb-4 dark:text-slate-400">Certificates through to Advanced Diplomas — practical, industry-recognised qualifications. Many sit directly on Australia's skilled migration lists.</p>
+                  <a href="./services-education-vet.html" class="text-blue-600 font-semibold text-sm hover:underline dark:text-blue-400">Learn more →</a>
+                </div>
+              </a>
+            </article>
+
+            <!-- University -->
+            <article class="bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm hover:shadow-md hover:border-blue-300 transition-all dark:bg-slate-800 dark:border-slate-700">
+              <a href="./services-education-university.html" class="block">
+                <div class="img-ph flex items-end px-5 py-3" style="height:200px;" role="img" aria-label="International student walking on Australian university campus">
+                  <span class="font-mono text-gray-400 text-xs dark:text-slate-400">[IMAGE: International student on Perth university campus, sunny]</span>
+                </div>
+                <div class="p-7">
+                  <h3 class="text-pretty text-lg font-bold text-gray-900 mb-3 dark:text-slate-100">I'm applying for a Bachelor's, Master's, or PhD</h3>
+                  <p class="text-pretty text-gray-600 text-sm leading-relaxed mb-4 dark:text-slate-400">Bachelor, Master, and Doctoral programs across seven globally ranked Australian universities. Graduates receive 2–4 years of post-study work rights.</p>
+                  <a href="./services-education-university.html" class="text-blue-600 font-semibold text-sm hover:underline dark:text-blue-400">Learn more →</a>
+                </div>
+              </a>
+            </article>
+
+          </div>
+        </section>
+
+        <!-- ══════════════════════════════════════════════════
+             §4  THE PLACEMENT PROCESS
+        ══════════════════════════════════════════════════ -->
+        <div class="wf-bar">§4 · The Placement Process — vertical timeline, 5 numbered steps</div>
+        <section aria-labelledby="process-h" class="px-16 py-16 bg-white dark:bg-slate-800">
+          <h2 id="process-h" class="text-pretty text-3xl font-bold text-gray-900 mb-12 text-center dark:text-slate-100">The Placement Process</h2>
+          <div class="max-w-2xl mx-auto space-y-0">
+
+            <div class="flex gap-6">
+              <div class="flex flex-col items-center">
+                <div class="w-10 h-10 bg-blue-700 text-white rounded-full flex items-center justify-center font-bold text-sm shrink-0">1</div>
+                <div class="w-0.5 bg-blue-200 flex-1 my-2"></div>
+              </div>
+              <div class="pb-10">
+                <h3 class="text-pretty font-bold text-gray-900 text-lg mb-1 dark:text-slate-100">Discovery Session</h3>
+                <p class="text-pretty text-gray-600 text-sm leading-relaxed dark:text-slate-400">We assess your background, goals, and eligibility. One conversation to understand where you're starting from and where you want to end up.</p>
+              </div>
+            </div>
+
+            <div class="flex gap-6">
+              <div class="flex flex-col items-center">
+                <div class="w-10 h-10 bg-blue-700 text-white rounded-full flex items-center justify-center font-bold text-sm shrink-0">2</div>
+                <div class="w-0.5 bg-blue-200 flex-1 my-2"></div>
+              </div>
+              <div class="pb-10">
+                <h3 class="text-pretty font-bold text-gray-900 text-lg mb-1 dark:text-slate-100">Pathway Recommendation</h3>
+                <p class="text-pretty text-gray-600 text-sm leading-relaxed dark:text-slate-400">You receive a shortlist of institutions and programs matched to your career and migration goals — with a clear explanation of why each one fits.</p>
+              </div>
+            </div>
+
+            <div class="flex gap-6">
+              <div class="flex flex-col items-center">
+                <div class="w-10 h-10 bg-blue-700 text-white rounded-full flex items-center justify-center font-bold text-sm shrink-0">3</div>
+                <div class="w-0.5 bg-blue-200 flex-1 my-2"></div>
+              </div>
+              <div class="pb-10">
+                <h3 class="text-pretty font-bold text-gray-900 text-lg mb-1 dark:text-slate-100">Application &amp; Enrolment</h3>
+                <p class="text-pretty text-gray-600 text-sm leading-relaxed dark:text-slate-400">We prepare your documents, lodge applications, and secure your offer and enrolment confirmation.</p>
+              </div>
+            </div>
+
+            <div class="flex gap-6">
+              <div class="flex flex-col items-center">
+                <div class="w-10 h-10 bg-blue-700 text-white rounded-full flex items-center justify-center font-bold text-sm shrink-0">4</div>
+                <div class="w-0.5 bg-blue-200 flex-1 my-2"></div>
+              </div>
+              <div class="pb-10">
+                <h3 class="text-pretty font-bold text-gray-900 text-lg mb-1 dark:text-slate-100">Visa &amp; Pre-Departure</h3>
+                <p class="text-pretty text-gray-600 text-sm leading-relaxed dark:text-slate-400">Student visa, accommodation, health insurance, arrival orientation. All coordinated in one place.</p>
+              </div>
+            </div>
+
+            <div class="flex gap-6">
+              <div class="flex flex-col items-center">
+                <div class="w-10 h-10 bg-blue-700 text-white rounded-full flex items-center justify-center font-bold text-sm shrink-0">5</div>
+              </div>
+              <div class="pb-4">
+                <h3 class="text-pretty font-bold text-gray-900 text-lg mb-1 dark:text-slate-100">Ongoing Support</h3>
+                <p class="text-pretty text-gray-600 text-sm leading-relaxed dark:text-slate-400">Academic guidance, welfare monitoring, and career planning for as long as you're studying.</p>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- ══════════════════════════════════════════════════
+             §5  ADMISSION SNAPSHOT
+        ══════════════════════════════════════════════════ -->
+        <div class="wf-bar">§5 · Admission Snapshot — clean reference table</div>
+        <section aria-labelledby="admission-h" class="px-16 py-16 bg-gray-50 dark:bg-slate-900">
+          <h2 id="admission-h" class="text-pretty text-3xl font-bold text-gray-900 mb-8 dark:text-slate-100">Admission Snapshot</h2>
+          <div class="overflow-hidden border border-gray-200 rounded-xl dark:border-slate-700">
+            <table class="w-full text-sm">
+              <thead>
+                <tr class="bg-gray-100 dark:bg-slate-800">
+                  <th class="px-6 py-4 text-left font-semibold text-gray-700 dark:text-slate-300">Program Level</th>
+                  <th class="px-6 py-4 text-left font-semibold text-gray-700 dark:text-slate-300">IELTS</th>
+                  <th class="px-6 py-4 text-left font-semibold text-gray-700 dark:text-slate-300">Duration</th>
+                  <th class="px-6 py-4 text-left font-semibold text-gray-700 dark:text-slate-300">Post-Study Work Visa</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-gray-200 bg-white dark:bg-slate-800">
+                <tr><td class="px-6 py-4 text-gray-800 font-medium dark:text-slate-200">Foundation</td><td class="px-6 py-4 text-gray-600 dark:text-slate-400">5.0 – 5.5</td><td class="px-6 py-4 text-gray-600 dark:text-slate-400">6–12 months</td><td class="px-6 py-4 text-gray-500 dark:text-slate-500">—</td></tr>
+                <tr class="bg-gray-50 dark:bg-slate-900"><td class="px-6 py-4 text-gray-800 font-medium dark:text-slate-200">VET/TAFE</td><td class="px-6 py-4 text-gray-600 dark:text-slate-400">5.5 – 6.0</td><td class="px-6 py-4 text-gray-600 dark:text-slate-400">6 months–2yr</td><td class="px-6 py-4 text-gray-600 dark:text-slate-400">18 months (if eligible)</td></tr>
+                <tr><td class="px-6 py-4 text-gray-800 font-medium dark:text-slate-200">Bachelor Degree</td><td class="px-6 py-4 text-gray-600 dark:text-slate-400">6.5</td><td class="px-6 py-4 text-gray-600 dark:text-slate-400">3–4 years</td><td class="px-6 py-4 font-semibold text-blue-700 dark:text-blue-300">2 years</td></tr>
+                <tr class="bg-gray-50 dark:bg-slate-900"><td class="px-6 py-4 text-gray-800 font-medium dark:text-slate-200">Master Degree</td><td class="px-6 py-4 text-gray-600 dark:text-slate-400">6.5 – 7.0</td><td class="px-6 py-4 text-gray-600 dark:text-slate-400">1–2 years</td><td class="px-6 py-4 font-semibold text-blue-700 dark:text-blue-300">3 years</td></tr>
+                <tr><td class="px-6 py-4 text-gray-800 font-medium dark:text-slate-200">Doctoral</td><td class="px-6 py-4 text-gray-600 dark:text-slate-400">6.5 – 7.0</td><td class="px-6 py-4 text-gray-600 dark:text-slate-400">3–4 years</td><td class="px-6 py-4 font-semibold text-blue-700 dark:text-blue-300">4 years</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="text-pretty text-sm text-gray-500 mt-4 leading-relaxed dark:text-slate-500">Think of entry requirements as a starting point, not a ceiling. There's almost always more than one way in.</p>
+          <p class="text-pretty text-xs text-gray-400 mt-2 leading-relaxed italic dark:text-slate-400">VET post-study work rights (Graduate Work Stream, Subclass 485, 18 months) are available to graduates whose qualification and occupation appear on a skilled occupation list. Eligibility depends on course and occupation — your advisor will confirm during assessment.</p>
+          <div class="mt-5">
+            <a href="./admission-requirements.html" class="text-blue-600 font-semibold text-sm hover:underline dark:text-blue-400">See full admission requirements →</a>
+          </div>
+        </section>
+
+        <!-- ══════════════════════════════════════════════════
+             §6  CTA BANNER
+        ══════════════════════════════════════════════════ -->
+        <div class="wf-bar">§6 · CTA Banner</div>
+        <section aria-labelledby="cta-h" class="py-16 px-8 text-center" style="background:#1e3a5f;">
+          <h2 id="cta-h" class="text-pretty text-4xl font-bold text-white mb-4">Know what you want to study. Not sure how to get there?</h2>
+          <p class="text-pretty text-lg mb-8 mx-auto" style="color:#93c5fd; max-width:540px;">We review your background, map your options, and tell you exactly what the pathway looks like — in one conversation.</p>
+          <div class="flex gap-4 justify-center">
+            <a href="./contact.html" class="bg-white font-bold px-8 py-3 rounded text-base hover:bg-gray-100 dark:bg-slate-800" style="color:#1e3a5f;">Book an Education Assessment</a>
+            <a href="tel:+61863810030" class="border-2 border-white text-white font-semibold px-8 py-3 rounded text-base">Call +61 8 6381 0030</a>
+          </div>
+        </section>
+
+      </main>
+
+      <div id="footer-placeholder"></div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         MOBILE CANVAS — 390px
+    ═══════════════════════════════════════════════════════════════ -->
+    <div style="width:390px; background:var(--base); color:var(--base-foreground);" class="shadow-2xl shrink-0 sticky top-8">
+      <div class="flex items-center justify-between px-4 py-2 border-b-2 border-amber-300 bg-amber-50 dark:border-amber-800 dark:bg-amber-950">
+        <span class="font-bold text-amber-800 tracking-widest text-xs dark:text-amber-200">WIREFRAME</span>
+        <span class="text-amber-600 font-mono" style="font-size:8px;">Mobile 390px</span>
+      </div>
+
+      <div id="nav-placeholder-m"></div>
+
+      <main>
+
+        <!-- §1 Hero -->
+        <div class="wf-bar">§1 · Hero</div>
+        <section class="img-ph relative" style="height:300px; background-color:#374151;">
+          <div class="absolute inset-0" style="background:rgba(17,24,39,0.65);"></div>
+          <div class="relative z-10 flex flex-col justify-end h-full px-4 pb-8">
+            <nav aria-label="Breadcrumb" class="mb-3">
+              <ol class="flex items-center gap-1 text-xs text-gray-300 dark:text-slate-500">
+                <li><a href="./index.html" class="hover:underline">Home</a></li>
+                <li>/</li>
+                <li><a href="./services.html" class="hover:underline">Services</a></li>
+                <li>/</li>
+                <li class="text-white">Education</li>
+              </ol>
+            </nav>
+            <h1 class="text-pretty text-2xl font-bold text-white mb-3 leading-tight">Australia has 1,100+ institutions. Finding the right one takes more than a Google search.</h1>
+            <p class="text-pretty text-sm text-gray-300 dark:text-slate-500">We've been navigating this system since 1998.</p>
+          </div>
+        </section>
+
+        <!-- §2 How We Help -->
+        <div class="wf-bar">§2 · How We Help</div>
+        <section class="px-4 py-8 bg-white dark:bg-slate-800">
+          <h2 class="text-pretty text-xl font-bold text-gray-900 mb-4 dark:text-slate-100">How We Help</h2>
+          <div class="img-ph rounded-lg mb-5 flex items-center justify-center" style="height:180px;" role="img" aria-label="Counselor with student in meeting">
+            <span class="font-mono text-gray-400 text-xs dark:text-slate-400">[IMAGE: Counselor with student]</span>
+          </div>
+          <p class="text-pretty text-sm text-gray-600 leading-relaxed mb-3 dark:text-slate-400">Choosing where and what to study in Australia isn't just an education decision — it's a career decision, a migration decision, and a life decision.</p>
+          <p class="text-pretty text-sm text-gray-600 leading-relaxed dark:text-slate-400">Your advisor maps institutions against two questions: what career do you want, and what does your visa pathway look like? The course recommendation comes after that.</p>
+        </section>
+
+        <!-- §3 Education Pathways -->
+        <div class="wf-bar">§3 · Education Pathways</div>
+        <section class="px-4 py-8 bg-gray-50 dark:bg-slate-900">
+          <h2 class="text-pretty text-xl font-bold text-gray-900 mb-6 dark:text-slate-100">Which describes your situation?</h2>
+          <div class="space-y-5">
+
+            <article class="bg-white border border-gray-200 rounded-xl overflow-hidden dark:bg-slate-800 dark:border-slate-700">
+              <a href="./services-education-school.html" class="block">
+                <div class="img-ph flex items-end px-4 py-2" style="height:130px;" role="img" aria-label="Student in Australian classroom">
+                  <span class="font-mono text-gray-400 text-xs dark:text-slate-400">[IMAGE: Student in Australian classroom]</span>
+                </div>
+                <div class="p-5">
+                  <h3 class="text-pretty font-bold text-gray-900 text-sm mb-2 dark:text-slate-100">I'm enrolling a child in school</h3>
+                  <p class="text-pretty text-xs text-gray-600 mb-2 dark:text-slate-400">For students aged 5–18. School selection, accommodation, guardianship, and welfare.</p>
+                  <span class="text-blue-600 text-xs font-semibold dark:text-blue-400">Learn more →</span>
+                </div>
+              </a>
+            </article>
+
+            <article class="bg-white border border-gray-200 rounded-xl overflow-hidden dark:bg-slate-800 dark:border-slate-700">
+              <a href="./services-education-english.html" class="block">
+                <div class="img-ph flex items-end px-4 py-2" style="height:130px;" role="img" aria-label="Students studying English">
+                  <span class="font-mono text-gray-400 text-xs dark:text-slate-400">[IMAGE: English class group study]</span>
+                </div>
+                <div class="p-5">
+                  <h3 class="text-pretty font-bold text-gray-900 text-sm mb-2 dark:text-slate-100">I need English or foundation preparation</h3>
+                  <p class="text-pretty text-xs text-gray-600 mb-2 dark:text-slate-400">ELICOS courses (10–30 weeks) and foundation programs to reach university entry.</p>
+                  <span class="text-blue-600 text-xs font-semibold dark:text-blue-400">Learn more →</span>
+                </div>
+              </a>
+            </article>
+
+            <article class="bg-white border border-gray-200 rounded-xl overflow-hidden dark:bg-slate-800 dark:border-slate-700">
+              <a href="./services-education-vet.html" class="block">
+                <div class="img-ph flex items-end px-4 py-2" style="height:130px;" role="img" aria-label="TAFE student in workshop">
+                  <span class="font-mono text-gray-400 text-xs dark:text-slate-400">[IMAGE: TAFE workshop]</span>
+                </div>
+                <div class="p-5">
+                  <h3 class="text-pretty font-bold text-gray-900 text-sm mb-2 dark:text-slate-100">I want a practical career qualification</h3>
+                  <p class="text-pretty text-xs text-gray-600 mb-2 dark:text-slate-400">Certificates to Advanced Diplomas. Many on Australia's skilled migration lists.</p>
+                  <span class="text-blue-600 text-xs font-semibold dark:text-blue-400">Learn more →</span>
+                </div>
+              </a>
+            </article>
+
+            <article class="bg-white border border-gray-200 rounded-xl overflow-hidden dark:bg-slate-800 dark:border-slate-700">
+              <a href="./services-education-university.html" class="block">
+                <div class="img-ph flex items-end px-4 py-2" style="height:130px;" role="img" aria-label="University campus Perth">
+                  <span class="font-mono text-gray-400 text-xs dark:text-slate-400">[IMAGE: University campus Perth]</span>
+                </div>
+                <div class="p-5">
+                  <h3 class="text-pretty font-bold text-gray-900 text-sm mb-2 dark:text-slate-100">I'm applying for a Bachelor's, Master's, or PhD</h3>
+                  <p class="text-pretty text-xs text-gray-600 mb-2 dark:text-slate-400">Seven globally ranked Australian universities. 2–4 years post-study work rights.</p>
+                  <span class="text-blue-600 text-xs font-semibold dark:text-blue-400">Learn more →</span>
+                </div>
+              </a>
+            </article>
+          </div>
+        </section>
+
+        <!-- §4 Placement Process -->
+        <div class="wf-bar">§4 · Placement Process</div>
+        <section class="px-4 py-8 bg-white dark:bg-slate-800">
+          <h2 class="text-pretty text-xl font-bold text-gray-900 mb-6 dark:text-slate-100">The Placement Process</h2>
+          <div class="space-y-0">
+            <div class="flex gap-4 pb-6">
+              <div class="flex flex-col items-center">
+                <div class="w-8 h-8 bg-blue-700 text-white rounded-full flex items-center justify-center text-xs font-bold shrink-0">1</div>
+                <div class="w-0.5 bg-blue-200 flex-1 mt-2"></div>
+              </div>
+              <div>
+                <h3 class="text-pretty font-bold text-gray-900 text-sm mb-1 dark:text-slate-100">Discovery Session</h3>
+                <p class="text-pretty text-xs text-gray-600 dark:text-slate-400">We assess your background, goals, and eligibility in one conversation.</p>
+              </div>
+            </div>
+            <div class="flex gap-4 pb-6">
+              <div class="flex flex-col items-center">
+                <div class="w-8 h-8 bg-blue-700 text-white rounded-full flex items-center justify-center text-xs font-bold shrink-0">2</div>
+                <div class="w-0.5 bg-blue-200 flex-1 mt-2"></div>
+              </div>
+              <div>
+                <h3 class="text-pretty font-bold text-gray-900 text-sm mb-1 dark:text-slate-100">Pathway Recommendation</h3>
+                <p class="text-pretty text-xs text-gray-600 dark:text-slate-400">Shortlist of institutions matched to your career and migration goals.</p>
+              </div>
+            </div>
+            <div class="flex gap-4 pb-6">
+              <div class="flex flex-col items-center">
+                <div class="w-8 h-8 bg-blue-700 text-white rounded-full flex items-center justify-center text-xs font-bold shrink-0">3</div>
+                <div class="w-0.5 bg-blue-200 flex-1 mt-2"></div>
+              </div>
+              <div>
+                <h3 class="text-pretty font-bold text-gray-900 text-sm mb-1 dark:text-slate-100">Application &amp; Enrolment</h3>
+                <p class="text-pretty text-xs text-gray-600 dark:text-slate-400">Documents prepared, applications lodged, offer secured.</p>
+              </div>
+            </div>
+            <div class="flex gap-4 pb-6">
+              <div class="flex flex-col items-center">
+                <div class="w-8 h-8 bg-blue-700 text-white rounded-full flex items-center justify-center text-xs font-bold shrink-0">4</div>
+                <div class="w-0.5 bg-blue-200 flex-1 mt-2"></div>
+              </div>
+              <div>
+                <h3 class="text-pretty font-bold text-gray-900 text-sm mb-1 dark:text-slate-100">Visa &amp; Pre-Departure</h3>
+                <p class="text-pretty text-xs text-gray-600 dark:text-slate-400">Student visa, accommodation, health insurance, arrival orientation.</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <div class="w-8 h-8 bg-blue-700 text-white rounded-full flex items-center justify-center text-xs font-bold shrink-0">5</div>
+              <div>
+                <h3 class="text-pretty font-bold text-gray-900 text-sm mb-1 dark:text-slate-100">Ongoing Support</h3>
+                <p class="text-pretty text-xs text-gray-600 dark:text-slate-400">Academic guidance, welfare monitoring, and career planning.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- §5 Admission Snapshot -->
+        <div class="wf-bar">§5 · Admission Snapshot</div>
+        <section class="px-4 py-8 bg-gray-50 dark:bg-slate-900">
+          <h2 class="text-pretty text-xl font-bold text-gray-900 mb-5 dark:text-slate-100">Admission Snapshot</h2>
+          <div class="space-y-3">
+            <div class="bg-white border border-gray-200 rounded-lg p-4 dark:bg-slate-800 dark:border-slate-700">
+              <p class="text-pretty font-semibold text-gray-900 text-sm dark:text-slate-100">Foundation</p>
+              <p class="text-pretty text-xs text-gray-600 dark:text-slate-400">IELTS 5.0–5.5 · 6–12 months · No post-study work visa</p>
+            </div>
+            <div class="bg-white border border-gray-200 rounded-lg p-4 dark:bg-slate-800 dark:border-slate-700">
+              <p class="text-pretty font-semibold text-gray-900 text-sm dark:text-slate-100">VET/TAFE</p>
+              <p class="text-pretty text-xs text-gray-600 dark:text-slate-400">IELTS 5.5–6.0 · 6mo–2yr · 18 months (if eligible)</p>
+            </div>
+            <div class="bg-white border border-blue-200 rounded-lg p-4 dark:bg-slate-800 dark:border-blue-800">
+              <p class="text-pretty font-semibold text-gray-900 text-sm dark:text-slate-100">Bachelor Degree</p>
+              <p class="text-pretty text-xs text-gray-600 dark:text-slate-400">IELTS 6.5 · 3–4 years · <span class="font-semibold text-blue-700 dark:text-blue-300">2 years post-study</span></p>
+            </div>
+            <div class="bg-white border border-blue-200 rounded-lg p-4 dark:bg-slate-800 dark:border-blue-800">
+              <p class="text-pretty font-semibold text-gray-900 text-sm dark:text-slate-100">Master Degree</p>
+              <p class="text-pretty text-xs text-gray-600 dark:text-slate-400">IELTS 6.5–7.0 · 1–2 years · <span class="font-semibold text-blue-700 dark:text-blue-300">3 years post-study</span></p>
+            </div>
+            <div class="bg-white border border-blue-200 rounded-lg p-4 dark:bg-slate-800 dark:border-blue-800">
+              <p class="text-pretty font-semibold text-gray-900 text-sm dark:text-slate-100">Doctoral</p>
+              <p class="text-pretty text-xs text-gray-600 dark:text-slate-400">IELTS 6.5–7.0 · 3–4 years · <span class="font-semibold text-blue-700 dark:text-blue-300">4 years post-study</span></p>
+            </div>
+          </div>
+          <a href="./admission-requirements.html" class="text-blue-600 text-sm font-semibold mt-4 block hover:underline dark:text-blue-400">See full admission requirements →</a>
+        </section>
+
+        <!-- §6 CTA -->
+        <div class="wf-bar">§6 · CTA Banner</div>
+        <section class="py-12 px-4 text-center" style="background:#1e3a5f;">
+          <h2 class="text-pretty text-2xl font-bold text-white mb-3">Know what you want to study. Not sure how to get there?</h2>
+          <p class="text-pretty text-sm mb-6" style="color:#93c5fd;">We review your background and tell you exactly what the pathway looks like — in one conversation.</p>
+          <div class="space-y-3">
+            <a href="./contact.html" class="block bg-white font-bold px-6 py-3 rounded text-sm dark:bg-slate-800" style="color:#1e3a5f;">Book an Education Assessment</a>
+            <a href="tel:+61863810030" class="block border-2 border-white text-white font-semibold px-6 py-3 rounded text-sm">Call +61 8 6381 0030</a>
+          </div>
+        </section>
+
+      </main>
+
+      <div id="footer-placeholder-m"></div>
+    </div>
+
+  </div>
+  <script src="./assets/site.js"></script>
+</body>
+</html>

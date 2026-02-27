@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Blue Education Wireframe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/tokens.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: { extend: {
+        colors: {
+          primary:   { DEFAULT: 'var(--primary)',   foreground: 'var(--primary-foreground)' },
+          secondary: { DEFAULT: 'var(--secondary)', foreground: 'var(--secondary-foreground)' },
+          base:      { DEFAULT: 'var(--base)',      foreground: 'var(--base-foreground)' },
+          muted:     { DEFAULT: 'var(--muted)',     foreground: 'var(--muted-foreground)' },
+        },
+        borderRadius: {
+          corner: 'var(--corner)', 'corner-lg': 'var(--corner-lg)', 'corner-full': 'var(--corner-full)',
+        },
+        fontFamily: { sans: ['Inter', 'sans-serif'] },
+      }}
+    }
+  </script>
+  <style>
+    .img-ph {
+      background-color: #d1d5db;
+      background-image: repeating-linear-gradient(-55deg, transparent, transparent 8px, rgba(0,0,0,0.04) 8px, rgba(0,0,0,0.04) 9px);
+    }
+    .wf-bar {
+      font-family: 'Courier New', monospace; font-size: 9px; font-weight: bold;
+      text-transform: uppercase; letter-spacing: 0.12em; color: #3b82f6; background: #eff6ff;
+      border-top: 1px solid #bfdbfe; border-bottom: 1px solid #bfdbfe; padding: 4px 32px;
+    }
+  </style>
+</head>
+<body class="bg-neutral-300 py-8 font-sans">
+  <div class="flex gap-8 items-start mx-auto px-8" style="width: max-content;">
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         DESKTOP CANVAS — 1280px
+    ═══════════════════════════════════════════════════════════════ -->
+    <div style="width:1280px; background:var(--base); color:var(--base-foreground);" class="shadow-2xl shrink-0">
+
+      <!-- Wireframe notice bar -->
+      <div class="flex items-center justify-between px-8 py-2 border-b-2 border-amber-300 bg-amber-50 dark:border-amber-800 dark:bg-amber-950">
+        <div class="flex items-center gap-3">
+          <span class="font-bold text-amber-800 tracking-widest text-sm dark:text-amber-200">WIREFRAME</span>
+          <span class="text-amber-700 text-sm dark:text-amber-300">·  Blue Education  ·  Contact  ·  Desktop 1280px</span>
+        </div>
+        <span class="text-amber-500 font-mono text-xs dark:text-amber-400">Layout &amp; copy reference — not final design</span>
+      </div>
+
+      <div id="nav-placeholder"></div>
+
+      <main id="main-content">
+
+        <!-- ══════════════════════════════════════════════════
+             §1  HERO
+        ══════════════════════════════════════════════════ -->
+        <div class="wf-bar">§1 · Hero — Centered, minimal, warm background</div>
+        <section aria-labelledby="hero-h" class="py-20 px-16 text-center" style="background:#f0f6ff;">
+          <nav aria-label="Breadcrumb" class="mb-6">
+            <ol class="flex items-center justify-center gap-2 text-sm text-gray-500 dark:text-slate-500">
+              <li><a href="./index.html" class="hover:underline text-blue-600 dark:text-blue-400">Home</a></li>
+              <li aria-hidden="true">/</li>
+              <li class="text-gray-700 font-medium dark:text-slate-300">Contact</li>
+            </ol>
+          </nav>
+          <h1 id="hero-h" class="text-pretty text-5xl font-bold text-gray-900 mb-5 dark:text-slate-100">Contact Blue Education</h1>
+          <p class="text-pretty text-xl text-gray-600 mx-auto dark:text-slate-400" style="max-width:560px;">We respond to all enquiries within one business day.</p>
+        </section>
+
+        <!-- ══════════════════════════════════════════════════
+             §2  CONTACT METHODS
+        ══════════════════════════════════════════════════ -->
+        <div class="wf-bar">§2 · Contact Methods — 3 cards: Phone, Email, Office</div>
+        <section aria-labelledby="contact-methods-h" class="px-16 py-14 bg-white dark:bg-slate-800">
+          <h2 id="contact-methods-h" class="text-pretty sr-only">Contact Methods</h2>
+          <div class="grid grid-cols-3 gap-6">
+
+            <!-- Phone -->
+            <article class="border border-gray-200 rounded-lg p-8 text-center bg-gray-50 dark:border-slate-700 dark:bg-slate-900">
+              <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-5 dark:bg-blue-900">
+                <span class="font-mono text-blue-600 text-xs font-bold dark:text-blue-400">[phone]</span>
+              </div>
+              <h3 class="text-pretty text-lg font-bold text-gray-900 mb-4 dark:text-slate-100">Phone</h3>
+              <div class="space-y-3 text-sm text-gray-700 dark:text-slate-300">
+                <div>
+                  <p class="text-pretty font-semibold text-gray-900 dark:text-slate-100"><a href="tel:+61863810030" class="hover:underline text-blue-700 dark:text-blue-300">+61 8 6381 0030</a></p>
+                  <p class="text-pretty text-gray-500 dark:text-slate-500">Office</p>
+                </div>
+                <div>
+                  <p class="text-pretty font-semibold text-gray-900 dark:text-slate-100"><a href="tel:+61411708899" class="hover:underline text-blue-700 dark:text-blue-300">+61 411 708 899</a></p>
+                  <p class="text-pretty text-gray-500 dark:text-slate-500">Mobile / WhatsApp</p>
+                </div>
+                <div>
+                  <p class="text-pretty font-semibold text-gray-900 dark:text-slate-100"><a href="tel:1300040696" class="hover:underline text-blue-700 dark:text-blue-300">1300 040 696</a></p>
+                  <p class="text-pretty text-gray-500 dark:text-slate-500">Australia-wide</p>
+                </div>
+              </div>
+            </article>
+
+            <!-- Email -->
+            <article class="border border-gray-200 rounded-lg p-8 text-center bg-gray-50 dark:border-slate-700 dark:bg-slate-900">
+              <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-5 dark:bg-blue-900">
+                <span class="font-mono text-blue-600 text-xs font-bold dark:text-blue-400">[mail]</span>
+              </div>
+              <h3 class="text-pretty text-lg font-bold text-gray-900 mb-4 dark:text-slate-100">Email</h3>
+              <p class="text-pretty font-semibold text-blue-700 mb-2 dark:text-blue-300"><a href="mailto:info@blueeducation.com.au" class="hover:underline">info@blueeducation.com.au</a></p>
+              <p class="text-pretty text-sm text-gray-500 dark:text-slate-500">We respond within one business day.</p>
+            </article>
+
+            <!-- Office -->
+            <article class="border border-gray-200 rounded-lg p-8 text-center bg-gray-50 dark:border-slate-700 dark:bg-slate-900">
+              <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-5 dark:bg-blue-900">
+                <span class="font-mono text-blue-600 text-xs font-bold dark:text-blue-400">[pin]</span>
+              </div>
+              <h3 class="text-pretty text-lg font-bold text-gray-900 mb-4 dark:text-slate-100">Office</h3>
+              <address class="text-sm text-gray-700 not-italic leading-relaxed dark:text-slate-300">
+                33 Barrack St, GF Unit 2<br/>
+                Perth, Western Australia 6000
+              </address>
+            </article>
+
+          </div>
+        </section>
+
+        <!-- ══════════════════════════════════════════════════
+             §3  CONTACT FORM
+        ══════════════════════════════════════════════════ -->
+        <div class="wf-bar">§3 · Contact Form — 60/40 split: form left, map + photo right</div>
+        <section aria-labelledby="form-h" class="px-16 py-14 bg-gray-50 dark:bg-slate-900">
+          <h2 id="form-h" class="text-pretty text-3xl font-bold text-gray-900 mb-10 dark:text-slate-100">Send an Enquiry</h2>
+          <div class="flex gap-10">
+
+            <!-- Form — 60% -->
+            <div style="flex:3;">
+              <form class="space-y-5" novalidate>
+                <div class="grid grid-cols-2 gap-5">
+                  <div>
+                    <label for="full-name" class="block text-sm font-medium text-gray-700 mb-1 dark:text-slate-300">Full Name <span class="text-red-500">*</span></label>
+                    <input id="full-name" type="text" required placeholder="Jane Smith" class="w-full border border-gray-300 rounded px-3 py-2 text-sm bg-white dark:border-slate-700 dark:bg-slate-800" />
+                  </div>
+                  <div>
+                    <label for="email" class="block text-sm font-medium text-gray-700 mb-1 dark:text-slate-300">Email <span class="text-red-500">*</span></label>
+                    <input id="email" type="email" required placeholder="jane@example.com" class="w-full border border-gray-300 rounded px-3 py-2 text-sm bg-white dark:border-slate-700 dark:bg-slate-800" />
+                  </div>
+                </div>
+                <div class="grid grid-cols-2 gap-5">
+                  <div>
+                    <label for="phone" class="block text-sm font-medium text-gray-700 mb-1 dark:text-slate-300">Phone Number</label>
+                    <input id="phone" type="tel" placeholder="+1 555 000 0000" class="w-full border border-gray-300 rounded px-3 py-2 text-sm bg-white dark:border-slate-700 dark:bg-slate-800" />
+                  </div>
+                  <div>
+                    <label for="country" class="block text-sm font-medium text-gray-700 mb-1 dark:text-slate-300">Country of Residence</label>
+                    <input id="country" type="text" placeholder="Japan" class="w-full border border-gray-300 rounded px-3 py-2 text-sm bg-white dark:border-slate-700 dark:bg-slate-800" />
+                  </div>
+                </div>
+                <div class="grid grid-cols-2 gap-5">
+                  <div>
+                    <label for="enquiry-type" class="block text-sm font-medium text-gray-700 mb-1 dark:text-slate-300">Enquiry Type</label>
+                    <select id="enquiry-type" class="w-full border border-gray-300 rounded px-3 py-2 text-sm bg-white dark:border-slate-700 dark:bg-slate-800">
+                      <option value="">Select…</option>
+                      <option>Education</option>
+                      <option>Migration</option>
+                      <option>Career</option>
+                      <option>Student Support</option>
+                      <option>Other</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label for="language" class="block text-sm font-medium text-gray-700 mb-1 dark:text-slate-300">Preferred Language</label>
+                    <select id="language" class="w-full border border-gray-300 rounded px-3 py-2 text-sm bg-white dark:border-slate-700 dark:bg-slate-800">
+                      <option value="">Select…</option>
+                      <option>English</option>
+                      <option>Cantonese</option>
+                      <option>Mandarin</option>
+                      <option>Bahasa</option>
+                      <option>Malay</option>
+                      <option>Hindi</option>
+                      <option>Indonesian</option>
+                      <option>Japanese</option>
+                      <option>Other</option>
+                    </select>
+                  </div>
+                </div>
+                <div>
+                  <label for="message" class="block text-sm font-medium text-gray-700 mb-1 dark:text-slate-300">Message</label>
+                  <textarea id="message" rows="5" placeholder="Tell us about your situation and what you're hoping to achieve…" class="w-full border border-gray-300 rounded px-3 py-2 text-sm bg-white resize-y dark:border-slate-700 dark:bg-slate-800"></textarea>
+                </div>
+                <div>
+                  <button type="submit" class="bg-blue-700 text-white font-semibold px-8 py-3 rounded text-sm hover:bg-blue-800">Send Enquiry</button>
+                </div>
+              </form>
+            </div>
+
+            <!-- Right — 40%: map + office photo -->
+            <div style="flex:2;" class="space-y-5">
+              <div class="img-ph rounded-lg flex items-center justify-center" style="height:260px;">
+                <span class="font-mono text-gray-500 text-xs text-center px-4 dark:text-slate-500">[Google Maps embed — 33 Barrack St, Perth WA 6000]</span>
+              </div>
+              <div class="img-ph rounded-lg flex items-center justify-center" role="img" aria-label="Blue Education office at 33 Barrack St Perth" style="height:180px;">
+                <span class="font-mono text-gray-500 text-xs dark:text-slate-500">[Office photo — 33 Barrack St]</span>
+              </div>
+              <div class="bg-white border border-gray-200 rounded p-4 text-sm text-gray-600 dark:bg-slate-800 dark:border-slate-700 dark:text-slate-400">
+                <p class="text-pretty font-semibold text-gray-800 mb-1 dark:text-slate-200">Blue Education</p>
+                <address class="not-italic leading-relaxed">33 Barrack St, GF Unit 2<br/>Perth WA 6000</address>
+                <p class="text-pretty mt-2"><a href="tel:+61863810030" class="text-blue-600 hover:underline dark:text-blue-400">+61 8 6381 0030</a></p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ══════════════════════════════════════════════════
+             §4  BOOK A CONSULTATION
+        ══════════════════════════════════════════════════ -->
+        <div class="wf-bar">§4 · Book a Consultation — highlight card, premium background</div>
+        <section aria-labelledby="booking-h" class="px-16 py-14 bg-white dark:bg-slate-800">
+          <div class="rounded-xl border-2 border-blue-100 bg-blue-50 p-12 max-w-3xl mx-auto text-center dark:bg-blue-950">
+            <h2 id="booking-h" class="text-pretty text-3xl font-bold text-gray-900 mb-4 dark:text-slate-100">Book a Consultation</h2>
+            <ul class="text-gray-600 mb-8 space-y-2 text-left inline-block dark:text-slate-400">
+              <li class="flex items-start gap-2"><span class="text-blue-500 font-bold mt-0.5">✓</span> Education, migration, or career guidance</li>
+              <li class="flex items-start gap-2"><span class="text-blue-500 font-bold mt-0.5">✓</span> English, Bahasa, Cantonese, Japanese, and more</li>
+              <li class="flex items-start gap-2"><span class="text-blue-500 font-bold mt-0.5">✓</span> In-person (Perth), phone, or video</li>
+            </ul>
+            <div>
+              <a href="./contact.html" class="inline-block bg-blue-700 text-white font-bold px-10 py-3 rounded text-base hover:bg-blue-800">Book a Consultation</a>
+              <p class="text-pretty font-mono text-gray-400 mt-3 dark:text-slate-400" style="font-size:10px;">[→ Calendly or booking widget]</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- ══════════════════════════════════════════════════
+             §5  INTERNATIONAL REPRESENTATIVES
+        ══════════════════════════════════════════════════ -->
+        <div class="wf-bar">§5 · International Representatives — table of regional contacts</div>
+        <section aria-labelledby="reps-h" class="px-16 py-14 bg-gray-50 dark:bg-slate-900">
+          <h2 id="reps-h" class="text-pretty text-3xl font-bold text-gray-900 mb-3 dark:text-slate-100">International Representatives</h2>
+          <p class="text-pretty text-gray-600 mb-8 dark:text-slate-400">For local support in your region, contact our international team or email <a href="mailto:info@blueeducation.com.au" class="text-blue-600 hover:underline dark:text-blue-400">info@blueeducation.com.au</a>.</p>
+          <div class="overflow-hidden border border-gray-200 rounded-lg dark:border-slate-700">
+            <table class="w-full text-sm">
+              <thead>
+                <tr class="bg-gray-100 text-left dark:bg-slate-800">
+                  <th class="px-6 py-3 font-semibold text-gray-700 dark:text-slate-300">Region</th>
+                  <th class="px-6 py-3 font-semibold text-gray-700 dark:text-slate-300">Representative</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-gray-200 bg-white dark:bg-slate-800">
+                <tr><td class="px-6 py-4 text-gray-800 dark:text-slate-200">Japan</td><td class="px-6 py-4 text-gray-700 dark:text-slate-300">Minami Sakamoto</td></tr>
+                <tr class="bg-gray-50 dark:bg-slate-900"><td class="px-6 py-4 text-gray-800 dark:text-slate-200">New Zealand</td><td class="px-6 py-4 text-gray-700 dark:text-slate-300">Sherene</td></tr>
+                <tr><td class="px-6 py-4 text-gray-800 dark:text-slate-200">Zambia / Africa</td><td class="px-6 py-4 text-gray-700 dark:text-slate-300">Elijah</td></tr>
+                <tr class="bg-gray-50 dark:bg-slate-900"><td class="px-6 py-4 text-gray-800 dark:text-slate-200">Indonesia</td><td class="px-6 py-4 text-gray-700 dark:text-slate-300">Hana</td></tr>
+                <tr><td class="px-6 py-4 text-gray-800 dark:text-slate-200">Malaysia</td><td class="px-6 py-4 text-gray-700 dark:text-slate-300">Elaine Ho &amp; Monica Low</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- WhatsApp floating widget notation -->
+        <div class="wf-bar">§6 · WhatsApp Floating Widget — fixed bottom-right (persistent across all pages)</div>
+        <div class="px-16 py-6 bg-white border-t border-gray-100 dark:bg-slate-800 dark:border-slate-800">
+          <div class="flex items-center gap-4">
+            <div class="w-14 h-14 rounded-full flex items-center justify-center font-bold text-white text-sm" style="background:#25d366;">[WA]</div>
+            <div>
+              <p class="text-pretty font-mono text-gray-500 text-xs dark:text-slate-500">FIXED BOTTOM-RIGHT — WhatsApp floating button</p>
+              <p class="text-pretty text-sm text-gray-700 dark:text-slate-300">Links to: <a href="tel:+61411708899" class="text-blue-600 dark:text-blue-400">+61 411 708 899</a> · WhatsApp green (#25D366) · Persistent on all pages</p>
+            </div>
+          </div>
+        </div>
+
+      </main>
+
+      <div id="footer-placeholder"></div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         MOBILE CANVAS — 390px
+    ═══════════════════════════════════════════════════════════════ -->
+    <div style="width:390px; background:var(--base); color:var(--base-foreground);" class="shadow-2xl shrink-0 sticky top-8">
+      <div class="flex items-center justify-between px-4 py-2 border-b-2 border-amber-300 bg-amber-50 dark:border-amber-800 dark:bg-amber-950">
+        <span class="font-bold text-amber-800 tracking-widest text-xs dark:text-amber-200">WIREFRAME</span>
+        <span class="text-amber-600 font-mono" style="font-size:8px;">Mobile 390px</span>
+      </div>
+
+      <div id="nav-placeholder-m"></div>
+
+      <main>
+
+        <!-- §1 Hero -->
+        <div class="wf-bar">§1 · Hero</div>
+        <section class="py-12 px-4 text-center" style="background:#f0f6ff;">
+          <nav aria-label="Breadcrumb" class="mb-4">
+            <ol class="flex items-center justify-center gap-1 text-xs text-gray-500 dark:text-slate-500">
+              <li><a href="./index.html" class="text-blue-600 dark:text-blue-400">Home</a></li>
+              <li>/</li>
+              <li class="text-gray-700 dark:text-slate-300">Contact</li>
+            </ol>
+          </nav>
+          <h1 class="text-pretty text-3xl font-bold text-gray-900 mb-3 dark:text-slate-100">Contact Blue Education</h1>
+          <p class="text-pretty text-base text-gray-600 dark:text-slate-400">We respond to all enquiries within one business day.</p>
+        </section>
+
+        <!-- §2 Contact Methods — stacked -->
+        <div class="wf-bar">§2 · Contact Methods</div>
+        <section class="px-4 py-8 bg-white space-y-4 dark:bg-slate-800">
+          <article class="border border-gray-200 rounded-lg p-5 text-center bg-gray-50 dark:border-slate-700 dark:bg-slate-900">
+            <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-3 dark:bg-blue-900">
+              <span class="font-mono text-blue-600 text-xs dark:text-blue-400">[phone]</span>
+            </div>
+            <h3 class="text-pretty font-bold text-gray-900 mb-2 text-sm dark:text-slate-100">Phone</h3>
+            <p class="text-pretty text-sm"><a href="tel:+61863810030" class="text-blue-700 font-medium dark:text-blue-300">+61 8 6381 0030</a> · Office</p>
+            <p class="text-pretty text-sm"><a href="tel:+61411708899" class="text-blue-700 font-medium dark:text-blue-300">+61 411 708 899</a> · Mobile/WhatsApp</p>
+            <p class="text-pretty text-sm"><a href="tel:1300040696" class="text-blue-700 font-medium dark:text-blue-300">1300 040 696</a> · Australia-wide</p>
+          </article>
+          <article class="border border-gray-200 rounded-lg p-5 text-center bg-gray-50 dark:border-slate-700 dark:bg-slate-900">
+            <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-3 dark:bg-blue-900">
+              <span class="font-mono text-blue-600 text-xs dark:text-blue-400">[mail]</span>
+            </div>
+            <h3 class="text-pretty font-bold text-gray-900 mb-2 text-sm dark:text-slate-100">Email</h3>
+            <p class="text-pretty text-sm font-medium text-blue-700 dark:text-blue-300"><a href="mailto:info@blueeducation.com.au">info@blueeducation.com.au</a></p>
+            <p class="text-pretty text-xs text-gray-500 mt-1 dark:text-slate-500">We respond within one business day.</p>
+          </article>
+          <article class="border border-gray-200 rounded-lg p-5 text-center bg-gray-50 dark:border-slate-700 dark:bg-slate-900">
+            <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-3 dark:bg-blue-900">
+              <span class="font-mono text-blue-600 text-xs dark:text-blue-400">[pin]</span>
+            </div>
+            <h3 class="text-pretty font-bold text-gray-900 mb-2 text-sm dark:text-slate-100">Office</h3>
+            <address class="text-sm text-gray-700 not-italic dark:text-slate-300">33 Barrack St, GF Unit 2<br/>Perth, WA 6000</address>
+          </article>
+        </section>
+
+        <!-- §3 Contact Form — stacked -->
+        <div class="wf-bar">§3 · Contact Form</div>
+        <section class="px-4 py-8 bg-gray-50 dark:bg-slate-900">
+          <h2 class="text-pretty text-xl font-bold text-gray-900 mb-5 dark:text-slate-100">Send an Enquiry</h2>
+          <form class="space-y-4" novalidate>
+            <div>
+              <label class="block text-xs font-medium text-gray-700 mb-1 dark:text-slate-300">Full Name <span class="text-red-500">*</span></label>
+              <input type="text" class="w-full border border-gray-300 rounded px-3 py-2 text-sm bg-white dark:border-slate-700 dark:bg-slate-800" placeholder="Jane Smith" />
+            </div>
+            <div>
+              <label class="block text-xs font-medium text-gray-700 mb-1 dark:text-slate-300">Email <span class="text-red-500">*</span></label>
+              <input type="email" class="w-full border border-gray-300 rounded px-3 py-2 text-sm bg-white dark:border-slate-700 dark:bg-slate-800" placeholder="jane@example.com" />
+            </div>
+            <div>
+              <label class="block text-xs font-medium text-gray-700 mb-1 dark:text-slate-300">Phone Number</label>
+              <input type="tel" class="w-full border border-gray-300 rounded px-3 py-2 text-sm bg-white dark:border-slate-700 dark:bg-slate-800" />
+            </div>
+            <div>
+              <label class="block text-xs font-medium text-gray-700 mb-1 dark:text-slate-300">Country of Residence</label>
+              <input type="text" class="w-full border border-gray-300 rounded px-3 py-2 text-sm bg-white dark:border-slate-700 dark:bg-slate-800" />
+            </div>
+            <div>
+              <label class="block text-xs font-medium text-gray-700 mb-1 dark:text-slate-300">Enquiry Type</label>
+              <select class="w-full border border-gray-300 rounded px-3 py-2 text-sm bg-white dark:border-slate-700 dark:bg-slate-800">
+                <option>Select…</option>
+                <option>Education</option>
+                <option>Migration</option>
+                <option>Career</option>
+                <option>Student Support</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-xs font-medium text-gray-700 mb-1 dark:text-slate-300">Message</label>
+              <textarea rows="4" class="w-full border border-gray-300 rounded px-3 py-2 text-sm bg-white resize-y dark:border-slate-700 dark:bg-slate-800"></textarea>
+            </div>
+            <div>
+              <label class="block text-xs font-medium text-gray-700 mb-1 dark:text-slate-300">Preferred Language</label>
+              <select class="w-full border border-gray-300 rounded px-3 py-2 text-sm bg-white dark:border-slate-700 dark:bg-slate-800">
+                <option>English</option>
+                <option>Cantonese</option>
+                <option>Mandarin</option>
+                <option>Bahasa</option>
+                <option>Malay</option>
+                <option>Hindi</option>
+                <option>Indonesian</option>
+                <option>Japanese</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <button type="submit" class="w-full bg-blue-700 text-white font-semibold py-3 rounded text-sm">Send Enquiry</button>
+          </form>
+          <div class="mt-6 img-ph rounded-lg flex items-center justify-center" style="height:180px;">
+            <span class="font-mono text-gray-500 text-xs dark:text-slate-500">[Map — 33 Barrack St Perth]</span>
+          </div>
+        </section>
+
+        <!-- §4 Book a Consultation -->
+        <div class="wf-bar">§4 · Book a Consultation</div>
+        <section class="px-4 py-8 bg-white dark:bg-slate-800">
+          <div class="rounded-xl border-2 border-blue-100 bg-blue-50 p-6 text-center dark:bg-blue-950">
+            <h2 class="text-pretty text-xl font-bold text-gray-900 mb-3 dark:text-slate-100">Book a Consultation</h2>
+            <ul class="text-sm text-gray-600 mb-5 text-left space-y-1 dark:text-slate-400">
+              <li>✓ Education, migration, or career guidance</li>
+              <li>✓ English, Bahasa, Cantonese, Japanese, and more</li>
+              <li>✓ In-person (Perth), phone, or video</li>
+            </ul>
+            <a href="./contact.html" class="block bg-blue-700 text-white font-bold px-6 py-3 rounded text-sm">Book a Consultation</a>
+          </div>
+        </section>
+
+        <!-- §5 International Representatives -->
+        <div class="wf-bar">§5 · International Representatives</div>
+        <section class="px-4 py-8 bg-gray-50 dark:bg-slate-900">
+          <h2 class="text-pretty text-xl font-bold text-gray-900 mb-3 dark:text-slate-100">International Representatives</h2>
+          <p class="text-pretty text-sm text-gray-600 mb-5 dark:text-slate-400">For local support in your region, contact our international team.</p>
+          <div class="space-y-2">
+            <div class="bg-white border border-gray-200 rounded px-4 py-3 flex justify-between text-sm dark:bg-slate-800 dark:border-slate-700">
+              <span class="font-medium text-gray-800 dark:text-slate-200">Japan</span>
+              <span class="text-gray-600 dark:text-slate-400">Minami Sakamoto</span>
+            </div>
+            <div class="bg-gray-50 border border-gray-200 rounded px-4 py-3 flex justify-between text-sm dark:bg-slate-900 dark:border-slate-700">
+              <span class="font-medium text-gray-800 dark:text-slate-200">New Zealand</span>
+              <span class="text-gray-600 dark:text-slate-400">Sherene</span>
+            </div>
+            <div class="bg-white border border-gray-200 rounded px-4 py-3 flex justify-between text-sm dark:bg-slate-800 dark:border-slate-700">
+              <span class="font-medium text-gray-800 dark:text-slate-200">Zambia / Africa</span>
+              <span class="text-gray-600 dark:text-slate-400">Elijah</span>
+            </div>
+            <div class="bg-gray-50 border border-gray-200 rounded px-4 py-3 flex justify-between text-sm dark:bg-slate-900 dark:border-slate-700">
+              <span class="font-medium text-gray-800 dark:text-slate-200">Indonesia</span>
+              <span class="text-gray-600 dark:text-slate-400">Hana</span>
+            </div>
+            <div class="bg-white border border-gray-200 rounded px-4 py-3 flex justify-between text-sm dark:bg-slate-800 dark:border-slate-700">
+              <span class="font-medium text-gray-800 dark:text-slate-200">Malaysia</span>
+              <span class="text-gray-600 dark:text-slate-400">Elaine Ho &amp; Monica Low</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- §6 WhatsApp Widget Notation -->
+        <div class="wf-bar">§6 · WhatsApp Floating Widget (fixed, all pages)</div>
+        <div class="px-4 py-4 bg-white border-t border-gray-100 flex items-center gap-3 dark:bg-slate-800 dark:border-slate-800">
+          <div class="w-12 h-12 rounded-full flex items-center justify-center text-white text-xs font-bold shrink-0" style="background:#25d366;">[WA]</div>
+          <p class="text-pretty font-mono text-gray-400 dark:text-slate-400" style="font-size:8px;">FIXED BOTTOM-RIGHT · WhatsApp green · +61 411 708 899 · persistent</p>
+        </div>
+
+      </main>
+
+      <div id="footer-placeholder-m"></div>
+    </div>
+
+  </div>
+  <script src="./assets/site.js"></script>
+</body>
+</html>

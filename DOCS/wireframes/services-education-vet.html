@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VET &amp; TAFE — Blue Education Wireframe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/tokens.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: { extend: {
+        colors: {
+          primary:   { DEFAULT: 'var(--primary)',   foreground: 'var(--primary-foreground)' },
+          secondary: { DEFAULT: 'var(--secondary)', foreground: 'var(--secondary-foreground)' },
+          base:      { DEFAULT: 'var(--base)',      foreground: 'var(--base-foreground)' },
+          muted:     { DEFAULT: 'var(--muted)',     foreground: 'var(--muted-foreground)' },
+        },
+        borderRadius: {
+          corner: 'var(--corner)', 'corner-lg': 'var(--corner-lg)', 'corner-full': 'var(--corner-full)',
+        },
+        fontFamily: { sans: ['Inter', 'sans-serif'] },
+      }}
+    }
+  </script>
+  <style>
+    .img-ph {
+      background-color: #d1d5db;
+      background-image: repeating-linear-gradient(-55deg, transparent, transparent 8px, rgba(0,0,0,0.04) 8px, rgba(0,0,0,0.04) 9px);
+    }
+    .wf-bar {
+      font-family: 'Courier New', monospace; font-size: 9px; font-weight: bold;
+      text-transform: uppercase; letter-spacing: 0.12em; color: #3b82f6; background: #eff6ff;
+      border-top: 1px solid #bfdbfe; border-bottom: 1px solid #bfdbfe; padding: 4px 32px;
+    }
+  </style>
+</head>
+<body class="bg-neutral-300 py-8 font-sans">
+  <div class="flex gap-8 items-start mx-auto px-8" style="width: max-content;">
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         DESKTOP CANVAS — 1280px
+    ═══════════════════════════════════════════════════════════════ -->
+    <div style="width:1280px; background:var(--base); color:var(--base-foreground);" class="shadow-2xl shrink-0">
+
+      <div class="flex items-center justify-between px-8 py-2 border-b-2 border-amber-300 bg-amber-50 dark:border-amber-800 dark:bg-amber-950">
+        <div class="flex items-center gap-3">
+          <span class="font-bold text-amber-800 tracking-widest text-sm dark:text-amber-200">WIREFRAME</span>
+          <span class="text-amber-700 text-sm dark:text-amber-300">·  Blue Education  ·  VET &amp; TAFE  ·  Desktop 1280px</span>
+        </div>
+        <span class="text-amber-500 font-mono text-xs dark:text-amber-400">Layout &amp; copy reference — not final design</span>
+      </div>
+
+      <div id="nav-placeholder"></div>
+
+      <main id="main-content">
+
+        <!-- ══════════════════════════════════════════════════
+             §1  HERO
+        ══════════════════════════════════════════════════ -->
+        <div class="wf-bar">§1 · Hero — Full-width, left-aligned text overlay</div>
+        <section aria-labelledby="hero-h">
+          <div class="img-ph relative flex flex-col justify-end" style="height:420px; background-color:#374151;">
+            <div class="absolute inset-0" style="background:rgba(17,24,39,0.60);"></div>
+            <div class="relative z-10 px-16 pb-14" style="max-width:680px;">
+              <nav aria-label="Breadcrumb" class="mb-4">
+                <ol class="flex items-center gap-2 text-sm text-gray-300 dark:text-slate-500">
+                  <li><a href="./index.html" class="hover:underline">Home</a></li>
+                  <li>/</li>
+                  <li><a href="./services.html" class="hover:underline">Services</a></li>
+                  <li>/</li>
+                  <li><a href="./services-education.html" class="hover:underline">Education</a></li>
+                  <li>/</li>
+                  <li class="text-white font-medium">VET &amp; TAFE</li>
+                </ol>
+              </nav>
+              <p class="text-pretty font-mono text-gray-400 mb-3 dark:text-slate-400" style="font-size:10px;">[BG IMAGE: Hands-on workshop/training environment]</p>
+              <h1 id="hero-h" class="text-pretty text-4xl font-bold text-white mb-4 leading-tight">VET and TAFE qualifications open careers.</h1>
+              <p class="text-pretty text-xl text-gray-200">Practical training across trades, technical fields, and specialist roles — with many qualifications aligning directly to Australia's skilled migration pathways.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- ══════════════════════════════════════════════════
+             §2  WHAT IS VET/TAFE?
+        ══════════════════════════════════════════════════ -->
+        <div class="wf-bar">§2 · What is VET/TAFE? — 55/45 two-column: text left, image right</div>
+        <section aria-labelledby="what-is-vet-h" class="px-16 py-16 bg-white dark:bg-slate-800">
+          <div class="flex gap-14 items-center">
+            <div style="flex:11;">
+              <h2 id="what-is-vet-h" class="text-pretty text-3xl font-bold text-gray-900 mb-6 dark:text-slate-100">What is VET/TAFE?</h2>
+              <p class="text-pretty text-gray-600 leading-relaxed mb-4 dark:text-slate-400">Vocational Education and Training (VET) is delivered through Technical and Further Education (TAFE) institutions and Registered Training Organisations (RTOs) across Australia.</p>
+              <p class="text-pretty text-gray-600 leading-relaxed dark:text-slate-400">VET qualifications emphasise practical, hands-on skills. You learn in workshops, labs, and real workplace settings. Graduates enter the workforce job-ready, with qualifications employers trust.</p>
+            </div>
+            <div style="flex:9;">
+              <div class="img-ph rounded-xl flex items-center justify-center" style="height:300px;" role="img" aria-label="TAFE campus with students in a workshop">
+                <span class="font-mono text-gray-400 text-xs dark:text-slate-400">[IMAGE: TAFE campus, students in workshop]</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ══════════════════════════════════════════════════
+             §3  IS VET RIGHT FOR YOU?
+        ══════════════════════════════════════════════════ -->
+        <div class="wf-bar">§3 · Is VET right for you? — 3-column card grid with icons</div>
+        <section aria-labelledby="vet-right-h" class="px-16 py-16 bg-gray-50 dark:bg-slate-900">
+          <h2 id="vet-right-h" class="text-pretty text-3xl font-bold text-gray-900 mb-10 dark:text-slate-100">Is VET right for you?</h2>
+          <div class="grid grid-cols-3 gap-7">
+
+            <article class="bg-white border border-gray-200 rounded-xl p-8 dark:bg-slate-800 dark:border-slate-700">
+              <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-5 dark:bg-blue-900">
+                <span class="font-mono text-blue-600 text-xs dark:text-blue-400">[icon]</span>
+              </div>
+              <h3 class="text-pretty font-bold text-gray-900 text-lg mb-3 dark:text-slate-100">You want to work in a trade or specialist role</h3>
+              <p class="text-pretty text-gray-600 text-sm leading-relaxed dark:text-slate-400">Not every career requires a degree. VET qualifications are built around the skills employers actually hire for — and most can be completed in under two years.</p>
+            </article>
+
+            <article class="bg-white border border-gray-200 rounded-xl p-8 dark:bg-slate-800 dark:border-slate-700">
+              <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-5 dark:bg-blue-900">
+                <span class="font-mono text-blue-600 text-xs dark:text-blue-400">[icon]</span>
+              </div>
+              <h3 class="text-pretty font-bold text-gray-900 text-lg mb-3 dark:text-slate-100">You're changing careers</h3>
+              <p class="text-pretty text-gray-600 text-sm leading-relaxed mb-3 dark:text-slate-400">VET is well-suited to career changers who need industry-recognised credentials in a new field without starting from scratch academically.</p>
+              <a href="./services-career.html" class="text-blue-600 text-sm hover:underline dark:text-blue-400">Career services →</a>
+            </article>
+
+            <article class="bg-white border border-gray-200 rounded-xl p-8 dark:bg-slate-800 dark:border-slate-700">
+              <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-5 dark:bg-blue-900">
+                <span class="font-mono text-blue-600 text-xs dark:text-blue-400">[icon]</span>
+              </div>
+              <h3 class="text-pretty font-bold text-gray-900 text-lg mb-3 dark:text-slate-100">You have migration goals</h3>
+              <p class="text-pretty text-gray-600 text-sm leading-relaxed dark:text-slate-400">Many VET occupations sit on Australia's skilled occupation lists. The right qualification can be the most direct route to a skilled migration pathway.</p>
+            </article>
+
+          </div>
+        </section>
+
+        <!-- ══════════════════════════════════════════════════
+             §4  WHAT YOU CAN STUDY
+        ══════════════════════════════════════════════════ -->
+        <div class="wf-bar">§4 · What You Can Study — pill/chip tag grid of industries</div>
+        <section aria-labelledby="what-study-h" class="px-16 py-16 bg-white dark:bg-slate-800">
+          <h2 id="what-study-h" class="text-pretty text-3xl font-bold text-gray-900 mb-4 dark:text-slate-100">What You Can Study</h2>
+          <p class="text-pretty text-gray-600 mb-8 dark:text-slate-400">Industries available through TAFE and registered training providers across Australia:</p>
+          <div class="flex flex-wrap gap-3">
+            <span class="bg-blue-50 border border-blue-200 text-blue-800 font-medium text-sm px-5 py-2.5 rounded-full dark:bg-blue-950 dark:border-blue-800 dark:text-blue-200">Construction &amp; Trades</span>
+            <span class="bg-blue-50 border border-blue-200 text-blue-800 font-medium text-sm px-5 py-2.5 rounded-full dark:bg-blue-950 dark:border-blue-800 dark:text-blue-200">Business &amp; Administration</span>
+            <span class="bg-blue-50 border border-blue-200 text-blue-800 font-medium text-sm px-5 py-2.5 rounded-full dark:bg-blue-950 dark:border-blue-800 dark:text-blue-200">Information Technology</span>
+            <span class="bg-blue-50 border border-blue-200 text-blue-800 font-medium text-sm px-5 py-2.5 rounded-full dark:bg-blue-950 dark:border-blue-800 dark:text-blue-200">Hospitality &amp; Tourism</span>
+            <span class="bg-blue-50 border border-blue-200 text-blue-800 font-medium text-sm px-5 py-2.5 rounded-full dark:bg-blue-950 dark:border-blue-800 dark:text-blue-200">Childcare &amp; Community Services</span>
+            <span class="bg-blue-50 border border-blue-200 text-blue-800 font-medium text-sm px-5 py-2.5 rounded-full dark:bg-blue-950 dark:border-blue-800 dark:text-blue-200">Healthcare Support</span>
+            <span class="bg-blue-50 border border-blue-200 text-blue-800 font-medium text-sm px-5 py-2.5 rounded-full dark:bg-blue-950 dark:border-blue-800 dark:text-blue-200">Automotive</span>
+            <span class="bg-blue-50 border border-blue-200 text-blue-800 font-medium text-sm px-5 py-2.5 rounded-full dark:bg-blue-950 dark:border-blue-800 dark:text-blue-200">Creative Industries</span>
+          </div>
+        </section>
+
+        <!-- ══════════════════════════════════════════════════
+             §5  QUALIFICATION LEVELS TABLE
+        ══════════════════════════════════════════════════ -->
+        <div class="wf-bar">§5 · Qualification Levels — full-width reference table</div>
+        <section aria-labelledby="qual-levels-h" class="px-16 py-16 bg-gray-50 dark:bg-slate-900">
+          <h2 id="qual-levels-h" class="text-pretty text-3xl font-bold text-gray-900 mb-8 dark:text-slate-100">Qualification Levels</h2>
+          <div class="overflow-hidden border border-gray-200 rounded-xl dark:border-slate-700">
+            <table class="w-full text-sm">
+              <thead>
+                <tr class="bg-gray-100 dark:bg-slate-800">
+                  <th class="px-6 py-4 text-left font-semibold text-gray-700 dark:text-slate-300">Qualification</th>
+                  <th class="px-6 py-4 text-left font-semibold text-gray-700 dark:text-slate-300">Duration</th>
+                  <th class="px-6 py-4 text-left font-semibold text-gray-700 dark:text-slate-300">Career Outcome</th>
+                  <th class="px-6 py-4 text-left font-semibold text-gray-700 dark:text-slate-300">Min. IELTS</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-gray-200 bg-white dark:bg-slate-800">
+                <tr><td class="px-6 py-4 font-medium text-gray-800 dark:text-slate-200">Certificate I–II</td><td class="px-6 py-4 text-gray-600 dark:text-slate-400">6–12 months</td><td class="px-6 py-4 text-gray-600 dark:text-slate-400">Entry-level roles</td><td class="px-6 py-4 text-gray-600 dark:text-slate-400">5.5</td></tr>
+                <tr class="bg-gray-50 dark:bg-slate-900"><td class="px-6 py-4 font-medium text-gray-800 dark:text-slate-200">Certificate III–IV</td><td class="px-6 py-4 text-gray-600 dark:text-slate-400">6–18 months</td><td class="px-6 py-4 text-gray-600 dark:text-slate-400">Skilled trades, technical roles</td><td class="px-6 py-4 text-gray-600 dark:text-slate-400">5.5</td></tr>
+                <tr><td class="px-6 py-4 font-medium text-gray-800 dark:text-slate-200">Diploma</td><td class="px-6 py-4 text-gray-600 dark:text-slate-400">1–2 years</td><td class="px-6 py-4 text-gray-600 dark:text-slate-400">Supervisory, specialist roles</td><td class="px-6 py-4 text-gray-600 dark:text-slate-400">5.5–6.0</td></tr>
+                <tr class="bg-gray-50 dark:bg-slate-900"><td class="px-6 py-4 font-medium text-gray-800 dark:text-slate-200">Advanced Diploma</td><td class="px-6 py-4 text-gray-600 dark:text-slate-400">1.5–2 years</td><td class="px-6 py-4 text-gray-600 dark:text-slate-400">Management, university pathway</td><td class="px-6 py-4 text-gray-600 dark:text-slate-400">5.5–6.0</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="text-pretty text-xs text-gray-400 mt-4 italic dark:text-slate-400">English requirements are a general guide. Individual institutions may set higher thresholds.</p>
+        </section>
+
+        <!-- ══════════════════════════════════════════════════
+             §6  WHY VET?
+        ══════════════════════════════════════════════════ -->
+        <div class="wf-bar">§6 · Why VET? — 3-column feature list, open layout with left accent rules (differentiated from §3 card grid)</div>
+        <section aria-labelledby="why-vet-h" class="px-16 py-16 bg-white dark:bg-slate-800">
+          <h2 id="why-vet-h" class="text-pretty text-3xl font-bold text-gray-900 mb-10 dark:text-slate-100">Why VET?</h2>
+          <div class="grid grid-cols-3 gap-8">
+
+            <div class="border-l-4 border-blue-500 pl-6">
+              <h3 class="text-pretty font-bold text-gray-900 text-lg mb-3 dark:text-slate-100">Industry-aligned training</h3>
+              <p class="text-pretty text-gray-600 text-sm leading-relaxed dark:text-slate-400">Training happens in workshops, labs, and workplaces. What you learn maps directly to what employers expect on day one.</p>
+            </div>
+
+            <div class="border-l-4 border-blue-500 pl-6">
+              <h3 class="text-pretty font-bold text-gray-900 text-lg mb-3 dark:text-slate-100">Credit towards a degree</h3>
+              <p class="text-pretty text-gray-600 text-sm leading-relaxed dark:text-slate-400">Diploma and Advanced Diploma holders can apply for credit recognition at Australian universities — reducing the time required to complete a bachelor degree.</p>
+            </div>
+
+            <div class="border-l-4 border-blue-500 pl-6">
+              <h3 class="text-pretty font-bold text-gray-900 text-lg mb-3 dark:text-slate-100">Skilled migration pathways</h3>
+              <p class="text-pretty text-gray-600 text-sm leading-relaxed mb-3 dark:text-slate-400">Many VET occupations appear on Australia's skilled occupation lists. For students with migration goals, the right qualification can open that door directly. Eligible graduates may qualify for the Graduate Work Stream visa (18 months).</p>
+              <a href="./services-migration-graduate-work.html" class="text-blue-600 text-sm hover:underline dark:text-blue-400">Learn about graduate work visas →</a>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- ══════════════════════════════════════════════════
+             §7  CTA BANNER
+        ══════════════════════════════════════════════════ -->
+        <div class="wf-bar">§7 · CTA Banner</div>
+        <section aria-labelledby="cta-h" class="py-16 px-8 text-center" style="background:#1e3a5f;">
+          <h2 id="cta-h" class="text-pretty text-4xl font-bold text-white mb-4">Find the right VET qualification.</h2>
+          <p class="text-pretty text-lg mb-8 mx-auto" style="color:#93c5fd; max-width:540px;">Talk to an advisor. They'll match your career goals to the right programme and confirm whether it opens a pathway to skilled migration.</p>
+          <div class="flex gap-4 justify-center">
+            <a href="./contact.html" class="bg-white font-bold px-8 py-3 rounded text-base hover:bg-gray-100 dark:bg-slate-800" style="color:#1e3a5f;">Explore VET Options</a>
+            <a href="tel:+61863810030" class="border-2 border-white text-white font-semibold px-8 py-3 rounded text-base">Call +61 8 6381 0030</a>
+          </div>
+        </section>
+
+      </main>
+
+      <div id="footer-placeholder"></div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         MOBILE CANVAS — 390px
+    ═══════════════════════════════════════════════════════════════ -->
+    <div style="width:390px; background:var(--base); color:var(--base-foreground);" class="shadow-2xl shrink-0 sticky top-8">
+      <div class="flex items-center justify-between px-4 py-2 border-b-2 border-amber-300 bg-amber-50 dark:border-amber-800 dark:bg-amber-950">
+        <span class="font-bold text-amber-800 tracking-widest text-xs dark:text-amber-200">WIREFRAME</span>
+        <span class="text-amber-600 font-mono" style="font-size:8px;">Mobile 390px</span>
+      </div>
+
+      <div id="nav-placeholder-m"></div>
+
+      <main>
+
+        <!-- §1 Hero -->
+        <div class="wf-bar">§1 · Hero</div>
+        <section class="img-ph relative" style="height:260px; background-color:#374151;">
+          <div class="absolute inset-0" style="background:rgba(17,24,39,0.65);"></div>
+          <div class="relative z-10 flex flex-col justify-end h-full px-4 pb-8">
+            <nav aria-label="Breadcrumb" class="mb-3">
+              <ol class="flex items-center gap-1 text-xs text-gray-300 dark:text-slate-500">
+                <li><a href="./index.html">Home</a></li><li>/</li>
+                <li><a href="./services-education.html">Education</a></li><li>/</li>
+                <li class="text-white">VET &amp; TAFE</li>
+              </ol>
+            </nav>
+            <h1 class="text-pretty text-2xl font-bold text-white mb-2">VET and TAFE qualifications open careers.</h1>
+            <p class="text-pretty text-sm text-gray-300 dark:text-slate-500">Practical training aligned to Australia's skilled migration pathways.</p>
+          </div>
+        </section>
+
+        <!-- §2 What is VET -->
+        <div class="wf-bar">§2 · What is VET/TAFE?</div>
+        <section class="px-4 py-8 bg-white dark:bg-slate-800">
+          <h2 class="text-pretty text-xl font-bold text-gray-900 mb-4 dark:text-slate-100">What is VET/TAFE?</h2>
+          <div class="img-ph rounded-lg mb-4 flex items-center justify-center" style="height:160px;" role="img" aria-label="TAFE workshop">
+            <span class="font-mono text-gray-400 text-xs dark:text-slate-400">[IMAGE: TAFE campus workshop]</span>
+          </div>
+          <p class="text-pretty text-sm text-gray-600 mb-3 dark:text-slate-400">VET is delivered through TAFE institutions and Registered Training Organisations (RTOs) across Australia.</p>
+          <p class="text-pretty text-sm text-gray-600 dark:text-slate-400">You learn in workshops, labs, and real workplace settings. Graduates enter the workforce job-ready.</p>
+        </section>
+
+        <!-- §3 Is VET Right -->
+        <div class="wf-bar">§3 · Is VET Right for You?</div>
+        <section class="px-4 py-8 bg-gray-50 dark:bg-slate-900">
+          <h2 class="text-pretty text-xl font-bold text-gray-900 mb-5 dark:text-slate-100">Is VET right for you?</h2>
+          <div class="space-y-4">
+            <article class="bg-white border border-gray-200 rounded-xl p-5 dark:bg-slate-800 dark:border-slate-700">
+              <h3 class="text-pretty font-bold text-gray-900 text-sm mb-2 dark:text-slate-100">You want to work in a trade or specialist role</h3>
+              <p class="text-pretty text-xs text-gray-600 dark:text-slate-400">Not every career requires a degree. Most VET qualifications complete in under two years.</p>
+            </article>
+            <article class="bg-white border border-gray-200 rounded-xl p-5 dark:bg-slate-800 dark:border-slate-700">
+              <h3 class="text-pretty font-bold text-gray-900 text-sm mb-2 dark:text-slate-100">You're changing careers</h3>
+              <p class="text-pretty text-xs text-gray-600 mb-1 dark:text-slate-400">Industry-recognised credentials without starting from scratch academically.</p>
+              <a href="./services-career.html" class="text-blue-600 text-xs dark:text-blue-400">Career services →</a>
+            </article>
+            <article class="bg-white border border-gray-200 rounded-xl p-5 dark:bg-slate-800 dark:border-slate-700">
+              <h3 class="text-pretty font-bold text-gray-900 text-sm mb-2 dark:text-slate-100">You have migration goals</h3>
+              <p class="text-pretty text-xs text-gray-600 dark:text-slate-400">Many VET occupations are on Australia's skilled occupation lists.</p>
+            </article>
+          </div>
+        </section>
+
+        <!-- §4 What You Can Study -->
+        <div class="wf-bar">§4 · What You Can Study</div>
+        <section class="px-4 py-8 bg-white dark:bg-slate-800">
+          <h2 class="text-pretty text-xl font-bold text-gray-900 mb-4 dark:text-slate-100">What You Can Study</h2>
+          <div class="flex flex-wrap gap-2">
+            <span class="bg-blue-50 border border-blue-200 text-blue-800 text-xs px-3 py-1.5 rounded-full dark:bg-blue-950 dark:border-blue-800 dark:text-blue-200">Construction &amp; Trades</span>
+            <span class="bg-blue-50 border border-blue-200 text-blue-800 text-xs px-3 py-1.5 rounded-full dark:bg-blue-950 dark:border-blue-800 dark:text-blue-200">Business &amp; Administration</span>
+            <span class="bg-blue-50 border border-blue-200 text-blue-800 text-xs px-3 py-1.5 rounded-full dark:bg-blue-950 dark:border-blue-800 dark:text-blue-200">Information Technology</span>
+            <span class="bg-blue-50 border border-blue-200 text-blue-800 text-xs px-3 py-1.5 rounded-full dark:bg-blue-950 dark:border-blue-800 dark:text-blue-200">Hospitality &amp; Tourism</span>
+            <span class="bg-blue-50 border border-blue-200 text-blue-800 text-xs px-3 py-1.5 rounded-full dark:bg-blue-950 dark:border-blue-800 dark:text-blue-200">Childcare &amp; Community Services</span>
+            <span class="bg-blue-50 border border-blue-200 text-blue-800 text-xs px-3 py-1.5 rounded-full dark:bg-blue-950 dark:border-blue-800 dark:text-blue-200">Healthcare Support</span>
+            <span class="bg-blue-50 border border-blue-200 text-blue-800 text-xs px-3 py-1.5 rounded-full dark:bg-blue-950 dark:border-blue-800 dark:text-blue-200">Automotive</span>
+            <span class="bg-blue-50 border border-blue-200 text-blue-800 text-xs px-3 py-1.5 rounded-full dark:bg-blue-950 dark:border-blue-800 dark:text-blue-200">Creative Industries</span>
+          </div>
+        </section>
+
+        <!-- §5 Qualification Levels -->
+        <div class="wf-bar">§5 · Qualification Levels</div>
+        <section class="px-4 py-8 bg-gray-50 dark:bg-slate-900">
+          <h2 class="text-pretty text-xl font-bold text-gray-900 mb-5 dark:text-slate-100">Qualification Levels</h2>
+          <div class="space-y-3">
+            <div class="bg-white border border-gray-200 rounded-lg p-4 dark:bg-slate-800 dark:border-slate-700">
+              <p class="text-pretty font-semibold text-gray-900 text-sm dark:text-slate-100">Certificate I–II</p>
+              <p class="text-pretty text-xs text-gray-600 dark:text-slate-400">6–12 months · Entry-level roles · IELTS 5.5</p>
+            </div>
+            <div class="bg-white border border-gray-200 rounded-lg p-4 dark:bg-slate-800 dark:border-slate-700">
+              <p class="text-pretty font-semibold text-gray-900 text-sm dark:text-slate-100">Certificate III–IV</p>
+              <p class="text-pretty text-xs text-gray-600 dark:text-slate-400">6–18 months · Skilled trades, technical roles · IELTS 5.5</p>
+            </div>
+            <div class="bg-white border border-gray-200 rounded-lg p-4 dark:bg-slate-800 dark:border-slate-700">
+              <p class="text-pretty font-semibold text-gray-900 text-sm dark:text-slate-100">Diploma</p>
+              <p class="text-pretty text-xs text-gray-600 dark:text-slate-400">1–2 years · Supervisory, specialist roles · IELTS 5.5–6.0</p>
+            </div>
+            <div class="bg-white border border-gray-200 rounded-lg p-4 dark:bg-slate-800 dark:border-slate-700">
+              <p class="text-pretty font-semibold text-gray-900 text-sm dark:text-slate-100">Advanced Diploma</p>
+              <p class="text-pretty text-xs text-gray-600 dark:text-slate-400">1.5–2 years · Management, university pathway · IELTS 5.5–6.0</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- §6 Why VET -->
+        <div class="wf-bar">§6 · Why VET?</div>
+        <section class="px-4 py-8 bg-white dark:bg-slate-800">
+          <h2 class="text-pretty text-xl font-bold text-gray-900 mb-5 dark:text-slate-100">Why VET?</h2>
+          <div class="space-y-5">
+            <div class="border-l-4 border-blue-500 pl-4">
+              <h3 class="text-pretty font-bold text-gray-900 text-sm mb-1 dark:text-slate-100">Industry-aligned training</h3>
+              <p class="text-pretty text-xs text-gray-600 dark:text-slate-400">Training in workshops, labs, and workplaces. Maps directly to what employers expect on day one.</p>
+            </div>
+            <div class="border-l-4 border-blue-500 pl-4">
+              <h3 class="text-pretty font-bold text-gray-900 text-sm mb-1 dark:text-slate-100">Credit towards a degree</h3>
+              <p class="text-pretty text-xs text-gray-600 dark:text-slate-400">Diploma and Advanced Diploma holders can apply for credit recognition at Australian universities.</p>
+            </div>
+            <div class="border-l-4 border-blue-500 pl-4">
+              <h3 class="text-pretty font-bold text-gray-900 text-sm mb-1 dark:text-slate-100">Skilled migration pathways</h3>
+              <p class="text-pretty text-xs text-gray-600 mb-1 dark:text-slate-400">Many VET occupations on skilled occupation lists. Eligible graduates may qualify for the Graduate Work Stream visa (18 months).</p>
+              <a href="./services-migration-graduate-work.html" class="text-blue-600 text-xs dark:text-blue-400">Graduate work visas →</a>
+            </div>
+          </div>
+        </section>
+
+        <!-- §7 CTA -->
+        <div class="wf-bar">§7 · CTA Banner</div>
+        <section class="py-12 px-4 text-center" style="background:#1e3a5f;">
+          <h2 class="text-pretty text-2xl font-bold text-white mb-3">Find the right VET qualification.</h2>
+          <p class="text-pretty text-sm mb-6" style="color:#93c5fd;">Talk to an advisor — they'll match your career goals and confirm your migration pathway.</p>
+          <div class="space-y-3">
+            <a href="./contact.html" class="block bg-white font-bold px-6 py-3 rounded text-sm dark:bg-slate-800" style="color:#1e3a5f;">Explore VET Options</a>
+            <a href="tel:+61863810030" class="block border-2 border-white text-white font-semibold px-6 py-3 rounded text-sm">Call +61 8 6381 0030</a>
+          </div>
+        </section>
+
+      </main>
+
+      <div id="footer-placeholder-m"></div>
+    </div>
+
+  </div>
+  <script src="./assets/site.js"></script>
+</body>
+</html>

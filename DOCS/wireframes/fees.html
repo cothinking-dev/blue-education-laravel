@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fees &amp; Investment — Blue Education Wireframe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/tokens.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: { extend: {
+        colors: {
+          primary:   { DEFAULT: 'var(--primary)',   foreground: 'var(--primary-foreground)' },
+          secondary: { DEFAULT: 'var(--secondary)', foreground: 'var(--secondary-foreground)' },
+          base:      { DEFAULT: 'var(--base)',      foreground: 'var(--base-foreground)' },
+          muted:     { DEFAULT: 'var(--muted)',     foreground: 'var(--muted-foreground)' },
+        },
+        borderRadius: {
+          corner: 'var(--corner)', 'corner-lg': 'var(--corner-lg)', 'corner-full':'var(--corner-full)',
+        },
+        fontFamily: { sans: ['Inter', 'sans-serif'] },
+      }}
+    }
+  </script>
+  <style>
+    .img-ph {
+      background-color: #d1d5db;
+      background-image: repeating-linear-gradient(-55deg, transparent, transparent 8px, rgba(0,0,0,0.04) 8px, rgba(0,0,0,0.04) 9px);
+    }
+    .wf-bar {
+      font-family: 'Courier New', monospace; font-size: 9px; font-weight: bold;
+      text-transform: uppercase; letter-spacing: 0.12em; color: #3b82f6; background: #eff6ff;
+      border-top: 1px solid #bfdbfe; border-bottom: 1px solid #bfdbfe; padding: 4px 32px;
+    }
+  </style>
+</head>
+<body class="bg-neutral-300 py-8 font-sans">
+  <div class="flex gap-8 items-start mx-auto px-8" style="width: max-content;">
+
+    <!-- ═══════════════════════════════════════════════
+         DESKTOP CANVAS — 1280px
+    ═══════════════════════════════════════════════ -->
+    <div style="width:1280px; background:var(--base); color:var(--base-foreground);" class="shadow-2xl shrink-0">
+      <div class="flex items-center justify-between px-8 py-2 border-b-2 border-amber-300 bg-amber-50 dark:border-amber-800 dark:bg-amber-950">
+        <div class="flex items-center gap-3">
+          <span class="font-bold text-amber-800 tracking-widest text-sm dark:text-amber-200">WIREFRAME</span>
+          <span class="text-amber-700 text-sm dark:text-amber-300">·  Blue Education  ·  Fees &amp; Investment  ·  Desktop 1280px</span>
+        </div>
+        <span class="text-amber-500 font-mono text-xs dark:text-amber-400">Layout &amp; copy reference — not final design</span>
+      </div>
+
+      <div id="nav-placeholder"></div>
+
+      <main id="main-content">
+
+        <!-- ════════════════════════════════════════════════════
+             §1  HERO
+        ════════════════════════════════════════════════════ -->
+        <div class="wf-bar">§1 · Hero — Left-aligned, clean background</div>
+        <section aria-labelledby="hero-h" class="px-16 py-16 bg-gray-50 border-b border-gray-200 dark:bg-slate-900 dark:border-slate-700">
+          <div style="max-width:680px;">
+            <h1 id="hero-h" class="text-pretty text-5xl font-bold text-gray-900 mb-5 leading-tight dark:text-slate-100">Fees &amp; Costs</h1>
+            <p class="text-pretty text-xl text-gray-600 leading-relaxed dark:text-slate-400">All fees communicated upfront, before any work begins.</p>
+          </div>
+        </section>
+
+        <!-- ════════════════════════════════════════════════════
+             §2  OUR APPROACH TO FEES — 60/40 two-column
+        ════════════════════════════════════════════════════ -->
+        <div class="wf-bar">§2 · Our Approach to Fees — 60/40 two-column (text left, image right)</div>
+        <section aria-labelledby="approach-h" class="px-16 py-14 bg-white border-b border-gray-100 dark:bg-slate-800 dark:border-slate-800" style="display:flex; gap:56px; align-items:stretch;">
+
+          <!-- Left 60%: text -->
+          <div style="flex: 0 0 58%;">
+            <h2 id="approach-h" class="text-pretty text-3xl font-bold text-gray-900 mb-6 dark:text-slate-100">Transparent pricing. Always.</h2>
+            <p class="text-pretty text-gray-600 text-sm leading-relaxed mb-4 dark:text-slate-400">Blue Education's fees vary based on the services you need and the complexity of your situation. Every journey is different — so pricing is personalised, not one-size-fits-all.</p>
+            <p class="text-pretty text-gray-600 text-sm leading-relaxed mb-6 dark:text-slate-400">Before we do any work, we tell you exactly what it will cost and why. Our initial consultation is used to assess your situation — we provide a personalised quote before you commit to anything.</p>
+            <ul class="space-y-4">
+              <li class="flex gap-3">
+                <div class="w-5 h-5 rounded-full bg-blue-100 flex items-center justify-center shrink-0 mt-0.5 dark:bg-blue-900">
+                  <svg class="w-3 h-3 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                </div>
+                <div>
+                  <strong class="text-gray-900 text-sm dark:text-slate-100">Fees by service</strong>
+                  <p class="text-pretty text-gray-600 text-sm dark:text-slate-400">You pay for what you need, not a package that includes what you don't.</p>
+                </div>
+              </li>
+              <li class="flex gap-3">
+                <div class="w-5 h-5 rounded-full bg-blue-100 flex items-center justify-center shrink-0 mt-0.5 dark:bg-blue-900">
+                  <svg class="w-3 h-3 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                </div>
+                <div>
+                  <strong class="text-gray-900 text-sm dark:text-slate-100">Personalised quotes</strong>
+                  <p class="text-pretty text-gray-600 text-sm dark:text-slate-400">Every situation is different; pricing reflects that.</p>
+                </div>
+              </li>
+              <li class="flex gap-3">
+                <div class="w-5 h-5 rounded-full bg-blue-100 flex items-center justify-center shrink-0 mt-0.5 dark:bg-blue-900">
+                  <svg class="w-3 h-3 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                </div>
+                <div>
+                  <strong class="text-gray-900 text-sm dark:text-slate-100">Upfront breakdown</strong>
+                  <p class="text-pretty text-gray-600 text-sm dark:text-slate-400">Full cost picture provided at consultation, before any application work begins.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Right 40%: image placeholder -->
+          <div class="img-ph flex-1 rounded-lg flex items-center justify-center text-center text-gray-500 font-mono text-sm dark:text-slate-500" style="min-height:320px;" role="img" aria-label="Consultation setting — documents on table, advisor and client">
+            [IMAGE: Consultation setting,<br>documents on table]
+          </div>
+
+        </section>
+
+        <!-- ════════════════════════════════════════════════════
+             §3  COST OVERVIEW TABLE
+        ════════════════════════════════════════════════════ -->
+        <div class="wf-bar">§3 · Cost Overview — Full-width reference table</div>
+        <section aria-labelledby="cost-overview-h" class="px-16 py-14 bg-gray-50 border-b border-gray-100 dark:bg-slate-900 dark:border-slate-800">
+          <h2 id="cost-overview-h" class="text-pretty text-2xl font-bold text-gray-900 mb-8 dark:text-slate-100">Cost Overview</h2>
+          <div class="overflow-x-auto">
+            <table class="w-full text-sm border border-gray-200 rounded-lg overflow-hidden dark:border-slate-700">
+              <caption class="text-left text-xs text-gray-400 font-mono mb-3 block dark:text-slate-400">All costs relevant to your journey with Blue Education</caption>
+              <thead class="bg-gray-800 text-white">
+                <tr>
+                  <th scope="col" class="text-left px-6 py-3 font-semibold">Cost Category</th>
+                  <th scope="col" class="text-left px-6 py-3 font-semibold">Who Sets It</th>
+                  <th scope="col" class="text-left px-6 py-3 font-semibold">Paid To</th>
+                  <th scope="col" class="text-left px-6 py-3 font-semibold">Amount</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-b border-gray-100 bg-white dark:border-slate-800 dark:bg-slate-800">
+                  <td class="px-6 py-4 font-medium text-gray-900 dark:text-slate-100">Blue Education service fees</td>
+                  <td class="px-6 py-4 text-gray-700 dark:text-slate-300">Blue Education</td>
+                  <td class="px-6 py-4 text-gray-700 dark:text-slate-300">Blue Education</td>
+                  <td class="px-6 py-4 text-gray-700 dark:text-slate-300">Varies by case</td>
+                </tr>
+                <tr class="border-b border-gray-100 bg-gray-50 dark:border-slate-800 dark:bg-slate-900">
+                  <td class="px-6 py-4 font-medium text-gray-900 dark:text-slate-100">STAC charges</td>
+                  <td class="px-6 py-4 text-gray-700 dark:text-slate-300">Blue Education</td>
+                  <td class="px-6 py-4 text-gray-700 dark:text-slate-300">Blue Education</td>
+                  <td class="px-6 py-4 text-gray-700 dark:text-slate-300">Varies by visa history</td>
+                </tr>
+                <tr class="border-b border-gray-100 bg-white dark:border-slate-800 dark:bg-slate-800">
+                  <td class="px-6 py-4 font-medium text-gray-900 dark:text-slate-100">Medical examination</td>
+                  <td class="px-6 py-4 text-gray-700 dark:text-slate-300">Panel physicians</td>
+                  <td class="px-6 py-4 text-gray-700 dark:text-slate-300">Medical provider</td>
+                  <td class="px-6 py-4 text-gray-700 dark:text-slate-300">$240 – $380</td>
+                </tr>
+                <tr class="border-b border-gray-100 bg-gray-50 dark:border-slate-800 dark:bg-slate-900">
+                  <td class="px-6 py-4 font-medium text-gray-900 dark:text-slate-100">Visa application</td>
+                  <td class="px-6 py-4 text-gray-700 dark:text-slate-300">Dept of Home Affairs</td>
+                  <td class="px-6 py-4 text-gray-700 dark:text-slate-300">Australian Government</td>
+                  <td class="px-6 py-4 text-gray-700 dark:text-slate-300">Varies by subclass</td>
+                </tr>
+                <tr class="bg-white dark:bg-slate-800">
+                  <td class="px-6 py-4 font-medium text-gray-900 dark:text-slate-100">Tuition</td>
+                  <td class="px-6 py-4 text-gray-700 dark:text-slate-300">Institution</td>
+                  <td class="px-6 py-4 text-gray-700 dark:text-slate-300">Institution</td>
+                  <td class="px-6 py-4 text-gray-700 dark:text-slate-300">Varies by program</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- ════════════════════════════════════════════════════
+             §4  WHAT YOU'LL PAY — Feature list sections
+        ════════════════════════════════════════════════════ -->
+        <div class="wf-bar">§4 · What You'll Pay — Vertical sections, clearly separated</div>
+        <section aria-labelledby="what-youll-pay-h" class="px-16 py-14 bg-white border-b border-gray-100 dark:bg-slate-800 dark:border-slate-800">
+          <h2 id="what-youll-pay-h" class="text-pretty text-2xl font-bold text-gray-900 mb-10 dark:text-slate-100">What You'll Pay</h2>
+          <div class="space-y-8" style="max-width:800px;">
+
+            <article class="flex gap-6 pb-8 border-b border-gray-100 dark:border-slate-800" aria-labelledby="be-fees-h">
+              <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center shrink-0 mt-1 dark:bg-blue-900" role="img" aria-label="Blue Education fees icon">
+                <svg class="w-5 h-5 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              </div>
+              <div>
+                <h3 id="be-fees-h" class="text-pretty text-lg font-bold text-gray-900 mb-2 dark:text-slate-100">Blue Education Service Fees</h3>
+                <p class="text-pretty text-gray-600 text-sm leading-relaxed dark:text-slate-400">Our service fees cover consultation, pathway planning, application processing, document compilation, and ongoing support. Fees vary by case — contact us for a personalised quote.</p>
+              </div>
+            </article>
+
+            <article class="flex gap-6 pb-8 border-b border-gray-100 dark:border-slate-800" aria-labelledby="stac-h">
+              <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center shrink-0 mt-1 dark:bg-blue-900" role="img" aria-label="STAC charges icon">
+                <svg class="w-5 h-5 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+              </div>
+              <div>
+                <h3 id="stac-h" class="text-pretty text-lg font-bold text-gray-900 mb-2 dark:text-slate-100">Student Travel Advice &amp; Consent (STAC)</h3>
+                <p class="text-pretty text-gray-600 text-sm leading-relaxed dark:text-slate-400">STAC charges are based on each applicant's visa history and specific circumstances. We provide transparent calculations at initial consultation.</p>
+              </div>
+            </article>
+
+            <article class="flex gap-6 pb-8 border-b border-gray-100 dark:border-slate-800" aria-labelledby="medical-h">
+              <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center shrink-0 mt-1 dark:bg-blue-900" role="img" aria-label="Medical examination icon">
+                <svg class="w-5 h-5 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+              </div>
+              <div>
+                <h3 id="medical-h" class="text-pretty text-lg font-bold text-gray-900 mb-2 dark:text-slate-100">Medical Examinations</h3>
+                <p class="text-pretty text-gray-600 text-sm leading-relaxed dark:text-slate-400">Required for visa applications. Cost ranges from <strong class="text-gray-900 dark:text-slate-100">$240 to $380</strong> depending on examination type (standard health check vs comprehensive medical assessment).</p>
+              </div>
+            </article>
+
+            <article class="flex gap-6 pb-8 border-b border-gray-100 dark:border-slate-800" aria-labelledby="visa-fees-h">
+              <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center shrink-0 mt-1 dark:bg-blue-900" role="img" aria-label="Visa fees icon">
+                <svg class="w-5 h-5 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"/></svg>
+              </div>
+              <div>
+                <h3 id="visa-fees-h" class="text-pretty text-lg font-bold text-gray-900 mb-2 dark:text-slate-100">Visa Application Fees</h3>
+                <p class="text-pretty text-gray-600 text-sm leading-relaxed dark:text-slate-400">Set by the Australian Government Department of Home Affairs. Vary by visa subclass. See <a href="./services-migration-student-visas.html" class="text-blue-600 hover:underline dark:text-blue-400">student visa details &rarr;</a>. Separate from Blue Education fees.</p>
+              </div>
+            </article>
+
+            <article class="flex gap-6" aria-labelledby="tuition-h">
+              <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center shrink-0 mt-1 dark:bg-blue-900" role="img" aria-label="Tuition fees icon">
+                <svg class="w-5 h-5 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/></svg>
+              </div>
+              <div>
+                <h3 id="tuition-h" class="text-pretty text-lg font-bold text-gray-900 mb-2 dark:text-slate-100">Tuition Fees</h3>
+                <p class="text-pretty text-gray-600 text-sm leading-relaxed dark:text-slate-400">Paid directly to your educational institution. Vary by institution, program, and duration.</p>
+              </div>
+            </article>
+
+          </div>
+        </section>
+
+        <!-- ════════════════════════════════════════════════════
+             §5  ADDITIONAL SUPPORT SERVICES TABLE
+        ════════════════════════════════════════════════════ -->
+        <div class="wf-bar">§5 · Additional Support Services — Simple reference table</div>
+        <section aria-labelledby="additional-h" class="px-16 py-14 bg-gray-50 border-b border-gray-100 dark:bg-slate-900 dark:border-slate-800">
+          <h2 id="additional-h" class="text-pretty text-2xl font-bold text-gray-900 mb-8 dark:text-slate-100">Additional Support Services</h2>
+          <div class="overflow-x-auto" style="max-width:700px;">
+            <table class="w-full text-sm border border-gray-200 rounded-lg overflow-hidden dark:border-slate-700">
+              <caption class="sr-only">Additional support services available from Blue Education</caption>
+              <thead class="bg-gray-800 text-white">
+                <tr>
+                  <th scope="col" class="text-left px-6 py-3 font-semibold">Service</th>
+                  <th scope="col" class="text-left px-6 py-3 font-semibold">Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-b border-gray-100 bg-white dark:border-slate-800 dark:bg-slate-800">
+                  <td class="px-6 py-4 font-medium text-gray-900 dark:text-slate-100">
+                    <a href="./services-student-support.html" class="text-blue-600 hover:underline dark:text-blue-400">24/7 Emergency Hotline</a>
+                  </td>
+                  <td class="px-6 py-4 text-gray-700 dark:text-slate-300">Round-the-clock crisis support</td>
+                </tr>
+                <tr class="border-b border-gray-100 bg-gray-50 dark:border-slate-800 dark:bg-slate-900">
+                  <td class="px-6 py-4 font-medium text-gray-900 dark:text-slate-100">Document Translation</td>
+                  <td class="px-6 py-4 text-gray-700 dark:text-slate-300">NAATI-certified</td>
+                </tr>
+                <tr class="border-b border-gray-100 bg-white dark:border-slate-800 dark:bg-slate-800">
+                  <td class="px-6 py-4 font-medium text-gray-900 dark:text-slate-100">Airport Transfers</td>
+                  <td class="px-6 py-4 text-gray-700 dark:text-slate-300">Meet, greet, transport</td>
+                </tr>
+                <tr class="border-b border-gray-100 bg-gray-50 dark:border-slate-800 dark:bg-slate-900">
+                  <td class="px-6 py-4 font-medium text-gray-900 dark:text-slate-100">
+                    <a href="./programs-study-tours.html" class="text-blue-600 hover:underline dark:text-blue-400">Study Tour Programs</a>
+                  </td>
+                  <td class="px-6 py-4 text-gray-700 dark:text-slate-300">Short-term tour coordination</td>
+                </tr>
+                <tr class="bg-white dark:bg-slate-800">
+                  <td class="px-6 py-4 font-medium text-gray-900 dark:text-slate-100">Specialised Consultations</td>
+                  <td class="px-6 py-4 text-gray-700 dark:text-slate-300">Expert advice sessions</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- ════════════════════════════════════════════════════
+             §6  STUDENT RESPONSIBILITIES
+        ════════════════════════════════════════════════════ -->
+        <div class="wf-bar">§6 · Student Responsibilities — Feature list, 5 items</div>
+        <section aria-labelledby="responsibilities-h" class="px-16 py-14 bg-white border-b border-gray-100 dark:bg-slate-800 dark:border-slate-800">
+          <h2 id="responsibilities-h" class="text-pretty text-2xl font-bold text-gray-900 mb-4 dark:text-slate-100">What Students Budget Separately</h2>
+          <p class="text-pretty text-gray-600 text-sm mb-8 dark:text-slate-400">These costs are not part of Blue Education's service fees. You pay for these directly.</p>
+          <div class="grid grid-cols-2 gap-5" style="max-width:900px;">
+
+            <article class="flex gap-4 p-5 border border-gray-200 rounded-lg bg-gray-50 dark:border-slate-700 dark:bg-slate-900" aria-labelledby="accommodation-h">
+              <div class="w-9 h-9 bg-blue-100 rounded flex items-center justify-center shrink-0 dark:bg-blue-900" role="img" aria-label="Accommodation icon">
+                <svg class="w-5 h-5 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+              </div>
+              <div>
+                <h3 id="accommodation-h" class="text-pretty font-bold text-gray-900 text-sm mb-1 dark:text-slate-100">Accommodation</h3>
+                <p class="text-pretty text-gray-600 text-xs dark:text-slate-400">Homestay, rental, or student housing</p>
+              </div>
+            </article>
+
+            <article class="flex gap-4 p-5 border border-gray-200 rounded-lg bg-gray-50 dark:border-slate-700 dark:bg-slate-900" aria-labelledby="guardianship-h">
+              <div class="w-9 h-9 bg-blue-100 rounded flex items-center justify-center shrink-0 dark:bg-blue-900" role="img" aria-label="Guardianship icon">
+                <svg class="w-5 h-5 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+              </div>
+              <div>
+                <h3 id="guardianship-h" class="text-pretty font-bold text-gray-900 text-sm mb-1 dark:text-slate-100">Guardianship</h3>
+                <p class="text-pretty text-gray-600 text-xs dark:text-slate-400">Required for students under 18 (Professional Student Care Australia or International Student Alliance)</p>
+              </div>
+            </article>
+
+            <article class="flex gap-4 p-5 border border-gray-200 rounded-lg bg-gray-50 dark:border-slate-700 dark:bg-slate-900" aria-labelledby="oshc-h">
+              <div class="w-9 h-9 bg-blue-100 rounded flex items-center justify-center shrink-0 dark:bg-blue-900" role="img" aria-label="Health insurance icon">
+                <svg class="w-5 h-5 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+              </div>
+              <div>
+                <h3 id="oshc-h" class="text-pretty font-bold text-gray-900 text-sm mb-1 dark:text-slate-100">OSHC</h3>
+                <p class="text-pretty text-gray-600 text-xs dark:text-slate-400">Overseas Student Health Cover — mandatory for all <a href="./services-migration-student-visas.html" class="text-blue-600 hover:underline dark:text-blue-400">student visas</a></p>
+              </div>
+            </article>
+
+            <article class="flex gap-4 p-5 border border-gray-200 rounded-lg bg-gray-50 dark:border-slate-700 dark:bg-slate-900" aria-labelledby="living-h">
+              <div class="w-9 h-9 bg-blue-100 rounded flex items-center justify-center shrink-0 dark:bg-blue-900" role="img" aria-label="Living expenses icon">
+                <svg class="w-5 h-5 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg>
+              </div>
+              <div>
+                <h3 id="living-h" class="text-pretty font-bold text-gray-900 text-sm mb-1 dark:text-slate-100">Living Expenses</h3>
+                <p class="text-pretty text-gray-600 text-xs dark:text-slate-400">Transport, food, personal costs</p>
+              </div>
+            </article>
+
+            <article class="flex gap-4 p-5 border border-gray-200 rounded-lg bg-gray-50 col-span-2 dark:border-slate-700 dark:bg-slate-900" style="max-width:432px;" aria-labelledby="tuition-resp-h">
+              <div class="w-9 h-9 bg-blue-100 rounded flex items-center justify-center shrink-0 dark:bg-blue-900" role="img" aria-label="Tuition icon">
+                <svg class="w-5 h-5 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/></svg>
+              </div>
+              <div>
+                <h3 id="tuition-resp-h" class="text-pretty font-bold text-gray-900 text-sm mb-1 dark:text-slate-100">Tuition</h3>
+                <p class="text-pretty text-gray-600 text-xs dark:text-slate-400">Course fees paid directly to your institution</p>
+              </div>
+            </article>
+
+          </div>
+        </section>
+
+        <!-- ════════════════════════════════════════════════════
+             §7  FINAL CTA BANNER
+        ════════════════════════════════════════════════════ -->
+        <div class="wf-bar">§7 · CTA Banner — Full-width, dark background</div>
+        <section aria-labelledby="cta-h" class="py-16 px-8 text-center" style="background:#1e3a5f;">
+          <h2 id="cta-h" class="text-pretty text-4xl font-bold text-white mb-4">Get your cost breakdown.</h2>
+          <p class="text-pretty text-lg mb-8 mx-auto" style="color:#93c5fd; max-width:560px;">Tell us your situation — education level, visa status, and what you're trying to achieve. We'll provide an itemised quote before any work begins.</p>
+          <div class="flex gap-4 justify-center">
+            <a href="./contact.html" class="bg-white font-bold px-8 py-3 rounded text-base hover:bg-gray-100 dark:bg-slate-800" style="color:#1e3a5f;">Get a Personalised Quote</a>
+            <a href="tel:+61863810030" class="border-2 border-white text-white font-semibold px-8 py-3 rounded text-base">Call +61 8 6381 0030</a>
+          </div>
+        </section>
+
+      </main>
+
+      <div id="footer-placeholder"></div>
+    </div>
+    <!-- end DESKTOP CANVAS -->
+
+    <!-- ═══════════════════════════════════════════════
+         MOBILE CANVAS — 390px
+    ═══════════════════════════════════════════════ -->
+    <div style="width:390px; background:var(--base); color:var(--base-foreground);" class="shadow-2xl shrink-0 sticky top-8">
+      <div class="flex items-center justify-between px-4 py-2 border-b-2 border-amber-300 bg-amber-50 dark:border-amber-800 dark:bg-amber-950">
+        <span class="font-bold text-amber-800 tracking-widest text-xs dark:text-amber-200">WIREFRAME</span>
+        <span class="text-amber-600 font-mono" style="font-size:8px;">Mobile 390px</span>
+      </div>
+
+      <div id="nav-placeholder-m"></div>
+
+      <main>
+
+        <!-- §1 Hero — mobile -->
+        <div class="wf-bar">§1 · Hero</div>
+        <section aria-labelledby="hero-h-m" class="px-5 py-10 bg-gray-50 dark:bg-slate-900">
+          <h1 id="hero-h-m" class="text-pretty text-3xl font-bold text-gray-900 mb-3 leading-tight dark:text-slate-100">Fees &amp; Costs</h1>
+          <p class="text-pretty text-sm text-gray-600 dark:text-slate-400">All fees communicated upfront, before any work begins.</p>
+        </section>
+
+        <!-- §2 Approach — mobile stacked -->
+        <div class="wf-bar">§2 · Our Approach (stacked)</div>
+        <section aria-labelledby="approach-h-m" class="px-5 py-8 bg-white border-t border-gray-200 dark:bg-slate-800 dark:border-slate-700">
+          <h2 id="approach-h-m" class="text-pretty text-xl font-bold text-gray-900 mb-4 dark:text-slate-100">Transparent pricing. Always.</h2>
+          <div class="img-ph rounded-lg mb-5 flex items-center justify-center text-gray-500 font-mono text-xs text-center dark:text-slate-500" style="height:160px;" role="img" aria-label="Consultation setting image placeholder">[IMAGE: Consultation setting]</div>
+          <p class="text-pretty text-gray-600 text-sm leading-relaxed mb-4 dark:text-slate-400">Fees vary by service and complexity. Initial consultation is free. Full quote provided before any work begins.</p>
+          <ul class="space-y-3">
+            <li class="flex gap-2 text-xs text-gray-600 dark:text-slate-400"><span class="text-blue-600 font-bold mt-0.5 dark:text-blue-400">&#10003;</span> Fees by service — pay for what you need</li>
+            <li class="flex gap-2 text-xs text-gray-600 dark:text-slate-400"><span class="text-blue-600 font-bold mt-0.5 dark:text-blue-400">&#10003;</span> Personalised quotes — every situation differs</li>
+            <li class="flex gap-2 text-xs text-gray-600 dark:text-slate-400"><span class="text-blue-600 font-bold mt-0.5 dark:text-blue-400">&#10003;</span> Upfront breakdown — before any application work</li>
+          </ul>
+        </section>
+
+        <!-- §3 Cost Overview — mobile -->
+        <div class="wf-bar">§3 · Cost Overview</div>
+        <section aria-labelledby="cost-overview-h-m" class="px-5 py-8 bg-gray-50 border-t border-gray-200 dark:bg-slate-900 dark:border-slate-700">
+          <h2 id="cost-overview-h-m" class="text-pretty text-lg font-bold text-gray-900 mb-4 dark:text-slate-100">Cost Overview</h2>
+          <div class="overflow-x-auto">
+            <table class="w-full text-xs border border-gray-200 rounded-lg overflow-hidden dark:border-slate-700">
+              <caption class="sr-only">Cost overview table — all fees relevant to your journey</caption>
+              <thead class="bg-gray-800 text-white">
+                <tr>
+                  <th scope="col" class="text-left px-3 py-2 font-semibold">Category</th>
+                  <th scope="col" class="text-left px-3 py-2 font-semibold">Paid To</th>
+                  <th scope="col" class="text-left px-3 py-2 font-semibold">Amount</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-b border-gray-100 bg-white dark:border-slate-800 dark:bg-slate-800"><td class="px-3 py-2 font-medium">BE service fees</td><td class="px-3 py-2">Blue Education</td><td class="px-3 py-2">Varies</td></tr>
+                <tr class="border-b border-gray-100 bg-gray-50 dark:border-slate-800 dark:bg-slate-900"><td class="px-3 py-2 font-medium">STAC charges</td><td class="px-3 py-2">Blue Education</td><td class="px-3 py-2">Varies</td></tr>
+                <tr class="border-b border-gray-100 bg-white dark:border-slate-800 dark:bg-slate-800"><td class="px-3 py-2 font-medium">Medical exam</td><td class="px-3 py-2">Medical provider</td><td class="px-3 py-2">$240–$380</td></tr>
+                <tr class="border-b border-gray-100 bg-gray-50 dark:border-slate-800 dark:bg-slate-900"><td class="px-3 py-2 font-medium">Visa application</td><td class="px-3 py-2">AU Government</td><td class="px-3 py-2">Varies</td></tr>
+                <tr class="bg-white dark:bg-slate-800"><td class="px-3 py-2 font-medium">Tuition</td><td class="px-3 py-2">Institution</td><td class="px-3 py-2">Varies</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- §4 What You'll Pay — mobile -->
+        <div class="wf-bar">§4 · What You'll Pay</div>
+        <section aria-labelledby="what-pay-h-m" class="px-5 py-8 bg-white border-t border-gray-200 dark:bg-slate-800 dark:border-slate-700">
+          <h2 id="what-pay-h-m" class="text-pretty text-lg font-bold text-gray-900 mb-5 dark:text-slate-100">What You'll Pay</h2>
+          <div class="space-y-5">
+
+            <article class="border border-gray-200 rounded-lg p-4 dark:border-slate-700" aria-labelledby="be-fees-h-m">
+              <h3 id="be-fees-h-m" class="text-pretty font-bold text-gray-900 text-sm mb-1 dark:text-slate-100">Blue Education Service Fees</h3>
+              <p class="text-pretty text-xs text-gray-600 leading-relaxed dark:text-slate-400">Covers consultation, pathway planning, application processing, document compilation, and ongoing support. Varies by case.</p>
+            </article>
+
+            <article class="border border-gray-200 rounded-lg p-4 dark:border-slate-700" aria-labelledby="stac-h-m">
+              <h3 id="stac-h-m" class="text-pretty font-bold text-gray-900 text-sm mb-1 dark:text-slate-100">STAC Charges</h3>
+              <p class="text-pretty text-xs text-gray-600 leading-relaxed dark:text-slate-400">Based on visa history and specific circumstances. Transparent calculations provided at consultation.</p>
+            </article>
+
+            <article class="border border-gray-200 rounded-lg p-4 dark:border-slate-700" aria-labelledby="medical-h-m">
+              <h3 id="medical-h-m" class="text-pretty font-bold text-gray-900 text-sm mb-1 dark:text-slate-100">Medical Examinations</h3>
+              <p class="text-pretty text-xs text-gray-600 leading-relaxed dark:text-slate-400">Required for visa applications. <strong class="text-gray-900 dark:text-slate-100">$240 to $380</strong> depending on examination type.</p>
+            </article>
+
+            <article class="border border-gray-200 rounded-lg p-4 dark:border-slate-700" aria-labelledby="visa-fees-h-m">
+              <h3 id="visa-fees-h-m" class="text-pretty font-bold text-gray-900 text-sm mb-1 dark:text-slate-100">Visa Application Fees</h3>
+              <p class="text-pretty text-xs text-gray-600 leading-relaxed dark:text-slate-400">Set by the Australian Government. Vary by visa subclass. Separate from Blue Education fees.</p>
+            </article>
+
+            <article class="border border-gray-200 rounded-lg p-4 dark:border-slate-700" aria-labelledby="tuition-h-m">
+              <h3 id="tuition-h-m" class="text-pretty font-bold text-gray-900 text-sm mb-1 dark:text-slate-100">Tuition Fees</h3>
+              <p class="text-pretty text-xs text-gray-600 leading-relaxed dark:text-slate-400">Paid directly to your institution. Vary by program and duration.</p>
+            </article>
+
+          </div>
+        </section>
+
+        <!-- §5 Additional Services — mobile -->
+        <div class="wf-bar">§5 · Additional Support Services</div>
+        <section aria-labelledby="additional-h-m" class="px-5 py-8 bg-gray-50 border-t border-gray-200 dark:bg-slate-900 dark:border-slate-700">
+          <h2 id="additional-h-m" class="text-pretty text-lg font-bold text-gray-900 mb-4 dark:text-slate-100">Additional Support Services</h2>
+          <div class="overflow-x-auto">
+            <table class="w-full text-xs border border-gray-200 rounded-lg overflow-hidden dark:border-slate-700">
+              <caption class="sr-only">Additional support services from Blue Education</caption>
+              <thead class="bg-gray-800 text-white">
+                <tr>
+                  <th scope="col" class="text-left px-3 py-2 font-semibold">Service</th>
+                  <th scope="col" class="text-left px-3 py-2 font-semibold">Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-b border-gray-100 bg-white dark:border-slate-800 dark:bg-slate-800"><td class="px-3 py-2 font-medium">24/7 Emergency Hotline</td><td class="px-3 py-2 text-gray-600 dark:text-slate-400">Round-the-clock crisis support</td></tr>
+                <tr class="border-b border-gray-100 bg-gray-50 dark:border-slate-800 dark:bg-slate-900"><td class="px-3 py-2 font-medium">Document Translation</td><td class="px-3 py-2 text-gray-600 dark:text-slate-400">NAATI-certified</td></tr>
+                <tr class="border-b border-gray-100 bg-white dark:border-slate-800 dark:bg-slate-800"><td class="px-3 py-2 font-medium">Airport Transfers</td><td class="px-3 py-2 text-gray-600 dark:text-slate-400">Meet, greet, transport</td></tr>
+                <tr class="border-b border-gray-100 bg-gray-50 dark:border-slate-800 dark:bg-slate-900"><td class="px-3 py-2 font-medium">Study Tours</td><td class="px-3 py-2 text-gray-600 dark:text-slate-400">Short-term tour coordination</td></tr>
+                <tr class="bg-white dark:bg-slate-800"><td class="px-3 py-2 font-medium">Specialised Consultations</td><td class="px-3 py-2 text-gray-600 dark:text-slate-400">Expert advice sessions</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- §6 Student Responsibilities — mobile -->
+        <div class="wf-bar">§6 · Student Responsibilities</div>
+        <section aria-labelledby="responsibilities-h-m" class="px-5 py-8 bg-white border-t border-gray-200 dark:bg-slate-800 dark:border-slate-700">
+          <h2 id="responsibilities-h-m" class="text-pretty text-lg font-bold text-gray-900 mb-2 dark:text-slate-100">What Students Budget Separately</h2>
+          <p class="text-pretty text-xs text-gray-500 mb-5 dark:text-slate-500">Not part of Blue Education fees — paid directly by the student.</p>
+          <ul class="space-y-3">
+            <li class="flex gap-3 text-sm">
+              <span class="text-blue-600 font-bold shrink-0 dark:text-blue-400">&#9679;</span>
+              <div><strong class="text-gray-900 text-xs dark:text-slate-100">Accommodation</strong> <span class="text-gray-500 text-xs block dark:text-slate-500">Homestay, rental, or student housing</span></div>
+            </li>
+            <li class="flex gap-3 text-sm">
+              <span class="text-blue-600 font-bold shrink-0 dark:text-blue-400">&#9679;</span>
+              <div><strong class="text-gray-900 text-xs dark:text-slate-100">Guardianship</strong> <span class="text-gray-500 text-xs block dark:text-slate-500">Required for students under 18</span></div>
+            </li>
+            <li class="flex gap-3 text-sm">
+              <span class="text-blue-600 font-bold shrink-0 dark:text-blue-400">&#9679;</span>
+              <div><strong class="text-gray-900 text-xs dark:text-slate-100">OSHC</strong> <span class="text-gray-500 text-xs block dark:text-slate-500">Overseas Student Health Cover — mandatory</span></div>
+            </li>
+            <li class="flex gap-3 text-sm">
+              <span class="text-blue-600 font-bold shrink-0 dark:text-blue-400">&#9679;</span>
+              <div><strong class="text-gray-900 text-xs dark:text-slate-100">Living Expenses</strong> <span class="text-gray-500 text-xs block dark:text-slate-500">Transport, food, personal costs</span></div>
+            </li>
+            <li class="flex gap-3 text-sm">
+              <span class="text-blue-600 font-bold shrink-0 dark:text-blue-400">&#9679;</span>
+              <div><strong class="text-gray-900 text-xs dark:text-slate-100">Tuition</strong> <span class="text-gray-500 text-xs block dark:text-slate-500">Course fees paid to institution</span></div>
+            </li>
+          </ul>
+        </section>
+
+        <!-- §7 CTA Banner — mobile -->
+        <div class="wf-bar">§7 · CTA Banner</div>
+        <section aria-labelledby="cta-h-m" class="px-5 py-12 text-center" style="background:#1e3a5f;">
+          <h2 id="cta-h-m" class="text-pretty text-2xl font-bold text-white mb-3">Get your cost breakdown.</h2>
+          <p class="text-pretty text-sm mb-6" style="color:#93c5fd;">Tell us your situation — we'll provide an itemised quote before any work begins.</p>
+          <div class="flex flex-col gap-3">
+            <a href="./contact.html" class="bg-white font-bold px-6 py-3 rounded text-sm dark:bg-slate-800" style="color:#1e3a5f;">Get a Personalised Quote</a>
+            <a href="tel:+61863810030" class="border-2 border-white text-white font-semibold px-6 py-3 rounded text-sm">Call +61 8 6381 0030</a>
+          </div>
+        </section>
+
+      </main>
+
+      <div id="footer-placeholder-m"></div>
+    </div>
+    <!-- end MOBILE CANVAS -->
+
+  </div>
+  <script src="./assets/site.js"></script>
+</body>
+</html>

@@ -1,6 +1,6 @@
 #+title: Blue Education Website Sitemap
 
-*Total pages: 24* (excluding blog articles)
+*Total pages: 25* (excluding blog articles)
 
 Based on available content. Pages marked /[planned]/ need content from client before development.
 
@@ -9,7 +9,7 @@ Based on available content. Pages marked /[planned]/ need content from client be
 * Visual Sitemap
 
 #+begin_example
-Blue Education Website (24 pages)
+Blue Education Website (25 pages)
 │
 ├── 1.  Home (/)
 │
@@ -28,6 +28,7 @@ Blue Education Website (24 pages)
 │   │   └── 10. Permanent Residence (/services/migration/permanent-residence)
 │   │
 │   ├── 11. Career Services (/services/career)
+│   ├── 11b. Executive Internship (/programmes/executive-internship)
 │   └── 12. Student Support (/services/student-support)
 │
 ├── Programs
@@ -44,7 +45,7 @@ Blue Education Website (24 pages)
 │
 ├── Resources
 │   ├── 20. Blog (/blog)
-│   ├── 21. FAQ (/resources/faq) [planned]
+│   ├── 21. FAQ (/resources/faq)
 │   └── 22. Admission Requirements (/resources/admission-requirements)
 │
 ├── 23. Fees & Investment (/fees)
@@ -65,7 +66,7 @@ Blue Education Website (24 pages)
 - Service overview cards (Education, Migration, Career, Support)
 - Featured programs (Buddy Programme, SCSA)
 - Why Australia highlights (3-4 key stats)
-- Testimonials carousel [planned - need from client]
+- Testimonials carousel
 - Partners/university logos strip
 - Latest blog posts (3)
 - Contact/consultation CTA
@@ -306,6 +307,14 @@ Blue Education Website (24 pages)
 
 -----
 
+** 11b. Executive Internship Programme (/programmes/executive-internship)
+
+*Purpose:* Career development through structured internship placements for international graduates.
+
+*Source:* DONE-11b-executive-internship.org
+
+-----
+
 ** 16. Why Australia (/why-australia)
 
 *Purpose:* Value proposition for choosing Australia as education destination. Includes Perth/WA focus per client direction.
@@ -335,7 +344,7 @@ Blue Education Website (24 pages)
 - Professional credentials and memberships
 - Why Choose Blue Education (6 differentiators)
 - Geographic presence
-- Testimonials [planned - need from client]
+- Testimonials
 
 *Source:* company-overview.org, service-integration.org
 
@@ -365,7 +374,7 @@ Blue Education Website (24 pages)
 - TAFE and RTO partners
 - Professional memberships (Migration Alliance, MIA, QEAC)
 - International office network
-- Partner logos [planned - need from client]
+- Partner logos [placeholder]
 
 *Source:* company-overview.org (credentials + relationships)
 
@@ -386,7 +395,7 @@ Blue Education Website (24 pages)
 
 -----
 
-** 21. FAQ (/resources/faq) [planned]
+** 21. FAQ (/resources/faq)
 
 *Purpose:* Address common questions, reduce support burden, improve SEO.
 
