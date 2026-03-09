@@ -224,3 +224,26 @@ protected function isAccessible(User $user, ?string $path = null): bool
 - CRITICAL: ALWAYS use `search-docs` tool for version-specific Pest documentation and updated code examples.
 - IMPORTANT: Activate `pest-testing` every time you're working with a Pest or testing-related task.
 </laravel-boost-guidelines>
+
+# Blue Education
+
+Marketing site for an international education consultancy in Perth, WA. Laravel 12 + Tailwind v4 + Alpine.js + GSAP.
+
+## Quick Reference
+
+- **Showcase page:** `/showcase` — preview all UI components
+- **Wireframes (spec):** `DOCS/wireframes/*.html` — 27 pages, pending client approval
+- **Brand assets:** `public/brand/` — logos (PNG/WebP), favicons, OG image
+- **Design tokens:** `resources/css/app.css` — `primary-50` through `primary-950`
+- **SEO config:** `config/seo.php` — defaults cascade; override per-page via `<x-layout>` props
+- **Base layout:** `<x-layout title="..." description="...">` wraps every page
+
+## Detailed Docs (read when working in that area)
+
+| Doc | When to read |
+|---|---|
+| `.claude/docs/architecture.md` | Directory structure, tech stack, key decisions |
+| `.claude/docs/components.md` | Building pages — component names, props, variants |
+| `.claude/docs/brand.md` | Colors, typography, logo files, favicon set |
+| `.claude/docs/seo.md` | SEO system — config, per-page overrides, JSON-LD |
+| `.claude/docs/wireframes.md` | Page inventory, section mapping, wireframe conventions |

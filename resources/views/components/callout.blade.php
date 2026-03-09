@@ -1,0 +1,29 @@
+@props([
+    'title',
+    'variant' => 'primary',
+    'icon' => null,
+])
+
+@php
+    $variants = [
+        'primary' => 'bg-primary-50 border-primary-200 text-primary-900',
+        'info' => 'bg-blue-50 border-blue-200 text-blue-900',
+        'success' => 'bg-green-50 border-green-200 text-green-900',
+        'warning' => 'bg-amber-50 border-amber-200 text-amber-900',
+    ];
+    $style = $variants[$variant] ?? $variants['primary'];
+@endphp
+
+<div {{ $attributes->merge(['class' => "border rounded-corner-lg p-6 {$style}"]) }}>
+    <div class="flex items-start gap-4">
+        @if($icon)
+            <div class="shrink-0 mt-0.5">{!! $icon !!}</div>
+        @endif
+        <div>
+            <h3 class="font-semibold mb-2">{{ $title }}</h3>
+            <div class="text-sm leading-relaxed opacity-90">
+                {{ $slot }}
+            </div>
+        </div>
+    </div>
+</div>
