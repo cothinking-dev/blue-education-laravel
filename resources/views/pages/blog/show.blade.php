@@ -1,0 +1,64 @@
+<x-layout :title="$post->title"
+          :description="$post->excerpt">
+
+    {{-- Article --}}
+    <article class="bg-white">
+        <div class="max-w-3xl mx-auto px-8 lg:px-16 py-14">
+
+            {{-- Meta --}}
+            <div class="flex flex-wrap items-center gap-3 mb-6 text-sm">
+                @if($post->category)
+                    <span class="inline-block bg-{{ $post->category->color ?? 'primary' }}-100 text-{{ $post->category->color ?? 'primary' }}-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">{{ $post->category->name }}</span>
+                @endif
+                @if($post->published_at)
+                    <span class="text-gray-500">{{ $post->published_at->format('d M Y') }}</span>
+                @endif
+                @if($post->read_time)
+                    <span class="text-gray-400">&middot;</span>
+                    <span class="text-gray-500">{{ $post->read_time }} min read</span>
+                @endif
+            </div>
+
+            {{-- Title --}}
+            <h1 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-8 text-pretty leading-tight">{{ $post->title }}</h1>
+
+            {{-- Featured Image --}}
+            @if($post->featured_image)
+                <img src="{{ asset($post->featured_image) }}" alt="{{ $post->title }}" class="w-full rounded-corner-lg mb-8 aspect-[2/1] object-cover" loading="lazy">
+            @endif
+
+            {{-- Body --}}
+            <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
+                {!! $post->body !!}
+            </div>
+        </div>
+    </article>
+
+    {{-- Related Posts --}}
+    @if($relatedPosts->isNotEmpty())
+        <section class="bg-gray-50">
+            <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
+                <h2 class="text-2xl font-bold text-gray-900 mb-8">Related Articles</h2>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    @foreach($relatedPosts as $related)
+                        <x-blog-card :title="$related->title"
+                                     :excerpt="$related->excerpt"
+                                     :image="$related->featured_image"
+                                     :category="$related->category?->name"
+                                     :categoryColor="$related->category?->color"
+                                     :date="$related->published_at?->format('d M Y')"
+                                     :readTime="$related->read_time . ' min read'"
+                                     :href="route('blog.show', $related)" />
+                    @endforeach
+                </div>
+            </div>
+        </section>
+    @endif
+
+    {{-- CTA --}}
+    <x-cta-banner title="Ready to start your Australian journey?"
+                  subtitle="Talk to a Blue Education advisor about education pathways, visa options, and career planning — all in one place."
+                  primaryText="Book a Consultation"
+                  :primaryHref="route('contact')" />
+
+</x-layout>

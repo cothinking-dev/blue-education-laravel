@@ -3,6 +3,7 @@
     'description' => null,
     'icon' => null,
     'image' => null,
+    'alt' => '',
     'badge' => null,
     'href' => null,
     'linkText' => 'Learn more',
@@ -11,7 +12,7 @@
 <div {{ $attributes->merge(['class' => 'border border-gray-200 rounded-corner-lg overflow-hidden bg-white hover:shadow-lg transition-shadow']) }}>
     @if($image)
         <div class="aspect-[16/10] bg-gray-200" style="background-image: repeating-linear-gradient(-55deg, transparent, transparent 8px, rgba(0,0,0,0.04) 8px, rgba(0,0,0,0.04) 9px);">
-            <img src="{{ $image }}" alt="" class="w-full h-full object-cover">
+            <img src="{{ $image }}" alt="{{ $alt }}" class="w-full h-full object-cover">
         </div>
     @endif
     <div class="p-6">
@@ -31,7 +32,7 @@
         @if($href)
             <a href="{{ $href }}" class="inline-flex items-center gap-1 text-sm font-medium text-primary-800 hover:text-primary-600 transition-colors">
                 {{ $linkText }}
-                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                <x-heroicon-m-chevron-right class="w-4 h-4" />
             </a>
         @endif
     </div>

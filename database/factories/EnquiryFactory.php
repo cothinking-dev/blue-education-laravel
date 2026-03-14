@@ -1,0 +1,29 @@
+<?php
+
+namespace Database\Factories;
+
+use Illuminate\Database\Eloquent\Factories\Factory;
+
+/**
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Enquiry>
+ */
+class EnquiryFactory extends Factory
+{
+    /**
+     * Define the model's default state.
+     *
+     * @return array<string, mixed>
+     */
+    public function definition(): array
+    {
+        return [
+            'full_name' => fake()->name(),
+            'email' => fake()->safeEmail(),
+            'phone' => fake()->phoneNumber(),
+            'country' => fake()->country(),
+            'enquiry_type' => fake()->randomElement(['Education', 'Migration', 'Career', 'Student Support', 'Other']),
+            'preferred_language' => fake()->randomElement(['English', 'Cantonese', 'Mandarin', 'Bahasa', 'Malay', 'Hindi', 'Indonesian', 'Japanese', 'Other']),
+            'message' => fake()->paragraph(),
+        ];
+    }
+}

@@ -1,7 +1,9 @@
 <?php
 
-test('the application returns a successful response', function () {
-    $response = $this->get('/');
+use App\Models\Testimonial;
 
-    $response->assertStatus(200);
+it('returns a successful response for the home page', function () {
+    Testimonial::factory()->active()->count(3)->create();
+
+    $this->get('/')->assertSuccessful();
 });

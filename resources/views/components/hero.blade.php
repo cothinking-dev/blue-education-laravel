@@ -2,11 +2,12 @@
     'title',
     'subtitle' => null,
     'image' => null,
+    'alt' => '',
     'overlay' => true,
     'breadcrumbs' => null,
     'badge' => null,
     'variant' => 'centered',
-    'height' => '460px',
+    'height' => '320px',
 ])
 
 @php
@@ -36,7 +37,7 @@
         </div>
         <div class="flex-1">
             @if($image)
-                <img src="{{ $image }}" alt="" class="rounded-corner-lg w-full h-auto">
+                <img src="{{ $image }}" alt="{{ $alt }}" class="rounded-corner-lg w-full h-auto">
             @else
                 <div class="bg-gray-200 rounded-corner-lg aspect-[4/3] w-full" style="background-image: repeating-linear-gradient(-55deg, transparent, transparent 8px, rgba(0,0,0,0.04) 8px, rgba(0,0,0,0.04) 9px);"></div>
             @endif
@@ -46,7 +47,7 @@
 @else
 <section {{ $attributes->merge(['class' => 'relative flex flex-col ' . $alignment]) }} style="height:{{ $height }}; background-color:#374151;">
     @if($image)
-        <img src="{{ $image }}" alt="" class="absolute inset-0 w-full h-full object-cover">
+        <img src="{{ $image }}" alt="{{ $alt }}" class="absolute inset-0 w-full h-full object-cover">
     @endif
     @if($overlay)
         <div class="absolute inset-0" style="background:rgba(17,24,39,0.58);"></div>

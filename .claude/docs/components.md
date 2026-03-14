@@ -43,7 +43,7 @@ Text on one side, image placeholder on the other. Flip with `reverse`.
 Props: `title`, `reverse`, `image`.
 
 ### `<x-stat-block>` — Statistics strip
-Horizontal stat counters. Variants: `dark`, `primary`, `light`.
+Horizontal stat counters with count-up animation on scroll (Alpine `x-intersect`). Variants: `dark`, `primary`, `light`.
 Props: `stats` (array of `['value' => '...', 'label' => '...']`), `variant`.
 
 ### `<x-section-heading>` — Section title + subtitle
@@ -93,7 +93,48 @@ Numbered circles with connector lines. Props: `steps` (array of `['title' => '..
 Blue header, alternating rows. Props: `title`, `rows` (array of `['key' => '...', 'value' => '...']`).
 
 ### `<x-data-table>` — Full data table
+Horizontal scroll on mobile with right-edge shadow indicator (Alpine-powered).
 Props: `headers` (array), `rows` (array of arrays), `caption`, `striped`.
 
 ### `<x-logo-grid>` — Partner logo strip
 Props: `logos` (array of `['src' => '...', 'alt' => '...']`), `title`, `grayscale`.
+
+## People & Blog
+
+### `<x-team-member>` — Team member card
+Photo (WebP+PNG `<picture>`) with initials fallback. Name, role, credentials, bio, languages.
+Props: `name`, `role`, `photo`, `bio`, `credentials`, `languages`.
+
+### `<x-blog-card>` — Blog post card
+Image, category badge (dynamic color), title (line-clamp-2), excerpt, date, read time.
+Props: `title`, `excerpt`, `image`, `category`, `categoryColor`, `date`, `readTime`, `href`.
+
+### `<x-featured-post>` — Featured blog card
+Two-column layout (image left, content right). Same props as `<x-blog-card>`.
+
+### `<x-credential-card>` — Credential/accreditation card
+Logo + organization name + description. Falls back to shield icon.
+Props: `name`, `logo`, `description`.
+
+## Forms
+
+### `<x-contact-form>` — Contact enquiry form
+7 fields: full name*, email*, phone, country, enquiry type (select), preferred language (select), message. AJAX submit with Alpine, inline validation errors, success state.
+Props: `action` (POST URL).
+
+### `<x-contact-card>` — Contact info card
+Icon + title + slot content for address/phone/email details.
+Props: `title`, `icon` (raw SVG).
+
+## Navigation & Pagination
+
+### `<x-auto-breadcrumb>` — Auto-generated breadcrumbs
+Builds breadcrumb trail from URL segments using route `->defaults('label', ...)` metadata.
+Props: `dark`.
+
+### `<x-pagination>` — Page navigation
+Previous / numbered / next links. Wraps a Laravel paginator.
+Props: `paginator` (Laravel paginator instance).
+
+### `<x-whatsapp-widget>` — Floating WhatsApp button
+Fixed bottom-right wa.me link. Included globally in `<x-layout>`.

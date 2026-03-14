@@ -2,6 +2,7 @@
     'title',
     'reverse' => false,
     'image' => null,
+    'alt' => '',
 ])
 
 <section {{ $attributes->merge(['class' => 'bg-white']) }}>
@@ -15,7 +16,7 @@
             </div>
             <div class="flex-1 lg:max-w-[40%]">
                 @if($image)
-                    <img src="{{ $image }}" alt="" class="rounded-corner-lg w-full h-auto">
+                    <img src="{{ $image }}" alt="{{ $alt }}" class="rounded-corner-lg w-full h-auto">
                 @else
                     <div class="bg-gray-200 rounded-corner-lg aspect-[4/3] w-full" style="background-image: repeating-linear-gradient(-55deg, transparent, transparent 8px, rgba(0,0,0,0.04) 8px, rgba(0,0,0,0.04) 9px);"></div>
                 @endif
