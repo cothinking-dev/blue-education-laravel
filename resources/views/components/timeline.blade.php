@@ -3,7 +3,8 @@
 ])
 
 <div {{ $attributes->merge(['class' => 'relative']) }}>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-{{ min(count($steps), 4) }} gap-8">
+    @php $colMap = [1=>'lg:grid-cols-1',2=>'lg:grid-cols-2',3=>'lg:grid-cols-3',4=>'lg:grid-cols-4']; @endphp
+    <div class="grid grid-cols-1 md:grid-cols-2 {{ $colMap[min(count($steps), 4)] ?? 'lg:grid-cols-4' }} gap-8">
         @foreach($steps as $i => $step)
             <div class="relative flex flex-col items-center text-center">
                 {{-- Connector line --}}

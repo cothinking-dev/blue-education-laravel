@@ -6,7 +6,8 @@
             subtitle="All fees communicated upfront, before any work begins."
             :image="asset('images/heroes/fees.webp')"
             alt="Financial planning and budgeting"
-            variant="left" />
+            variant="left"
+            :breadcrumbs="true" />
 
     {{-- §2 Our Approach --}}
     <x-content-split title="Transparent pricing. Always." :image="asset('images/fees/transparent-pricing.webp')" alt="Transparent business pricing consultation">
@@ -22,7 +23,7 @@
     {{-- §3 Cost Overview --}}
     <section class="bg-gray-50">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
-            <h2 class="text-3xl font-bold text-gray-900 mb-8 text-pretty" data-animate="fade-up">Cost Overview</h2>
+            <x-section-heading title="Cost Overview" :centered="false" />
             <x-data-table :headers="['Cost Category', 'Who Sets It', 'Paid To', 'Amount']"
                           :rows="[
                               ['Blue Education service fees', 'Blue Education', 'Blue Education', 'Varies by case'],
@@ -37,7 +38,7 @@
     {{-- §4 What You'll Pay --}}
     <section class="bg-white">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
-            <h2 class="text-3xl font-bold text-gray-900 mb-8 text-pretty" data-animate="fade-up">What You'll Pay</h2>
+            <x-section-heading title="What You'll Pay" :centered="false" />
             <div class="space-y-6">
                 <div class="border-l-4 border-primary-600 pl-6">
                     <h3 class="font-bold text-gray-900 mb-2">Blue Education Service Fees</h3>
@@ -73,7 +74,7 @@
     {{-- §5 Additional Support Services --}}
     <section class="bg-gray-50">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
-            <h2 class="text-3xl font-bold text-gray-900 mb-8 text-pretty" data-animate="fade-up">Additional Support Services</h2>
+            <x-section-heading title="Additional Support Services" :centered="false" />
             <x-data-table :headers="['Service', 'Description']"
                           :rows="[
                               ['24/7 Emergency Hotline', 'Round-the-clock crisis support'],
@@ -88,7 +89,7 @@
     {{-- §6 What Students Budget Separately --}}
     <section class="bg-white">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
-            <h2 class="text-3xl font-bold text-gray-900 mb-4 text-pretty" data-animate="fade-up">What Students Budget Separately</h2>
+            <x-section-heading title="What Students Budget Separately" :centered="false" />
             <p class="text-gray-600 mb-8 text-pretty">These costs are not part of Blue Education's service fees. You pay for these directly.</p>
             <div class="grid sm:grid-cols-2 gap-6" data-animate="stagger">
                 <div class="border border-gray-200 rounded-corner-lg p-5">

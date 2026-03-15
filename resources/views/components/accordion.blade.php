@@ -10,7 +10,7 @@
                 <x-heroicon-m-chevron-down class="w-5 h-5 text-gray-400 shrink-0 transition-transform group-open:rotate-180" aria-hidden="true" />
             </summary>
             <div class="px-6 pb-5 text-gray-600 leading-relaxed text-pretty">
-                {{ $item['answer'] }}
+                {!! $item['answer'] !!}
             </div>
         </details>
     @endforeach

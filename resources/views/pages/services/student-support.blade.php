@@ -6,12 +6,13 @@
             subtitle="Accommodation. Guardianship. Health cover. Airport transfers. Translation. 24/7 emergency line. All arranged before arrival."
             :image="asset('images/heroes/services-student-support.webp')"
             alt="Students on a campus orientation tour"
-            variant="centered" />
+            variant="centered"
+            :breadcrumbs="true" />
 
     {{-- §2 Support Services --}}
     <section class="bg-white">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
-            <h2 class="text-3xl font-bold text-gray-900 mb-8 text-pretty" data-animate="fade-up">What's included</h2>
+            <x-section-heading title="What's included" :centered="false" />
             <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6" data-animate="stagger">
                 <div class="border border-gray-200 rounded-corner-lg p-6">
                     <div class="w-10 h-10 rounded-corner bg-primary-50 text-primary-800 flex items-center justify-center mb-4">
@@ -92,7 +93,7 @@
     {{-- §5 Support Journey --}}
     <section class="bg-white">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
-            <h2 class="text-3xl font-bold text-gray-900 mb-10 text-pretty" data-animate="fade-up">Your Support Journey</h2>
+            <x-section-heading title="Your Support Journey" :centered="false" />
             <x-timeline :steps="[
                 ['title' => 'Pre-Arrival', 'description' => 'Documents translated. Accommodation arranged. OSHC enrolled. Visa approved.'],
                 ['title' => 'Arrival Day', 'description' => 'Airport pickup. Transfer to accommodation. First-day orientation.'],
@@ -104,7 +105,7 @@
     {{-- §6 Cost Considerations --}}
     <section class="bg-gray-50">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
-            <h2 class="text-3xl font-bold text-gray-900 mb-8 text-pretty" data-animate="fade-up">Cost Considerations</h2>
+            <x-section-heading title="Cost Considerations" :centered="false" />
             <x-data-table :headers="['Item', 'Notes']"
                           :rows="[
                               ['Accommodation', 'Fees vary by homestay arrangement and duration'],

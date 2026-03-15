@@ -6,7 +6,8 @@
             subtitle="We handle placement, visa, accommodation, and guardianship — so you're not left worrying from the other side of the world."
             :image="asset('images/heroes/services-education-school.webp')"
             alt="Children in school uniforms in an Australian classroom"
-            variant="left" />
+            variant="left"
+            :breadcrumbs="true" />
 
     {{-- §2 The Australian School System --}}
     <section class="bg-white">
@@ -31,7 +32,7 @@
     {{-- §3 What We Handle — Before Arrival --}}
     <section class="bg-primary-50">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
-            <h2 class="text-3xl font-bold text-gray-900 mb-3 text-pretty" data-animate="fade-up">What We Handle</h2>
+            <h2 class="text-3xl font-bold text-gray-900 mb-4 text-pretty" data-animate="fade-up">What We Handle</h2>
             <p class="text-gray-600 mb-10">Before Arrival — sequential steps your advisor coordinates for you.</p>
             <x-timeline :steps="[
                 ['title' => 'School Selection & Placement', 'description' => 'We match your child to the right school based on location, curriculum, fees, learning profile, and long-term goals. Public and private options across Australia.'],

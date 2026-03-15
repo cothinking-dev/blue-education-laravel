@@ -14,9 +14,12 @@ window.ScrollTrigger = ScrollTrigger;
 */
 document.addEventListener('DOMContentLoaded', () => {
     gsap.utils.toArray('[data-animate="fade-up"]').forEach((el) => {
-        gsap.from(el, {
+        gsap.fromTo(el, {
             y: 30,
             opacity: 0,
+        }, {
+            y: 0,
+            opacity: 1,
             duration: 0.6,
             ease: 'power2.out',
             scrollTrigger: {
@@ -30,9 +33,12 @@ document.addEventListener('DOMContentLoaded', () => {
     // Staggered children animation
     gsap.utils.toArray('[data-animate="stagger"]').forEach((el) => {
         if (el.children.length === 0) return;
-        gsap.from(el.children, {
+        gsap.fromTo(el.children, {
             y: 20,
             opacity: 0,
+        }, {
+            y: 0,
+            opacity: 1,
             duration: 0.5,
             stagger: 0.1,
             ease: 'power2.out',
@@ -62,9 +68,11 @@ document.addEventListener('DOMContentLoaded', () => {
             onEnter: () => {
                 counters.forEach((el) => {
                     const raw = el.dataset.countTarget;
-                    const suffix = raw.replace(/[\d,.]+/, '');
-                    const target = parseFloat(raw.replace(/[^\d.]/g, ''));
-                    const isDecimal = raw.includes('.');
+                    const match = raw.match(/^(.*?)([\d,.]+)(.*)$/);
+                    if (!match) { el.textContent = raw; return; }
+                    const [, prefix, numStr, suffix] = match;
+                    const target = parseFloat(numStr.replace(/,/g, ''));
+                    const isDecimal = numStr.includes('.');
                     const duration = 1500;
                     const startTime = performance.now();
 
@@ -72,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         const progress = Math.min((now - startTime) / duration, 1);
                         const eased = 1 - Math.pow(1 - progress, 3);
                         const current = eased * target;
-                        el.textContent = (isDecimal ? current.toFixed(1) : Math.round(current).toLocaleString()) + suffix;
+                        el.textContent = prefix + (isDecimal ? current.toFixed(1) : Math.round(current).toLocaleString()) + suffix;
                         if (progress < 1) requestAnimationFrame(step);
                     })(startTime);
                 });

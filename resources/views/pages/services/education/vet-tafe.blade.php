@@ -6,7 +6,8 @@
             subtitle="Practical training across trades, technical fields, and specialist roles — with many qualifications aligning directly to Australia's skilled migration pathways."
             :image="asset('images/heroes/services-education-vet-tafe.webp')"
             alt="Students in a vocational training workshop"
-            variant="left" />
+            variant="left"
+            :breadcrumbs="true" />
 
     {{-- §2 What is VET/TAFE? --}}
     <x-content-split title="What is VET/TAFE?" :image="asset('images/services-education-vet-tafe/vet-training.webp')" alt="Hands-on vocational training in a workshop">
@@ -17,7 +18,7 @@
     {{-- §3 Is VET Right for You? --}}
     <section class="bg-gray-50">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
-            <h2 class="text-3xl font-bold text-gray-900 mb-10 text-pretty" data-animate="fade-up">Is VET right for you?</h2>
+            <x-section-heading title="Is VET right for you?" :centered="false" />
             <div class="grid md:grid-cols-3 gap-6" data-animate="stagger">
                 <x-card title="You want to work in a trade or specialist role"
                         description="Not every career requires a degree. VET qualifications are built around the skills employers actually hire for — and most can be completed in under two years.">
@@ -51,7 +52,7 @@
             <div class="mb-8">
                 <img src="{{ asset('images/services-education-vet-tafe/tafe-campus.webp') }}" alt="Modern TAFE campus building" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/1] max-h-[240px]" loading="lazy">
             </div>
-            <h2 class="text-3xl font-bold text-gray-900 mb-4 text-pretty" data-animate="fade-up">What You Can Study</h2>
+            <x-section-heading title="What You Can Study" :centered="false" />
             <p class="text-gray-600 mb-8 text-pretty">Industries available through TAFE and registered training providers across Australia:</p>
             <div class="flex flex-wrap gap-3">
                 @foreach(['Construction & Trades', 'Business & Administration', 'Information Technology', 'Hospitality & Tourism', 'Childcare & Community Services', 'Healthcare Support', 'Automotive', 'Creative Industries'] as $industry)
@@ -64,7 +65,7 @@
     {{-- §5 Qualification Levels --}}
     <section class="bg-gray-50">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
-            <h2 class="text-3xl font-bold text-gray-900 mb-8 text-pretty" data-animate="fade-up">Qualification Levels</h2>
+            <x-section-heading title="Qualification Levels" :centered="false" />
             <x-data-table :headers="['Qualification', 'Duration', 'Career Outcome', 'Min. IELTS']"
                           :rows="[
                               ['Certificate I–II', '6–12 months', 'Entry-level roles', '5.5'],
@@ -79,7 +80,7 @@
     {{-- §6 Why VET? --}}
     <section class="bg-white">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
-            <h2 class="text-3xl font-bold text-gray-900 mb-10 text-pretty" data-animate="fade-up">Why VET?</h2>
+            <x-section-heading title="Why VET?" :centered="false" />
             <div class="grid md:grid-cols-3 gap-8" data-animate="stagger">
                 <div class="border-l-4 border-primary-600 pl-6">
                     <h3 class="font-bold text-gray-900 mb-2 text-pretty">Industry-aligned training</h3>

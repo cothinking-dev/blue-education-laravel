@@ -4,11 +4,12 @@
         title="Terms of Use"
         subtitle="Terms and conditions governing use of our website and services."
         height="320px"
+        :breadcrumbs="true"
     />
 
     <section class="bg-white">
-        <div class="max-w-3xl mx-auto px-8 lg:px-16 py-16 prose prose-gray max-w-none">
-            <p class="text-sm text-gray-500 mb-8">Last updated: {{ now()->format('F j, Y') }}</p>
+        <div class="max-w-3xl mx-auto px-8 lg:px-16 py-16 prose prose-gray">
+            <p class="text-sm text-gray-500 mb-8">Last updated: March 1, 2026</p>
 
             <h2>1. Acceptance of Terms</h2>
             <p>By accessing and using the Blue Education website (blueeducation.com.au), you accept and agree to be bound by these Terms of Use. If you do not agree, please do not use our website.</p>

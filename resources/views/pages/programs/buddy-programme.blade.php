@@ -7,14 +7,15 @@
             :image="asset('images/heroes/programs-buddy-programme.webp')"
             alt="Students exploring nature in Western Australia"
             badge="14-Day Immersion · Anglican Schools"
-            variant="left" />
+            variant="left"
+            :breadcrumbs="true" />
 
     {{-- §2 What Is the Buddy Programme --}}
     <section class="bg-white">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
             <div class="flex flex-col lg:flex-row gap-12">
                 <div class="flex-1">
-                    <h2 class="text-3xl font-bold text-gray-900 mb-4 text-pretty">What Is the Buddy Programme?</h2>
+                    <h2 class="text-3xl font-bold text-gray-900 mb-4 text-pretty" data-animate="fade-up">What Is the Buddy Programme?</h2>
                     <p class="text-gray-600 leading-relaxed mb-4 text-pretty">Two weeks inside Australian school life. Morning sessions focus on English and Australian culture. Afternoons are spent in regular high school classes, alongside local students.</p>
                     <p class="text-gray-600 leading-relaxed text-pretty">Homestay accommodation — with meals provided and homestay families approved through police background checks — ensures the experience is safe, supported, and authentic.</p>
                 </div>
@@ -36,7 +37,7 @@
     {{-- §3 Your 14 Days --}}
     <section class="bg-gray-50">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
-            <h2 class="text-3xl font-bold text-gray-900 mb-8 text-pretty" data-animate="fade-up">Your 14 Days</h2>
+            <x-section-heading title="Your 14 Days" :centered="false" />
             <div class="grid sm:grid-cols-2 gap-6" data-animate="stagger">
                 <div class="bg-primary-50 border border-primary-200 rounded-corner-lg p-6">
                     <h3 class="text-lg font-bold text-gray-900 mb-3 text-pretty">Mornings: English Language & Culture</h3>
@@ -63,7 +64,7 @@
     {{-- §4 Beyond the Classroom --}}
     <section class="bg-white">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
-            <h2 class="text-3xl font-bold text-gray-900 mb-8 text-pretty" data-animate="fade-up">Beyond the Classroom</h2>
+            <x-section-heading title="Beyond the Classroom" :centered="false" />
             <div class="grid sm:grid-cols-3 gap-6" data-animate="stagger">
                 <div class="border border-gray-200 rounded-corner-lg overflow-hidden">
                     <img src="{{ asset('images/programs-buddy-programme/homestay-experience.webp') }}" alt="Warm homestay family welcoming an international student at their front door" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
@@ -93,7 +94,7 @@
     {{-- §5 Why It Matters --}}
     <section class="bg-gray-50">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
-            <h2 class="text-3xl font-bold text-gray-900 mb-8 text-pretty" data-animate="fade-up">Why It Matters</h2>
+            <x-section-heading title="Why It Matters" :centered="false" />
             <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6" data-animate="stagger">
                 @php
                     $reasons = [

@@ -5,12 +5,13 @@
     <x-hero title="A degree worth having, from a city worth studying in."
             subtitle="A degree from one of Western Australia's universities opens doors in most major economies — and gives you 2 to 4 years to build a career here before you decide what comes next."
             :image="asset('images/heroes/services-education-degrees.webp')"
-            alt="University graduation ceremony with students in caps and gowns" />
+            alt="University graduation ceremony with students in caps and gowns"
+            :breadcrumbs="true" />
 
     {{-- §2 Programs --}}
     <section class="bg-white">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
-            <h2 class="text-3xl font-bold text-gray-900 mb-8 text-pretty" data-animate="fade-up">Programs</h2>
+            <x-section-heading title="Programs" :centered="false" />
             <div class="grid md:grid-cols-3 gap-6 mb-8" data-animate="stagger">
                 <div class="border border-gray-200 rounded-corner-lg p-6 bg-white">
                     <h3 class="text-lg font-bold text-gray-900 mb-2">Bachelor</h3>
@@ -47,7 +48,7 @@
     {{-- §3 Partner Universities --}}
     <section class="bg-gray-50">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
-            <h2 class="text-3xl font-bold text-gray-900 mb-4 text-pretty" data-animate="fade-up">Our Partner Universities</h2>
+            <x-section-heading title="Our Partner Universities" :centered="false" />
             <p class="text-gray-600 mb-8 text-pretty">Blue Education works with all five main Western Australian universities — and a wider network of institutions across Australia. Your advisor matches you to the right one based on your goals, background, and intended field.</p>
             <div class="grid sm:grid-cols-2 gap-6" data-animate="stagger">
                 @php
@@ -82,7 +83,7 @@
     {{-- §4 Why Study in Western Australia? --}}
     <section class="bg-white">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
-            <h2 class="text-3xl font-bold text-gray-900 mb-12 text-pretty" data-animate="fade-up">Why study in Western Australia?</h2>
+            <x-section-heading title="Why study in Western Australia?" :centered="false" />
 
             <div class="flex flex-col lg:flex-row items-center gap-12 mb-14">
                 <div class="flex-1">
@@ -123,7 +124,7 @@
     {{-- §5 Fees & Costs --}}
     <section class="bg-gray-50">
         <div class="max-w-4xl mx-auto px-8 lg:px-16 py-14 text-center">
-            <h2 class="text-3xl font-bold text-gray-900 mb-4 text-pretty" data-animate="fade-up">Fees & Costs</h2>
+            <x-section-heading title="Fees &amp; Costs" />
             <p class="text-gray-600 leading-relaxed mb-3 text-pretty">Tuition fees vary by institution, field of study, and qualification level. Most universities require fees to be paid per semester or trimester before each study period begins.</p>
             <p class="text-gray-600 leading-relaxed mb-6 text-pretty">As an international student, your fees are separate from your living costs. Perth is widely regarded as one of Australia's most liveable and cost-effective cities for students — your advisor can provide a detailed cost breakdown for your specific situation.</p>
             <a href="{{ route('admission-requirements') }}" class="text-primary-800 font-semibold hover:text-primary-600 transition-colors">See admission requirements and fee guidance &rarr;</a>
@@ -133,7 +134,7 @@
     {{-- §6 Admission Requirements --}}
     <section class="bg-white">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
-            <h2 class="text-3xl font-bold text-gray-900 mb-8 text-pretty" data-animate="fade-up">Admission Requirements</h2>
+            <x-section-heading title="Admission Requirements" :centered="false" />
             <x-data-table :headers="['Program', 'IELTS', 'Academic Requirement']"
                           :rows="[
                               ['Bachelor', '6.5', 'Year 12 equivalent or VET Diploma'],
@@ -154,7 +155,7 @@
     {{-- §7 How to Apply --}}
     <section class="bg-gray-50">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
-            <h2 class="text-3xl font-bold text-gray-900 mb-10 text-pretty" data-animate="fade-up">How to Apply</h2>
+            <x-section-heading title="How to Apply" :centered="false" />
             <x-timeline :steps="[
                 ['title' => 'Assess your eligibility', 'description' => 'Your advisor reviews your academic background, English level, and career goals.'],
                 ['title' => 'Choose institution & programme', 'description' => 'Blue Education identifies the right match from our partner institutions.'],

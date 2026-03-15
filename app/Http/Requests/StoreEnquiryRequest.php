@@ -27,6 +27,7 @@ class StoreEnquiryRequest extends FormRequest
             'enquiry_type' => ['nullable', 'string', 'in:Education,Migration,Career,Student Support,Other'],
             'preferred_language' => ['nullable', 'string', 'in:English,Cantonese,Mandarin,Bahasa,Malay,Hindi,Indonesian,Japanese,Other'],
             'message' => ['nullable', 'string', 'max:5000'],
+            'website' => ['max:0'],
         ];
     }
 

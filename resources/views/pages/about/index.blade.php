@@ -7,7 +7,8 @@
             :image="asset('images/heroes/about.webp')"
             alt="Professional team collaborating in a modern office environment"
             variant="left"
-            height="440px" />
+            height="440px"
+            :breadcrumbs="true" />
 
     {{-- §2 Our Story --}}
     <x-content-split title="Our Story" :image="asset('images/home/history-perth-office.webp')" alt="Blue Education's Perth office heritage">
@@ -20,7 +21,7 @@
     {{-- §3 Our Values --}}
     <section class="bg-gray-50">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
-            <h2 class="text-3xl font-bold text-gray-900 mb-10 text-pretty" data-animate="fade-up">Our Values</h2>
+            <x-section-heading title="Our Values" :centered="false" />
             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5" data-animate="stagger">
                 @php
                     $values = [
@@ -55,7 +56,7 @@
     {{-- §5 Why Choose Blue Education --}}
     <section class="bg-white">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
-            <h2 class="text-3xl font-bold text-gray-900 mb-12 text-pretty" data-animate="fade-up">Why Choose Blue Education</h2>
+            <x-section-heading title="Why Choose Blue Education" :centered="false" />
 
             {{-- Row 1: text left, image right --}}
             <div class="flex flex-col lg:flex-row items-center gap-12 mb-14">
@@ -95,7 +96,7 @@
     {{-- §6 Professional Credentials --}}
     <section class="bg-gray-50 border-y border-gray-200">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-12">
-            <h2 class="text-sm font-bold text-gray-500 uppercase tracking-widest mb-8 text-center" data-animate="fade-up">Professional Credentials</h2>
+            <p class="text-sm font-bold text-gray-500 uppercase tracking-widest mb-8 text-center" data-animate="fade-up">Professional Credentials</p>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-6" data-animate="stagger">
                 <x-credential-card name="QEAC Certified"
                                    logo="images/credentials/qeac.svg"

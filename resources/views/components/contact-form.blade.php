@@ -5,9 +5,12 @@
 <form {{ $attributes->merge(['class' => 'space-y-5']) }}
       method="POST"
       action="{{ $action }}"
-      x-data="{ sending: false, sent: false }"
+      x-data="{ sending: false, sent: false, networkError: false }"
       @submit.prevent="
           sending = true;
+          networkError = false;
+          $el.querySelectorAll('.border-red-400').forEach(el => el.classList.remove('border-red-400'));
+          $el.querySelectorAll('.field-error').forEach(el => el.textContent = '');
           fetch($el.action, {
               method: 'POST',
               headers: { 'X-CSRF-TOKEN': '{{ csrf_token() }}', 'Accept': 'application/json' },
@@ -30,7 +33,7 @@
                   sending = false;
               }
           })
-          .catch(() => { sending = false; })
+          .catch(() => { sending = false; networkError = true; })
       ">
 
     <template x-if="sent">
@@ -39,18 +42,28 @@
         </div>
     </template>
 
+    <div x-show="networkError" x-cloak class="bg-red-50 border border-red-200 rounded-corner-lg p-4 mb-5 text-center">
+        <p class="text-red-800 text-sm">Something went wrong. Please check your connection and try again.</p>
+    </div>
+
     <div x-show="!sent">
+        {{-- Honeypot --}}
+        <div class="hidden" aria-hidden="true">
+            <label for="website">Website</label>
+            <input type="text" name="website" id="website" tabindex="-1" autocomplete="off">
+        </div>
+
         {{-- Name & Email --}}
         <div class="grid sm:grid-cols-2 gap-5 mb-5">
             <div>
                 <label for="full-name" class="block text-sm font-medium text-gray-700 mb-1">Full Name <span class="text-red-500">*</span></label>
-                <input type="text" name="full_name" id="full-name" required placeholder="Jane Smith"
+                <input type="text" name="full_name" id="full-name" required placeholder="Jane Smith" autocomplete="name"
                        class="w-full rounded-corner border border-gray-300 px-4 py-2.5 text-sm focus:border-primary-500 focus:ring-1 focus:ring-primary-500 outline-none transition-colors">
                 <p class="field-error text-xs text-red-500 mt-1"></p>
             </div>
             <div>
                 <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email <span class="text-red-500">*</span></label>
-                <input type="email" name="email" id="email" required placeholder="jane@example.com"
+                <input type="email" name="email" id="email" required placeholder="jane@example.com" autocomplete="email"
                        class="w-full rounded-corner border border-gray-300 px-4 py-2.5 text-sm focus:border-primary-500 focus:ring-1 focus:ring-primary-500 outline-none transition-colors">
                 <p class="field-error text-xs text-red-500 mt-1"></p>
             </div>
@@ -60,12 +73,12 @@
         <div class="grid sm:grid-cols-2 gap-5 mb-5">
             <div>
                 <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
-                <input type="tel" name="phone" id="phone" placeholder="+1 555 000 0000"
+                <input type="tel" name="phone" id="phone" placeholder="+1 555 000 0000" autocomplete="tel"
                        class="w-full rounded-corner border border-gray-300 px-4 py-2.5 text-sm focus:border-primary-500 focus:ring-1 focus:ring-primary-500 outline-none transition-colors">
             </div>
             <div>
                 <label for="country" class="block text-sm font-medium text-gray-700 mb-1">Country of Residence</label>
-                <input type="text" name="country" id="country" placeholder="Japan"
+                <input type="text" name="country" id="country" placeholder="Japan" autocomplete="country-name"
                        class="w-full rounded-corner border border-gray-300 px-4 py-2.5 text-sm focus:border-primary-500 focus:ring-1 focus:ring-primary-500 outline-none transition-colors">
             </div>
         </div>

@@ -13,7 +13,7 @@
         <h2 class="text-3xl lg:text-4xl font-bold text-white mb-4 text-pretty">{{ $title }}</h2>
         <p class="text-lg text-primary-200 mb-8 text-pretty">{{ $subtitle }}</p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <a href="{{ $primaryHref }}" class="inline-flex bg-white text-primary-800 font-semibold px-8 py-3 rounded-corner hover:bg-primary-50 transition-colors">{{ $primaryText }}</a>
+            <x-btn href="{{ $primaryHref }}" variant="white" size="lg">{{ $primaryText }}</x-btn>
             @if($secondaryText)
                 <a href="{{ $secondaryHref }}" class="inline-flex text-white font-medium hover:text-primary-200 transition-colors">{{ $secondaryText }}</a>
             @endif

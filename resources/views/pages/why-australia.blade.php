@@ -6,7 +6,8 @@
             subtitle="Globally recognised degrees, post-study work rights, and a quality of life that consistently ranks among the world's best. Western Australia included."
             :image="asset('images/heroes/why-australia.webp')"
             alt="Iconic Australian landscape"
-            variant="centered" />
+            variant="centered"
+            :breadcrumbs="true" />
 
     {{-- §2 Five Reasons --}}
     <section class="bg-white">
@@ -16,7 +17,7 @@
             <div class="flex flex-col lg:flex-row items-center gap-12">
                 <div class="flex-1">
                     <span class="text-6xl font-bold text-primary-100">01</span>
-                    <h2 class="text-2xl font-bold text-gray-900 mt-2 mb-4 text-pretty">Globally recognised qualifications</h2>
+                    <h3 class="text-2xl font-bold text-gray-900 mt-2 mb-4 text-pretty">Globally recognised qualifications</h2>
                     <p class="text-gray-600 leading-relaxed mb-3 text-pretty">Seven Australian universities rank in the QS World University Rankings top 100. Every institution is regulated by TEQSA, Australia's national quality assurance framework, ensuring standards that employers and institutions worldwide recognise.</p>
                     <p class="text-gray-500 text-sm italic text-pretty">An Australian degree travels well. That's the point.</p>
                 </div>
@@ -29,7 +30,7 @@
             <div class="flex flex-col lg:flex-row-reverse items-center gap-12">
                 <div class="flex-1">
                     <span class="text-6xl font-bold text-primary-100">02</span>
-                    <h2 class="text-2xl font-bold text-gray-900 mt-2 mb-4 text-pretty">More choice than almost anywhere</h2>
+                    <h3 class="text-2xl font-bold text-gray-900 mt-2 mb-4 text-pretty">More choice than almost anywhere</h2>
                     <p class="text-gray-600 leading-relaxed text-pretty">1,100+ institutions. 20,000+ programs. From 10-week English language courses to doctoral research, vocational training to executive education — Australia offers a pathway for every ambition, every level, every budget.</p>
                 </div>
                 <div class="flex-1 lg:max-w-[40%]">
@@ -41,7 +42,7 @@
             <div class="flex flex-col lg:flex-row items-center gap-12">
                 <div class="flex-1">
                     <span class="text-6xl font-bold text-primary-100">03</span>
-                    <h2 class="text-2xl font-bold text-gray-900 mt-2 mb-4 text-pretty">Work while you study — and after</h2>
+                    <h3 class="text-2xl font-bold text-gray-900 mt-2 mb-4 text-pretty">Work while you study — and after</h2>
                     <p class="text-gray-600 leading-relaxed mb-4 text-pretty">Australia actively encourages international students to work. After graduation, the Post-Study Work Visa (Subclass 485) gives you real time to build your career:</p>
                     <x-data-table :headers="['Qualification', 'Visa Duration']"
                                   :rows="[
@@ -60,7 +61,7 @@
             <div class="flex flex-col lg:flex-row-reverse items-center gap-12">
                 <div class="flex-1">
                     <span class="text-6xl font-bold text-primary-100">04</span>
-                    <h2 class="text-2xl font-bold text-gray-900 mt-2 mb-4 text-pretty">A lifestyle that's hard to beat</h2>
+                    <h3 class="text-2xl font-bold text-gray-900 mt-2 mb-4 text-pretty">A lifestyle that's hard to beat</h2>
                     <p class="text-gray-600 leading-relaxed text-pretty">The 2025 EIU Global Liveability Index placed three Australian cities in the world's top 10. Melbourne fourth. Sydney sixth. Adelaide ninth. The factors assessed: stability, healthcare, culture, education, and infrastructure. Australia performs well across all of them.</p>
                 </div>
                 <div class="flex-1 lg:max-w-[40%]">
@@ -72,7 +73,7 @@
             <div class="flex flex-col lg:flex-row items-center gap-12">
                 <div class="flex-1">
                     <span class="text-6xl font-bold text-primary-100">05</span>
-                    <h2 class="text-2xl font-bold text-gray-900 mt-2 mb-4 text-pretty">Affordable compared to the alternatives</h2>
+                    <h3 class="text-2xl font-bold text-gray-900 mt-2 mb-4 text-pretty">Affordable compared to the alternatives</h2>
                     <p class="text-gray-600 leading-relaxed text-pretty">Australia offers competitive tuition fees across its university sector — from AUD $20,000 per year for many undergraduate programs. Perth and regional cities offer a lower cost of living than Australia's east coast capitals. The combination makes a meaningful difference over a two to four year degree.</p>
                 </div>
                 <div class="flex-1 lg:max-w-[40%]">

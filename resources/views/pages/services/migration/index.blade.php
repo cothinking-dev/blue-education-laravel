@@ -5,12 +5,13 @@
     <x-hero title="Visa applications that get it right the first time."
             subtitle="Registered migration agents with 28 years of successful applications. From student visas to permanent residence, we manage the process end to end."
             :image="asset('images/heroes/services-migration.webp')"
-            alt="Australian city skyline at dusk" />
+            alt="Australian city skyline at dusk"
+            :breadcrumbs="true" />
 
     {{-- §2 The Migration Pathway --}}
     <section class="bg-white">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
-            <h2 class="text-3xl font-bold text-gray-900 mb-12 text-pretty" data-animate="fade-up">The Migration Pathway</h2>
+            <x-section-heading title="The Migration Pathway" :centered="false" />
             <div class="grid md:grid-cols-4 gap-6 relative" data-animate="stagger">
                 {{-- Connecting line (desktop) --}}
                 <div class="hidden md:block absolute top-8 left-[12.5%] right-[12.5%] h-0.5 bg-gray-200"></div>
@@ -59,7 +60,7 @@
     {{-- §3 Visa Services --}}
     <section class="bg-gray-50">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
-            <h2 class="text-3xl font-bold text-gray-900 mb-8 text-pretty" data-animate="fade-up">Visa Services</h2>
+            <x-section-heading title="Visa Services" :centered="false" />
             <div class="grid md:grid-cols-3 gap-6" data-animate="stagger">
                 <x-card title="Student Visas"
                         description="Subclass 500 applications for international students enrolling in registered Australian courses. We handle GTE statements, document compilation, and lodgement."
@@ -107,7 +108,7 @@
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
             <div class="flex flex-col lg:flex-row gap-12">
                 <div class="flex-1">
-                    <h2 class="text-3xl font-bold text-gray-900 mb-4 text-pretty" data-animate="fade-up">Why Trust Us With Your Visa</h2>
+                    <x-section-heading title="Why Trust Us With Your Visa" :centered="false" />
                     <p class="text-gray-600 leading-relaxed mb-6 text-pretty">Visa mistakes cost time and money. We tell you what's realistic before you apply — not after something goes wrong.</p>
                     <ul class="space-y-3">
                         <li class="flex items-start gap-3">

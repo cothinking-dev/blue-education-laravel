@@ -2,18 +2,15 @@
           description="Blue Education's institutional partnerships with Australian universities, TAFEs, and professional accreditation bodies.">
 
     {{-- §1 Hero --}}
-    <section class="py-20 px-8 text-center" style="background: linear-gradient(180deg, var(--color-primary-50) 0%, #ffffff 100%);">
-        <div class="max-w-3xl mx-auto">
-            <x-auto-breadcrumb class="mb-6 justify-center" />
-            <h1 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight text-pretty">28 years of institutional partnerships. Industry accredited.</h1>
-            <p class="text-xl text-gray-600 leading-relaxed text-pretty">Direct relationships with Australian universities, TAFEs, and RTOs. Professional credentials that back it up.</p>
-        </div>
-    </section>
+    <x-hero title="28 years of institutional partnerships. Industry accredited."
+            subtitle="Direct relationships with Australian universities, TAFEs, and RTOs. Professional credentials that back it up."
+            variant="light"
+            :breadcrumbs="true" />
 
     {{-- §2 Institutional Partners --}}
     <section class="bg-white">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
-            <h2 class="text-3xl font-bold text-gray-900 mb-4 text-pretty" data-animate="fade-up">Institutional Partners</h2>
+            <x-section-heading title="Institutional Partners" :centered="false" />
 
             <h3 class="text-xl font-semibold text-gray-800 mb-4 mt-8">Universities</h3>
             <p class="text-gray-600 mb-8 leading-relaxed text-pretty">Blue Education works with all five Western Australian universities and a broader network of partner institutions across Australia. Access to over 1,100 institutions and 20,000 programmes means your options aren't limited to what one agent happens to represent.</p>
@@ -65,7 +62,7 @@
     {{-- §3 Professional Credentials --}}
     <section class="bg-gray-50">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
-            <h2 class="text-3xl font-bold text-gray-900 mb-10 text-pretty" data-animate="fade-up">Professional Credentials</h2>
+            <x-section-heading title="Professional Credentials" :centered="false" />
             <div class="space-y-5">
                 @php
                     $credentials = [
@@ -93,7 +90,7 @@
     {{-- §4 International Offices --}}
     <section class="bg-white">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
-            <h2 class="text-3xl font-bold text-gray-900 mb-10 text-pretty" data-animate="fade-up">International Offices</h2>
+            <x-section-heading title="International Offices" :centered="false" />
             <div class="flex flex-col lg:flex-row gap-10 items-start">
                 {{-- Map placeholder --}}
                 <div class="lg:w-1/2">

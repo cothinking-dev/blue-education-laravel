@@ -6,7 +6,8 @@
             subtitle="Beyond standard enrolment. Structured experiences that accelerate integration, learning, and career readiness."
             :image="asset('images/heroes/programs.webp')"
             alt="Diverse group of international students on campus"
-            variant="centered" />
+            variant="centered"
+            :breadcrumbs="true" />
 
     {{-- §2 Programs Grid --}}
     <section class="bg-white">

@@ -26,3 +26,7 @@
     --radius-corner: 0.5rem;
     --radius-corner-lg: 1rem;
 }
+
+html {
+    scroll-padding-top: 4rem;
+}

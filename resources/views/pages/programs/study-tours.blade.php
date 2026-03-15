@@ -6,7 +6,8 @@
             subtitle="Educational and cultural immersion programs. One week to several months. Groups and individuals. No long-term enrolment required."
             :image="asset('images/heroes/programs-study-tours.webp')"
             alt="Group of students on a sightseeing tour"
-            variant="centered" />
+            variant="centered"
+            :breadcrumbs="true" />
 
     {{-- §2 Featured — Culinary Study Tour --}}
     <section class="bg-white">
@@ -29,7 +30,7 @@
     {{-- §3 Short-Term Immersion Programs --}}
     <section class="bg-gray-50">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
-            <h2 class="text-3xl font-bold text-gray-900 mb-8 text-pretty" data-animate="fade-up">Short-Term Immersion Programs</h2>
+            <x-section-heading title="Short-Term Immersion Programs" :centered="false" />
             <div class="grid sm:grid-cols-2 gap-6" data-animate="stagger">
                 <x-card title="Flexible Duration"
                         description="From one week to several months. Choose the length that fits your schedule and goals.">

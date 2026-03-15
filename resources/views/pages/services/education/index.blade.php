@@ -6,7 +6,8 @@
             subtitle="We've been navigating this system since 1998. Let us show you where you fit."
             :image="asset('images/heroes/services-education.webp')"
             alt="Education advisor guiding a student through university options"
-            variant="centered" />
+            variant="centered"
+            :breadcrumbs="true" />
 
     {{-- §2 How We Help --}}
     <x-content-split title="How We Help" :image="asset('images/services-education/education-guidance.webp')" alt="Education advisor guiding a student through programme options">
@@ -70,7 +71,7 @@
     {{-- §5 Admission Snapshot --}}
     <section class="bg-gray-50">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
-            <h2 class="text-3xl font-bold text-gray-900 mb-3 text-pretty" data-animate="fade-up">Admission Snapshot</h2>
+            <h2 class="text-3xl font-bold text-gray-900 mb-4 text-pretty" data-animate="fade-up">Admission Snapshot</h2>
             <p class="text-gray-600 mb-8 text-pretty">Think of entry requirements as a starting point, not a ceiling. There's almost always more than one way in.</p>
             <x-data-table :headers="['Program Level', 'IELTS', 'Duration', 'Post-Study Work Visa']"
                           :rows="[

@@ -7,14 +7,15 @@
             :image="asset('images/heroes/programs-executive-internship.webp')"
             alt="Professional boardroom meeting in a corporate office"
             badge="Premium Program · Two Intakes Per Year"
-            variant="left" />
+            variant="left"
+            :breadcrumbs="true" />
 
     {{-- §2 What It Is --}}
     <section class="bg-white">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
             <div class="flex flex-col lg:flex-row gap-12">
                 <div class="flex-1">
-                    <h2 class="text-3xl font-bold text-gray-900 mb-4 text-pretty">What It Is</h2>
+                    <h2 class="text-3xl font-bold text-gray-900 mb-4 text-pretty" data-animate="fade-up">What It Is</h2>
                     <p class="text-gray-600 leading-relaxed mb-4 text-pretty">The EIP places business graduates and final-year students with Australian employers for structured, mentored workplace experience. Not entry-level administration — a real position with agreed objectives, a dedicated supervisor, and a formal performance review at the end.</p>
                     <p class="text-gray-600 leading-relaxed text-pretty">The programme is built around our six-phase Employability Booster Programme (EBP), which starts before placement and continues through to review. Blue Education manages the matching, preparation, and employer coordination. You bring the commitment.</p>
                 </div>
@@ -36,7 +37,7 @@
     {{-- §3 The Six-Phase EBP Process --}}
     <section class="bg-gray-50">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
-            <h2 class="text-3xl font-bold text-gray-900 mb-3 text-pretty" data-animate="fade-up">The Six-Phase EBP Process</h2>
+            <h2 class="text-3xl font-bold text-gray-900 mb-4 text-pretty" data-animate="fade-up">The Six-Phase EBP Process</h2>
             <p class="text-gray-600 mb-10 text-pretty">The Employability Booster Programme starts before placement and runs through to formal review.</p>
             <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6" data-animate="stagger">
                 @php
@@ -73,7 +74,7 @@
     {{-- §4 What You Gain --}}
     <section class="bg-white">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
-            <h2 class="text-3xl font-bold text-gray-900 mb-8 text-pretty" data-animate="fade-up">What You Gain</h2>
+            <x-section-heading title="What You Gain" :centered="false" />
             <div class="grid sm:grid-cols-3 gap-6" data-animate="stagger">
                 <x-card title="Documented Australian Experience"
                         description="Placement with a real employer — agreed objectives, a dedicated supervisor, and a formal performance review. The kind of experience that makes your application stand out in the Australian job market.">
@@ -102,7 +103,7 @@
     {{-- §5 Programme Partners --}}
     <section class="bg-gray-50">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
-            <h2 class="text-3xl font-bold text-gray-900 mb-8 text-pretty" data-animate="fade-up">Programme Partners</h2>
+            <x-section-heading title="Programme Partners" :centered="false" />
             <div class="grid sm:grid-cols-2 gap-6" data-animate="stagger">
                 <div class="bg-white rounded-corner-lg border border-gray-200 p-6 flex items-start gap-5">
                     <div class="w-14 h-14 rounded-full bg-primary-100 text-primary-800 flex items-center justify-center shrink-0 font-bold text-lg">L</div>
@@ -127,7 +128,7 @@
     {{-- §6 For Host Employers --}}
     <section class="bg-white">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
-            <h2 class="text-3xl font-bold text-gray-900 mb-8 text-pretty" data-animate="fade-up">For Host Employers</h2>
+            <x-section-heading title="For Host Employers" :centered="false" />
             <div class="grid sm:grid-cols-2 gap-8" data-animate="stagger">
                 <div>
                     <h3 class="font-bold text-gray-900 mb-3">What's Involved</h3>
@@ -155,7 +156,7 @@
     {{-- §7 How to Apply --}}
     <section class="bg-gray-50">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
-            <h2 class="text-3xl font-bold text-gray-900 mb-10 text-pretty" data-animate="fade-up">How to Apply</h2>
+            <x-section-heading title="How to Apply" :centered="false" />
             <x-timeline :steps="[
                 ['title' => 'Confirm Intake Dates', 'description' => 'The programme runs twice a year. Contact us to confirm when the next intake opens and whether applications are currently being accepted.'],
                 ['title' => 'Submit Your Application', 'description' => 'Send your CV and a brief summary of your goals and the type of placement you\'re looking for. We assess fit before confirming a place.'],

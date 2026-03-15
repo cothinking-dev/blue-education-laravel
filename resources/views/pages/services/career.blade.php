@@ -6,12 +6,13 @@
             subtitle="Getting qualified is the start. From skills gap analysis and employer introductions to graduate work visa support — every step of the path from study to employment, handled by a dedicated team."
             :image="asset('images/heroes/services-career.webp')"
             alt="Professional job interview in a modern office"
-            variant="left" />
+            variant="left"
+            :breadcrumbs="true" />
 
     {{-- §2 Career Pathway --}}
     <section class="bg-white">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
-            <h2 class="text-3xl font-bold text-gray-900 mb-3 text-pretty" data-animate="fade-up">The Career Pathway</h2>
+            <h2 class="text-3xl font-bold text-gray-900 mb-4 text-pretty" data-animate="fade-up">The Career Pathway</h2>
             <p class="text-gray-600 mb-10 text-pretty">Six structured stages — from assessing your starting point to advancing your career in Australia.</p>
             <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6" data-animate="stagger">
                 @php

@@ -6,7 +6,8 @@
             subtitle="Education, migration, careers, and life in Australia."
             :image="asset('images/heroes/blog.webp')"
             alt="Person reading on a laptop"
-            variant="left" />
+            variant="left"
+            :breadcrumbs="true" />
 
     {{-- §2 Featured Post --}}
     @if($featuredPost)

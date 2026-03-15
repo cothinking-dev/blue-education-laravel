@@ -5,7 +5,8 @@
     <x-hero title="English and Foundation programmes for students on their way to an Australian university."
             subtitle="ELICOS and Foundation programmes cover the two most common gaps: English proficiency and academic preparation. Your advisor will assess which applies to you."
             :image="asset('images/heroes/services-education-english.webp')"
-            alt="International students in an English language classroom" />
+            alt="International students in an English language classroom"
+            :breadcrumbs="true" />
 
     {{-- §2 ELICOS Courses --}}
     <x-content-split title="ELICOS Courses" :image="asset('images/services-education-english/elicos-class.webp')" alt="Students in an ELICOS English language class">
@@ -29,7 +30,7 @@
     {{-- §3 Course Types --}}
     <section class="bg-white">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
-            <h2 class="text-3xl font-bold text-gray-900 mb-10 text-pretty" data-animate="fade-up">Course Types</h2>
+            <x-section-heading title="Course Types" :centered="false" />
             <div class="grid md:grid-cols-3 gap-6" data-animate="stagger">
                 <x-card title="General English"
                         description="The foundation course. Covers all four skills — speaking, listening, reading, and writing — with a focus on using English in real situations.">
@@ -83,7 +84,7 @@
     {{-- §6 Your Pathway --}}
     <section class="bg-gray-50">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
-            <h2 class="text-3xl font-bold text-gray-900 mb-3 text-pretty" data-animate="fade-up">Your Pathway</h2>
+            <h2 class="text-3xl font-bold text-gray-900 mb-4 text-pretty" data-animate="fade-up">Your Pathway</h2>
             <p class="text-gray-600 mb-10 text-pretty">Your pathway depends on where the gap is. Most students need one stage, some need both.</p>
             <x-timeline :steps="[
                 ['title' => 'ELICOS', 'description' => 'Your English reaches the level required — for your course, your visa, and your first day of lectures. Duration is 10 to 30 weeks depending on your starting point.'],

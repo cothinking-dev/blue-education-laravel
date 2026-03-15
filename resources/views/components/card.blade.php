@@ -12,7 +12,7 @@
 <div {{ $attributes->merge(['class' => 'border border-gray-200 rounded-corner-lg overflow-hidden bg-white hover:shadow-lg transition-shadow']) }}>
     @if($image)
         <div class="aspect-[16/10] bg-gray-200" style="background-image: repeating-linear-gradient(-55deg, transparent, transparent 8px, rgba(0,0,0,0.04) 8px, rgba(0,0,0,0.04) 9px);">
-            <img src="{{ $image }}" alt="{{ $alt }}" class="w-full h-full object-cover">
+            <img src="{{ $image }}" alt="{{ $alt }}" class="w-full h-full object-cover" loading="lazy">
         </div>
     @endif
     <div class="p-6">

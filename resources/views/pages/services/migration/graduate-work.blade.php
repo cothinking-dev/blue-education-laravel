@@ -5,7 +5,8 @@
     <x-hero title="Your student visa has an end date. Your options after it don't have to be uncertain."
             subtitle="Post-study work visa (Subclass 485), employer-sponsored visa (Subclass 482), Employer Nomination Scheme — assessed and managed by the same team that handled your student visa."
             :image="asset('images/heroes/services-migration-graduate-work.webp')"
-            alt="Young professional working at an office desk" />
+            alt="Young professional working at an office desk"
+            :breadcrumbs="true" />
 
     {{-- §2 Post-Study Work Visa (Subclass 485) --}}
     <section class="bg-white">
@@ -76,7 +77,7 @@
     {{-- §3 Employer Sponsored Visas --}}
     <section class="bg-gray-50">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
-            <h2 class="text-3xl font-bold text-gray-900 mb-8 text-pretty" data-animate="fade-up">Employer Sponsored Visas</h2>
+            <x-section-heading title="Employer Sponsored Visas" :centered="false" />
             <div class="grid sm:grid-cols-2 gap-6" data-animate="stagger">
                 <div class="bg-white rounded-corner-lg border border-gray-200 p-6">
                     <p class="text-xs font-semibold text-primary-800 mb-2">Subclass 482</p>
@@ -106,7 +107,7 @@
     {{-- §5 What Comes Next? --}}
     <section class="bg-gray-50">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
-            <h2 class="text-3xl font-bold text-gray-900 mb-8 text-pretty" data-animate="fade-up">What Comes Next?</h2>
+            <x-section-heading title="What Comes Next?" :centered="false" />
             <div class="grid sm:grid-cols-3 gap-6" data-animate="stagger">
                 <a href="{{ route('services.migration.permanent-residence') }}" class="bg-white rounded-corner-lg border border-gray-200 p-6 hover:border-primary-300 hover:shadow-sm transition-all group">
                     <h3 class="font-bold text-gray-900 mb-2 group-hover:text-primary-800 transition-colors">Permanent residence pathways &rarr;</h3>

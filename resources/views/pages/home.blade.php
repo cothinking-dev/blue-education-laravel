@@ -25,7 +25,7 @@
     {{-- §3 What We Do --}}
     <section class="bg-white">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
-            <h2 class="text-3xl font-bold text-gray-900 mb-10 text-pretty" data-animate="fade-up">What We Do</h2>
+            <x-section-heading title="What We Do" :centered="false" />
             <div class="grid sm:grid-cols-2 gap-6" data-animate="stagger">
                 <x-card title="Education Services"
                         description="Primary school to PhD. We help you find the right institution and program for your goals."
@@ -81,7 +81,7 @@
     {{-- §5 Featured Programs --}}
     <section class="bg-white">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
-            <h2 class="text-3xl font-bold text-gray-900 mb-10 text-pretty" data-animate="fade-up">Featured Programs</h2>
+            <x-section-heading title="Featured Programs" :centered="false" />
             <div class="grid md:grid-cols-2 gap-8" data-animate="stagger">
                 <x-card title="Buddy Programme"
                         description="14 days at an Australian homestay — classroom integration and cultural immersion. Built in partnership with Anglican Schools."
@@ -104,7 +104,7 @@
     {{-- §6 Why Western Australia --}}
     <section class="bg-gray-50">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
-            <h2 class="text-3xl font-bold text-gray-900 mb-10 text-pretty" data-animate="fade-up">Why Western Australia</h2>
+            <x-section-heading title="Why Western Australia" :centered="false" />
             <div class="grid md:grid-cols-3 gap-6 mb-6" data-animate="stagger">
                 <div class="md:col-span-2 border border-gray-200 rounded-corner-lg p-8 bg-white">
                     <h3 class="text-lg font-bold text-gray-900 mb-3 text-pretty">Perth regularly features among the world's most liveable cities.</h3>
@@ -138,7 +138,7 @@
     {{-- §7 Testimonials --}}
     <section class="bg-white">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
-            <h2 class="text-3xl font-bold text-gray-900 mb-10 text-pretty" data-animate="fade-up">What Our Clients Say</h2>
+            <x-section-heading title="What Our Clients Say" :centered="false" />
             <div class="grid md:grid-cols-3 gap-6" data-animate="stagger">
                 @foreach($testimonials->take(3) as $testimonial)
                     <x-testimonial :quote="$testimonial->quote"

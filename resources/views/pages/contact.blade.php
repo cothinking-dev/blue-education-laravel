@@ -2,13 +2,10 @@
           description="Get in touch with Blue Education. Education, migration, and career advice from Perth, Western Australia.">
 
     {{-- §1 Hero --}}
-    <section class="py-20 px-8 text-center bg-primary-50">
-        <div class="max-w-3xl mx-auto">
-            <x-auto-breadcrumb class="mb-6 justify-center" />
-            <h1 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-5 text-pretty">Contact Blue Education</h1>
-            <p class="text-xl text-gray-600 text-pretty">We respond to all enquiries within one business day.</p>
-        </div>
-    </section>
+    <x-hero title="Contact Blue Education"
+            subtitle="We respond to all enquiries within one business day."
+            variant="light"
+            :breadcrumbs="true" />
 
     {{-- §2 Contact Methods --}}
     <section class="bg-white">
@@ -58,7 +55,7 @@
     {{-- §3 Contact Form --}}
     <section class="bg-gray-50">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
-            <h2 class="text-3xl font-bold text-gray-900 mb-10 text-pretty" data-animate="fade-up">Send an Enquiry</h2>
+            <h2 id="enquiry-form" class="text-3xl font-bold text-gray-900 mb-10 text-pretty" data-animate="fade-up">Send an Enquiry</h2>
             <div class="flex flex-col lg:flex-row gap-10">
                 {{-- Form — 60% --}}
                 <div class="lg:w-3/5">
@@ -104,7 +101,7 @@
                     <li class="flex items-start gap-2"><span class="text-primary-600 font-bold mt-0.5">✓</span> In-person (Perth), phone, or video</li>
                 </ul>
                 <div>
-                    <x-btn href="{{ route('contact') }}#form-h" variant="primary" size="lg">Book a Consultation</x-btn>
+                    <x-btn href="{{ route('contact') }}#enquiry-form" variant="primary" size="lg">Book a Consultation</x-btn>
                 </div>
             </div>
         </div>
@@ -113,7 +110,7 @@
     {{-- §5 International Representatives --}}
     <section class="bg-gray-50">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
-            <h2 class="text-3xl font-bold text-gray-900 mb-3 text-pretty" data-animate="fade-up">International Representatives</h2>
+            <h2 class="text-3xl font-bold text-gray-900 mb-4 text-pretty" data-animate="fade-up">International Representatives</h2>
             <p class="text-gray-600 mb-8">For local support in your region, contact our international team or email <a href="mailto:info@blueeducation.com.au" class="text-primary-800 hover:underline">info@blueeducation.com.au</a>.</p>
             <x-data-table :headers="['Region', 'Representative']"
                           :rows="[

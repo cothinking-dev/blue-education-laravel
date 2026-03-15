@@ -6,7 +6,8 @@
             subtitle="Find answers to common questions about studying, working, and living in Australia."
             :image="asset('images/heroes/faq.webp')"
             alt="Help desk and information service"
-            variant="centered" />
+            variant="centered"
+            :breadcrumbs="true" />
 
     {{-- Visual context --}}
     <section class="bg-white">

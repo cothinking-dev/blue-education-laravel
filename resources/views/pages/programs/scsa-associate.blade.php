@@ -7,12 +7,13 @@
             :image="asset('images/heroes/programs-scsa-associate.webp')"
             alt="Modern school building exterior"
             badge="Official SCSA Partnership · WA Government"
-            variant="left" />
+            variant="left"
+            :breadcrumbs="true" />
 
     {{-- §2 What Is SCSA --}}
     <section class="bg-white">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
-            <h2 class="text-3xl font-bold text-gray-900 mb-8 text-pretty">What Is SCSA?</h2>
+            <x-section-heading title="What Is SCSA?" :centered="false" />
             <div class="flex flex-col lg:flex-row gap-12">
                 <div class="flex-1">
                     <x-facts-table :rows="[
@@ -41,7 +42,7 @@
     {{-- §3 For International Schools --}}
     <section class="bg-gray-50">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
-            <h2 class="text-3xl font-bold text-gray-900 mb-8 text-pretty" data-animate="fade-up">For International Schools</h2>
+            <x-section-heading title="For International Schools" :centered="false" />
             <div class="space-y-6">
                 @php
                     $schoolSteps = [
@@ -78,7 +79,7 @@
     {{-- §4 How It Works --}}
     <section class="bg-white">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
-            <h2 class="text-3xl font-bold text-gray-900 mb-10 text-pretty" data-animate="fade-up">How It Works</h2>
+            <x-section-heading title="How It Works" :centered="false" />
             <x-timeline :steps="[
                 ['title' => 'Understand', 'description' => 'We explain the SCSA framework, requirements, and what accreditation involves.'],
                 ['title' => 'Apply', 'description' => 'We support your formal application to deliver the WA curriculum.'],
@@ -92,7 +93,7 @@
     {{-- §5 For Students --}}
     <section class="bg-gray-50">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
-            <h2 class="text-3xl font-bold text-gray-900 mb-8 text-pretty" data-animate="fade-up">For Students</h2>
+            <x-section-heading title="For Students" :centered="false" />
             <div class="grid sm:grid-cols-2 gap-6" data-animate="stagger">
                 <div class="border border-gray-200 rounded-corner-lg p-6 bg-white">
                     <h3 class="font-bold text-gray-900 mb-2 text-pretty">Complete WACE Overseas</h3>
@@ -119,7 +120,7 @@
     {{-- §6 Who This Is For --}}
     <section class="bg-white">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
-            <h2 class="text-3xl font-bold text-gray-900 mb-8 text-pretty" data-animate="fade-up">Who This Is For</h2>
+            <x-section-heading title="Who This Is For" :centered="false" />
             <div class="grid sm:grid-cols-3 gap-6" data-animate="stagger">
                 <x-card title="International Schools"
                         description="Schools wanting to offer an Australian-standard curriculum. Any country.">

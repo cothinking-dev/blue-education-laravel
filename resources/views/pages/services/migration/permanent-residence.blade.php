@@ -6,12 +6,13 @@
             subtitle="From skills assessment and points optimisation to employer nomination and family reunification — every pathway is different, and the details matter. We manage the application from start to finish."
             :image="asset('images/heroes/services-migration-permanent-residence.webp')"
             alt="Family arriving in Australia for a new life"
-            variant="left" />
+            variant="left"
+            :breadcrumbs="true" />
 
     {{-- §2 Pathways to Permanent Residence --}}
     <section class="bg-white">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
-            <h2 class="text-3xl font-bold text-gray-900 mb-8 text-pretty" data-animate="fade-up">Pathways to Permanent Residence</h2>
+            <x-section-heading title="Pathways to Permanent Residence" :centered="false" />
             <div class="grid sm:grid-cols-2 gap-6" data-animate="stagger">
                 <div class="border border-gray-200 rounded-corner-lg p-6 bg-white">
                     <div class="w-10 h-10 rounded-corner bg-primary-50 text-primary-800 flex items-center justify-center mb-4">
@@ -70,7 +71,7 @@
     {{-- §3 How It Works --}}
     <section class="bg-gray-50">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
-            <h2 class="text-3xl font-bold text-gray-900 mb-10 text-pretty" data-animate="fade-up">How It Works</h2>
+            <x-section-heading title="How It Works" :centered="false" />
             <x-timeline :steps="[
                 ['title' => 'Skills Assessment', 'description' => 'Your occupation must be assessed by the relevant Australian authority before you can submit an Expression of Interest. We identify the appropriate assessing body for your field and coordinate the application.'],
                 ['title' => 'Expression of Interest (EOI)', 'description' => 'Once assessed, you submit an EOI through SkillSelect. Invitations are issued in rounds — your points score determines when and whether you receive one. We optimise your points profile and advise on state nomination options that can increase your total.'],
@@ -88,7 +89,7 @@
     {{-- §5 What Comes Next? --}}
     <section class="bg-gray-50">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
-            <h2 class="text-3xl font-bold text-gray-900 mb-8 text-pretty" data-animate="fade-up">What Comes Next?</h2>
+            <x-section-heading title="What Comes Next?" :centered="false" />
             <div class="grid sm:grid-cols-2 gap-6" data-animate="stagger">
                 <a href="{{ route('services.career') }}" class="bg-white rounded-corner-lg border border-gray-200 p-6 hover:border-primary-300 hover:shadow-sm transition-all group">
                     <h3 class="font-bold text-gray-900 mb-2 group-hover:text-primary-800 transition-colors">Explore career support and employer connections &rarr;</h3>

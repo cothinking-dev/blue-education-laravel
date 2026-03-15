@@ -6,7 +6,8 @@
             subtitle="English scores, academic qualifications, and pathway options — by program level."
             :image="asset('images/heroes/admission-requirements.webp')"
             alt="Application forms and study documents"
-            variant="left" />
+            variant="left"
+            :breadcrumbs="true" />
 
     {{-- §2 English Language Requirements --}}
     <section class="bg-white">
@@ -40,7 +41,7 @@
     {{-- §3 Academic Requirements --}}
     <section class="bg-gray-50">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
-            <h2 class="text-3xl font-bold text-gray-900 mb-8 text-pretty" data-animate="fade-up">Academic Requirements</h2>
+            <x-section-heading title="Academic Requirements" :centered="false" />
             <x-data-table :headers="['Education Level', 'Academic Entry Requirement']"
                           :rows="[
                               ['Foundation', 'Year 11 (or equivalent)'],

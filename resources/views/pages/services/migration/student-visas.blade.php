@@ -6,7 +6,8 @@
             subtitle="Registered migration agents handle your Subclass 500 application end to end — eligibility, documents, GTE statement, and lodgement."
             :image="asset('images/heroes/services-migration-student-visas.webp')"
             alt="Passport and visa application documents on a desk"
-            variant="left" />
+            variant="left"
+            :breadcrumbs="true" />
 
     {{-- §2 What Is a Student Visa? --}}
     <section class="bg-white">
@@ -36,7 +37,7 @@
     {{-- §3 How We Help --}}
     <section class="bg-gray-50">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
-            <h2 class="text-3xl font-bold text-gray-900 mb-10 text-pretty" data-animate="fade-up">How We Help</h2>
+            <x-section-heading title="How We Help" :centered="false" />
             <x-timeline :steps="[
                 ['title' => 'Eligibility Assessment', 'description' => 'We review your situation and confirm you meet the requirements before any application work begins.'],
                 ['title' => 'Document Compilation', 'description' => 'Academic transcripts, financial evidence, health checks, character documents — we provide the checklist and verify everything.'],
@@ -61,7 +62,7 @@
     {{-- §4 Requirements Snapshot --}}
     <section class="bg-white">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
-            <h2 class="text-3xl font-bold text-gray-900 mb-8 text-pretty" data-animate="fade-up">Requirements Snapshot</h2>
+            <x-section-heading title="Requirements Snapshot" :centered="false" />
             <div class="grid sm:grid-cols-2 gap-6" data-animate="stagger">
                 <div class="flex items-start gap-4">
                     <div class="w-10 h-10 rounded-corner bg-primary-50 text-primary-800 flex items-center justify-center shrink-0">
@@ -106,7 +107,7 @@
     {{-- §5 What Comes Next? --}}
     <section class="bg-gray-50">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
-            <h2 class="text-3xl font-bold text-gray-900 mb-8 text-pretty" data-animate="fade-up">What Comes Next?</h2>
+            <x-section-heading title="What Comes Next?" :centered="false" />
             <div class="grid sm:grid-cols-2 gap-6" data-animate="stagger">
                 <a href="{{ route('services.migration.graduate-work') }}" class="bg-white rounded-corner-lg border border-gray-200 p-6 hover:border-primary-300 hover:shadow-sm transition-all group">
                     <h3 class="font-bold text-gray-900 mb-2 group-hover:text-primary-800 transition-colors">Post-study work visas &rarr;</h3>

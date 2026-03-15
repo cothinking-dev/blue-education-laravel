@@ -8,7 +8,8 @@
             {{-- Meta --}}
             <div class="flex flex-wrap items-center gap-3 mb-6 text-sm">
                 @if($post->category)
-                    <span class="inline-block bg-{{ $post->category->color ?? 'primary' }}-100 text-{{ $post->category->color ?? 'primary' }}-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">{{ $post->category->name }}</span>
+                    <span class="inline-block text-xs font-semibold px-2.5 py-0.5 rounded-full text-white"
+                          style="background-color: {{ $post->category->color ?? '#3b82f6' }}">{{ $post->category->name }}</span>
                 @endif
                 @if($post->published_at)
                     <span class="text-gray-500">{{ $post->published_at->format('d M Y') }}</span>
