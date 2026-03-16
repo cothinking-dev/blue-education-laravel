@@ -5,12 +5,12 @@
     <x-hero title="Australia has 1,100+ institutions and 20,000+ programs. Finding the right one takes more than a Google search."
             subtitle="We've been navigating this system since 1998. Let us show you where you fit."
             :image="asset('images/heroes/services-education.webp')"
-            alt="Education advisor guiding a student through university options"
+            alt="Education advisor guiding an East Asian student through university options"
             variant="centered"
             :breadcrumbs="true" />
 
     {{-- §2 How We Help --}}
-    <x-content-split title="How We Help" :image="asset('images/services-education/education-guidance.webp')" alt="Education advisor guiding a student through programme options">
+    <x-content-split title="How We Help" :image="asset('images/services-education/education-guidance.webp')" alt="Education advisor guiding an East Asian student through programme options">
         <p>Choosing where and what to study in Australia isn't just an education decision — it's a career decision, a migration decision, and a life decision.</p>
         <p>Your advisor maps out institutions and programs against two questions: what career do you want, and what does your visa pathway look like? The course recommendation comes after that — not before.</p>
         <p>Once you've decided, we take care of the rest — application, enrolment, and student visa included.</p>
@@ -25,21 +25,29 @@
             <div class="grid sm:grid-cols-2 gap-6" data-animate="stagger">
                 <x-card title="I'm enrolling a child in school"
                         description="For students aged 5–18. We handle school selection, accommodation, guardianship, and welfare — so parents know their child is looked after at every stage."
+                        :image="asset('images/services-education/pathway-school.webp')"
+                        alt="East Asian student smiling in a modern classroom with classmates"
                         :href="route('services.education.school')"
                         linkText="Learn more" />
 
                 <x-card title="I need to build my English or bridge to university"
                         description="Not quite at university entry level yet? English language courses (10–30 weeks) and foundation programs build the academic skills and IELTS scores that open the door."
+                        :image="asset('images/services-education/pathway-english.webp')"
+                        alt="East Asian student laughing with classmates in a language school classroom"
                         :href="route('services.education.english')"
                         linkText="Learn more" />
 
                 <x-card title="I want a practical, career-focused qualification"
                         description="Certificates through to Advanced Diplomas — practical, industry-recognised qualifications. Many sit directly on Australia's skilled migration lists."
+                        :image="asset('images/services-education/pathway-vet-tafe.webp')"
+                        alt="Students in professional culinary training at a vocational kitchen"
                         :href="route('services.education.vet-tafe')"
                         linkText="Learn more" />
 
                 <x-card title="I'm applying for a Bachelor's, Master's, or PhD"
                         description="Bachelor, Master, and Doctoral programs across globally ranked Australian universities. Graduates receive 2–4 years of post-study work rights."
+                        :image="asset('images/services-education/pathway-degrees.webp')"
+                        alt="East Asian graduate celebrating with diploma in university library"
                         :href="route('services.education.degrees')"
                         linkText="Learn more" />
             </div>
@@ -55,7 +63,7 @@
                     <p class="text-gray-600 leading-relaxed text-pretty">From discovery session to ongoing support — your advisor coordinates every step.</p>
                 </div>
                 <div class="lg:w-[40%]">
-                    <img src="{{ asset('images/services-education/campus-library.webp') }}" alt="Students studying in a modern university library" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
+                    <img src="{{ asset('images/services-education/campus-library.webp') }}" alt="East Asian students studying in a modern university library" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
                 </div>
             </div>
             <x-timeline :steps="[

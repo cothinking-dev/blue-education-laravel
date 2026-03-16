@@ -5,7 +5,7 @@
     <x-hero title="Your path to Australian permanent residence starts with the right first step."
             subtitle="From skills assessment and points optimisation to employer nomination and family reunification — every pathway is different, and the details matter. We manage the application from start to finish."
             :image="asset('images/heroes/services-migration-permanent-residence.webp')"
-            alt="Family arriving in Australia for a new life"
+            alt="East Asian mother walking happily with her children from home"
             variant="left"
             :breadcrumbs="true" />
 
@@ -62,8 +62,8 @@
     <section class="bg-gray-50">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 pt-14">
             <div class="grid sm:grid-cols-2 gap-6">
-                <img src="{{ asset('images/services-migration-permanent-residence/new-home.webp') }}" alt="Family settling into a new home in Australia" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
-                <img src="{{ asset('images/services-migration-permanent-residence/community-life.webp') }}" alt="Multicultural community life in an Australian neighbourhood" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
+                <img src="{{ asset('images/services-migration-permanent-residence/new-home.webp') }}" alt="East Asian family settling into a new home in Australia" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
+                <img src="{{ asset('images/services-migration-permanent-residence/community-life.webp') }}" alt="East Asian family enjoying community life in an Australian neighbourhood" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
             </div>
         </div>
     </section>

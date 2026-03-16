@@ -5,7 +5,7 @@
     <x-hero title="Visa applications that get it right the first time."
             subtitle="Registered migration agents with 28 years of successful applications. From student visas to permanent residence, we manage the process end to end."
             :image="asset('images/heroes/services-migration.webp')"
-            alt="Australian city skyline at dusk"
+            alt="Travel documents, passport, and boarding passes on a desk"
             :breadcrumbs="true" />
 
     {{-- §2 The Migration Pathway --}}
@@ -97,8 +97,8 @@
     <section class="bg-white">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 pt-14">
             <div class="grid sm:grid-cols-2 gap-6">
-                <img src="{{ asset('images/services-migration/visa-consultation.webp') }}" alt="Visa consultation with a migration advisor" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
-                <img src="{{ asset('images/services-migration/migration-pathway.webp') }}" alt="Migration pathway to a new life in Australia" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
+                <img src="{{ asset('images/services-migration/visa-consultation.webp') }}" alt="East Asian client in a visa consultation with a migration advisor" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
+                <img src="{{ asset('images/services-migration/migration-pathway.webp') }}" alt="East Asian family beginning a new life in Australia" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
             </div>
         </div>
     </section>

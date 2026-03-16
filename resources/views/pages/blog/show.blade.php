@@ -1,5 +1,36 @@
+@php
+    $org = config('seo.organization');
+    $blogPostingSchema = [
+        '@context' => 'https://schema.org',
+        '@type' => 'BlogPosting',
+        'headline' => $post->title,
+        'description' => $post->seo_description,
+        'datePublished' => $post->published_at?->toIso8601String(),
+        'dateModified' => $post->updated_at?->toIso8601String(),
+        'author' => [
+            '@type' => 'Organization',
+            'name' => $org['name'],
+            'url' => $org['url'],
+        ],
+        'publisher' => [
+            '@type' => 'Organization',
+            'name' => $org['name'],
+            'logo' => [
+                '@type' => 'ImageObject',
+                'url' => url($org['logo']),
+            ],
+        ],
+        ...($post->seo_image ? ['image' => $post->seo_image] : []),
+    ];
+@endphp
+
 <x-layout :title="$post->title"
-          :description="$post->excerpt">
+          :description="$post->seo_description"
+          og-type="article"
+          :og-image="$post->seo_image"
+          :article-published-time="$post->published_at?->toIso8601String()"
+          :article-modified-time="$post->updated_at?->toIso8601String()"
+          :json-ld="$blogPostingSchema">
 
     {{-- Article --}}
     <article class="bg-white">

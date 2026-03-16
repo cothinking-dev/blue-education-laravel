@@ -5,12 +5,12 @@
     <x-hero title="VET and TAFE qualifications open careers."
             subtitle="Practical training across trades, technical fields, and specialist roles — with many qualifications aligning directly to Australia's skilled migration pathways."
             :image="asset('images/heroes/services-education-vet-tafe.webp')"
-            alt="Students in a vocational training workshop"
+            alt="East Asian students in a vocational training workshop"
             variant="left"
             :breadcrumbs="true" />
 
     {{-- §2 What is VET/TAFE? --}}
-    <x-content-split title="What is VET/TAFE?" :image="asset('images/services-education-vet-tafe/vet-training.webp')" alt="Hands-on vocational training in a workshop">
+    <x-content-split title="What is VET/TAFE?" :image="asset('images/services-education-vet-tafe/vet-training.webp')" alt="East Asian student in hands-on vocational training in a workshop">
         <p>Vocational Education and Training (VET) is delivered through Technical and Further Education (TAFE) institutions and Registered Training Organisations (RTOs) across Australia.</p>
         <p>VET qualifications emphasise practical, hands-on skills. You learn in workshops, labs, and real workplace settings. Graduates enter the workforce job-ready, with qualifications employers trust.</p>
     </x-content-split>

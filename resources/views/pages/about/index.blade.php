@@ -5,7 +5,7 @@
     <x-hero title="Independent education and migration advice. Since 1998."
             subtitle="Most education consultancies cover one thing. We've covered all three — education, career, and migration — from a single Perth office for 28 years. Clients from 40+ countries trust us with decisions that don't have a do-over."
             :image="asset('images/heroes/about.webp')"
-            alt="Professional team collaborating in a modern office environment"
+            alt="Blue Education professional team collaborating in a modern office"
             variant="left"
             height="440px"
             :breadcrumbs="true" />
@@ -65,7 +65,7 @@
                     <p class="text-gray-600 leading-relaxed text-pretty">Most agencies cover one domain. We cover all three — coordinated into a single, seamless plan. One team. No handoffs between providers.</p>
                 </div>
                 <div class="flex-1 lg:max-w-[40%]">
-                    <img src="{{ asset('images/about/education-consulting.webp') }}" alt="Education consultant reviewing options with a client in front of a world map" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
+                    <img src="{{ asset('images/about/education-consulting.webp') }}" alt="Education consultant reviewing options with an East Asian client" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
                 </div>
             </div>
 
@@ -87,7 +87,7 @@
                     <p class="text-gray-600 leading-relaxed text-pretty">Our relationship doesn't end at enrollment. Study support. Career development. Migration pathways. 24/7 emergency hotline. We stay with you through every stage.</p>
                 </div>
                 <div class="flex-1 lg:max-w-[40%]">
-                    <img src="{{ asset('images/about/student-support.webp') }}" alt="Mentor guiding a student through study materials at a desk" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
+                    <img src="{{ asset('images/about/student-support.webp') }}" alt="Advisor guiding an East Asian student through study materials at a desk" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
                 </div>
             </div>
         </div>

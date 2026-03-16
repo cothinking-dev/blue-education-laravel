@@ -2,10 +2,8 @@
 
 namespace Database\Seeders;
 
-use App\Models\Category;
 use App\Models\Faq;
 use App\Models\Partner;
-use App\Models\Post;
 use App\Models\TeamMember;
 use App\Models\Testimonial;
 use App\Models\User;
@@ -24,30 +22,8 @@ class DatabaseSeeder extends Seeder
             'email' => 'admin@blueeducation.com.au',
         ]);
 
-        // Blog categories
-        $categories = collect([
-            ['name' => 'Education News', 'slug' => 'education-news', 'color' => '#3b82f6'],
-            ['name' => 'Migration Updates', 'slug' => 'migration-updates', 'color' => '#8b5cf6'],
-            ['name' => 'Student Stories', 'slug' => 'student-stories', 'color' => '#10b981'],
-            ['name' => 'Study Tips', 'slug' => 'study-tips', 'color' => '#f59e0b'],
-            ['name' => 'Living in Australia', 'slug' => 'living-in-australia', 'color' => '#ef4444'],
-        ])->map(fn (array $data, int $key) => Category::create([...$data, 'sort_order' => $key]));
-
-        // Sample blog posts with featured images
-        $blogImages = ['images/blog/blog-01.webp', 'images/blog/blog-02.webp', 'images/blog/blog-03.webp', 'images/blog/blog-04.webp', 'images/blog/blog-05.webp'];
-        $imageIndex = 0;
-
-        $categories->each(function (Category $category) use ($blogImages, &$imageIndex) {
-            Post::factory()->count(3)->published()->create([
-                'category_id' => $category->id,
-                'featured_image' => fn () => $blogImages[$imageIndex++ % count($blogImages)],
-            ]);
-        });
-
-        Post::factory()->featured()->published()->create([
-            'category_id' => $categories->first()->id,
-            'featured_image' => $blogImages[0],
-        ]);
+        // Blog categories and posts (migrated from Wix)
+        $this->call(BlogSeeder::class);
 
         // Testimonials from wireframe
         $testimonials = [

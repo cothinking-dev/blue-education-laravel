@@ -5,7 +5,7 @@
     <x-hero title="Your student visa has an end date. Your options after it don't have to be uncertain."
             subtitle="Post-study work visa (Subclass 485), employer-sponsored visa (Subclass 482), Employer Nomination Scheme — assessed and managed by the same team that handled your student visa."
             :image="asset('images/heroes/services-migration-graduate-work.webp')"
-            alt="Young professional working at an office desk"
+            alt="East Asian businesswoman arriving confidently at a modern office"
             :breadcrumbs="true" />
 
     {{-- §2 Post-Study Work Visa (Subclass 485) --}}
@@ -68,8 +68,8 @@
     <section class="bg-gray-50">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 pt-14">
             <div class="grid sm:grid-cols-2 gap-6">
-                <img src="{{ asset('images/services-migration-graduate-work/graduate-at-desk.webp') }}" alt="Graduate professional working at a desk" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
-                <img src="{{ asset('images/services-migration-graduate-work/career-fair.webp') }}" alt="Career fair networking event" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
+                <img src="{{ asset('images/services-migration-graduate-work/graduate-at-desk.webp') }}" alt="East Asian graduate professional working at a desk in an Australian office" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
+                <img src="{{ asset('images/services-migration-graduate-work/career-fair.webp') }}" alt="East Asian graduates networking at a career fair event" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
             </div>
         </div>
     </section>

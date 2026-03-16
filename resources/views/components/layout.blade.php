@@ -1,13 +1,14 @@
 @props([
     'title' => null,
     'description' => null,
-    'keywords' => null,
     'ogImage' => null,
     'ogType' => null,
     'robots' => null,
     'canonical' => null,
     'noSuffix' => false,
     'jsonLd' => null,
+    'articlePublishedTime' => null,
+    'articleModifiedTime' => null,
 ])
 
 <!DOCTYPE html>
@@ -20,13 +21,14 @@
     <x-seo
         :title="$title"
         :description="$description"
-        :keywords="$keywords"
         :og-image="$ogImage"
         :og-type="$ogType"
         :robots="$robots"
         :canonical="$canonical"
         :no-suffix="$noSuffix"
         :json-ld="$jsonLd"
+        :article-published-time="$articlePublishedTime"
+        :article-modified-time="$articleModifiedTime"
     />
 
     <x-favicon />

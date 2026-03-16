@@ -1,13 +1,14 @@
 @props([
     'title' => null,
     'description' => null,
-    'keywords' => null,
     'robots' => null,
     'ogType' => null,
     'ogImage' => null,
     'canonical' => null,
     'noSuffix' => false,
     'jsonLd' => null,
+    'articlePublishedTime' => null,
+    'articleModifiedTime' => null,
 ])
 
 @php
@@ -19,7 +20,6 @@
         ? ($noSuffix ? $title : $title . $defaults['title_suffix'])
         : $defaults['title'];
     $pageDescription = $description ?? $defaults['description'];
-    $pageKeywords = $keywords ?? $defaults['keywords'];
     $pageRobots = $robots ?? $defaults['robots'];
     $pageOgType = $ogType ?? $og['type'];
     $pageOgImage = $ogImage ?? $og['image'];
@@ -28,7 +28,6 @@
 
 <title>{{ $pageTitle }}</title>
 <meta name="description" content="{{ $pageDescription }}">
-<meta name="keywords" content="{{ $pageKeywords }}">
 <meta name="author" content="{{ $defaults['author'] }}">
 <meta name="robots" content="{{ $pageRobots }}">
 <link rel="canonical" href="{{ $pageCanonical }}">
@@ -41,8 +40,16 @@
 <meta property="og:site_name" content="{{ $og['site_name'] }}">
 <meta property="og:locale" content="{{ $og['locale'] }}">
 <meta property="og:image" content="{{ url($pageOgImage) }}">
+@unless($ogImage)
 <meta property="og:image:width" content="{{ $og['image_width'] }}">
 <meta property="og:image:height" content="{{ $og['image_height'] }}">
+@endunless
+@if($articlePublishedTime)
+<meta property="article:published_time" content="{{ $articlePublishedTime }}">
+@endif
+@if($articleModifiedTime)
+<meta property="article:modified_time" content="{{ $articleModifiedTime }}">
+@endif
 
 {{-- Twitter --}}
 <meta name="twitter:card" content="{{ $twitter['card'] }}">

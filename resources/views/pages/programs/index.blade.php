@@ -5,7 +5,7 @@
     <x-hero title="Immersive Programs for International Students"
             subtitle="Beyond standard enrolment. Structured experiences that accelerate integration, learning, and career readiness."
             :image="asset('images/heroes/programs.webp')"
-            alt="Diverse group of international students on campus"
+            alt="East Asian and international students walking on campus"
             variant="centered"
             :breadcrumbs="true" />
 
@@ -16,18 +16,24 @@
                 <x-card title="Buddy Programme"
                         badge="14-Day Immersion"
                         description="High school students join Australian classrooms, live with vetted homestay families, and explore Western Australia through structured field trips — all within a supervised 14-day programme run in partnership with Anglican Schools."
+                        :image="asset('images/programs-index/buddy-programme.webp')"
+                        alt="Diverse group of students studying together outdoors on campus"
                         :href="route('programs.buddy-programme')"
                         linkText="Explore the Buddy Programme" />
 
                 <x-card title="Study Tours"
                         badge="Flexible Duration"
                         description="Educational and cultural immersion programs. One week to several months. No long-term enrolment required. Custom tours for schools, universities, and organisations available on request."
+                        :image="asset('images/programs-index/study-tours.webp')"
+                        alt="East Asian students exploring a city with a map while traveling"
                         :href="route('programs.study-tours')"
                         linkText="Explore Study Tours" />
 
                 <x-card title="SCSA Associate"
                         badge="Official SCSA Partnership"
                         description="Blue Education is appointed by SCSA — the WA Government's curriculum authority — to help international schools implement the Western Australian curriculum, including the WACE programme, internationally."
+                        :image="asset('images/programs-index/scsa-associate.webp')"
+                        alt="Diverse team of students collaborating on curriculum documents"
                         :href="route('programs.scsa-associate')"
                         linkText="Explore SCSA Associate" />
 
@@ -45,8 +51,8 @@
     <section class="bg-gray-50">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
             <div class="grid sm:grid-cols-2 gap-6">
-                <img src="{{ asset('images/programs/program-activity.webp') }}" alt="Students participating in an outdoor education activity" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
-                <img src="{{ asset('images/programs/student-event.webp') }}" alt="Multicultural student celebration event on campus" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
+                <img src="{{ asset('images/programs/program-activity.webp') }}" alt="East Asian students learning about nature during an outdoor field trip" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
+                <img src="{{ asset('images/programs/student-event.webp') }}" alt="Diverse graduates celebrating with diplomas at graduation ceremony" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
             </div>
         </div>
     </section>

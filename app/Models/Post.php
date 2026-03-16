@@ -3,9 +3,12 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Support\Facades\Cache;
+use Illuminate\Support\Str;
 
 class Post extends Model
 {
@@ -26,6 +29,12 @@ class Post extends Model
         'read_time',
     ];
 
+    protected static function booted(): void
+    {
+        static::saved(fn () => Cache::forget('sitemap:xml'));
+        static::deleted(fn () => Cache::forget('sitemap:xml'));
+    }
+
     /**
      * @return array<string, string>
      */
@@ -36,6 +45,29 @@ class Post extends Model
             'is_published' => 'boolean',
             'published_at' => 'datetime',
         ];
+    }
+
+    /**
+     * Only resolve published posts for public route model binding.
+     *
+     * @param  mixed  $value
+     * @param  string|null  $field
+     */
+    public function resolveRouteBinding($value, $field = null): ?self
+    {
+        return $this->where($field ?? 'id', $value)->published()->first();
+    }
+
+    /** Meta description: excerpt with fallback to truncated body. */
+    protected function seoDescription(): Attribute
+    {
+        return Attribute::get(fn () => $this->excerpt ?: Str::limit(strip_tags($this->body), 160));
+    }
+
+    /** Absolute URL to featured image for OG tags. */
+    protected function seoImage(): Attribute
+    {
+        return Attribute::get(fn () => $this->featured_image ? asset($this->featured_image) : null);
     }
 
     /**

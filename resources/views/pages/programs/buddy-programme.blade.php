@@ -5,7 +5,7 @@
     <x-hero title="Two weeks. Real school. Real families. Real Western Australia."
             subtitle="High school students join Australian classrooms, live with vetted homestay families, and explore Western Australia through structured field trips — all within a supervised 14-day programme run in partnership with Anglican Schools."
             :image="asset('images/heroes/programs-buddy-programme.webp')"
-            alt="Students exploring nature in Western Australia"
+            alt="East Asian students exploring nature in Western Australia"
             badge="14-Day Immersion · Anglican Schools"
             variant="left"
             :breadcrumbs="true" />
@@ -67,21 +67,21 @@
             <x-section-heading title="Beyond the Classroom" :centered="false" />
             <div class="grid sm:grid-cols-3 gap-6" data-animate="stagger">
                 <div class="border border-gray-200 rounded-corner-lg overflow-hidden">
-                    <img src="{{ asset('images/programs-buddy-programme/homestay-experience.webp') }}" alt="Warm homestay family welcoming an international student at their front door" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
+                    <img src="{{ asset('images/programs-buddy-programme/homestay-experience.webp') }}" alt="Australian homestay family welcoming an East Asian student at their front door" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
                     <div class="p-5">
                         <h3 class="font-bold text-gray-900 mb-2">Homestay Experience</h3>
                         <p class="text-gray-600 text-sm leading-relaxed text-pretty">Police-cleared homestay families provide meals, emotional support, and a genuine share of Australian family life — including weekend activities. Students are looked after, not just housed.</p>
                     </div>
                 </div>
                 <div class="border border-gray-200 rounded-corner-lg overflow-hidden">
-                    <img src="{{ asset('images/programs-buddy-programme/local-field-trips.webp') }}" alt="Group of students on a field trip exploring nature in Australia" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
+                    <img src="{{ asset('images/programs-buddy-programme/local-field-trips.webp') }}" alt="East Asian students on a field trip exploring nature in Australia" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
                     <div class="p-5">
                         <h3 class="font-bold text-gray-900 mb-2">Local Field Trips</h3>
                         <p class="text-gray-600 text-sm leading-relaxed text-pretty">Caversham Wildlife Park, Rottnest Island, The Pinnacles, King's Park, Fremantle Market, and a Penguin and Sea Lion Cruise — each chosen to connect to the cultural and environmental themes taught in class.</p>
                     </div>
                 </div>
                 <div class="border border-gray-200 rounded-corner-lg overflow-hidden">
-                    <img src="{{ asset('images/programs-buddy-programme/voluntary-work.webp') }}" alt="Young volunteers planting trees and doing community service in a park" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
+                    <img src="{{ asset('images/programs-buddy-programme/voluntary-work.webp') }}" alt="East Asian student volunteers doing community service in a park" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
                     <div class="p-5">
                         <h3 class="font-bold text-gray-900 mb-2">Voluntary Work</h3>
                         <p class="text-gray-600 text-sm leading-relaxed text-pretty">Students who want to go further can arrange voluntary work with local councils. The voluntary work certificate has practical value — it strengthens CV and scholarship applications.</p>

@@ -5,7 +5,7 @@
     <x-hero title="A degree worth having, from a city worth studying in."
             subtitle="A degree from one of Western Australia's universities opens doors in most major economies — and gives you 2 to 4 years to build a career here before you decide what comes next."
             :image="asset('images/heroes/services-education-degrees.webp')"
-            alt="University graduation ceremony with students in caps and gowns"
+            alt="East Asian graduates celebrating and clapping at graduation ceremony"
             :breadcrumbs="true" />
 
     {{-- §2 Programs --}}
@@ -91,7 +91,7 @@
                     <p class="text-gray-600 leading-relaxed text-pretty">Western Australia's universities are regulated by TEQSA, ensuring consistent academic standards across all programmes. Qualifications are recognised across major economies — including in regulated professions such as teaching, nursing, and engineering.</p>
                 </div>
                 <div class="flex-1 lg:max-w-[40%]">
-                    <img src="{{ asset('images/services-education-degrees/global-recognition.webp') }}" alt="Diverse group of international students celebrating at a university graduation ceremony" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
+                    <img src="{{ asset('images/services-education-degrees/global-recognition.webp') }}" alt="East Asian graduates celebrating at a university graduation ceremony" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
                 </div>
             </div>
 
@@ -101,7 +101,7 @@
                     <p class="text-gray-600 leading-relaxed text-pretty">Many programmes include industry placements, research projects, and professional mentoring. Graduates leave with demonstrated experience in their field — not just a transcript.</p>
                 </div>
                 <div class="flex-1 lg:max-w-[40%]">
-                    <img src="{{ asset('images/services-education-degrees/industry-connections.webp') }}" alt="Young professionals networking and discussing ideas in a modern office setting" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
+                    <img src="{{ asset('images/services-education-degrees/industry-connections.webp') }}" alt="East Asian professionals networking and discussing ideas in a modern office" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
                 </div>
             </div>
 
@@ -115,7 +115,7 @@
                     </div>
                 </div>
                 <div class="flex-1 lg:max-w-[40%]">
-                    <img src="{{ asset('images/services-education-degrees/post-study-work.webp') }}" alt="Young professional woman working confidently on a laptop in a modern office" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
+                    <img src="{{ asset('images/services-education-degrees/post-study-work.webp') }}" alt="East Asian professional woman working on a laptop in a modern office" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
                 </div>
             </div>
         </div>

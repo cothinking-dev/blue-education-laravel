@@ -5,7 +5,7 @@
     <x-hero title="Study in Australia starts with the right visa application."
             subtitle="Registered migration agents handle your Subclass 500 application end to end — eligibility, documents, GTE statement, and lodgement."
             :image="asset('images/heroes/services-migration-student-visas.webp')"
-            alt="Passport and visa application documents on a desk"
+            alt="Two East Asian students checking flight information at the airport"
             variant="left"
             :breadcrumbs="true" />
 
@@ -54,7 +54,7 @@
         <div class="max-w-7xl mx-auto px-8 lg:px-16 pt-14">
             <div class="grid sm:grid-cols-2 gap-6">
                 <img src="{{ asset('images/services-migration-student-visas/visa-application.webp') }}" alt="Visa application form and passport documents" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
-                <img src="{{ asset('images/services-migration-student-visas/student-arrival.webp') }}" alt="International student arriving at an Australian airport" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
+                <img src="{{ asset('images/services-migration-student-visas/student-arrival.webp') }}" alt="East Asian student arriving at an Australian airport with luggage" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
             </div>
         </div>
     </section>

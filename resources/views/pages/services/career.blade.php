@@ -5,7 +5,7 @@
     <x-hero title="Turn your Australian qualification into an Australian career."
             subtitle="Getting qualified is the start. From skills gap analysis and employer introductions to graduate work visa support — every step of the path from study to employment, handled by a dedicated team."
             :image="asset('images/heroes/services-career.webp')"
-            alt="Professional job interview in a modern office"
+            alt="East Asian business professionals collaborating at a laptop"
             variant="left"
             :breadcrumbs="true" />
 
@@ -43,7 +43,7 @@
     {{-- Visual break --}}
     <section class="bg-gray-50">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
-            <img src="{{ asset('images/services-career/career-workshop.webp') }}" alt="Career development workshop with professionals" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/1] max-h-[280px]" loading="lazy">
+            <img src="{{ asset('images/services-career/career-workshop.webp') }}" alt="East Asian professionals in a career development workshop" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/1] max-h-[280px]" loading="lazy">
         </div>
     </section>
 
@@ -59,7 +59,7 @@
                     <a href="{{ route('programs.executive-internship') }}" class="inline-flex bg-white text-primary-800 font-semibold px-6 py-3 rounded-corner hover:bg-primary-50 transition-colors">Learn more about the Executive Internship Programme &rarr;</a>
                 </div>
                 <div class="flex-1 lg:max-w-[40%]">
-                    <img src="{{ asset('images/services-career/internship-professional.webp') }}" alt="Young professionals collaborating in a modern office workplace" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
+                    <img src="{{ asset('images/services-career/internship-professional.webp') }}" alt="East Asian professionals collaborating in a modern office workplace" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
                 </div>
             </div>
         </div>

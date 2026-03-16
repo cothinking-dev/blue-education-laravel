@@ -1,11 +1,42 @@
+@php
+    $faqItems = [
+        ['question' => 'How do I choose the right course?', 'answer' => 'We assess your background, goals, and budget and recommend matching programs from 1,100+ institutions and 20,000+ programs.'],
+        ['question' => 'What English level do I need?', 'answer' => 'Accepted tests: IELTS, TOEFL, Cambridge CAE, Pearson PTE. Scores valid for 2 years. Minimum IELTS ranges from 5.5 for Certificate courses to 6.5–8.0 for postgraduate programs. ELICOS courses can bridge the gap.'],
+        ['question' => 'Can I change courses after I start?', 'answer' => 'Usually yes, but it may affect your visa conditions. Talk to us before making any changes.'],
+        ['question' => 'How long does a student visa take?', 'answer' => '4–8 weeks typical. We review applications for completeness before submission to avoid delays.'],
+        ['question' => 'Can I work while studying?', 'answer' => 'Yes. Student visa holders can work up to 48 hours per fortnight during term and unlimited hours during breaks.'],
+        ['question' => 'What happens after I graduate?', 'answer' => 'You may be eligible for a Graduate/Post-Study Work Visa (Subclass 485). Graduate Work Stream: 18 months. Post-Study Work Stream: Bachelor (2 years), Master (3 years), Doctoral (4 years). Both streams provide full work rights and a pathway to permanent residency.'],
+        ['question' => 'Do you guarantee job placement?', 'answer' => 'No. We provide career counselling, job readiness training, employer introductions, and internship placements. These significantly improve employment prospects but do not guarantee placement.'],
+        ['question' => 'When should I start career planning?', 'answer' => 'Before choosing your course. Career goals should drive education decisions, not the other way around.'],
+        ['question' => 'What if there is an emergency?', 'answer' => 'Contact Blue Education directly for emergency support. All Blue Education clients are covered.'],
+        ['question' => 'Do you provide accommodation?', 'answer' => 'Yes. Through the Australian Homestay Network — vetted families, meals included. Guardianship arranged for under-18 students through an approved guardianship provider.'],
+        ['question' => 'How much does Blue Education charge?', 'answer' => 'Varies by service and complexity. Initial consultation is free. Full fee breakdown provided before any commitment.'],
+        ['question' => 'What other costs should I budget for?', 'answer' => 'Tuition (paid to institution), accommodation, OSHC (mandatory health insurance), living expenses, visa application fees, and medical examination ($240–$380).'],
+    ];
+
+    $faqSchema = [
+        '@context' => 'https://schema.org',
+        '@type' => 'FAQPage',
+        'mainEntity' => collect($faqItems)->map(fn ($item) => [
+            '@type' => 'Question',
+            'name' => $item['question'],
+            'acceptedAnswer' => [
+                '@type' => 'Answer',
+                'text' => $item['answer'],
+            ],
+        ])->values()->all(),
+    ];
+@endphp
+
 <x-layout title="FAQ"
-          description="Find answers to common questions about studying, working, and living in Australia.">
+          description="Find answers to common questions about studying, working, and living in Australia."
+          :json-ld="$faqSchema">
 
     {{-- §1 Hero --}}
     <x-hero title="Frequently Asked Questions"
             subtitle="Find answers to common questions about studying, working, and living in Australia."
             :image="asset('images/heroes/faq.webp')"
-            alt="Help desk and information service"
+            alt="East Asian student raising hand to ask a question in a lecture"
             variant="centered"
             :breadcrumbs="true" />
 
@@ -13,8 +44,8 @@
     <section class="bg-white">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 pt-14">
             <div class="grid sm:grid-cols-2 gap-6">
-                <img src="{{ asset('images/faq/student-question.webp') }}" alt="Student asking a question during an information session" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
-                <img src="{{ asset('images/faq/info-session.webp') }}" alt="Education information session presentation" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
+                <img src="{{ asset('images/faq/student-question.webp') }}" alt="East Asian student asking a question during an information session" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
+                <img src="{{ asset('images/faq/info-session.webp') }}" alt="East Asian students at an education information session" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
             </div>
         </div>
     </section>

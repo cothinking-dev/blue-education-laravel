@@ -5,7 +5,7 @@
     <x-hero title="Admission requirements."
             subtitle="English scores, academic qualifications, and pathway options — by program level."
             :image="asset('images/heroes/admission-requirements.webp')"
-            alt="Application forms and study documents"
+            alt="East Asian student reviewing application forms and study documents"
             variant="left"
             :breadcrumbs="true" />
 
@@ -32,8 +32,8 @@
     <section class="bg-gray-50">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 pt-14">
             <div class="grid sm:grid-cols-2 gap-6">
-                <img src="{{ asset('images/admission-requirements/study-materials.webp') }}" alt="Study materials and textbooks for academic preparation" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
-                <img src="{{ asset('images/admission-requirements/checklist.webp') }}" alt="Application preparation checklist and documents" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
+                <img src="{{ asset('images/admission-requirements/study-materials.webp') }}" alt="East Asian student with study materials and textbooks for academic preparation" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
+                <img src="{{ asset('images/admission-requirements/checklist.webp') }}" alt="Application checklist and admission documents on a desk" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
             </div>
         </div>
     </section>

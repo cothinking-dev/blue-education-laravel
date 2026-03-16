@@ -5,7 +5,7 @@
     <x-hero title="Australian curriculum. Delivered internationally. Officially recognised."
             subtitle="Blue Education is appointed by SCSA — the WA Government's curriculum authority — to help international schools implement and deliver the Western Australian curriculum, including the WACE programme."
             :image="asset('images/heroes/programs-scsa-associate.webp')"
-            alt="Modern school building exterior"
+            alt="Modern Australian school building exterior"
             badge="Official SCSA Partnership · WA Government"
             variant="left"
             :breadcrumbs="true" />
@@ -26,11 +26,13 @@
                     ]" />
                 </div>
                 <div class="lg:w-[35%] space-y-4">
-                    <div class="border-2 border-purple-200 rounded-corner-lg p-5 text-center">
+                    <div class="border-2 border-purple-200 rounded-corner-lg p-5 flex flex-col items-center text-center">
+                        <img src="{{ asset('images/credentials/scsa-logo.png') }}" alt="School Curriculum and Standards Authority — Government of Western Australia" class="h-16 w-auto object-contain mb-3">
                         <p class="font-bold text-gray-900 mb-1">Official SCSA Associate</p>
                         <p class="text-gray-600 text-sm text-pretty">Blue Education is an appointed SCSA Associate for international curriculum delivery.</p>
                     </div>
-                    <div class="border border-gray-200 rounded-corner-lg p-5 text-center">
+                    <div class="border border-gray-200 rounded-corner-lg p-5 flex flex-col items-center text-center">
+                        <img src="{{ asset('images/credentials/wa-dept-education-logo.svg') }}" alt="Western Australian Department of Education" class="h-14 w-auto object-contain mb-3">
                         <p class="font-bold text-gray-900 mb-1">WA Department of Education</p>
                         <p class="text-gray-600 text-sm text-pretty">Western Australian Department of Education</p>
                     </div>
@@ -70,8 +72,8 @@
     <section class="bg-white">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 pt-14">
             <div class="grid sm:grid-cols-2 gap-6">
-                <img src="{{ asset('images/programs-scsa-associate/classroom.webp') }}" alt="Modern international school classroom" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
-                <img src="{{ asset('images/programs-scsa-associate/curriculum-materials.webp') }}" alt="Curriculum materials and education resources" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
+                <img src="{{ asset('images/programs-scsa-associate/classroom.webp') }}" alt="East Asian students in a modern international school classroom" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
+                <img src="{{ asset('images/programs-scsa-associate/curriculum-materials.webp') }}" alt="Western Australian curriculum materials and education resources" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
             </div>
         </div>
     </section>

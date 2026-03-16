@@ -5,7 +5,7 @@
     <x-hero title="Student support services in Australia."
             subtitle="Accommodation. Guardianship. Health cover. Airport transfers. Translation. 24/7 emergency line. All arranged before arrival."
             :image="asset('images/heroes/services-student-support.webp')"
-            alt="Students on a campus orientation tour"
+            alt="Advisor tutoring an East Asian student at a desk"
             variant="centered"
             :breadcrumbs="true" />
 
@@ -67,7 +67,7 @@
     </section>
 
     {{-- §3 Orientation & Onboarding --}}
-    <x-content-split title="Orientation & Onboarding" :image="asset('images/services-student-support/orientation-tour.webp')" alt="Student campus orientation tour">
+    <x-content-split title="Orientation & Onboarding" :image="asset('images/services-student-support/orientation-tour.webp')" alt="East Asian student on a campus orientation tour">
         <p>Comprehensive introduction to life and study in Australia for all new arrivals:</p>
         <ul class="space-y-1 text-sm text-gray-600">
             <li>— Campus and local area familiarisation</li>
@@ -80,7 +80,7 @@
     </x-content-split>
 
     {{-- §4 For Parents --}}
-    <x-content-split title="For Parents" :image="asset('images/services-student-support/parent-reassurance.webp')" alt="Parent comforting child about school transition" class="bg-gray-50" reverse>
+    <x-content-split title="For Parents" :image="asset('images/services-student-support/parent-reassurance.webp')" alt="East Asian parent reassuring child about studying abroad" class="bg-gray-50" reverse>
         <p>Sending your child to study in Australia is a significant decision. Here's how we look after them:</p>
         <ul class="space-y-2 text-sm">
             <li class="flex items-start gap-2"><span class="text-primary-600 font-bold">&#8226;</span> <span><strong>24/7 emergency hotline</strong> — for parents and students, any time</span></li>

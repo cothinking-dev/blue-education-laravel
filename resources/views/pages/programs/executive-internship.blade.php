@@ -5,7 +5,7 @@
     <x-hero title="Strategic work experience for business graduates."
             subtitle="The Executive Internship Programme (EIP) runs twice a year. Places are limited. Open to undergraduate and postgraduate students in business or commerce."
             :image="asset('images/heroes/programs-executive-internship.webp')"
-            alt="Professional boardroom meeting in a corporate office"
+            alt="East Asian professional being mentored at a laptop in an office"
             badge="Premium Program · Two Intakes Per Year"
             variant="left"
             :breadcrumbs="true" />
@@ -65,8 +65,8 @@
     <section class="bg-white">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 pt-14">
             <div class="grid sm:grid-cols-2 gap-6">
-                <img src="{{ asset('images/programs-executive-internship/professional-mentoring.webp') }}" alt="Professional mentoring session in an office" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
-                <img src="{{ asset('images/programs-executive-internship/office-work.webp') }}" alt="Business professionals collaborating in a modern office" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
+                <img src="{{ asset('images/programs-executive-internship/professional-mentoring.webp') }}" alt="East Asian professional in a mentoring session at an office" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
+                <img src="{{ asset('images/programs-executive-internship/office-work.webp') }}" alt="East Asian business professionals collaborating in a modern office" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
             </div>
         </div>
     </section>

@@ -5,7 +5,7 @@
     <x-hero title="A quality Australian education for your child, with a safety net built around them."
             subtitle="We handle placement, visa, accommodation, and guardianship — so you're not left worrying from the other side of the world."
             :image="asset('images/heroes/services-education-school.webp')"
-            alt="Children in school uniforms in an Australian classroom"
+            alt="East Asian children in school uniforms in an Australian classroom"
             variant="left"
             :breadcrumbs="true" />
 
@@ -46,7 +46,7 @@
     <section class="bg-white">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
             <div class="mb-8">
-                <img src="{{ asset('images/services-education-school/school-campus.webp') }}" alt="Australian school campus with playground" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/1] max-h-[240px]" loading="lazy">
+                <img src="{{ asset('images/services-education-school/school-campus.webp') }}" alt="East Asian students at an Australian school campus" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/1] max-h-[240px]" loading="lazy">
             </div>
             <h2 class="text-2xl font-bold text-gray-900 mb-3 text-pretty" data-animate="fade-up">Once They're There</h2>
             <p class="text-gray-600 mb-8">These services run in parallel — not a sequence.</p>
@@ -70,7 +70,7 @@
     </section>
 
     {{-- §5 For Parents --}}
-    <x-content-split title="For Parents" :image="asset('images/services-education-school/parent-child-school.webp')" alt="Parent and child at a school consultation" class="bg-gray-50">
+    <x-content-split title="For Parents" :image="asset('images/services-education-school/parent-child-school.webp')" alt="East Asian parent and child at a school consultation" class="bg-gray-50">
         <p>Sending your child overseas is a significant decision. Here's what we put in place before they board the plane:</p>
         <ul class="space-y-2 text-sm">
             <li class="flex items-start gap-2"><span class="text-primary-600 font-bold">✓</span> 24/7 emergency hotline — for parents and students, any time</li>

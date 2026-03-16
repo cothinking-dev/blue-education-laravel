@@ -5,7 +5,7 @@
     <x-hero title="Short-term study tours in Australia."
             subtitle="Educational and cultural immersion programs. One week to several months. Groups and individuals. No long-term enrolment required."
             :image="asset('images/heroes/programs-study-tours.webp')"
-            alt="Group of students on a sightseeing tour"
+            alt="East Asian women friends exploring a city together"
             variant="centered"
             :breadcrumbs="true" />
 
@@ -14,7 +14,7 @@
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
             <div class="flex flex-col lg:flex-row items-center gap-12">
                 <div class="flex-1 lg:max-w-[45%]">
-                    <img src="{{ asset('images/programs-study-tours/culinary-tour.webp') }}" alt="Students learning to cook in a hands-on culinary class" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
+                    <img src="{{ asset('images/programs-study-tours/culinary-tour.webp') }}" alt="East Asian students learning to cook in a hands-on culinary class" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
                 </div>
                 <div class="flex-1">
                     <span class="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded-full mb-3">Fremantle, Western Australia</span>
@@ -73,7 +73,7 @@
                     <a href="{{ route('contact') }}" class="inline-flex bg-primary-800 text-white font-semibold px-6 py-3 rounded-corner hover:bg-primary-700 transition-colors">Enquire About a Custom Tour</a>
                 </div>
                 <div class="flex-1 lg:max-w-[40%]">
-                    <img src="{{ asset('images/programs-study-tours/custom-group-tours.webp') }}" alt="Group of students on a guided walking tour through a city" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
+                    <img src="{{ asset('images/programs-study-tours/custom-group-tours.webp') }}" alt="East Asian students on a guided walking tour through a city" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
                 </div>
             </div>
         </div>

@@ -9,6 +9,9 @@
     <div class="max-w-7xl mx-auto px-8 lg:px-16 py-16">
         <div class="flex flex-col {{ $reverse ? 'lg:flex-row-reverse' : 'lg:flex-row' }} items-center gap-12">
             <div class="flex-1 lg:max-w-[55%]">
+                @if(isset($before))
+                    {{ $before }}
+                @endif
                 <h2 class="text-3xl font-bold text-gray-900 mb-6 text-pretty" data-animate="fade-up">{{ $title }}</h2>
                 <div class="text-gray-600 leading-relaxed space-y-4 text-pretty">
                     {{ $slot }}

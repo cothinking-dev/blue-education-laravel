@@ -5,7 +5,7 @@
     <x-hero title="Five things Australia gets right for international students."
             subtitle="Globally recognised degrees, post-study work rights, and a quality of life that consistently ranks among the world's best. Western Australia included."
             :image="asset('images/heroes/why-australia.webp')"
-            alt="Iconic Australian landscape"
+            alt="Perth Elizabeth Quay waterfront and city skyline"
             variant="centered"
             :breadcrumbs="true" />
 
@@ -22,7 +22,7 @@
                     <p class="text-gray-500 text-sm italic text-pretty">An Australian degree travels well. That's the point.</p>
                 </div>
                 <div class="flex-1 lg:max-w-[40%]">
-                    <img src="{{ asset('images/why-australia/globally-recognised-qualifications.webp') }}" alt="Diverse international students studying together on a university campus" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
+                    <img src="{{ asset('images/why-australia/globally-recognised-qualifications.webp') }}" alt="East Asian students studying together on a university campus" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
                 </div>
             </div>
 
@@ -34,7 +34,7 @@
                     <p class="text-gray-600 leading-relaxed text-pretty">1,100+ institutions. 20,000+ programs. From 10-week English language courses to doctoral research, vocational training to executive education — Australia offers a pathway for every ambition, every level, every budget.</p>
                 </div>
                 <div class="flex-1 lg:max-w-[40%]">
-                    <img src="{{ asset('images/why-australia/education-choice.webp') }}" alt="Students studying together in a university library with books and resources" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
+                    <img src="{{ asset('images/why-australia/education-choice.webp') }}" alt="East Asian students studying in a university library" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
                 </div>
             </div>
 
@@ -53,7 +53,7 @@
                     <p class="text-gray-600 leading-relaxed mt-4 text-pretty">The Graduate Work Stream provides 18 months for graduates with skills on the relevant occupation lists. Either way, it's a genuine career launchpad.</p>
                 </div>
                 <div class="flex-1 lg:max-w-[40%]">
-                    <img src="{{ asset('images/why-australia/post-study-work.webp') }}" alt="Young professional woman working on a laptop in a modern office environment" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
+                    <img src="{{ asset('images/why-australia/post-study-work.webp') }}" alt="East Asian professional woman working on a laptop in a modern office" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
                 </div>
             </div>
 
@@ -77,7 +77,7 @@
                     <p class="text-gray-600 leading-relaxed text-pretty">Australia offers competitive tuition fees across its university sector — from AUD $20,000 per year for many undergraduate programs. Perth and regional cities offer a lower cost of living than Australia's east coast capitals. The combination makes a meaningful difference over a two to four year degree.</p>
                 </div>
                 <div class="flex-1 lg:max-w-[40%]">
-                    <img src="{{ asset('images/why-australia/affordable-living.webp') }}" alt="Student working on a laptop at an outdoor cafe, representing affordable student lifestyle" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
+                    <img src="{{ asset('images/why-australia/affordable-living.webp') }}" alt="East Asian student working on a laptop at an outdoor cafe" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
                 </div>
             </div>
         </div>

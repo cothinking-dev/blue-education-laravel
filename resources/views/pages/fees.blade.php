@@ -5,12 +5,12 @@
     <x-hero title="Fees & Costs"
             subtitle="All fees communicated upfront, before any work begins."
             :image="asset('images/heroes/fees.webp')"
-            alt="Financial planning and budgeting"
+            alt="East Asian student planning finances and budgeting for education"
             variant="left"
             :breadcrumbs="true" />
 
     {{-- §2 Our Approach --}}
-    <x-content-split title="Transparent pricing. Always." :image="asset('images/fees/transparent-pricing.webp')" alt="Transparent business pricing consultation">
+    <x-content-split title="Transparent pricing. Always." :image="asset('images/fees/transparent-pricing.webp')" alt="East Asian student in a transparent pricing consultation">
         <p>Blue Education's fees vary based on the services you need and the complexity of your situation. Every journey is different — so pricing is personalised, not one-size-fits-all.</p>
         <p>Before we do any work, we tell you exactly what it will cost and why. Our initial consultation is used to assess your situation — we provide a personalised quote before you commit to anything.</p>
         <ul class="space-y-3 text-sm mt-4">
@@ -67,7 +67,7 @@
     {{-- Visual break --}}
     <section class="bg-gray-50">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 pt-10">
-            <img src="{{ asset('images/fees/scholarship.webp') }}" alt="Student scholarship and education funding opportunity" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/1] max-h-[240px]" loading="lazy">
+            <img src="{{ asset('images/fees/scholarship.webp') }}" alt="East Asian student reviewing scholarship and education funding options" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/1] max-h-[240px]" loading="lazy">
         </div>
     </section>
 

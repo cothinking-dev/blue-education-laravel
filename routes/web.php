@@ -1,11 +1,14 @@
 <?php
 
+use App\Console\Commands\GenerateSitemap;
 use App\Http\Requests\StoreEnquiryRequest;
 use App\Models\Category;
 use App\Models\Enquiry;
 use App\Models\Post;
 use App\Models\TeamMember;
 use App\Models\Testimonial;
+use Illuminate\Support\Facades\Artisan;
+use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -178,6 +181,24 @@ Route::get('/privacy', function () {
 Route::get('/terms', function () {
     return view('pages.terms');
 })->name('terms')->defaults('label', 'Terms of Use');
+
+// Sitemap
+Route::get('/sitemap.xml', function () {
+    $xml = Cache::get(GenerateSitemap::CACHE_KEY);
+
+    if ($xml === null) {
+        Artisan::call('sitemap:generate');
+        $xml = Cache::get(GenerateSitemap::CACHE_KEY);
+    }
+
+    return response($xml, 200, ['Content-Type' => 'application/xml']);
+})->name('sitemap');
+
+// Robots
+Route::get('/robots.txt', function () {
+    return response("User-agent: *\nDisallow:\n\nSitemap: ".url('/sitemap.xml'))
+        ->header('Content-Type', 'text/plain');
+});
 
 // Showcase (dev only)
 Route::get('/showcase', function () {

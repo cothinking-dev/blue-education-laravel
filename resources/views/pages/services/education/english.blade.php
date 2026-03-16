@@ -5,11 +5,11 @@
     <x-hero title="English and Foundation programmes for students on their way to an Australian university."
             subtitle="ELICOS and Foundation programmes cover the two most common gaps: English proficiency and academic preparation. Your advisor will assess which applies to you."
             :image="asset('images/heroes/services-education-english.webp')"
-            alt="International students in an English language classroom"
+            alt="East Asian students in an English language classroom"
             :breadcrumbs="true" />
 
     {{-- §2 ELICOS Courses --}}
-    <x-content-split title="ELICOS Courses" :image="asset('images/services-education-english/elicos-class.webp')" alt="Students in an ELICOS English language class">
+    <x-content-split title="ELICOS Courses" :image="asset('images/services-education-english/elicos-class.webp')" alt="East Asian students in an ELICOS English language class">
         <h3 class="text-lg font-semibold text-gray-800 mb-2">What is ELICOS?</h3>
         <p class="text-sm">Most Australian universities require an IELTS score of 6.5 or higher for undergraduate entry. ELICOS is how you get there — structured English courses delivered at private colleges and university English colleges across Australia.</p>
         <p class="text-sm">Classes cover the four core skills: reading, writing, listening, and speaking. Duration depends on where your English is now — your advisor will assess your level before you enrol.</p>
@@ -68,7 +68,7 @@
     </x-callout>
 
     {{-- §5 Foundation Studies --}}
-    <x-content-split title="Foundation Studies" :image="asset('images/services-education-english/foundation-studies.webp')" alt="Foundation studies classroom with students preparing for university">
+    <x-content-split title="Foundation Studies" :image="asset('images/services-education-english/foundation-studies.webp')" alt="East Asian students in a foundation studies classroom preparing for university">
         <h3 class="text-lg font-semibold text-gray-800 mb-2">What are Foundation programmes?</h3>
         <p class="text-sm">Foundation programmes are for international students who've finished high school but don't yet meet direct entry requirements for an Australian university.</p>
         <p class="text-sm">Rather than waiting or reapplying, you complete a one-year programme that builds the academic skills your target degree expects — and earns you a place at a partner university on completion.</p>

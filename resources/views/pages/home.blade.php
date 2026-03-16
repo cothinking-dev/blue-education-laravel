@@ -5,7 +5,7 @@
     <x-hero title="Your Future in Australia Starts Here"
             subtitle="Independent education, career, and migration advice from Perth, Western Australia. Since 1998."
             :image="asset('images/heroes/home.webp')"
-            alt="International students walking across an Australian university campus"
+            alt="East Asian students walking across an Australian university campus"
             height="460px">
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
             <x-btn href="{{ route('contact') }}" variant="primary" size="lg">Book a Consultation</x-btn>
@@ -29,45 +29,40 @@
             <div class="grid sm:grid-cols-2 gap-6" data-animate="stagger">
                 <x-card title="Education Services"
                         description="Primary school to PhD. We help you find the right institution and program for your goals."
+                        :image="asset('images/home/education-services.webp')"
+                        alt="East Asian education advisor discussing options with students"
                         :href="route('services.education.index')"
-                        linkText="Explore education pathways">
-                    <x-slot:icon>
-                        <x-heroicon-o-book-open class="w-5 h-5" />
-                    </x-slot:icon>
-                </x-card>
+                        linkText="Explore education pathways" />
 
                 <x-card title="Migration & Visas"
                         description="Not sure which visa you need? We'll assess your situation and help you handle the application."
+                        :image="asset('images/home/migration-visas.webp')"
+                        alt="Visa application documents and passport on a desk"
                         :href="route('services.migration.index')"
-                        linkText="See visa options">
-                    <x-slot:icon>
-                        <x-heroicon-o-globe-alt class="w-5 h-5" />
-                    </x-slot:icon>
-                </x-card>
+                        linkText="See visa options" />
 
                 <x-card title="Career Services"
                         description="We help graduates build a career in Australia. Your Australian qualification is only useful if you can work with it."
+                        :image="asset('images/home/career-services.webp')"
+                        alt="East Asian professional shaking hands with colleagues in an office"
                         :href="route('services.career')"
-                        linkText="Build your career">
-                    <x-slot:icon>
-                        <x-heroicon-o-briefcase class="w-5 h-5" />
-                    </x-slot:icon>
-                </x-card>
+                        linkText="Build your career" />
 
                 <x-card title="Student Support"
                         description="We cover everything a student needs. Accommodation, guardianship, health cover, airport transfers, and a 24/7 emergency line."
+                        :image="asset('images/home/student-support.webp')"
+                        alt="East Asian student advisor guiding a student at a laptop"
                         :href="route('services.student-support')"
-                        linkText="See support services">
-                    <x-slot:icon>
-                        <x-heroicon-o-heart class="w-5 h-5" />
-                    </x-slot:icon>
-                </x-card>
+                        linkText="See support services" />
             </div>
         </div>
     </section>
 
     {{-- §4 How We Care --}}
-    <x-content-split title="28 years of experience we stand behind." :image="asset('images/home/student-consultation.webp')" alt="Student consultation session with a Blue Education advisor" class="bg-gray-50">
+    <x-content-split title="28 years of experience we stand behind." :image="asset('images/home/student-consultation.webp')" alt="East Asian student in a consultation session with a Blue Education advisor" class="bg-gray-50">
+        <x-slot:before>
+            <img src="{{ asset('brand/logo.webp') }}" alt="Blue Education — education, migration & career" class="h-16 w-auto mx-auto mb-6">
+        </x-slot:before>
         <p class="text-sm">Since 1998, we've operated on one principle: give honest advice.</p>
         <p class="text-sm">Every client is assigned a dedicated advisor who coordinates your education, visa, and career plan — start to finish. No handoffs between agencies means no need to re-explain your situation over and over again.</p>
         <p class="text-sm">That means telling you when a visa application won't succeed, a course isn't the right fit, or a better path exists — before you commit to the wrong one.</p>

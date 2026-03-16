@@ -5,7 +5,7 @@
     <x-hero title="Blog — Resources for International Students"
             subtitle="Education, migration, careers, and life in Australia."
             :image="asset('images/heroes/blog.webp')"
-            alt="Person reading on a laptop"
+            alt="East Asian student studying with laptop in a university library"
             variant="left"
             :breadcrumbs="true" />
 
@@ -72,8 +72,8 @@
     <section class="bg-white">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
             <div class="grid sm:grid-cols-2 gap-6">
-                <img src="{{ asset('images/blog/writing-blogging.webp') }}" alt="Person writing a blog article on a laptop" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
-                <img src="{{ asset('images/blog/library-reading.webp') }}" alt="Modern university library" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
+                <img src="{{ asset('images/blog/writing-blogging.webp') }}" alt="East Asian student writing a blog article on a laptop" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
+                <img src="{{ asset('images/blog/library-reading.webp') }}" alt="East Asian student reading in a modern university library" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
             </div>
         </div>
     </section>

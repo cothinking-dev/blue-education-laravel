@@ -45,6 +45,9 @@
                 <div class="bg-gray-50 border border-gray-200 rounded-corner-lg p-6 flex flex-col items-center justify-center text-center" style="min-height:90px;">
                     <img src="{{ asset('images/partners/nmtafe-logo.svg') }}" alt="North Metropolitan TAFE" class="h-10 w-auto object-contain" loading="lazy">
                 </div>
+                <div class="bg-gray-50 border border-gray-200 rounded-corner-lg p-6 flex flex-col items-center justify-center text-center" style="min-height:90px;">
+                    <img src="{{ asset('images/partners/smtafe-logo.svg') }}" alt="South Metropolitan TAFE" class="h-10 w-auto object-contain" loading="lazy">
+                </div>
             </div>
         </div>
     </section>
@@ -54,7 +57,7 @@
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-10">
             <div class="grid sm:grid-cols-2 gap-6">
                 <img src="{{ asset('images/about-partners/university-campus.webp') }}" alt="Aerial view of an Australian university campus" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
-                <img src="{{ asset('images/about-partners/partnership-signing.webp') }}" alt="Business partnership agreement signing" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
+                <img src="{{ asset('images/about-partners/partnership-signing.webp') }}" alt="Education partnership agreement signing ceremony" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
             </div>
         </div>
     </section>

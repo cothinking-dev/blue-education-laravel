@@ -16,7 +16,6 @@ return [
         'title' => env('APP_NAME', 'Blue Education'),
         'title_suffix' => ' — Blue Education',
         'description' => 'Independent education, career, and migration advice from Perth, Western Australia. Since 1998.',
-        'keywords' => 'study in Australia, Perth education, student visa, migration agent, international students, TAFE, university',
         'author' => 'Blue Education Pty Ltd',
         'robots' => 'index, follow',
     ],
