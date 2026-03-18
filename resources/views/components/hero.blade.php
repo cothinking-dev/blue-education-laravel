@@ -7,7 +7,7 @@
     'breadcrumbs' => null,
     'badge' => null,
     'variant' => 'centered',
-    'height' => '320px',
+    'height' => '80dvh',
     'position' => 'center',
 ])
 
@@ -63,9 +63,9 @@
     </div>
 </section>
 @else
-<section {{ $attributes->merge(['class' => 'relative flex flex-col ' . $alignment]) }} style="min-height:{{ $height }}; background-color: var(--color-base-700);">
+<section {{ $attributes->merge(['class' => 'relative flex flex-col overflow-hidden [clip-path:inset(0)] ' . $alignment]) }} style="min-height:{{ $height }}; background-color: var(--color-base-700);">
     @if($image)
-        <img src="{{ $image }}" alt="{{ $alt }}" class="absolute inset-0 w-full h-full object-cover" style="object-position: {{ $position }};">
+        <img data-hero-parallax src="{{ $image }}" alt="{{ $alt }}" class="fixed inset-0 w-full h-full object-cover" style="object-position: {{ $position }};">
     @endif
     @if($overlay)
         {{-- Layer 1: Brand blue gradient with multiply blend --}}

@@ -111,18 +111,20 @@ document.addEventListener('DOMContentLoaded', () => {
 |--------------------------------------------------------------------------
 */
 document.addEventListener('DOMContentLoaded', () => {
-    const parallaxEl = document.querySelector('[data-hero-parallax]');
-    if (!parallaxEl) return;
+    document.querySelectorAll('[data-hero-parallax]').forEach((parallaxEl) => {
+        const section = parallaxEl.closest('section');
+        if (!section) return;
 
-    gsap.to(parallaxEl, {
-        y: -80,
-        ease: 'none',
-        scrollTrigger: {
-            trigger: '#home-hero',
-            start: 'top top',
-            end: 'bottom top',
-            scrub: true,
-        },
+        gsap.to(parallaxEl, {
+            y: -80,
+            ease: 'none',
+            scrollTrigger: {
+                trigger: section,
+                start: 'top top',
+                end: 'bottom top',
+                scrub: true,
+            },
+        });
     });
 });
 

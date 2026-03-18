@@ -36,6 +36,11 @@
     --color-base-900: oklch(0.210 0.034 264.665);
     --color-base-950: oklch(0.130 0.028 261.692);
 
+    /* Success green — WhatsApp-inspired, WCAG AA for large text (3:1+) */
+    --color-success-500: oklch(0.5984 0.1633 149.48);  /* #17a34a — 3.3:1 with white */
+    --color-success-600: oklch(0.5563 0.1520 149.48);  /* #159a45 — hover, 3.7:1 */
+    --color-success-700: oklch(0.5069 0.1382 149.48);  /* #128a3c — active, 4.5:1 */
+
     /* Corner radii */
     --radius-corner: 0.5rem;
     --radius-corner-lg: 1rem;

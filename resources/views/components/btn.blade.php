@@ -12,6 +12,7 @@
         'outline' => 'bg-transparent text-base-700 border border-base-300 hover:border-base-400 hover:text-base-900 focus:ring-base-300',
         'ghost' => 'bg-transparent text-primary-800 hover:bg-primary-50 focus:ring-primary-300',
         'white' => 'bg-white text-primary-800 hover:bg-primary-50 focus:ring-white/40',
+        'success' => 'bg-success-500 text-white hover:bg-success-600 focus:ring-success-500/40',
     ];
     $sizes = [
         'sm' => 'px-4 py-2 text-sm',

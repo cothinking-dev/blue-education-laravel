@@ -8,7 +8,6 @@
             :image="asset('images/heroes/services-education.webp')"
             alt="Education advisor guiding an East Asian student through university options"
             variant="left"
-            height="70dvh"
             :breadcrumbs="true" />
 
     {{-- §2 How We Help --}}

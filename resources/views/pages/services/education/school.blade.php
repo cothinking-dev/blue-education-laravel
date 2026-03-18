@@ -21,11 +21,11 @@
                               ['Lower Secondary', '7–10 (or 8–10)', '12–16', 'Broader learning with growing elective choices'],
                               ['Upper Secondary', '11–12', '16–18', 'Subjects chosen for further education or career'],
                           ]" />
-            <div class="mt-6 space-y-2 text-sm text-base-600">
-                <p>Compulsory until age 16 in most states and territories.</p>
-                <p>Public and private schools available — we match your child to the right fit.</p>
-                <p>Blue Education is an SCSA Associate — officially named by SCSA to promote the WA curriculum internationally. <a href="{{ route('programs.scsa-associate') }}" class="text-primary-800 hover:underline font-medium">Learn about SCSA &rarr;</a></p>
-            </div>
+            <ul class="mt-6 space-y-1.5 text-sm text-base-500">
+                <li>* Compulsory until age 16 in most states and territories.</li>
+                <li>* Public and private schools available — we match your child to the right fit.</li>
+                <li>* Blue Education is an SCSA Associate — officially named by SCSA to promote the Western Australian curriculum internationally. <a href="{{ route('programs.scsa-associate') }}" class="text-primary-800 hover:underline font-medium">Learn about SCSA &rarr;</a></li>
+            </ul>
         </div>
     </section>
 
@@ -33,11 +33,11 @@
     <section class="bg-primary-50">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
             <h2 class="text-3xl font-bold text-base-900 mb-4 text-pretty" data-animate="fade-up">What We Handle</h2>
-            <p class="text-base-600 mb-10">Before Arrival — sequential steps your advisor coordinates for you.</p>
+            <p class="text-base-600 mb-10">Everything we coordinate before your child arrives in Australia.</p>
             <x-timeline :steps="[
-                ['title' => 'School Selection & Placement', 'description' => 'We match your child to the right school based on location, curriculum, fees, learning profile, and long-term goals. Public and private options across Australia.'],
-                ['title' => 'Student Visa (Subclass 500)', 'description' => 'Full visa application management for minors — documentation, health checks, character requirements, lodgement. We handle the process end to end.'],
-                ['title' => 'Accommodation', 'description' => 'Homestay placement through the Australian Homestay Network. Vetted families, meals included, safe living environment — all arranged before your child arrives.'],
+                ['title' => 'School Selection & Placement', 'icon' => 'academic-cap', 'description' => 'We match your child to the right school based on location, curriculum, fees, learning profile, and long-term goals. Public and private options across Australia.'],
+                ['title' => 'Student Visa (Subclass 500)', 'icon' => 'document-text', 'description' => 'Full visa application management for minors — documentation, health checks, character requirements, lodgement. We handle the process end to end.'],
+                ['title' => 'Accommodation', 'icon' => 'home', 'description' => 'Homestay placement through the Australian Homestay Network. Vetted families, meals included, safe living environment — all arranged before your child arrives.'],
             ]" />
         </div>
     </section>
@@ -54,23 +54,31 @@
                 <x-card title="Guardianship"
                         description="Legal guardianship arranged through Professional Student Care Australia or International Student Alliance. Required by the Department of Home Affairs for unaccompanied students under 18."
                         :href="route('services.student-support')"
-                        linkText="Full guardianship details" />
+                        linkText="Full guardianship details">
+                    <x-slot:icon><x-heroicon-o-shield-check class="w-5 h-5" /></x-slot:icon>
+                </x-card>
                 <x-card title="Welfare Monitoring"
                         description="Regular welfare checks, school liaison, and parental reporting — so you always know how your child is settling in, not just at enrolment time."
                         :href="route('services.student-support')"
-                        linkText="Full welfare support details" />
+                        linkText="Full welfare support details">
+                    <x-slot:icon><x-heroicon-o-heart class="w-5 h-5" /></x-slot:icon>
+                </x-card>
                 <x-card title="Cultural Adaptation"
                         description="The first weeks in a new country can be disorienting for young students. We provide ongoing integration support. For a structured introduction, our Buddy Programme places students alongside Australian peers for 14 days."
                         :href="route('programs.buddy-programme')"
-                        linkText="Learn about the Buddy Programme" />
+                        linkText="Learn about the Buddy Programme">
+                    <x-slot:icon><x-heroicon-o-globe-alt class="w-5 h-5" /></x-slot:icon>
+                </x-card>
                 <x-card title="School Transfer & Change of Programme"
-                        description="Already enrolled but need to change schools or programmes? We manage the full transfer — notifying the institution, updating enrolment records, and advising on any visa implications." />
+                        description="Already enrolled but need to change schools or programmes? We manage the full transfer — notifying the institution, updating enrolment records, and advising on any visa implications.">
+                    <x-slot:icon><x-heroicon-o-arrows-right-left class="w-5 h-5" /></x-slot:icon>
+                </x-card>
             </div>
         </div>
     </section>
 
     {{-- §5 For Parents --}}
-    <x-content-split title="For Parents" :image="asset('images/services-education-school/parent-child-school.webp')" alt="East Asian parent and child at a school consultation" class="bg-base-50">
+    <x-content-split title="For Parents" :image="asset('images/services-education-school/parent-child-school.webp')" alt="Young East Asian student smiling at airport terminal with luggage" class="bg-base-50">
         <p>Sending your child overseas is a significant decision. Here's what we put in place before they board the plane:</p>
         <ul class="space-y-2 text-sm">
             <li class="flex items-start gap-2"><span class="text-primary-600 font-bold">✓</span> 24/7 emergency hotline — for parents and students, any time</li>

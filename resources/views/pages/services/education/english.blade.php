@@ -6,6 +6,7 @@
             subtitle="ELICOS and Foundation programmes cover the two most common gaps: English proficiency and academic preparation. Your advisor will assess which applies to you."
             :image="asset('images/heroes/services-education-english.webp')"
             alt="East Asian students in an English language classroom"
+            variant="left"
             :breadcrumbs="true" />
 
     {{-- §2 ELICOS Courses --}}
