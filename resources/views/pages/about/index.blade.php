@@ -65,7 +65,7 @@
                     <p class="text-base-600 leading-relaxed text-pretty">Most agencies cover one domain. We cover all three — coordinated into a single, seamless plan. One team. No handoffs between providers.</p>
                 </div>
                 <div class="flex-1 lg:max-w-[40%]">
-                    <img src="{{ asset('images/about/education-consulting.webp') }}" alt="Education consultant reviewing options with an East Asian client" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
+                    <img src="{{ asset('images/about/education-consulting.webp') }}" alt="Education consultant reviewing options with an East Asian client" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2] shadow-lg" loading="lazy">
                 </div>
             </div>
 
@@ -76,7 +76,7 @@
                     <p class="text-base-600 leading-relaxed text-pretty">Headquarters in Perth, Western Australia. Partners in every major Australian city. International representatives in Japan, Indonesia, New Zealand, Zambia, and Malaysia. Your language. Your timezone.</p>
                 </div>
                 <div class="flex-1 lg:max-w-[40%]">
-                    <img src="{{ asset('images/about/perth-office.webp') }}" alt="Diverse professional team collaborating in a modern office environment" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
+                    <img src="{{ asset('images/about/perth-office.webp') }}" alt="Diverse professional team collaborating in a modern office environment" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2] shadow-lg" loading="lazy">
                 </div>
             </div>
 
@@ -87,7 +87,7 @@
                     <p class="text-base-600 leading-relaxed text-pretty">Our relationship doesn't end at enrollment. Study support. Career development. Migration pathways. 24/7 emergency hotline. We stay with you through every stage.</p>
                 </div>
                 <div class="flex-1 lg:max-w-[40%]">
-                    <img src="{{ asset('images/about/student-support.webp') }}" alt="Advisor guiding an East Asian student through study materials at a desk" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
+                    <img src="{{ asset('images/about/student-support.webp') }}" alt="Advisor guiding an East Asian student through study materials at a desk" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2] shadow-lg" loading="lazy">
                 </div>
             </div>
         </div>

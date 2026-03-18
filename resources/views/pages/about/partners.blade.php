@@ -41,26 +41,33 @@
 
             <h3 class="text-xl font-semibold text-base-800 mb-4 mt-10">TAFE & Training Providers</h3>
             <p class="text-base-600 mb-6 leading-relaxed text-pretty">Direct relationships with TAFE WA and registered training organisations across Western Australia and nationally. VET applications handled the same way as university placements — with the same advisor, start to finish.</p>
-            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
-                <div class="bg-base-50 border border-base-200 rounded-corner-lg p-6 flex flex-col items-center justify-center text-center" style="min-height:90px;">
-                    <img src="{{ asset('images/partners/nmtafe-logo.svg') }}" alt="North Metropolitan TAFE" class="h-10 w-auto object-contain" loading="lazy">
-                </div>
-                <div class="bg-base-50 border border-base-200 rounded-corner-lg p-6 flex flex-col items-center justify-center text-center" style="min-height:90px;">
-                    <img src="{{ asset('images/partners/smtafe-logo.svg') }}" alt="South Metropolitan TAFE" class="h-10 w-auto object-contain" loading="lazy">
-                </div>
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+                @php
+                    $tafePartners = [
+                        ['src' => 'images/partners/nmtafe-logo.svg', 'name' => 'North Metropolitan TAFE'],
+                        ['src' => 'images/partners/smtafe-logo.svg', 'name' => 'South Metropolitan TAFE'],
+                        ['src' => 'images/partners/tafe-qld-logo.png', 'name' => 'TAFE Queensland'],
+                        ['src' => 'images/partners/tafe-nsw-logo.svg', 'name' => 'TAFE NSW'],
+                        ['src' => 'images/partners/tafe-sa-logo.png', 'name' => 'TAFE SA'],
+                        ['src' => 'images/partners/holmesglen-logo.svg', 'name' => 'Holmesglen Institute'],
+                        ['src' => 'images/partners/boxhill-logo.svg', 'name' => 'Box Hill Institute'],
+                        ['src' => 'images/partners/melbourne-poly-logo.png', 'name' => 'Melbourne Polytechnic'],
+                    ];
+                @endphp
+                @foreach($tafePartners as $partner)
+                    <div class="bg-base-50 border border-base-200 rounded-corner-lg p-6 flex items-center justify-center" style="min-height:90px;">
+                        <img src="{{ asset($partner['src']) }}" alt="{{ $partner['name'] }} logo" class="h-10 w-auto object-contain" loading="lazy">
+                    </div>
+                @endforeach
             </div>
         </div>
     </section>
 
     {{-- Visual break --}}
-    <section class="bg-white">
-        <div class="max-w-7xl mx-auto px-8 lg:px-16 py-10">
-            <div class="grid sm:grid-cols-2 gap-6">
-                <img src="{{ asset('images/about-partners/university-campus.webp') }}" alt="Aerial view of an Australian university campus" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
-                <img src="{{ asset('images/about-partners/partnership-signing.webp') }}" alt="Education partnership agreement signing ceremony" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
-            </div>
-        </div>
-    </section>
+    <x-visual-break :images="[
+        ['src' => 'images/about-partners/university-campus.webp', 'alt' => 'Aerial view of an Australian university campus'],
+        ['src' => 'images/about-partners/partnership-signing.webp', 'alt' => 'Education partnership agreement signing ceremony'],
+    ]" padding="py-10" />
 
     {{-- §3 Professional Credentials --}}
     <section class="bg-base-50">
@@ -97,7 +104,7 @@
             <div class="flex flex-col lg:flex-row gap-10 items-start">
                 {{-- Map placeholder --}}
                 <div class="lg:w-1/2">
-                    <img src="{{ asset('images/about-partners/world-map.webp') }}" alt="World map showing Blue Education's global network of international offices" class="rounded-corner-lg w-full h-auto object-cover aspect-[16/10]" loading="lazy">
+                    <img src="{{ asset('images/about-partners/world-map.webp') }}" alt="World map showing Blue Education's global network of international offices" class="rounded-corner-lg w-full h-auto object-cover aspect-[16/10] shadow-lg" loading="lazy">
                 </div>
 
                 {{-- Location table --}}

@@ -69,14 +69,10 @@
     </section>
 
     {{-- Visual break --}}
-    <section class="bg-white">
-        <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
-            <div class="grid sm:grid-cols-2 gap-6">
-                <img src="{{ asset('images/blog/writing-blogging.webp') }}" alt="East Asian student writing a blog article on a laptop" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
-                <img src="{{ asset('images/blog/library-reading.webp') }}" alt="East Asian student reading in a modern university library" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
-            </div>
-        </div>
-    </section>
+    <x-visual-break :images="[
+        ['src' => 'images/blog/writing-blogging.webp', 'alt' => 'East Asian student writing a blog article on a laptop'],
+        ['src' => 'images/blog/library-reading.webp', 'alt' => 'East Asian student reading in a modern university library'],
+    ]" />
 
     {{-- §4 Newsletter --}}
     <x-newsletter title="Stay informed."

@@ -5,7 +5,7 @@
     <x-hero title="Visa applications that get it right the first time."
             :subtitle="'Registered migration agents with ' . (date('Y') - 1998) . ' years of successful applications. From student visas to permanent residence, we manage the process end to end.'"
             :image="asset('images/heroes/services-migration.webp')"
-            alt="Travel documents, passport, and boarding passes on a desk"
+            alt="East Asian woman advisor in a professional consultation meeting"
             :breadcrumbs="true" />
 
     {{-- §2 The Migration Pathway --}}
@@ -93,53 +93,66 @@
         </div>
     </section>
 
-    {{-- Visual break --}}
-    <section class="bg-white">
-        <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
-            <div class="grid sm:grid-cols-2 gap-6">
-                <img src="{{ asset('images/services-migration/visa-consultation.webp') }}" alt="East Asian client in a visa consultation with a migration advisor" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
-                <img src="{{ asset('images/services-migration/migration-pathway.webp') }}" alt="East Asian family beginning a new life in Australia" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
-            </div>
-        </div>
-    </section>
+    {{-- Visual separator --}}
+    <x-visual-break :images="[
+        ['src' => 'images/services-migration/perth-skyline.webp', 'alt' => 'Perth city skyline and Elizabeth Quay waterfront'],
+    ]" />
 
     {{-- §4 Why Trust Us --}}
-    <section class="bg-white">
+    <section class="bg-base-50">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
-            <div class="flex flex-col lg:flex-row gap-12">
+            <div class="flex flex-col lg:flex-row gap-14 items-start">
                 <div class="flex-1">
                     <x-section-heading title="Why Trust Us With Your Visa" :centered="false" />
                     <p class="text-base-600 leading-relaxed mb-6 text-pretty">Visa mistakes cost time and money. We tell you what's realistic before you apply — not after something goes wrong.</p>
-                    <ul class="space-y-3">
-                        <li class="flex items-start gap-3">
-                            <span class="text-primary-600 font-bold mt-0.5">&#10003;</span>
-                            <span class="text-base-700 text-sm"><strong>Registered agents</strong> — Migration Alliance, Migration Institute of Australia, QEAC certified</span>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <span class="text-primary-600 font-bold mt-0.5">&#10003;</span>
-                            <span class="text-base-700 text-sm"><strong>{{ date('Y') - 1998 }} years</strong> of successful applications across nearly every visa category</span>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <span class="text-primary-600 font-bold mt-0.5">&#10003;</span>
-                            <span class="text-base-700 text-sm"><strong>Honest assessments</strong> — if your points are too low, we tell you and show you how to fix it</span>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <span class="text-primary-600 font-bold mt-0.5">&#10003;</span>
-                            <span class="text-base-700 text-sm"><strong>End-to-end</strong> — education, career, and migration under one roof</span>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <span class="text-primary-600 font-bold mt-0.5">&#10003;</span>
-                            <span class="text-base-700 text-sm"><strong>Transparent fees</strong> — communicated upfront during initial consultation</span>
-                        </li>
-                    </ul>
+                    <div class="grid sm:grid-cols-2 gap-x-6 gap-y-4">
+                        <div class="flex items-start gap-2.5">
+                            <x-heroicon-s-check-circle class="w-5 h-5 text-primary-600 shrink-0 mt-0.5" />
+                            <div>
+                                <p class="font-semibold text-base-900 text-sm">Registered agents</p>
+                                <p class="text-base-500 text-xs">Migration Alliance, MIA, QEAC</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-2.5">
+                            <x-heroicon-s-check-circle class="w-5 h-5 text-primary-600 shrink-0 mt-0.5" />
+                            <div>
+                                <p class="font-semibold text-base-900 text-sm">{{ date('Y') - 1998 }} years experience</p>
+                                <p class="text-base-500 text-xs">Nearly every visa category</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-2.5">
+                            <x-heroicon-s-check-circle class="w-5 h-5 text-primary-600 shrink-0 mt-0.5" />
+                            <div>
+                                <p class="font-semibold text-base-900 text-sm">Honest assessments</p>
+                                <p class="text-base-500 text-xs">We tell you if it won't work</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-2.5">
+                            <x-heroicon-s-check-circle class="w-5 h-5 text-primary-600 shrink-0 mt-0.5" />
+                            <div>
+                                <p class="font-semibold text-base-900 text-sm">End-to-end</p>
+                                <p class="text-base-500 text-xs">Education, career & migration</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-2.5">
+                            <x-heroicon-s-check-circle class="w-5 h-5 text-primary-600 shrink-0 mt-0.5" />
+                            <div>
+                                <p class="font-semibold text-base-900 text-sm">Transparent fees</p>
+                                <p class="text-base-500 text-xs">Communicated upfront</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="lg:w-[45%] grid grid-cols-2 gap-4">
-                    <x-credential-card name="Migration Alliance" logo="images/credentials/migration-alliance.svg" description="" />
-                    <x-credential-card name="Migration Institute of Australia" logo="images/credentials/mia.svg" description="" />
-                    <x-credential-card name="QEAC Certified" logo="images/credentials/qeac.svg" description="" />
-                    <div class="border border-base-200 rounded-corner-lg p-6 flex flex-col items-center justify-center text-center">
-                        <span class="text-3xl font-bold text-primary-800">{{ date('Y') - 1998 }}<span class="text-lg">yr</span></span>
-                        <p class="text-base-500 text-xs mt-1">{{ date('Y') - 1998 }} years &middot; 40+ countries</p>
+                <div class="lg:w-[40%]">
+                    <h3 class="font-semibold text-base-700 mb-4 text-sm">Credentials & Memberships</h3>
+                    <div class="grid grid-cols-2 gap-3">
+                        <x-credential-card name="Migration Alliance" logo="images/credentials/migration-alliance.svg" description="" />
+                        <x-credential-card name="Migration Institute of Australia" logo="images/credentials/mia.svg" description="" />
+                        <x-credential-card name="QEAC Certified" logo="images/credentials/qeac.svg" description="" />
+                        <div class="border border-base-200 rounded-corner-lg p-5 flex flex-col items-center justify-center text-center bg-white">
+                            <span class="text-3xl font-bold text-primary-800">{{ date('Y') - 1998 }}<span class="text-lg">yr</span></span>
+                            <p class="text-base-500 text-xs mt-1">{{ date('Y') - 1998 }} years &middot; 40+ countries</p>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -7,6 +7,7 @@
             :image="asset('images/heroes/services-education-vet-tafe.webp')"
             alt="East Asian students in a vocational training workshop"
             variant="left"
+            position="bottom"
             :breadcrumbs="true" />
 
     {{-- §2 What is VET/TAFE? --}}
@@ -50,7 +51,9 @@
     <section class="bg-white">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
             <div class="mb-8">
-                <img src="{{ asset('images/services-education-vet-tafe/tafe-campus.webp') }}" alt="Modern TAFE campus building" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/1] max-h-[240px]" loading="lazy">
+                <x-visual-break :images="[
+                    ['src' => 'images/services-education-vet-tafe/tafe-campus.webp', 'alt' => 'Modern TAFE campus building'],
+                ]" :inline="true" />
             </div>
             <x-section-heading title="What You Can Study" :centered="false" />
             <p class="text-base-600 mb-8 text-pretty">Industries available through TAFE and registered training providers across Australia:</p>
@@ -99,10 +102,43 @@
         </div>
     </section>
 
-    {{-- §7 CTA --}}
+    {{-- §7 Training Partners --}}
+    <section class="bg-base-50">
+        <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
+            <x-section-heading title="Training Partners" :centered="false" subtitle="Blue Education works directly with TAFEs and registered training organisations across Australia." />
+
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 mb-8" data-animate="stagger">
+                @php
+                    $partners = [
+                        ['src' => 'images/partners/nmtafe-logo.svg', 'name' => 'North Metropolitan TAFE'],
+                        ['src' => 'images/partners/smtafe-logo.svg', 'name' => 'South Metropolitan TAFE'],
+                        ['src' => 'images/partners/tafe-qld-logo.png', 'name' => 'TAFE Queensland'],
+                        ['src' => 'images/partners/tafe-nsw-logo.svg', 'name' => 'TAFE NSW'],
+                        ['src' => 'images/partners/tafe-sa-logo.png', 'name' => 'TAFE SA'],
+                        ['src' => 'images/partners/holmesglen-logo.svg', 'name' => 'Holmesglen Institute'],
+                        ['src' => 'images/partners/boxhill-logo.svg', 'name' => 'Box Hill Institute'],
+                        ['src' => 'images/partners/melbourne-poly-logo.png', 'name' => 'Melbourne Polytechnic'],
+                    ];
+                @endphp
+                @foreach($partners as $partner)
+                    <div class="bg-white border border-base-200 rounded-corner-lg p-6 flex items-center justify-center" style="min-height:90px;">
+                        <img src="{{ asset($partner['src']) }}" alt="{{ $partner['name'] }} logo" class="h-10 w-auto object-contain" loading="lazy">
+                    </div>
+                @endforeach
+            </div>
+
+            <p class="text-base-500 text-sm">
+                …and more nationally. <a href="{{ route('about.partners') }}" class="text-primary-800 font-medium hover:underline">View all partners &rarr;</a>
+            </p>
+        </div>
+    </section>
+
+    {{-- §8 CTA --}}
     <x-cta-banner title="Find the right VET qualification."
                   subtitle="Talk to an advisor. They'll match your career goals to the right programme and confirm whether it opens a pathway to skilled migration."
                   primaryText="Explore VET Options"
-                  :primaryHref="route('contact')" />
+                  :primaryHref="route('contact')"
+                  secondaryText="View Admission Requirements"
+                  :secondaryHref="route('admission-requirements')" />
 
 </x-layout>

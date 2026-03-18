@@ -48,14 +48,10 @@
     </section>
 
     {{-- Visual break --}}
-    <section class="bg-base-50">
-        <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
-            <div class="grid sm:grid-cols-2 gap-6">
-                <img src="{{ asset('images/programs/program-activity.webp') }}" alt="East Asian students learning about nature during an outdoor field trip" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
-                <img src="{{ asset('images/programs/student-event.webp') }}" alt="Diverse graduates celebrating with diplomas at graduation ceremony" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
-            </div>
-        </div>
-    </section>
+    <x-visual-break :images="[
+        ['src' => 'images/programs/program-activity.webp', 'alt' => 'East Asian students learning about nature during an outdoor field trip'],
+        ['src' => 'images/programs/student-event.webp', 'alt' => 'Diverse graduates celebrating with diplomas at graduation ceremony'],
+    ]" bg="bg-base-50" />
 
     {{-- §3 CTA --}}
     <x-cta-banner title="Not sure which program fits?"

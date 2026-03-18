@@ -256,6 +256,13 @@ Marketing site for an international education consultancy in Perth, WA. Laravel 
 - **SEO config:** `config/seo.php` — defaults cascade; override per-page via `<x-layout>` props
 - **Base layout:** `<x-layout title="..." description="...">` wraps every page
 
+## Visual Testing
+
+- **`agent-browser`** CLI is available at `/usr/local/bin/agent-browser` for viewing and testing pages visually.
+- Dev server runs on `http://127.0.0.1:8000` (start with `php artisan serve` if not already running).
+- Key commands: `agent-browser open <url>`, `agent-browser screenshot [path]`, `agent-browser scroll down [px]`, `agent-browser snapshot` (accessibility tree).
+- Use it for visual UI/UX reviews, verifying layout changes, and catching rendering bugs.
+
 ## Detailed Docs (read when working in that area)
 
 | Doc | When to read |

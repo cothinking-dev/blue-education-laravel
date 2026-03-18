@@ -10,15 +10,11 @@
     </x-hero>
 
     {{-- Visual context --}}
-    <section class="bg-white">
-        <div class="max-w-7xl mx-auto px-8 lg:px-16 pt-14">
-            <div class="grid sm:grid-cols-3 gap-6">
-                <img src="{{ asset('images/about-team/office-exterior.webp') }}" alt="Blue Education Perth office exterior" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
-                <img src="{{ asset('images/about-team/team-meeting.webp') }}" alt="Blue Education team in a professional meeting" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
-                <img src="{{ asset('images/about-team/international-operations.webp') }}" alt="Blue Education international operations and global network" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
-            </div>
-        </div>
-    </section>
+    <x-visual-break :images="[
+        ['src' => 'images/about-team/office-exterior.webp', 'alt' => 'Blue Education Perth office exterior'],
+        ['src' => 'images/about-team/team-meeting.webp', 'alt' => 'Blue Education team in a professional meeting'],
+        ['src' => 'images/about-team/international-operations.webp', 'alt' => 'Blue Education international operations and global network'],
+    ]" padding="pt-14" />
 
     {{-- §2 Australian Team --}}
     <section class="bg-white">

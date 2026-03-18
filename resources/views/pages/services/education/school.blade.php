@@ -46,10 +46,12 @@
     <section class="bg-white">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
             <div class="mb-8">
-                <img src="{{ asset('images/services-education-school/school-campus.webp') }}" alt="East Asian students at an Australian school campus" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/1] max-h-[240px]" loading="lazy">
+                <x-visual-break :images="[
+                    ['src' => 'images/services-education-school/school-campus.webp', 'alt' => 'East Asian students at an Australian school campus'],
+                ]" :inline="true" />
             </div>
-            <h2 class="text-2xl font-bold text-base-900 mb-3 text-pretty" data-animate="fade-up">Once They're There</h2>
-            <p class="text-base-600 mb-8">These services run in parallel — not a sequence.</p>
+            <h2 class="text-2xl font-bold text-base-900 mb-3 text-pretty" data-animate="fade-up">Once They're There...</h2>
+            <p class="text-base-600 mb-8">We take of them! These services run in parallel, not in sequence.</p>
             <div class="grid sm:grid-cols-2 gap-6" data-animate="stagger">
                 <x-card title="Guardianship"
                         description="Legal guardianship arranged through Professional Student Care Australia or International Student Alliance. Required by the Department of Home Affairs for unaccompanied students under 18."

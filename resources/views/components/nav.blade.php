@@ -56,10 +56,12 @@
                     <x-heroicon-m-chevron-down class="w-3 h-3 mt-0.5 transition-transform" ::class="{ 'rotate-180': openMenu === 'programs' }" aria-hidden="true" />
                 </button>
                 <div x-show="openMenu === 'programs'" x-transition @click.away="openMenu = null" class="absolute top-full left-0 mt-2 w-56 bg-white border border-base-200 rounded-lg shadow-lg py-2 z-50">
-                    <a href="{{ route('programs.buddy-programme') }}" class="block px-4 py-2 text-sm text-base-700 hover:bg-primary-50 hover:text-primary-800 {{ request()->routeIs('programs.buddy-programme') ? 'bg-primary-50 text-primary-800 font-semibold' : '' }}">Buddy Programme</a>
-                    <a href="{{ route('programs.study-tours') }}" class="block px-4 py-2 text-sm text-base-700 hover:bg-primary-50 hover:text-primary-800 {{ request()->routeIs('programs.study-tours') ? 'bg-primary-50 text-primary-800 font-semibold' : '' }}">Study Tours</a>
-                    <a href="{{ route('programs.scsa-associate') }}" class="block px-4 py-2 text-sm text-base-700 hover:bg-primary-50 hover:text-primary-800 {{ request()->routeIs('programs.scsa-associate') ? 'bg-primary-50 text-primary-800 font-semibold' : '' }}">SCSA Associate</a>
-                    <a href="{{ route('programs.executive-internship') }}" class="block px-4 py-2 text-sm text-base-700 hover:bg-primary-50 hover:text-primary-800 {{ request()->routeIs('programs.executive-internship') ? 'bg-primary-50 text-primary-800 font-semibold' : '' }}">Executive Internship</a>
+                    <a href="{{ route('programs.index') }}" class="block px-4 py-2 text-sm text-base-700 hover:bg-primary-50 hover:text-primary-800 {{ request()->routeIs('programs.index') ? 'bg-primary-50 text-primary-800 font-semibold' : '' }}">Programs Overview</a>
+                    <hr class="my-1 border-base-100">
+                    <a href="{{ route('programs.buddy-programme') }}" class="block px-4 py-2 text-sm text-base-700 hover:bg-primary-50 hover:text-primary-800 pl-8 {{ request()->routeIs('programs.buddy-programme') ? 'bg-primary-50 text-primary-800 font-semibold' : '' }}">Buddy Programme</a>
+                    <a href="{{ route('programs.study-tours') }}" class="block px-4 py-2 text-sm text-base-700 hover:bg-primary-50 hover:text-primary-800 pl-8 {{ request()->routeIs('programs.study-tours') ? 'bg-primary-50 text-primary-800 font-semibold' : '' }}">Study Tours</a>
+                    <a href="{{ route('programs.scsa-associate') }}" class="block px-4 py-2 text-sm text-base-700 hover:bg-primary-50 hover:text-primary-800 pl-8 {{ request()->routeIs('programs.scsa-associate') ? 'bg-primary-50 text-primary-800 font-semibold' : '' }}">SCSA Associate</a>
+                    <a href="{{ route('programs.executive-internship') }}" class="block px-4 py-2 text-sm text-base-700 hover:bg-primary-50 hover:text-primary-800 pl-8 {{ request()->routeIs('programs.executive-internship') ? 'bg-primary-50 text-primary-800 font-semibold' : '' }}">Executive Internship</a>
                 </div>
             </div>
 
@@ -147,10 +149,11 @@
                 <x-heroicon-m-chevron-down class="w-4 h-4 transition-transform" ::class="{ 'rotate-180': openSection === 'programs' }" aria-hidden="true" />
             </button>
             <div x-show="openSection === 'programs'" x-transition class="pl-4 space-y-0.5 pb-2">
-                <a href="{{ route('programs.buddy-programme') }}" class="block py-1.5 text-sm {{ request()->routeIs('programs.buddy-programme') ? 'text-primary-800 font-semibold' : 'text-base-600 hover:text-primary-800' }}">Buddy Programme</a>
-                <a href="{{ route('programs.study-tours') }}" class="block py-1.5 text-sm {{ request()->routeIs('programs.study-tours') ? 'text-primary-800 font-semibold' : 'text-base-600 hover:text-primary-800' }}">Study Tours</a>
-                <a href="{{ route('programs.scsa-associate') }}" class="block py-1.5 text-sm {{ request()->routeIs('programs.scsa-associate') ? 'text-primary-800 font-semibold' : 'text-base-600 hover:text-primary-800' }}">SCSA Associate</a>
-                <a href="{{ route('programs.executive-internship') }}" class="block py-1.5 text-sm {{ request()->routeIs('programs.executive-internship') ? 'text-primary-800 font-semibold' : 'text-base-600 hover:text-primary-800' }}">Executive Internship</a>
+                <a href="{{ route('programs.index') }}" class="block py-1.5 text-sm {{ request()->routeIs('programs.index') ? 'text-primary-800 font-semibold' : 'text-base-600 hover:text-primary-800' }}">Programs Overview</a>
+                <a href="{{ route('programs.buddy-programme') }}" class="block py-1.5 text-sm pl-3 {{ request()->routeIs('programs.buddy-programme') ? 'text-primary-800 font-semibold' : 'text-base-600 hover:text-primary-800' }}">Buddy Programme</a>
+                <a href="{{ route('programs.study-tours') }}" class="block py-1.5 text-sm pl-3 {{ request()->routeIs('programs.study-tours') ? 'text-primary-800 font-semibold' : 'text-base-600 hover:text-primary-800' }}">Study Tours</a>
+                <a href="{{ route('programs.scsa-associate') }}" class="block py-1.5 text-sm pl-3 {{ request()->routeIs('programs.scsa-associate') ? 'text-primary-800 font-semibold' : 'text-base-600 hover:text-primary-800' }}">SCSA Associate</a>
+                <a href="{{ route('programs.executive-internship') }}" class="block py-1.5 text-sm pl-3 {{ request()->routeIs('programs.executive-internship') ? 'text-primary-800 font-semibold' : 'text-base-600 hover:text-primary-800' }}">Executive Internship</a>
             </div>
         </div>
 

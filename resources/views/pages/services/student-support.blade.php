@@ -6,7 +6,7 @@
             subtitle="Accommodation. Guardianship. Health cover. Airport transfers. Translation. 24/7 emergency line. All arranged before arrival."
             :image="asset('images/heroes/services-student-support.webp')"
             alt="Advisor tutoring an East Asian student at a desk"
-            variant="centered"
+            variant="left"
             :breadcrumbs="true" />
 
     {{-- §2 Support Services --}}
@@ -69,13 +69,13 @@
     {{-- §3 Orientation & Onboarding --}}
     <x-content-split title="Orientation & Onboarding" :image="asset('images/services-student-support/orientation-tour.webp')" alt="East Asian student on a campus orientation tour">
         <p>Comprehensive introduction to life and study in Australia for all new arrivals:</p>
-        <ul class="space-y-1 text-sm text-base-600">
-            <li>— Campus and local area familiarisation</li>
-            <li>— Banking and essential services setup</li>
-            <li>— Public transport guidance</li>
-            <li>— Australian lifestyle and culture introduction</li>
-            <li>— Student support services overview</li>
-            <li>— Personal development programs for confidence and community</li>
+        <ul class="space-y-2 text-sm">
+            <li class="flex items-start gap-2"><span class="text-primary-600 font-bold">&#8226;</span> <span><strong>Campus and local area</strong> familiarisation</span></li>
+            <li class="flex items-start gap-2"><span class="text-primary-600 font-bold">&#8226;</span> <span><strong>Banking and essential services</strong> setup</span></li>
+            <li class="flex items-start gap-2"><span class="text-primary-600 font-bold">&#8226;</span> <span><strong>Public transport</strong> guidance</span></li>
+            <li class="flex items-start gap-2"><span class="text-primary-600 font-bold">&#8226;</span> <span><strong>Australian lifestyle and culture</strong> introduction</span></li>
+            <li class="flex items-start gap-2"><span class="text-primary-600 font-bold">&#8226;</span> <span><strong>Student support services</strong> overview</span></li>
+            <li class="flex items-start gap-2"><span class="text-primary-600 font-bold">&#8226;</span> <span><strong>Personal development programs</strong> for confidence and community</span></li>
         </ul>
     </x-content-split>
 
@@ -89,6 +89,11 @@
             <li class="flex items-start gap-2"><span class="text-primary-600 font-bold">&#8226;</span> <span><strong>On-ground support</strong> in Perth and across major Australian cities</span></li>
         </ul>
     </x-content-split>
+
+    {{-- Visual break --}}
+    <x-visual-break :images="[
+        ['src' => 'images/services-student-support/campus-life.webp', 'alt' => 'Group of university students walking through a sunny campus towards a brick building'],
+    ]" />
 
     {{-- §5 Support Journey --}}
     <section class="bg-white">
@@ -119,13 +124,25 @@
         </div>
     </section>
 
-    {{-- §7 Also Relevant --}}
+    {{-- §7 Explore More --}}
     <section class="bg-white">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
-            <h2 class="text-lg font-bold text-base-900 mb-4">Explore More</h2>
-            <div class="flex flex-col sm:flex-row gap-4">
-                <a href="{{ route('programs.buddy-programme') }}" class="text-primary-800 font-semibold hover:text-primary-600 transition-colors">Buddy Programme &rarr;</a>
-                <a href="{{ route('services.migration.student-visas') }}" class="text-primary-800 font-semibold hover:text-primary-600 transition-colors">Student visa support &rarr;</a>
+            <x-section-heading title="Explore More" :centered="false" />
+            <div class="grid sm:grid-cols-2 gap-6" data-animate="stagger">
+                <a href="{{ route('programs.buddy-programme') }}" class="bg-white rounded-corner-lg border border-base-200 p-6 hover:border-primary-300 hover:shadow-md transition-all group flex flex-col">
+                    <div class="w-10 h-10 rounded-corner bg-primary-50 text-primary-800 flex items-center justify-center mb-4 group-hover:bg-primary-100 transition-colors">
+                        <x-heroicon-o-users class="w-5 h-5" />
+                    </div>
+                    <h3 class="font-bold text-base-900 mb-2 group-hover:text-primary-800 transition-colors">Buddy Programme &rarr;</h3>
+                    <p class="text-base-600 text-sm text-pretty">Peer support, homestay, and cultural mentorship for new arrivals.</p>
+                </a>
+                <a href="{{ route('services.migration.student-visas') }}" class="bg-white rounded-corner-lg border border-base-200 p-6 hover:border-primary-300 hover:shadow-md transition-all group flex flex-col">
+                    <div class="w-10 h-10 rounded-corner bg-primary-50 text-primary-800 flex items-center justify-center mb-4 group-hover:bg-primary-100 transition-colors">
+                        <x-heroicon-o-document-check class="w-5 h-5" />
+                    </div>
+                    <h3 class="font-bold text-base-900 mb-2 group-hover:text-primary-800 transition-colors">Student visa support &rarr;</h3>
+                    <p class="text-base-600 text-sm text-pretty">Application management, compliance, and renewal assistance.</p>
+                </a>
             </div>
         </div>
     </section>

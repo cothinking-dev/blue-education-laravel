@@ -55,7 +55,7 @@
 
             {{-- Featured Image --}}
             @if($post->featured_image)
-                <img src="{{ asset($post->featured_image) }}" alt="{{ $post->title }}" class="w-full rounded-corner-lg mb-8 aspect-[2/1] object-cover" loading="eager">
+                <img src="{{ asset($post->featured_image) }}" alt="{{ $post->title }}" class="w-full rounded-corner-lg mb-8 aspect-[2/1] object-cover shadow-lg" loading="eager">
             @endif
 
             {{-- Body --}}
