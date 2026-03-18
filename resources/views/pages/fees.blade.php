@@ -21,7 +21,7 @@
     </x-content-split>
 
     {{-- §3 Cost Overview --}}
-    <section class="bg-gray-50">
+    <section class="bg-base-50">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
             <x-section-heading title="Cost Overview" :centered="false" />
             <x-data-table :headers="['Cost Category', 'Who Sets It', 'Paid To', 'Amount']"
@@ -41,38 +41,38 @@
             <x-section-heading title="What You'll Pay" :centered="false" />
             <div class="space-y-6">
                 <div class="border-l-4 border-primary-600 pl-6">
-                    <h3 class="font-bold text-gray-900 mb-2">Blue Education Service Fees</h3>
-                    <p class="text-gray-600 text-sm leading-relaxed text-pretty">Our service fees cover consultation, pathway planning, application processing, document compilation, and ongoing support. Fees vary by case — contact us for a personalised quote.</p>
+                    <h3 class="font-bold text-base-900 mb-2">Blue Education Service Fees</h3>
+                    <p class="text-base-600 text-sm leading-relaxed text-pretty">Our service fees cover consultation, pathway planning, application processing, document compilation, and ongoing support. Fees vary by case — contact us for a personalised quote.</p>
                 </div>
                 <div class="border-l-4 border-primary-600 pl-6">
-                    <h3 class="font-bold text-gray-900 mb-2">Student Travel Advice & Consent (STAC)</h3>
-                    <p class="text-gray-600 text-sm leading-relaxed text-pretty">STAC charges are based on each applicant's visa history and specific circumstances. We provide transparent calculations at initial consultation.</p>
+                    <h3 class="font-bold text-base-900 mb-2">Student Travel Advice & Consent (STAC)</h3>
+                    <p class="text-base-600 text-sm leading-relaxed text-pretty">STAC charges are based on each applicant's visa history and specific circumstances. We provide transparent calculations at initial consultation.</p>
                 </div>
                 <div class="border-l-4 border-primary-600 pl-6">
-                    <h3 class="font-bold text-gray-900 mb-2">Medical Examinations</h3>
-                    <p class="text-gray-600 text-sm leading-relaxed text-pretty">Required for visa applications. Cost ranges from $240 to $380 depending on examination type (standard health check vs comprehensive medical assessment).</p>
+                    <h3 class="font-bold text-base-900 mb-2">Medical Examinations</h3>
+                    <p class="text-base-600 text-sm leading-relaxed text-pretty">Required for visa applications. Cost ranges from $240 to $380 depending on examination type (standard health check vs comprehensive medical assessment).</p>
                 </div>
                 <div class="border-l-4 border-primary-600 pl-6">
-                    <h3 class="font-bold text-gray-900 mb-2">Visa Application Fees</h3>
-                    <p class="text-gray-600 text-sm leading-relaxed text-pretty">Set by the Australian Government Department of Home Affairs. Vary by visa subclass. <a href="{{ route('services.migration.student-visas') }}" class="text-primary-800 hover:underline font-medium">See student visa details &rarr;</a> Separate from Blue Education fees.</p>
+                    <h3 class="font-bold text-base-900 mb-2">Visa Application Fees</h3>
+                    <p class="text-base-600 text-sm leading-relaxed text-pretty">Set by the Australian Government Department of Home Affairs. Vary by visa subclass. <a href="{{ route('services.migration.student-visas') }}" class="text-primary-800 hover:underline font-medium">See student visa details &rarr;</a> Separate from Blue Education fees.</p>
                 </div>
                 <div class="border-l-4 border-primary-600 pl-6">
-                    <h3 class="font-bold text-gray-900 mb-2">Tuition Fees</h3>
-                    <p class="text-gray-600 text-sm leading-relaxed text-pretty">Paid directly to your educational institution. Vary by institution, program, and duration.</p>
+                    <h3 class="font-bold text-base-900 mb-2">Tuition Fees</h3>
+                    <p class="text-base-600 text-sm leading-relaxed text-pretty">Paid directly to your educational institution. Vary by institution, program, and duration.</p>
                 </div>
             </div>
         </div>
     </section>
 
     {{-- Visual break --}}
-    <section class="bg-gray-50">
-        <div class="max-w-7xl mx-auto px-8 lg:px-16 pt-10">
+    <section class="bg-base-50">
+        <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
             <img src="{{ asset('images/fees/scholarship.webp') }}" alt="East Asian student reviewing scholarship and education funding options" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/1] max-h-[240px]" loading="lazy">
         </div>
     </section>
 
     {{-- §5 Additional Support Services --}}
-    <section class="bg-gray-50">
+    <section class="bg-base-50">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
             <x-section-heading title="Additional Support Services" :centered="false" />
             <x-data-table :headers="['Service', 'Description']"
@@ -90,27 +90,27 @@
     <section class="bg-white">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
             <x-section-heading title="What Students Budget Separately" :centered="false" />
-            <p class="text-gray-600 mb-8 text-pretty">These costs are not part of Blue Education's service fees. You pay for these directly.</p>
+            <p class="text-base-600 mb-8 text-pretty">These costs are not part of Blue Education's service fees. You pay for these directly.</p>
             <div class="grid sm:grid-cols-2 gap-6" data-animate="stagger">
-                <div class="border border-gray-200 rounded-corner-lg p-5">
-                    <h3 class="font-bold text-gray-900 mb-1">Accommodation</h3>
-                    <p class="text-gray-600 text-sm text-pretty">Homestay, rental, or student housing</p>
+                <div class="border border-base-200 rounded-corner-lg p-5">
+                    <h3 class="font-bold text-base-900 mb-1">Accommodation</h3>
+                    <p class="text-base-600 text-sm text-pretty">Homestay, rental, or student housing</p>
                 </div>
-                <div class="border border-gray-200 rounded-corner-lg p-5">
-                    <h3 class="font-bold text-gray-900 mb-1">Guardianship</h3>
-                    <p class="text-gray-600 text-sm text-pretty">Required for students under 18 (Professional Student Care Australia or International Student Alliance)</p>
+                <div class="border border-base-200 rounded-corner-lg p-5">
+                    <h3 class="font-bold text-base-900 mb-1">Guardianship</h3>
+                    <p class="text-base-600 text-sm text-pretty">Required for students under 18 (Professional Student Care Australia or International Student Alliance)</p>
                 </div>
-                <div class="border border-gray-200 rounded-corner-lg p-5">
-                    <h3 class="font-bold text-gray-900 mb-1">OSHC</h3>
-                    <p class="text-gray-600 text-sm text-pretty">Overseas Student Health Cover — mandatory for all student visas</p>
+                <div class="border border-base-200 rounded-corner-lg p-5">
+                    <h3 class="font-bold text-base-900 mb-1">OSHC</h3>
+                    <p class="text-base-600 text-sm text-pretty">Overseas Student Health Cover — mandatory for all student visas</p>
                 </div>
-                <div class="border border-gray-200 rounded-corner-lg p-5">
-                    <h3 class="font-bold text-gray-900 mb-1">Living Expenses</h3>
-                    <p class="text-gray-600 text-sm text-pretty">Transport, food, personal costs</p>
+                <div class="border border-base-200 rounded-corner-lg p-5">
+                    <h3 class="font-bold text-base-900 mb-1">Living Expenses</h3>
+                    <p class="text-base-600 text-sm text-pretty">Transport, food, personal costs</p>
                 </div>
-                <div class="sm:col-span-2 border border-gray-200 rounded-corner-lg p-5">
-                    <h3 class="font-bold text-gray-900 mb-1">Tuition</h3>
-                    <p class="text-gray-600 text-sm text-pretty">Course fees paid directly to your institution</p>
+                <div class="sm:col-span-2 border border-base-200 rounded-corner-lg p-5">
+                    <h3 class="font-bold text-base-900 mb-1">Tuition</h3>
+                    <p class="text-base-600 text-sm text-pretty">Course fees paid directly to your institution</p>
                 </div>
             </div>
         </div>

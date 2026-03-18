@@ -18,9 +18,9 @@
                 </div>
                 <div class="flex-1">
                     <span class="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded-full mb-3">Fremantle, Western Australia</span>
-                    <h2 class="text-3xl font-bold text-gray-900 mb-4 text-pretty">Cook. Explore. Experience Western Australia.</h2>
-                    <p class="text-gray-600 leading-relaxed mb-4 text-pretty">Hands-on culinary training and cultural immersion in Fremantle — one of Western Australia's most vibrant coastal cities. Australian cooking techniques, local food markets, and Perth's food culture firsthand.</p>
-                    <p class="text-gray-600 leading-relaxed mb-6 text-pretty">For culinary students, food professionals, and anyone who wants to experience Australia through its food.</p>
+                    <h2 class="text-3xl font-bold text-base-900 mb-4 text-pretty">Cook. Explore. Experience Western Australia.</h2>
+                    <p class="text-base-600 leading-relaxed mb-4 text-pretty">Hands-on culinary training and cultural immersion in Fremantle — one of Western Australia's most vibrant coastal cities. Australian cooking techniques, local food markets, and Perth's food culture firsthand.</p>
+                    <p class="text-base-600 leading-relaxed mb-6 text-pretty">For culinary students, food professionals, and anyone who wants to experience Australia through its food.</p>
                     <a href="{{ route('contact') }}" class="inline-flex bg-primary-800 text-white font-semibold px-6 py-3 rounded-corner hover:bg-primary-700 transition-colors">Enquire About the Culinary Tour</a>
                 </div>
             </div>
@@ -28,7 +28,7 @@
     </section>
 
     {{-- §3 Short-Term Immersion Programs --}}
-    <section class="bg-gray-50">
+    <section class="bg-base-50">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
             <x-section-heading title="Short-Term Immersion Programs" :centered="false" />
             <div class="grid sm:grid-cols-2 gap-6" data-animate="stagger">
@@ -68,8 +68,8 @@
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
             <div class="flex flex-col lg:flex-row items-center gap-12">
                 <div class="flex-1">
-                    <h2 class="text-3xl font-bold text-gray-900 mb-4 text-pretty" data-animate="fade-up">Custom Group Tours</h2>
-                    <p class="text-gray-600 leading-relaxed mb-6 text-pretty">We design bespoke study tours for schools, universities, and organisations. Tell us your group size, interests, and timeline — we build the program.</p>
+                    <h2 class="text-3xl font-bold text-base-900 mb-4 text-pretty" data-animate="fade-up">Custom Group Tours</h2>
+                    <p class="text-base-600 leading-relaxed mb-6 text-pretty">We design bespoke study tours for schools, universities, and organisations. Tell us your group size, interests, and timeline — we build the program.</p>
                     <a href="{{ route('contact') }}" class="inline-flex bg-primary-800 text-white font-semibold px-6 py-3 rounded-corner hover:bg-primary-700 transition-colors">Enquire About a Custom Tour</a>
                 </div>
                 <div class="flex-1 lg:max-w-[40%]">
@@ -82,6 +82,7 @@
     {{-- §5 Also Relevant --}}
     <section class="bg-white">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
+            <h2 class="text-lg font-bold text-base-900 mb-4">Explore More</h2>
             <div class="flex flex-col sm:flex-row gap-4">
                 <a href="{{ route('programs.buddy-programme') }}" class="text-primary-800 font-semibold hover:text-primary-600 transition-colors">Buddy Programme &rarr;</a>
                 <a href="{{ route('contact') }}" class="text-primary-800 font-semibold hover:text-primary-600 transition-colors">Enquire about a custom tour &rarr;</a>

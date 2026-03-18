@@ -9,8 +9,6 @@ use Illuminate\Database\Eloquent\Factories\Factory;
  */
 class TestimonialFactory extends Factory
 {
-    private static int $sortCounter = 0;
-
     /**
      * Define the model's default state.
      *
@@ -67,7 +65,7 @@ class TestimonialFactory extends Factory
             'credential' => fake()->randomElement($credentials),
             'country' => fake()->randomElement($countries),
             'is_active' => fake()->boolean(90),
-            'sort_order' => self::$sortCounter++,
+            'sort_order' => fake()->unique()->numberBetween(0, 1000),
         ];
     }
 

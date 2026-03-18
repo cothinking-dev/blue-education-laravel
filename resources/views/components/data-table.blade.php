@@ -5,7 +5,7 @@
     'striped' => true,
 ])
 
-<div {{ $attributes->merge(['class' => 'relative border border-gray-200 rounded-corner-lg overflow-hidden']) }}
+<div {{ $attributes->merge(['class' => 'relative border border-base-200 rounded-corner-lg overflow-hidden']) }}
      x-data="{ canScroll: false, scrolledEnd: false }"
      x-init="
          const el = $refs.tableWrap;
@@ -20,20 +20,20 @@
     <div class="overflow-x-auto" x-ref="tableWrap">
         <table class="w-full text-sm">
             @if($caption)
-                <caption class="px-6 py-3 text-left text-gray-500 text-xs font-medium uppercase tracking-wider bg-gray-50">{{ $caption }}</caption>
+                <caption class="px-6 py-3 text-left text-base-500 text-xs font-medium uppercase tracking-wider bg-base-50">{{ $caption }}</caption>
             @endif
             <thead>
                 <tr class="bg-primary-800 text-white text-left">
                     @foreach($headers as $header)
-                        <th class="px-6 py-3 font-semibold text-sm whitespace-nowrap">{{ $header }}</th>
+                        <th scope="col" class="px-6 py-3 font-semibold text-sm whitespace-nowrap">{{ $header }}</th>
                     @endforeach
                 </tr>
             </thead>
             <tbody>
                 @foreach($rows as $row)
-                    <tr class="{{ $striped && $loop->even ? 'bg-gray-50' : 'bg-white' }} border-t border-gray-100">
+                    <tr class="{{ $striped && $loop->even ? 'bg-base-50' : 'bg-white' }} border-t border-base-100">
                         @foreach($row as $cell)
-                            <td class="px-6 py-3 text-gray-700">{{ $cell }}</td>
+                            <td class="px-6 py-3 text-base-700">{{ $cell }}</td>
                         @endforeach
                     </tr>
                 @endforeach

@@ -66,6 +66,7 @@ return [
         'phone' => '+61 8 6381 0030',
         'email' => 'info@blueeducation.com.au',
         'founding_year' => 1998,
+        'whatsapp' => env('WHATSAPP_NUMBER', '61411708899'),
     ],
 
 ];

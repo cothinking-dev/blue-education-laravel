@@ -9,7 +9,7 @@
     $variants = [
         'primary' => 'bg-primary-500 text-white hover:bg-primary-600 focus:ring-primary-300',
         'secondary' => 'bg-white text-primary-800 border border-primary-800 hover:bg-primary-50 focus:ring-primary-300',
-        'outline' => 'bg-transparent text-gray-700 border border-gray-300 hover:border-gray-400 hover:text-gray-900 focus:ring-gray-300',
+        'outline' => 'bg-transparent text-base-700 border border-base-300 hover:border-base-400 hover:text-base-900 focus:ring-base-300',
         'ghost' => 'bg-transparent text-primary-800 hover:bg-primary-50 focus:ring-primary-300',
         'white' => 'bg-white text-primary-800 hover:bg-primary-50 focus:ring-white/40',
     ];

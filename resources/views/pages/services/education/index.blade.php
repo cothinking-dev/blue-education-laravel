@@ -3,7 +3,7 @@
 
     {{-- §1 Hero --}}
     <x-hero title="Australia has 1,100+ institutions and 20,000+ programs. Finding the right one takes more than a Google search."
-            subtitle="We've been navigating this system since 1998. Let us show you where you fit."
+            subtitle="Blue Education has been navigating this system since 1998; Let us show you where you fit."
             :image="asset('images/heroes/services-education.webp')"
             alt="Education advisor guiding an East Asian student through university options"
             variant="centered"
@@ -17,7 +17,7 @@
     </x-content-split>
 
     {{-- §3 Education Pathways --}}
-    <section class="bg-gray-50">
+    <section class="bg-base-50">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
             <x-section-heading title="Which describes your situation?"
                                subtitle="All options shown — no hidden content."
@@ -59,8 +59,8 @@
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
             <div class="flex flex-col lg:flex-row gap-12 mb-10">
                 <div class="flex-1">
-                    <h2 class="text-3xl font-bold text-gray-900 mb-4 text-pretty" data-animate="fade-up">The Placement Process</h2>
-                    <p class="text-gray-600 leading-relaxed text-pretty">From discovery session to ongoing support — your advisor coordinates every step.</p>
+                    <h2 class="text-3xl font-bold text-base-900 mb-4 text-pretty" data-animate="fade-up">The Placement Process</h2>
+                    <p class="text-base-600 leading-relaxed text-pretty">From discovery session to ongoing support — your advisor coordinates every step.</p>
                 </div>
                 <div class="lg:w-[40%]">
                     <img src="{{ asset('images/services-education/campus-library.webp') }}" alt="East Asian students studying in a modern university library" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
@@ -77,10 +77,10 @@
     </section>
 
     {{-- §5 Admission Snapshot --}}
-    <section class="bg-gray-50">
+    <section class="bg-base-50">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
-            <h2 class="text-3xl font-bold text-gray-900 mb-4 text-pretty" data-animate="fade-up">Admission Snapshot</h2>
-            <p class="text-gray-600 mb-8 text-pretty">Think of entry requirements as a starting point, not a ceiling. There's almost always more than one way in.</p>
+            <h2 class="text-3xl font-bold text-base-900 mb-4 text-pretty" data-animate="fade-up">Admission Snapshot</h2>
+            <p class="text-base-600 mb-8 text-pretty">Think of entry requirements as a starting point, not a ceiling. There's almost always more than one way in.</p>
             <x-data-table :headers="['Program Level', 'IELTS', 'Duration', 'Post-Study Work Visa']"
                           :rows="[
                               ['Foundation', '5.0 – 5.5', '6–12 months', '—'],
@@ -89,7 +89,7 @@
                               ['Master Degree', '6.5 – 7.0', '1–2 years', '3 years'],
                               ['Doctoral', '6.5 – 7.0', '3–4 years', '4 years'],
                           ]" />
-            <p class="text-sm text-gray-500 mt-4 text-pretty">VET post-study work rights (Graduate Work Stream, Subclass 485, 18 months) are available to graduates whose qualification and occupation appear on a skilled occupation list.</p>
+            <p class="text-sm text-base-500 mt-4 text-pretty">VET post-study work rights (Graduate Work Stream, Subclass 485, 18 months) are available to graduates whose qualification and occupation appear on a skilled occupation list.</p>
             <a href="{{ route('admission-requirements') }}" class="text-primary-800 font-semibold text-sm hover:text-primary-600 transition-colors mt-2 inline-block">See full admission requirements &rarr;</a>
         </div>
     </section>

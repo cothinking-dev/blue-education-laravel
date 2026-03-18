@@ -10,7 +10,7 @@
 <div {{ $attributes->merge(['class' => 'text-center']) }}>
     @if($photo)
         <picture class="block mx-auto mb-4">
-            <source srcset="{{ asset(str_replace('.png', '.webp', $photo)) }}" type="image/webp">
+            <source srcset="{{ asset(preg_replace('/\.(png|jpe?g)$/i', '.webp', $photo)) }}" type="image/webp">
             <img src="{{ asset($photo) }}"
                  alt="{{ $name }}"
                  class="w-40 h-40 rounded-full object-cover mx-auto"
@@ -22,19 +22,19 @@
         </div>
     @endif
 
-    <h3 class="text-lg font-bold text-gray-900">{{ $name }}</h3>
+    <h3 class="text-lg font-bold text-base-900">{{ $name }}</h3>
     <p class="text-sm text-primary-600 font-medium mt-0.5">{{ $role }}</p>
 
     @if($credentials)
-        <p class="text-xs text-gray-500 mt-1">{{ $credentials }}</p>
+        <p class="text-xs text-base-500 mt-1">{{ $credentials }}</p>
     @endif
 
     @if($bio)
-        <p class="text-sm text-gray-600 mt-3 leading-relaxed">{{ $bio }}</p>
+        <p class="text-sm text-base-600 mt-3 leading-relaxed">{{ $bio }}</p>
     @endif
 
     @if($languages)
-        <p class="text-xs text-gray-400 mt-2">
+        <p class="text-xs text-base-500 mt-2">
             <span class="font-medium">Languages:</span> {{ $languages }}
         </p>
     @endif

@@ -3,13 +3,14 @@
     <x-hero
         title="Privacy Policy"
         subtitle="How we collect, use, and protect your personal information."
+        variant="light"
         height="320px"
         :breadcrumbs="true"
     />
 
     <section class="bg-white">
-        <div class="max-w-3xl mx-auto px-8 lg:px-16 py-16 prose prose-gray">
-            <p class="text-sm text-gray-500 mb-8">Last updated: March 1, 2026</p>
+        <div class="max-w-3xl mx-auto px-8 lg:px-16 py-14 prose prose-gray">
+            <p class="text-sm text-base-500 mb-8">Last updated: March 1, 2026</p>
 
             <h2>1. Introduction</h2>
             <p>Blue Education Pty Ltd ("we", "us", "our") is committed to protecting the privacy of our clients, students, and website visitors. This Privacy Policy outlines how we collect, use, disclose, and safeguard your personal information in accordance with the Australian Privacy Act 1988 (Cth) and the Australian Privacy Principles (APPs).</p>

@@ -28,11 +28,11 @@
 
 @if(count($crumbs) > 1)
     <nav aria-label="Breadcrumb">
-        <ol class="flex flex-wrap items-center gap-1.5 text-sm {{ $dark ? 'text-white/70' : 'text-gray-500' }}">
+        <ol class="flex flex-wrap items-center gap-1.5 text-sm {{ $dark ? 'text-white/70' : 'text-base-500' }}">
             @foreach($crumbs as $crumb)
                 <li class="flex items-center gap-1.5">
                     @if(!$loop->first)
-                        <x-heroicon-m-chevron-right class="h-3.5 w-3.5 shrink-0 {{ $dark ? 'text-white/40' : 'text-gray-400' }}" aria-hidden="true" />
+                        <x-heroicon-m-chevron-right class="h-3.5 w-3.5 shrink-0 {{ $dark ? 'text-white/40' : 'text-base-400' }}" aria-hidden="true" />
                     @endif
 
                     @if($crumb['href'])
@@ -40,7 +40,7 @@
                             {{ $crumb['label'] }}
                         </a>
                     @else
-                        <span class="{{ $dark ? 'text-white' : 'text-gray-900' }} font-medium" aria-current="page">
+                        <span class="{{ $dark ? 'text-white' : 'text-base-900' }} font-medium" aria-current="page">
                             {{ $crumb['label'] }}
                         </span>
                     @endif

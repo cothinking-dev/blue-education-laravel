@@ -10,8 +10,6 @@ use Illuminate\Support\Str;
  */
 class CategoryFactory extends Factory
 {
-    private static int $sortCounter = 0;
-
     /**
      * Define the model's default state.
      *
@@ -30,13 +28,10 @@ class CategoryFactory extends Factory
             'Living in Australia',
         ]);
 
-        $colors = ['#3b82f6', '#ef4444', '#10b981', '#f59e0b', '#8b5cf6', '#ec4899', '#06b6d4', '#f97316'];
-
         return [
             'name' => $name,
             'slug' => Str::slug($name),
-            'color' => fake()->randomElement($colors),
-            'sort_order' => self::$sortCounter++,
+            'sort_order' => fake()->unique()->numberBetween(0, 1000),
         ];
     }
 }

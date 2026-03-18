@@ -15,9 +15,9 @@
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
             <div class="flex flex-col lg:flex-row gap-12">
                 <div class="flex-1">
-                    <h2 class="text-3xl font-bold text-gray-900 mb-4 text-pretty" data-animate="fade-up">What It Is</h2>
-                    <p class="text-gray-600 leading-relaxed mb-4 text-pretty">The EIP places business graduates and final-year students with Australian employers for structured, mentored workplace experience. Not entry-level administration — a real position with agreed objectives, a dedicated supervisor, and a formal performance review at the end.</p>
-                    <p class="text-gray-600 leading-relaxed text-pretty">The programme is built around our six-phase Employability Booster Programme (EBP), which starts before placement and continues through to review. Blue Education manages the matching, preparation, and employer coordination. You bring the commitment.</p>
+                    <h2 class="text-3xl font-bold text-base-900 mb-4 text-pretty" data-animate="fade-up">What It Is</h2>
+                    <p class="text-base-600 leading-relaxed mb-4 text-pretty">The EIP places business graduates and final-year students with Australian employers for structured, mentored workplace experience. Not entry-level administration — a real position with agreed objectives, a dedicated supervisor, and a formal performance review at the end.</p>
+                    <p class="text-base-600 leading-relaxed text-pretty">The programme is built around our six-phase Employability Booster Programme (EBP), which starts before placement and continues through to review. Blue Education manages the matching, preparation, and employer coordination. You bring the commitment.</p>
                 </div>
                 <div class="lg:w-[40%]">
                     <x-facts-table title="Key Facts"
@@ -35,10 +35,10 @@
     </section>
 
     {{-- §3 The Six-Phase EBP Process --}}
-    <section class="bg-gray-50">
+    <section class="bg-base-50">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
-            <h2 class="text-3xl font-bold text-gray-900 mb-4 text-pretty" data-animate="fade-up">The Six-Phase EBP Process</h2>
-            <p class="text-gray-600 mb-10 text-pretty">The Employability Booster Programme starts before placement and runs through to formal review.</p>
+            <h2 class="text-3xl font-bold text-base-900 mb-4 text-pretty" data-animate="fade-up">The Six-Phase EBP Process</h2>
+            <p class="text-base-600 mb-10 text-pretty">The Employability Booster Programme starts before placement and runs through to formal review.</p>
             <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6" data-animate="stagger">
                 @php
                     $phases = [
@@ -51,10 +51,10 @@
                     ];
                 @endphp
                 @foreach($phases as $i => $phase)
-                    <div class="border border-gray-200 rounded-corner-lg p-6 bg-white">
+                    <div class="border border-base-200 rounded-corner-lg p-6 bg-white">
                         <div class="w-8 h-8 rounded-full bg-primary-100 text-primary-800 flex items-center justify-center text-sm font-bold mb-4">{{ $i + 1 }}</div>
-                        <h3 class="font-bold text-gray-900 mb-2 text-pretty">{{ $phase['title'] }}</h3>
-                        <p class="text-gray-600 text-sm leading-relaxed text-pretty">{{ $phase['desc'] }}</p>
+                        <h3 class="font-bold text-base-900 mb-2 text-pretty">{{ $phase['title'] }}</h3>
+                        <p class="text-base-600 text-sm leading-relaxed text-pretty">{{ $phase['desc'] }}</p>
                     </div>
                 @endforeach
             </div>
@@ -101,24 +101,24 @@
     </section>
 
     {{-- §5 Programme Partners --}}
-    <section class="bg-gray-50">
+    <section class="bg-base-50">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
             <x-section-heading title="Programme Partners" :centered="false" />
             <div class="grid sm:grid-cols-2 gap-6" data-animate="stagger">
-                <div class="bg-white rounded-corner-lg border border-gray-200 p-6 flex items-start gap-5">
+                <div class="bg-white rounded-corner-lg border border-base-200 p-6 flex items-start gap-5">
                     <div class="w-14 h-14 rounded-full bg-primary-100 text-primary-800 flex items-center justify-center shrink-0 font-bold text-lg">L</div>
                     <div>
-                        <h3 class="font-bold text-gray-900">Lisa</h3>
+                        <h3 class="font-bold text-base-900">Lisa</h3>
                         <p class="text-primary-800 text-sm font-medium mb-2">Professional Vogue</p>
-                        <p class="text-gray-600 text-sm leading-relaxed text-pretty">Lisa has two passions: fashion and style, and personal development. Professional Vogue programmes focus on enhancing employability and soft skills — building and developing future leaders and helping men and women make their mark and achieve their goals in corporate WA.</p>
+                        <p class="text-base-600 text-sm leading-relaxed text-pretty">Lisa has two passions: fashion and style, and personal development. Professional Vogue programmes focus on enhancing employability and soft skills — building and developing future leaders and helping men and women make their mark and achieve their goals in corporate WA.</p>
                     </div>
                 </div>
-                <div class="bg-white rounded-corner-lg border border-gray-200 p-6 flex items-start gap-5">
+                <div class="bg-white rounded-corner-lg border border-base-200 p-6 flex items-start gap-5">
                     <div class="w-14 h-14 rounded-full bg-primary-100 text-primary-800 flex items-center justify-center shrink-0 font-bold text-lg">N</div>
                     <div>
-                        <h3 class="font-bold text-gray-900">Natalia</h3>
+                        <h3 class="font-bold text-base-900">Natalia</h3>
                         <p class="text-primary-800 text-sm font-medium mb-2">Employment Advantage</p>
-                        <p class="text-gray-600 text-sm leading-relaxed text-pretty">Natalia has contributed significantly in the education and employment marketplace for more than two decades, with extensive experience in research and development and creating training content in soft skills. The Employment Advantage Tool has contributed to the success of many candidates in the job marketplace.</p>
+                        <p class="text-base-600 text-sm leading-relaxed text-pretty">Natalia has contributed significantly in the education and employment marketplace for more than two decades, with extensive experience in research and development and creating training content in soft skills. The Employment Advantage Tool has contributed to the success of many candidates in the job marketplace.</p>
                     </div>
                 </div>
             </div>
@@ -131,17 +131,17 @@
             <x-section-heading title="For Host Employers" :centered="false" />
             <div class="grid sm:grid-cols-2 gap-8" data-animate="stagger">
                 <div>
-                    <h3 class="font-bold text-gray-900 mb-3">What's Involved</h3>
-                    <p class="text-gray-600 text-sm leading-relaxed mb-4 text-pretty">Hosting an EIP intern means providing a supervisor, agreed learning objectives, and a genuine working environment. Blue Education handles the matching, objectives framework, and performance review structure. There is no obligation to hire after placement.</p>
-                    <ul class="space-y-2 text-sm text-gray-600">
-                        <li class="flex items-start gap-2"><span class="text-gray-400 font-bold mt-0.5">&#8226;</span> Commitment: 16 hours per week for up to 8 weeks</li>
-                        <li class="flex items-start gap-2"><span class="text-gray-400 font-bold mt-0.5">&#8226;</span> Dedicated mentor or supervisor</li>
-                        <li class="flex items-start gap-2"><span class="text-gray-400 font-bold mt-0.5">&#8226;</span> Orientation and agreed task expectations</li>
+                    <h3 class="font-bold text-base-900 mb-3">What's Involved</h3>
+                    <p class="text-base-600 text-sm leading-relaxed mb-4 text-pretty">Hosting an EIP intern means providing a supervisor, agreed learning objectives, and a genuine working environment. Blue Education handles the matching, objectives framework, and performance review structure. There is no obligation to hire after placement.</p>
+                    <ul class="space-y-2 text-sm text-base-600">
+                        <li class="flex items-start gap-2"><span class="text-base-400 font-bold mt-0.5">&#8226;</span> Commitment: 16 hours per week for up to 8 weeks</li>
+                        <li class="flex items-start gap-2"><span class="text-base-400 font-bold mt-0.5">&#8226;</span> Dedicated mentor or supervisor</li>
+                        <li class="flex items-start gap-2"><span class="text-base-400 font-bold mt-0.5">&#8226;</span> Orientation and agreed task expectations</li>
                     </ul>
                 </div>
                 <div>
-                    <h3 class="font-bold text-gray-900 mb-3">What You Gain</h3>
-                    <ul class="space-y-2 text-sm text-gray-600">
+                    <h3 class="font-bold text-base-900 mb-3">What You Gain</h3>
+                    <ul class="space-y-2 text-sm text-base-600">
                         <li class="flex items-start gap-2"><span class="text-primary-600 font-bold mt-0.5">&#10003;</span> Access to motivated, pre-assessed business graduates</li>
                         <li class="flex items-start gap-2"><span class="text-primary-600 font-bold mt-0.5">&#10003;</span> An early look at talent before any hiring decision is made</li>
                         <li class="flex items-start gap-2"><span class="text-primary-600 font-bold mt-0.5">&#10003;</span> Fresh perspectives and skills from candidates with international education backgrounds</li>
@@ -154,7 +154,7 @@
     </section>
 
     {{-- §7 How to Apply --}}
-    <section class="bg-gray-50">
+    <section class="bg-base-50">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
             <x-section-heading title="How to Apply" :centered="false" />
             <x-timeline :steps="[
@@ -168,6 +168,7 @@
     {{-- §8 Also Relevant --}}
     <section class="bg-white">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
+            <h2 class="text-lg font-bold text-base-900 mb-4">Explore More</h2>
             <div class="flex flex-col sm:flex-row gap-4">
                 <a href="{{ route('services.career') }}" class="text-primary-800 font-semibold hover:text-primary-600 transition-colors">Career Services &rarr;</a>
                 <a href="{{ route('services.migration.graduate-work') }}" class="text-primary-800 font-semibold hover:text-primary-600 transition-colors">Graduate Work Visas &rarr;</a>

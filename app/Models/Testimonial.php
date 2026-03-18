@@ -16,6 +16,7 @@ class Testimonial extends Model
         'quote',
         'name',
         'initials',
+        'photo',
         'credential',
         'country',
         'is_active',

@@ -9,8 +9,6 @@ use Illuminate\Database\Eloquent\Factories\Factory;
  */
 class FaqFactory extends Factory
 {
-    private static int $sortCounter = 0;
-
     /**
      * @var array<string, list<array{question: string, answer: string}>>
      */
@@ -97,7 +95,7 @@ class FaqFactory extends Factory
             'question' => $faq['question'],
             'answer' => $faq['answer'],
             'category' => $category,
-            'sort_order' => self::$sortCounter++,
+            'sort_order' => fake()->unique()->numberBetween(0, 1000),
         ];
     }
 

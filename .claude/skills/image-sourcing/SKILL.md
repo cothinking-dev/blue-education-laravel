@@ -20,17 +20,66 @@ Activate this skill when:
 
 ---
 
-## Decision Tree: Search vs Generate
+## Core Workflow
 
-**ALWAYS search stock first.** Stock downloads are cheaper, faster, and do not consume generation credits.
+**ALWAYS search stock first.** Stock is cheaper, faster, and more natural. Only fall back to AI generation when stock fails.
 
-1. **Search** with 2-3 keyword variations per image (e.g. "Perth skyline", "Australian city skyline", "modern city waterfront")
-2. **Evaluate results** — relevant subject, high quality, appropriate aspect ratio
-3. **Download the best match** if search returns good results
-4. **Generate via Mystic only if:**
-   - Search returns no relevant results after multiple keyword variations, OR
-   - The image must be very specific (particular ethnicity, exact scenario, branded composition)
-5. For generation, use model `realism` for photographic content
+### Phase 1 — Stock Search (3 queries)
+
+1. Write **3 different keyword queries** for the image needed. Vary phrasing, specificity, and angle. Example for a hero image:
+   - `"East Asian students walking Australian university campus"`
+   - `"Asian college students outdoor campus sunny"`
+   - `"international students university grounds Perth"`
+2. Run all 3 searches via the Freepik API (photos only, landscape by default)
+3. Collect the top results from each search
+
+### Phase 2 — Evaluate Stock Results
+
+Score each candidate against these criteria:
+
+| Criterion | What to check |
+|-----------|---------------|
+| **Subject relevance** | Does it match the section's purpose? |
+| **Target audience** | East Asian subjects front-and-center (primary requirement) |
+| **Quality** | Professional, high-res, no obvious stock-photo cheesiness |
+| **Composition** | Fits the layout (hero = wide, card = 4:3-ish, etc.) |
+| **Tone** | Warm, optimistic, genuine — consistent with Blue Education brand |
+
+A candidate **passes** if it meets all 5 criteria. If 2+ candidates pass, note the best fit.
+
+### Phase 3 — Present to User
+
+Show the user the candidates that passed (or best near-misses if none passed), including:
+
+- Thumbnail/preview URL from the API response (`data[].image.source.url`)
+- Resource ID
+- Brief note on why it fits or doesn't
+
+**Wait for user approval before downloading.**
+
+### Phase 4 — AI Generation Fallback
+
+Only if **no stock result passes** after all 3 searches:
+
+1. Write **3 different prompts** for Mystic generation. Each prompt must:
+   - Describe the exact scene, subjects, setting, and lighting
+   - Include photography cues: "professional photography, natural lighting, shot on Canon EOS R5"
+   - Specify East Asian subjects when people are in the scene
+2. Generate all 3 via the Mystic API using `super_real` model
+3. Poll for completion
+4. Evaluate the 3 generated images against the same criteria
+5. Present passing candidates to user with preview URLs
+6. **Wait for user approval before downloading**
+
+### Phase 5 — Download, Optimise & Save
+
+After user approves an image:
+
+1. Download the approved image
+2. Convert to WebP (quality 80) + original format fallback (quality 85)
+3. Resize to needed dimensions (context-dependent)
+4. Save to `public/images/{page-slug}/` with proper naming
+5. Update the Blade template with the image path
 
 ---
 
@@ -38,13 +87,13 @@ Activate this skill when:
 
 ### Authentication
 
-All requests require the header:
+All requests require:
 
 ```
 x-freepik-api-key: <key>
 ```
 
-The key is stored in `.env` as `FREEPIK_API_KEY`. Read it with:
+Read the key:
 
 ```bash
 grep FREEPIK_API_KEY .env | cut -d= -f2
@@ -56,15 +105,53 @@ grep FREEPIK_API_KEY .env | cut -d= -f2
 GET https://api.freepik.com/v1/resources
 ```
 
-Query parameters:
-
 | Param | Type | Description |
 |-------|------|-------------|
-| `q` | string | Search query (required) |
+| `term` | string | Search query (required) |
 | `page` | int | Page number (default 1) |
-| `limit` | int | Results per page (default 20) |
-| `order` | string | Sort order (e.g. `relevance`, `recent`) |
-| `filters` | object | Additional filters (orientation, color, etc.) |
+| `limit` | int | Results per page (max 200) |
+| `order` | string | `relevance` (default), `recent` |
+| `filters[content_type][photo]` | 0/1 | Photos only — **always set to 1** |
+| `filters[orientation][landscape]` | 0/1 | Landscape — **default 1 unless specified** |
+| `filters[orientation][portrait]` | 0/1 | Portrait |
+| `filters[orientation][square]` | 0/1 | Square |
+| `filters[people][ethnicity]` | string | `east-asian`, `south-asian`, `black`, `white`, etc. |
+| `filters[people][age]` | string | `young-adult`, `adult`, `teen`, etc. |
+| `filters[people][include]` | 0/1 | Must include people |
+| `filters[ai-generated][excluded]` | 0/1 | Exclude AI-generated stock |
+
+Example curl:
+
+```bash
+curl -s "https://api.freepik.com/v1/resources?term=east+asian+students+university&filters[content_type][photo]=1&filters[orientation][landscape]=1&limit=10&order=relevance" \
+  -H "x-freepik-api-key: $KEY"
+```
+
+Response shape (key fields):
+
+```json
+{
+  "data": [
+    {
+      "id": 15667327,
+      "title": "...",
+      "image": {
+        "type": "photo",
+        "orientation": "horizontal",
+        "source": {
+          "url": "https://img.freepik.com/free-photo/...",
+          "size": "740x640"
+        }
+      }
+    }
+  ],
+  "meta": { "current_page": 1, "total": 50 }
+}
+```
+
+- `data[].id` — resource ID (for download)
+- `data[].image.source.url` — thumbnail/preview URL (show to user)
+- `data[].title` — description
 
 ### Stock Download
 
@@ -72,9 +159,24 @@ Query parameters:
 GET https://api.freepik.com/v1/resources/{id}/download
 ```
 
-Returns a download URL for the selected resource.
+| Param | Type | Description |
+|-------|------|-------------|
+| `image_size` | string | `small` (1000px), `medium` (1500px), `large` (2000px), `original` |
 
-### AI Image Generation (Mystic)
+Response:
+
+```json
+{
+  "data": {
+    "url": "https://downloadscdn5.freepik.com/...",
+    "filename": "image.zip"
+  }
+}
+```
+
+Download the file from `data.url`. May be `.zip` or `.jpg`.
+
+### AI Generation (Mystic)
 
 **Create task:**
 
@@ -86,23 +188,49 @@ Request body:
 
 ```json
 {
-  "prompt": "descriptive prompt here",
-  "model": "realism",
+  "prompt": "Professional photo of East Asian university students ..., natural lighting, Canon EOS R5",
+  "model": "super_real",
+  "engine": "magnific_sharpy",
   "resolution": "2k",
-  "aspect_ratio": "16:9"
+  "aspect_ratio": "widescreen_16_9",
+  "creative_detailing": 33,
+  "hdr": 25,
+  "filter_nsfw": true
 }
 ```
 
-Available models:
+**Models for photorealism (in order of preference):**
 
-| Model | Best for |
+| Model | Use case |
 |-------|----------|
-| `realism` | Photographic content (default choice) |
-| `super_real` | Ultra-realistic portraits and scenes |
-| `editorial_portraits` | Professional headshots and editorial |
-| `fluid` | Artistic, stylised imagery |
-| `zen` | Calm, minimalist compositions |
-| `flexible` | General-purpose generation |
+| `super_real` | **Default.** Most camera-like for scenes, environments, groups |
+| `editorial_portraits` | Close-up portraits and headshots |
+| `realism` | Fallback if `super_real` looks too processed |
+
+**Key settings for realism:**
+
+- `engine`: `magnific_sharpy` — sharpest, most detailed
+- `hdr`: `25` — lower = more natural, less HDR glow
+- `creative_detailing`: `33` — moderate detail without artifacts
+
+**Aspect ratios:** Use whatever fits the layout context. Common options:
+
+- `widescreen_16_9` — heroes, banners
+- `classic_4_3` — cards, content images
+- `standard_3_2` — general photography
+- `square_1_1` — profile images, thumbnails
+
+Response:
+
+```json
+{
+  "data": {
+    "task_id": "046b6c7f-...",
+    "status": "CREATED",
+    "generated": []
+  }
+}
+```
 
 **Poll task status:**
 
@@ -110,24 +238,22 @@ Available models:
 GET https://api.freepik.com/v1/ai/mystic/{task_id}
 ```
 
-Poll every 3-5 seconds until status is `completed`. The response includes the generated image URL.
+Poll every 3-5 seconds until `status` is `COMPLETED`. Timeout at 120 seconds.
 
----
+Completed response:
 
-## Quota & Cost Awareness
-
-| Operation | Cost |
-|-----------|------|
-| Stock search | Free API call |
-| Stock download | 1 download credit per image |
-| AI generation | Generation credits (more expensive than stock) |
-
-Guidelines:
-
-- Batch searches before generation to minimise API calls
-- Check plan limits before bulk operations (e.g. sourcing images for an entire page)
-- Prefer stock downloads over generation whenever possible
-- If generating, combine similar needs into fewer prompts where appropriate
+```json
+{
+  "data": {
+    "task_id": "046b6c7f-...",
+    "status": "COMPLETED",
+    "generated": [
+      "https://ai-statics.freepik.com/image_1.jpg",
+      "https://ai-statics.freepik.com/image_2.jpg"
+    ]
+  }
+}
+```
 
 ---
 
@@ -135,14 +261,11 @@ Guidelines:
 
 ### Directory Structure
 
-Save images to `public/images/{page-slug}/`:
+```
+public/images/{page-slug}/
+```
 
-```
-public/images/home/
-public/images/about/
-public/images/programs-executive-internship/
-public/images/resources-faq/
-```
+Examples: `public/images/home/`, `public/images/about/`, `public/images/programs-executive-internship/`
 
 ### Naming Convention
 
@@ -150,95 +273,42 @@ public/images/resources-faq/
 {section}-{descriptor}.{ext}
 ```
 
-Examples:
+Examples: `hero-campus-diversity.webp`, `cta-perth-skyline.webp`
 
-- `hero-campus-diversity.webp`
-- `testimonials-student-portrait.webp`
-- `cta-perth-skyline.webp`
-- `features-classroom-discussion.webp`
-
-### Image Optimisation
-
-After downloading or generating, convert to WebP and resize:
+### Conversion
 
 ```bash
-# Convert and resize to target dimensions
+# WebP (primary)
 magick input.jpg -resize 1920x1080 -quality 80 output.webp
 
-# Generate a smaller variant for mobile if needed
-magick input.jpg -resize 768x432 -quality 80 output-mobile.webp
-
-# Keep original format as fallback
+# Original format fallback
 magick input.jpg -resize 1920x1080 -quality 85 output.jpg
 ```
 
-Always produce:
-
-1. **WebP** (quality 80) as the primary format
-2. **Original format fallback** (JPEG/PNG, quality 85) for browsers without WebP support
+Always produce both WebP and a fallback format. Aim for under 200KB for hero WebP images.
 
 ---
 
-## Workflow per Page
+## Quota & Cost Awareness
 
-### Step 1 — Identify image placeholders
+| Operation | Cost |
+|-----------|------|
+| Stock search | Free |
+| Stock download | 1 download credit |
+| AI generation | Generation credits (more expensive) |
 
-Read the wireframe HTML from `DOCS/wireframes/{page}.html` and list every `[IMAGE: ...]` placeholder. Note the description, the section it belongs to, and the approximate dimensions needed.
-
-### Step 2 — Plan search queries
-
-For each placeholder, prepare 2-3 keyword variations. Consider:
-
-- Direct description (e.g. "diverse university students studying")
-- Broader terms (e.g. "college students group study")
-- Location-specific (e.g. "Australian university campus")
-
-### Step 3 — Search Freepik
-
-Search for each image using the keyword variations. Review results for:
-
-- Subject relevance
-- Image quality and resolution
-- Appropriate composition and aspect ratio
-- Consistency with the site's visual tone
-
-### Step 4 — Download or generate
-
-- **Download** the best stock match for each placeholder
-- **Generate** via Mystic only for images with no suitable stock results
-- For generation, write a detailed prompt that specifies subject, setting, lighting, composition, and mood
-
-### Step 5 — Optimise and save
-
-- Resize to needed dimensions
-- Convert to WebP (quality 80) + original format fallback
-- Save to `public/images/{page-slug}/` using the naming convention
-- Verify file sizes are reasonable (aim for under 200KB for WebP hero images)
-
-### Step 6 — Update the Blade view
-
-Replace placeholder references in the Blade template with the actual image paths:
-
-```html
-<img
-    src="{{ asset('images/home/hero-campus-diversity.webp') }}"
-    alt="Diverse group of international students on an Australian university campus"
-    loading="lazy"
-    width="1920"
-    height="1080"
->
-```
-
-Use `loading="lazy"` for all images except the hero/above-the-fold image.
+- Batch searches before generation to minimise API calls
+- Prefer stock downloads over generation whenever possible
+- Check credit balance before bulk operations
 
 ---
 
 ## Common Pitfalls
 
-- Jumping straight to AI generation without searching stock first
-- Using generic single-word searches instead of 2-3 keyword variations
+- Jumping to AI generation without exhausting stock search
+- Using a single keyword query instead of 3 variations
+- Downloading without user approval
 - Forgetting to convert to WebP after download
-- Saving images to the wrong directory or with inconsistent naming
 - Missing alt text when updating Blade views
-- Not checking generation credit balance before bulk AI generation
-- Downloading oversized images without resizing (wastes bandwidth)
+- Using `realism` model when `super_real` produces better camera-like results
+- Setting `hdr` too high (makes images look artificial)

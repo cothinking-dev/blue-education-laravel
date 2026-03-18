@@ -39,8 +39,8 @@
 
                 <div class="border-2 border-primary-200 rounded-corner-lg p-6 bg-primary-50/30">
                     <span class="inline-block bg-primary-100 text-primary-800 text-xs font-semibold px-2.5 py-0.5 rounded-full mb-3">Premium Program</span>
-                    <h3 class="text-lg font-bold text-gray-900 mb-2 text-pretty">Executive Internship</h3>
-                    <p class="text-gray-600 text-sm leading-relaxed mb-4 text-pretty">Strategic work experience for business graduates. The Executive Internship Programme (EIP) runs twice a year with limited places. A six-phase structured programme with real employer placements and executive mentorship.</p>
+                    <h3 class="text-lg font-bold text-base-900 mb-2 text-pretty">Executive Internship</h3>
+                    <p class="text-base-600 text-sm leading-relaxed mb-4 text-pretty">Strategic work experience for business graduates. The Executive Internship Programme (EIP) runs twice a year with limited places. A six-phase structured programme with real employer placements and executive mentorship.</p>
                     <a href="{{ route('programs.executive-internship') }}" class="text-primary-800 font-semibold text-sm hover:text-primary-600 transition-colors">Explore Executive Internship &rarr;</a>
                 </div>
             </div>
@@ -48,7 +48,7 @@
     </section>
 
     {{-- Visual break --}}
-    <section class="bg-gray-50">
+    <section class="bg-base-50">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
             <div class="grid sm:grid-cols-2 gap-6">
                 <img src="{{ asset('images/programs/program-activity.webp') }}" alt="East Asian students learning about nature during an outdoor field trip" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">

@@ -12,8 +12,8 @@
     {{-- §2 The Australian School System --}}
     <section class="bg-white">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
-            <h2 class="text-3xl font-bold text-gray-900 mb-6 text-pretty" data-animate="fade-up">The Australian School System</h2>
-            <p class="text-gray-600 mb-8 text-pretty">Australia's school system spans 13 years:</p>
+            <h2 class="text-3xl font-bold text-base-900 mb-6 text-pretty" data-animate="fade-up">The Australian School System</h2>
+            <p class="text-base-600 mb-8 text-pretty">Australia's school system spans 13 years:</p>
             <x-data-table :headers="['Stage', 'Years', 'Ages', 'Focus']"
                           :rows="[
                               ['Preparatory', 'Foundation', '~5', 'Early learning, social development'],
@@ -21,7 +21,7 @@
                               ['Lower Secondary', '7–10 (or 8–10)', '12–16', 'Broader learning with growing elective choices'],
                               ['Upper Secondary', '11–12', '16–18', 'Subjects chosen for further education or career'],
                           ]" />
-            <div class="mt-6 space-y-2 text-sm text-gray-600">
+            <div class="mt-6 space-y-2 text-sm text-base-600">
                 <p>Compulsory until age 16 in most states and territories.</p>
                 <p>Public and private schools available — we match your child to the right fit.</p>
                 <p>Blue Education is an SCSA Associate — officially named by SCSA to promote the WA curriculum internationally. <a href="{{ route('programs.scsa-associate') }}" class="text-primary-800 hover:underline font-medium">Learn about SCSA &rarr;</a></p>
@@ -32,8 +32,8 @@
     {{-- §3 What We Handle — Before Arrival --}}
     <section class="bg-primary-50">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
-            <h2 class="text-3xl font-bold text-gray-900 mb-4 text-pretty" data-animate="fade-up">What We Handle</h2>
-            <p class="text-gray-600 mb-10">Before Arrival — sequential steps your advisor coordinates for you.</p>
+            <h2 class="text-3xl font-bold text-base-900 mb-4 text-pretty" data-animate="fade-up">What We Handle</h2>
+            <p class="text-base-600 mb-10">Before Arrival — sequential steps your advisor coordinates for you.</p>
             <x-timeline :steps="[
                 ['title' => 'School Selection & Placement', 'description' => 'We match your child to the right school based on location, curriculum, fees, learning profile, and long-term goals. Public and private options across Australia.'],
                 ['title' => 'Student Visa (Subclass 500)', 'description' => 'Full visa application management for minors — documentation, health checks, character requirements, lodgement. We handle the process end to end.'],
@@ -48,8 +48,8 @@
             <div class="mb-8">
                 <img src="{{ asset('images/services-education-school/school-campus.webp') }}" alt="East Asian students at an Australian school campus" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/1] max-h-[240px]" loading="lazy">
             </div>
-            <h2 class="text-2xl font-bold text-gray-900 mb-3 text-pretty" data-animate="fade-up">Once They're There</h2>
-            <p class="text-gray-600 mb-8">These services run in parallel — not a sequence.</p>
+            <h2 class="text-2xl font-bold text-base-900 mb-3 text-pretty" data-animate="fade-up">Once They're There</h2>
+            <p class="text-base-600 mb-8">These services run in parallel — not a sequence.</p>
             <div class="grid sm:grid-cols-2 gap-6" data-animate="stagger">
                 <x-card title="Guardianship"
                         description="Legal guardianship arranged through Professional Student Care Australia or International Student Alliance. Required by the Department of Home Affairs for unaccompanied students under 18."
@@ -70,7 +70,7 @@
     </section>
 
     {{-- §5 For Parents --}}
-    <x-content-split title="For Parents" :image="asset('images/services-education-school/parent-child-school.webp')" alt="East Asian parent and child at a school consultation" class="bg-gray-50">
+    <x-content-split title="For Parents" :image="asset('images/services-education-school/parent-child-school.webp')" alt="East Asian parent and child at a school consultation" class="bg-base-50">
         <p>Sending your child overseas is a significant decision. Here's what we put in place before they board the plane:</p>
         <ul class="space-y-2 text-sm">
             <li class="flex items-start gap-2"><span class="text-primary-600 font-bold">✓</span> 24/7 emergency hotline — for parents and students, any time</li>
@@ -78,7 +78,7 @@
             <li class="flex items-start gap-2"><span class="text-primary-600 font-bold">✓</span> Direct communication with guardianship providers</li>
             <li class="flex items-start gap-2"><span class="text-primary-600 font-bold">✓</span> On-ground support in Perth and across major Australian cities</li>
         </ul>
-        <p class="font-semibold text-gray-700 mt-4">Your child is never on their own. Neither are you.</p>
+        <p class="font-semibold text-base-700 mt-4">Your child is never on their own. Neither are you.</p>
     </x-content-split>
 
     {{-- §6 CTA --}}

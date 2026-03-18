@@ -39,28 +39,27 @@
             {{-- Meta --}}
             <div class="flex flex-wrap items-center gap-3 mb-6 text-sm">
                 @if($post->category)
-                    <span class="inline-block text-xs font-semibold px-2.5 py-0.5 rounded-full text-white"
-                          style="background-color: {{ $post->category->color ?? '#3b82f6' }}">{{ $post->category->name }}</span>
+                    <span class="inline-block text-xs font-semibold px-2.5 py-0.5 rounded-full text-white {{ $post->category->badgeClass() }}">{{ $post->category->name }}</span>
                 @endif
                 @if($post->published_at)
-                    <span class="text-gray-500">{{ $post->published_at->format('d M Y') }}</span>
+                    <span class="text-base-500">{{ $post->published_at->format('d M Y') }}</span>
                 @endif
                 @if($post->read_time)
-                    <span class="text-gray-400">&middot;</span>
-                    <span class="text-gray-500">{{ $post->read_time }} min read</span>
+                    <span class="text-base-400">&middot;</span>
+                    <span class="text-base-500">{{ $post->read_time }} min read</span>
                 @endif
             </div>
 
             {{-- Title --}}
-            <h1 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-8 text-pretty leading-tight">{{ $post->title }}</h1>
+            <h1 class="text-3xl lg:text-4xl font-bold text-base-900 mb-8 text-pretty leading-tight">{{ $post->title }}</h1>
 
             {{-- Featured Image --}}
             @if($post->featured_image)
-                <img src="{{ asset($post->featured_image) }}" alt="{{ $post->title }}" class="w-full rounded-corner-lg mb-8 aspect-[2/1] object-cover" loading="lazy">
+                <img src="{{ asset($post->featured_image) }}" alt="{{ $post->title }}" class="w-full rounded-corner-lg mb-8 aspect-[2/1] object-cover" loading="eager">
             @endif
 
             {{-- Body --}}
-            <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
+            <div class="prose prose-lg max-w-none text-base-700 leading-relaxed">
                 {!! $post->body !!}
             </div>
         </div>
@@ -68,18 +67,18 @@
 
     {{-- Related Posts --}}
     @if($relatedPosts->isNotEmpty())
-        <section class="bg-gray-50">
+        <section class="bg-base-50">
             <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
-                <h2 class="text-2xl font-bold text-gray-900 mb-8">Related Articles</h2>
+                <h2 class="text-2xl font-bold text-base-900 mb-8">Related Articles</h2>
                 <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     @foreach($relatedPosts as $related)
                         <x-blog-card :title="$related->title"
                                      :excerpt="$related->excerpt"
                                      :image="$related->featured_image"
                                      :category="$related->category?->name"
-                                     :categoryColor="$related->category?->color"
+                                     :categoryBadgeClass="$related->category?->badgeClass()"
                                      :date="$related->published_at?->format('d M Y')"
-                                     :readTime="$related->read_time . ' min read'"
+                                     :readTime="$related->read_time"
                                      :href="route('blog.show', $related)" />
                     @endforeach
                 </div>

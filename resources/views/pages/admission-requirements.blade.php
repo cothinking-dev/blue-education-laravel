@@ -12,9 +12,9 @@
     {{-- §2 English Language Requirements --}}
     <section class="bg-white">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
-            <h2 class="text-3xl font-bold text-gray-900 mb-4 text-pretty" data-animate="fade-up">English Language Requirements</h2>
-            <p class="text-gray-600 mb-2 text-pretty">Accepted tests: IELTS, TOEFL, Cambridge CAE, Pearson PTE. Scores valid for 2 years.</p>
-            <p class="text-sm text-gray-500 mb-6 text-pretty">Institutions may set higher thresholds. Course requirements may differ from visa requirements.</p>
+            <h2 class="text-3xl font-bold text-base-900 mb-4 text-pretty" data-animate="fade-up">English Language Requirements</h2>
+            <p class="text-base-600 mb-2 text-pretty">Accepted tests: IELTS, TOEFL, Cambridge CAE, Pearson PTE. Scores valid for 2 years.</p>
+            <p class="text-sm text-base-500 mb-6 text-pretty">Institutions may set higher thresholds. Course requirements may differ from visa requirements.</p>
             <x-data-table :headers="['Program', 'Overall IELTS', 'Per-Band Minimum']"
                           :rows="[
                               ['Certificate I–IV', '5.5', 'Varies'],
@@ -29,8 +29,8 @@
     </section>
 
     {{-- Visual break --}}
-    <section class="bg-gray-50">
-        <div class="max-w-7xl mx-auto px-8 lg:px-16 pt-14">
+    <section class="bg-base-50">
+        <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
             <div class="grid sm:grid-cols-2 gap-6">
                 <img src="{{ asset('images/admission-requirements/study-materials.webp') }}" alt="East Asian student with study materials and textbooks for academic preparation" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
                 <img src="{{ asset('images/admission-requirements/checklist.webp') }}" alt="Application checklist and admission documents on a desk" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
@@ -39,7 +39,7 @@
     </section>
 
     {{-- §3 Academic Requirements --}}
-    <section class="bg-gray-50">
+    <section class="bg-base-50">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
             <x-section-heading title="Academic Requirements" :centered="false" />
             <x-data-table :headers="['Education Level', 'Academic Entry Requirement']"
@@ -57,8 +57,8 @@
     {{-- §4 Pathway Options --}}
     <section class="bg-white">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
-            <h2 class="text-3xl font-bold text-gray-900 mb-4 text-pretty" data-animate="fade-up">If you don't meet direct entry requirements</h2>
-            <p class="text-gray-600 mb-8 text-pretty">We assess where you are now and map the shortest path to where you want to be.</p>
+            <h2 class="text-3xl font-bold text-base-900 mb-4 text-pretty" data-animate="fade-up">If you don't meet direct entry requirements</h2>
+            <p class="text-base-600 mb-8 text-pretty">We assess where you are now and map the shortest path to where you want to be.</p>
             <div class="flex flex-col lg:flex-row gap-12">
                 <div class="flex-1">
                     <x-data-table :headers="['Pathway', 'Duration', 'Purpose']"

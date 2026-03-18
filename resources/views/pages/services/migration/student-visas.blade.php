@@ -14,9 +14,9 @@
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
             <div class="flex flex-col lg:flex-row gap-12">
                 <div class="flex-1">
-                    <h2 class="text-3xl font-bold text-gray-900 mb-4 text-pretty" data-animate="fade-up">What Is a Student Visa?</h2>
-                    <p class="text-gray-600 leading-relaxed mb-4 text-pretty">The Student Visa (Subclass 500) allows international students to study full-time at a registered Australian institution — covering courses from primary school through to doctoral programmes.</p>
-                    <p class="text-gray-600 leading-relaxed text-pretty">A well-prepared application moves through the system cleanly. Your advisor handles the document compilation, GTE statement, and lodgement so nothing gets missed.</p>
+                    <h2 class="text-3xl font-bold text-base-900 mb-4 text-pretty" data-animate="fade-up">What Is a Student Visa?</h2>
+                    <p class="text-base-600 leading-relaxed mb-4 text-pretty">The Student Visa (Subclass 500) allows international students to study full-time at a registered Australian institution — covering courses from primary school through to doctoral programmes.</p>
+                    <p class="text-base-600 leading-relaxed text-pretty">A well-prepared application moves through the system cleanly. Your advisor handles the document compilation, GTE statement, and lodgement so nothing gets missed.</p>
                 </div>
                 <div class="lg:w-[40%]">
                     <x-facts-table title="Key Facts — Subclass 500"
@@ -28,14 +28,14 @@
                                        ['key' => 'Health insurance', 'value' => 'OSHC mandatory'],
                                        ['key' => 'Typical processing', 'value' => '4–8 weeks'],
                                    ]" />
-                    <p class="text-xs text-gray-500 mt-3 text-pretty">OSHC is mandatory for the duration of your visa. We arrange OSHC through our <a href="{{ route('services.student-support') }}" class="text-primary-800 hover:underline font-medium">student support services &rarr;</a></p>
+                    <p class="text-xs text-base-500 mt-3 text-pretty">OSHC is mandatory for the duration of your visa. We arrange OSHC through our <a href="{{ route('services.student-support') }}" class="text-primary-800 hover:underline font-medium">student support services &rarr;</a></p>
                 </div>
             </div>
         </div>
     </section>
 
     {{-- §3 How We Help --}}
-    <section class="bg-gray-50">
+    <section class="bg-base-50">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
             <x-section-heading title="How We Help" :centered="false" />
             <x-timeline :steps="[
@@ -69,8 +69,8 @@
                         <x-heroicon-o-currency-dollar class="w-5 h-5" />
                     </div>
                     <div>
-                        <h3 class="font-bold text-gray-900 mb-1">Financial Capacity</h3>
-                        <p class="text-gray-600 text-sm leading-relaxed text-pretty">Evidence covering tuition, living costs, and travel expenses for the duration of your studies.</p>
+                        <h3 class="font-bold text-base-900 mb-1">Financial Capacity</h3>
+                        <p class="text-base-600 text-sm leading-relaxed text-pretty">Evidence covering tuition, living costs, and travel expenses for the duration of your studies.</p>
                     </div>
                 </div>
                 <div class="flex items-start gap-4">
@@ -78,8 +78,8 @@
                         <x-heroicon-o-globe-alt class="w-5 h-5" />
                     </div>
                     <div>
-                        <h3 class="font-bold text-gray-900 mb-1">English Proficiency</h3>
-                        <p class="text-gray-600 text-sm leading-relaxed text-pretty"><a href="{{ route('services.education.english') }}" class="text-primary-800 hover:underline font-medium">IELTS, TOEFL, PTE, or Cambridge</a> results meeting course and visa requirements.</p>
+                        <h3 class="font-bold text-base-900 mb-1">English Proficiency</h3>
+                        <p class="text-base-600 text-sm leading-relaxed text-pretty"><a href="{{ route('services.education.english') }}" class="text-primary-800 hover:underline font-medium">IELTS, TOEFL, PTE, or Cambridge</a> results meeting course and visa requirements.</p>
                     </div>
                 </div>
                 <div class="flex items-start gap-4">
@@ -87,8 +87,8 @@
                         <x-heroicon-o-shield-check class="w-5 h-5" />
                     </div>
                     <div>
-                        <h3 class="font-bold text-gray-900 mb-1">Health & Character</h3>
-                        <p class="text-gray-600 text-sm leading-relaxed text-pretty">Medical examination ($240–$380) and police clearance certificates from countries you've lived in.</p>
+                        <h3 class="font-bold text-base-900 mb-1">Health & Character</h3>
+                        <p class="text-base-600 text-sm leading-relaxed text-pretty">Medical examination ($240–$380) and police clearance certificates from countries you've lived in.</p>
                     </div>
                 </div>
                 <div class="flex items-start gap-4">
@@ -96,8 +96,8 @@
                         <x-heroicon-o-document-text class="w-5 h-5" />
                     </div>
                     <div>
-                        <h3 class="font-bold text-gray-900 mb-1">Confirmation of Enrolment</h3>
-                        <p class="text-gray-600 text-sm leading-relaxed text-pretty">A valid CoE from a CRICOS-registered institution. We help you secure enrolment through our <a href="{{ route('services.education.index') }}" class="text-primary-800 hover:underline font-medium">education services &rarr;</a></p>
+                        <h3 class="font-bold text-base-900 mb-1">Confirmation of Enrolment</h3>
+                        <p class="text-base-600 text-sm leading-relaxed text-pretty">A valid CoE from a CRICOS-registered institution. We help you secure enrolment through our <a href="{{ route('services.education.index') }}" class="text-primary-800 hover:underline font-medium">education services &rarr;</a></p>
                     </div>
                 </div>
             </div>
@@ -105,17 +105,17 @@
     </section>
 
     {{-- §5 What Comes Next? --}}
-    <section class="bg-gray-50">
+    <section class="bg-base-50">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
             <x-section-heading title="What Comes Next?" :centered="false" />
             <div class="grid sm:grid-cols-2 gap-6" data-animate="stagger">
-                <a href="{{ route('services.migration.graduate-work') }}" class="bg-white rounded-corner-lg border border-gray-200 p-6 hover:border-primary-300 hover:shadow-sm transition-all group">
-                    <h3 class="font-bold text-gray-900 mb-2 group-hover:text-primary-800 transition-colors">Post-study work visas &rarr;</h3>
-                    <p class="text-gray-600 text-sm text-pretty">Your options after graduation — staying in Australia on a work visa.</p>
+                <a href="{{ route('services.migration.graduate-work') }}" class="bg-white rounded-corner-lg border border-base-200 p-6 hover:border-primary-300 hover:shadow-sm transition-all group">
+                    <h3 class="font-bold text-base-900 mb-2 group-hover:text-primary-800 transition-colors">Post-study work visas &rarr;</h3>
+                    <p class="text-base-600 text-sm text-pretty">Your options after graduation — staying in Australia on a work visa.</p>
                 </a>
-                <a href="{{ route('services.student-support') }}" class="bg-white rounded-corner-lg border border-gray-200 p-6 hover:border-primary-300 hover:shadow-sm transition-all group">
-                    <h3 class="font-bold text-gray-900 mb-2 group-hover:text-primary-800 transition-colors">Support during your studies &rarr;</h3>
-                    <p class="text-gray-600 text-sm text-pretty">Accommodation, welfare monitoring, and ongoing advisor support.</p>
+                <a href="{{ route('services.student-support') }}" class="bg-white rounded-corner-lg border border-base-200 p-6 hover:border-primary-300 hover:shadow-sm transition-all group">
+                    <h3 class="font-bold text-base-900 mb-2 group-hover:text-primary-800 transition-colors">Support during your studies &rarr;</h3>
+                    <p class="text-base-600 text-sm text-pretty">Accommodation, welfare monitoring, and ongoing advisor support.</p>
                 </a>
             </div>
         </div>

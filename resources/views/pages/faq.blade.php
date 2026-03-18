@@ -42,7 +42,7 @@
 
     {{-- Visual context --}}
     <section class="bg-white">
-        <div class="max-w-7xl mx-auto px-8 lg:px-16 pt-14">
+        <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
             <div class="grid sm:grid-cols-2 gap-6">
                 <img src="{{ asset('images/faq/student-question.webp') }}" alt="East Asian student asking a question during an information session" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
                 <img src="{{ asset('images/faq/info-session.webp') }}" alt="East Asian students at an education information session" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
@@ -56,11 +56,11 @@
 
             {{-- Tab Navigation --}}
             <div class="flex flex-wrap gap-2 mb-10">
-                <button @click="tab = 'education'" :class="tab === 'education' ? 'bg-primary-800 text-white' : 'bg-gray-100 text-gray-700 hover:bg-gray-200'" class="px-4 py-2 rounded-full text-sm font-medium transition-colors">Education</button>
-                <button @click="tab = 'migration'" :class="tab === 'migration' ? 'bg-primary-800 text-white' : 'bg-gray-100 text-gray-700 hover:bg-gray-200'" class="px-4 py-2 rounded-full text-sm font-medium transition-colors">Migration & Visas</button>
-                <button @click="tab = 'career'" :class="tab === 'career' ? 'bg-primary-800 text-white' : 'bg-gray-100 text-gray-700 hover:bg-gray-200'" class="px-4 py-2 rounded-full text-sm font-medium transition-colors">Career Services</button>
-                <button @click="tab = 'support'" :class="tab === 'support' ? 'bg-primary-800 text-white' : 'bg-gray-100 text-gray-700 hover:bg-gray-200'" class="px-4 py-2 rounded-full text-sm font-medium transition-colors">Student Support</button>
-                <button @click="tab = 'fees'" :class="tab === 'fees' ? 'bg-primary-800 text-white' : 'bg-gray-100 text-gray-700 hover:bg-gray-200'" class="px-4 py-2 rounded-full text-sm font-medium transition-colors">Fees</button>
+                <button @click="tab = 'education'" :class="tab === 'education' ? 'bg-primary-800 text-white' : 'bg-base-100 text-base-700 hover:bg-base-200'" class="px-4 py-2 rounded-full text-sm font-medium transition-colors">Education</button>
+                <button @click="tab = 'migration'" :class="tab === 'migration' ? 'bg-primary-800 text-white' : 'bg-base-100 text-base-700 hover:bg-base-200'" class="px-4 py-2 rounded-full text-sm font-medium transition-colors">Migration & Visas</button>
+                <button @click="tab = 'career'" :class="tab === 'career' ? 'bg-primary-800 text-white' : 'bg-base-100 text-base-700 hover:bg-base-200'" class="px-4 py-2 rounded-full text-sm font-medium transition-colors">Career Services</button>
+                <button @click="tab = 'support'" :class="tab === 'support' ? 'bg-primary-800 text-white' : 'bg-base-100 text-base-700 hover:bg-base-200'" class="px-4 py-2 rounded-full text-sm font-medium transition-colors">Student Support</button>
+                <button @click="tab = 'fees'" :class="tab === 'fees' ? 'bg-primary-800 text-white' : 'bg-base-100 text-base-700 hover:bg-base-200'" class="px-4 py-2 rounded-full text-sm font-medium transition-colors">Fees</button>
             </div>
 
             {{-- Education --}}

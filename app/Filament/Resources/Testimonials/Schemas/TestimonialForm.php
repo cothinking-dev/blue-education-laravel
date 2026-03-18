@@ -19,6 +19,8 @@ class TestimonialForm
                 TextInput::make('name')
                     ->required(),
                 TextInput::make('initials'),
+                TextInput::make('photo')
+                    ->placeholder('images/testimonials/filename.webp'),
                 TextInput::make('credential'),
                 TextInput::make('country'),
                 Toggle::make('is_active')

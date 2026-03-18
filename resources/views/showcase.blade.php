@@ -3,9 +3,9 @@
     {{-- ═══════════════════════════════════════════
          SHOWCASE: Section Index
     ═══════════════════════════════════════════ --}}
-    <div class="bg-gray-50 border-b border-gray-200 sticky top-0 z-40">
+    <div class="bg-base-50 border-b border-base-200 sticky top-0 z-40">
         <div class="max-w-7xl mx-auto px-8 py-3 flex flex-wrap items-center gap-3 text-xs font-medium">
-            <span class="text-gray-400 uppercase tracking-wider">Components:</span>
+            <span class="text-base-400 uppercase tracking-wider">Components:</span>
             <a href="#hero" class="text-primary-800 hover:underline">Hero</a>
             <a href="#breadcrumb" class="text-primary-800 hover:underline">Breadcrumb</a>
             <a href="#buttons" class="text-primary-800 hover:underline">Buttons</a>
@@ -354,10 +354,10 @@
                 font-weight: bold;
                 text-transform: uppercase;
                 letter-spacing: 0.12em;
-                color: #3b82f6;
-                background: #eff6ff;
-                border-top: 1px solid #bfdbfe;
-                border-bottom: 1px solid #bfdbfe;
+                color: var(--color-primary-500);
+                background: var(--color-primary-50);
+                border-top: 1px solid var(--color-primary-200);
+                border-bottom: 1px solid var(--color-primary-200);
                 padding: 5px 32px;
             }
         </style>

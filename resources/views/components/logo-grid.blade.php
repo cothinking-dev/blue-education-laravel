@@ -5,10 +5,10 @@
     'marquee' => false,
 ])
 
-<section {{ $attributes->merge(['class' => 'bg-gray-50']) }}>
-    <div class="max-w-7xl mx-auto px-8 lg:px-16 py-12">
+<section {{ $attributes->merge(['class' => 'bg-base-50']) }}>
+    <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
         @if($title)
-            <p class="text-center text-gray-500 text-sm font-medium uppercase tracking-wider mb-8">{{ $title }}</p>
+            <p class="text-center text-base-500 text-sm font-medium uppercase tracking-wider mb-8">{{ $title }}</p>
         @endif
 
         @if($marquee)
@@ -19,7 +19,7 @@
                             @if(!empty($logo['src']))
                                 <img src="{{ $logo['src'] }}" alt="{{ $logo['alt'] ?? '' }}" class="h-10 w-auto" loading="lazy">
                             @else
-                                <div class="h-10 w-24 bg-gray-300 rounded flex items-center justify-center text-xs text-gray-500 font-mono">{{ $logo['alt'] ?? 'Logo' }}</div>
+                                <div class="h-10 w-24 bg-base-300 rounded flex items-center justify-center text-xs text-base-500 font-mono">{{ $logo['alt'] ?? 'Logo' }}</div>
                             @endif
                         </div>
                     @endforeach
@@ -32,7 +32,7 @@
                         @if(!empty($logo['src']))
                             <img src="{{ $logo['src'] }}" alt="{{ $logo['alt'] ?? '' }}" class="h-10 w-auto" loading="lazy">
                         @else
-                            <div class="h-10 w-24 bg-gray-300 rounded flex items-center justify-center text-xs text-gray-500 font-mono">{{ $logo['alt'] ?? 'Logo' }}</div>
+                            <div class="h-10 w-24 bg-base-300 rounded flex items-center justify-center text-xs text-base-500 font-mono">{{ $logo['alt'] ?? 'Logo' }}</div>
                         @endif
                     </div>
                 @endforeach

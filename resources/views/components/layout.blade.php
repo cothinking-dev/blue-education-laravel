@@ -9,6 +9,7 @@
     'jsonLd' => null,
     'articlePublishedTime' => null,
     'articleModifiedTime' => null,
+    'transparentNav' => true,
 ])
 
 <!DOCTYPE html>
@@ -44,9 +45,9 @@
     {{-- Per-page head content --}}
     {{ $head ?? '' }}
 </head>
-<body class="bg-white text-gray-900 font-sans antialiased">
+<body class="bg-white text-base-900 font-sans antialiased">
 
-    <x-nav />
+    <x-nav :transparent="$transparentNav" />
 
     <main id="main-content">
         {{ $slot }}

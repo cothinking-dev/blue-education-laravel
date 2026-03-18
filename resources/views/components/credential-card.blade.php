@@ -4,7 +4,7 @@
     'description' => null,
 ])
 
-<div {{ $attributes->merge(['class' => 'bg-white rounded-corner-lg border border-gray-200 p-6 flex flex-col items-center text-center']) }}>
+<div {{ $attributes->merge(['class' => 'bg-white rounded-corner-lg border border-base-200 p-6 flex flex-col items-center text-center']) }}>
     @if($logo)
         <img src="{{ asset($logo) }}" alt="{{ $name }}" class="h-16 w-auto object-contain mb-4" loading="lazy">
     @else
@@ -13,9 +13,9 @@
         </div>
     @endif
 
-    <h3 class="text-sm font-bold text-gray-900 mb-1">{{ $name }}</h3>
+    <h3 class="text-sm font-bold text-base-900 mb-1">{{ $name }}</h3>
 
     @if($description)
-        <p class="text-xs text-gray-500 leading-relaxed">{{ $description }}</p>
+        <p class="text-xs text-base-500 leading-relaxed">{{ $description }}</p>
     @endif
 </div>

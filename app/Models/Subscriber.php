@@ -13,7 +13,6 @@ class Subscriber extends Model
     /** @var list<string> */
     protected $fillable = [
         'email',
-        'subscribed_at',
     ];
 
     /**

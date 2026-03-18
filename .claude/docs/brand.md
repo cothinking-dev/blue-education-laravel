@@ -11,9 +11,22 @@ Sourced from `DOCS/wireframes/assets/tokens.css`, registered in `resources/css/a
 | `primary-50` | `#eff6ff` | Light tint — card backgrounds, hover states |
 | `primary-950` | `#0f1d3a` | Deepest — footer-level dark backgrounds |
 
+All color tokens use **oklch** format in `resources/css/app.css` for better interpolation.
+
 Use Tailwind classes: `bg-primary-800`, `text-primary-500`, `border-primary-200`, etc.
 
-Neutral grays use Tailwind defaults (`gray-50` through `gray-900`).
+### Base Neutral Palette
+
+Defined as `--color-base-50` through `--color-base-950` in `@theme`. Maps to Tailwind's default gray in oklch — swap the values in `app.css` to re-theme the entire site.
+
+Use `base-*` classes (not `gray-*`): `bg-base-50`, `text-base-900`, `border-base-200`, etc.
+
+### Hero Overlay Tokens
+
+Defined in `:root` in `app.css`:
+- `--hero-overlay-start` / `--hero-overlay-end` — brand-blue gradient with alpha
+- `--hero-vignette` — edge darkening
+- `--placeholder-stripe` — skeleton loading pattern
 
 ## Typography
 

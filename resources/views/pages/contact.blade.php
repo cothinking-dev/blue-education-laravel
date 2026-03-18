@@ -18,15 +18,15 @@
                     <div class="space-y-2">
                         <div>
                             <a href="tel:+61863810030" class="font-semibold text-primary-800 hover:underline">+61 8 6381 0030</a>
-                            <p class="text-gray-400 text-xs">Office</p>
+                            <p class="text-base-400 text-xs">Office</p>
                         </div>
                         <div>
                             <a href="tel:+61411708899" class="font-semibold text-primary-800 hover:underline">+61 411 708 899</a>
-                            <p class="text-gray-400 text-xs">Mobile / WhatsApp</p>
+                            <p class="text-base-400 text-xs">Mobile / WhatsApp</p>
                         </div>
                         <div>
                             <a href="tel:1300040696" class="font-semibold text-primary-800 hover:underline">1300 040 696</a>
-                            <p class="text-gray-400 text-xs">Australia-wide</p>
+                            <p class="text-base-400 text-xs">Australia-wide</p>
                         </div>
                     </div>
                 </x-contact-card>
@@ -36,7 +36,7 @@
                         <x-heroicon-o-envelope class="w-6 h-6" />
                     </x-slot:icon>
                     <a href="mailto:info@blueeducation.com.au" class="font-semibold text-primary-800 hover:underline">info@blueeducation.com.au</a>
-                    <p class="text-gray-400 text-xs mt-1">We respond within one business day.</p>
+                    <p class="text-base-400 text-xs mt-1">We respond within one business day.</p>
                 </x-contact-card>
 
                 <x-contact-card title="Office">
@@ -53,9 +53,9 @@
     </section>
 
     {{-- §3 Contact Form --}}
-    <section class="bg-gray-50">
+    <section class="bg-base-50">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
-            <h2 id="enquiry-form" class="text-3xl font-bold text-gray-900 mb-10 text-pretty" data-animate="fade-up">Send an Enquiry</h2>
+            <h2 id="enquiry-form" class="text-3xl font-bold text-base-900 mb-10 text-pretty" data-animate="fade-up">Send an Enquiry</h2>
             <div class="flex flex-col lg:flex-row gap-10">
                 {{-- Form — 60% --}}
                 <div class="lg:w-3/5">
@@ -69,8 +69,8 @@
                                 width="100%" height="100%" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"
                                 title="Blue Education office location"></iframe>
                     </div>
-                    <div class="bg-white border border-gray-200 rounded-corner-lg p-4 text-sm text-gray-600">
-                        <p class="font-semibold text-gray-800 mb-1">Blue Education</p>
+                    <div class="bg-white border border-base-200 rounded-corner-lg p-4 text-sm text-base-600">
+                        <p class="font-semibold text-base-800 mb-1">Blue Education</p>
                         <address class="not-italic leading-relaxed">33 Barrack St, GF Unit 2<br>Perth WA 6000</address>
                         <p class="mt-2"><a href="tel:+61863810030" class="text-primary-800 hover:underline">+61 8 6381 0030</a></p>
                     </div>
@@ -94,8 +94,8 @@
     <section class="bg-white">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
             <div class="rounded-corner-lg border-2 border-primary-100 bg-primary-50 p-8 lg:p-12 max-w-3xl mx-auto text-center">
-                <h2 class="text-3xl font-bold text-gray-900 mb-4 text-pretty" data-animate="fade-up">Book a Consultation</h2>
-                <ul class="text-gray-600 mb-8 space-y-2 text-left inline-block">
+                <h2 class="text-3xl font-bold text-base-900 mb-4 text-pretty" data-animate="fade-up">Book a Consultation</h2>
+                <ul class="text-base-600 mb-8 space-y-2 text-left inline-block">
                     <li class="flex items-start gap-2"><span class="text-primary-600 font-bold mt-0.5">✓</span> Education, migration, or career guidance</li>
                     <li class="flex items-start gap-2"><span class="text-primary-600 font-bold mt-0.5">✓</span> English, Bahasa, Cantonese, Japanese, and more</li>
                     <li class="flex items-start gap-2"><span class="text-primary-600 font-bold mt-0.5">✓</span> In-person (Perth), phone, or video</li>
@@ -108,10 +108,10 @@
     </section>
 
     {{-- §5 International Representatives --}}
-    <section class="bg-gray-50">
+    <section class="bg-base-50">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
-            <h2 class="text-3xl font-bold text-gray-900 mb-4 text-pretty" data-animate="fade-up">International Representatives</h2>
-            <p class="text-gray-600 mb-8">For local support in your region, contact our international team or email <a href="mailto:info@blueeducation.com.au" class="text-primary-800 hover:underline">info@blueeducation.com.au</a>.</p>
+            <h2 class="text-3xl font-bold text-base-900 mb-4 text-pretty" data-animate="fade-up">International Representatives</h2>
+            <p class="text-base-600 mb-8">For local support in your region, contact our international team or email <a href="mailto:info@blueeducation.com.au" class="text-primary-800 hover:underline">info@blueeducation.com.au</a>.</p>
             <x-data-table :headers="['Region', 'Representative']"
                           :rows="[
                               ['Japan', 'Minami Sakamoto'],

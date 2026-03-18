@@ -16,7 +16,7 @@
     </x-content-split>
 
     {{-- §3 Is VET Right for You? --}}
-    <section class="bg-gray-50">
+    <section class="bg-base-50">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
             <x-section-heading title="Is VET right for you?" :centered="false" />
             <div class="grid md:grid-cols-3 gap-6" data-animate="stagger">
@@ -53,7 +53,7 @@
                 <img src="{{ asset('images/services-education-vet-tafe/tafe-campus.webp') }}" alt="Modern TAFE campus building" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/1] max-h-[240px]" loading="lazy">
             </div>
             <x-section-heading title="What You Can Study" :centered="false" />
-            <p class="text-gray-600 mb-8 text-pretty">Industries available through TAFE and registered training providers across Australia:</p>
+            <p class="text-base-600 mb-8 text-pretty">Industries available through TAFE and registered training providers across Australia:</p>
             <div class="flex flex-wrap gap-3">
                 @foreach(['Construction & Trades', 'Business & Administration', 'Information Technology', 'Hospitality & Tourism', 'Childcare & Community Services', 'Healthcare Support', 'Automotive', 'Creative Industries'] as $industry)
                     <span class="inline-block bg-primary-50 text-primary-800 text-sm font-medium px-4 py-2 rounded-full">{{ $industry }}</span>
@@ -63,7 +63,7 @@
     </section>
 
     {{-- §5 Qualification Levels --}}
-    <section class="bg-gray-50">
+    <section class="bg-base-50">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
             <x-section-heading title="Qualification Levels" :centered="false" />
             <x-data-table :headers="['Qualification', 'Duration', 'Career Outcome', 'Min. IELTS']"
@@ -73,7 +73,7 @@
                               ['Diploma', '1–2 years', 'Supervisory, specialist roles', '5.5–6.0'],
                               ['Advanced Diploma', '1.5–2 years', 'Management, university pathway', '5.5–6.0'],
                           ]" />
-            <p class="text-sm text-gray-500 mt-4">English requirements are a general guide. Individual institutions may set higher thresholds.</p>
+            <p class="text-sm text-base-500 mt-4">English requirements are a general guide. Individual institutions may set higher thresholds.</p>
         </div>
     </section>
 
@@ -83,16 +83,16 @@
             <x-section-heading title="Why VET?" :centered="false" />
             <div class="grid md:grid-cols-3 gap-8" data-animate="stagger">
                 <div class="border-l-4 border-primary-600 pl-6">
-                    <h3 class="font-bold text-gray-900 mb-2 text-pretty">Industry-aligned training</h3>
-                    <p class="text-gray-600 text-sm leading-relaxed text-pretty">Training happens in workshops, labs, and workplaces. What you learn maps directly to what employers expect on day one.</p>
+                    <h3 class="font-bold text-base-900 mb-2 text-pretty">Industry-aligned training</h3>
+                    <p class="text-base-600 text-sm leading-relaxed text-pretty">Training happens in workshops, labs, and workplaces. What you learn maps directly to what employers expect on day one.</p>
                 </div>
                 <div class="border-l-4 border-primary-600 pl-6">
-                    <h3 class="font-bold text-gray-900 mb-2 text-pretty">Credit towards a degree</h3>
-                    <p class="text-gray-600 text-sm leading-relaxed text-pretty">Diploma and Advanced Diploma holders can apply for credit recognition at Australian universities — reducing the time required to complete a bachelor degree.</p>
+                    <h3 class="font-bold text-base-900 mb-2 text-pretty">Credit towards a degree</h3>
+                    <p class="text-base-600 text-sm leading-relaxed text-pretty">Diploma and Advanced Diploma holders can apply for credit recognition at Australian universities — reducing the time required to complete a bachelor degree.</p>
                 </div>
                 <div class="border-l-4 border-primary-600 pl-6">
-                    <h3 class="font-bold text-gray-900 mb-2 text-pretty">Skilled migration pathways</h3>
-                    <p class="text-gray-600 text-sm leading-relaxed text-pretty">Many VET occupations appear on Australia's skilled occupation lists. Eligible graduates may qualify for the Graduate Work Stream visa (18 months).</p>
+                    <h3 class="font-bold text-base-900 mb-2 text-pretty">Skilled migration pathways</h3>
+                    <p class="text-base-600 text-sm leading-relaxed text-pretty">Many VET occupations appear on Australia's skilled occupation lists. Eligible graduates may qualify for the Graduate Work Stream visa (18 months).</p>
                     <a href="{{ route('services.migration.graduate-work') }}" class="text-primary-800 font-medium text-sm hover:underline mt-2 inline-block">Learn about graduate work visas &rarr;</a>
                 </div>
             </div>

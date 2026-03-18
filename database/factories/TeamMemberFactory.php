@@ -9,8 +9,6 @@ use Illuminate\Database\Eloquent\Factories\Factory;
  */
 class TeamMemberFactory extends Factory
 {
-    private static int $sortCounter = 0;
-
     /**
      * Define the model's default state.
      *
@@ -77,7 +75,7 @@ class TeamMemberFactory extends Factory
             'languages' => fake()->randomElement($languageSets),
             'section' => $section,
             'region' => $section === 'international' ? fake()->randomElement($regions) : null,
-            'sort_order' => self::$sortCounter++,
+            'sort_order' => fake()->unique()->numberBetween(0, 1000),
         ];
     }
 

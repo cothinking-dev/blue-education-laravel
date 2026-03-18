@@ -10,14 +10,14 @@
 
     {{-- §2 ELICOS Courses --}}
     <x-content-split title="ELICOS Courses" :image="asset('images/services-education-english/elicos-class.webp')" alt="East Asian students in an ELICOS English language class">
-        <h3 class="text-lg font-semibold text-gray-800 mb-2">What is ELICOS?</h3>
+        <h3 class="text-lg font-semibold text-base-800 mb-2">What is ELICOS?</h3>
         <p class="text-sm">Most Australian universities require an IELTS score of 6.5 or higher for undergraduate entry. ELICOS is how you get there — structured English courses delivered at private colleges and university English colleges across Australia.</p>
         <p class="text-sm">Classes cover the four core skills: reading, writing, listening, and speaking. Duration depends on where your English is now — your advisor will assess your level before you enrol.</p>
     </x-content-split>
 
-    <section class="bg-gray-50">
+    <section class="bg-base-50">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
-            <h3 class="text-xl font-semibold text-gray-800 mb-6">Course Durations</h3>
+            <h3 class="text-xl font-semibold text-base-800 mb-6">Course Durations</h3>
             <x-data-table :headers="['Block', 'Duration', 'Best For']"
                           :rows="[
                               ['Intensive', '10 weeks', 'Upper-intermediate students close to target score'],
@@ -58,22 +58,26 @@
     </section>
 
     {{-- §4 Teaching English --}}
-    <x-callout title="Teaching English professionally? There's a qualification for that." variant="info">
-        <p class="text-sm mb-3">Blue Education also assists in obtaining professional English teaching qualifications — for educators pursuing careers in international English instruction.</p>
-        <div class="flex flex-wrap gap-2">
-            <span class="inline-block bg-white border border-gray-200 text-gray-700 text-xs font-medium px-3 py-1 rounded-full">TESOL</span>
-            <span class="inline-block bg-white border border-gray-200 text-gray-700 text-xs font-medium px-3 py-1 rounded-full">CELTA</span>
-            <span class="inline-block bg-white border border-gray-200 text-gray-700 text-xs font-medium px-3 py-1 rounded-full">EfTC</span>
+    <section class="bg-white">
+        <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
+            <x-callout title="Teaching English professionally? There's a qualification for that." variant="info">
+                <p class="text-sm mb-3">Blue Education also assists in obtaining professional English teaching qualifications — for educators pursuing careers in international English instruction.</p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="inline-block bg-white border border-base-200 text-base-700 text-xs font-medium px-3 py-1 rounded-full">TESOL</span>
+                    <span class="inline-block bg-white border border-base-200 text-base-700 text-xs font-medium px-3 py-1 rounded-full">CELTA</span>
+                    <span class="inline-block bg-white border border-base-200 text-base-700 text-xs font-medium px-3 py-1 rounded-full">EfTC</span>
+                </div>
+            </x-callout>
         </div>
-    </x-callout>
+    </section>
 
     {{-- §5 Foundation Studies --}}
     <x-content-split title="Foundation Studies" :image="asset('images/services-education-english/foundation-studies.webp')" alt="East Asian students in a foundation studies classroom preparing for university">
-        <h3 class="text-lg font-semibold text-gray-800 mb-2">What are Foundation programmes?</h3>
+        <h3 class="text-lg font-semibold text-base-800 mb-2">What are Foundation programmes?</h3>
         <p class="text-sm">Foundation programmes are for international students who've finished high school but don't yet meet direct entry requirements for an Australian university.</p>
         <p class="text-sm">Rather than waiting or reapplying, you complete a one-year programme that builds the academic skills your target degree expects — and earns you a place at a partner university on completion.</p>
-        <h3 class="text-lg font-semibold text-gray-800 mb-2 mt-4">What you get</h3>
-        <ul class="space-y-1 text-sm text-gray-600">
+        <h3 class="text-lg font-semibold text-base-800 mb-2 mt-4">What you get</h3>
+        <ul class="space-y-1 text-sm text-base-600">
             <li>Subject-specific preparation aligned to your intended degree</li>
             <li>Academic writing, research methods, and critical thinking</li>
             <li>Credit towards your first year of university in some programmes</li>
@@ -82,10 +86,10 @@
     </x-content-split>
 
     {{-- §6 Your Pathway --}}
-    <section class="bg-gray-50">
+    <section class="bg-base-50">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
-            <h2 class="text-3xl font-bold text-gray-900 mb-4 text-pretty" data-animate="fade-up">Your Pathway</h2>
-            <p class="text-gray-600 mb-10 text-pretty">Your pathway depends on where the gap is. Most students need one stage, some need both.</p>
+            <h2 class="text-3xl font-bold text-base-900 mb-4 text-pretty" data-animate="fade-up">Your Pathway</h2>
+            <p class="text-base-600 mb-10 text-pretty">Your pathway depends on where the gap is. Most students need one stage, some need both.</p>
             <x-timeline :steps="[
                 ['title' => 'ELICOS', 'description' => 'Your English reaches the level required — for your course, your visa, and your first day of lectures. Duration is 10 to 30 weeks depending on your starting point.'],
                 ['title' => 'Foundation', 'description' => 'One year of structured academic preparation aligned to your intended degree. You cover the subject knowledge and study skills your first year expects, then enter directly into a partner university.'],

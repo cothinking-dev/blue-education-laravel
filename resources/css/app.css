@@ -1,4 +1,5 @@
 @import 'tailwindcss';
+@plugin '@tailwindcss/typography';
 
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
 @source '../../storage/framework/views/*.php';
@@ -9,24 +10,80 @@
     --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
 
-    /* Brand colors — from wireframe design tokens */
-    --color-primary-50: #eff6ff;
-    --color-primary-100: #dbeafe;
-    --color-primary-200: #bfdbfe;
-    --color-primary-300: #93c5fd;
-    --color-primary-400: #60a5fa;
-    --color-primary-500: #3b82f6;
-    --color-primary-600: #2563eb;
-    --color-primary-700: #1d4ed8;
-    --color-primary-800: #1e3a8a;
-    --color-primary-900: #1e3a5f;
-    --color-primary-950: #0f1d3a;
+    /* Brand colors — oklch from original wireframe hex tokens */
+    --color-primary-50: oklch(0.9705 0.0143 254.66);   /* #eff6ff */
+    --color-primary-100: oklch(0.9319 0.0317 255.61);  /* #dbeafe */
+    --color-primary-200: oklch(0.8823 0.0571 254.14);  /* #bfdbfe */
+    --color-primary-300: oklch(0.8091 0.0957 251.83);  /* #93c5fd */
+    --color-primary-400: oklch(0.7137 0.1435 254.63);  /* #60a5fa */
+    --color-primary-500: oklch(0.6231 0.1881 259.82);  /* #3b82f6 */
+    --color-primary-600: oklch(0.5461 0.2153 262.89);  /* #2563eb */
+    --color-primary-700: oklch(0.4882 0.2172 264.38);  /* #1d4ed8 */
+    --color-primary-800: oklch(0.3790 0.1378 265.53);  /* #1e3a8a */
+    --color-primary-900: oklch(0.3462 0.0736 256.05);  /* #1e3a5f */
+    --color-primary-950: oklch(0.2361 0.0592 263.20);  /* #0f1d3a */
+
+    /* Base neutral palette — mirrors Tailwind v4 gray, swap here to re-theme */
+    --color-base-50: oklch(0.985 0.002 247.839);
+    --color-base-100: oklch(0.967 0.003 264.542);
+    --color-base-200: oklch(0.928 0.006 264.531);
+    --color-base-300: oklch(0.872 0.010 258.338);
+    --color-base-400: oklch(0.707 0.022 261.325);
+    --color-base-500: oklch(0.551 0.027 264.364);
+    --color-base-600: oklch(0.446 0.030 256.802);
+    --color-base-700: oklch(0.373 0.034 259.733);
+    --color-base-800: oklch(0.278 0.033 256.848);
+    --color-base-900: oklch(0.210 0.034 264.665);
+    --color-base-950: oklch(0.130 0.028 261.692);
 
     /* Corner radii */
     --radius-corner: 0.5rem;
     --radius-corner-lg: 1rem;
 }
 
+:root {
+    /* Hero overlay tokens — brand-blue with alpha */
+    --hero-overlay-start: oklch(0.3790 0.1378 265.53 / 0.85);  /* primary-800 @ 55% */
+    --hero-overlay-end: oklch(0.2361 0.0592 263.20 / 0.85);     /* primary-950 @ 45% */
+    --hero-vignette: oklch(0.2361 0.0592 263.20 / 0.90);         /* primary-950 @ 40% */
+
+    /* Placeholder stripe pattern */
+    --placeholder-stripe: oklch(0 0 0 / 0.04);
+}
+
 html {
     scroll-padding-top: 4rem;
+}
+
+/* Transparent nav — transitions to solid on scroll (all pages) */
+.nav-transparent {
+    transition: background-color 0.3s ease, border-color 0.3s ease, backdrop-filter 0.3s ease;
+
+    & .nav-link {
+        transition: color 0.3s ease;
+    }
+    & .nav-logo {
+        transition: filter 0.3s ease;
+    }
+    & .nav-hamburger {
+        transition: color 0.3s ease;
+    }
+
+    &:not(.nav-scrolled) {
+        & .nav-link {
+            color: white;
+            &:hover, &:focus {
+                color: var(--color-primary-200);
+            }
+        }
+        & .nav-logo {
+            filter: brightness(0) invert(1);
+        }
+        & .nav-hamburger {
+            color: white;
+            &:hover {
+                color: var(--color-primary-200);
+            }
+        }
+    }
 }

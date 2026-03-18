@@ -3,7 +3,7 @@
 
     {{-- §1 Hero --}}
     <x-hero title="Independent education and migration advice. Since 1998."
-            subtitle="Most education consultancies cover one thing. We've covered all three — education, career, and migration — from a single Perth office for 28 years. Clients from 40+ countries trust us with decisions that don't have a do-over."
+            :subtitle="'Most education consultancies cover one thing. We\'ve covered all three — education, career, and migration — from a single Perth office for ' . (date('Y') - 1998) . ' years. Clients from 40+ countries trust us with decisions that don\'t have a do-over.'"
             :image="asset('images/heroes/about.webp')"
             alt="Blue Education professional team collaborating in a modern office"
             variant="left"
@@ -14,12 +14,12 @@
     <x-content-split title="Our Story" :image="asset('images/home/history-perth-office.webp')" alt="Blue Education's Perth office heritage">
         <p>In 1998, a small group of education and migration professionals in Perth identified a critical need: international students required independent, unbiased guidance — not generic advice driven by institutional partnerships.</p>
         <p>They founded Blue Education on a principle that still defines us: give honest advice — including when that means redirecting someone away from the wrong path.</p>
-        <p>28 years later, we've helped thousands of students from 40+ countries navigate Australia's education system, launch careers, and build permanent lives here. We've done it one student at a time — because that's the only way to do it properly.</p>
-        <p class="font-semibold text-gray-700">Still in Perth. Same principle since day one.</p>
+        <p>{{ date('Y') - 1998 }} years later, we've helped thousands of students from 40+ countries navigate Australia's education system, launch careers, and build permanent lives here. We've done it one student at a time — because that's the only way to do it properly.</p>
+        <p class="font-semibold text-base-700">Still in Perth. Same principle since day one.</p>
     </x-content-split>
 
     {{-- §3 Our Values --}}
-    <section class="bg-gray-50">
+    <section class="bg-base-50">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
             <x-section-heading title="Our Values" :centered="false" />
             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5" data-animate="stagger">
@@ -33,12 +33,12 @@
                     ];
                 @endphp
                 @foreach($values as $value)
-                    <div class="bg-white rounded-corner-lg p-6 border border-gray-200 text-center">
+                    <div class="bg-white rounded-corner-lg p-6 border border-base-200 text-center">
                         <div class="w-12 h-12 bg-primary-100 rounded-corner-lg flex items-center justify-center mx-auto mb-4 text-primary-800">
                             <x-dynamic-component :component="'heroicon-o-' . $value['icon']" class="w-6 h-6" />
                         </div>
-                        <h3 class="font-bold text-gray-900 mb-2 text-sm text-pretty">{{ $value['title'] }}</h3>
-                        <p class="text-gray-600 text-xs leading-relaxed text-pretty">{{ $value['desc'] }}</p>
+                        <h3 class="font-bold text-base-900 mb-2 text-sm text-pretty">{{ $value['title'] }}</h3>
+                        <p class="text-base-600 text-xs leading-relaxed text-pretty">{{ $value['desc'] }}</p>
                     </div>
                 @endforeach
             </div>
@@ -61,8 +61,8 @@
             {{-- Row 1: text left, image right --}}
             <div class="flex flex-col lg:flex-row items-center gap-12 mb-14">
                 <div class="flex-1">
-                    <h3 class="text-2xl font-bold text-gray-900 mb-4 text-pretty">Education + Career + Migration. One provider.</h3>
-                    <p class="text-gray-600 leading-relaxed text-pretty">Most agencies cover one domain. We cover all three — coordinated into a single, seamless plan. One team. No handoffs between providers.</p>
+                    <h3 class="text-2xl font-bold text-base-900 mb-4 text-pretty">Education + Career + Migration. One provider.</h3>
+                    <p class="text-base-600 leading-relaxed text-pretty">Most agencies cover one domain. We cover all three — coordinated into a single, seamless plan. One team. No handoffs between providers.</p>
                 </div>
                 <div class="flex-1 lg:max-w-[40%]">
                     <img src="{{ asset('images/about/education-consulting.webp') }}" alt="Education consultant reviewing options with an East Asian client" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
@@ -72,8 +72,8 @@
             {{-- Row 2: image left, text right --}}
             <div class="flex flex-col lg:flex-row-reverse items-center gap-12 mb-14">
                 <div class="flex-1">
-                    <h3 class="text-2xl font-bold text-gray-900 mb-4 text-pretty">Perth HQ. Representatives in 5 countries.</h3>
-                    <p class="text-gray-600 leading-relaxed text-pretty">Headquarters in Perth, Western Australia. Partners in every major Australian city. International representatives in Japan, Indonesia, New Zealand, Zambia, and Malaysia. Your language. Your timezone.</p>
+                    <h3 class="text-2xl font-bold text-base-900 mb-4 text-pretty">Perth HQ. Representatives in 5 countries.</h3>
+                    <p class="text-base-600 leading-relaxed text-pretty">Headquarters in Perth, Western Australia. Partners in every major Australian city. International representatives in Japan, Indonesia, New Zealand, Zambia, and Malaysia. Your language. Your timezone.</p>
                 </div>
                 <div class="flex-1 lg:max-w-[40%]">
                     <img src="{{ asset('images/about/perth-office.webp') }}" alt="Diverse professional team collaborating in a modern office environment" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
@@ -83,8 +83,8 @@
             {{-- Row 3: text left, image right --}}
             <div class="flex flex-col lg:flex-row items-center gap-12">
                 <div class="flex-1">
-                    <h3 class="text-2xl font-bold text-gray-900 mb-4 text-pretty">Support from enrolment to permanent residence.</h3>
-                    <p class="text-gray-600 leading-relaxed text-pretty">Our relationship doesn't end at enrollment. Study support. Career development. Migration pathways. 24/7 emergency hotline. We stay with you through every stage.</p>
+                    <h3 class="text-2xl font-bold text-base-900 mb-4 text-pretty">Support from enrolment to permanent residence.</h3>
+                    <p class="text-base-600 leading-relaxed text-pretty">Our relationship doesn't end at enrollment. Study support. Career development. Migration pathways. 24/7 emergency hotline. We stay with you through every stage.</p>
                 </div>
                 <div class="flex-1 lg:max-w-[40%]">
                     <img src="{{ asset('images/about/student-support.webp') }}" alt="Advisor guiding an East Asian student through study materials at a desk" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
@@ -94,9 +94,9 @@
     </section>
 
     {{-- §6 Professional Credentials --}}
-    <section class="bg-gray-50 border-y border-gray-200">
+    <section class="bg-base-50 border-y border-base-200">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-12">
-            <p class="text-sm font-bold text-gray-500 uppercase tracking-widest mb-8 text-center" data-animate="fade-up">Professional Credentials</p>
+            <h2 class="text-sm font-bold text-base-500 uppercase tracking-widest mb-8 text-center" data-animate="fade-up">Professional Credentials</h2>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-6" data-animate="stagger">
                 <x-credential-card name="QEAC Certified"
                                    logo="images/credentials/qeac.svg"

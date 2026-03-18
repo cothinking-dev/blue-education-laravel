@@ -5,33 +5,30 @@
 <form {{ $attributes->merge(['class' => 'space-y-5']) }}
       method="POST"
       action="{{ $action }}"
-      x-data="{ sending: false, sent: false, networkError: false }"
+      x-data="{
+          sending: false,
+          sent: false,
+          networkError: false,
+          errors: {},
+          formData: {
+              full_name: '', email: '', phone: '', country: '',
+              enquiry_type: '', preferred_language: '', message: '', website: '',
+          },
+      }"
       @submit.prevent="
           sending = true;
           networkError = false;
-          $el.querySelectorAll('.border-red-400').forEach(el => el.classList.remove('border-red-400'));
-          $el.querySelectorAll('.field-error').forEach(el => el.textContent = '');
+          errors = {};
           fetch($el.action, {
               method: 'POST',
-              headers: { 'X-CSRF-TOKEN': '{{ csrf_token() }}', 'Accept': 'application/json' },
-              body: new FormData($el),
+              headers: { 'X-CSRF-TOKEN': '{{ csrf_token() }}', 'Accept': 'application/json', 'Content-Type': 'application/json' },
+              body: JSON.stringify(formData),
           })
-          .then(r => r.json())
-          .then(data => {
-              if (data.errors) {
-                  Object.entries(data.errors).forEach(([field, msgs]) => {
-                      const el = $el.querySelector(`[name=${field}]`);
-                      if (el) {
-                          el.classList.add('border-red-400');
-                          const errEl = el.parentElement.querySelector('.field-error');
-                          if (errEl) errEl.textContent = msgs[0];
-                      }
-                  });
-                  sending = false;
-              } else {
-                  sent = true;
-                  sending = false;
-              }
+          .then(r => r.json().then(data => ({ ok: r.ok, data })))
+          .then(({ ok, data }) => {
+              if (!ok && data.errors) { errors = data.errors; }
+              else if (ok) { sent = true; }
+              sending = false;
           })
           .catch(() => { sending = false; networkError = true; })
       ">
@@ -50,45 +47,51 @@
         {{-- Honeypot --}}
         <div class="hidden" aria-hidden="true">
             <label for="website">Website</label>
-            <input type="text" name="website" id="website" tabindex="-1" autocomplete="off">
+            <input type="text" name="website" id="website" tabindex="-1" autocomplete="off" x-model="formData.website">
         </div>
 
         {{-- Name & Email --}}
         <div class="grid sm:grid-cols-2 gap-5 mb-5">
             <div>
-                <label for="full-name" class="block text-sm font-medium text-gray-700 mb-1">Full Name <span class="text-red-500">*</span></label>
+                <label for="full-name" class="block text-sm font-medium text-base-700 mb-1">Full Name <span class="text-red-500">*</span></label>
                 <input type="text" name="full_name" id="full-name" required placeholder="Jane Smith" autocomplete="name"
-                       class="w-full rounded-corner border border-gray-300 px-4 py-2.5 text-sm focus:border-primary-500 focus:ring-1 focus:ring-primary-500 outline-none transition-colors">
-                <p class="field-error text-xs text-red-500 mt-1"></p>
+                       x-model="formData.full_name"
+                       :class="{ 'border-red-400': errors.full_name }"
+                       class="w-full rounded-corner border border-base-300 px-4 py-2.5 text-sm focus:border-primary-500 focus:ring-1 focus:ring-primary-500 outline-none transition-colors">
+                <p x-show="errors.full_name" x-text="errors.full_name?.[0]" class="text-xs text-red-500 mt-1"></p>
             </div>
             <div>
-                <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email <span class="text-red-500">*</span></label>
+                <label for="email" class="block text-sm font-medium text-base-700 mb-1">Email <span class="text-red-500">*</span></label>
                 <input type="email" name="email" id="email" required placeholder="jane@example.com" autocomplete="email"
-                       class="w-full rounded-corner border border-gray-300 px-4 py-2.5 text-sm focus:border-primary-500 focus:ring-1 focus:ring-primary-500 outline-none transition-colors">
-                <p class="field-error text-xs text-red-500 mt-1"></p>
+                       x-model="formData.email"
+                       :class="{ 'border-red-400': errors.email }"
+                       class="w-full rounded-corner border border-base-300 px-4 py-2.5 text-sm focus:border-primary-500 focus:ring-1 focus:ring-primary-500 outline-none transition-colors">
+                <p x-show="errors.email" x-text="errors.email?.[0]" class="text-xs text-red-500 mt-1"></p>
             </div>
         </div>
 
         {{-- Phone & Country --}}
         <div class="grid sm:grid-cols-2 gap-5 mb-5">
             <div>
-                <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
+                <label for="phone" class="block text-sm font-medium text-base-700 mb-1">Phone Number</label>
                 <input type="tel" name="phone" id="phone" placeholder="+1 555 000 0000" autocomplete="tel"
-                       class="w-full rounded-corner border border-gray-300 px-4 py-2.5 text-sm focus:border-primary-500 focus:ring-1 focus:ring-primary-500 outline-none transition-colors">
+                       x-model="formData.phone"
+                       class="w-full rounded-corner border border-base-300 px-4 py-2.5 text-sm focus:border-primary-500 focus:ring-1 focus:ring-primary-500 outline-none transition-colors">
             </div>
             <div>
-                <label for="country" class="block text-sm font-medium text-gray-700 mb-1">Country of Residence</label>
+                <label for="country" class="block text-sm font-medium text-base-700 mb-1">Country of Residence</label>
                 <input type="text" name="country" id="country" placeholder="Japan" autocomplete="country-name"
-                       class="w-full rounded-corner border border-gray-300 px-4 py-2.5 text-sm focus:border-primary-500 focus:ring-1 focus:ring-primary-500 outline-none transition-colors">
+                       x-model="formData.country"
+                       class="w-full rounded-corner border border-base-300 px-4 py-2.5 text-sm focus:border-primary-500 focus:ring-1 focus:ring-primary-500 outline-none transition-colors">
             </div>
         </div>
 
         {{-- Enquiry Type & Language --}}
         <div class="grid sm:grid-cols-2 gap-5 mb-5">
             <div>
-                <label for="enquiry-type" class="block text-sm font-medium text-gray-700 mb-1">Enquiry Type</label>
-                <select name="enquiry_type" id="enquiry-type"
-                        class="w-full rounded-corner border border-gray-300 px-4 py-2.5 text-sm focus:border-primary-500 focus:ring-1 focus:ring-primary-500 outline-none transition-colors">
+                <label for="enquiry-type" class="block text-sm font-medium text-base-700 mb-1">Enquiry Type</label>
+                <select name="enquiry_type" id="enquiry-type" x-model="formData.enquiry_type"
+                        class="w-full rounded-corner border border-base-300 px-4 py-2.5 text-sm focus:border-primary-500 focus:ring-1 focus:ring-primary-500 outline-none transition-colors">
                     <option value="">Select…</option>
                     <option value="Education">Education</option>
                     <option value="Migration">Migration</option>
@@ -98,9 +101,9 @@
                 </select>
             </div>
             <div>
-                <label for="language" class="block text-sm font-medium text-gray-700 mb-1">Preferred Language</label>
-                <select name="preferred_language" id="language"
-                        class="w-full rounded-corner border border-gray-300 px-4 py-2.5 text-sm focus:border-primary-500 focus:ring-1 focus:ring-primary-500 outline-none transition-colors">
+                <label for="language" class="block text-sm font-medium text-base-700 mb-1">Preferred Language</label>
+                <select name="preferred_language" id="language" x-model="formData.preferred_language"
+                        class="w-full rounded-corner border border-base-300 px-4 py-2.5 text-sm focus:border-primary-500 focus:ring-1 focus:ring-primary-500 outline-none transition-colors">
                     <option value="">Select…</option>
                     <option value="English">English</option>
                     <option value="Cantonese">Cantonese</option>
@@ -117,9 +120,10 @@
 
         {{-- Message --}}
         <div class="mb-5">
-            <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+            <label for="message" class="block text-sm font-medium text-base-700 mb-1">Message</label>
             <textarea name="message" id="message" rows="5" placeholder="Tell us about your situation and what you're hoping to achieve…"
-                      class="w-full rounded-corner border border-gray-300 px-4 py-2.5 text-sm focus:border-primary-500 focus:ring-1 focus:ring-primary-500 outline-none transition-colors resize-y"></textarea>
+                      x-model="formData.message"
+                      class="w-full rounded-corner border border-base-300 px-4 py-2.5 text-sm focus:border-primary-500 focus:ring-1 focus:ring-primary-500 outline-none transition-colors resize-y"></textarea>
         </div>
 
         {{-- Submit --}}

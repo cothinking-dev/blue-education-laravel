@@ -8,6 +8,7 @@
     'badge' => null,
     'variant' => 'centered',
     'height' => '320px',
+    'position' => 'center',
 ])
 
 @php
@@ -21,7 +22,7 @@
 @endphp
 
 @if($variant === 'light')
-<section {{ $attributes->merge(['class' => 'relative']) }} style="min-height:{{ $height }}; background: linear-gradient(180deg, var(--color-primary-50) 0%, #ffffff 100%);">
+<section {{ $attributes->merge(['class' => 'relative']) }} style="min-height:{{ $height }}; background: linear-gradient(180deg, var(--color-primary-50) 0%, white 100%);">
     <div class="relative z-10 px-8 py-20 max-w-3xl mx-auto text-center">
         @if($breadcrumbs)
             <x-auto-breadcrumb class="mb-6 justify-center" />
@@ -29,9 +30,9 @@
         @if($badge)
             <span class="inline-block bg-primary-100 text-primary-800 text-xs font-semibold px-3 py-1 rounded-full mb-4 uppercase tracking-wider">{{ $badge }}</span>
         @endif
-        <h1 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-5 leading-tight text-pretty">{{ $title }}</h1>
+        <h1 class="text-4xl lg:text-5xl font-bold text-base-900 mb-5 leading-tight text-pretty">{{ $title }}</h1>
         @if($subtitle)
-            <p class="text-xl text-gray-600 mb-8 text-pretty">{{ $subtitle }}</p>
+            <p class="text-xl text-base-600 mb-8 text-pretty">{{ $subtitle }}</p>
         @endif
         {{ $slot }}
     </div>
@@ -46,9 +47,9 @@
             @if($badge)
                 <span class="inline-block bg-primary-50 text-primary-800 text-xs font-semibold px-3 py-1 rounded-full mb-4 uppercase tracking-wider">{{ $badge }}</span>
             @endif
-            <h1 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-5 leading-tight text-pretty">{{ $title }}</h1>
+            <h1 class="text-4xl lg:text-5xl font-bold text-base-900 mb-5 leading-tight text-pretty">{{ $title }}</h1>
             @if($subtitle)
-                <p class="text-xl text-gray-600 mb-8 text-pretty">{{ $subtitle }}</p>
+                <p class="text-xl text-base-600 mb-8 text-pretty">{{ $subtitle }}</p>
             @endif
             {{ $slot }}
         </div>
@@ -56,20 +57,23 @@
             @if($image)
                 <img src="{{ $image }}" alt="{{ $alt }}" class="rounded-corner-lg w-full h-auto">
             @else
-                <div class="bg-gray-200 rounded-corner-lg aspect-[4/3] w-full" style="background-image: repeating-linear-gradient(-55deg, transparent, transparent 8px, rgba(0,0,0,0.04) 8px, rgba(0,0,0,0.04) 9px);"></div>
+                <div class="bg-base-200 rounded-corner-lg aspect-[4/3] w-full" style="background-image: repeating-linear-gradient(-55deg, transparent, transparent 8px, var(--placeholder-stripe) 8px, var(--placeholder-stripe) 9px);"></div>
             @endif
         </div>
     </div>
 </section>
 @else
-<section {{ $attributes->merge(['class' => 'relative flex flex-col ' . $alignment]) }} style="min-height:{{ $height }}; background-color:#374151;">
+<section {{ $attributes->merge(['class' => 'relative flex flex-col ' . $alignment]) }} style="min-height:{{ $height }}; background-color: var(--color-base-700);">
     @if($image)
-        <img src="{{ $image }}" alt="{{ $alt }}" class="absolute inset-0 w-full h-full object-cover">
+        <img src="{{ $image }}" alt="{{ $alt }}" class="absolute inset-0 w-full h-full object-cover" style="object-position: {{ $position }};">
     @endif
     @if($overlay)
-        <div class="absolute inset-0" style="background:rgba(17,24,39,0.58);"></div>
+        {{-- Layer 1: Brand blue gradient with multiply blend --}}
+        <div class="absolute inset-0" style="background: linear-gradient(135deg, var(--hero-overlay-start), var(--hero-overlay-end)); mix-blend-mode: multiply;"></div>
+        {{-- Layer 2: Vignette — darkens edges, clear center --}}
+        <div class="absolute inset-0" style="background: radial-gradient(ellipse 80% 80% at 50% 50%, transparent 30%, var(--hero-vignette) 100%);"></div>
     @endif
-    <div class="relative z-10 px-8 {{ $variant === 'centered' ? 'max-w-3xl' : 'max-w-7xl w-full mx-auto lg:px-16' }}">
+    <div class="relative z-10 px-8 py-16 lg:py-20 {{ $variant === 'centered' ? 'max-w-3xl mx-auto' : 'max-w-7xl w-full mx-auto lg:px-16' }}">
         @if($breadcrumbs)
             <x-auto-breadcrumb class="mb-4" dark />
         @endif
@@ -78,7 +82,7 @@
         @endif
         <h1 class="text-4xl lg:text-5xl font-bold text-white mb-5 leading-tight text-pretty">{{ $title }}</h1>
         @if($subtitle)
-            <p class="text-xl text-gray-200 mb-8 text-pretty">{{ $subtitle }}</p>
+            <p class="text-xl text-base-200 mb-8 text-pretty">{{ $subtitle }}</p>
         @endif
         {{ $slot }}
     </div>

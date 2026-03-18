@@ -2,7 +2,7 @@
           description="Blue Education's institutional partnerships with Australian universities, TAFEs, and professional accreditation bodies.">
 
     {{-- §1 Hero --}}
-    <x-hero title="28 years of institutional partnerships. Industry accredited."
+    <x-hero :title="(date('Y') - 1998) . ' years of institutional partnerships. Industry accredited.'"
             subtitle="Direct relationships with Australian universities, TAFEs, and RTOs. Professional credentials that back it up."
             variant="light"
             :breadcrumbs="true" />
@@ -12,11 +12,11 @@
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
             <x-section-heading title="Institutional Partners" :centered="false" />
 
-            <h3 class="text-xl font-semibold text-gray-800 mb-4 mt-8">Universities</h3>
-            <p class="text-gray-600 mb-8 leading-relaxed text-pretty">Blue Education works with all five Western Australian universities and a broader network of partner institutions across Australia. Access to over 1,100 institutions and 20,000 programmes means your options aren't limited to what one agent happens to represent.</p>
+            <h3 class="text-xl font-semibold text-base-800 mb-4 mt-8">Universities</h3>
+            <p class="text-base-600 mb-8 leading-relaxed text-pretty">Blue Education works with all five Western Australian universities and a broader network of partner institutions across Australia. Access to over 1,100 institutions and 20,000 programmes means your options aren't limited to what one agent happens to represent.</p>
 
             <div class="mb-6">
-                <p class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-4">Western Australian Universities</p>
+                <p class="text-xs font-bold text-base-400 uppercase tracking-widest mb-4">Western Australian Universities</p>
                 <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
                     @php
                         $waUnis = [
@@ -24,28 +24,28 @@
                             ['src' => 'images/partners/curtin-logo.webp', 'name' => 'Curtin University'],
                             ['src' => 'images/partners/murdoch-logo.svg', 'name' => 'Murdoch University'],
                             ['src' => 'images/partners/ecu-logo.png', 'name' => 'Edith Cowan University'],
-                            ['src' => 'images/partners/notre-dame-logo.svg', 'name' => 'Notre Dame Australia'],
+                            ['src' => 'images/partners/notre-dame-logo.webp', 'name' => 'Notre Dame Australia'],
                         ];
                     @endphp
                     @foreach($waUnis as $uni)
-                        <div class="bg-gray-50 border border-gray-200 rounded-corner-lg p-6 flex flex-col items-center justify-center text-center" style="min-height:100px;">
+                        <div class="bg-base-50 border border-base-200 rounded-corner-lg p-6 flex flex-col items-center justify-center text-center" style="min-height:100px;">
                             @if($uni['src'])
                                 <img src="{{ asset($uni['src']) }}" alt="{{ $uni['name'] }}" class="h-12 w-auto object-contain" loading="lazy">
                             @else
-                                <span class="text-xs text-gray-400 font-medium">{{ $uni['name'] }}</span>
+                                <span class="text-xs text-base-400 font-medium">{{ $uni['name'] }}</span>
                             @endif
                         </div>
                     @endforeach
                 </div>
             </div>
 
-            <h3 class="text-xl font-semibold text-gray-800 mb-4 mt-10">TAFE & Training Providers</h3>
-            <p class="text-gray-600 mb-6 leading-relaxed text-pretty">Direct relationships with TAFE WA and registered training organisations across Western Australia and nationally. VET applications handled the same way as university placements — with the same advisor, start to finish.</p>
+            <h3 class="text-xl font-semibold text-base-800 mb-4 mt-10">TAFE & Training Providers</h3>
+            <p class="text-base-600 mb-6 leading-relaxed text-pretty">Direct relationships with TAFE WA and registered training organisations across Western Australia and nationally. VET applications handled the same way as university placements — with the same advisor, start to finish.</p>
             <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
-                <div class="bg-gray-50 border border-gray-200 rounded-corner-lg p-6 flex flex-col items-center justify-center text-center" style="min-height:90px;">
+                <div class="bg-base-50 border border-base-200 rounded-corner-lg p-6 flex flex-col items-center justify-center text-center" style="min-height:90px;">
                     <img src="{{ asset('images/partners/nmtafe-logo.svg') }}" alt="North Metropolitan TAFE" class="h-10 w-auto object-contain" loading="lazy">
                 </div>
-                <div class="bg-gray-50 border border-gray-200 rounded-corner-lg p-6 flex flex-col items-center justify-center text-center" style="min-height:90px;">
+                <div class="bg-base-50 border border-base-200 rounded-corner-lg p-6 flex flex-col items-center justify-center text-center" style="min-height:90px;">
                     <img src="{{ asset('images/partners/smtafe-logo.svg') }}" alt="South Metropolitan TAFE" class="h-10 w-auto object-contain" loading="lazy">
                 </div>
             </div>
@@ -63,7 +63,7 @@
     </section>
 
     {{-- §3 Professional Credentials --}}
-    <section class="bg-gray-50">
+    <section class="bg-base-50">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
             <x-section-heading title="Professional Credentials" :centered="false" />
             <div class="space-y-5">
@@ -76,13 +76,13 @@
                     ];
                 @endphp
                 @foreach($credentials as $cred)
-                    <div class="bg-white rounded-corner-lg border border-gray-200 p-7 flex items-start gap-8">
-                        <div class="bg-gray-50 border border-gray-200 rounded-corner-lg shrink-0 flex items-center justify-center w-[120px] h-[80px]">
+                    <div class="bg-white rounded-corner-lg border border-base-200 p-7 flex items-start gap-8">
+                        <div class="bg-base-50 border border-base-200 rounded-corner-lg shrink-0 flex items-center justify-center w-[120px] h-[80px]">
                             <img src="{{ asset($cred['logo']) }}" alt="{{ $cred['name'] }}" class="h-14 w-auto object-contain" loading="lazy">
                         </div>
                         <div>
-                            <h3 class="font-bold text-gray-900 text-xl mb-2 text-pretty">{{ $cred['name'] }}</h3>
-                            <p class="text-gray-600 leading-relaxed text-pretty">{{ $cred['desc'] }}</p>
+                            <h3 class="font-bold text-base-900 text-xl mb-2 text-pretty">{{ $cred['name'] }}</h3>
+                            <p class="text-base-600 leading-relaxed text-pretty">{{ $cred['desc'] }}</p>
                         </div>
                     </div>
                 @endforeach
@@ -112,7 +112,7 @@
                                       ['Malaysia', 'Elaine Ho, Monica Low', 'Southeast Asia'],
                                       ['Ghana', 'Nino Sekyere-Boakye', 'West Africa'],
                                   ]" />
-                    <p class="text-gray-500 text-sm mt-4">
+                    <p class="text-base-500 text-sm mt-4">
                         <a href="{{ route('about.team') }}" class="text-primary-800 hover:underline font-medium">Meet the full team &rarr;</a>
                     </p>
                 </div>

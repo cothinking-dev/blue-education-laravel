@@ -9,7 +9,7 @@
 ])
 
 <section {{ $attributes->merge(['class' => 'bg-primary-800']) }}>
-    <div class="max-w-4xl mx-auto px-8 py-16 text-center">
+    <div class="max-w-4xl mx-auto px-8 py-20 text-center">
         <h2 class="text-3xl lg:text-4xl font-bold text-white mb-4 text-pretty">{{ $title }}</h2>
         <p class="text-lg text-primary-200 mb-8 text-pretty">{{ $subtitle }}</p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">

@@ -28,13 +28,13 @@
                 <div class="lg:w-[35%] space-y-4">
                     <div class="border-2 border-purple-200 rounded-corner-lg p-5 flex flex-col items-center text-center">
                         <img src="{{ asset('images/credentials/scsa-logo.png') }}" alt="School Curriculum and Standards Authority — Government of Western Australia" class="h-16 w-auto object-contain mb-3">
-                        <p class="font-bold text-gray-900 mb-1">Official SCSA Associate</p>
-                        <p class="text-gray-600 text-sm text-pretty">Blue Education is an appointed SCSA Associate for international curriculum delivery.</p>
+                        <p class="font-bold text-base-900 mb-1">Official SCSA Associate</p>
+                        <p class="text-base-600 text-sm text-pretty">Blue Education is an appointed SCSA Associate for international curriculum delivery.</p>
                     </div>
-                    <div class="border border-gray-200 rounded-corner-lg p-5 flex flex-col items-center text-center">
+                    <div class="border border-base-200 rounded-corner-lg p-5 flex flex-col items-center text-center">
                         <img src="{{ asset('images/credentials/wa-dept-education-logo.svg') }}" alt="Western Australian Department of Education" class="h-14 w-auto object-contain mb-3">
-                        <p class="font-bold text-gray-900 mb-1">WA Department of Education</p>
-                        <p class="text-gray-600 text-sm text-pretty">Western Australian Department of Education</p>
+                        <p class="font-bold text-base-900 mb-1">WA Department of Education</p>
+                        <p class="text-base-600 text-sm text-pretty">Western Australian Department of Education</p>
                     </div>
                 </div>
             </div>
@@ -42,7 +42,7 @@
     </section>
 
     {{-- §3 For International Schools --}}
-    <section class="bg-gray-50">
+    <section class="bg-base-50">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
             <x-section-heading title="For International Schools" :centered="false" />
             <div class="space-y-6">
@@ -59,8 +59,8 @@
                     <div class="flex items-start gap-4">
                         <div class="w-8 h-8 rounded-full bg-primary-100 text-primary-800 flex items-center justify-center text-sm font-bold shrink-0 mt-0.5">{{ $i + 1 }}</div>
                         <div>
-                            <h3 class="font-bold text-gray-900 mb-1 text-pretty">{{ $step['title'] }}</h3>
-                            <p class="text-gray-600 text-sm leading-relaxed text-pretty">{{ $step['desc'] }}</p>
+                            <h3 class="font-bold text-base-900 mb-1 text-pretty">{{ $step['title'] }}</h3>
+                            <p class="text-base-600 text-sm leading-relaxed text-pretty">{{ $step['desc'] }}</p>
                         </div>
                     </div>
                 @endforeach
@@ -93,27 +93,27 @@
     </section>
 
     {{-- §5 For Students --}}
-    <section class="bg-gray-50">
+    <section class="bg-base-50">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
             <x-section-heading title="For Students" :centered="false" />
             <div class="grid sm:grid-cols-2 gap-6" data-animate="stagger">
-                <div class="border border-gray-200 rounded-corner-lg p-6 bg-white">
-                    <h3 class="font-bold text-gray-900 mb-2 text-pretty">Complete WACE Overseas</h3>
-                    <p class="text-gray-600 text-sm leading-relaxed text-pretty">Earn the Western Australian Certificate of Education from your home country — the same qualification Australian Year 12 students earn.</p>
+                <div class="border border-base-200 rounded-corner-lg p-6 bg-white">
+                    <h3 class="font-bold text-base-900 mb-2 text-pretty">Complete WACE Overseas</h3>
+                    <p class="text-base-600 text-sm leading-relaxed text-pretty">Earn the Western Australian Certificate of Education from your home country — the same qualification Australian Year 12 students earn.</p>
                 </div>
-                <div class="border border-gray-200 rounded-corner-lg p-6 bg-white">
-                    <h3 class="font-bold text-gray-900 mb-2 text-pretty">University-Ready</h3>
-                    <p class="text-gray-600 text-sm leading-relaxed text-pretty">WACE is accepted for direct entry to Western Australian universities. Students who complete the programme overseas are assessed on the same criteria as domestic Year 12 graduates.</p>
+                <div class="border border-base-200 rounded-corner-lg p-6 bg-white">
+                    <h3 class="font-bold text-base-900 mb-2 text-pretty">University-Ready</h3>
+                    <p class="text-base-600 text-sm leading-relaxed text-pretty">WACE is accepted for direct entry to Western Australian universities. Students who complete the programme overseas are assessed on the same criteria as domestic Year 12 graduates.</p>
                 </div>
-                <div class="border border-gray-200 rounded-corner-lg p-6 bg-white">
-                    <h3 class="font-bold text-gray-900 mb-2 text-pretty">Seamless Transition</h3>
-                    <p class="text-gray-600 text-sm leading-relaxed text-pretty">If you later choose to study in Australia, your WACE preparation means you're already aligned with Australian academic standards and teaching methods.</p>
+                <div class="border border-base-200 rounded-corner-lg p-6 bg-white">
+                    <h3 class="font-bold text-base-900 mb-2 text-pretty">Seamless Transition</h3>
+                    <p class="text-base-600 text-sm leading-relaxed text-pretty">If you later choose to study in Australia, your WACE preparation means you're already aligned with Australian academic standards and teaching methods.</p>
                 </div>
                 <div class="border-2 border-amber-200 rounded-corner-lg p-6 bg-amber-50/30">
                     <span class="inline-block bg-amber-100 text-amber-800 text-xs font-semibold px-2.5 py-0.5 rounded-full mb-3">Premier's Bursary</span>
-                    <h3 class="font-bold text-gray-900 mb-2 text-pretty">Premier's WACE Bursary</h3>
-                    <p class="text-gray-600 text-sm leading-relaxed mb-3 text-pretty">Students who complete the WACE programme overseas and enrol in a participating WA university may be eligible for the Premier's WACE Bursary — <strong>AUD $20,000</strong>, awarded to 50 applicants per year.</p>
-                    <p class="text-gray-500 text-xs text-pretty">Participating universities: UWA, Curtin, Murdoch, ECU, and Notre Dame.</p>
+                    <h3 class="font-bold text-base-900 mb-2 text-pretty">Premier's WACE Bursary</h3>
+                    <p class="text-base-600 text-sm leading-relaxed mb-3 text-pretty">Students who complete the WACE programme overseas and enrol in a participating WA university may be eligible for the Premier's WACE Bursary — <strong>AUD $20,000</strong>, awarded to 50 applicants per year.</p>
+                    <p class="text-base-500 text-xs text-pretty">Participating universities: UWA, Curtin, Murdoch, ECU, and Notre Dame.</p>
                 </div>
             </div>
         </div>
@@ -149,8 +149,9 @@
     </section>
 
     {{-- §7 Also Relevant --}}
-    <section class="bg-gray-50">
+    <section class="bg-base-50">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
+            <h2 class="text-lg font-bold text-base-900 mb-4">Explore More</h2>
             <div class="flex flex-col sm:flex-row gap-4">
                 <a href="{{ route('services.education.degrees') }}" class="text-primary-800 font-semibold hover:text-primary-600 transition-colors">University degrees in WA &rarr;</a>
                 <a href="{{ route('about.partners') }}" class="text-primary-800 font-semibold hover:text-primary-600 transition-colors">Our partner institutions &rarr;</a>

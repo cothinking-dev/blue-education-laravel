@@ -12,8 +12,8 @@
     {{-- §2 Career Pathway --}}
     <section class="bg-white">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
-            <h2 class="text-3xl font-bold text-gray-900 mb-4 text-pretty" data-animate="fade-up">The Career Pathway</h2>
-            <p class="text-gray-600 mb-10 text-pretty">Six structured stages — from assessing your starting point to advancing your career in Australia.</p>
+            <h2 class="text-3xl font-bold text-base-900 mb-4 text-pretty" data-animate="fade-up">The Career Pathway</h2>
+            <p class="text-base-600 mb-10 text-pretty">Six structured stages — from assessing your starting point to advancing your career in Australia.</p>
             <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6" data-animate="stagger">
                 @php
                     $steps = [
@@ -25,10 +25,10 @@
                     ];
                 @endphp
                 @foreach($steps as $step)
-                    <div class="border border-gray-200 rounded-corner-lg p-6 bg-white">
+                    <div class="border border-base-200 rounded-corner-lg p-6 bg-white">
                         <div class="w-8 h-8 rounded-full bg-primary-100 text-primary-800 flex items-center justify-center text-sm font-bold mb-4">{{ $step['num'] }}</div>
-                        <h3 class="font-bold text-gray-900 mb-2 text-pretty">{{ $step['title'] }}</h3>
-                        <p class="text-gray-600 text-sm leading-relaxed text-pretty">{{ $step['desc'] }}</p>
+                        <h3 class="font-bold text-base-900 mb-2 text-pretty">{{ $step['title'] }}</h3>
+                        <p class="text-base-600 text-sm leading-relaxed text-pretty">{{ $step['desc'] }}</p>
                     </div>
                 @endforeach
                 <div class="border border-primary-200 rounded-corner-lg p-6 bg-primary-800 text-white">
@@ -41,7 +41,7 @@
     </section>
 
     {{-- Visual break --}}
-    <section class="bg-gray-50">
+    <section class="bg-base-50">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
             <img src="{{ asset('images/services-career/career-workshop.webp') }}" alt="East Asian professionals in a career development workshop" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/1] max-h-[280px]" loading="lazy">
         </div>

@@ -1,5 +1,8 @@
 <?php
 
+use App\Mail\EnquiryReceived;
+use Illuminate\Support\Facades\Mail;
+
 /*
 |--------------------------------------------------------------------------
 | Contact Form Tests
@@ -84,4 +87,17 @@ it('rejects an invalid preferred language', function () {
         'preferred_language' => 'Klingon',
     ])->assertUnprocessable()
         ->assertJsonValidationErrors(['preferred_language']);
+});
+
+it('sends an email notification on valid enquiry', function () {
+    Mail::fake();
+
+    $this->postJson(route('contact.submit'), [
+        'full_name' => 'Jane Doe',
+        'email' => 'jane@example.com',
+    ])->assertSuccessful();
+
+    Mail::assertSent(EnquiryReceived::class, function ($mail) {
+        return $mail->hasTo(config('seo.organization.email'));
+    });
 });

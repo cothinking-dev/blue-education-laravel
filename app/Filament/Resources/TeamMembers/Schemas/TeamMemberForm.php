@@ -2,6 +2,7 @@
 
 namespace App\Filament\Resources\TeamMembers\Schemas;
 
+use Filament\Forms\Components\Select;
 use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Schema;
@@ -21,7 +22,12 @@ class TeamMemberForm
                     ->columnSpanFull(),
                 TextInput::make('credentials'),
                 TextInput::make('languages'),
-                TextInput::make('section')
+                Select::make('section')
+                    ->options([
+                        'Australia' => 'Australia',
+                        'International' => 'International',
+                        'Partner' => 'Partner',
+                    ])
                     ->required(),
                 TextInput::make('region'),
                 TextInput::make('sort_order')

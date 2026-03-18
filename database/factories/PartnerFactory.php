@@ -9,8 +9,6 @@ use Illuminate\Database\Eloquent\Factories\Factory;
  */
 class PartnerFactory extends Factory
 {
-    private static int $sortCounter = 0;
-
     /**
      * @var array<string, list<string>>
      */
@@ -64,7 +62,7 @@ class PartnerFactory extends Factory
             'logo' => null,
             'type' => $type,
             'url' => fake()->boolean(70) ? fake()->url() : null,
-            'sort_order' => self::$sortCounter++,
+            'sort_order' => fake()->unique()->numberBetween(0, 1000),
         ];
     }
 

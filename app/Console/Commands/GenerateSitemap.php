@@ -5,6 +5,7 @@ namespace App\Console\Commands;
 use App\Models\Post;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Cache;
+use Illuminate\Support\Facades\Route;
 use Spatie\Sitemap\Sitemap;
 use Spatie\Sitemap\Tags\Url;
 
@@ -16,51 +17,51 @@ class GenerateSitemap extends Command
 
     protected $description = 'Generate the sitemap XML and store it in cache';
 
+    /** @var array<string, array{priority: float, frequency: string}> */
+    private array $overrides = [
+        'home' => ['priority' => 1.0, 'frequency' => Url::CHANGE_FREQUENCY_WEEKLY],
+        'blog.index' => ['priority' => 0.9, 'frequency' => Url::CHANGE_FREQUENCY_DAILY],
+        'privacy' => ['priority' => 0.3, 'frequency' => Url::CHANGE_FREQUENCY_YEARLY],
+        'terms' => ['priority' => 0.3, 'frequency' => Url::CHANGE_FREQUENCY_YEARLY],
+        'about.team' => ['priority' => 0.6],
+        'about.partners' => ['priority' => 0.6],
+    ];
+
+    /** @var list<string> */
+    private array $excludedRoutes = ['sitemap', 'showcase'];
+
     public function handle(): int
     {
         $this->info('Generating sitemap...');
 
         $sitemap = Sitemap::create();
 
-        $staticPages = [
-            ['route' => 'home', 'priority' => 1.0, 'frequency' => Url::CHANGE_FREQUENCY_WEEKLY],
-            ['route' => 'services.education.index', 'priority' => 0.8, 'frequency' => Url::CHANGE_FREQUENCY_MONTHLY],
-            ['route' => 'services.education.school', 'priority' => 0.7, 'frequency' => Url::CHANGE_FREQUENCY_MONTHLY],
-            ['route' => 'services.education.english', 'priority' => 0.7, 'frequency' => Url::CHANGE_FREQUENCY_MONTHLY],
-            ['route' => 'services.education.vet-tafe', 'priority' => 0.7, 'frequency' => Url::CHANGE_FREQUENCY_MONTHLY],
-            ['route' => 'services.education.degrees', 'priority' => 0.7, 'frequency' => Url::CHANGE_FREQUENCY_MONTHLY],
-            ['route' => 'services.migration.index', 'priority' => 0.8, 'frequency' => Url::CHANGE_FREQUENCY_MONTHLY],
-            ['route' => 'services.migration.student-visas', 'priority' => 0.7, 'frequency' => Url::CHANGE_FREQUENCY_MONTHLY],
-            ['route' => 'services.migration.graduate-work', 'priority' => 0.7, 'frequency' => Url::CHANGE_FREQUENCY_MONTHLY],
-            ['route' => 'services.migration.permanent-residence', 'priority' => 0.7, 'frequency' => Url::CHANGE_FREQUENCY_MONTHLY],
-            ['route' => 'services.career', 'priority' => 0.7, 'frequency' => Url::CHANGE_FREQUENCY_MONTHLY],
-            ['route' => 'services.student-support', 'priority' => 0.7, 'frequency' => Url::CHANGE_FREQUENCY_MONTHLY],
-            ['route' => 'programs.index', 'priority' => 0.8, 'frequency' => Url::CHANGE_FREQUENCY_MONTHLY],
-            ['route' => 'programs.buddy-programme', 'priority' => 0.7, 'frequency' => Url::CHANGE_FREQUENCY_MONTHLY],
-            ['route' => 'programs.study-tours', 'priority' => 0.7, 'frequency' => Url::CHANGE_FREQUENCY_MONTHLY],
-            ['route' => 'programs.scsa-associate', 'priority' => 0.7, 'frequency' => Url::CHANGE_FREQUENCY_MONTHLY],
-            ['route' => 'programs.executive-internship', 'priority' => 0.7, 'frequency' => Url::CHANGE_FREQUENCY_MONTHLY],
-            ['route' => 'about.index', 'priority' => 0.8, 'frequency' => Url::CHANGE_FREQUENCY_MONTHLY],
-            ['route' => 'about.team', 'priority' => 0.6, 'frequency' => Url::CHANGE_FREQUENCY_MONTHLY],
-            ['route' => 'about.partners', 'priority' => 0.6, 'frequency' => Url::CHANGE_FREQUENCY_MONTHLY],
-            ['route' => 'why-australia', 'priority' => 0.8, 'frequency' => Url::CHANGE_FREQUENCY_MONTHLY],
-            ['route' => 'faq', 'priority' => 0.7, 'frequency' => Url::CHANGE_FREQUENCY_MONTHLY],
-            ['route' => 'admission-requirements', 'priority' => 0.7, 'frequency' => Url::CHANGE_FREQUENCY_MONTHLY],
-            ['route' => 'fees', 'priority' => 0.7, 'frequency' => Url::CHANGE_FREQUENCY_MONTHLY],
-            ['route' => 'blog.index', 'priority' => 0.9, 'frequency' => Url::CHANGE_FREQUENCY_DAILY],
-            ['route' => 'contact', 'priority' => 0.8, 'frequency' => Url::CHANGE_FREQUENCY_MONTHLY],
-            ['route' => 'privacy', 'priority' => 0.3, 'frequency' => Url::CHANGE_FREQUENCY_YEARLY],
-            ['route' => 'terms', 'priority' => 0.3, 'frequency' => Url::CHANGE_FREQUENCY_YEARLY],
-        ];
+        // Auto-discover static pages from registered routes
+        $routes = collect(Route::getRoutes()->getRoutes())
+            ->filter(function (\Illuminate\Routing\Route $route) {
+                return in_array('GET', $route->methods())
+                    && $route->getName()
+                    && ! str_contains($route->uri(), '{')
+                    && ! in_array($route->getName(), $this->excludedRoutes)
+                    && ! str_starts_with($route->getName(), 'filament.')
+                    && $route->getName() !== 'livewire.update';
+            });
 
-        foreach ($staticPages as $page) {
+        foreach ($routes as $route) {
+            $name = $route->getName();
+            $override = $this->overrides[$name] ?? [];
+
+            $priority = $override['priority'] ?? $this->defaultPriority($name);
+            $frequency = $override['frequency'] ?? Url::CHANGE_FREQUENCY_MONTHLY;
+
             $sitemap->add(
-                Url::create(route($page['route']))
-                    ->setPriority($page['priority'])
-                    ->setChangeFrequency($page['frequency'])
+                Url::create(route($name))
+                    ->setPriority($priority)
+                    ->setChangeFrequency($frequency)
             );
         }
 
+        // Add dynamic blog posts
         $posts = Post::query()->published()->get();
 
         foreach ($posts as $post) {
@@ -79,5 +80,18 @@ class GenerateSitemap extends Command
         $this->info('Sitemap generated and cached.');
 
         return Command::SUCCESS;
+    }
+
+    /**
+     * Determine default priority based on route name conventions.
+     */
+    private function defaultPriority(string $name): float
+    {
+        // Hub/index pages and top-level single-segment routes
+        if (str_ends_with($name, '.index') || ! str_contains($name, '.')) {
+            return 0.8;
+        }
+
+        return 0.7;
     }
 }

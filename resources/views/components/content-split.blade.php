@@ -12,8 +12,8 @@
                 @if(isset($before))
                     {{ $before }}
                 @endif
-                <h2 class="text-3xl font-bold text-gray-900 mb-6 text-pretty" data-animate="fade-up">{{ $title }}</h2>
-                <div class="text-gray-600 leading-relaxed space-y-4 text-pretty">
+                <h2 class="text-3xl font-bold text-base-900 mb-6 text-pretty" data-animate="fade-up">{{ $title }}</h2>
+                <div class="text-base-600 leading-relaxed space-y-4 text-pretty">
                     {{ $slot }}
                 </div>
             </div>
@@ -21,7 +21,7 @@
                 @if($image)
                     <img src="{{ $image }}" alt="{{ $alt }}" class="rounded-corner-lg w-full h-auto" loading="lazy">
                 @else
-                    <div class="bg-gray-200 rounded-corner-lg aspect-[4/3] w-full" style="background-image: repeating-linear-gradient(-55deg, transparent, transparent 8px, rgba(0,0,0,0.04) 8px, rgba(0,0,0,0.04) 9px);"></div>
+                    <div class="bg-base-200 rounded-corner-lg aspect-[4/3] w-full" style="background-image: repeating-linear-gradient(-55deg, transparent, transparent 8px, var(--placeholder-stripe) 8px, var(--placeholder-stripe) 9px);"></div>
                 @endif
             </div>
         </div>

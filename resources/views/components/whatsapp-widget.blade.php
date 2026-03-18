@@ -1,4 +1,4 @@
-<a href="https://wa.me/61411708899"
+<a href="https://wa.me/{{ config('seo.organization.whatsapp') }}"
    target="_blank"
    rel="noopener noreferrer"
    aria-label="Chat on WhatsApp"

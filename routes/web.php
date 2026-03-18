@@ -2,13 +2,17 @@
 
 use App\Console\Commands\GenerateSitemap;
 use App\Http\Requests\StoreEnquiryRequest;
+use App\Http\Requests\StoreSubscriberRequest;
+use App\Mail\EnquiryReceived;
 use App\Models\Category;
 use App\Models\Enquiry;
 use App\Models\Post;
+use App\Models\Subscriber;
 use App\Models\TeamMember;
 use App\Models\Testimonial;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Cache;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -26,6 +30,7 @@ Route::get('/', function () {
     return view('pages.home', [
         'latestPosts' => Post::query()->published()->with('category')->latest('published_at')->limit(3)->get(),
         'testimonials' => Testimonial::query()->active()->orderBy('sort_order')->get(),
+        'teamPhotos' => TeamMember::query()->pluck('photo'),
     ]);
 })->name('home')->defaults('label', 'Home');
 
@@ -168,10 +173,18 @@ Route::get('/contact', function () {
 })->name('contact')->defaults('label', 'Contact');
 
 Route::post('/contact', function (StoreEnquiryRequest $request) {
-    Enquiry::create($request->validated());
+    $enquiry = Enquiry::create($request->validated());
+
+    Mail::to(config('seo.organization.email'))->send(new EnquiryReceived($enquiry));
 
     return response()->json(['success' => true]);
 })->name('contact.submit');
+
+Route::post('/newsletter', function (StoreSubscriberRequest $request) {
+    Subscriber::updateOrCreate(['email' => $request->validated()['email']]);
+
+    return response()->json(['success' => true]);
+})->name('newsletter.subscribe');
 
 // Legal
 Route::get('/privacy', function () {
