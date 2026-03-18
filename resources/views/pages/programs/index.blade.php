@@ -12,12 +12,13 @@
     {{-- §2 Programs Grid --}}
     <section class="bg-white">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
+            <x-section-heading title="Our Programs" :centered="false" />
             <div class="grid sm:grid-cols-2 gap-6" data-animate="stagger">
                 <x-card title="Buddy Programme"
                         badge="14-Day Immersion"
                         description="High school students join Australian classrooms, live with vetted homestay families, and explore Western Australia through structured field trips — all within a supervised 14-day programme run in partnership with Anglican Schools."
                         :image="asset('images/programs-index/buddy-programme.webp')"
-                        alt="Diverse group of students studying together outdoors on campus"
+                        alt="East Asian teenager with laptop in a diverse high school classroom"
                         :href="route('programs.buddy-programme')"
                         linkText="Explore the Buddy Programme" />
 
@@ -25,7 +26,7 @@
                         badge="Flexible Duration"
                         description="Educational and cultural immersion programs. One week to several months. No long-term enrolment required. Custom tours for schools, universities, and organisations available on request."
                         :image="asset('images/programs-index/study-tours.webp')"
-                        alt="East Asian students exploring a city with a map while traveling"
+                        alt="Two Asian students with backpacks walking and laughing on a university campus"
                         :href="route('programs.study-tours')"
                         linkText="Explore Study Tours" />
 
@@ -33,25 +34,20 @@
                         badge="Official SCSA Partnership"
                         description="Blue Education is appointed by SCSA — the WA Government's curriculum authority — to help international schools implement the Western Australian curriculum, including the WACE programme, internationally."
                         :image="asset('images/programs-index/scsa-associate.webp')"
-                        alt="Diverse team of students collaborating on curriculum documents"
+                        alt="Group of East Asian students brainstorming together in a classroom"
                         :href="route('programs.scsa-associate')"
                         linkText="Explore SCSA Associate" />
 
-                <div class="border-2 border-primary-200 rounded-corner-lg p-6 bg-primary-50/30">
-                    <span class="inline-block bg-primary-100 text-primary-800 text-xs font-semibold px-2.5 py-0.5 rounded-full mb-3">Premium Program</span>
-                    <h3 class="text-lg font-bold text-base-900 mb-2 text-pretty">Executive Internship</h3>
-                    <p class="text-base-600 text-sm leading-relaxed mb-4 text-pretty">Strategic work experience for business graduates. The Executive Internship Programme (EIP) runs twice a year with limited places. A six-phase structured programme with real employer placements and executive mentorship.</p>
-                    <a href="{{ route('programs.executive-internship') }}" class="text-primary-800 font-semibold text-sm hover:text-primary-600 transition-colors">Explore Executive Internship &rarr;</a>
-                </div>
+                <x-card title="Executive Internship"
+                        badge="Premium Program"
+                        description="Strategic work experience for business graduates. The Executive Internship Programme (EIP) runs twice a year with limited places. A six-phase structured programme with real employer placements and executive mentorship."
+                        :image="asset('images/programs-index/executive-internship.webp')"
+                        alt="Asian professionals collaborating over documents in a modern office"
+                        :href="route('programs.executive-internship')"
+                        linkText="Explore Executive Internship" />
             </div>
         </div>
     </section>
-
-    {{-- Visual break --}}
-    <x-visual-break :images="[
-        ['src' => 'images/programs/program-activity.webp', 'alt' => 'East Asian students learning about nature during an outdoor field trip'],
-        ['src' => 'images/programs/student-event.webp', 'alt' => 'Diverse graduates celebrating with diplomas at graduation ceremony'],
-    ]" bg="bg-base-50" />
 
     {{-- §3 CTA --}}
     <x-cta-banner title="Not sure which program fits?"

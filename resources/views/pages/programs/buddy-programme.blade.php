@@ -120,16 +120,11 @@
     </section>
 
     {{-- §6 Also Relevant --}}
-    <section class="bg-white">
-        <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
-            <h2 class="text-lg font-bold text-base-900 mb-4">Explore More</h2>
-            <div class="flex flex-col sm:flex-row gap-4">
-                <a href="{{ route('services.student-support') }}" class="text-primary-800 font-semibold hover:text-primary-600 transition-colors">Student support services &rarr;</a>
-                <a href="{{ route('programs.study-tours') }}" class="text-primary-800 font-semibold hover:text-primary-600 transition-colors">Study tours &rarr;</a>
-                <a href="{{ route('services.education.english') }}" class="text-primary-800 font-semibold hover:text-primary-600 transition-colors">English programmes &rarr;</a>
-            </div>
-        </div>
-    </section>
+    <x-next-steps variant="links" bg="bg-white" :links="[
+        ['href' => route('services.student-support'), 'title' => 'Student support services'],
+        ['href' => route('programs.study-tours'), 'title' => 'Study tours'],
+        ['href' => route('services.education.english'), 'title' => 'English programmes'],
+    ]" />
 
     {{-- §7 CTA --}}
     <x-cta-banner title="Limited places each intake."

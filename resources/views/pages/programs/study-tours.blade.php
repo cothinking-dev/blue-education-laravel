@@ -80,15 +80,10 @@
     </section>
 
     {{-- §5 Also Relevant --}}
-    <section class="bg-white">
-        <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
-            <h2 class="text-lg font-bold text-base-900 mb-4">Explore More</h2>
-            <div class="flex flex-col sm:flex-row gap-4">
-                <a href="{{ route('programs.buddy-programme') }}" class="text-primary-800 font-semibold hover:text-primary-600 transition-colors">Buddy Programme &rarr;</a>
-                <a href="{{ route('contact') }}" class="text-primary-800 font-semibold hover:text-primary-600 transition-colors">Enquire about a custom tour &rarr;</a>
-            </div>
-        </div>
-    </section>
+    <x-next-steps variant="links" bg="bg-white" :links="[
+        ['href' => route('programs.buddy-programme'), 'title' => 'Buddy Programme'],
+        ['href' => route('contact'), 'title' => 'Enquire about a custom tour'],
+    ]" />
 
     {{-- §6 CTA --}}
     <x-cta-banner title="Get tour details."

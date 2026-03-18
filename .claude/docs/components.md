@@ -53,6 +53,22 @@ Props: `title`, `subtitle`, `centered` (default true).
 Dark primary background, centered. Used at bottom of every page.
 Props: `title`, `subtitle`, `primaryText`, `primaryHref`, `secondaryText`, `secondaryHref`, `phone`.
 
+### `<x-next-steps>` — Internal linking section
+Placed above the CTA banner on most pages. Three variants:
+- `variant="cards"` (default) — Icon cards in a 2- or 3-column grid. Each link supports `icon`, `title`, `description`, `href`.
+- `variant="links"` — Simple inline text links in a row. Each link needs `title`, `href`.
+- `variant="featured"` — Two directional panels (dark left, light right). Each link supports `label`, `title`, `description`, `href`.
+
+Props: `title` (default "Explore More"), `subtitle`, `variant`, `bg` (default "bg-base-50"), `links` (array).
+
+### `<x-visual-break>` — Image divider between sections
+Full-width image(s) in a section wrapper, or inline without wrapper.
+- 0 images: renders a subtle horizontal rule gradient
+- 1 image: single panoramic (default `aspect-[4/1]`)
+- 2+ images: grid layout (default `aspect-[3/2]`)
+
+Props: `images` (array of `['src' => '...', 'alt' => '...']`), `bg`, `aspect`, `position` (CSS object-position), `padding`, `inline`.
+
 ## Cards & Content Blocks
 
 ### `<x-card>` — Versatile card

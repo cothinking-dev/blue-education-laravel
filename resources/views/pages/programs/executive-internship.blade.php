@@ -166,16 +166,11 @@
     </section>
 
     {{-- §8 Also Relevant --}}
-    <section class="bg-white">
-        <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
-            <h2 class="text-lg font-bold text-base-900 mb-4">Explore More</h2>
-            <div class="flex flex-col sm:flex-row gap-4">
-                <a href="{{ route('services.career') }}" class="text-primary-800 font-semibold hover:text-primary-600 transition-colors">Career Services &rarr;</a>
-                <a href="{{ route('services.migration.graduate-work') }}" class="text-primary-800 font-semibold hover:text-primary-600 transition-colors">Graduate Work Visas &rarr;</a>
-                <a href="{{ route('about.partners') }}" class="text-primary-800 font-semibold hover:text-primary-600 transition-colors">Our Partners &rarr;</a>
-            </div>
-        </div>
-    </section>
+    <x-next-steps variant="links" bg="bg-white" :links="[
+        ['href' => route('services.career'), 'title' => 'Career Services'],
+        ['href' => route('services.migration.graduate-work'), 'title' => 'Graduate Work Visas'],
+        ['href' => route('about.partners'), 'title' => 'Our Partners'],
+    ]" />
 
     {{-- §9 CTA --}}
     <x-cta-banner title="Two intakes a year. Applications close early."

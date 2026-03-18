@@ -154,28 +154,10 @@
     </section>
 
     {{-- §5 What Comes Next? --}}
-    <section class="bg-base-50">
-        <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
-            <x-section-heading title="What Comes Next?" :centered="false" />
-            <p class="text-base-600 mb-8 text-pretty">Permanent residence changes what's possible. With status confirmed, the next steps are yours to choose.</p>
-            <div class="grid sm:grid-cols-2 gap-6" data-animate="stagger">
-                <a href="{{ route('services.career') }}" class="bg-white rounded-corner-lg border border-base-200 p-6 hover:border-primary-300 hover:shadow-md transition-all group flex flex-col">
-                    <div class="w-10 h-10 rounded-corner bg-primary-50 text-primary-800 flex items-center justify-center mb-4 group-hover:bg-primary-100 transition-colors">
-                        <x-heroicon-o-rocket-launch class="w-5 h-5" />
-                    </div>
-                    <h3 class="font-bold text-base-900 mb-2 group-hover:text-primary-800 transition-colors">Explore career support and employer connections &rarr;</h3>
-                    <p class="text-base-600 text-sm text-pretty">Job placement, executive internships, and professional development.</p>
-                </a>
-                <a href="{{ route('contact') }}" class="bg-white rounded-corner-lg border border-base-200 p-6 hover:border-primary-300 hover:shadow-md transition-all group flex flex-col">
-                    <div class="w-10 h-10 rounded-corner bg-primary-50 text-primary-800 flex items-center justify-center mb-4 group-hover:bg-primary-100 transition-colors">
-                        <x-heroicon-o-chat-bubble-left-right class="w-5 h-5" />
-                    </div>
-                    <h3 class="font-bold text-base-900 mb-2 group-hover:text-primary-800 transition-colors">Talk to a migration agent &rarr;</h3>
-                    <p class="text-base-600 text-sm text-pretty">Get an honest assessment of your PR pathway and timeline.</p>
-                </a>
-            </div>
-        </div>
-    </section>
+    <x-next-steps title="What Comes Next?" subtitle="Permanent residence changes what's possible. With status confirmed, the next steps are yours to choose." :links="[
+        ['href' => route('services.career'), 'icon' => 'heroicon-o-rocket-launch', 'title' => 'Explore career support and employer connections', 'description' => 'Job placement, executive internships, and professional development.'],
+        ['href' => route('contact'), 'icon' => 'heroicon-o-chat-bubble-left-right', 'title' => 'Talk to a migration agent', 'description' => 'Get an honest assessment of your PR pathway and timeline.'],
+    ]" />
 
     {{-- §6 CTA --}}
     <x-cta-banner title="Eligible for PR?"

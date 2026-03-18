@@ -125,27 +125,10 @@
     </section>
 
     {{-- §7 Explore More --}}
-    <section class="bg-white">
-        <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
-            <x-section-heading title="Explore More" :centered="false" />
-            <div class="grid sm:grid-cols-2 gap-6" data-animate="stagger">
-                <a href="{{ route('programs.buddy-programme') }}" class="bg-white rounded-corner-lg border border-base-200 p-6 hover:border-primary-300 hover:shadow-md transition-all group flex flex-col">
-                    <div class="w-10 h-10 rounded-corner bg-primary-50 text-primary-800 flex items-center justify-center mb-4 group-hover:bg-primary-100 transition-colors">
-                        <x-heroicon-o-users class="w-5 h-5" />
-                    </div>
-                    <h3 class="font-bold text-base-900 mb-2 group-hover:text-primary-800 transition-colors">Buddy Programme &rarr;</h3>
-                    <p class="text-base-600 text-sm text-pretty">Peer support, homestay, and cultural mentorship for new arrivals.</p>
-                </a>
-                <a href="{{ route('services.migration.student-visas') }}" class="bg-white rounded-corner-lg border border-base-200 p-6 hover:border-primary-300 hover:shadow-md transition-all group flex flex-col">
-                    <div class="w-10 h-10 rounded-corner bg-primary-50 text-primary-800 flex items-center justify-center mb-4 group-hover:bg-primary-100 transition-colors">
-                        <x-heroicon-o-document-check class="w-5 h-5" />
-                    </div>
-                    <h3 class="font-bold text-base-900 mb-2 group-hover:text-primary-800 transition-colors">Student visa support &rarr;</h3>
-                    <p class="text-base-600 text-sm text-pretty">Application management, compliance, and renewal assistance.</p>
-                </a>
-            </div>
-        </div>
-    </section>
+    <x-next-steps bg="bg-white" :links="[
+        ['href' => route('programs.buddy-programme'), 'icon' => 'heroicon-o-users', 'title' => 'Buddy Programme', 'description' => 'Peer support, homestay, and cultural mentorship for new arrivals.'],
+        ['href' => route('services.migration.student-visas'), 'icon' => 'heroicon-o-document-check', 'title' => 'Student visa support', 'description' => 'Application management, compliance, and renewal assistance.'],
+    ]" />
 
     {{-- §8 CTA --}}
     <x-cta-banner title="Get the full picture."

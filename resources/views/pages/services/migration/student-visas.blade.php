@@ -150,30 +150,11 @@
         </div>
     </section>
 
-    {{-- §5 What Comes Next? — directional CTA panels --}}
-    <section class="bg-base-50">
-        <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
-            <x-section-heading title="What Comes Next?" :centered="false" />
-            <div class="grid sm:grid-cols-2 gap-6" data-animate="stagger">
-                <a href="{{ route('services.migration.graduate-work') }}" class="group relative overflow-hidden rounded-corner-lg bg-primary-800 p-7 text-white hover:bg-primary-900 transition-colors">
-                    <div class="relative z-10">
-                        <p class="text-primary-200 text-xs font-semibold uppercase tracking-wider mb-2">After Graduation</p>
-                        <h3 class="text-lg font-bold mb-2">Post-study work visas</h3>
-                        <p class="text-primary-200 text-sm leading-relaxed text-pretty">Your options for staying in Australia on a work visa after you graduate.</p>
-                    </div>
-                    <x-heroicon-o-arrow-right class="absolute bottom-6 right-6 w-6 h-6 text-primary-300 group-hover:translate-x-1 transition-transform" />
-                </a>
-                <a href="{{ route('services.student-support') }}" class="group relative overflow-hidden rounded-corner-lg bg-primary-50 border border-primary-100 p-7 hover:bg-primary-100 transition-colors">
-                    <div class="relative z-10">
-                        <p class="text-primary-600 text-xs font-semibold uppercase tracking-wider mb-2">While You Study</p>
-                        <h3 class="text-lg font-bold text-base-900 mb-2">Support during your studies</h3>
-                        <p class="text-base-600 text-sm leading-relaxed text-pretty">Accommodation, welfare monitoring, and ongoing advisor support.</p>
-                    </div>
-                    <x-heroicon-o-arrow-right class="absolute bottom-6 right-6 w-6 h-6 text-primary-400 group-hover:translate-x-1 transition-transform" />
-                </a>
-            </div>
-        </div>
-    </section>
+    {{-- §5 What Comes Next? --}}
+    <x-next-steps title="What Comes Next?" variant="featured" :links="[
+        ['href' => route('services.migration.graduate-work'), 'label' => 'After Graduation', 'title' => 'Post-study work visas', 'description' => 'Your options for staying in Australia on a work visa after you graduate.'],
+        ['href' => route('services.student-support'), 'label' => 'While You Study', 'title' => 'Support during your studies', 'description' => 'Accommodation, welfare monitoring, and ongoing advisor support.'],
+    ]" />
 
     {{-- §6 CTA --}}
     <x-cta-banner title="Ready to apply?"

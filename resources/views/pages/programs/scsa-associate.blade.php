@@ -149,15 +149,10 @@
     </section>
 
     {{-- §7 Also Relevant --}}
-    <section class="bg-base-50">
-        <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
-            <h2 class="text-lg font-bold text-base-900 mb-4">Explore More</h2>
-            <div class="flex flex-col sm:flex-row gap-4">
-                <a href="{{ route('services.education.degrees') }}" class="text-primary-800 font-semibold hover:text-primary-600 transition-colors">University degrees in WA &rarr;</a>
-                <a href="{{ route('about.partners') }}" class="text-primary-800 font-semibold hover:text-primary-600 transition-colors">Our partner institutions &rarr;</a>
-            </div>
-        </div>
-    </section>
+    <x-next-steps variant="links" :links="[
+        ['href' => route('services.education.degrees'), 'title' => 'University degrees in WA'],
+        ['href' => route('about.partners'), 'title' => 'Our partner institutions'],
+    ]" />
 
     {{-- §8 CTA --}}
     <x-cta-banner title="Explore SCSA accreditation."
