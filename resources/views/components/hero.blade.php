@@ -73,16 +73,16 @@
         {{-- Layer 2: Vignette — darkens edges, clear center --}}
         <div class="absolute inset-0" style="background: radial-gradient(ellipse 80% 80% at 50% 50%, transparent 30%, var(--hero-vignette) 100%);"></div>
     @endif
-    <div class="relative z-10 px-8 py-16 lg:py-20 {{ $variant === 'centered' ? 'max-w-3xl mx-auto' : 'max-w-7xl w-full mx-auto lg:px-16' }}">
+    <div class="relative z-10 px-8 py-10 my-auto {{ $variant === 'centered' ? 'max-w-3xl mx-auto' : 'max-w-7xl w-full mx-auto lg:px-16' }}">
         @if($breadcrumbs)
-            <x-auto-breadcrumb class="mb-4" dark />
+            <x-auto-breadcrumb class="mb-10" dark />
         @endif
         @if($badge)
-            <span class="inline-block bg-white/20 text-white text-xs font-semibold px-3 py-1 rounded-full mb-4 uppercase tracking-wider backdrop-blur-sm">{{ $badge }}</span>
+            <span class="inline-block bg-white/20 text-white text-xs font-semibold px-3 py-1 rounded-full mb-5 uppercase tracking-wider backdrop-blur-sm">{{ $badge }}</span>
         @endif
-        <h1 class="text-4xl lg:text-5xl font-bold text-white mb-5 leading-tight text-pretty">{{ $title }}</h1>
+        <h1 class="text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight text-pretty max-w-4xl">{{ $title }}</h1>
         @if($subtitle)
-            <p class="text-xl text-base-200 mb-8 text-pretty">{{ $subtitle }}</p>
+            <p class="text-xl text-base-200 text-pretty max-w-3xl">{{ $subtitle }}</p>
         @endif
         {{ $slot }}
     </div>

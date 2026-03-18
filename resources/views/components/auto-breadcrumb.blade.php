@@ -27,7 +27,7 @@
 @endphp
 
 @if(count($crumbs) > 1)
-    <nav aria-label="Breadcrumb">
+    <nav {{ $attributes->merge() }} aria-label="Breadcrumb">
         <ol class="flex flex-wrap items-center gap-1.5 text-sm {{ $dark ? 'text-white/70' : 'text-base-500' }}">
             @foreach($crumbs as $crumb)
                 <li class="flex items-center gap-1.5">
