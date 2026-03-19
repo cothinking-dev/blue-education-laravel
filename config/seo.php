@@ -15,7 +15,7 @@ return [
     'defaults' => [
         'title' => env('APP_NAME', 'Blue Education'),
         'title_suffix' => ' — Blue Education',
-        'description' => 'Independent education, career, and migration advice from Perth, Western Australia. Since 1998.',
+        'description' => 'Independent education, career, and migration advice from Perth, Western Australia; Since 1998.',
         'author' => 'Blue Education Pty Ltd',
         'robots' => 'index, follow',
     ],
@@ -43,7 +43,7 @@ return [
 
     'twitter' => [
         'card' => 'summary_large_image',
-        'site' => null,
+        'site' => env('TWITTER_HANDLE', '@BlueEducationAU'),
     ],
 
     /*

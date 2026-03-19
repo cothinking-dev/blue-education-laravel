@@ -84,6 +84,38 @@
 @endphp
 <script type="application/ld+json">{!! json_encode($schema, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT) !!}</script>
 
+{{-- JSON-LD: BreadcrumbList --}}
+@php
+    $segments = explode('/', trim(request()->path(), '/'));
+    $breadcrumbItems = [['name' => 'Home', 'url' => url('/')]];
+
+    if ($segments !== ['']) {
+        $path = '';
+        foreach ($segments as $segment) {
+            $path .= '/' . $segment;
+            $matchedRoute = collect(app('router')->getRoutes()->getRoutes())
+                ->first(fn ($r) => '/' . trim($r->uri(), '/') === $path && in_array('GET', $r->methods()));
+            $label = $matchedRoute?->defaults['label']
+                ?? str($segment)->replace('-', ' ')->title()->toString();
+            $breadcrumbItems[] = ['name' => $label, 'url' => url($path)];
+        }
+    }
+
+    $breadcrumbSchema = [
+        '@context' => 'https://schema.org',
+        '@type' => 'BreadcrumbList',
+        'itemListElement' => collect($breadcrumbItems)->map(fn ($item, $i) => [
+            '@type' => 'ListItem',
+            'position' => $i + 1,
+            'name' => $item['name'],
+            'item' => $item['url'],
+        ])->all(),
+    ];
+@endphp
+@if(count($breadcrumbItems) > 1)
+<script type="application/ld+json">{!! json_encode($breadcrumbSchema, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT) !!}</script>
+@endif
+
 {{-- Optional additional JSON-LD --}}
 @if($jsonLd)
 <script type="application/ld+json">{!! json_encode($jsonLd, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT) !!}</script>

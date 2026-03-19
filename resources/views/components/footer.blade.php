@@ -8,9 +8,9 @@
             <div class="lg:col-span-1">
                 <picture class="block mb-4">
                     <source srcset="{{ asset('brand/logo-sm.webp') }}" type="image/webp">
-                    <img src="{{ asset('brand/logo-sm.png') }}" alt="Blue Education" class="h-8 w-auto brightness-0 invert">
+                    <img src="{{ asset('brand/logo-sm.png') }}" alt="Blue Education" class="h-8 w-auto brightness-0 invert" loading="lazy">
                 </picture>
-                <p class="text-base-400 text-sm leading-relaxed mb-4">Independent education, career, and migration advice from Perth, Western Australia. Since 1998.</p>
+                <p class="text-base-400 text-sm leading-relaxed mb-4">Independent education, career, and migration advice from Perth, Western Australia; Since 1998.</p>
             </div>
 
             {{-- Services --}}

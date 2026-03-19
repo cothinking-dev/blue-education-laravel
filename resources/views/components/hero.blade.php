@@ -55,7 +55,7 @@
         </div>
         <div class="flex-1">
             @if($image)
-                <img src="{{ $image }}" alt="{{ $alt }}" class="rounded-corner-lg w-full h-auto">
+                <img src="{{ $image }}" alt="{{ $alt }}" class="rounded-corner-lg w-full h-auto" loading="lazy">
             @else
                 <div class="bg-base-200 rounded-corner-lg aspect-[4/3] w-full" style="background-image: repeating-linear-gradient(-55deg, transparent, transparent 8px, var(--placeholder-stripe) 8px, var(--placeholder-stripe) 9px);"></div>
             @endif
