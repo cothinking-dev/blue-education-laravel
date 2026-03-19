@@ -209,6 +209,9 @@ Route::get('/robots.txt', function () {
         ->header('Content-Type', 'text/plain');
 });
 
+// Dynamic OG Image
+Route::get('/og-image', App\Http\Controllers\OgImageController::class)->name('og-image');
+
 // Showcase (dev only)
 Route::get('/showcase', function () {
     return view('showcase');

@@ -22,7 +22,7 @@
     $pageDescription = $description ?? $defaults['description'];
     $pageRobots = $robots ?? $defaults['robots'];
     $pageOgType = $ogType ?? $og['type'];
-    $pageOgImage = $ogImage ?? $og['image'];
+    $pageOgImage = $ogImage ?? route('og-image', ['title' => $title ?? $defaults['title']]);
     $pageCanonical = $canonical ?? url()->current();
 @endphp
 
@@ -40,10 +40,8 @@
 <meta property="og:site_name" content="{{ $og['site_name'] }}">
 <meta property="og:locale" content="{{ $og['locale'] }}">
 <meta property="og:image" content="{{ url($pageOgImage) }}">
-@unless($ogImage)
 <meta property="og:image:width" content="{{ $og['image_width'] }}">
 <meta property="og:image:height" content="{{ $og['image_height'] }}">
-@endunless
 @if($articlePublishedTime)
 <meta property="article:published_time" content="{{ $articlePublishedTime }}">
 @endif
