@@ -85,6 +85,8 @@ After user approves an image:
 
 ## Freepik API Reference
 
+**Account tier: Premium** — access to the full Freepik library including premium-only stock, higher-resolution downloads, and expanded AI generation credits.
+
 ### Authentication
 
 All requests require:
@@ -119,6 +121,7 @@ GET https://api.freepik.com/v1/resources
 | `filters[people][age]` | string | `young-adult`, `adult`, `teen`, etc. |
 | `filters[people][include]` | 0/1 | Must include people |
 | `filters[ai-generated][excluded]` | 0/1 | Exclude AI-generated stock |
+| `filters[license][premium]` | 0/1 | Premium-only content (higher quality, exclusive) |
 
 Example curl:
 
@@ -161,7 +164,7 @@ GET https://api.freepik.com/v1/resources/{id}/download
 
 | Param | Type | Description |
 |-------|------|-------------|
-| `image_size` | string | `small` (1000px), `medium` (1500px), `large` (2000px), `original` |
+| `image_size` | string | `small` (1000px), `medium` (1500px), `large` (2000px), `original` — premium allows `original` size downloads |
 
 Response:
 
@@ -291,15 +294,19 @@ Always produce both WebP and a fallback format. Aim for under 200KB for hero Web
 
 ## Quota & Cost Awareness
 
+**Premium tier** — significantly more downloads and generation credits available.
+
 | Operation | Cost |
 |-----------|------|
 | Stock search | Free |
-| Stock download | 1 download credit |
-| AI generation | Generation credits (more expensive) |
+| Stock download (free assets) | Free with attribution |
+| Stock download (premium assets) | Included in premium subscription |
+| AI generation | Included in premium subscription (higher monthly quota) |
 
+- Premium unlocks the full library — no need to filter out premium-only results
+- Prefer `original` size downloads for best quality (premium allows this)
+- AI generation quota is generous but not unlimited — still prefer stock when a good match exists
 - Batch searches before generation to minimise API calls
-- Prefer stock downloads over generation whenever possible
-- Check credit balance before bulk operations
 
 ---
 

@@ -117,12 +117,8 @@ Route::prefix('about')->name('about.')->group(function () {
         return view('pages.about.index');
     })->name('index')->defaults('label', 'About');
 
-    Route::get('/team', function () {
-        return view('pages.about.team', [
-            'australianTeam' => TeamMember::query()->section('Australia')->orderBy('sort_order')->get(),
-            'internationalTeam' => TeamMember::query()->section('International')->orderBy('sort_order')->get(),
-        ]);
-    })->name('team')->defaults('label', 'Our Team');
+    Route::get('/team', [App\Http\Controllers\AboutController::class, 'team'])
+        ->name('team')->defaults('label', 'Our Team');
 
     Route::get('/partners', function () {
         return view('pages.about.partners');
