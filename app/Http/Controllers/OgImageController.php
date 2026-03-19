@@ -110,39 +110,18 @@ class OgImageController extends Controller
     }
 
     /**
-     * Draw topographic contour texture matching the CTA banner pattern.
-     * Uses arcs and circles at very low opacity for a subtle effect.
+     * Draw a dot grid texture overlay at 10% opacity.
      */
     private function drawTopoTexture(ImageInterface $image): void
     {
-        $tileSize = 200;
-        $color = 'rgba(255, 255, 255, 0.015)';
+        $spacing = 30;
+        $color = 'rgba(255, 255, 255, 0.10)';
 
-        for ($tx = 0; $tx < self::WIDTH; $tx += $tileSize) {
-            for ($ty = 0; $ty < self::HEIGHT; $ty += $tileSize) {
-                $cx = $tx + 100;
-                $cy = $ty + 100;
-
-                // Concentric circles (matching CTA pattern)
-                $image->drawCircle($cx, $cy, function (CircleFactory $circle) use ($color) {
-                    $circle->radius(60);
-                    $circle->border($color, 1);
-                });
-
-                $image->drawCircle($cx, $cy, function (CircleFactory $circle) use ($color) {
-                    $circle->radius(30);
-                    $circle->border($color, 1);
-                });
-
-                // Quarter-arc approximations using small circles at tile corners
-                $image->drawCircle($tx, $ty, function (CircleFactory $circle) use ($color) {
-                    $circle->radius(100);
-                    $circle->border($color, 1);
-                });
-
-                $image->drawCircle($tx + $tileSize, $ty, function (CircleFactory $circle) use ($color) {
-                    $circle->radius(100);
-                    $circle->border($color, 1);
+        for ($x = $spacing; $x < self::WIDTH; $x += $spacing) {
+            for ($y = $spacing; $y < self::HEIGHT; $y += $spacing) {
+                $image->drawCircle($x, $y, function (CircleFactory $circle) use ($color) {
+                    $circle->radius(2);
+                    $circle->background($color);
                 });
             }
         }
