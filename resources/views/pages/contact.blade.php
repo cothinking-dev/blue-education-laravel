@@ -39,14 +39,31 @@
           :json-ld="$localBusinessSchema">
 
     {{-- §1 Hero --}}
-    <x-hero title="Contact Blue Education"
-            subtitle="We respond to all enquiries within one business day."
-            variant="light"
-            :breadcrumbs="true" />
+    <x-hero title="Let's Talk About Your Future"
+            subtitle="Whether you need education, migration, or career guidance — we respond to all enquiries within one business day."
+            :image="asset('images/contact/consultation-room.webp')"
+            alt="Professional consultation at Blue Education office"
+            variant="left"
+            height="440px"
+            :breadcrumbs="true">
+        <div class="flex flex-wrap gap-4 mt-8">
+            <x-btn href="#enquiry-form" variant="white" size="lg">Send an Enquiry</x-btn>
+            <x-btn href="tel:+61863810030" variant="outline-white" size="lg">Call +61 8 6381 0030</x-btn>
+        </div>
+    </x-hero>
 
-    {{-- §2 Contact Methods --}}
+    {{-- §2 Trust Stats --}}
+    <x-stat-block variant="primary" :stats="[
+        ['value' => date('Y') - 1998, 'label' => 'Years Experience'],
+        ['value' => '40+', 'label' => 'Countries Served'],
+        ['value' => '1', 'label' => 'Business Day Response'],
+        ['value' => '6', 'label' => 'Languages Spoken'],
+    ]" />
+
+    {{-- §3 Contact Methods --}}
     <section class="bg-white">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
+            <x-section-heading title="Get in Touch" subtitle="Choose your preferred way to reach us." :centered="false" />
             <div class="grid md:grid-cols-3 gap-6" data-animate="stagger">
                 <x-contact-card title="Phone">
                     <x-slot:icon>
@@ -76,7 +93,7 @@
                     <p class="text-base-400 text-xs mt-1">We respond within one business day.</p>
                 </x-contact-card>
 
-                <x-contact-card title="Office">
+                <x-contact-card title="Visit Our Office">
                     <x-slot:icon>
                         <x-heroicon-o-map-pin class="w-6 h-6" />
                     </x-slot:icon>
@@ -84,71 +101,58 @@
                         33 Barrack St, GF Unit 2<br>
                         Perth, Western Australia 6000
                     </address>
+                    <p class="text-base-400 text-xs mt-1">Mon–Fri, 9:00 AM – 5:00 PM</p>
                 </x-contact-card>
             </div>
         </div>
     </section>
 
-    {{-- §3 Contact Form --}}
+    {{-- §4 Contact Form + Map --}}
     <section class="bg-base-50">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
-            <h2 id="enquiry-form" class="text-3xl font-bold text-base-900 mb-10 text-pretty" data-animate="fade-up">Send an Enquiry</h2>
+            <x-section-heading title="Send an Enquiry" id="enquiry-form" :centered="false" />
             <div class="flex flex-col lg:flex-row gap-10">
                 {{-- Form — 60% --}}
                 <div class="lg:w-3/5">
                     <x-contact-form />
                 </div>
 
-                {{-- Right sidebar — 40%: map + office photo --}}
+                {{-- Right sidebar — 40%: map + office info --}}
                 <div class="lg:w-2/5 space-y-5">
                     <div class="rounded-corner-lg overflow-hidden" style="height:260px;">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3385.3!2d115.8596!3d-31.9535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2a32bad5c78bae8d%3A0x5e3b0e1c76e5e9a8!2s33%20Barrack%20St%2C%20Perth%20WA%206000!5e0!3m2!1sen!2sau!4v1709000000000"
                                 width="100%" height="100%" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"
                                 title="Blue Education office location"></iframe>
                     </div>
-                    <div class="bg-white border border-base-200 rounded-corner-lg p-4 text-sm text-base-600">
-                        <p class="font-semibold text-base-800 mb-1">Blue Education</p>
+                    <div class="bg-white border border-base-200 rounded-corner-lg p-5 text-sm text-base-600">
+                        <p class="font-semibold text-base-800 mb-2">Blue Education</p>
                         <address class="not-italic leading-relaxed">33 Barrack St, GF Unit 2<br>Perth WA 6000</address>
-                        <p class="mt-2"><a href="tel:+61863810030" class="text-primary-800 hover:underline">+61 8 6381 0030</a></p>
+                        <div class="mt-3 pt-3 border-t border-base-100 space-y-1">
+                            <p><a href="tel:+61863810030" class="text-primary-800 hover:underline">+61 8 6381 0030</a></p>
+                            <p><a href="mailto:info@blueeducation.com.au" class="text-primary-800 hover:underline">info@blueeducation.com.au</a></p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    {{-- Visual context --}}
+    {{-- §5 Visual Context — Office Photos --}}
     <section class="bg-white">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
-            <div class="grid sm:grid-cols-3 gap-6">
+            <x-section-heading title="Our Perth Office" subtitle="Centrally located in Perth CBD, a short walk from Perth Station." :centered="false" />
+            <div class="grid sm:grid-cols-3 gap-6" data-animate="stagger">
                 <img src="{{ asset('images/contact/office-reception.webp') }}" alt="Blue Education office reception area" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
                 <img src="{{ asset('images/contact/consultation-room.webp') }}" alt="Professional consultation room" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
-                <img src="{{ asset('images/contact/perth-cbd.webp') }}" alt="Perth CBD street view" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
+                <img src="{{ asset('images/contact/perth-cbd.webp') }}" alt="Perth CBD street view near the office" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
             </div>
         </div>
     </section>
 
-    {{-- §4 Book a Consultation --}}
-    <section class="bg-white">
-        <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
-            <div class="rounded-corner-lg border-2 border-primary-100 bg-primary-50 p-8 lg:p-12 max-w-3xl mx-auto text-center">
-                <h2 class="text-3xl font-bold text-base-900 mb-4 text-pretty" data-animate="fade-up">Book a Consultation</h2>
-                <ul class="text-base-600 mb-8 space-y-2 text-left inline-block">
-                    <li class="flex items-start gap-2"><span class="text-primary-600 font-bold mt-0.5">✓</span> Education, migration, or career guidance</li>
-                    <li class="flex items-start gap-2"><span class="text-primary-600 font-bold mt-0.5">✓</span> English, Bahasa, Cantonese, Japanese, and more</li>
-                    <li class="flex items-start gap-2"><span class="text-primary-600 font-bold mt-0.5">✓</span> In-person (Perth), phone, or video</li>
-                </ul>
-                <div>
-                    <x-btn href="{{ route('contact') }}#enquiry-form" variant="primary" size="lg">Book a Consultation</x-btn>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    {{-- §5 International Representatives --}}
+    {{-- §6 International Representatives --}}
     <section class="bg-base-50">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
-            <h2 class="text-3xl font-bold text-base-900 mb-4 text-pretty" data-animate="fade-up">International Representatives</h2>
-            <p class="text-base-600 mb-8">For local support in your region, contact our international team or email <a href="mailto:info@blueeducation.com.au" class="text-primary-800 hover:underline">info@blueeducation.com.au</a>.</p>
+            <x-section-heading title="International Representatives" subtitle="For local support in your region, contact our international team." :centered="false" />
             <x-data-table :headers="['Region', 'Representative']"
                           :rows="[
                               ['Japan', 'Minami Sakamoto'],
@@ -157,7 +161,16 @@
                               ['Indonesia', 'Hana'],
                               ['Malaysia', 'Elaine Ho & Monica Low'],
                           ]" />
+            <p class="text-base-500 text-sm mt-4">Or email <a href="mailto:info@blueeducation.com.au" class="text-primary-800 hover:underline">info@blueeducation.com.au</a> for general enquiries.</p>
         </div>
     </section>
+
+    {{-- §7 CTA --}}
+    <x-cta-banner title="Ready to Get Started?"
+                  subtitle="Book a free consultation — in person, by phone, or video. We speak English, Bahasa, Cantonese, Japanese, and more."
+                  primary-text="Book a Consultation"
+                  :primary-href="route('contact') . '#enquiry-form'"
+                  secondary-text="Call Us Now"
+                  secondary-href="tel:+61863810030" />
 
 </x-layout>
