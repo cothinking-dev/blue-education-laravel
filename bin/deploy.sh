@@ -14,6 +14,9 @@ echo "==> Building frontend assets..."
 npm ci --production=false
 npm run build
 
+echo "==> Clearing old caches..."
+php artisan optimize:clear
+
 echo "==> Caching configuration, routes, views, and events..."
 php artisan optimize
 php artisan view:cache
