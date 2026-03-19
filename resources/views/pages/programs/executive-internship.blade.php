@@ -5,7 +5,7 @@
     <x-hero title="Strategic work experience for business graduates."
             subtitle="The Executive Internship Programme (EIP) runs twice a year. Places are limited. Open to undergraduate and postgraduate students in business or commerce."
             :image="asset('images/heroes/programs-executive-internship.webp')"
-            alt="East Asian professional being mentored at a laptop in an office"
+            alt="Woman mentoring an East Asian businessman at a laptop in a modern office"
             badge="Premium Program · Two Intakes Per Year"
             variant="left"
             :breadcrumbs="true" />
@@ -42,12 +42,12 @@
             <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6" data-animate="stagger">
                 @php
                     $phases = [
-                        ['title' => 'Assessment', 'desc' => 'Initial review of your background, strengths, and readiness for Australian employment. You complete an Initial Placement Questionnaire and an online readiness module before the programme begins.'],
-                        ['title' => 'Readiness', 'desc' => 'CV preparation, LinkedIn presence, presentation guidance, and context on Australian workplace culture — what employers expect and how to meet those expectations.'],
-                        ['title' => 'Profiling', 'desc' => 'We research target organisations, develop approach templates, and match your profile with employers suited to your background and goals.'],
-                        ['title' => 'Preparation', 'desc' => 'We build a shortlist of target employers with you, prioritise them by fit, and prepare you for interviews and workplace expectations before any approach is made.'],
-                        ['title' => 'Placement', 'desc' => 'Blue Education facilitates introductions, assists with interview preparation, and coordinates your internship placement once an employer confirms.'],
-                        ['title' => 'Review', 'desc' => 'Structured performance review at the end of placement. Feedback from your employer, a final debrief with the programme team, and documented outcomes for your records.'],
+                        ['title' => 'Assessment', 'desc' => 'Background review, Initial Placement Questionnaire, and an online readiness module — completed before the programme begins.'],
+                        ['title' => 'Readiness', 'desc' => 'CV preparation, LinkedIn presence, presentation guidance, and context on Australian workplace culture.'],
+                        ['title' => 'Profiling', 'desc' => 'We research target organisations and match your profile with employers suited to your background and goals.'],
+                        ['title' => 'Preparation', 'desc' => 'Shortlisted employers, prioritised by fit. Interview coaching and workplace expectations briefing before any approach is made.'],
+                        ['title' => 'Placement', 'desc' => 'Blue Education facilitates introductions, assists with interview preparation, and coordinates your placement once an employer confirms.'],
+                        ['title' => 'Review', 'desc' => 'Structured performance review with employer feedback, a programme debrief, and documented outcomes for your records.'],
                     ];
                 @endphp
                 @foreach($phases as $i => $phase)
@@ -61,41 +61,28 @@
         </div>
     </section>
 
-    {{-- Visual break --}}
-    <section class="bg-white">
-        <div class="max-w-7xl mx-auto px-8 lg:px-16 pt-14">
-            <div class="grid sm:grid-cols-2 gap-6">
-                <img src="{{ asset('images/programs-executive-internship/professional-mentoring.webp') }}" alt="East Asian professional in a mentoring session at an office" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
-                <img src="{{ asset('images/programs-executive-internship/office-work.webp') }}" alt="East Asian business professionals collaborating in a modern office" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
-            </div>
-        </div>
-    </section>
-
     {{-- §4 What You Gain --}}
     <section class="bg-white">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
             <x-section-heading title="What You Gain" :centered="false" />
             <div class="grid sm:grid-cols-3 gap-6" data-animate="stagger">
                 <x-card title="Documented Australian Experience"
-                        description="Placement with a real employer — agreed objectives, a dedicated supervisor, and a formal performance review. The kind of experience that makes your application stand out in the Australian job market.">
-                    <x-slot:icon>
-                        <x-heroicon-o-briefcase class="w-5 h-5" />
-                    </x-slot:icon>
-                </x-card>
+                        description="Placement with a real employer — agreed objectives, a dedicated supervisor, and a formal performance review that strengthens your Australian job applications."
+                        :image="asset('images/programs-executive-internship/australian-experience.webp')"
+                        alt="East Asian business professionals collaborating at a laptop in a modern office" />
 
                 <x-card title="Professional Development"
-                        description="Soft skills training, CV and LinkedIn preparation, and interview coaching before you step into the placement. Delivered through our programme partners.">
-                    <x-slot:icon>
-                        <x-heroicon-o-star class="w-5 h-5" />
-                    </x-slot:icon>
-                </x-card>
+                        description="Soft skills training, CV and LinkedIn preparation, and interview coaching before you step into the placement. Delivered through our programme partners."
+                        :image="asset('images/programs-executive-internship/professional-development.webp')"
+                        alt="East Asian woman presenting a project to colleagues in a modern office" />
 
                 <x-card title="AQF Alignment"
-                        description="An understanding of how your qualification maps to Australian employer expectations within the Australian Qualifications Framework — and what it means for your post-study visa options.">
-                    <x-slot:icon>
-                        <x-heroicon-o-document-text class="w-5 h-5" />
-                    </x-slot:icon>
-                </x-card>
+                        description="Understand how your qualification maps to Australian employer expectations within the AQF — and what it means for your post-study visa options."
+                        :image="asset('images/programs-executive-internship/aqf-alignment.webp')"
+                        alt="East Asian businesswoman reviewing qualification documents in a city setting" />
+            </div>
+            <div class="mt-10 text-center">
+                <x-btn :href="route('contact')" variant="primary" size="lg">Apply for the Next Intake</x-btn>
             </div>
         </div>
     </section>
@@ -125,6 +112,11 @@
         </div>
     </section>
 
+    {{-- Visual break --}}
+    <x-visual-break :images="[
+        ['src' => 'images/programs-executive-internship/perth-skyline.webp', 'alt' => 'Perth downtown city skyline and commercial buildings, Western Australia'],
+    ]" aspect="aspect-[4/1]" position="center" />
+
     {{-- §6 For Host Employers --}}
     <section class="bg-white">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
@@ -134,18 +126,18 @@
                     <h3 class="font-bold text-base-900 mb-3">What's Involved</h3>
                     <p class="text-base-600 text-sm leading-relaxed mb-4 text-pretty">Hosting an EIP intern means providing a supervisor, agreed learning objectives, and a genuine working environment. Blue Education handles the matching, objectives framework, and performance review structure. There is no obligation to hire after placement.</p>
                     <ul class="space-y-2 text-sm text-base-600">
-                        <li class="flex items-start gap-2"><span class="text-base-400 font-bold mt-0.5">&#8226;</span> Commitment: 16 hours per week for up to 8 weeks</li>
-                        <li class="flex items-start gap-2"><span class="text-base-400 font-bold mt-0.5">&#8226;</span> Dedicated mentor or supervisor</li>
-                        <li class="flex items-start gap-2"><span class="text-base-400 font-bold mt-0.5">&#8226;</span> Orientation and agreed task expectations</li>
+                        <li class="flex items-start gap-2"><span class="text-base-400 font-bold mt-0.5" aria-hidden="true">&#8226;</span> Commitment: 16 hours per week for up to 8 weeks</li>
+                        <li class="flex items-start gap-2"><span class="text-base-400 font-bold mt-0.5" aria-hidden="true">&#8226;</span> Dedicated mentor or supervisor</li>
+                        <li class="flex items-start gap-2"><span class="text-base-400 font-bold mt-0.5" aria-hidden="true">&#8226;</span> Orientation and agreed task expectations</li>
                     </ul>
                 </div>
                 <div>
-                    <h3 class="font-bold text-base-900 mb-3">What You Gain</h3>
+                    <h3 class="font-bold text-base-900 mb-3">Benefits for Your Business</h3>
                     <ul class="space-y-2 text-sm text-base-600">
-                        <li class="flex items-start gap-2"><span class="text-primary-600 font-bold mt-0.5">&#10003;</span> Access to motivated, pre-assessed business graduates</li>
-                        <li class="flex items-start gap-2"><span class="text-primary-600 font-bold mt-0.5">&#10003;</span> An early look at talent before any hiring decision is made</li>
-                        <li class="flex items-start gap-2"><span class="text-primary-600 font-bold mt-0.5">&#10003;</span> Fresh perspectives and skills from candidates with international education backgrounds</li>
-                        <li class="flex items-start gap-2"><span class="text-primary-600 font-bold mt-0.5">&#10003;</span> No recruitment cost or hiring obligation</li>
+                        <li class="flex items-start gap-2"><span class="text-primary-600 font-bold mt-0.5" aria-hidden="true">&#10003;</span> Access to motivated, pre-assessed business graduates</li>
+                        <li class="flex items-start gap-2"><span class="text-primary-600 font-bold mt-0.5" aria-hidden="true">&#10003;</span> An early look at talent before any hiring decision is made</li>
+                        <li class="flex items-start gap-2"><span class="text-primary-600 font-bold mt-0.5" aria-hidden="true">&#10003;</span> Fresh perspectives and skills from candidates with international education backgrounds</li>
+                        <li class="flex items-start gap-2"><span class="text-primary-600 font-bold mt-0.5" aria-hidden="true">&#10003;</span> No recruitment cost or hiring obligation</li>
                     </ul>
                     <a href="{{ route('contact') }}" class="text-primary-800 font-medium text-sm hover:underline mt-4 inline-block">Interested in hosting an intern? Contact our team &rarr;</a>
                 </div>
@@ -166,10 +158,9 @@
     </section>
 
     {{-- §8 Also Relevant --}}
-    <x-next-steps variant="links" bg="bg-white" :links="[
-        ['href' => route('services.career'), 'title' => 'Career Services'],
-        ['href' => route('services.migration.graduate-work'), 'title' => 'Graduate Work Visas'],
-        ['href' => route('about.partners'), 'title' => 'Our Partners'],
+    <x-next-steps variant="featured" bg="bg-white" :links="[
+        ['href' => route('services.career'), 'title' => 'Career Services', 'label' => 'Related Service', 'description' => 'CV preparation, interview coaching, and job search support for international graduates in Australia.'],
+        ['href' => route('services.migration.graduate-work'), 'title' => 'Graduate Work Visas', 'label' => 'Post-Study Pathways', 'description' => 'Understand your visa options after completing your studies — including the Temporary Graduate visa (subclass 485).'],
     ]" />
 
     {{-- §9 CTA --}}
