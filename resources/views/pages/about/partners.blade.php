@@ -117,7 +117,7 @@
                                       ['Zambia', 'Elijah Chongo, Priscilla Mwansa', 'Southern Africa'],
                                       ['Indonesia', 'Hana Hursepuny', 'Southeast Asia'],
                                       ['Malaysia', 'Elaine Ho, Monica Low', 'Southeast Asia'],
-                                      ['Ghana', 'Nino Sekyere-Boakye', 'West Africa'],
+                                      ['Ghana', 'Nino Sekyere-Boakye', 'West Africa, Africa-wide'],
                                   ]" />
                     <p class="text-base-500 text-sm mt-4">
                         <a href="{{ route('about.team') }}" class="text-primary-800 hover:underline font-medium">Meet the full team &rarr;</a>

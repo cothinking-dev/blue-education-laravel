@@ -2,7 +2,7 @@
           description="Independent education, career, and migration advice from Perth, Western Australia since 1998. Trusted by clients from 40+ countries.">
 
     {{-- §1 Hero --}}
-    <x-hero title="Independent education and migration advice. Since 1998."
+    <x-hero title="Independent education and migration advice; Since 1998."
             :subtitle="'Most education consultancies cover one thing. We\'ve covered all three — education, career, and migration — from a single Perth office for ' . (date('Y') - 1998) . ' years. Clients from 40+ countries trust us with decisions that don\'t have a do-over.'"
             :image="asset('images/heroes/about.webp')"
             alt="Blue Education professional team collaborating in a modern office"
@@ -11,11 +11,11 @@
             :breadcrumbs="true" />
 
     {{-- §2 Our Story --}}
-    <x-content-split title="Our Story" :image="asset('images/home/history-perth-office.webp')" alt="Blue Education's Perth office heritage">
-        <p>In 1998, a small group of education and migration professionals in Perth identified a critical need: international students required independent, unbiased guidance — not generic advice driven by institutional partnerships.</p>
-        <p>They founded Blue Education on a principle that still defines us: give honest advice — including when that means redirecting someone away from the wrong path.</p>
-        <p>{{ date('Y') - 1998 }} years later, we've helped thousands of students from 40+ countries navigate Australia's education system, launch careers, and build permanent lives here. We've done it one student at a time — because that's the only way to do it properly.</p>
-        <p class="font-semibold text-base-700">Still in Perth. Same principle since day one.</p>
+    <x-content-split title="Our Story" :image="asset('images/why-australia/perth-skyline.webp')" alt="Perth city skyline across the Swan River">
+        <p>In 1998, a small group of education and migration professionals in Perth identified a critical need: international students required independent, unbiased guidance, not generic advice driven by institutional partnerships.</p>
+        <p>They founded Blue Education on a principle that still defines us: give honest advice including when that means redirecting someone away from the wrong path.</p>
+        <p>{{ date('Y') - 1998 }} years later, we've helped thousands of students from 40+ countries navigate Australia's education system, launch careers, and build permanent lives here. We've done it one student at a time because that's the only way to do it properly.</p>
+        <p class="font-semibold text-base-700">Still in Perth; Same principle since day one.</p>
     </x-content-split>
 
     {{-- §3 Our Values --}}
@@ -26,10 +26,10 @@
                 @php
                     $values = [
                         ['title' => 'Client-Centric', 'desc' => "Your goals drive every recommendation. We listen, assess, and advise based on what's right for you.", 'icon' => 'identification'],
-                        ['title' => 'Honest', 'desc' => "We tell you what you need to hear. If a pathway won't work, we say so — and find one that will.", 'icon' => 'check-circle'],
-                        ['title' => 'Quality-Driven', 'desc' => "Every interaction — from first consultation to visa approval — meets a standard we'd set for our own family.", 'icon' => 'star'],
-                        ['title' => 'Professionally Qualified', 'desc' => 'QEAC certified. Migration Alliance. MIA affiliated. Australian Bar Association. Qualified, accredited, current.', 'icon' => 'shield-check'],
-                        ['title' => 'Personalised', 'desc' => 'Your situation is unique. Your circumstances, goals, and timeline are yours alone — and your advice should match.', 'icon' => 'identification'],
+                        ['title' => 'Honesty', 'desc' => "We tell you what you need to hear. If a pathway won't work, we say so — and find one that will.", 'icon' => 'check-circle'],
+                        ['title' => 'Quality-Driven', 'desc' => "Every interaction, from first consultation to visa approval, meets a standard we'd set for our own family.", 'icon' => 'star'],
+                        ['title' => 'Professionally Qualified', 'desc' => 'QEAC certified. Migration Alliance. MIA affiliated. Australian Bar Association.', 'icon' => 'shield-check'],
+                        ['title' => 'Personalised', 'desc' => 'Your situation is unique. Our advice should match your circumstances, goals, and timeline.', 'icon' => 'finger-print'],
                     ];
                 @endphp
                 @foreach($values as $value)
@@ -61,33 +61,42 @@
             {{-- Row 1: text left, image right --}}
             <div class="flex flex-col lg:flex-row items-center gap-12 mb-14">
                 <div class="flex-1">
-                    <h3 class="text-2xl font-bold text-base-900 mb-4 text-pretty">Education + Career + Migration. One provider.</h3>
-                    <p class="text-base-600 leading-relaxed text-pretty">Most agencies cover one domain. We cover all three — coordinated into a single, seamless plan. One team. No handoffs between providers.</p>
+                    <div class="flex items-center gap-4 mb-4">
+                        <span class="flex-shrink-0 w-10 h-10 rounded-full bg-primary-100 text-primary-800 font-bold text-lg flex items-center justify-center">1</span>
+                        <h3 class="text-2xl font-bold text-base-900 text-pretty">Education + Career + Migration. One provider.</h3>
+                    </div>
+                    <p class="text-base-600 leading-relaxed text-pretty lg:pl-14">Most agencies cover one domain. We cover all three — coordinated into a single, seamless plan. One team. No handoffs between providers.</p>
                 </div>
                 <div class="flex-1 lg:max-w-[40%]">
-                    <img src="{{ asset('images/about/education-consulting.webp') }}" alt="Education consultant reviewing options with an East Asian client" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2] shadow-lg" loading="lazy">
+                    <img src="{{ asset('images/about/education-consulting.webp') }}" alt="East Asian students meeting with education advisor to discuss course options" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2] shadow-lg" loading="lazy">
                 </div>
             </div>
 
             {{-- Row 2: image left, text right --}}
             <div class="flex flex-col lg:flex-row-reverse items-center gap-12 mb-14">
                 <div class="flex-1">
-                    <h3 class="text-2xl font-bold text-base-900 mb-4 text-pretty">Perth HQ. Representatives in 5 countries.</h3>
-                    <p class="text-base-600 leading-relaxed text-pretty">Headquarters in Perth, Western Australia. Partners in every major Australian city. International representatives in Japan, Indonesia, New Zealand, Zambia, and Malaysia. Your language. Your timezone.</p>
+                    <div class="flex items-center gap-4 mb-4">
+                        <span class="flex-shrink-0 w-10 h-10 rounded-full bg-primary-100 text-primary-800 font-bold text-lg flex items-center justify-center">2</span>
+                        <h3 class="text-2xl font-bold text-base-900 text-pretty">Perth HQ. Representatives in 5 countries.</h3>
+                    </div>
+                    <p class="text-base-600 leading-relaxed text-pretty lg:pl-14">Headquarters in Perth, Western Australia. Partners in every major Australian city. International representatives in Japan, Indonesia, New Zealand, Zambia, and Malaysia. Your language. Your timezone.</p>
                 </div>
                 <div class="flex-1 lg:max-w-[40%]">
-                    <img src="{{ asset('images/about/perth-office.webp') }}" alt="Diverse professional team collaborating in a modern office environment" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2] shadow-lg" loading="lazy">
+                    <img src="{{ asset('images/about/global-team.webp') }}" alt="Diverse international professional team in a modern office" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2] shadow-lg" loading="lazy">
                 </div>
             </div>
 
             {{-- Row 3: text left, image right --}}
             <div class="flex flex-col lg:flex-row items-center gap-12">
                 <div class="flex-1">
-                    <h3 class="text-2xl font-bold text-base-900 mb-4 text-pretty">Support from enrolment to permanent residence.</h3>
-                    <p class="text-base-600 leading-relaxed text-pretty">Our relationship doesn't end at enrollment. Study support. Career development. Migration pathways. 24/7 emergency hotline. We stay with you through every stage.</p>
+                    <div class="flex items-center gap-4 mb-4">
+                        <span class="flex-shrink-0 w-10 h-10 rounded-full bg-primary-100 text-primary-800 font-bold text-lg flex items-center justify-center">3</span>
+                        <h3 class="text-2xl font-bold text-base-900 text-pretty">Support from enrolment to permanent residence.</h3>
+                    </div>
+                    <p class="text-base-600 leading-relaxed text-pretty lg:pl-14">Our relationship doesn't end at enrollment. Study support. Career development. Migration pathways. 24/7 emergency hotline. We stay with you through every stage.</p>
                 </div>
                 <div class="flex-1 lg:max-w-[40%]">
-                    <img src="{{ asset('images/about/student-support.webp') }}" alt="Advisor guiding an East Asian student through study materials at a desk" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2] shadow-lg" loading="lazy">
+                    <img src="{{ asset('images/about/student-graduation.webp') }}" alt="East Asian graduate celebrating with family at graduation ceremony" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2] shadow-lg" loading="lazy">
                 </div>
             </div>
         </div>
