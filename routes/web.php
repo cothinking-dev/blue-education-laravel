@@ -205,8 +205,47 @@ Route::get('/sitemap.xml', function () {
 
 // Robots
 Route::get('/robots.txt', function () {
-    return response("User-agent: *\nDisallow:\n\nSitemap: ".url('/sitemap.xml'))
-        ->header('Content-Type', 'text/plain');
+    $sitemapUrl = url('/sitemap.xml');
+
+    $robots = <<<ROBOTS
+    # Welcome all crawlers and AI agents
+    User-agent: *
+    Disallow:
+    Allow: /
+
+    # AI Crawlers — explicitly welcomed
+    User-agent: GPTBot
+    Allow: /
+
+    User-agent: Google-Extended
+    Allow: /
+
+    User-agent: ChatGPT-User
+    Allow: /
+
+    User-agent: Claude-Web
+    Allow: /
+
+    User-agent: Bytespider
+    Allow: /
+
+    User-agent: CCBot
+    Allow: /
+
+    User-agent: anthropic-ai
+    Allow: /
+
+    User-agent: Perplexity-User
+    Allow: /
+
+    User-agent: cohere-ai
+    Allow: /
+
+    # Sitemap
+    Sitemap: {$sitemapUrl}
+    ROBOTS;
+
+    return response($robots, 200, ['Content-Type' => 'text/plain']);
 });
 
 // Dynamic OG Image

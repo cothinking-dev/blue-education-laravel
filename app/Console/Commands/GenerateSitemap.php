@@ -28,7 +28,7 @@ class GenerateSitemap extends Command
     ];
 
     /** @var list<string> */
-    private array $excludedRoutes = ['sitemap', 'showcase'];
+    private array $excludedRoutes = ['sitemap', 'showcase', 'og-image'];
 
     public function handle(): int
     {

@@ -103,7 +103,7 @@ class OgImageController extends Controller
             for ($y = 20; $y < self::HEIGHT; $y += $dotSpacing) {
                 $image->drawCircle($x, $y, function ($circle) {
                     $circle->radius(1);
-                    $circle->background('rgba(255, 255, 255, 0.06)');
+                    $circle->background('rgba(255, 255, 255, 0.03)');
                 });
             }
         }
@@ -113,7 +113,7 @@ class OgImageController extends Controller
             $image->drawLine(function (LineFactory $line) use ($i) {
                 $line->from($i, 0);
                 $line->to($i + self::HEIGHT, self::HEIGHT);
-                $line->color('rgba(255, 255, 255, 0.03)');
+                $line->color('rgba(255, 255, 255, 0.015)');
                 $line->width(1);
             });
         }
