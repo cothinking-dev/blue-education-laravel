@@ -11,6 +11,7 @@
         'secondary' => 'bg-white text-primary-800 border border-primary-800 hover:bg-primary-50 focus:ring-primary-300',
         'outline' => 'bg-transparent text-base-700 border border-base-300 hover:border-base-400 hover:text-base-900 focus:ring-base-300',
         'ghost' => 'bg-transparent text-primary-800 hover:bg-primary-50 focus:ring-primary-300',
+        'outline-white' => 'bg-transparent text-white border border-white hover:bg-white hover:text-primary-900 focus:ring-white/40',
         'white' => 'bg-white text-primary-800 hover:bg-primary-50 focus:ring-white/40',
         'success' => 'bg-success-500 text-white hover:bg-success-600 focus:ring-success-500/40',
     ];

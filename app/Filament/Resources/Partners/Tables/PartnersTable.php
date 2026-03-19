@@ -6,6 +6,7 @@ use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\EditAction;
 use Filament\Tables\Columns\TextColumn;
+use Filament\Tables\Filters\SelectFilter;
 use Filament\Tables\Table;
 
 class PartnersTable
@@ -34,8 +35,13 @@ class PartnersTable
                     ->sortable()
                     ->toggleable(isToggledHiddenByDefault: true),
             ])
+            ->defaultSort('sort_order')
             ->filters([
-                //
+                SelectFilter::make('type')
+                    ->options([
+                        'university' => 'University',
+                        'tafe' => 'TAFE',
+                    ]),
             ])
             ->recordActions([
                 EditAction::make(),

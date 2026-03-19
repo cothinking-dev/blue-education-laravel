@@ -41,8 +41,8 @@ it('filters team members by section', function () {
     TeamMember::factory()->australian()->count(2)->create();
     TeamMember::factory()->international()->count(3)->create();
 
-    expect(TeamMember::section('australian')->count())->toBe(2);
-    expect(TeamMember::section('international')->count())->toBe(3);
+    expect(TeamMember::section('Australia')->count())->toBe(2);
+    expect(TeamMember::section('International')->count())->toBe(3);
 });
 
 it('relates posts to a category', function () {

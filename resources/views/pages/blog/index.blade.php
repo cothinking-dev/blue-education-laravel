@@ -5,7 +5,7 @@
     <x-hero title="Blog — Resources for International Students"
             subtitle="Education, migration, careers, and life in Australia."
             :image="asset('images/heroes/blog.webp')"
-            alt="East Asian student studying with laptop in a university library"
+            alt="East Asian student smiling on a sunny university campus lawn"
             variant="left"
             :breadcrumbs="true" />
 
@@ -18,7 +18,7 @@
                                  :image="$featuredPost->featured_image"
                                  :category="$featuredPost->category?->name"
                                  :categoryBadgeClass="$featuredPost->category?->badgeClass()"
-                                 :date="$featuredPost->published_at?->format('d M Y')"
+                                 :date="$featuredPost->published_at?->format('M j, Y')"
                                  :readTime="$featuredPost->read_time"
                                  :href="route('blog.show', $featuredPost)" />
             </div>
@@ -26,15 +26,15 @@
     @endif
 
     {{-- §3 Category Filter + Posts Grid --}}
-    <section class="bg-base-50" x-data="{ filter: 'all' }">
+    <section class="bg-base-50">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
 
             {{-- Category Filter --}}
             @if($categories->isNotEmpty())
                 <div class="flex flex-wrap gap-2 mb-10">
-                    <button @click="filter = 'all'" :class="filter === 'all' ? 'bg-primary-800 text-white' : 'bg-white text-base-700 hover:bg-base-100'" class="px-4 py-2 rounded-full text-sm font-medium transition-colors border border-base-200">All</button>
+                    <a href="{{ route('blog.index') }}" class="px-4 py-2 rounded-full text-sm font-medium transition-colors border border-base-200 {{ !$activeCategory ? 'bg-primary-800 text-white' : 'bg-white text-base-700 hover:bg-base-100' }}">All</a>
                     @foreach($categories as $category)
-                        <button @click="filter = '{{ $category->slug }}'" :class="filter === '{{ $category->slug }}' ? 'bg-primary-800 text-white' : 'bg-white text-base-700 hover:bg-base-100'" class="px-4 py-2 rounded-full text-sm font-medium transition-colors border border-base-200">{{ $category->name }}</button>
+                        <a href="{{ route('blog.index', ['category' => $category->slug]) }}" class="px-4 py-2 rounded-full text-sm font-medium transition-colors border border-base-200 {{ $activeCategory === $category->slug ? 'bg-primary-800 text-white' : 'bg-white text-base-700 hover:bg-base-100' }}">{{ $category->name }}</a>
                     @endforeach
                 </div>
             @endif
@@ -43,13 +43,13 @@
             @if($posts->isNotEmpty())
                 <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6" data-animate="stagger">
                     @foreach($posts as $post)
-                        <div x-show="filter === 'all' || filter === '{{ $post->category?->slug }}'" x-transition>
+                        <div>
                             <x-blog-card :title="$post->title"
                                          :excerpt="$post->excerpt"
                                          :image="$post->featured_image"
                                          :category="$post->category?->name"
                                          :categoryBadgeClass="$post->category?->badgeClass()"
-                                         :date="$post->published_at?->format('d M Y')"
+                                         :date="$post->published_at?->format('M j, Y')"
                                          :readTime="$post->read_time"
                                          :href="route('blog.show', $post)" />
                         </div>
@@ -67,12 +67,6 @@
             @endif
         </div>
     </section>
-
-    {{-- Visual break --}}
-    <x-visual-break :images="[
-        ['src' => 'images/blog/writing-blogging.webp', 'alt' => 'East Asian student writing a blog article on a laptop'],
-        ['src' => 'images/blog/library-reading.webp', 'alt' => 'East Asian student reading in a modern university library'],
-    ]" />
 
     {{-- §4 Newsletter --}}
     <x-newsletter title="Stay informed."

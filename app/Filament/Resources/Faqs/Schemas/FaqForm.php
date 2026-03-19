@@ -2,6 +2,7 @@
 
 namespace App\Filament\Resources\Faqs\Schemas;
 
+use Filament\Forms\Components\Select;
 use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Schema;
@@ -16,8 +17,16 @@ class FaqForm
                     ->required(),
                 Textarea::make('answer')
                     ->required()
+                    ->maxLength(5000)
                     ->columnSpanFull(),
-                TextInput::make('category')
+                Select::make('category')
+                    ->options([
+                        'education' => 'Education',
+                        'migration' => 'Migration',
+                        'career' => 'Career',
+                        'support' => 'Support',
+                        'fees' => 'Fees',
+                    ])
                     ->required(),
                 TextInput::make('sort_order')
                     ->required()

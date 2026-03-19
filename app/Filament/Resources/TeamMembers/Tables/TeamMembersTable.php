@@ -6,6 +6,7 @@ use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\EditAction;
 use Filament\Tables\Columns\TextColumn;
+use Filament\Tables\Filters\SelectFilter;
 use Filament\Tables\Table;
 
 class TeamMembersTable
@@ -40,8 +41,20 @@ class TeamMembersTable
                     ->sortable()
                     ->toggleable(isToggledHiddenByDefault: true),
             ])
+            ->defaultSort('sort_order')
             ->filters([
-                //
+                SelectFilter::make('section')
+                    ->options([
+                        'Australia' => 'Australia',
+                        'International' => 'International',
+                        'Partner' => 'Partner',
+                    ]),
+                SelectFilter::make('team_type')
+                    ->options([
+                        'general' => 'General',
+                        'legal' => 'Legal / Migration Specialist',
+                        'leadership' => 'Leadership (Featured)',
+                    ]),
             ])
             ->recordActions([
                 EditAction::make(),

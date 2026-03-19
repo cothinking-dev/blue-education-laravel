@@ -16,10 +16,10 @@ class TeamMemberFactory extends Factory
      */
     public function definition(): array
     {
-        $section = fake()->randomElement(['australian', 'international', 'partner']);
+        $section = fake()->randomElement(['Australia', 'International', 'Partner']);
 
         $roles = [
-            'australian' => [
+            'Australia' => [
                 'Education Consultant',
                 'Senior Education Advisor',
                 'Student Services Coordinator',
@@ -27,13 +27,13 @@ class TeamMemberFactory extends Factory
                 'Marketing Director',
                 'Operations Manager',
             ],
-            'international' => [
+            'International' => [
                 'Regional Representative',
                 'Country Manager',
                 'International Liaison Officer',
                 'Recruitment Specialist',
             ],
-            'partner' => [
+            'Partner' => [
                 'Partner Relations Manager',
                 'Institutional Liaison',
                 'Academic Partnerships Coordinator',
@@ -74,7 +74,7 @@ class TeamMemberFactory extends Factory
             'credentials' => fake()->randomElement($credentialOptions),
             'languages' => fake()->randomElement($languageSets),
             'section' => $section,
-            'region' => $section === 'international' ? fake()->randomElement($regions) : null,
+            'region' => $section === 'International' ? fake()->randomElement($regions) : null,
             'sort_order' => fake()->unique()->numberBetween(0, 1000),
         ];
     }
@@ -85,7 +85,7 @@ class TeamMemberFactory extends Factory
     public function australian(): static
     {
         return $this->state(fn (array $attributes) => [
-            'section' => 'australian',
+            'section' => 'Australia',
             'region' => null,
             'role' => fake()->randomElement([
                 'Education Consultant',
@@ -102,7 +102,7 @@ class TeamMemberFactory extends Factory
     public function international(): static
     {
         return $this->state(fn (array $attributes) => [
-            'section' => 'international',
+            'section' => 'International',
             'region' => fake()->randomElement(['South Asia', 'Southeast Asia', 'East Asia', 'Middle East', 'Africa']),
             'role' => fake()->randomElement([
                 'Regional Representative',
@@ -118,7 +118,7 @@ class TeamMemberFactory extends Factory
     public function partner(): static
     {
         return $this->state(fn (array $attributes) => [
-            'section' => 'partner',
+            'section' => 'Partner',
             'region' => null,
             'role' => fake()->randomElement([
                 'Partner Relations Manager',

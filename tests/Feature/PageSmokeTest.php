@@ -48,7 +48,9 @@ it('renders static pages', function (string $uri) {
 it('renders the home page', function () {
     Testimonial::factory()->active()->count(3)->create();
 
-    $this->get('/')->assertSuccessful();
+    $this->get('/')
+        ->assertSuccessful()
+        ->assertSeeText('Blue Education');
 });
 
 it('renders the about page', function () {
@@ -56,10 +58,17 @@ it('renders the about page', function () {
 });
 
 it('renders the about team page', function () {
-    TeamMember::factory()->australian()->count(2)->create();
-    TeamMember::factory()->international()->count(2)->create();
+    $australians = TeamMember::factory()->australian()->count(2)->create();
+    $internationals = TeamMember::factory()->international()->count(2)->create();
 
-    $this->get('/about/team')->assertSuccessful();
+    $response = $this->get('/about/team')->assertSuccessful();
+
+    foreach ($australians as $member) {
+        $response->assertSeeText($member->name);
+    }
+    foreach ($internationals as $member) {
+        $response->assertSeeText($member->name);
+    }
 });
 
 it('renders the about partners page', function () {
@@ -67,9 +76,13 @@ it('renders the about partners page', function () {
 });
 
 it('renders the blog listing page', function () {
-    Post::factory()->published()->count(3)->create();
+    $posts = Post::factory()->published()->count(3)->create();
 
-    $this->get('/blog')->assertSuccessful();
+    $response = $this->get('/blog')->assertSuccessful();
+
+    foreach ($posts as $post) {
+        $response->assertSeeText($post->title);
+    }
 });
 
 it('renders the blog listing page when empty', function () {
@@ -79,13 +92,22 @@ it('renders the blog listing page when empty', function () {
 it('renders a blog post', function () {
     $post = Post::factory()->published()->create();
 
-    $this->get('/blog/'.$post->slug)->assertSuccessful();
+    $this->get('/blog/'.$post->slug)
+        ->assertSuccessful()
+        ->assertSeeText($post->title)
+        ->assertSeeText($post->category->name);
 });
 
 it('returns 404 for nonexistent blog post', function () {
     $this->get('/blog/nonexistent-slug-12345')->assertNotFound();
 });
 
-it('renders the showcase page', function () {
-    $this->get('/showcase')->assertSuccessful();
+it('returns 404 for a draft blog post', function () {
+    $post = Post::factory()->draft()->create();
+
+    $this->get('/blog/'.$post->slug)->assertNotFound();
+});
+
+it('returns 404 for showcase in non-local environments', function () {
+    $this->get('/showcase')->assertNotFound();
 });

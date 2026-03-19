@@ -2,6 +2,7 @@
 
 namespace App\Filament\Resources\TeamMembers\Schemas;
 
+use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
@@ -14,10 +15,16 @@ class TeamMemberForm
         return $schema
             ->components([
                 TextInput::make('name')
-                    ->required(),
+                    ->required()
+                    ->maxLength(255),
                 TextInput::make('role')
-                    ->required(),
-                TextInput::make('photo'),
+                    ->required()
+                    ->maxLength(255),
+                FileUpload::make('photo')
+                    ->disk('public')
+                    ->directory('images/team')
+                    ->image()
+                    ->maxSize(1024),
                 Textarea::make('bio')
                     ->columnSpanFull(),
                 TextInput::make('credentials'),

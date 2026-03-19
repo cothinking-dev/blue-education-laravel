@@ -2,6 +2,8 @@
     'title' => null,
     'description' => null,
     'ogImage' => null,
+    'ogImageWidth' => null,
+    'ogImageHeight' => null,
     'ogType' => null,
     'robots' => null,
     'canonical' => null,
@@ -23,6 +25,8 @@
         :title="$title"
         :description="$description"
         :og-image="$ogImage"
+        :og-image-width="$ogImageWidth"
+        :og-image-height="$ogImageHeight"
         :og-type="$ogType"
         :robots="$robots"
         :canonical="$canonical"
@@ -45,6 +49,7 @@
 
     {{-- Per-page head content --}}
     {{ $head ?? '' }}
+    @stack('head')
 </head>
 <body class="bg-white text-base-900 font-sans antialiased">
 
@@ -59,7 +64,7 @@
     <x-whatsapp-widget />
 
     {{-- Alpine.js --}}
-    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.15.8/dist/cdn.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.15.8/dist/cdn.min.js" integrity="sha384-LXWjKwDZz29o7TduNe+r/UxaolHh5FsSvy2W7bDHSZ8jJeGgDeuNnsDNHoxpSgDi" crossorigin="anonymous"></script>
 
     {{-- Per-page scripts --}}
     {{ $scripts ?? '' }}

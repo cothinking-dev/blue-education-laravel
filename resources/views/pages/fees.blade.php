@@ -5,13 +5,13 @@
     <x-hero title="Fees & Costs"
             subtitle="All fees communicated upfront, before any work begins."
             :image="asset('images/heroes/fees.webp')"
-            alt="East Asian student planning finances and budgeting for education"
+            alt="Perth city skyline across the Swan River, Western Australia"
             variant="left"
             :breadcrumbs="true" />
 
     {{-- §2 Our Approach --}}
-    <x-content-split title="Transparent pricing. Always." :image="asset('images/fees/transparent-pricing.webp')" alt="East Asian student in a transparent pricing consultation">
-        <p>Blue Education's fees vary based on the services you need and the complexity of your situation. Every journey is different — so pricing is personalised, not one-size-fits-all.</p>
+    <x-content-split title="Transparent pricing; Always." :image="asset('images/fees/transparent-pricing.webp')" alt="East Asian student in a transparent pricing consultation">
+        <p>Blue Education's fees vary based on the services you need and the complexity of your situation. Every journey is different, so pricing is personalised; not one-size-fits-all.</p>
         <p>Before we do any work, we tell you exactly what it will cost and why. Our initial consultation is used to assess your situation — we provide a personalised quote before you commit to anything.</p>
         <ul class="space-y-3 text-sm mt-4">
             <li class="flex items-start gap-3"><span class="text-primary-600 font-bold mt-0.5">&#10003;</span> <span><strong>Fees by service</strong> — You pay for what you need, not a package that includes what you don't.</span></li>
@@ -24,7 +24,7 @@
     <section class="bg-base-50">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
             <x-section-heading title="Cost Overview" :centered="false" />
-            <x-data-table :headers="['Cost Category', 'Who Sets It', 'Paid To', 'Amount']"
+            <x-data-table class="shadow-xl" :headers="['Cost Category', 'Who Sets It', 'Paid To', 'Amount']"
                           :rows="[
                               ['Blue Education service fees', 'Blue Education', 'Blue Education', 'Varies by case'],
                               ['STAC charges', 'Blue Education', 'Blue Education', 'Varies by visa history'],
@@ -65,17 +65,15 @@
     </section>
 
     {{-- Visual break --}}
-    <section class="bg-base-50">
-        <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
-            <img src="{{ asset('images/fees/scholarship.webp') }}" alt="East Asian student reviewing scholarship and education funding options" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/1] max-h-[240px]" loading="lazy">
-        </div>
-    </section>
+    <x-visual-break :images="[
+        ['src' => 'images/why-australia/perth-skyline.webp', 'alt' => 'Perth city skyline across the Swan River'],
+    ]" padding="py-10" />
 
     {{-- §5 Additional Support Services --}}
     <section class="bg-base-50">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
             <x-section-heading title="Additional Support Services" :centered="false" />
-            <x-data-table :headers="['Service', 'Description']"
+            <x-data-table class="shadow-xl" :headers="['Service', 'Description']"
                           :rows="[
                               ['24/7 Emergency Hotline', 'Round-the-clock crisis support'],
                               ['Document Translation', 'NAATI-certified'],
@@ -92,25 +90,33 @@
             <x-section-heading title="What Students Budget Separately" :centered="false" />
             <p class="text-base-600 mb-8 text-pretty">These costs are not part of Blue Education's service fees. You pay for these directly.</p>
             <div class="grid sm:grid-cols-2 gap-6" data-animate="stagger">
-                <div class="border border-base-200 rounded-corner-lg p-5">
-                    <h3 class="font-bold text-base-900 mb-1">Accommodation</h3>
-                    <p class="text-base-600 text-sm text-pretty">Homestay, rental, or student housing</p>
-                </div>
-                <div class="border border-base-200 rounded-corner-lg p-5">
-                    <h3 class="font-bold text-base-900 mb-1">Guardianship</h3>
-                    <p class="text-base-600 text-sm text-pretty">Required for students under 18 (Professional Student Care Australia or International Student Alliance)</p>
-                </div>
-                <div class="border border-base-200 rounded-corner-lg p-5">
-                    <h3 class="font-bold text-base-900 mb-1">OSHC</h3>
-                    <p class="text-base-600 text-sm text-pretty">Overseas Student Health Cover — mandatory for all student visas</p>
-                </div>
-                <div class="border border-base-200 rounded-corner-lg p-5">
-                    <h3 class="font-bold text-base-900 mb-1">Living Expenses</h3>
-                    <p class="text-base-600 text-sm text-pretty">Transport, food, personal costs</p>
-                </div>
-                <div class="sm:col-span-2 border border-base-200 rounded-corner-lg p-5">
-                    <h3 class="font-bold text-base-900 mb-1">Tuition</h3>
-                    <p class="text-base-600 text-sm text-pretty">Course fees paid directly to your institution</p>
+                @php
+                    $budgetItems = [
+                        ['icon' => 'home-modern', 'title' => 'Accommodation', 'desc' => 'Homestay, rental, or student housing'],
+                        ['icon' => 'shield-check', 'title' => 'Guardianship', 'desc' => 'Required for students under 18 (Professional Student Care Australia or International Student Alliance)'],
+                        ['icon' => 'heart', 'title' => 'OSHC', 'desc' => 'Overseas Student Health Cover — mandatory for all student visas'],
+                        ['icon' => 'banknotes', 'title' => 'Living Expenses', 'desc' => 'Transport, food, personal costs'],
+                    ];
+                @endphp
+                @foreach($budgetItems as $item)
+                    <div class="border border-base-200 rounded-corner-lg p-5 shadow-md flex items-start gap-4">
+                        <div class="w-10 h-10 bg-primary-100 rounded-corner-lg flex items-center justify-center shrink-0">
+                            <x-dynamic-component :component="'heroicon-o-' . $item['icon']" class="w-5 h-5 text-primary-700" />
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-base-900 mb-1">{{ $item['title'] }}</h3>
+                            <p class="text-base-600 text-sm text-pretty">{{ $item['desc'] }}</p>
+                        </div>
+                    </div>
+                @endforeach
+                <div class="sm:col-span-2 border border-base-200 rounded-corner-lg p-5 shadow-md flex items-start gap-4">
+                    <div class="w-10 h-10 bg-primary-100 rounded-corner-lg flex items-center justify-center shrink-0">
+                        <x-heroicon-o-academic-cap class="w-5 h-5 text-primary-700" />
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-base-900 mb-1">Tuition</h3>
+                        <p class="text-base-600 text-sm text-pretty">Course fees paid directly to your institution</p>
+                    </div>
                 </div>
             </div>
         </div>

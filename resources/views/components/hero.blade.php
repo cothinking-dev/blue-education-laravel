@@ -9,6 +9,9 @@
     'variant' => 'centered',
     'height' => '80dvh',
     'position' => 'center',
+    'width' => 1920,
+    'imageHeight' => 1080,
+    'preloadImage' => false,
 ])
 
 @php
@@ -20,6 +23,12 @@
     ];
     $alignment = $variants[$variant] ?? $variants['centered'];
 @endphp
+
+@if($preloadImage && $image)
+    @push('head')
+        <link rel="preload" as="image" href="{{ $image }}">
+    @endpush
+@endif
 
 @if($variant === 'light')
 <section {{ $attributes->merge(['class' => 'relative']) }} style="min-height:{{ $height }}; background: linear-gradient(180deg, var(--color-primary-50) 0%, white 100%);">
@@ -55,7 +64,7 @@
         </div>
         <div class="flex-1">
             @if($image)
-                <img src="{{ $image }}" alt="{{ $alt }}" class="rounded-corner-lg w-full h-auto" loading="lazy">
+                <img src="{{ $image }}" alt="{{ $alt }}" class="rounded-corner-lg w-full h-auto" loading="lazy" width="{{ $width }}" height="{{ $imageHeight }}">
             @else
                 <div class="bg-base-200 rounded-corner-lg aspect-[4/3] w-full" style="background-image: repeating-linear-gradient(-55deg, transparent, transparent 8px, var(--placeholder-stripe) 8px, var(--placeholder-stripe) 9px);"></div>
             @endif
@@ -65,7 +74,7 @@
 @else
 <section {{ $attributes->merge(['class' => 'relative flex flex-col overflow-hidden [clip-path:inset(0)] ' . $alignment]) }} style="min-height:{{ $height }}; background-color: var(--color-base-700);">
     @if($image)
-        <img data-hero-parallax src="{{ $image }}" alt="{{ $alt }}" class="fixed inset-0 w-full h-full object-cover" style="object-position: {{ $position }};">
+        <img data-hero-parallax src="{{ $image }}" alt="{{ $alt }}" class="fixed inset-0 w-full h-full object-cover" style="object-position: {{ $position }};" fetchpriority="high" width="{{ $width }}" height="{{ $imageHeight }}">
     @endif
     @if($overlay)
         {{-- Layer 1: Brand blue gradient with multiply blend --}}

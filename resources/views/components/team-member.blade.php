@@ -25,7 +25,7 @@
         @if($photo)
             <picture class="shrink-0">
                 <source srcset="{{ asset($webpPhoto) }}" type="image/webp">
-                <img src="{{ asset($photo) }}" alt="{{ $name }}" class="w-40 h-52 rounded-xl object-cover" loading="lazy">
+                <img src="{{ asset($photo) }}" alt="{{ $name }}" class="w-40 h-52 rounded-xl object-cover" loading="lazy" width="160" height="208">
             </picture>
         @else
             <div class="w-40 h-52 rounded-xl bg-primary-100 flex items-center justify-center shrink-0">
@@ -57,7 +57,7 @@
             @if($photo)
                 <picture class="shrink-0">
                     <source srcset="{{ asset($webpPhoto) }}" type="image/webp">
-                    <img src="{{ asset($photo) }}" alt="{{ $name }}" class="w-30 h-40 rounded-xl object-cover" loading="lazy">
+                    <img src="{{ asset($photo) }}" alt="{{ $name }}" class="w-30 h-40 rounded-xl object-cover" loading="lazy" width="120" height="160">
                 </picture>
             @else
                 <div class="w-30 h-40 rounded-xl bg-primary-100 flex items-center justify-center shrink-0">
@@ -85,7 +85,7 @@
         @if($photo)
             <picture class="block">
                 <source srcset="{{ asset($webpPhoto) }}" type="image/webp">
-                <img src="{{ asset($photo) }}" alt="{{ $name }}" class="w-full h-56 object-cover object-top" loading="lazy">
+                <img src="{{ asset($photo) }}" alt="{{ $name }}" class="w-full h-56 object-cover object-top" loading="lazy" width="320" height="224">
             </picture>
         @else
             <div class="w-full h-56 bg-primary-100 flex items-center justify-center">

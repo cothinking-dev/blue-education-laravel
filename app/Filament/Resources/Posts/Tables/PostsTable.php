@@ -8,6 +8,8 @@ use Filament\Actions\EditAction;
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\ImageColumn;
 use Filament\Tables\Columns\TextColumn;
+use Filament\Tables\Filters\SelectFilter;
+use Filament\Tables\Filters\TernaryFilter;
 use Filament\Tables\Table;
 
 class PostsTable
@@ -42,8 +44,12 @@ class PostsTable
                     ->sortable()
                     ->toggleable(isToggledHiddenByDefault: true),
             ])
+            ->defaultSort('published_at', 'desc')
             ->filters([
-                //
+                TernaryFilter::make('is_published'),
+                TernaryFilter::make('is_featured'),
+                SelectFilter::make('category_id')
+                    ->relationship('category', 'name'),
             ])
             ->recordActions([
                 EditAction::make(),

@@ -28,9 +28,15 @@ it('shows the login page', function () {
 });
 
 it('lets an admin access the dashboard', function () {
-    $this->actingAs(User::factory()->create())
+    $this->actingAs(User::factory()->admin()->create())
         ->get('/admin')
         ->assertSuccessful();
+});
+
+it('denies non-admin users access to the dashboard', function () {
+    $this->actingAs(User::factory()->create())
+        ->get('/admin')
+        ->assertForbidden();
 });
 
 dataset('filament_list_pages', [
@@ -44,7 +50,7 @@ dataset('filament_list_pages', [
 ]);
 
 it('renders admin list pages', function (string $page) {
-    $this->actingAs(User::factory()->create());
+    $this->actingAs(User::factory()->admin()->create());
 
     Livewire\Livewire::test($page)->assertSuccessful();
 })->with('filament_list_pages');

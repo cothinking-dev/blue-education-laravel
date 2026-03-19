@@ -2,6 +2,7 @@
 
 namespace App\Filament\Resources\Testimonials\Schemas;
 
+use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
@@ -17,10 +18,15 @@ class TestimonialForm
                     ->required()
                     ->columnSpanFull(),
                 TextInput::make('name')
-                    ->required(),
-                TextInput::make('initials'),
-                TextInput::make('photo')
-                    ->placeholder('images/testimonials/filename.webp'),
+                    ->required()
+                    ->maxLength(255),
+                TextInput::make('initials')
+                    ->maxLength(10),
+                FileUpload::make('photo')
+                    ->disk('public')
+                    ->directory('images/testimonials')
+                    ->image()
+                    ->maxSize(1024),
                 TextInput::make('credential'),
                 TextInput::make('country'),
                 Toggle::make('is_active')

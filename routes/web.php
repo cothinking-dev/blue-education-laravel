@@ -1,18 +1,14 @@
 <?php
 
-use App\Console\Commands\GenerateSitemap;
-use App\Http\Requests\StoreEnquiryRequest;
-use App\Http\Requests\StoreSubscriberRequest;
-use App\Mail\EnquiryReceived;
-use App\Models\Category;
-use App\Models\Enquiry;
-use App\Models\Post;
-use App\Models\Subscriber;
-use App\Models\TeamMember;
-use App\Models\Testimonial;
-use Illuminate\Support\Facades\Artisan;
-use Illuminate\Support\Facades\Cache;
-use Illuminate\Support\Facades\Mail;
+use App\Http\Controllers\AboutController;
+use App\Http\Controllers\BlogController;
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\NewsletterController;
+use App\Http\Controllers\OgImageController;
+use App\Http\Controllers\PageController;
+use App\Http\Controllers\RobotsController;
+use App\Http\Controllers\SitemapController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -26,234 +22,83 @@ use Illuminate\Support\Facades\Route;
 */
 
 // Home
-Route::get('/', function () {
-    return view('pages.home', [
-        'latestPosts' => Post::query()->published()->with('category')->latest('published_at')->limit(3)->get(),
-        'testimonials' => Testimonial::query()->active()->orderBy('sort_order')->get(),
-        'teamPhotos' => TeamMember::query()->pluck('photo'),
-    ]);
-})->name('home')->defaults('label', 'Home');
+Route::get('/', HomeController::class)->name('home')->defaults('label', 'Home');
 
 // Services — Education
 Route::prefix('services')->name('services.')->group(function () {
 
     Route::prefix('education')->name('education.')->group(function () {
-        Route::get('/', function () {
-            return view('pages.services.education.index');
-        })->name('index')->defaults('label', 'Education');
-
-        Route::get('/school', function () {
-            return view('pages.services.education.school');
-        })->name('school')->defaults('label', 'School Programs');
-
-        Route::get('/english', function () {
-            return view('pages.services.education.english');
-        })->name('english')->defaults('label', 'English & Foundation');
-
-        Route::get('/vet-tafe', function () {
-            return view('pages.services.education.vet-tafe');
-        })->name('vet-tafe')->defaults('label', 'VET & TAFE');
-
-        Route::get('/degrees', function () {
-            return view('pages.services.education.degrees');
-        })->name('degrees')->defaults('label', 'University Degrees');
+        Route::get('/', [PageController::class, 'show'])->name('index')->defaults('label', 'Education');
+        Route::get('/school', [PageController::class, 'show'])->name('school')->defaults('label', 'School Programs');
+        Route::get('/english', [PageController::class, 'show'])->name('english')->defaults('label', 'English & Foundation');
+        Route::get('/vet-tafe', [PageController::class, 'show'])->name('vet-tafe')->defaults('label', 'VET & TAFE');
+        Route::get('/degrees', [PageController::class, 'show'])->name('degrees')->defaults('label', 'University Degrees');
     });
 
     // Services — Migration
     Route::prefix('migration')->name('migration.')->group(function () {
-        Route::get('/', function () {
-            return view('pages.services.migration.index');
-        })->name('index')->defaults('label', 'Migration');
-
-        Route::get('/student-visas', function () {
-            return view('pages.services.migration.student-visas');
-        })->name('student-visas')->defaults('label', 'Student Visas');
-
-        Route::get('/graduate-work', function () {
-            return view('pages.services.migration.graduate-work');
-        })->name('graduate-work')->defaults('label', 'Graduate & Work Visas');
-
-        Route::get('/permanent-residence', function () {
-            return view('pages.services.migration.permanent-residence');
-        })->name('permanent-residence')->defaults('label', 'Permanent Residence');
+        Route::get('/', [PageController::class, 'show'])->name('index')->defaults('label', 'Migration');
+        Route::get('/student-visas', [PageController::class, 'show'])->name('student-visas')->defaults('label', 'Student Visas');
+        Route::get('/graduate-work', [PageController::class, 'show'])->name('graduate-work')->defaults('label', 'Graduate & Work Visas');
+        Route::get('/permanent-residence', [PageController::class, 'show'])->name('permanent-residence')->defaults('label', 'Permanent Residence');
     });
 
     // Services — Career & Student Support
-    Route::get('/career', function () {
-        return view('pages.services.career');
-    })->name('career')->defaults('label', 'Career Services');
-
-    Route::get('/student-support', function () {
-        return view('pages.services.student-support');
-    })->name('student-support')->defaults('label', 'Student Support');
+    Route::get('/career', [PageController::class, 'show'])->name('career')->defaults('label', 'Career Services');
+    Route::get('/student-support', [PageController::class, 'show'])->name('student-support')->defaults('label', 'Student Support');
 });
 
 // Programs
 Route::prefix('programs')->name('programs.')->group(function () {
-    Route::get('/', function () {
-        return view('pages.programs.index');
-    })->name('index')->defaults('label', 'Programs');
-
-    Route::get('/buddy-programme', function () {
-        return view('pages.programs.buddy-programme');
-    })->name('buddy-programme')->defaults('label', 'Buddy Programme');
-
-    Route::get('/study-tours', function () {
-        return view('pages.programs.study-tours');
-    })->name('study-tours')->defaults('label', 'Study Tours');
-
-    Route::get('/scsa-associate', function () {
-        return view('pages.programs.scsa-associate');
-    })->name('scsa-associate')->defaults('label', 'SCSA Associate');
-
-    Route::get('/executive-internship', function () {
-        return view('pages.programs.executive-internship');
-    })->name('executive-internship')->defaults('label', 'Executive Internship');
+    Route::get('/', [PageController::class, 'show'])->name('index')->defaults('label', 'Programs');
+    Route::get('/buddy-programme', [PageController::class, 'show'])->name('buddy-programme')->defaults('label', 'Buddy Programme');
+    Route::get('/study-tours', [PageController::class, 'show'])->name('study-tours')->defaults('label', 'Study Tours');
+    Route::get('/scsa-associate', [PageController::class, 'show'])->name('scsa-associate')->defaults('label', 'SCSA Associate');
+    Route::get('/executive-internship', [PageController::class, 'show'])->name('executive-internship')->defaults('label', 'Executive Internship');
 });
 
 // About
 Route::prefix('about')->name('about.')->group(function () {
-    Route::get('/', function () {
-        return view('pages.about.index');
-    })->name('index')->defaults('label', 'About');
-
-    Route::get('/team', [App\Http\Controllers\AboutController::class, 'team'])
-        ->name('team')->defaults('label', 'Our Team');
-
-    Route::get('/partners', function () {
-        return view('pages.about.partners');
-    })->name('partners')->defaults('label', 'Our Partners');
+    Route::get('/', [PageController::class, 'show'])->name('index')->defaults('label', 'About');
+    Route::get('/team', [AboutController::class, 'team'])->name('team')->defaults('label', 'Our Team');
+    Route::get('/partners', [PageController::class, 'show'])->name('partners')->defaults('label', 'Our Partners');
 });
 
 // Why Australia
-Route::get('/why-australia', function () {
-    return view('pages.why-australia');
-})->name('why-australia')->defaults('label', 'Why Australia');
+Route::get('/why-australia', [PageController::class, 'show'])->name('why-australia')->defaults('label', 'Why Australia');
 
 // Resources
-Route::get('/faq', function () {
-    return view('pages.faq');
-})->name('faq')->defaults('label', 'FAQ');
-
-Route::get('/admission-requirements', function () {
-    return view('pages.admission-requirements');
-})->name('admission-requirements')->defaults('label', 'Admission Requirements');
-
-Route::get('/fees', function () {
-    return view('pages.fees');
-})->name('fees')->defaults('label', 'Fees & Costs');
+Route::get('/faq', [PageController::class, 'show'])->name('faq')->defaults('label', 'FAQ');
+Route::get('/admission-requirements', [PageController::class, 'show'])->name('admission-requirements')->defaults('label', 'Admission Requirements');
+Route::get('/fees', [PageController::class, 'show'])->name('fees')->defaults('label', 'Fees & Costs');
 
 // Blog
 Route::prefix('blog')->name('blog.')->group(function () {
-    Route::get('/', function () {
-        return view('pages.blog.index', [
-            'featuredPost' => Post::query()->published()->featured()->with('category')->latest('published_at')->first(),
-            'posts' => Post::query()->published()->with('category')->latest('published_at')->paginate(9),
-            'categories' => Category::query()->orderBy('sort_order')->get(),
-        ]);
-    })->name('index')->defaults('label', 'Blog');
-
-    Route::get('/{post:slug}', function (App\Models\Post $post) {
-        $post->load('category');
-
-        return view('pages.blog.show', [
-            'post' => $post,
-            'relatedPosts' => Post::query()->published()->with('category')->where('category_id', $post->category_id)->where('id', '!=', $post->id)->latest('published_at')->limit(3)->get(),
-        ]);
-    })->name('show')->defaults('label', 'Article');
+    Route::get('/', [BlogController::class, 'index'])->name('index')->defaults('label', 'Blog');
+    Route::get('/{post:slug}', [BlogController::class, 'show'])->name('show')->defaults('label', 'Article');
 });
 
 // Contact
-Route::get('/contact', function () {
-    return view('pages.contact');
-})->name('contact')->defaults('label', 'Contact');
+Route::get('/contact', [PageController::class, 'show'])->name('contact')->defaults('label', 'Contact');
+Route::post('/contact', [ContactController::class, 'submit'])->name('contact.submit')->middleware('throttle:5,1');
 
-Route::post('/contact', function (StoreEnquiryRequest $request) {
-    $enquiry = Enquiry::create($request->validated());
-
-    Mail::to(config('seo.organization.email'))->send(new EnquiryReceived($enquiry));
-
-    return response()->json(['success' => true]);
-})->name('contact.submit');
-
-Route::post('/newsletter', function (StoreSubscriberRequest $request) {
-    Subscriber::updateOrCreate(['email' => $request->validated()['email']]);
-
-    return response()->json(['success' => true]);
-})->name('newsletter.subscribe');
+// Newsletter
+Route::post('/newsletter', NewsletterController::class)->name('newsletter.subscribe')->middleware('throttle:5,1');
 
 // Legal
-Route::get('/privacy', function () {
-    return view('pages.privacy');
-})->name('privacy')->defaults('label', 'Privacy Policy');
+Route::get('/privacy', [PageController::class, 'show'])->name('privacy')->defaults('label', 'Privacy Policy');
+Route::get('/terms', [PageController::class, 'show'])->name('terms')->defaults('label', 'Terms of Use');
 
-Route::get('/terms', function () {
-    return view('pages.terms');
-})->name('terms')->defaults('label', 'Terms of Use');
-
-// Sitemap
-Route::get('/sitemap.xml', function () {
-    $xml = Cache::get(GenerateSitemap::CACHE_KEY);
-
-    if ($xml === null) {
-        Artisan::call('sitemap:generate');
-        $xml = Cache::get(GenerateSitemap::CACHE_KEY);
-    }
-
-    return response($xml, 200, ['Content-Type' => 'application/xml']);
-})->name('sitemap');
-
-// Robots
-Route::get('/robots.txt', function () {
-    $sitemapUrl = url('/sitemap.xml');
-
-    $robots = <<<ROBOTS
-    # Welcome all crawlers and AI agents
-    User-agent: *
-    Disallow:
-    Allow: /
-
-    # AI Crawlers — explicitly welcomed
-    User-agent: GPTBot
-    Allow: /
-
-    User-agent: Google-Extended
-    Allow: /
-
-    User-agent: ChatGPT-User
-    Allow: /
-
-    User-agent: Claude-Web
-    Allow: /
-
-    User-agent: Bytespider
-    Allow: /
-
-    User-agent: CCBot
-    Allow: /
-
-    User-agent: anthropic-ai
-    Allow: /
-
-    User-agent: Perplexity-User
-    Allow: /
-
-    User-agent: cohere-ai
-    Allow: /
-
-    # Sitemap
-    Sitemap: {$sitemapUrl}
-    ROBOTS;
-
-    return response($robots, 200, ['Content-Type' => 'text/plain']);
-});
+// Sitemap & Robots
+Route::get('/sitemap.xml', SitemapController::class)->name('sitemap');
+Route::get('/robots.txt', RobotsController::class);
 
 // Dynamic OG Image — e.g. /og-image/services/education
-Route::get('/og-image/{path?}', App\Http\Controllers\OgImageController::class)
+Route::get('/og-image/{path?}', OgImageController::class)
     ->where('path', '.*')
     ->name('og-image');
 
 // Showcase (dev only)
-Route::get('/showcase', function () {
-    return view('showcase');
-})->name('showcase');
+if (app()->isLocal()) {
+    Route::get('/showcase', [PageController::class, 'show'])->name('showcase');
+}

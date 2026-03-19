@@ -37,7 +37,8 @@
 
             <template x-if="!sent">
                 <div class="flex flex-col sm:flex-row gap-3 w-full">
-                    <input type="email" name="email" x-model="email" placeholder="{{ $placeholder }}" required
+                    <label for="newsletter-email" class="sr-only">Email address</label>
+                    <input type="email" name="email" id="newsletter-email" x-model="email" placeholder="{{ $placeholder }}" required
                            class="flex-1 px-4 py-3 rounded-corner bg-white/10 text-white placeholder-primary-300 border border-white/20 focus:outline-none focus:ring-2 focus:ring-white/40 text-sm">
                     <button type="submit" x-bind:disabled="sending"
                             class="px-6 py-3 bg-white text-primary-800 rounded-corner font-semibold text-sm hover:bg-primary-50 transition-colors disabled:opacity-50">

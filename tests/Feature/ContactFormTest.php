@@ -97,7 +97,30 @@ it('sends an email notification on valid enquiry', function () {
         'email' => 'jane@example.com',
     ])->assertSuccessful();
 
-    Mail::assertSent(EnquiryReceived::class, function ($mail) {
+    Mail::assertQueued(EnquiryReceived::class, function ($mail) {
         return $mail->hasTo(config('seo.organization.email'));
     });
+});
+
+it('rejects submissions with honeypot field filled', function () {
+    $this->postJson(route('contact.submit'), [
+        'full_name' => 'Bot User',
+        'email' => 'bot@example.com',
+        'website' => 'http://spam.com',
+    ])->assertUnprocessable()
+        ->assertJsonValidationErrors('website');
+});
+
+it('rate limits contact form submissions', function () {
+    for ($i = 0; $i < 5; $i++) {
+        $this->postJson(route('contact.submit'), [
+            'full_name' => 'Test',
+            'email' => "test{$i}@example.com",
+        ])->assertSuccessful();
+    }
+
+    $this->postJson(route('contact.submit'), [
+        'full_name' => 'Test',
+        'email' => 'test6@example.com',
+    ])->assertTooManyRequests();
 });

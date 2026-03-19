@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Route as RouteFacade;
+use Illuminate\Support\Facades\Storage;
 use Intervention\Image\Drivers\Gd\Driver as GdDriver;
 use Intervention\Image\Geometry\Factories\CircleFactory;
 use Intervention\Image\Geometry\Factories\LineFactory;
@@ -24,13 +25,28 @@ class OgImageController extends Controller
             return redirect(asset('brand/logo-og.png'));
         }
 
+        $cacheKey = md5($path);
+        $cachePath = "public/og-images/{$cacheKey}.png";
+
+        if (Storage::exists($cachePath)) {
+            return response(Storage::get($cachePath), 200)
+                ->header('Content-Type', 'image/png')
+                ->header('Cache-Control', 'public, max-age=86400');
+        }
+
         $title = $this->resolveTitleFromPath($path);
 
         $manager = new ImageManager(new GdDriver);
         $image = $this->buildImage($manager, $title);
 
-        return response($image->toPng()->toString(), 200)
-            ->header('Content-Type', 'image/png');
+        $png = $image->toPng()->toString();
+
+        Storage::makeDirectory('public/og-images');
+        Storage::put($cachePath, $png);
+
+        return response($png, 200)
+            ->header('Content-Type', 'image/png')
+            ->header('Cache-Control', 'public, max-age=86400');
     }
 
     /**

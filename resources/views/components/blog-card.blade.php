@@ -15,7 +15,9 @@
             <img src="{{ asset($image) }}"
                  alt="{{ $title }}"
                  class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
-                 loading="lazy">
+                 loading="lazy"
+                 width="400"
+                 height="192">
         </a>
     @else
         <a href="{{ $href }}" class="block h-48 bg-base-100"></a>

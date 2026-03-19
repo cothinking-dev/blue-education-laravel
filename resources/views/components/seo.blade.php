@@ -4,6 +4,8 @@
     'robots' => null,
     'ogType' => null,
     'ogImage' => null,
+    'ogImageWidth' => null,
+    'ogImageHeight' => null,
     'canonical' => null,
     'noSuffix' => false,
     'jsonLd' => null,
@@ -40,8 +42,9 @@
 <meta property="og:site_name" content="{{ $og['site_name'] }}">
 <meta property="og:locale" content="{{ $og['locale'] }}">
 <meta property="og:image" content="{{ url($pageOgImage) }}">
-<meta property="og:image:width" content="{{ $og['image_width'] }}">
-<meta property="og:image:height" content="{{ $og['image_height'] }}">
+<meta property="og:image:alt" content="{{ $title ?? $defaults['title'] }}">
+<meta property="og:image:width" content="{{ $ogImageWidth ?? $og['image_width'] }}">
+<meta property="og:image:height" content="{{ $ogImageHeight ?? $og['image_height'] }}">
 @if($articlePublishedTime)
 <meta property="article:published_time" content="{{ $articlePublishedTime }}">
 @endif
@@ -69,7 +72,7 @@
         'logo' => url($org['logo']),
         'telephone' => $org['phone'],
         'email' => $org['email'],
-        'foundingDate' => (string) $org['founding_year'],
+        'foundingDate' => $org['founding_year'] . '-01-01',
         'address' => [
             '@type' => 'PostalAddress',
             'streetAddress' => $org['address']['street'],
@@ -92,7 +95,31 @@
         foreach ($segments as $segment) {
             $path .= '/' . $segment;
             $matchedRoute = collect(app('router')->getRoutes()->getRoutes())
-                ->first(fn ($r) => '/' . trim($r->uri(), '/') === $path && in_array('GET', $r->methods()));
+                ->first(function ($r) use ($path) {
+                    if (!in_array('GET', $r->methods())) {
+                        return false;
+                    }
+                    $routePath = '/' . trim($r->uri(), '/');
+                    // Exact match
+                    if ($routePath === $path) {
+                        return true;
+                    }
+                    // Match parameterized routes by replacing {param} segments with the actual segment
+                    $routeSegments = explode('/', trim($r->uri(), '/'));
+                    $pathSegments = explode('/', trim($path, '/'));
+                    if (count($routeSegments) !== count($pathSegments)) {
+                        return false;
+                    }
+                    foreach ($routeSegments as $i => $routeSegment) {
+                        if (str_starts_with($routeSegment, '{')) {
+                            continue;
+                        }
+                        if ($routeSegment !== $pathSegments[$i]) {
+                            return false;
+                        }
+                    }
+                    return true;
+                });
             $label = $matchedRoute?->defaults['label']
                 ?? str($segment)->replace('-', ' ')->title()->toString();
             $breadcrumbItems[] = ['name' => $label, 'url' => url($path)];

@@ -23,10 +23,10 @@ it('generates sitemap with discovered routes', function () {
         ->toContain(route('blog.index'));
 });
 
-it('excludes showcase from sitemap', function () {
+it('excludes dev-only routes from sitemap', function () {
     $this->artisan('sitemap:generate')->assertSuccessful();
 
     $xml = Cache::get('sitemap:xml');
 
-    expect($xml)->not->toContain(route('showcase'));
+    expect($xml)->not->toContain('/showcase');
 });

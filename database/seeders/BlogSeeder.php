@@ -14,12 +14,12 @@ class BlogSeeder extends Seeder
     public function run(): void
     {
         $categories = collect([
-            ['name' => 'Migration & Visas', 'slug' => 'migration-visas', 'color' => '#8b5cf6'],
-            ['name' => 'Education', 'slug' => 'education', 'color' => '#3b82f6'],
-            ['name' => 'Career & Employment', 'slug' => 'career-employment', 'color' => '#f59e0b'],
-            ['name' => 'Student Life', 'slug' => 'student-life', 'color' => '#10b981'],
+            ['name' => 'Migration & Visas', 'slug' => 'migration-visas'],
+            ['name' => 'Education', 'slug' => 'education'],
+            ['name' => 'Career & Employment', 'slug' => 'career-employment'],
+            ['name' => 'Student Life', 'slug' => 'student-life'],
         ])->mapWithKeys(fn (array $data, int $key) => [
-            $data['slug'] => Category::create([...$data, 'sort_order' => $key]),
+            $data['slug'] => Category::firstOrCreate(['slug' => $data['slug']], [...$data, 'sort_order' => $key]),
         ]);
 
         $posts = require database_path('seeders/data/posts.php');

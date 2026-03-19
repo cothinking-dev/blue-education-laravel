@@ -7,13 +7,14 @@ use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Str;
 
 class Post extends Model
 {
     /** @use HasFactory<\Database\Factories\PostFactory> */
-    use HasFactory;
+    use HasFactory, SoftDeletes;
 
     /** @var list<string> */
     protected $fillable = [
@@ -56,6 +57,15 @@ class Post extends Model
     public function resolveRouteBinding($value, $field = null): ?self
     {
         return $this->where($field ?? 'id', $value)->published()->first();
+    }
+
+    /** @var list<string> Safe HTML tags allowed in rendered blog content. */
+    private const ALLOWED_TAGS = '<p><br><strong><b><em><i><u><a><ul><ol><li><h2><h3><h4><h5><h6><blockquote><pre><code><img><figure><figcaption><table><thead><tbody><tr><th><td><hr><span><div><sub><sup>';
+
+    /** Body with unsafe HTML tags stripped. */
+    protected function sanitizedBody(): Attribute
+    {
+        return Attribute::get(fn () => strip_tags($this->body, self::ALLOWED_TAGS));
     }
 
     /** Meta description: excerpt with fallback to truncated body. */

@@ -39,3 +39,15 @@ it('rejects a missing email', function () {
         ->assertUnprocessable()
         ->assertJsonValidationErrors(['email']);
 });
+
+it('rate limits newsletter subscriptions', function () {
+    for ($i = 0; $i < 5; $i++) {
+        $this->postJson(route('newsletter.subscribe'), [
+            'email' => "test{$i}@example.com",
+        ])->assertSuccessful();
+    }
+
+    $this->postJson(route('newsletter.subscribe'), [
+        'email' => 'test6@example.com',
+    ])->assertTooManyRequests();
+});

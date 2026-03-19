@@ -176,7 +176,11 @@ document.addEventListener('DOMContentLoaded', () => {
         // Clone enough sets to fill at least 2× the viewport
         const clonesNeeded = Math.ceil((window.innerWidth * 2) / setWidth);
         for (let i = 0; i < clonesNeeded; i++) {
-            originals.forEach((item) => track.appendChild(item.cloneNode(true)));
+            originals.forEach((item) => {
+                const clone = item.cloneNode(true);
+                clone.setAttribute('aria-hidden', 'true');
+                track.appendChild(clone);
+            });
         }
 
         gsap.to(track, {

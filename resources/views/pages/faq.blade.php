@@ -135,52 +135,64 @@
             </div>
 
             {{-- All --}}
-            <div x-show="tab === 'all'" x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" role="tabpanel" id="panel-all" aria-labelledby="tab-all">
-                <h2 class="text-2xl font-bold text-base-900 mb-8">Education</h2>
-                <x-accordion :items="$educationFaqs" />
+            <template x-if="tab === 'all'">
+                <div role="tabpanel" id="panel-all" aria-labelledby="tab-all">
+                    <h2 class="text-2xl font-bold text-base-900 mb-8">Education</h2>
+                    <x-accordion :items="$educationFaqs" />
 
-                <h2 class="text-2xl font-bold text-base-900 mt-12 mb-8">Migration & Visas</h2>
-                <x-accordion :items="$migrationFaqs" />
+                    <h2 class="text-2xl font-bold text-base-900 mt-12 mb-8">Migration & Visas</h2>
+                    <x-accordion :items="$migrationFaqs" />
 
-                <h2 class="text-2xl font-bold text-base-900 mt-12 mb-8">Career Services</h2>
-                <x-accordion :items="$careerFaqs" />
+                    <h2 class="text-2xl font-bold text-base-900 mt-12 mb-8">Career Services</h2>
+                    <x-accordion :items="$careerFaqs" />
 
-                <h2 class="text-2xl font-bold text-base-900 mt-12 mb-8">Student Support</h2>
-                <x-accordion :items="$supportFaqs" />
+                    <h2 class="text-2xl font-bold text-base-900 mt-12 mb-8">Student Support</h2>
+                    <x-accordion :items="$supportFaqs" />
 
-                <h2 class="text-2xl font-bold text-base-900 mt-12 mb-8">Fees & Costs</h2>
-                <x-accordion :items="$feesFaqs" />
-            </div>
+                    <h2 class="text-2xl font-bold text-base-900 mt-12 mb-8">Fees & Costs</h2>
+                    <x-accordion :items="$feesFaqs" />
+                </div>
+            </template>
 
             {{-- Education --}}
-            <div x-show="tab === 'education'" x-cloak x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" role="tabpanel" id="panel-education" aria-labelledby="tab-education">
-                <h2 class="text-2xl font-bold text-base-900 mb-8">Education</h2>
-                <x-accordion :items="$educationFaqs" />
-            </div>
+            <template x-if="tab === 'education'">
+                <div role="tabpanel" id="panel-education" aria-labelledby="tab-education">
+                    <h2 class="text-2xl font-bold text-base-900 mb-8">Education</h2>
+                    <x-accordion :items="$educationFaqs" />
+                </div>
+            </template>
 
             {{-- Migration & Visas --}}
-            <div x-show="tab === 'migration'" x-cloak x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" role="tabpanel" id="panel-migration" aria-labelledby="tab-migration">
-                <h2 class="text-2xl font-bold text-base-900 mb-8">Migration & Visas</h2>
-                <x-accordion :items="$migrationFaqs" />
-            </div>
+            <template x-if="tab === 'migration'">
+                <div role="tabpanel" id="panel-migration" aria-labelledby="tab-migration">
+                    <h2 class="text-2xl font-bold text-base-900 mb-8">Migration & Visas</h2>
+                    <x-accordion :items="$migrationFaqs" />
+                </div>
+            </template>
 
             {{-- Career Services --}}
-            <div x-show="tab === 'career'" x-cloak x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" role="tabpanel" id="panel-career" aria-labelledby="tab-career">
-                <h2 class="text-2xl font-bold text-base-900 mb-8">Career Services</h2>
-                <x-accordion :items="$careerFaqs" />
-            </div>
+            <template x-if="tab === 'career'">
+                <div role="tabpanel" id="panel-career" aria-labelledby="tab-career">
+                    <h2 class="text-2xl font-bold text-base-900 mb-8">Career Services</h2>
+                    <x-accordion :items="$careerFaqs" />
+                </div>
+            </template>
 
             {{-- Student Support --}}
-            <div x-show="tab === 'support'" x-cloak x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" role="tabpanel" id="panel-support" aria-labelledby="tab-support">
-                <h2 class="text-2xl font-bold text-base-900 mb-8">Student Support</h2>
-                <x-accordion :items="$supportFaqs" />
-            </div>
+            <template x-if="tab === 'support'">
+                <div role="tabpanel" id="panel-support" aria-labelledby="tab-support">
+                    <h2 class="text-2xl font-bold text-base-900 mb-8">Student Support</h2>
+                    <x-accordion :items="$supportFaqs" />
+                </div>
+            </template>
 
             {{-- Fees --}}
-            <div x-show="tab === 'fees'" x-cloak x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" role="tabpanel" id="panel-fees" aria-labelledby="tab-fees">
-                <h2 class="text-2xl font-bold text-base-900 mb-8">Fees & Costs</h2>
-                <x-accordion :items="$feesFaqs" />
-            </div>
+            <template x-if="tab === 'fees'">
+                <div role="tabpanel" id="panel-fees" aria-labelledby="tab-fees">
+                    <h2 class="text-2xl font-bold text-base-900 mb-8">Fees & Costs</h2>
+                    <x-accordion :items="$feesFaqs" />
+                </div>
+            </template>
         </div>
     </section>
 
