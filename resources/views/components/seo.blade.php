@@ -22,7 +22,7 @@
     $pageDescription = $description ?? $defaults['description'];
     $pageRobots = $robots ?? $defaults['robots'];
     $pageOgType = $ogType ?? $og['type'];
-    $pageOgImage = $ogImage ?? route('og-image', ['title' => $title ?? $defaults['title']]);
+    $pageOgImage = $ogImage ?? route('og-image', ['path' => trim(request()->path(), '/')]);
     $pageCanonical = $canonical ?? url()->current();
 @endphp
 

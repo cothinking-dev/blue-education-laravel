@@ -9,25 +9,23 @@
 |
 */
 
-it('returns a PNG image with default title', function () {
-    $response = $this->get(route('og-image'));
+it('returns a PNG image for the home page', function () {
+    $response = $this->get('/og-image');
 
     $response->assertSuccessful();
     $response->assertHeader('Content-Type', 'image/png');
 });
 
-it('returns a PNG image with a custom title', function () {
-    $response = $this->get(route('og-image', ['title' => 'Education Services']));
+it('returns a PNG image for a nested page path', function () {
+    $response = $this->get('/og-image/services/education');
 
     $response->assertSuccessful();
     $response->assertHeader('Content-Type', 'image/png');
 });
 
-it('returns a PNG image with title and subtitle', function () {
-    $response = $this->get(route('og-image', [
-        'title' => 'Study in Australia',
-        'subtitle' => 'World-class education from Perth, WA',
-    ]));
+it('resolves the route label as title', function () {
+    // The contact route has label "Contact" — the image should generate without error
+    $response = $this->get('/og-image/contact');
 
     $response->assertSuccessful();
     $response->assertHeader('Content-Type', 'image/png');
@@ -37,5 +35,5 @@ it('includes dynamic og:image URL in page meta tags', function () {
     $response = $this->get('/contact');
 
     $response->assertSuccessful();
-    $response->assertSee('og-image?title=', false);
+    $response->assertSee('og-image/contact', false);
 });

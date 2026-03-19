@@ -248,8 +248,10 @@ Route::get('/robots.txt', function () {
     return response($robots, 200, ['Content-Type' => 'text/plain']);
 });
 
-// Dynamic OG Image
-Route::get('/og-image', App\Http\Controllers\OgImageController::class)->name('og-image');
+// Dynamic OG Image — e.g. /og-image/services/education
+Route::get('/og-image/{path?}', App\Http\Controllers\OgImageController::class)
+    ->where('path', '.*')
+    ->name('og-image');
 
 // Showcase (dev only)
 Route::get('/showcase', function () {

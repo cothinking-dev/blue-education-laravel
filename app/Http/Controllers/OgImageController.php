@@ -3,9 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\RedirectResponse;
-use Illuminate\Http\Request;
 use Illuminate\Http\Response;
+use Illuminate\Support\Facades\Route as RouteFacade;
 use Intervention\Image\Drivers\Gd\Driver as GdDriver;
+use Intervention\Image\Geometry\Factories\CircleFactory;
 use Intervention\Image\Geometry\Factories\LineFactory;
 use Intervention\Image\ImageManager;
 use Intervention\Image\Interfaces\ImageInterface;
@@ -17,37 +18,59 @@ class OgImageController extends Controller
 
     private const HEIGHT = 630;
 
-    public function __invoke(Request $request): Response|RedirectResponse
+    public function __invoke(string $path = ''): Response|RedirectResponse
     {
         if (! extension_loaded('gd')) {
             return redirect(asset('brand/logo-og.png'));
         }
 
-        $title = $request->query('title', config('seo.defaults.title'));
-        $subtitle = $request->query('subtitle', '');
+        $title = $this->resolveTitleFromPath($path);
 
         $manager = new ImageManager(new GdDriver);
-
-        $image = $this->buildImage($manager, $title, $subtitle);
+        $image = $this->buildImage($manager, $title);
 
         return response($image->toPng()->toString(), 200)
             ->header('Content-Type', 'image/png');
     }
 
-    private function buildImage(ImageManager $manager, string $title, string $subtitle): ImageInterface
+    /**
+     * Resolve the page title from its route path using route label defaults.
+     */
+    private function resolveTitleFromPath(string $path): string
+    {
+        $normalizedPath = '/'.trim($path, '/');
+
+        // Match against registered routes to find the label
+        $routes = collect(RouteFacade::getRoutes()->getRoutes());
+
+        $matched = $routes->first(function (\Illuminate\Routing\Route $route) use ($normalizedPath) {
+            return '/'.trim($route->uri(), '/') === $normalizedPath
+                && in_array('GET', $route->methods());
+        });
+
+        if ($matched && $label = $matched->defaults['label'] ?? null) {
+            return $label;
+        }
+
+        // Fallback: humanize the last path segment
+        if ($path && $path !== '/') {
+            $lastSegment = last(explode('/', trim($path, '/')));
+
+            return str($lastSegment)->replace('-', ' ')->title()->toString();
+        }
+
+        return config('seo.defaults.title');
+    }
+
+    private function buildImage(ImageManager $manager, string $title): ImageInterface
     {
         $image = $manager->create(self::WIDTH, self::HEIGHT);
 
-        // Blue gradient background (primary-800 → primary-950)
         $this->drawGradientBackground($image);
-
-        // Subtle texture overlay (dot grid + diagonal lines)
-        $this->drawTexture($image);
-
-        // Place the Blue Education logo
+        $this->drawTopoTexture($image);
         $this->placeLogo($image, $manager);
 
-        // Draw a subtle divider line
+        // Subtle divider line
         $image->drawLine(function (LineFactory $line) {
             $line->from(80, 340);
             $line->to(400, 340);
@@ -55,15 +78,7 @@ class OgImageController extends Controller
             $line->width(2);
         });
 
-        // Draw the page title
         $this->drawTitle($image, $title);
-
-        // Draw subtitle if provided
-        if ($subtitle) {
-            $this->drawSubtitle($image, $subtitle);
-        }
-
-        // Draw the domain at bottom
         $this->drawDomain($image);
 
         return $image;
@@ -71,8 +86,7 @@ class OgImageController extends Controller
 
     private function drawGradientBackground(ImageInterface $image): void
     {
-        // Simulate a vertical gradient from primary-800 (#1e3a8a) to primary-950 (#0f1d3a)
-        // by drawing horizontal lines with interpolated colors
+        // Vertical gradient from primary-800 (#1e3a8a) to primary-950 (#0f1d3a)
         $startR = 30;
         $startG = 58;
         $startB = 138;
@@ -95,27 +109,42 @@ class OgImageController extends Controller
         }
     }
 
-    private function drawTexture(ImageInterface $image): void
+    /**
+     * Draw topographic contour texture matching the CTA banner pattern.
+     * Uses arcs and circles at very low opacity for a subtle effect.
+     */
+    private function drawTopoTexture(ImageInterface $image): void
     {
-        // Draw subtle dot grid pattern
-        $dotSpacing = 40;
-        for ($x = 20; $x < self::WIDTH; $x += $dotSpacing) {
-            for ($y = 20; $y < self::HEIGHT; $y += $dotSpacing) {
-                $image->drawCircle($x, $y, function ($circle) {
-                    $circle->radius(1);
-                    $circle->background('rgba(255, 255, 255, 0.03)');
+        $tileSize = 200;
+        $color = 'rgba(255, 255, 255, 0.015)';
+
+        for ($tx = 0; $tx < self::WIDTH; $tx += $tileSize) {
+            for ($ty = 0; $ty < self::HEIGHT; $ty += $tileSize) {
+                $cx = $tx + 100;
+                $cy = $ty + 100;
+
+                // Concentric circles (matching CTA pattern)
+                $image->drawCircle($cx, $cy, function (CircleFactory $circle) use ($color) {
+                    $circle->radius(60);
+                    $circle->border($color, 1);
+                });
+
+                $image->drawCircle($cx, $cy, function (CircleFactory $circle) use ($color) {
+                    $circle->radius(30);
+                    $circle->border($color, 1);
+                });
+
+                // Quarter-arc approximations using small circles at tile corners
+                $image->drawCircle($tx, $ty, function (CircleFactory $circle) use ($color) {
+                    $circle->radius(100);
+                    $circle->border($color, 1);
+                });
+
+                $image->drawCircle($tx + $tileSize, $ty, function (CircleFactory $circle) use ($color) {
+                    $circle->radius(100);
+                    $circle->border($color, 1);
                 });
             }
-        }
-
-        // Draw subtle diagonal lines
-        for ($i = -self::HEIGHT; $i < self::WIDTH + self::HEIGHT; $i += 80) {
-            $image->drawLine(function (LineFactory $line) use ($i) {
-                $line->from($i, 0);
-                $line->to($i + self::HEIGHT, self::HEIGHT);
-                $line->color('rgba(255, 255, 255, 0.015)');
-                $line->width(1);
-            });
         }
     }
 
@@ -128,42 +157,22 @@ class OgImageController extends Controller
         }
 
         $logo = $manager->read($logoPath);
-
-        // Scale logo to fit nicely — target ~260px wide
         $logo->scaleDown(width: 260);
-
-        // Invert to white: since logo is dark on transparent, brighten it
         $logo->brightness(100);
 
-        // Place at top-left area with padding
         $image->place($logo, 'top-left', 80, 80);
     }
 
     private function drawTitle(ImageInterface $image, string $title): void
     {
         $fontPath = resource_path('fonts/Inter-Bold.ttf');
-
-        // Word-wrap the title to fit within the image
-        $wrappedTitle = $this->wordWrap($title, 28);
+        $wrappedTitle = wordwrap($title, 28, "\n", true);
 
         $image->text($wrappedTitle, 80, 380, function (FontFactory $font) use ($fontPath) {
             $font->filename($fontPath);
             $font->size(52);
             $font->color('rgba(255, 255, 255, 0.95)');
             $font->lineHeight(1.3);
-            $font->align('left');
-            $font->valign('top');
-        });
-    }
-
-    private function drawSubtitle(ImageInterface $image, string $subtitle): void
-    {
-        $fontPath = resource_path('fonts/Inter-Regular.ttf');
-
-        $image->text($subtitle, 80, 520, function (FontFactory $font) use ($fontPath) {
-            $font->filename($fontPath);
-            $font->size(24);
-            $font->color('rgba(255, 255, 255, 0.65)');
             $font->align('left');
             $font->valign('top');
         });
@@ -180,10 +189,5 @@ class OgImageController extends Controller
             $font->align('right');
             $font->valign('bottom');
         });
-    }
-
-    private function wordWrap(string $text, int $maxCharsPerLine): string
-    {
-        return wordwrap($text, $maxCharsPerLine, "\n", true);
     }
 }
