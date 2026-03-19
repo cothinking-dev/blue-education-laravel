@@ -21,7 +21,7 @@
 
 @if($variant === 'featured')
     {{-- Full-width featured card (e.g. Executive Director) --}}
-    <article {{ $attributes->merge(['class' => 'bg-white rounded-xl border border-base-200 p-8 flex items-start gap-8']) }}>
+    <article {{ $attributes->merge(['class' => 'bg-white rounded-corner-lg border border-base-200 p-8 flex items-start gap-8 shadow-md']) }}>
         @if($photo)
             <picture class="shrink-0">
                 <source srcset="{{ asset($webpPhoto) }}" type="image/webp">
@@ -49,7 +49,7 @@
 
 @elseif($variant === 'legal')
     {{-- Migration & legal specialist card with dark header bar --}}
-    <article {{ $attributes->merge(['class' => 'border-2 border-primary-800 rounded-xl overflow-hidden']) }}>
+    <article {{ $attributes->merge(['class' => 'border-2 border-primary-800 rounded-corner-lg overflow-hidden shadow-md']) }}>
         <div class="px-5 py-2 bg-primary-900">
             <span class="text-white text-xs font-bold uppercase tracking-widest">{{ $badgeLabel }}</span>
         </div>
@@ -81,14 +81,14 @@
 
 @else
     {{-- Default card variant: photo on top, bordered card --}}
-    <article {{ $attributes->merge(['class' => 'border border-base-200 rounded-xl overflow-hidden']) }}>
+    <article {{ $attributes->merge(['class' => 'border border-base-200 rounded-corner-lg overflow-hidden shadow-md']) }}>
         @if($photo)
             <picture class="block">
                 <source srcset="{{ asset($webpPhoto) }}" type="image/webp">
-                <img src="{{ asset($photo) }}" alt="{{ $name }}" class="w-full h-48 object-cover" loading="lazy">
+                <img src="{{ asset($photo) }}" alt="{{ $name }}" class="w-full h-56 object-cover object-top" loading="lazy">
             </picture>
         @else
-            <div class="w-full h-48 bg-primary-100 flex items-center justify-center">
+            <div class="w-full h-56 bg-primary-100 flex items-center justify-center">
                 <span class="text-3xl font-bold text-primary-600">{{ $initials }}</span>
             </div>
         @endif

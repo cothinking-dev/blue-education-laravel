@@ -2,19 +2,19 @@
           description="Meet the Blue Education team — multilingual specialists across five countries, delivering education, migration, and career advice.">
 
     {{-- §1 Hero --}}
-    <x-hero title="Multilingual specialists. Five countries. One mission."
+    <x-hero title="Multilingual specialists across five countries."
             subtitle="Education, migration, and career experts — headquartered in Perth, represented across Asia, Africa, and the Pacific."
-            variant="light"
-            :breadcrumbs="true">
-        <p class="text-base-600 leading-relaxed text-pretty max-w-3xl mx-auto">Our team spans continents, industries, and languages. From Registered Migration Agents to chartered accountants, solicitors to career counsellors — we bring real-world expertise to every consultation. Most of us are multilingual. All of us are committed to getting it right for you.</p>
-    </x-hero>
+            :image="asset('images/about-team/team-meeting.webp')"
+            alt="Blue Education team in a professional meeting"
+            variant="left"
+            :breadcrumbs="true" />
 
-    {{-- Visual context --}}
-    <x-visual-break :images="[
-        ['src' => 'images/about-team/office-exterior.webp', 'alt' => 'Blue Education Perth office exterior'],
-        ['src' => 'images/about-team/team-meeting.webp', 'alt' => 'Blue Education team in a professional meeting'],
-        ['src' => 'images/about-team/international-operations.webp', 'alt' => 'Blue Education international operations and global network'],
-    ]" padding="pt-14" />
+    {{-- Intro --}}
+    <section class="bg-white">
+        <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
+            <p class="text-base-600 text-lg leading-relaxed text-pretty max-w-3xl">Our team spans continents, industries, and languages. From Registered Migration Agents to chartered accountants, solicitors to career counsellors — we bring real-world expertise to every consultation. Most of us are multilingual, and we are committed to getting it right for you.</p>
+        </div>
+    </section>
 
     {{-- §2 Australian Team --}}
     <section class="bg-white">
@@ -104,7 +104,7 @@
                     ['icon' => 'briefcase', 'title' => 'Career Specialists', 'desc' => 'Job readiness. Employer connections. Career mapping. We bridge the gap between qualification and employment, with real-world insight into the Australian job market.'],
                     ['icon' => 'globe-alt', 'title' => 'Migration Specialists', 'desc' => 'Registered agents. Visa applications. Legal compliance. Blue holds MARN 1385471 and QEAC S165. We navigate the system so you don\'t have to.'],
                 ] as $item)
-                    <article class="bg-white rounded-xl p-8 border border-base-200 text-center">
+                    <article class="bg-white rounded-corner-lg p-8 border border-base-200 text-center shadow-md">
                         <div class="w-14 h-14 bg-primary-100 rounded-xl flex items-center justify-center mx-auto mb-5">
                             <x-dynamic-component :component="'heroicon-o-' . $item['icon']" class="w-7 h-7 text-primary-700" />
                         </div>
@@ -120,7 +120,7 @@
     <section class="bg-white">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
             <x-section-heading title="International Offices" :centered="false" />
-            <x-data-table :headers="['Location', 'Representative(s)', 'Market Coverage']"
+            <x-data-table class="shadow-xl" :headers="['Location', 'Representative(s)', 'Market Coverage']"
                           :rows="$offices" />
         </div>
     </section>
