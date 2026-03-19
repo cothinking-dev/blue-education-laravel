@@ -1,6 +1,5 @@
 <?php
 
-use App\Http\Controllers\AboutController;
 use App\Models\TeamMember;
 
 /*
@@ -32,29 +31,27 @@ it('displays International team members on the team page', function () {
     }
 });
 
-it('builds the offices table with correct structure', function () {
-    $australians = TeamMember::factory()->australian()->count(2)->create();
-    $international = TeamMember::factory()->international()->create([
+it('builds the offices table with correct structure via the team page', function () {
+    TeamMember::factory()->australian()->count(2)->create();
+    $leadership = TeamMember::factory()->international()->create([
         'team_type' => 'leadership',
         'name' => 'Sonia Test',
     ]);
-    $regional = TeamMember::factory()->international()->create([
+    TeamMember::factory()->international()->create([
         'team_type' => 'general',
         'region' => 'South Asia',
     ]);
 
-    $controller = new AboutController;
-    $offices = (new \ReflectionMethod($controller, 'buildOfficesTable'))
-        ->invoke($controller, $australians, $international, collect([$regional]));
+    $response = $this->get('/about/team')->assertSuccessful();
 
     // HQ row
-    expect($offices[0][0])->toBe('Perth, WA (HQ)');
-    expect($offices[0][2])->toBe('Australia-wide');
+    $response->assertSeeText('Perth, WA (HQ)');
+    $response->assertSeeText('Australia-wide');
 
     // Leadership row
-    expect($offices[1][0])->toBe('Global (Offshore)');
-    expect($offices[1][1])->toContain('Sonia Test');
+    $response->assertSeeText('Global (Offshore)');
+    $response->assertSeeText('Sonia Test');
 
     // Regional row
-    expect($offices[2][1])->toContain($regional->name);
+    $response->assertSeeText('South Asia');
 });

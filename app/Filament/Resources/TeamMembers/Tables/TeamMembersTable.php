@@ -2,6 +2,7 @@
 
 namespace App\Filament\Resources\TeamMembers\Tables;
 
+use App\Models\TeamMember;
 use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\EditAction;
@@ -44,17 +45,9 @@ class TeamMembersTable
             ->defaultSort('sort_order')
             ->filters([
                 SelectFilter::make('section')
-                    ->options([
-                        'Australia' => 'Australia',
-                        'International' => 'International',
-                        'Partner' => 'Partner',
-                    ]),
+                    ->options(TeamMember::SECTIONS),
                 SelectFilter::make('team_type')
-                    ->options([
-                        'general' => 'General',
-                        'legal' => 'Legal / Migration Specialist',
-                        'leadership' => 'Leadership (Featured)',
-                    ]),
+                    ->options(TeamMember::TEAM_TYPES),
             ])
             ->recordActions([
                 EditAction::make(),

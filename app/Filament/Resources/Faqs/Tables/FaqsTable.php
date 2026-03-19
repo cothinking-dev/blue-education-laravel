@@ -2,6 +2,7 @@
 
 namespace App\Filament\Resources\Faqs\Tables;
 
+use App\Models\Faq;
 use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\EditAction;
@@ -34,13 +35,7 @@ class FaqsTable
             ->defaultSort('sort_order')
             ->filters([
                 SelectFilter::make('category')
-                    ->options([
-                        'education' => 'Education',
-                        'migration' => 'Migration',
-                        'career' => 'Career',
-                        'support' => 'Support',
-                        'fees' => 'Fees',
-                    ]),
+                    ->options(Faq::CATEGORIES),
             ])
             ->recordActions([
                 EditAction::make(),

@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Console\Commands\GenerateSitemap;
 use Illuminate\Http\Response;
-use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Cache;
 
 class SitemapController extends Controller
@@ -14,7 +13,7 @@ class SitemapController extends Controller
         $xml = Cache::get(GenerateSitemap::CACHE_KEY);
 
         if ($xml === null) {
-            Artisan::call('sitemap:generate');
+            app(GenerateSitemap::class)->handle();
             $xml = Cache::get(GenerateSitemap::CACHE_KEY);
         }
 

@@ -1,5 +1,9 @@
 @php
     $org = config('seo.organization');
+    $phone = $org['phone'];
+    $phoneMobile = $org['phone_mobile'];
+    $phoneNational = $org['phone_national'];
+    $email = $org['email'];
     $localBusinessSchema = [
         '@context' => 'https://schema.org',
         '@type' => 'LocalBusiness',
@@ -48,7 +52,7 @@
             :breadcrumbs="true">
         <div class="flex flex-wrap gap-4 mt-8">
             <x-btn href="#enquiry-form" variant="white" size="lg">Send an Enquiry</x-btn>
-            <x-btn href="tel:+61863810030" variant="outline-white" size="lg">Call +61 8 6381 0030</x-btn>
+            <x-btn href="tel:{{ preg_replace('/\s/', '', $phone) }}" variant="outline-white" size="lg">Call {{ $phone }}</x-btn>
         </div>
     </x-hero>
 
@@ -71,15 +75,15 @@
                     </x-slot:icon>
                     <div class="space-y-2">
                         <div>
-                            <a href="tel:+61863810030" class="font-semibold text-primary-800 hover:underline">+61 8 6381 0030</a>
+                            <a href="tel:{{ preg_replace('/\s/', '', $phone) }}" class="font-semibold text-primary-800 hover:underline">{{ $phone }}</a>
                             <p class="text-base-400 text-xs">Office</p>
                         </div>
                         <div>
-                            <a href="tel:+61411708899" class="font-semibold text-primary-800 hover:underline">+61 411 708 899</a>
+                            <a href="tel:{{ preg_replace('/\s/', '', $phoneMobile) }}" class="font-semibold text-primary-800 hover:underline">{{ $phoneMobile }}</a>
                             <p class="text-base-400 text-xs">Mobile / WhatsApp</p>
                         </div>
                         <div>
-                            <a href="tel:1300040696" class="font-semibold text-primary-800 hover:underline">1300 040 696</a>
+                            <a href="tel:{{ preg_replace('/\s/', '', $phoneNational) }}" class="font-semibold text-primary-800 hover:underline">{{ $phoneNational }}</a>
                             <p class="text-base-400 text-xs">Australia-wide</p>
                         </div>
                     </div>
@@ -89,7 +93,7 @@
                     <x-slot:icon>
                         <x-heroicon-o-envelope class="w-6 h-6" />
                     </x-slot:icon>
-                    <a href="mailto:info@blueeducation.com.au" class="font-semibold text-primary-800 hover:underline">info@blueeducation.com.au</a>
+                    <a href="mailto:{{ $email }}" class="font-semibold text-primary-800 hover:underline">{{ $email }}</a>
                     <p class="text-base-400 text-xs mt-1">We respond within three business days.</p>
                 </x-contact-card>
 
@@ -128,8 +132,8 @@
                         <p class="font-semibold text-base-800 mb-2">Blue Education</p>
                         <address class="not-italic leading-relaxed">33 Barrack St, GF Unit 2<br>Perth WA 6000</address>
                         <div class="mt-3 pt-3 border-t border-base-100 space-y-1">
-                            <p><a href="tel:+61863810030" class="text-primary-800 hover:underline">+61 8 6381 0030</a></p>
-                            <p><a href="mailto:info@blueeducation.com.au" class="text-primary-800 hover:underline">info@blueeducation.com.au</a></p>
+                            <p><a href="tel:{{ preg_replace('/\s/', '', $phone) }}" class="text-primary-800 hover:underline">{{ $phone }}</a></p>
+                            <p><a href="mailto:{{ $email }}" class="text-primary-800 hover:underline">{{ $email }}</a></p>
                         </div>
                     </div>
                 </div>
@@ -149,7 +153,7 @@
                               ['Indonesia', 'Hana'],
                               ['Malaysia', 'Elaine Ho & Monica Low'],
                           ]" />
-            <p class="text-base-500 text-sm mt-4">Or email <a href="mailto:info@blueeducation.com.au" class="text-primary-800 hover:underline">info@blueeducation.com.au</a> for general enquiries.</p>
+            <p class="text-base-500 text-sm mt-4">Or email <a href="mailto:{{ $email }}" class="text-primary-800 hover:underline">{{ $email }}</a> for general enquiries.</p>
         </div>
     </section>
 
@@ -159,6 +163,6 @@
                   primary-text="Book a Consultation"
                   :primary-href="route('contact') . '#enquiry-form'"
                   secondary-text="Call Us Now"
-                  secondary-href="tel:+61863810030" />
+                  secondary-href="tel:{{ preg_replace('/\s/', '', $phone) }}" />
 
 </x-layout>

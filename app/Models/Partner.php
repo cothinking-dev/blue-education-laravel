@@ -11,6 +11,12 @@ class Partner extends Model
     /** @use HasFactory<\Database\Factories\PartnerFactory> */
     use HasFactory;
 
+    /** @var array<string, string> */
+    public const TYPES = [
+        'university' => 'University',
+        'tafe' => 'TAFE',
+    ];
+
     /** @var list<string> */
     protected $fillable = [
         'name',

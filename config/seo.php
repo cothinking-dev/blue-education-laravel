@@ -64,6 +64,8 @@ return [
             'country' => 'AU',
         ],
         'phone' => '+61 8 6381 0030',
+        'phone_mobile' => '+61 411 708 899',
+        'phone_national' => '1300 040 696',
         'email' => 'info@blueeducation.com.au',
         'founding_year' => 1998,
         'whatsapp' => env('WHATSAPP_NUMBER', '61411708899'),

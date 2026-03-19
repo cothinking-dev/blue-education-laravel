@@ -3,6 +3,7 @@
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\FaqController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\NewsletterController;
 use App\Http\Controllers\OgImageController;
@@ -68,7 +69,7 @@ Route::prefix('about')->name('about.')->group(function () {
 Route::get('/why-australia', [PageController::class, 'show'])->name('why-australia')->defaults('label', 'Why Australia');
 
 // Resources
-Route::get('/faq', [PageController::class, 'show'])->name('faq')->defaults('label', 'FAQ');
+Route::get('/faq', FaqController::class)->name('faq')->defaults('label', 'FAQ');
 Route::get('/admission-requirements', [PageController::class, 'show'])->name('admission-requirements')->defaults('label', 'Admission Requirements');
 Route::get('/fees', [PageController::class, 'show'])->name('fees')->defaults('label', 'Fees & Costs');
 

@@ -12,6 +12,15 @@ class Faq extends Model
     /** @use HasFactory<\Database\Factories\FaqFactory> */
     use HasFactory, SoftDeletes;
 
+    /** @var array<string, string> */
+    public const CATEGORIES = [
+        'education' => 'Education',
+        'migration' => 'Migration',
+        'career' => 'Career',
+        'support' => 'Support',
+        'fees' => 'Fees',
+    ];
+
     /** @var list<string> */
     protected $fillable = [
         'question',

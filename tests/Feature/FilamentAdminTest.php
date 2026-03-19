@@ -1,6 +1,7 @@
 <?php
 
 use App\Filament\Resources\Categories\Pages\ListCategories;
+use App\Filament\Resources\Enquiries\Pages\ListEnquiries;
 use App\Filament\Resources\Faqs\Pages\ListFaqs;
 use App\Filament\Resources\Partners\Pages\ListPartners;
 use App\Filament\Resources\Posts\Pages\ListPosts;
@@ -47,6 +48,7 @@ dataset('filament_list_pages', [
     'faqs' => ListFaqs::class,
     'partners' => ListPartners::class,
     'subscribers' => ListSubscribers::class,
+    'enquiries' => ListEnquiries::class,
 ]);
 
 it('renders admin list pages', function (string $page) {

@@ -2,6 +2,7 @@
 
 namespace App\Filament\Resources\TeamMembers\Schemas;
 
+use App\Models\TeamMember;
 use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\Textarea;
@@ -30,18 +31,10 @@ class TeamMemberForm
                 TextInput::make('credentials'),
                 TextInput::make('languages'),
                 Select::make('section')
-                    ->options([
-                        'Australia' => 'Australia',
-                        'International' => 'International',
-                        'Partner' => 'Partner',
-                    ])
+                    ->options(TeamMember::SECTIONS)
                     ->required(),
                 Select::make('team_type')
-                    ->options([
-                        'general' => 'General',
-                        'legal' => 'Legal / Migration Specialist',
-                        'leadership' => 'Leadership (Featured)',
-                    ])
+                    ->options(TeamMember::TEAM_TYPES)
                     ->default('general')
                     ->required(),
                 TextInput::make('region'),

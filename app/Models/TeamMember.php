@@ -12,6 +12,20 @@ class TeamMember extends Model
     /** @use HasFactory<\Database\Factories\TeamMemberFactory> */
     use HasFactory, SoftDeletes;
 
+    /** @var array<string, string> */
+    public const SECTIONS = [
+        'Australia' => 'Australia',
+        'International' => 'International',
+        'Partner' => 'Partner',
+    ];
+
+    /** @var array<string, string> */
+    public const TEAM_TYPES = [
+        'general' => 'General',
+        'legal' => 'Legal / Migration Specialist',
+        'leadership' => 'Leadership (Featured)',
+    ];
+
     /** @var list<string> */
     protected $fillable = [
         'name',

@@ -177,7 +177,9 @@ class OgImageController extends Controller
     {
         $fontPath = resource_path('fonts/Inter-Medium.ttf');
 
-        $image->text('blueeducation.com.au', self::WIDTH - 80, self::HEIGHT - 40, function (FontFactory $font) use ($fontPath) {
+        $domain = parse_url(config('seo.organization.url'), PHP_URL_HOST) ?? 'blueeducation.com.au';
+
+        $image->text($domain, self::WIDTH - 80, self::HEIGHT - 40, function (FontFactory $font) use ($fontPath) {
             $font->filename($fontPath);
             $font->size(18);
             $font->color('rgba(255, 255, 255, 0.45)');

@@ -4,9 +4,9 @@ namespace App\Filament\Resources\Enquiries\Pages;
 
 use App\Filament\Resources\Enquiries\EnquiryResource;
 use Filament\Actions\DeleteAction;
-use Filament\Resources\Pages\EditRecord;
+use Filament\Resources\Pages\ViewRecord;
 
-class EditEnquiry extends EditRecord
+class ViewEnquiry extends ViewRecord
 {
     protected static string $resource = EnquiryResource::class;
 
