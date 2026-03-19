@@ -29,6 +29,14 @@ class TeamMemberForm
                         'Partner' => 'Partner',
                     ])
                     ->required(),
+                Select::make('team_type')
+                    ->options([
+                        'general' => 'General',
+                        'legal' => 'Legal / Migration Specialist',
+                        'leadership' => 'Leadership (Featured)',
+                    ])
+                    ->default('general')
+                    ->required(),
                 TextInput::make('region'),
                 TextInput::make('sort_order')
                     ->required()

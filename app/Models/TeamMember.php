@@ -21,6 +21,7 @@ class TeamMember extends Model
         'languages',
         'section',
         'region',
+        'team_type',
         'sort_order',
     ];
 
@@ -33,5 +34,16 @@ class TeamMember extends Model
     public function scopeSection(Builder $query, string $section): Builder
     {
         return $query->where('section', $section);
+    }
+
+    /**
+     * Scope to a specific team type.
+     *
+     * @param  Builder<TeamMember>  $query
+     * @return Builder<TeamMember>
+     */
+    public function scopeTeamType(Builder $query, string $type): Builder
+    {
+        return $query->where('team_type', $type);
     }
 }
