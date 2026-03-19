@@ -1,5 +1,5 @@
 <x-layout title="Your Future in Australia Starts Here"
-          description="Independent education, career, and migration advice from Perth, Western Australia. Since 1998.">
+          description="Independent education, career, and migration advice from Perth, Western Australia; Since 1998.">
 
     {{-- §1 Hero --}}
     <section id="home-hero" class="relative min-h-[95dvh] flex flex-col items-center justify-center text-center overflow-hidden [clip-path:inset(0)]">
@@ -80,7 +80,7 @@
             <div class="flex flex-col lg:flex-row gap-12 items-center">
                 {{-- Text --}}
                 <div class="lg:w-[42%] shrink-0">
-                    <img src="{{ asset('brand/logo.webp') }}" alt="Blue Education — education, migration & career" class="h-16 w-auto mx-auto mb-6">
+                    <img src="{{ asset('brand/logo.webp') }}" alt="Blue Education — education, migration & career" class="h-16 w-auto mx-auto mb-6" loading="lazy">
                     <h2 class="text-3xl font-bold text-base-900 mb-6 text-pretty" data-animate="fade-up">{{ date('Y') - 1998 }} years of experience we stand behind.</h2>
                     <div class="text-base-600 leading-relaxed space-y-4 text-pretty">
                         <p class="text-sm">Since 1998, we've operated on one principle: give honest advice.</p>
