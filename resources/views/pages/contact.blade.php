@@ -40,7 +40,7 @@
 
     {{-- §1 Hero --}}
     <x-hero title="Let's Talk About Your Future"
-            subtitle="Whether you need education, migration, or career guidance — we respond to all enquiries within one business day."
+            subtitle="Whether you need education, migration, or career guidance — we respond to all enquiries within three business days."
             :image="asset('images/contact/consultation-room.webp')"
             alt="Professional consultation at Blue Education office"
             variant="left"
@@ -56,7 +56,7 @@
     <x-stat-block variant="primary" :stats="[
         ['value' => date('Y') - 1998, 'label' => 'Years Experience'],
         ['value' => '40+', 'label' => 'Countries Served'],
-        ['value' => '1', 'label' => 'Business Day Response'],
+        ['value' => '3', 'label' => 'Business Day Response'],
         ['value' => '6', 'label' => 'Languages Spoken'],
     ]" />
 
@@ -90,7 +90,7 @@
                         <x-heroicon-o-envelope class="w-6 h-6" />
                     </x-slot:icon>
                     <a href="mailto:info@blueeducation.com.au" class="font-semibold text-primary-800 hover:underline">info@blueeducation.com.au</a>
-                    <p class="text-base-400 text-xs mt-1">We respond within one business day.</p>
+                    <p class="text-base-400 text-xs mt-1">We respond within three business days.</p>
                 </x-contact-card>
 
                 <x-contact-card title="Visit Our Office">
@@ -137,19 +137,7 @@
         </div>
     </section>
 
-    {{-- §5 Visual Context — Office Photos --}}
-    <section class="bg-white">
-        <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
-            <x-section-heading title="Our Perth Office" subtitle="Centrally located in Perth CBD, a short walk from Perth Station." :centered="false" />
-            <div class="grid sm:grid-cols-3 gap-6" data-animate="stagger">
-                <img src="{{ asset('images/contact/office-reception.webp') }}" alt="Blue Education office reception area" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
-                <img src="{{ asset('images/contact/consultation-room.webp') }}" alt="Professional consultation room" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
-                <img src="{{ asset('images/contact/perth-cbd.webp') }}" alt="Perth CBD street view near the office" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
-            </div>
-        </div>
-    </section>
-
-    {{-- §6 International Representatives --}}
+    {{-- §5 International Representatives --}}
     <section class="bg-base-50">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
             <x-section-heading title="International Representatives" subtitle="For local support in your region, contact our international team." :centered="false" />
