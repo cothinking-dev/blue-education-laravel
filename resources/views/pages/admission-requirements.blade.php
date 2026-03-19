@@ -15,7 +15,7 @@
             <h2 class="text-3xl font-bold text-base-900 mb-4 text-pretty" data-animate="fade-up">English Language Requirements</h2>
             <p class="text-base-600 mb-2 text-pretty">Accepted tests: IELTS, TOEFL, Cambridge CAE, Pearson PTE. Scores valid for 2 years.</p>
             <p class="text-sm text-base-500 mb-6 text-pretty">Institutions may set higher thresholds. Course requirements may differ from visa requirements.</p>
-            <x-data-table :headers="['Program', 'Overall IELTS', 'Per-Band Minimum']"
+            <x-data-table class="shadow-xl" :headers="['Program', 'Overall IELTS', 'Per-Band Minimum']"
                           :rows="[
                               ['Certificate I–IV', '5.5', 'Varies'],
                               ['VET/TAFE', '5.5 – 6.0', 'Varies'],
@@ -29,12 +29,9 @@
     </section>
 
     {{-- Visual break --}}
-    <section class="bg-base-50">
-        <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
-            <div class="grid sm:grid-cols-2 gap-6">
-                <img src="{{ asset('images/admission-requirements/study-materials.webp') }}" alt="East Asian student with study materials and textbooks for academic preparation" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
-                <img src="{{ asset('images/admission-requirements/checklist.webp') }}" alt="Application checklist and admission documents on a desk" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2]" loading="lazy">
-            </div>
+    <section class="bg-white">
+        <div class="max-w-7xl mx-auto px-8 lg:px-16 py-10">
+            <img src="{{ asset('images/why-australia/perth-skyline.webp') }}" alt="Perth city skyline across the Swan River" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/1] shadow-lg" loading="lazy">
         </div>
     </section>
 
@@ -42,7 +39,7 @@
     <section class="bg-base-50">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
             <x-section-heading title="Academic Requirements" :centered="false" />
-            <x-data-table :headers="['Education Level', 'Academic Entry Requirement']"
+            <x-data-table class="shadow-xl" :headers="['Education Level', 'Academic Entry Requirement']"
                           :rows="[
                               ['Foundation', 'Year 11 (or equivalent)'],
                               ['VET/TAFE', 'Year 10–12 (varies by program)'],
@@ -61,7 +58,7 @@
             <p class="text-base-600 mb-8 text-pretty">We assess where you are now and map the shortest path to where you want to be.</p>
             <div class="flex flex-col lg:flex-row gap-12">
                 <div class="flex-1">
-                    <x-data-table :headers="['Pathway', 'Duration', 'Purpose']"
+                    <x-data-table class="shadow-xl" :headers="['Pathway', 'Duration', 'Purpose']"
                                   :rows="[
                                       ['ELICOS', '10–30 weeks', 'English proficiency improvement'],
                                       ['Foundation Studies', '1 year', 'Pre-university academic preparation'],
@@ -78,12 +75,15 @@
                     </div>
                 </div>
                 <div class="lg:w-[35%]">
-                    <div class="bg-primary-800 rounded-corner-lg p-6 text-white">
-                        <h3 class="font-bold text-lg mb-3">Get assessed</h3>
-                        <p class="text-primary-200 text-sm mb-6 text-pretty">Send your transcripts and English test results — we'll assess your options and recommend the best pathway.</p>
+                    <div class="bg-primary-50 border-2 border-primary-100 rounded-corner-lg p-8 text-center">
+                        <div class="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <x-heroicon-o-check-circle class="w-6 h-6 text-primary-700" />
+                        </div>
+                        <h3 class="font-bold text-lg text-base-900 mb-3">Get assessed</h3>
+                        <p class="text-base-600 text-sm mb-6 text-pretty">Send your transcripts and English test results — we'll assess your options and recommend the best pathway.</p>
                         <div class="space-y-3">
-                            <a href="{{ route('contact') }}" class="block bg-white text-primary-800 font-semibold px-5 py-2.5 rounded-corner text-center text-sm hover:bg-primary-50 transition-colors">Get My Eligibility Assessed</a>
-                            <a href="{{ route('services.education.index') }}" class="block text-center text-primary-200 font-medium text-sm hover:text-white transition-colors">View Education Pathways &rarr;</a>
+                            <a href="{{ route('contact') }}" class="block bg-primary-600 text-white font-semibold px-5 py-2.5 rounded-corner text-center text-sm hover:bg-primary-700 transition-colors">Get My Eligibility Assessed</a>
+                            <a href="{{ route('services.education.index') }}" class="block text-center border border-primary-600 text-primary-600 font-semibold px-5 py-2.5 rounded-corner text-sm hover:bg-primary-50 transition-colors">View Education Pathways &rarr;</a>
                         </div>
                     </div>
                 </div>
