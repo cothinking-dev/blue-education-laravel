@@ -1,5 +1,42 @@
+@php
+    $org = config('seo.organization');
+    $localBusinessSchema = [
+        '@context' => 'https://schema.org',
+        '@type' => 'LocalBusiness',
+        'name' => $org['name'],
+        'url' => $org['url'],
+        'logo' => url($org['logo']),
+        'image' => url('/images/contact/office-reception.webp'),
+        'telephone' => $org['phone'],
+        'email' => $org['email'],
+        'address' => [
+            '@type' => 'PostalAddress',
+            'streetAddress' => $org['address']['street'],
+            'addressLocality' => $org['address']['city'],
+            'addressRegion' => $org['address']['state'],
+            'postalCode' => $org['address']['postal_code'],
+            'addressCountry' => $org['address']['country'],
+        ],
+        'geo' => [
+            '@type' => 'GeoCoordinates',
+            'latitude' => -31.9535,
+            'longitude' => 115.8596,
+        ],
+        'openingHoursSpecification' => [
+            [
+                '@type' => 'OpeningHoursSpecification',
+                'dayOfWeek' => ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+                'opens' => '09:00',
+                'closes' => '17:00',
+            ],
+        ],
+        'priceRange' => '$$',
+    ];
+@endphp
+
 <x-layout title="Contact Blue Education"
-          description="Get in touch with Blue Education. Education, migration, and career advice from Perth, Western Australia.">
+          description="Get in touch with Blue Education. Education, migration, and career advice from Perth, Western Australia."
+          :json-ld="$localBusinessSchema">
 
     {{-- §1 Hero --}}
     <x-hero title="Contact Blue Education"
