@@ -18,7 +18,7 @@
             <h2 class="text-lg font-bold text-base-900 mb-4">{{ $title }}</h2>
             <div class="flex flex-col sm:flex-row gap-4">
                 @foreach($links as $link)
-                    <a href="{{ $link['href'] }}" class="text-primary-800 font-semibold hover:text-primary-600 transition-colors">{{ $link['title'] }} &rarr;</a>
+                    <a href="{{ $link['href'] }}" class="text-primary-800 font-semibold hover:text-primary-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600 rounded-sm transition-colors">{{ $link['title'] }} &rarr;</a>
                 @endforeach
             </div>
 

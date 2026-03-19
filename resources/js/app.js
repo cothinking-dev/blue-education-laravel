@@ -8,10 +8,28 @@ window.ScrollTrigger = ScrollTrigger;
 
 /*
 |--------------------------------------------------------------------------
-| Global Scroll-Triggered Fade-In Animations
+| Reduced-Motion Check
 |--------------------------------------------------------------------------
 */
+const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+/*
+|--------------------------------------------------------------------------
+| Global Scroll-Triggered Fade-In Animations
+|--------------------------------------------------------------------------
+|
+| Uses CSS class `.gsap-ready` on <html> so initial hidden state is
+| defined in CSS, not JS. If JS fails or animations are skipped,
+| content remains visible by default.
+|
+*/
 document.addEventListener('DOMContentLoaded', () => {
+    if (prefersReducedMotion) return;
+
+    // Signal that GSAP is active — CSS hides animated elements only when
+    // this class is present, so content is always visible without JS.
+    document.documentElement.classList.add('gsap-ready');
+
     gsap.utils.toArray('[data-animate="fade-up"]').forEach((el) => {
         gsap.fromTo(el, {
             y: 30,
@@ -48,6 +66,10 @@ document.addEventListener('DOMContentLoaded', () => {
             },
         });
     });
+
+    // Recalculate trigger positions after all images have loaded to
+    // prevent stale coordinates caused by layout shifts.
+    window.addEventListener('load', () => ScrollTrigger.refresh());
 });
 
 /*
@@ -56,6 +78,8 @@ document.addEventListener('DOMContentLoaded', () => {
 |--------------------------------------------------------------------------
 */
 document.addEventListener('DOMContentLoaded', () => {
+    if (prefersReducedMotion) return;
+
     document.querySelectorAll('[data-stat-countup]').forEach((section) => {
         const grid = section.querySelector('.grid');
         const items = grid ? Array.from(grid.children) : [];
@@ -111,6 +135,8 @@ document.addEventListener('DOMContentLoaded', () => {
 |--------------------------------------------------------------------------
 */
 document.addEventListener('DOMContentLoaded', () => {
+    if (prefersReducedMotion) return;
+
     document.querySelectorAll('[data-hero-parallax]').forEach((parallaxEl) => {
         const section = parallaxEl.closest('section');
         if (!section) return;
@@ -134,6 +160,8 @@ document.addEventListener('DOMContentLoaded', () => {
 |--------------------------------------------------------------------------
 */
 document.addEventListener('DOMContentLoaded', () => {
+    if (prefersReducedMotion) return;
+
     document.querySelectorAll('[data-marquee]').forEach((track) => {
         const speed = parseFloat(track.dataset.marquee) || 30;
         const originals = Array.from(track.children);

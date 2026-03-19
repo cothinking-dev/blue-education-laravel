@@ -23,9 +23,9 @@
                 <caption class="px-6 py-3 text-left text-base-500 text-xs font-medium uppercase tracking-wider bg-base-50">{{ $caption }}</caption>
             @endif
             <thead>
-                <tr class="bg-primary-800 text-white text-left">
+                <tr class="bg-base-50 border-b border-base-200 text-left">
                     @foreach($headers as $header)
-                        <th scope="col" class="px-6 py-3 font-semibold text-sm whitespace-nowrap">{{ $header }}</th>
+                        <th scope="col" class="px-6 py-3 font-semibold text-sm text-base-700 whitespace-nowrap">{{ $header }}</th>
                     @endforeach
                 </tr>
             </thead>
