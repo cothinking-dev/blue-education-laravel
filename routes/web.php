@@ -5,7 +5,6 @@ use App\Http\Controllers\BlogController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\FaqController;
 use App\Http\Controllers\HomeController;
-use App\Http\Controllers\NewsletterController;
 use App\Http\Controllers\OgImageController;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\RobotsController;
@@ -82,9 +81,6 @@ Route::prefix('blog')->name('blog.')->group(function () {
 // Contact
 Route::get('/contact', [PageController::class, 'show'])->name('contact')->defaults('label', 'Contact');
 Route::post('/contact', [ContactController::class, 'submit'])->name('contact.submit')->middleware('throttle:5,1');
-
-// Newsletter
-Route::post('/newsletter', NewsletterController::class)->name('newsletter.subscribe')->middleware('throttle:5,1');
 
 // Legal
 Route::get('/privacy', [PageController::class, 'show'])->name('privacy')->defaults('label', 'Privacy Policy');

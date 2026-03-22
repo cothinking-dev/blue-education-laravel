@@ -57,8 +57,6 @@ class AdminPanelProvider extends PanelProvider
             ])
             ->navigationGroups([
                 'Content',
-                'People',
-                'Partners',
             ]);
     }
 }

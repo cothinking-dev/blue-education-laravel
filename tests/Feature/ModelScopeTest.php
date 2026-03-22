@@ -2,9 +2,7 @@
 
 use App\Models\Category;
 use App\Models\Faq;
-use App\Models\Partner;
 use App\Models\Post;
-use App\Models\TeamMember;
 use App\Models\Testimonial;
 
 /*
@@ -37,14 +35,6 @@ it('filters active testimonials', function () {
     expect(Testimonial::active()->count())->toBe(3);
 });
 
-it('filters team members by section', function () {
-    TeamMember::factory()->australian()->count(2)->create();
-    TeamMember::factory()->international()->count(3)->create();
-
-    expect(TeamMember::section('Australia')->count())->toBe(2);
-    expect(TeamMember::section('International')->count())->toBe(3);
-});
-
 it('relates posts to a category', function () {
     $category = Category::factory()->create();
     Post::factory()->published()->count(3)->create(['category_id' => $category->id]);
@@ -58,14 +48,6 @@ it('filters FAQs by category', function () {
 
     expect(Faq::category('education')->count())->toBe(2);
     expect(Faq::category('migration')->count())->toBe(3);
-});
-
-it('filters partners by type', function () {
-    Partner::factory()->university()->count(2)->create();
-    Partner::factory()->tafe()->count(3)->create();
-
-    expect(Partner::type('university')->count())->toBe(2);
-    expect(Partner::type('tafe')->count())->toBe(3);
 });
 
 it('returns excerpt as seo description when available', function () {

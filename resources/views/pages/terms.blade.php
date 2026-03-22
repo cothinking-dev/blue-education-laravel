@@ -30,8 +30,8 @@
             <h2>6. Accuracy of Information</h2>
             <p>We endeavour to keep the information on our website accurate and up to date. However, we make no warranties or representations about the accuracy, completeness, or suitability of this information. Visa regulations, course details, and fees are subject to change without notice. Always verify current details with the relevant institution or government department.</p>
 
-            <h2>7. Enquiry Form and Newsletter</h2>
-            <p>When you submit an enquiry through our contact form or subscribe to our newsletter, you consent to us collecting and using the information you provide in accordance with our <a href="{{ route('privacy') }}">Privacy Policy</a>. We will use your enquiry details solely to respond to your request and, where you have opted in, to send you relevant updates about our services.</p>
+            <h2>7. Enquiry Form</h2>
+            <p>When you submit an enquiry through our contact form, you consent to us collecting and using the information you provide in accordance with our <a href="{{ route('privacy') }}">Privacy Policy</a>. We will use your enquiry details solely to respond to your request.</p>
 
             <h2>8. User Obligations</h2>
             <p>When using our website or services, you agree to:</p>

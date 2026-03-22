@@ -68,13 +68,7 @@
         </div>
     </section>
 
-    {{-- §4 Newsletter --}}
-    <x-newsletter title="Stay informed."
-                  description="Education, migration, and career updates — delivered to your inbox."
-                  placeholder="your@email.com"
-                  buttonText="Subscribe" />
-
-    {{-- §5 CTA --}}
+    {{-- §4 CTA --}}
     <x-cta-banner title="Ready to start your Australian journey?"
                   subtitle="Talk to a Blue Education advisor about education pathways, visa options, and career planning — all in one place."
                   primaryText="Book a Consultation"

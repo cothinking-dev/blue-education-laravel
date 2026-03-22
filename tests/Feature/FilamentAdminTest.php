@@ -3,10 +3,7 @@
 use App\Filament\Resources\Categories\Pages\ListCategories;
 use App\Filament\Resources\Enquiries\Pages\ListEnquiries;
 use App\Filament\Resources\Faqs\Pages\ListFaqs;
-use App\Filament\Resources\Partners\Pages\ListPartners;
 use App\Filament\Resources\Posts\Pages\ListPosts;
-use App\Filament\Resources\Subscribers\Pages\ListSubscribers;
-use App\Filament\Resources\TeamMembers\Pages\ListTeamMembers;
 use App\Filament\Resources\Testimonials\Pages\ListTestimonials;
 use App\Models\User;
 
@@ -43,11 +40,8 @@ it('denies non-admin users access to the dashboard', function () {
 dataset('filament_list_pages', [
     'posts' => ListPosts::class,
     'categories' => ListCategories::class,
-    'team members' => ListTeamMembers::class,
     'testimonials' => ListTestimonials::class,
     'faqs' => ListFaqs::class,
-    'partners' => ListPartners::class,
-    'subscribers' => ListSubscribers::class,
     'enquiries' => ListEnquiries::class,
 ]);
 

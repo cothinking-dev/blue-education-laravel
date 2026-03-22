@@ -25,7 +25,7 @@
                 <li>Visa and immigration status</li>
                 <li>Financial information relevant to education or migration services</li>
                 <li>Website usage data including cookies and analytics</li>
-                <li>Information submitted through our enquiry form or newsletter sign-up</li>
+                <li>Information submitted through our enquiry form</li>
             </ul>
 
             <h2>3. How We Use Your Information</h2>
@@ -35,7 +35,7 @@
                 <li>Process enrolment applications and visa applications</li>
                 <li>Communicate about our services, programs, and events</li>
                 <li>Respond to enquiries submitted through our website contact form</li>
-                <li>Send newsletters and updates where you have opted in</li>
+                <li>Send updates about our services where you have opted in</li>
                 <li>Comply with legal and regulatory requirements</li>
                 <li>Improve our website and services</li>
             </ul>

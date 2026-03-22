@@ -16,16 +16,8 @@ return new class extends Migration
             $table->index('is_featured');
         });
 
-        Schema::table('team_members', function (Blueprint $table) {
-            $table->index('section');
-        });
-
         Schema::table('faqs', function (Blueprint $table) {
             $table->index('category');
-        });
-
-        Schema::table('partners', function (Blueprint $table) {
-            $table->index('type');
         });
 
         Schema::table('testimonials', function (Blueprint $table) {
@@ -43,16 +35,8 @@ return new class extends Migration
             $table->dropIndex(['is_featured']);
         });
 
-        Schema::table('team_members', function (Blueprint $table) {
-            $table->dropIndex(['section']);
-        });
-
         Schema::table('faqs', function (Blueprint $table) {
             $table->dropIndex(['category']);
-        });
-
-        Schema::table('partners', function (Blueprint $table) {
-            $table->dropIndex(['type']);
         });
 
         Schema::table('testimonials', function (Blueprint $table) {

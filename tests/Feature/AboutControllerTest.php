@@ -1,7 +1,5 @@
 <?php
 
-use App\Models\TeamMember;
-
 /*
 |--------------------------------------------------------------------------
 | About Controller Tests
@@ -12,46 +10,26 @@ use App\Models\TeamMember;
 */
 
 it('displays Australian team members on the team page', function () {
-    $australians = TeamMember::factory()->australian()->count(3)->create();
-
-    $response = $this->get('/about/team')->assertSuccessful();
-
-    foreach ($australians as $member) {
-        $response->assertSeeText($member->name);
-    }
+    $this->get('/about/team')
+        ->assertSuccessful()
+        ->assertSeeText('Glen Ong')
+        ->assertSeeText('Monica Gaikwad')
+        ->assertSeeText('Flora Wang')
+        ->assertSeeText('Shen Sekhon');
 });
 
 it('displays International team members on the team page', function () {
-    $internationals = TeamMember::factory()->international()->count(3)->create();
-
-    $response = $this->get('/about/team')->assertSuccessful();
-
-    foreach ($internationals as $member) {
-        $response->assertSeeText($member->name);
-    }
+    $this->get('/about/team')
+        ->assertSuccessful()
+        ->assertSeeText('Sonia Ong')
+        ->assertSeeText('Elaine Ho')
+        ->assertSeeText('Sherene Chan');
 });
 
-it('builds the offices table with correct structure via the team page', function () {
-    TeamMember::factory()->australian()->count(2)->create();
-    $leadership = TeamMember::factory()->international()->create([
-        'team_type' => 'leadership',
-        'name' => 'Sonia Test',
-    ]);
-    TeamMember::factory()->international()->create([
-        'team_type' => 'general',
-        'region' => 'South Asia',
-    ]);
-
-    $response = $this->get('/about/team')->assertSuccessful();
-
-    // HQ row
-    $response->assertSeeText('Perth, WA (HQ)');
-    $response->assertSeeText('Australia-wide');
-
-    // Leadership row
-    $response->assertSeeText('Global (Offshore)');
-    $response->assertSeeText('Sonia Test');
-
-    // Regional row
-    $response->assertSeeText('South Asia');
+it('displays the offices table on the team page', function () {
+    $this->get('/about/team')
+        ->assertSuccessful()
+        ->assertSeeText('Perth, WA (HQ)')
+        ->assertSeeText('Australia-wide')
+        ->assertSeeText('Global (Offshore)');
 });

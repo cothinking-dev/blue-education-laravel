@@ -326,13 +326,7 @@
     />
 
     {{-- ═══════════════════════════════════════════
-         §15 · NEWSLETTER
-    ═══════════════════════════════════════════ --}}
-    <div id="newsletter" class="showcase-label">§15 · Newsletter Signup (used on: Blog)</div>
-    <x-newsletter />
-
-    {{-- ═══════════════════════════════════════════
-         §16 · CTA BANNER
+         §15 · CTA BANNER
     ═══════════════════════════════════════════ --}}
     <div id="cta" class="showcase-label">§16 · CTA Banner — Default (used on: every page footer)</div>
     <x-cta-banner />

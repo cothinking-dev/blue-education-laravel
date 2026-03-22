@@ -94,6 +94,25 @@
                     </a>
                 </div>
                 {{-- Team collage — bleeds past container into the gutter --}}
+                @php
+                    $teamPhotos = [
+                        'images/team/glen-ong.webp',
+                        'images/team/monica-gaikwad.webp',
+                        'images/team/flora-wang.webp',
+                        'images/team/shen-sekhon.webp',
+                        'images/team/mansheel-kaur.webp',
+                        'images/team/arwinder-singh.webp',
+                        'images/team/sonia-ong.webp',
+                        'images/team/elaine-ho.webp',
+                        'images/team/monica-low.webp',
+                        'images/team/hana-hursepuny.webp',
+                        'images/team/minami-sakamoto.webp',
+                        'images/team/nino-sekyere-boakye.webp',
+                        'images/team/elijah-chongo.webp',
+                        'images/team/priscilla-mwansa.webp',
+                        'images/team/sherene-chan.webp',
+                    ];
+                @endphp
                 <div class="flex-1 lg:-mr-16 xl:-mr-24 2xl:-mr-32 min-w-0">
                     <div class="columns-3 sm:columns-4 lg:columns-5 gap-3">
                         @foreach($teamPhotos as $i => $photo)

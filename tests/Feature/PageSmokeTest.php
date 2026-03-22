@@ -1,7 +1,6 @@
 <?php
 
 use App\Models\Post;
-use App\Models\TeamMember;
 use App\Models\Testimonial;
 
 /*
@@ -38,6 +37,8 @@ dataset('static_pages', [
     'contact' => '/contact',
     'privacy' => '/privacy',
     'terms' => '/terms',
+    'about team' => '/about/team',
+    'about partners' => '/about/partners',
 ]);
 
 it('renders static pages', function (string $uri) {
@@ -55,24 +56,6 @@ it('renders the home page', function () {
 
 it('renders the about page', function () {
     $this->get('/about')->assertSuccessful();
-});
-
-it('renders the about team page', function () {
-    $australians = TeamMember::factory()->australian()->count(2)->create();
-    $internationals = TeamMember::factory()->international()->count(2)->create();
-
-    $response = $this->get('/about/team')->assertSuccessful();
-
-    foreach ($australians as $member) {
-        $response->assertSeeText($member->name);
-    }
-    foreach ($internationals as $member) {
-        $response->assertSeeText($member->name);
-    }
-});
-
-it('renders the about partners page', function () {
-    $this->get('/about/partners')->assertSuccessful();
 });
 
 it('renders the blog listing page', function () {
