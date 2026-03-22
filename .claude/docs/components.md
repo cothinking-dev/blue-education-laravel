@@ -135,7 +135,7 @@ Props: `name`, `logo`, `description`.
 ## Forms
 
 ### `<x-contact-form>` — Contact enquiry form
-7 fields: full name*, email*, phone, country, enquiry type (select), preferred language (select), message. AJAX submit with Alpine, inline validation errors, success state.
+6 fields: full name*, email*, phone, country, enquiry type (select), message. AJAX submit with Alpine, inline validation errors, success state.
 Props: `action` (POST URL).
 
 ### `<x-contact-card>` — Contact info card

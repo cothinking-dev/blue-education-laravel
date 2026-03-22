@@ -19,7 +19,6 @@ it('stores a valid enquiry', function () {
         'phone' => '+61 400 000 000',
         'country' => 'Australia',
         'enquiry_type' => 'Education',
-        'preferred_language' => 'English',
         'message' => 'I would like more information about studying in Perth.',
     ];
 
@@ -78,15 +77,6 @@ it('rejects an invalid enquiry type', function () {
         'enquiry_type' => 'Invalid Type',
     ])->assertUnprocessable()
         ->assertJsonValidationErrors(['enquiry_type']);
-});
-
-it('rejects an invalid preferred language', function () {
-    $this->postJson(route('contact.submit'), [
-        'full_name' => 'Jane Doe',
-        'email' => 'jane@example.com',
-        'preferred_language' => 'Klingon',
-    ])->assertUnprocessable()
-        ->assertJsonValidationErrors(['preferred_language']);
 });
 
 it('sends an email notification on valid enquiry', function () {

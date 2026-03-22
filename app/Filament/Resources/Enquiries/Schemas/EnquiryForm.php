@@ -31,9 +31,6 @@ class EnquiryForm
                 TextInput::make('enquiry_type')
                     ->maxLength(255)
                     ->disabled(),
-                TextInput::make('preferred_language')
-                    ->maxLength(255)
-                    ->disabled(),
                 Textarea::make('message')
                     ->columnSpanFull()
                     ->disabled(),

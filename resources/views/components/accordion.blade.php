@@ -10,7 +10,7 @@
                 <x-heroicon-m-chevron-down class="w-5 h-5 text-base-400 shrink-0 transition-transform group-open:rotate-180" aria-hidden="true" />
             </summary>
             <div class="px-6 pb-5 text-base-600 leading-relaxed text-pretty">
-                {!! strip_tags($item['answer'], '<p><br><strong><b><em><i><u><a><ul><ol><li><code><pre>') !!}
+                {!! \App\Models\Post::sanitizeHtml($item['answer']) !!}
             </div>
         </details>
     @endforeach

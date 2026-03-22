@@ -11,13 +11,15 @@ class Enquiry extends Model
     use HasFactory;
 
     /** @var list<string> */
+    public const ENQUIRY_TYPES = ['Education', 'Migration', 'Career', 'Student Support', 'Other'];
+
+    /** @var list<string> */
     protected $fillable = [
         'full_name',
         'email',
         'phone',
         'country',
         'enquiry_type',
-        'preferred_language',
         'message',
     ];
 }

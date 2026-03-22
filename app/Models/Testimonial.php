@@ -6,11 +6,18 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use Illuminate\Support\Facades\Cache;
 
 class Testimonial extends Model
 {
     /** @use HasFactory<\Database\Factories\TestimonialFactory> */
     use HasFactory, SoftDeletes;
+
+    protected static function booted(): void
+    {
+        static::saved(fn () => Cache::forget('home:testimonials'));
+        static::deleted(fn () => Cache::forget('home:testimonials'));
+    }
 
     /** @var list<string> */
     protected $fillable = [

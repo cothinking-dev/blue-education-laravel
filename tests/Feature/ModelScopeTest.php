@@ -77,3 +77,65 @@ it('returns null seo image when no featured image', function () {
 
     expect($post->seo_image)->toBeNull();
 });
+
+/*
+|--------------------------------------------------------------------------
+| Soft Delete Tests
+|--------------------------------------------------------------------------
+*/
+
+it('excludes soft-deleted posts from published scope', function () {
+    Post::factory()->published()->count(2)->create();
+    $deleted = Post::factory()->published()->create();
+    $deleted->delete();
+
+    expect(Post::published()->count())->toBe(2);
+});
+
+it('excludes soft-deleted testimonials from active scope', function () {
+    Testimonial::factory()->active()->count(2)->create();
+    $deleted = Testimonial::factory()->active()->create();
+    $deleted->delete();
+
+    expect(Testimonial::active()->count())->toBe(2);
+});
+
+it('excludes soft-deleted FAQs from queries', function () {
+    Faq::factory()->forCategory('education')->count(2)->create();
+    $deleted = Faq::factory()->forCategory('education')->create();
+    $deleted->delete();
+
+    expect(Faq::category('education')->count())->toBe(2);
+});
+
+/*
+|--------------------------------------------------------------------------
+| Sanitization Tests
+|--------------------------------------------------------------------------
+*/
+
+it('strips javascript URIs from sanitized body', function () {
+    $post = Post::factory()->published()->create([
+        'body' => '<p>Safe</p><a href="javascript:alert(1)">Click</a>',
+    ]);
+
+    expect($post->sanitized_body)->not->toContain('javascript:');
+    expect($post->sanitized_body)->toContain('Safe');
+});
+
+it('strips event handler attributes from sanitized body', function () {
+    $post = Post::factory()->published()->create([
+        'body' => '<img src="x.jpg" onerror="alert(1)">',
+    ]);
+
+    expect($post->sanitized_body)->not->toContain('onerror');
+});
+
+it('preserves safe HTML in sanitized body', function () {
+    $post = Post::factory()->published()->create([
+        'body' => '<p>Hello <strong>world</strong></p><a href="https://example.com">Link</a>',
+    ]);
+
+    expect($post->sanitized_body)->toContain('<strong>world</strong>');
+    expect($post->sanitized_body)->toContain('https://example.com');
+});

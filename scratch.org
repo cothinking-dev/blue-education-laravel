@@ -1,53 +1,18 @@
 #+TITLE: Blue Education — Page Review Checklist
 #+STARTUP: showall
 
-* Home
-- [X] ~/~ — Homepage
+For the team member section -- I would like you to evaluate, if it's smarter to be in the form of a database, or hard coded into the blade pages. For context, would rarely be changed via filament, and it's either I would edit the DB direcly, or edite the blade pages. directory. Same logic goes to Partners (I notice there is 5 entries, even though the website probably uses more.)
 
-* Services
-** Education
-- [X] ~/services/education~ — Education Overview
-- [X] ~/services/education/school~ — School
-- [X] ~/services/education/english~ — English
-- [X] ~/services/education/vet-tafe~ — VET / TAFE
-- [X] ~/services/education/degrees~ — Degrees
-** Migration
-- [X] ~/services/migration~ — Migration Overview
-- [X] ~/services/migration/student-visas~ — Student Visas
-- [X] ~/services/migration/graduate-work~ — Graduate Work
-- [X] ~/services/migration/permanent-residence~ — Permanent Residence
-** Other Services
-- [X] ~/services/career~ — Career
-- [X] ~/services/student-support~ — Student Support
+-----
 
-* Programs
-- [X] ~/programs~ — Programs Overview
-- [X] ~/programs/buddy-programme~ — Buddy Programme
-- [X] ~/programs/study-tours~ — Study Tours
-- [X] ~/programs/scsa-associate~ — SCSA Associate
-- [X] ~/programs/executive-internship~ — Executive Internship
+You are now a senior Laravel Developer. Your task is to review this projects based on a rubrics review score. i would like you to rate it from different persepctives
+- KISS
+- YAGNI
+- Following Laravel's Best practices
+- Dead/complicated code
+- Frontend coding
+- Backend coding
+- Database architecture
+- UI/UX
 
-* About
-- [ ] ~/about~ — About Overview
-- [ ] ~/about/team~ — Team
-- [ ] ~/about/partners~ — Partners
-
-* Info Pages
-- [X] ~/why-australia~ — Why Australia
-- [ ] ~/faq~ — FAQ
-- [ ] ~/admission-requirements~ — Admission Requirements
-- [ ] ~/fees~ — Fees
-
-* Blog
-- [ ] ~/blog~ — Blog Index
-- [ ] ~/blog/{slug}~ — Blog Post (spot-check)
-
-* Contact & Legal
-- [ ] ~/contact~ — Contact
-- [ ] ~/privacy~ — Privacy Policy
-- [ ] ~/terms~ — Terms & Conditions
-
-* Dev / Utility
-- [ ] ~/showcase~ — Component Showcase
-- [ ] ~/sitemap.xml~ — Sitemap
-- [ ] ~/robots.txt~ — Robots
+^^ The above are just examples, you cna consolidate these rubrics / add on to them if and when necessary. Your job is to review, not to change anything. I encourage you and your subagents to take your time, be deliberate. Place your findings in a tmp subdir, and have the subagents  add/modify. Be systematic in your review approach. Craft a plan on how you would approach this problem.

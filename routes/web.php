@@ -1,6 +1,5 @@
 <?php
 
-use App\Http\Controllers\AboutController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\FaqController;
@@ -60,7 +59,7 @@ Route::prefix('programs')->name('programs.')->group(function () {
 // About
 Route::prefix('about')->name('about.')->group(function () {
     Route::get('/', [PageController::class, 'show'])->name('index')->defaults('label', 'About');
-    Route::get('/team', [AboutController::class, 'team'])->name('team')->defaults('label', 'Our Team');
+    Route::get('/team', [PageController::class, 'show'])->name('team')->defaults('label', 'Our Team');
     Route::get('/partners', [PageController::class, 'show'])->name('partners')->defaults('label', 'Our Partners');
 });
 

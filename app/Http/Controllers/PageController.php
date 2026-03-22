@@ -25,6 +25,7 @@ class PageController extends Controller
         'programs.scsa-associate' => 'pages.programs.scsa-associate',
         'programs.executive-internship' => 'pages.programs.executive-internship',
         'about.index' => 'pages.about.index',
+        'about.team' => 'pages.about.team',
         'about.partners' => 'pages.about.partners',
         'why-australia' => 'pages.why-australia',
         'faq' => 'pages.faq',

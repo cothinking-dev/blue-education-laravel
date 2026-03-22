@@ -20,8 +20,6 @@ class EnquiriesTable
                     ->searchable(),
                 TextColumn::make('enquiry_type')
                     ->searchable(),
-                TextColumn::make('preferred_language')
-                    ->searchable(),
                 TextColumn::make('created_at')
                     ->dateTime()
                     ->sortable(),

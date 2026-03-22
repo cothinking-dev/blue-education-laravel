@@ -12,15 +12,20 @@ class BlogController extends Controller
     public function index(Request $request): View
     {
         $categorySlug = $request->query('category');
+        $featuredPost = Post::query()->published()->featured()->with('category')->latest('published_at')->first();
 
         $postsQuery = Post::query()->published()->with('category')->latest('published_at');
+
+        if ($featuredPost) {
+            $postsQuery->where('id', '!=', $featuredPost->id);
+        }
 
         if ($categorySlug) {
             $postsQuery->whereHas('category', fn ($q) => $q->where('slug', $categorySlug));
         }
 
         return view('pages.blog.index', [
-            'featuredPost' => Post::query()->published()->featured()->with('category')->latest('published_at')->first(),
+            'featuredPost' => $featuredPost,
             'posts' => $postsQuery->paginate(9)->withQueryString(),
             'categories' => Category::query()->orderBy('sort_order')->get(),
             'activeCategory' => $categorySlug,

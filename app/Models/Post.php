@@ -10,6 +10,8 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Str;
+use Symfony\Component\HtmlSanitizer\HtmlSanitizer;
+use Symfony\Component\HtmlSanitizer\HtmlSanitizerConfig;
 
 class Post extends Model
 {
@@ -32,8 +34,14 @@ class Post extends Model
 
     protected static function booted(): void
     {
-        static::saved(fn () => Cache::forget('sitemap:xml'));
-        static::deleted(fn () => Cache::forget('sitemap:xml'));
+        static::saved(function (): void {
+            Cache::forget('sitemap:xml');
+            Cache::forget('home:latest-posts');
+        });
+        static::deleted(function (): void {
+            Cache::forget('sitemap:xml');
+            Cache::forget('home:latest-posts');
+        });
     }
 
     /**
@@ -59,13 +67,59 @@ class Post extends Model
         return $this->where($field ?? 'id', $value)->published()->first();
     }
 
-    /** @var list<string> Safe HTML tags allowed in rendered blog content. */
-    private const ALLOWED_TAGS = '<p><br><strong><b><em><i><u><a><ul><ol><li><h2><h3><h4><h5><h6><blockquote><pre><code><img><figure><figcaption><table><thead><tbody><tr><th><td><hr><span><div><sub><sup>';
-
-    /** Body with unsafe HTML tags stripped. */
+    /** Body with unsafe HTML stripped via allowlist sanitizer. */
     protected function sanitizedBody(): Attribute
     {
-        return Attribute::get(fn () => strip_tags($this->body, self::ALLOWED_TAGS));
+        return Attribute::get(fn () => self::sanitizeHtml($this->body));
+    }
+
+    /**
+     * Sanitize HTML with a strict allowlist of tags and safe attributes.
+     */
+    public static function sanitizeHtml(?string $html): string
+    {
+        if ($html === null || $html === '') {
+            return '';
+        }
+
+        $config = (new HtmlSanitizerConfig)
+            ->allowElement('p')
+            ->allowElement('br')
+            ->allowElement('strong')
+            ->allowElement('b')
+            ->allowElement('em')
+            ->allowElement('i')
+            ->allowElement('u')
+            ->allowElement('a', ['href'])
+            ->allowElement('ul')
+            ->allowElement('ol')
+            ->allowElement('li')
+            ->allowElement('h2')
+            ->allowElement('h3')
+            ->allowElement('h4')
+            ->allowElement('h5')
+            ->allowElement('h6')
+            ->allowElement('blockquote')
+            ->allowElement('pre')
+            ->allowElement('code')
+            ->allowElement('img', ['src', 'alt', 'width', 'height'])
+            ->allowElement('figure')
+            ->allowElement('figcaption')
+            ->allowElement('table')
+            ->allowElement('thead')
+            ->allowElement('tbody')
+            ->allowElement('tr')
+            ->allowElement('th')
+            ->allowElement('td')
+            ->allowElement('hr')
+            ->allowElement('span')
+            ->allowElement('div')
+            ->allowElement('sub')
+            ->allowElement('sup')
+            ->allowMediaSchemes(['https'])
+            ->allowLinkSchemes(['https', 'http', 'mailto']);
+
+        return (new HtmlSanitizer($config))->sanitize($html);
     }
 
     /** Meta description: excerpt with fallback to truncated body. */

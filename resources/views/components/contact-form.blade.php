@@ -12,7 +12,7 @@
           errors: {},
           formData: {
               full_name: '', email: '', phone: '', country: '',
-              enquiry_type: '', preferred_language: '', message: '', website: '',
+              enquiry_type: '', message: '', website: '',
           },
       }"
       @submit.prevent="
@@ -86,36 +86,16 @@
             </div>
         </div>
 
-        {{-- Enquiry Type & Language --}}
-        <div class="grid sm:grid-cols-2 gap-5 mb-5">
-            <div>
-                <label for="enquiry-type" class="block text-sm font-medium text-base-700 mb-1">Enquiry Type</label>
-                <select name="enquiry_type" id="enquiry-type" x-model="formData.enquiry_type"
-                        class="w-full rounded-corner border border-base-300 px-4 py-2.5 text-sm focus:border-primary-500 focus:ring-1 focus:ring-primary-500 outline-none transition-colors">
-                    <option value="">Select…</option>
-                    <option value="Education">Education</option>
-                    <option value="Migration">Migration</option>
-                    <option value="Career">Career</option>
-                    <option value="Student Support">Student Support</option>
-                    <option value="Other">Other</option>
-                </select>
-            </div>
-            <div>
-                <label for="language" class="block text-sm font-medium text-base-700 mb-1">Preferred Language</label>
-                <select name="preferred_language" id="language" x-model="formData.preferred_language"
-                        class="w-full rounded-corner border border-base-300 px-4 py-2.5 text-sm focus:border-primary-500 focus:ring-1 focus:ring-primary-500 outline-none transition-colors">
-                    <option value="">Select…</option>
-                    <option value="English">English</option>
-                    <option value="Cantonese">Cantonese</option>
-                    <option value="Mandarin">Mandarin</option>
-                    <option value="Bahasa">Bahasa</option>
-                    <option value="Malay">Malay</option>
-                    <option value="Hindi">Hindi</option>
-                    <option value="Indonesian">Indonesian</option>
-                    <option value="Japanese">Japanese</option>
-                    <option value="Other">Other</option>
-                </select>
-            </div>
+        {{-- Enquiry Type --}}
+        <div class="mb-5">
+            <label for="enquiry-type" class="block text-sm font-medium text-base-700 mb-1">Enquiry Type</label>
+            <select name="enquiry_type" id="enquiry-type" x-model="formData.enquiry_type"
+                    class="w-full rounded-corner border border-base-300 px-4 py-2.5 text-sm focus:border-primary-500 focus:ring-1 focus:ring-primary-500 outline-none transition-colors">
+                <option value="">Select…</option>
+                @foreach(\App\Models\Enquiry::ENQUIRY_TYPES as $type)
+                    <option value="{{ $type }}">{{ $type }}</option>
+                @endforeach
+            </select>
         </div>
 
         {{-- Message --}}

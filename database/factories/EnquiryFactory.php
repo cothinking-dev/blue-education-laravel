@@ -22,7 +22,6 @@ class EnquiryFactory extends Factory
             'phone' => fake()->phoneNumber(),
             'country' => fake()->country(),
             'enquiry_type' => fake()->randomElement(['Education', 'Migration', 'Career', 'Student Support', 'Other']),
-            'preferred_language' => fake()->randomElement(['English', 'Cantonese', 'Mandarin', 'Bahasa', 'Malay', 'Hindi', 'Indonesian', 'Japanese', 'Other']),
             'message' => fake()->paragraph(),
         ];
     }

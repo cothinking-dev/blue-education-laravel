@@ -27,12 +27,6 @@
         <td>{{ $enquiry->enquiry_type }}</td>
     </tr>
     @endif
-    @if($enquiry->preferred_language)
-    <tr>
-        <td style="font-weight: bold; vertical-align: top;">Preferred Language</td>
-        <td>{{ $enquiry->preferred_language }}</td>
-    </tr>
-    @endif
     @if($enquiry->message)
     <tr>
         <td style="font-weight: bold; vertical-align: top;">Message</td>

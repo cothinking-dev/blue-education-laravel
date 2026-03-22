@@ -87,6 +87,7 @@
                 @php $slug = Str::slug($item['label']); @endphp
                 <div>
                     <button type="button" @click="openSection = openSection === '{{ $slug }}' ? null : '{{ $slug }}'"
+                            :aria-expanded="openSection === '{{ $slug }}'"
                             class="flex items-center justify-between w-full py-2 text-sm font-medium {{ $isActive($item) ? 'text-primary-800' : 'text-base-700 hover:text-primary-800' }}">
                         {{ $item['label'] }}
                         <x-heroicon-m-chevron-down class="w-4 h-4 transition-transform" ::class="{ 'rotate-180': openSection === '{{ $slug }}' }" aria-hidden="true" />

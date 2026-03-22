@@ -2,6 +2,7 @@
 
 namespace App\Http\Requests;
 
+use App\Models\Enquiry;
 use Illuminate\Foundation\Http\FormRequest;
 
 class StoreEnquiryRequest extends FormRequest
@@ -24,8 +25,7 @@ class StoreEnquiryRequest extends FormRequest
             'email' => ['required', 'email', 'max:255'],
             'phone' => ['nullable', 'string', 'max:50'],
             'country' => ['nullable', 'string', 'max:100'],
-            'enquiry_type' => ['nullable', 'string', 'in:Education,Migration,Career,Student Support,Other'],
-            'preferred_language' => ['nullable', 'string', 'in:English,Cantonese,Mandarin,Bahasa,Malay,Hindi,Indonesian,Japanese,Other'],
+            'enquiry_type' => ['nullable', 'string', 'in:'.implode(',', Enquiry::ENQUIRY_TYPES)],
             'message' => ['nullable', 'string', 'max:5000'],
             'website' => ['max:0'],
         ];
