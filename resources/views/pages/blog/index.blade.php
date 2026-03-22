@@ -1,5 +1,6 @@
 <x-layout title="Blog"
-          description="Education, migration, careers, and life in Australia — resources for international students.">
+          description="Education, migration, careers, and life in Australia — resources for international students."
+          :robots="($activeCategory || request()->has('page')) ? 'noindex, follow' : null">
 
     {{-- §1 Hero --}}
     <x-hero title="Blog — Resources for International Students"

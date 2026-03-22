@@ -13,7 +13,7 @@ class RobotsController extends Controller
         $robots = <<<ROBOTS
         # Welcome all crawlers and AI agents
         User-agent: *
-        Disallow:
+        Disallow: /cdn-cgi/
         Allow: /
 
         # AI Crawlers — explicitly welcomed

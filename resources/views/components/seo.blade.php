@@ -18,9 +18,19 @@
     $og = config('seo.og');
     $twitter = config('seo.twitter');
 
-    $pageTitle = $title
-        ? ($noSuffix ? $title : $title . $defaults['title_suffix'])
-        : $defaults['title'];
+    $suffix = $defaults['title_suffix'];
+    $maxTitleLength = 60;
+    $maxBeforeSuffix = $maxTitleLength - mb_strlen($suffix);
+
+    if (!$title) {
+        $pageTitle = $defaults['title'];
+    } elseif ($noSuffix) {
+        $pageTitle = $title;
+    } elseif (mb_strlen($title) > $maxBeforeSuffix) {
+        $pageTitle = mb_substr($title, 0, $maxBeforeSuffix - 1) . '…' . $suffix;
+    } else {
+        $pageTitle = $title . $suffix;
+    }
     $pageDescription = $description ?? $defaults['description'];
     $pageRobots = $robots ?? $defaults['robots'];
     $pageOgType = $ogType ?? $og['type'];
@@ -81,6 +91,9 @@
             'postalCode' => $org['address']['postal_code'],
             'addressCountry' => $org['address']['country'],
         ],
+        ...($sameAs = array_values(array_filter(config('seo.social', []))))
+            ? ['sameAs' => $sameAs]
+            : [],
     ];
 @endphp
 <script type="application/ld+json">{!! json_encode($schema, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT) !!}</script>

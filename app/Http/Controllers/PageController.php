@@ -8,6 +8,7 @@ class PageController extends Controller
 {
     /** @var array<string, string> */
     private const ROUTE_VIEW_MAP = [
+        'services.index' => 'pages.services.index',
         'services.education.index' => 'pages.services.education.index',
         'services.education.school' => 'pages.services.education.school',
         'services.education.english' => 'pages.services.education.english',

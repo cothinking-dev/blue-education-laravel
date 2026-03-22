@@ -125,7 +125,7 @@ class Post extends Model
     /** Meta description: excerpt with fallback to truncated body. */
     protected function seoDescription(): Attribute
     {
-        return Attribute::get(fn () => $this->excerpt ?: Str::limit(strip_tags($this->body), 160));
+        return Attribute::get(fn () => $this->excerpt ?: Str::limit(strip_tags($this->body), 155));
     }
 
     /** Absolute URL to featured image for OG tags. */

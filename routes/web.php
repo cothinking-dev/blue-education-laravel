@@ -25,6 +25,7 @@ Route::get('/', HomeController::class)->name('home')->defaults('label', 'Home');
 
 // Services — Education
 Route::prefix('services')->name('services.')->group(function () {
+    Route::get('/', [PageController::class, 'show'])->name('index')->defaults('label', 'Services');
 
     Route::prefix('education')->name('education.')->group(function () {
         Route::get('/', [PageController::class, 'show'])->name('index')->defaults('label', 'Education');

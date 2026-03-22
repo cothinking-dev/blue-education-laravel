@@ -20,7 +20,7 @@
         $label = $matchedRoute?->defaults['label']
             ?? str($segment)->replace('-', ' ')->title()->toString();
 
-        $href = $isLast ? null : url($path);
+        $href = ($isLast || !$matchedRoute) ? null : url($path);
 
         $crumbs[] = ['label' => $label, 'href' => $href];
     }
