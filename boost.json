@@ -3,11 +3,18 @@
         "claude_code"
     ],
     "guidelines": true,
-    "herd_mcp": true,
     "mcp": true,
+    "nightwatch_mcp": false,
+    "packages": [
+        "filament/filament",
+        "filament/blueprint",
+        "joshcirre/instruckt-laravel"
+    ],
     "sail": false,
     "skills": [
+        "laravel-best-practices",
         "pest-testing",
-        "tailwindcss-development"
+        "tailwindcss-development",
+        "instruckt"
     ]
 }

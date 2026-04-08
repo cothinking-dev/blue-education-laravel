@@ -5,6 +5,7 @@ namespace App\Filament\Resources\Enquiries;
 use App\Filament\Resources\Enquiries\Pages\ListEnquiries;
 use App\Filament\Resources\Enquiries\Pages\ViewEnquiry;
 use App\Filament\Resources\Enquiries\Schemas\EnquiryForm;
+use App\Filament\Resources\Enquiries\Schemas\EnquiryInfolist;
 use App\Filament\Resources\Enquiries\Tables\EnquiriesTable;
 use App\Models\Enquiry;
 use BackedEnum;
@@ -25,6 +26,11 @@ class EnquiryResource extends Resource
     public static function form(Schema $schema): Schema
     {
         return EnquiryForm::configure($schema);
+    }
+
+    public static function infolist(Schema $schema): Schema
+    {
+        return EnquiryInfolist::configure($schema);
     }
 
     public static function table(Table $table): Table
