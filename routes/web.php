@@ -6,6 +6,7 @@ use App\Http\Controllers\FaqController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\OgImageController;
 use App\Http\Controllers\PageController;
+use App\Http\Controllers\PartnerController;
 use App\Http\Controllers\RobotsController;
 use App\Http\Controllers\SitemapController;
 use Illuminate\Support\Facades\Route;
@@ -61,7 +62,7 @@ Route::prefix('programs')->name('programs.')->group(function () {
 Route::prefix('about')->name('about.')->group(function () {
     Route::get('/', [PageController::class, 'show'])->name('index')->defaults('label', 'About');
     Route::get('/team', [PageController::class, 'show'])->name('team')->defaults('label', 'Our Team');
-    Route::get('/partners', [PageController::class, 'show'])->name('partners')->defaults('label', 'Our Partners');
+    Route::get('/partners', PartnerController::class)->name('partners')->defaults('label', 'Our Partners');
 });
 
 // Why Australia

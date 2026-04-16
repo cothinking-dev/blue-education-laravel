@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\Faq;
+use App\Models\Partner;
 use App\Models\Testimonial;
 use App\Models\User;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
@@ -36,6 +37,11 @@ class DatabaseSeeder extends Seeder
             foreach ($testimonials as $i => $data) {
                 Testimonial::create([...$data, 'is_active' => true, 'sort_order' => $i]);
             }
+        }
+
+        // Partners
+        if (Partner::count() === 0) {
+            $this->call(PartnerSeeder::class);
         }
 
         // FAQ seed data

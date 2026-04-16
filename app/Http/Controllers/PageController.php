@@ -27,7 +27,6 @@ class PageController extends Controller
         'programs.executive-internship' => 'pages.programs.executive-internship',
         'about.index' => 'pages.about.index',
         'about.team' => 'pages.about.team',
-        'about.partners' => 'pages.about.partners',
         'why-australia' => 'pages.why-australia',
         'faq' => 'pages.faq',
         'admission-requirements' => 'pages.admission-requirements',
