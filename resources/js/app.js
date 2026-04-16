@@ -1,6 +1,8 @@
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import 'virtual:instruckt'
+if (import.meta.env.DEV) {
+    import('virtual:instruckt');
+}
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -116,13 +118,14 @@ document.addEventListener('DOMContentLoaded', () => {
                         const duration = 1500;
                         const startTime = performance.now();
 
-                        (function step(now) {
+                        const step = (now) => {
                             const progress = Math.min((now - startTime) / duration, 1);
                             const eased = 1 - Math.pow(1 - progress, 3);
                             const current = eased * target;
                             el.textContent = prefix + (isDecimal ? current.toFixed(1) : Math.round(current).toLocaleString()) + suffix;
                             if (progress < 1) requestAnimationFrame(step);
-                        })(startTime);
+                        };
+                        requestAnimationFrame(step);
                     });
                 }, 500);
             },

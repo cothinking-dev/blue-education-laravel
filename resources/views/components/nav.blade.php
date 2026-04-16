@@ -47,7 +47,7 @@
                             {{ $item['label'] }}
                             <x-heroicon-m-chevron-down class="w-3 h-3 mt-0.5 transition-transform" ::class="{ 'rotate-180': openMenu === '{{ $slug }}' }" aria-hidden="true" />
                         </button>
-                        <div x-show="openMenu === '{{ $slug }}'" x-transition @click.away="openMenu = null" class="absolute top-full left-0 mt-2 w-64 bg-white border border-base-200 rounded-lg shadow-lg py-2 z-50">
+                        <div x-show="openMenu === '{{ $slug }}'" x-cloak x-transition @click.away="openMenu = null" class="absolute top-full left-0 mt-2 w-64 bg-white border border-base-200 rounded-lg shadow-lg py-2 z-50">
                             @foreach ($item['children'] as $child)
                                 @if (! empty($child['divider']))
                                     <hr class="my-1 border-base-100">
@@ -79,7 +79,7 @@
     </nav>
 
     {{-- Mobile drawer --}}
-    <div x-data="{ open: false, openSection: null }" @toggle-mobile-nav.window="open = !open" x-show="open" x-transition
+    <div x-data="{ open: false, openSection: null }" @toggle-mobile-nav.window="open = !open" x-show="open" x-cloak x-transition
          class="lg:hidden border-t border-base-200 bg-white px-6 py-4 space-y-1">
 
         @foreach ($navItems as $item)
@@ -92,7 +92,7 @@
                         {{ $item['label'] }}
                         <x-heroicon-m-chevron-down class="w-4 h-4 transition-transform" ::class="{ 'rotate-180': openSection === '{{ $slug }}' }" aria-hidden="true" />
                     </button>
-                    <div x-show="openSection === '{{ $slug }}'" x-transition class="pl-4 space-y-0.5 pb-2">
+                    <div x-show="openSection === '{{ $slug }}'" x-cloak x-transition class="pl-4 space-y-0.5 pb-2">
                         @foreach ($item['children'] as $child)
                             @if (! empty($child['divider']))
                                 <hr class="my-1 border-base-100">

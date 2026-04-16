@@ -3,9 +3,9 @@ import laravel from 'laravel-vite-plugin';
 import tailwindcss from '@tailwindcss/vite';
 import instruckt from 'instruckt/vite'
 
-export default defineConfig({
+export default defineConfig(({ command }) => ({
     plugins: [
-        instruckt({ server: false, endpoint: '/instruckt', adapters: ['livewire', 'blade'], mcp: true }),
+        command === 'serve' && instruckt({ server: false, endpoint: '/instruckt', adapters: ['livewire', 'blade'], mcp: true }),
         laravel({
             input: ['resources/css/app.css', 'resources/js/app.js'],
             refresh: true,
@@ -17,4 +17,4 @@ export default defineConfig({
             ignored: ['**/storage/framework/views/**'],
         },
     },
-});
+}));
