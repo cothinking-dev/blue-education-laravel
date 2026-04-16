@@ -95,8 +95,3 @@ Route::get('/robots.txt', RobotsController::class);
 Route::get('/og-image/{path?}', OgImageController::class)
     ->where('path', '.*')
     ->name('og-image');
-
-// Showcase (dev only)
-if (app()->isLocal()) {
-    Route::get('/showcase', [PageController::class, 'show'])->name('showcase');
-}

@@ -9,32 +9,32 @@
              alt="East Asian students walking across an Australian university campus"
              class="fixed inset-0 w-full h-full object-cover object-center">
 
-        {{-- Overlay: black 90% at top → black 50% at bottom --}}
-        <div class="absolute inset-0" style="background: linear-gradient(to bottom, rgb(0 0 0 / 0.9), rgb(0 0 0 / 0.5));"></div>
+        {{-- Overlay: white 90% at top → white 65% at bottom --}}
+        <div class="absolute inset-0" style="background: linear-gradient(to bottom, rgb(255 255 255 / 1), rgb(255 255 255 / 0.55));"></div>
 
         {{-- Content --}}
-        <div class="relative z-10 px-8 max-w-3xl mx-auto">
-            <h1 class="text-4xl lg:text-5xl font-bold text-white mb-5 leading-tight text-pretty">Your Future in Australia Starts Here</h1>
-            <p class="text-xl text-base-200 mb-8 text-pretty">Independent education, career, and migration advice from Perth, Western Australia. Since 1998.</p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <x-btn href="{{ route('contact') }}" variant="primary" size="lg">Book a Consultation</x-btn>
-                <x-btn href="{{ route('services.education.index') }}" variant="white" size="lg">Explore Our Services</x-btn>
-            </div>
-        </div>
+        <div class="relative z-10 px-8 sm:px-10 py-10 sm:py-12 max-w-3xl mx-auto bg-white/10 backdrop-blur-md rounded-corner-lg shadow-lg">
+            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-base-900 mb-2 leading-tight text-pretty">Start Your Journey to Australia with us today!</h1>
+            <p class="text-xs sm:text-sm text-base-500 mb-8">Your trusted advisors since the 90s</p>
 
-        {{-- Bounce arrow --}}
-        <div class="absolute bottom-24 left-1/2 -translate-x-1/2 z-10 animate-bounce">
-            <x-heroicon-o-chevron-double-down class="w-8 h-8 text-white/70" />
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
+                <div class="relative w-full sm:w-auto">
+                    <x-btn href="{{ route('services.education.index') }}" variant="primary" size="lg" class="w-full sm:w-auto">STUDY</x-btn>
+                    <span class="absolute -top-2.5 -right-2 sm:-right-3 bg-amber-400 text-amber-950 text-[10px] font-bold uppercase tracking-wider px-1.5 py-0.5 rounded-full leading-none">Popular</span>
+                </div>
+                <x-btn href="{{ route('services.career') }}" variant="primary" size="lg" class="w-full sm:w-auto">WORK</x-btn>
+                <x-btn href="{{ route('services.migration.index') }}" variant="primary" size="lg" class="w-full sm:w-auto">LIVE</x-btn>
+            </div>
         </div>
 
     </section>
 
     {{-- §2 Social Proof Bar --}}
-    <x-stat-block :slant="true" :stats="[
-        ['value' => (date('Y') - 1998) . '+', 'label' => 'Years of service'],
-        ['value' => '40+', 'label' => 'Client countries'],
-        ['value' => '1,100+', 'label' => 'Australian institutions'],
-        ['value' => '7', 'label' => 'Top 100 universities'],
+    <x-stat-block :slant="true" variant="light" :stats="[
+        ['value' => '25+', 'label' => 'Years of service'],
+        ['value' => '145+', 'label' => 'Client countries'],
+        ['value' => '100+', 'label' => 'Australian institutions'],
+        ['value' => '1000+', 'label' => 'Programmes'],
         ['value' => '24/7', 'label' => 'Emergency support'],
     ]" />
 
@@ -44,21 +44,21 @@
             <x-section-heading title="What We Do" :centered="false" />
             <div class="grid sm:grid-cols-2 gap-6" data-animate="stagger">
                 <x-card title="Education Services"
-                        description="Primary school to PhD. We help you find the right institution and program for your goals."
+                        description="Primary school to PhD — we help you choose the right institution and program for your goals."
                         :image="asset('images/home/education-services.webp')"
                         alt="East Asian education advisor discussing options with students"
                         :href="route('services.education.index')"
                         linkText="Explore education pathways" />
 
                 <x-card title="Migration & Visas"
-                        description="Not sure which visa you need? We'll assess your situation and help you handle the application."
+                        description="Not sure which visa you need? We'll assess your situation and support you through the entire application process."
                         :image="asset('images/home/migration-visas.webp')"
                         alt="Visa application documents and passport on a desk"
                         :href="route('services.migration.index')"
                         linkText="See visa options" />
 
                 <x-card title="Career Services"
-                        description="We help graduates build a career in Australia. Your Australian qualification is only useful if you can work with it."
+                        description="We help graduates build a career in Australia. Your Australian qualification only has value if it leads to real work opportunities."
                         :image="asset('images/home/career-services.webp')"
                         alt="East Asian professional shaking hands with colleagues in an office"
                         :href="route('services.career')"
@@ -165,70 +165,39 @@
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-16">
             <x-section-heading title="Why Western Australia" :centered="false" />
             <div class="grid md:grid-cols-3 gap-6 mb-6" data-animate="stagger">
-                <div class="md:col-span-2 rounded-corner-lg border border-base-200 bg-white overflow-hidden">
-                    <div class="aspect-[21/9] bg-base-100 relative">
-                        <img src="{{ asset('images/home/wa-perth-liveable.webp') }}"
-                             alt="Perth CBD skyline viewed from Kings Park with Swan River and greenery"
-                             class="w-full h-full object-cover"
-                             loading="lazy">
-                        <div class="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-b from-transparent to-white"></div>
-                    </div>
-                    <div class="p-8">
-                        <h3 class="text-lg font-bold text-base-900 mb-3 text-pretty">Perth regularly features among the world's most liveable cities.</h3>
-                        <p class="text-base-600 text-sm leading-relaxed text-pretty">Clean air, short commutes, a safe city, and a genuinely multicultural community. Students who come here tend to stay.</p>
-                    </div>
-                </div>
-                <div class="rounded-corner-lg border border-base-200 bg-white overflow-hidden">
-                    <div class="aspect-[4/3] bg-base-100">
-                        <img src="{{ asset('images/home/wa-universities.webp') }}"
-                             alt="Logos of UWA, Curtin, Murdoch, and Edith Cowan universities"
-                             class="w-full h-full object-cover"
-                             loading="lazy">
-                    </div>
-                    <div class="p-8">
-                        <h3 class="text-lg font-bold text-base-900 mb-3 text-pretty">Four globally recognised universities. All in Perth.</h3>
-                        <p class="text-base-600 text-sm leading-relaxed text-pretty">UWA, Curtin, Murdoch, and ECU offer qualifications accepted by employers and institutions in every major market.</p>
-                    </div>
-                </div>
+                <x-card class="md:col-span-2"
+                        title="Perth regularly features among the world's most liveable cities."
+                        description="Clean air, short commutes, a safe city, and a genuinely multicultural community. Students who come here tend to stay."
+                        :image="asset('images/home/wa-perth-liveable.webp')"
+                        alt="Perth CBD skyline viewed from Kings Park with Swan River and greenery"
+                        aspect="21/9"
+                        :gradient="true" />
+
+                <x-card title="Four globally recognised universities. All in Perth."
+                        description="UWA, Curtin, Murdoch, and ECU offer qualifications accepted by employers and institutions in every major market."
+                        :image="asset('images/home/wa-universities.webp')"
+                        alt="Logos of UWA, Curtin, Murdoch, and Edith Cowan universities"
+                        aspect="4/3" />
             </div>
             <div class="grid md:grid-cols-3 gap-6" data-animate="stagger">
-                <div class="rounded-corner-lg border border-base-200 bg-white overflow-hidden">
-                    <div class="aspect-[16/9] bg-base-100 relative">
-                        <img src="{{ asset('images/home/wa-work-rights.webp') }}"
-                             alt="Young Asian woman celebrating with a friend after receiving her graduation certificate"
-                             class="w-full h-full object-cover"
-                             loading="lazy">
-                        <div class="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-b from-transparent to-white"></div>
-                    </div>
-                    <div class="p-8">
-                        <h3 class="text-lg font-bold text-base-900 mb-3 text-pretty">Your degree comes with time to use it.</h3>
-                        <p class="text-base-600 text-sm leading-relaxed text-pretty">Graduates receive 2–4 years of unrestricted work rights — enough to build real experience, establish connections, and weigh your options properly.</p>
-                    </div>
-                </div>
-                <div class="rounded-corner-lg border border-base-200 bg-white overflow-hidden">
-                    <div class="aspect-[16/9] bg-base-100">
-                        <img src="{{ asset('images/home/wa-job-market.webp') }}"
-                             alt="Western Australia's growing job sectors: healthcare, resources, construction, professional services, and technology"
-                             class="w-full h-full object-cover"
-                             loading="lazy">
-                    </div>
-                    <div class="p-8">
-                        <h3 class="text-lg font-bold text-base-900 mb-3 text-pretty">A job market that needs skilled graduates.</h3>
-                        <p class="text-base-600 text-sm leading-relaxed text-pretty">Western Australia's resources, healthcare, construction, and professional services sectors are all expanding. The demand for qualified people is genuine and growing.</p>
-                    </div>
-                </div>
-                <div class="rounded-corner-lg border border-base-200 bg-white overflow-hidden">
-                    <div class="aspect-[16/9] bg-base-100">
-                        <img src="{{ asset('images/home/wa-k-to-phd.webp') }}"
-                             alt="Education pathway diagram from primary school through to PhD under WA's SCSA framework"
-                             class="w-full h-full object-cover"
-                             loading="lazy">
-                    </div>
-                    <div class="p-8">
-                        <h3 class="text-lg font-bold text-base-900 mb-3 text-pretty">One curriculum. K to PhD.</h3>
-                        <p class="text-base-600 text-sm leading-relaxed text-pretty">WA's SCSA-governed framework covers every stage — from primary school through to doctoral research. Structured, regulated, and recognised internationally.</p>
-                    </div>
-                </div>
+                <x-card title="Your degree comes with time to use it."
+                        description="Graduates receive 2–4 years of unrestricted work rights — enough to build real experience, establish connections, and weigh your options properly."
+                        :image="asset('images/home/wa-work-rights.webp')"
+                        alt="Young Asian woman celebrating with a friend after receiving her graduation certificate"
+                        aspect="16/9"
+                        :gradient="true" />
+
+                <x-card title="A job market that needs skilled graduates."
+                        description="Western Australia's resources, healthcare, construction, and professional services sectors are all expanding. The demand for qualified people is genuine and growing."
+                        :image="asset('images/home/wa-job-market.webp')"
+                        alt="Western Australia's growing job sectors: healthcare, resources, construction, professional services, and technology"
+                        aspect="16/9" />
+
+                <x-card title="One curriculum. K to PhD."
+                        description="WA's SCSA-governed framework covers every stage — from primary school through to doctoral research. Structured, regulated, and recognised internationally."
+                        :image="asset('images/home/wa-k-to-phd.webp')"
+                        alt="Education pathway diagram from primary school through to PhD under WA's SCSA framework"
+                        aspect="16/9" />
             </div>
             <div class="mt-8">
                 <a href="{{ route('why-australia') }}" class="text-primary-800 font-semibold text-sm hover:text-primary-600 transition-colors">See why Western Australia &rarr;</a>

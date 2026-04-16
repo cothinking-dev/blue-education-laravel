@@ -58,8 +58,8 @@
 
     {{-- §2 Trust Stats --}}
     <x-stat-block variant="primary" :stats="[
-        ['value' => date('Y') - 1998, 'label' => 'Years Experience'],
-        ['value' => '40+', 'label' => 'Countries Served'],
+        ['value' => '25+', 'label' => 'Years Experience'],
+        ['value' => '145+', 'label' => 'Countries Served'],
         ['value' => '3', 'label' => 'Business Day Response'],
         ['value' => '6', 'label' => 'Languages Spoken'],
     ]" />

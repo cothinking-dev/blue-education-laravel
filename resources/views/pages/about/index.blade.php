@@ -48,7 +48,7 @@
     {{-- §4 By the Numbers --}}
     <x-stat-block variant="primary" :stats="[
         ['value' => '1998', 'label' => 'Founded'],
-        ['value' => '40+', 'label' => 'Countries served'],
+        ['value' => '145+', 'label' => 'Countries served'],
         ['value' => '3', 'label' => 'Registered Migration Agents'],
         ['value' => '5+', 'label' => 'Team languages'],
     ]" />
