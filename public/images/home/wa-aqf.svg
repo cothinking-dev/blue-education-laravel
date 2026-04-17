@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" fill="none">
+  <rect width="800" height="450" fill="#f8fafc"/>
+
+  <!-- Title -->
+  <text x="400" y="36" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" fill="#1e293b">Australian Qualifications Framework (AQF)</text>
+
+  <!-- 10 stepped bars, evenly spaced across the width -->
+  <!-- Bar config: x starts at 45, each bar is 62 wide with 10px gap = 72px pitch -->
+  <!-- Heights grow from 55px (Level 1) to 325px (Level 10), base y at 380 -->
+
+  <!-- Level 1 — Certificate I -->
+  <rect x="45" y="325" width="62" height="55" rx="5" fill="#dbeafe"/>
+  <text x="76" y="350" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#1e3a5f">Cert I</text>
+  <text x="76" y="363" text-anchor="middle" font-family="system-ui, sans-serif" font-size="8" fill="#64748b">Level 1</text>
+
+  <!-- Level 2 — Certificate II -->
+  <rect x="117" y="295" width="62" height="85" rx="5" fill="#bfdbfe"/>
+  <text x="148" y="335" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#1e3a5f">Cert II</text>
+  <text x="148" y="348" text-anchor="middle" font-family="system-ui, sans-serif" font-size="8" fill="#64748b">Level 2</text>
+
+  <!-- Level 3 — Certificate III -->
+  <rect x="189" y="265" width="62" height="115" rx="5" fill="#93c5fd"/>
+  <text x="220" y="318" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#1e3a5f">Cert III</text>
+  <text x="220" y="331" text-anchor="middle" font-family="system-ui, sans-serif" font-size="8" fill="#475569">Level 3</text>
+
+  <!-- Level 4 — Certificate IV -->
+  <rect x="261" y="235" width="62" height="145" rx="5" fill="#60a5fa"/>
+  <text x="292" y="303" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#ffffff">Cert IV</text>
+  <text x="292" y="316" text-anchor="middle" font-family="system-ui, sans-serif" font-size="8" fill="#dbeafe">Level 4</text>
+
+  <!-- Level 5 — Diploma -->
+  <rect x="333" y="205" width="62" height="175" rx="5" fill="#3b82f6"/>
+  <text x="364" y="288" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#ffffff">Diploma</text>
+  <text x="364" y="301" text-anchor="middle" font-family="system-ui, sans-serif" font-size="8" fill="#bfdbfe">Level 5</text>
+
+  <!-- Level 6 — Advanced Diploma -->
+  <rect x="405" y="175" width="62" height="205" rx="5" fill="#2563eb"/>
+  <text x="436" y="270" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" font-weight="600" fill="#ffffff">Adv.</text>
+  <text x="436" y="282" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" font-weight="600" fill="#ffffff">Diploma</text>
+  <text x="436" y="295" text-anchor="middle" font-family="system-ui, sans-serif" font-size="8" fill="#bfdbfe">Level 6</text>
+
+  <!-- Level 7 — Bachelor -->
+  <rect x="477" y="145" width="62" height="235" rx="5" fill="#1d4ed8"/>
+  <text x="508" y="258" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#ffffff">Bachelor</text>
+  <text x="508" y="271" text-anchor="middle" font-family="system-ui, sans-serif" font-size="8" fill="#93c5fd">Level 7</text>
+
+  <!-- Level 8 — Grad Cert / Grad Diploma -->
+  <rect x="549" y="115" width="62" height="265" rx="5" fill="#1e40af"/>
+  <text x="580" y="240" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" font-weight="600" fill="#ffffff">Grad</text>
+  <text x="580" y="252" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" font-weight="600" fill="#ffffff">Cert/Dip</text>
+  <text x="580" y="265" text-anchor="middle" font-family="system-ui, sans-serif" font-size="8" fill="#93c5fd">Level 8</text>
+
+  <!-- Level 9 — Masters -->
+  <rect x="621" y="85" width="62" height="295" rx="5" fill="#1e3a8a"/>
+  <text x="652" y="225" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#ffffff">Masters</text>
+  <text x="652" y="238" text-anchor="middle" font-family="system-ui, sans-serif" font-size="8" fill="#93c5fd">Level 9</text>
+
+  <!-- Level 10 — Doctoral -->
+  <rect x="693" y="55" width="62" height="325" rx="5" fill="#172554"/>
+  <text x="724" y="210" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#ffffff">Doctoral</text>
+  <text x="724" y="223" text-anchor="middle" font-family="system-ui, sans-serif" font-size="8" fill="#60a5fa">Level 10</text>
+
+  <!-- Bottom progression arrow -->
+  <line x1="55" y1="400" x2="745" y2="400" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <polygon points="745,396 755,400 745,404" fill="#cbd5e1"/>
+
+  <!-- Sector labels -->
+  <text x="148" y="428" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#94a3b8">VET &amp; TAFE</text>
+  <line x1="45" y1="415" x2="251" y2="415" stroke="#e2e8f0" stroke-width="1"/>
+
+  <text x="436" y="428" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#94a3b8">Higher Education</text>
+  <line x1="261" y1="415" x2="611" y2="415" stroke="#e2e8f0" stroke-width="1"/>
+
+  <text x="688" y="428" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#94a3b8">Postgraduate</text>
+  <line x1="621" y1="415" x2="755" y2="415" stroke="#e2e8f0" stroke-width="1"/>
+
+  <!-- Subtitle -->
+  <text x="400" y="446" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#94a3b8">One national standard · Certificate to PhD</text>
+</svg>

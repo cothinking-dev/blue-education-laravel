@@ -195,17 +195,17 @@
                         aspect="21/9"
                         :gradient="true" />
 
-                <x-card title="Four globally recognised universities. All in Perth."
-                        description="UWA, Curtin, Murdoch, and ECU offer qualifications accepted by employers and institutions in every major market."
+                <x-card title="Globally recognised universities are here in Western Australia."
+                        description="Curtin University, Murdoch University, ECU, UWA, University of Notre Dame and Southern Cross University offer qualifications accepted by employers and institutions in every major market."
                         :image="asset('images/home/wa-universities.webp')"
-                        alt="Logos of UWA, Curtin, Murdoch, and Edith Cowan universities"
+                        alt="Logos of Western Australian partner universities"
                         aspect="4/3" />
             </div>
             <div class="grid md:grid-cols-3 gap-6" data-animate="stagger">
                 <x-card title="Your degree comes with time to use it."
                         description="Graduates receive 2–4 years of unrestricted work rights — enough to build real experience, establish connections, and weigh your options properly."
                         :image="asset('images/home/wa-work-rights.webp')"
-                        alt="Young Asian woman celebrating with a friend after receiving her graduation certificate"
+                        alt="Two Asian engineers inspecting industrial robot systems with a tablet in a manufacturing facility"
                         aspect="16/9"
                         :gradient="true" />
 
@@ -215,14 +215,14 @@
                         alt="Western Australia's growing job sectors: healthcare, resources, construction, professional services, and technology"
                         aspect="16/9" />
 
-                <x-card title="One curriculum. K to PhD."
-                        description="WA's SCSA-governed framework covers every stage — from primary school through to doctoral research. Structured, regulated, and recognised internationally."
-                        :image="asset('images/home/wa-k-to-phd.webp')"
-                        alt="Education pathway diagram from primary school through to PhD under WA's SCSA framework"
+                <x-card title="A qualification system designed to move with you."
+                        description="The Australian Qualifications Framework ranks every recognised credential from Certificate to PhD on one national scale. That makes it straightforward to transfer credits, step up between levels, and prove your qualification to employers and migration authorities."
+                        :image="asset('images/home/wa-aqf.svg')"
+                        alt="Australian Qualifications Framework levels from Certificate I through to Doctoral Degree"
                         aspect="16/9" />
             </div>
-            <div class="mt-8">
-                <a href="{{ route('why-australia') }}" class="text-primary-800 font-semibold text-sm hover:text-primary-600 transition-colors">See why Western Australia &rarr;</a>
+            <div class="mt-8 text-center">
+                <a href="{{ route('why-australia') }}" class="text-primary-800 font-semibold hover:text-primary-600 transition-colors">Learn more about Western Australia &rarr;</a>
             </div>
         </div>
     </section>
@@ -246,7 +246,7 @@
     @endif
 
     {{-- §8 Partners --}}
-    <x-logo-grid title="Partnered with leading Western Australian institutions."
+    <x-logo-grid title="Partnered with leading Australian institutions."
                  :marquee="true"
                  :logos="[
                         ['src' => asset('images/partners/uwa-logo.svg'), 'alt' => 'University of Western Australia'],
@@ -254,8 +254,13 @@
                         ['src' => asset('images/partners/murdoch-logo.svg'), 'alt' => 'Murdoch University'],
                         ['src' => asset('images/partners/ecu-logo.png'), 'alt' => 'Edith Cowan University'],
                         ['src' => asset('images/partners/notre-dame-logo.webp'), 'alt' => 'University of Notre Dame Australia'],
-                        ['src' => asset('images/partners/nmtafe-logo.svg'), 'alt' => 'North Metropolitan TAFE'],
-                        ['src' => asset('images/partners/smtafe-logo.svg'), 'alt' => 'South Metropolitan TAFE'],
+                        ['src' => asset('images/partners/scu-logo.png'), 'alt' => 'Southern Cross University'],
+                        ['src' => asset('images/partners/tafe-qld-logo.png'), 'alt' => 'TAFE Queensland'],
+                        ['src' => asset('images/partners/tafe-nsw-logo.svg'), 'alt' => 'TAFE NSW'],
+                        ['src' => asset('images/partners/tafe-sa-logo.png'), 'alt' => 'TAFE SA'],
+                        ['src' => asset('images/partners/holmesglen-logo.svg'), 'alt' => 'Holmesglen Institute'],
+                        ['src' => asset('images/partners/boxhill-logo.svg'), 'alt' => 'Box Hill Institute'],
+                        ['src' => asset('images/partners/melbourne-poly-logo.png'), 'alt' => 'Melbourne Polytechnic'],
                         ]" />
 
     {{-- §9 Latest From the Blog --}}
@@ -289,7 +294,7 @@
 
     {{-- §10 Final CTA --}}
     <x-cta-banner title="Not sure where to start?"
-                  subtitle="Most people aren't. Book a conversation with us and we'll map out your options honestly — whatever they turn out to be."
+                  subtitle="Most people don't either. Book a conversation with us and we'll map out your options honestly — whatever they turn out to be."
                   primaryText="Book a Consultation"
                   :primaryHref="route('contact')" />
 
