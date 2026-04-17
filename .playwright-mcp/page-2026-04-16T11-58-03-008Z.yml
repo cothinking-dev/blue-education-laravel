@@ -1,0 +1,401 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - link "Skip to content" [ref=e3] [cursor=pointer]:
+      - /url: "#main-content"
+    - navigation "Main navigation" [ref=e4]:
+      - link "Blue Education — home" [ref=e5] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000
+        - img "Blue Education" [ref=e7]
+      - button "Open navigation menu" [ref=e9]:
+        - img [ref=e10]
+  - main [ref=e12]:
+    - generic [ref=e13]:
+      - img "East Asian students walking across an Australian university campus" [ref=e14]
+      - generic [ref=e16]:
+        - heading "Start Your Journey to Australia with us today!" [level=1] [ref=e17]
+        - img [ref=e18]
+        - generic [ref=e19]:
+          - link "STUDY" [ref=e20] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/services/education
+          - link "WORK" [ref=e21] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/services/career
+          - link "LIVE" [ref=e22] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/services/migration
+        - paragraph [ref=e23]: Your trusted advisors since the 90s
+    - generic [ref=e24]:
+      - img [ref=e26]
+      - generic [ref=e29]:
+        - generic [ref=e30]:
+          - generic [ref=e31]: "0"
+          - generic [ref=e32]: Years of service
+        - generic [ref=e33]:
+          - generic [ref=e34]: "0"
+          - generic [ref=e35]: Client countries
+        - generic [ref=e36]:
+          - generic [ref=e37]: "0"
+          - generic [ref=e38]: Australian institutions
+        - generic [ref=e39]:
+          - generic [ref=e40]: "0"
+          - generic [ref=e41]: Top 100 universities
+        - generic [ref=e42]:
+          - generic [ref=e43]: "0"
+          - generic [ref=e44]: Emergency support
+    - generic [ref=e46]:
+      - heading "What We Do" [level=2] [ref=e48]
+      - generic [ref=e49]:
+        - generic [ref=e50]:
+          - link "Explore education pathways" [ref=e51] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/services/education
+          - img "East Asian education advisor discussing options with students" [ref=e53]
+          - generic [ref=e54]:
+            - heading "Education Services" [level=3] [ref=e55]
+            - paragraph [ref=e56]: Primary school to PhD. We help you find the right institution and program for your goals.
+            - generic [ref=e57]:
+              - text: Explore education pathways
+              - img [ref=e58]
+        - generic [ref=e60]:
+          - link "See visa options" [ref=e61] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/services/migration
+          - img "Visa application documents and passport on a desk" [ref=e63]
+          - generic [ref=e64]:
+            - heading "Migration & Visas" [level=3] [ref=e65]
+            - paragraph [ref=e66]: Not sure which visa you need? We'll assess your situation and help you handle the application.
+            - generic [ref=e67]:
+              - text: See visa options
+              - img [ref=e68]
+        - generic [ref=e70]:
+          - link "Build your career" [ref=e71] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/services/career
+          - img "East Asian professional shaking hands with colleagues in an office" [ref=e73]
+          - generic [ref=e74]:
+            - heading "Career Services" [level=3] [ref=e75]
+            - paragraph [ref=e76]: We help graduates build a career in Australia. Your Australian qualification is only useful if you can work with it.
+            - generic [ref=e77]:
+              - text: Build your career
+              - img [ref=e78]
+        - generic [ref=e80]:
+          - link "See support services" [ref=e81] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/services/student-support
+          - img "East Asian student advisor guiding a student at a laptop" [ref=e83]
+          - generic [ref=e84]:
+            - heading "Student Support" [level=3] [ref=e85]
+            - paragraph [ref=e86]: We cover everything a student needs. Accommodation, guardianship, health cover, airport transfers, and a 24/7 emergency line.
+            - generic [ref=e87]:
+              - text: See support services
+              - img [ref=e88]
+    - generic [ref=e92]:
+      - generic [ref=e93]:
+        - img "Blue Education — education, migration & career"
+        - heading "28 years of experience we stand behind." [level=2] [ref=e94]
+        - generic [ref=e95]:
+          - paragraph [ref=e96]: "Since 1998, we've operated on one principle: give honest advice."
+          - paragraph [ref=e97]: Every client is assigned a dedicated advisor who coordinates your education, visa, and career plan — start to finish. No handoffs between agencies means no need to re-explain your situation over and over again.
+          - paragraph [ref=e98]: That means telling you when a visa application won't succeed, a course isn't the right fit, or a better path exists — before you commit to the wrong one.
+          - paragraph [ref=e99]: That's earned the trust of clients from 40+ countries — scholars who came back, and brought others — for decisions that shaped their lives.
+        - link "Learn our story" [ref=e100] [cursor=pointer]:
+          - /url: http://127.0.0.1:8000/about
+          - text: Learn our story
+          - img [ref=e101]
+      - generic [ref=e104]:
+        - img "Blue Education team member"
+        - img "Blue Education team member"
+        - img "Blue Education team member"
+        - img "Blue Education team member"
+        - img "Blue Education team member"
+        - img "Blue Education team member"
+        - img "Blue Education team member"
+        - img "Blue Education team member"
+        - img "Blue Education team member"
+        - img "Blue Education team member"
+        - img "Blue Education team member"
+        - img "Blue Education team member"
+        - img "Blue Education team member"
+        - img "Blue Education team member"
+        - img "Blue Education team member"
+    - generic [ref=e106]:
+      - heading "Featured Programs" [level=2] [ref=e108]
+      - generic [ref=e109]:
+        - generic [ref=e110]:
+          - link "Discover the Buddy Programme" [ref=e111] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/programs/buddy-programme
+          - generic [ref=e112]:
+            - img [ref=e115]
+            - generic [ref=e117]:
+              - generic [ref=e118]: 14-Day Immersion
+              - heading "Buddy Programme" [level=3] [ref=e119]
+              - paragraph [ref=e120]: 14 days at an Australian homestay — classroom integration and cultural immersion. Built in partnership with Anglican Schools.
+              - generic [ref=e121]:
+                - text: Discover the Buddy Programme
+                - img [ref=e122]
+        - generic [ref=e124]:
+          - link "Learn about SCSA" [ref=e125] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/programs/scsa-associate
+          - generic [ref=e126]:
+            - img [ref=e129]
+            - generic [ref=e131]:
+              - generic [ref=e132]: International Curriculum
+              - heading "SCSA Associate" [level=3] [ref=e133]
+              - paragraph [ref=e134]: Complete the Western Australian Certificate of Education (WACE) from your home country. Officially recognised and globally respected.
+              - generic [ref=e135]:
+                - text: Learn about SCSA
+                - img [ref=e136]
+      - link "See all programmes →" [ref=e139] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/programs
+    - generic [ref=e141]:
+      - heading "Why Western Australia" [level=2] [ref=e143]
+      - generic [ref=e144]:
+        - generic [ref=e145]:
+          - img "Perth CBD skyline viewed from Kings Park with Swan River and greenery" [ref=e147]
+          - generic [ref=e149]:
+            - heading "Perth regularly features among the world's most liveable cities." [level=3] [ref=e150]
+            - paragraph [ref=e151]: Clean air, short commutes, a safe city, and a genuinely multicultural community. Students who come here tend to stay.
+        - generic [ref=e152]:
+          - img "Logos of UWA, Curtin, Murdoch, and Edith Cowan universities" [ref=e154]
+          - generic [ref=e155]:
+            - heading "Four globally recognised universities. All in Perth." [level=3] [ref=e156]
+            - paragraph [ref=e157]: UWA, Curtin, Murdoch, and ECU offer qualifications accepted by employers and institutions in every major market.
+      - generic [ref=e158]:
+        - generic [ref=e159]:
+          - img "Young Asian woman celebrating with a friend after receiving her graduation certificate" [ref=e161]
+          - generic [ref=e163]:
+            - heading "Your degree comes with time to use it." [level=3] [ref=e164]
+            - paragraph [ref=e165]: Graduates receive 2–4 years of unrestricted work rights — enough to build real experience, establish connections, and weigh your options properly.
+        - generic [ref=e166]:
+          - 'img "Western Australia''s growing job sectors: healthcare, resources, construction, professional services, and technology" [ref=e168]'
+          - generic [ref=e169]:
+            - heading "A job market that needs skilled graduates." [level=3] [ref=e170]
+            - paragraph [ref=e171]: Western Australia's resources, healthcare, construction, and professional services sectors are all expanding. The demand for qualified people is genuine and growing.
+        - generic [ref=e172]:
+          - img "Education pathway diagram from primary school through to PhD under WA's SCSA framework" [ref=e174]
+          - generic [ref=e175]:
+            - heading "One curriculum. K to PhD." [level=3] [ref=e176]
+            - paragraph [ref=e177]: WA's SCSA-governed framework covers every stage — from primary school through to doctoral research. Structured, regulated, and recognised internationally.
+      - link "See why Western Australia →" [ref=e179] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/why-australia
+    - generic [ref=e181]:
+      - heading "What Our Clients Say" [level=2] [ref=e183]
+      - generic [ref=e184]:
+        - generic [ref=e185]:
+          - img [ref=e186]
+          - blockquote [ref=e188]: The team went above and beyond, helping me find my course of interest and arrange a scholarship to UWA within 2 weeks.
+          - generic [ref=e189]:
+            - img "N.L." [ref=e190]
+            - generic [ref=e191]:
+              - generic [ref=e192]: N.L.
+              - generic [ref=e193]: Malaysia · Bachelor of Commerce — University of Western Australia
+        - generic [ref=e194]:
+          - img [ref=e195]
+          - blockquote [ref=e197]: Where would I be without the team at Blue Education? They have helped me so much through my time in Perth, that they are now like family. They are always there for me, whatever I need.
+          - generic [ref=e198]:
+            - img "H.T." [ref=e199]
+            - generic [ref=e200]:
+              - generic [ref=e201]: H.T.
+              - generic [ref=e202]: Japan · Master of Business Administration — Curtin University
+        - generic [ref=e203]:
+          - img [ref=e204]
+          - blockquote [ref=e206]: Blue Education made my dream of becoming a Registered Nurse come true.
+          - generic [ref=e207]:
+            - img "S.W." [ref=e208]
+            - generic [ref=e209]:
+              - generic [ref=e210]: S.W.
+              - generic [ref=e211]: Singapore · Bachelor of Nursing — Edith Cowan University
+    - generic [ref=e213]:
+      - paragraph [ref=e214]: Partnered with leading Western Australian institutions.
+      - generic [ref=e216]:
+        - img "University of Western Australia" [ref=e218]
+        - img "Curtin University" [ref=e220]
+        - img "Murdoch University" [ref=e222]
+        - img "Edith Cowan University" [ref=e224]
+        - img "University of Notre Dame Australia" [ref=e226]
+        - img "North Metropolitan TAFE" [ref=e228]
+        - img "South Metropolitan TAFE" [ref=e230]
+        - img [ref=e232]
+        - img [ref=e234]
+        - img [ref=e236]
+        - img [ref=e238]
+        - img [ref=e240]
+        - img [ref=e242]
+        - img [ref=e244]
+        - img [ref=e246]
+        - img [ref=e248]
+        - img [ref=e250]
+        - img [ref=e252]
+        - img [ref=e254]
+        - img [ref=e256]
+        - img [ref=e258]
+        - img [ref=e260]
+        - img [ref=e262]
+        - img [ref=e264]
+        - img [ref=e266]
+        - img [ref=e268]
+        - img [ref=e270]
+        - img [ref=e272]
+    - generic [ref=e274]:
+      - heading "Latest From the Blog" [level=2] [ref=e276]
+      - generic [ref=e277]:
+        - article [ref=e278]:
+          - link "What Happens When a Dependant Turns 18 or 24 on an Australian Visa?" [ref=e279] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/blog/what-happens-when-a-dependant-turns-18-or-24-on-an-australian-visa
+            - img "What Happens When a Dependant Turns 18 or 24 on an Australian Visa?" [ref=e280]
+          - generic [ref=e281]:
+            - generic [ref=e282]: Migration & Visas
+            - heading "What Happens When a Dependant Turns 18 or 24 on an Australian Visa?" [level=3] [ref=e283]:
+              - link "What Happens When a Dependant Turns 18 or 24 on an Australian Visa?" [ref=e284] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/blog/what-happens-when-a-dependant-turns-18-or-24-on-an-australian-visa
+            - paragraph [ref=e285]: A Guide for Families Navigating Temporary and Permanent Visa Pathways For many international families living, studying, or working in Australia, visa...
+            - generic [ref=e286]:
+              - time [ref=e287]: Nov 24, 2025
+              - generic [ref=e288]: ·
+              - generic [ref=e289]: 3 min read
+        - article [ref=e290]:
+          - 'link "Your Guide to Australia’s Group of Eight Universities: How to Get In and Why It’s Worth It" [ref=e291] [cursor=pointer]':
+            - /url: http://127.0.0.1:8000/blog/your-guide-to-australia-s-group-of-eight-universities-how-to-get-in-and-why-it-s-worth-it
+            - 'img "Your Guide to Australia’s Group of Eight Universities: How to Get In and Why It’s Worth It" [ref=e292]'
+          - generic [ref=e293]:
+            - generic [ref=e294]: Education
+            - 'heading "Your Guide to Australia’s Group of Eight Universities: How to Get In and Why It’s Worth It" [level=3] [ref=e295]':
+              - 'link "Your Guide to Australia’s Group of Eight Universities: How to Get In and Why It’s Worth It" [ref=e296] [cursor=pointer]':
+                - /url: http://127.0.0.1:8000/blog/your-guide-to-australia-s-group-of-eight-universities-how-to-get-in-and-why-it-s-worth-it
+            - paragraph [ref=e297]: If you’re considering studying in Australia and aiming for a world‑class qualification, the prestigious Group of Eight (Go8) universities offer some of the...
+            - generic [ref=e298]:
+              - time [ref=e299]: Nov 12, 2025
+              - generic [ref=e300]: ·
+              - generic [ref=e301]: 3 min read
+        - article [ref=e302]:
+          - link "What Happens When you Run Out of Time on Your Working Holiday Visa?" [ref=e303] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/blog/what-happens-when-you-run-out-of-time-on-your-working-holiday-visa
+            - img "What Happens When you Run Out of Time on Your Working Holiday Visa?" [ref=e304]
+          - generic [ref=e305]:
+            - generic [ref=e306]: Migration & Visas
+            - heading "What Happens When you Run Out of Time on Your Working Holiday Visa?" [level=3] [ref=e307]:
+              - link "What Happens When you Run Out of Time on Your Working Holiday Visa?" [ref=e308] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/blog/what-happens-when-you-run-out-of-time-on-your-working-holiday-visa
+            - paragraph [ref=e309]: So your Working Holiday Visa (WHV) is coming to an end — but you’re not ready to leave Australia yet. You’ve made friends, found work you love, and discovered...
+            - generic [ref=e310]:
+              - time [ref=e311]: Nov 4, 2025
+              - generic [ref=e312]: ·
+              - generic [ref=e313]: 3 min read
+      - link "View all articles →" [ref=e315] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/blog
+    - generic [ref=e316]:
+      - img [ref=e318]
+      - generic [ref=e322]:
+        - generic [ref=e323]:
+          - heading "Not sure where to start?" [level=2] [ref=e324]
+          - paragraph [ref=e325]: Most people aren't. Book a conversation with us and we'll map out your options honestly — whatever they turn out to be.
+        - generic [ref=e326]:
+          - link "Book a Consultation" [ref=e327] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/contact
+          - paragraph [ref=e328]:
+            - text: "Or call:"
+            - link "+61 8 6381 0030" [ref=e329] [cursor=pointer]:
+              - /url: tel:+61863810030
+  - contentinfo [ref=e330]:
+    - generic [ref=e331]:
+      - generic [ref=e332]:
+        - generic [ref=e333]:
+          - img "Blue Education" [ref=e335]
+          - paragraph [ref=e336]: Independent education, career, and migration advice from Perth, Western Australia; Since 1998.
+        - generic [ref=e337]:
+          - heading "Services" [level=3] [ref=e338]
+          - list [ref=e339]:
+            - listitem [ref=e340]:
+              - link "Education Services" [ref=e341] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/services/education
+            - listitem [ref=e342]:
+              - link "Migration & Visas" [ref=e343] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/services/migration
+            - listitem [ref=e344]:
+              - link "Career Services" [ref=e345] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/services/career
+            - listitem [ref=e346]:
+              - link "Student Support" [ref=e347] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/services/student-support
+        - generic [ref=e348]:
+          - heading "Programs" [level=3] [ref=e349]
+          - list [ref=e350]:
+            - listitem [ref=e351]:
+              - link "Buddy Programme" [ref=e352] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/programs/buddy-programme
+            - listitem [ref=e353]:
+              - link "Study Tours" [ref=e354] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/programs/study-tours
+            - listitem [ref=e355]:
+              - link "SCSA Associate" [ref=e356] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/programs/scsa-associate
+            - listitem [ref=e357]:
+              - link "Executive Internship" [ref=e358] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/programs/executive-internship
+        - generic [ref=e359]:
+          - heading "About" [level=3] [ref=e360]
+          - list [ref=e361]:
+            - listitem [ref=e362]:
+              - link "About Us" [ref=e363] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/about
+            - listitem [ref=e364]:
+              - link "Our Team" [ref=e365] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/about/team
+            - listitem [ref=e366]:
+              - link "Our Partners" [ref=e367] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/about/partners
+            - listitem [ref=e368]:
+              - link "Why Australia" [ref=e369] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/why-australia
+        - generic [ref=e370]:
+          - heading "Resources" [level=3] [ref=e371]
+          - list [ref=e372]:
+            - listitem [ref=e373]:
+              - link "Blog" [ref=e374] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/blog
+            - listitem [ref=e375]:
+              - link "FAQ" [ref=e376] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/faq
+            - listitem [ref=e377]:
+              - link "Admission Requirements" [ref=e378] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/admission-requirements
+            - listitem [ref=e379]:
+              - link "Fees & Investment" [ref=e380] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/fees
+          - heading "Contact" [level=3] [ref=e381]
+          - generic [ref=e382]:
+            - paragraph [ref=e383]: 33 Barrack St, GF Unit 2
+            - paragraph [ref=e384]: Perth WA 6000
+            - paragraph [ref=e385]:
+              - link "+61 8 6381 0030" [ref=e386] [cursor=pointer]:
+                - /url: tel:+61863810030
+            - paragraph [ref=e387]:
+              - link "info@blueeducation.com.au" [ref=e388] [cursor=pointer]:
+                - /url: mailto:info@blueeducation.com.au
+      - generic [ref=e389]:
+        - generic [ref=e390]: "Professional credentials:"
+        - generic [ref=e391]:
+          - generic [ref=e392]:
+            - paragraph [ref=e393]: QEAC
+            - paragraph [ref=e394]:
+              - text: Qualified Education
+              - text: Agent Counsellor
+          - generic [ref=e395]:
+            - paragraph [ref=e396]:
+              - text: Migration
+              - text: Alliance
+            - paragraph [ref=e397]: Professional Member
+          - generic [ref=e398]:
+            - paragraph [ref=e399]: MIA
+            - paragraph [ref=e400]:
+              - text: Migration Institute
+              - text: of Australia
+          - generic [ref=e401]:
+            - paragraph [ref=e402]:
+              - text: Australian Bar
+              - text: Association
+            - paragraph [ref=e403]: Legal Practitioner Member
+    - generic [ref=e404]:
+      - generic [ref=e405]: © 2026 Blue Education Pty Ltd. All rights reserved.
+      - generic [ref=e406]:
+        - link "Privacy Policy" [ref=e407] [cursor=pointer]:
+          - /url: http://127.0.0.1:8000/privacy
+        - link "Terms of Use" [ref=e408] [cursor=pointer]:
+          - /url: http://127.0.0.1:8000/terms
+  - link "Chat on WhatsApp" [ref=e409] [cursor=pointer]:
+    - /url: https://wa.me/61411708899
+    - img [ref=e410]

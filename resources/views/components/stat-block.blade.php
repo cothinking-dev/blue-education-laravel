@@ -24,7 +24,7 @@
     @if($slant)
         <div class="absolute bottom-full left-0 right-0">
             <svg viewBox="0 0 1440 80" preserveAspectRatio="none" class="block w-full h-8 md:h-12" aria-hidden="true">
-                <polygon points="0,80 1440,0 1440,80" class="{{ $variant === 'light' ? 'fill-primary-50' : ($variant === 'primary' ? 'fill-primary-800' : 'fill-base-800') }}" />
+                <polygon points="0,80 1440,0 1440,80" class="{{ $variant === 'light' ? 'fill-base-50' : ($variant === 'primary' ? 'fill-primary-800' : 'fill-base-800') }}" />
             </svg>
         </div>
     @endif

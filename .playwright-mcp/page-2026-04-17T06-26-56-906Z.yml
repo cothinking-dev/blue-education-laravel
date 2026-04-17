@@ -1,0 +1,321 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - link "Skip to content" [ref=e3] [cursor=pointer]:
+      - /url: "#main-content"
+    - navigation "Main navigation" [ref=e4]:
+      - link "Blue Education — home" [ref=e5] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000
+        - img "Blue Education" [ref=e7]
+      - button "Open navigation menu" [ref=e9]:
+        - img [ref=e10]
+  - main [ref=e12]:
+    - generic [ref=e13]:
+      - img "Professional consultation at Blue Education office" [ref=e14]
+      - generic [ref=e16]:
+        - navigation "Breadcrumb" [ref=e17]:
+          - list [ref=e18]:
+            - listitem [ref=e19]:
+              - link "Home" [ref=e20] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000
+            - listitem [ref=e21]:
+              - img [ref=e22]
+              - generic [ref=e24]: Contact
+        - heading "Let's Talk About Your Future" [level=1] [ref=e25]
+        - paragraph [ref=e26]: Whether you need education, migration, or career guidance — we respond to all enquiries within three business days.
+        - generic [ref=e27]:
+          - link "Chat on WhatsApp" [ref=e28] [cursor=pointer]:
+            - /url: https://wa.me/61411708899?text=Hi%2C%20I%27d%20like%20to%20get%20in%20touch
+            - img [ref=e29]
+            - text: Chat on WhatsApp
+          - link "Send an Enquiry" [ref=e31] [cursor=pointer]:
+            - /url: "#enquiry-form"
+    - generic [ref=e34]:
+      - generic [ref=e35]:
+        - generic [ref=e36]: 5+
+        - generic [ref=e37]: Years Experience
+      - generic [ref=e38]:
+        - generic [ref=e39]: 31+
+        - generic [ref=e40]: Countries Served
+      - generic [ref=e41]:
+        - generic [ref=e42]: "1"
+        - generic [ref=e43]: Business Day Response
+      - generic [ref=e44]:
+        - generic [ref=e45]: "1"
+        - generic [ref=e46]: Languages Spoken
+    - generic [ref=e48]:
+      - generic [ref=e49]:
+        - heading "Get in Touch" [level=2] [ref=e50]
+        - paragraph [ref=e51]: Choose your preferred way to reach us.
+      - generic [ref=e52]:
+        - generic [ref=e53]:
+          - img [ref=e55]
+          - heading "Phone" [level=3] [ref=e57]
+          - generic [ref=e59]:
+            - generic [ref=e60]:
+              - link "+61 8 6381 0030" [ref=e61] [cursor=pointer]:
+                - /url: tel:+61863810030
+              - paragraph [ref=e62]: Office
+            - generic [ref=e63]:
+              - link "+61 411 708 899" [ref=e64] [cursor=pointer]:
+                - /url: https://wa.me/61411708899
+              - paragraph [ref=e65]: WhatsApp
+            - generic [ref=e66]:
+              - link "1300 040 696" [ref=e67] [cursor=pointer]:
+                - /url: tel:1300040696
+              - paragraph [ref=e68]: Australia-wide
+        - generic [ref=e69]:
+          - img [ref=e71]
+          - heading "Email" [level=3] [ref=e73]
+          - generic [ref=e74]:
+            - link "info@blueeducation.com.au" [ref=e75] [cursor=pointer]:
+              - /url: mailto:info@blueeducation.com.au
+            - paragraph [ref=e76]: We respond within three business days.
+        - generic [ref=e77]:
+          - img [ref=e79]
+          - heading "Visit Our Office" [level=3] [ref=e82]
+          - generic [ref=e83]:
+            - generic [ref=e84]:
+              - text: 33 Barrack St, GF Unit 2
+              - text: Perth, Western Australia 6000
+            - paragraph [ref=e85]: Mon–Fri, 9:00 AM – 5:00 PM
+    - generic [ref=e87]:
+      - heading "Send an Enquiry" [level=2] [ref=e89]
+      - generic [ref=e90]:
+        - generic [ref=e93]:
+          - generic [ref=e94]:
+            - generic [ref=e95]:
+              - generic [ref=e96]: Full Name *
+              - textbox "Full Name *" [ref=e97]:
+                - /placeholder: Jane Smith
+            - generic [ref=e98]:
+              - generic [ref=e99]: Email *
+              - textbox "Email *" [ref=e100]:
+                - /placeholder: jane@example.com
+          - generic [ref=e101]:
+            - generic [ref=e102]:
+              - generic [ref=e103]: Phone Number
+              - textbox "Phone Number" [ref=e104]:
+                - /placeholder: +1 555 000 0000
+            - generic [ref=e105]:
+              - generic [ref=e106]: Country of Residence
+              - textbox "Country of Residence" [ref=e107]:
+                - /placeholder: Japan
+          - generic [ref=e108]:
+            - generic [ref=e109]: Enquiry Type
+            - combobox "Enquiry Type" [ref=e110]:
+              - option "Select…" [selected]
+              - option "Education"
+              - option "Migration"
+              - option "Career"
+              - option "Student Support"
+              - option "Other"
+          - generic [ref=e111]:
+            - generic [ref=e112]: Message
+            - textbox "Message" [ref=e113]:
+              - /placeholder: Tell us about your situation and what you're hoping to achieve…
+          - button "Send Enquiry" [ref=e114]:
+            - generic [ref=e115]: Send Enquiry
+        - generic [ref=e116]:
+          - iframe [ref=e118]:
+            - link "Open in Maps (opens in new tab)" [ref=f1e4] [cursor=pointer]:
+              - /url: about:invalid#zClosurez
+              - text: Open in Maps
+              - img [ref=f1e6]
+          - generic [ref=e119]:
+            - paragraph [ref=e120]: Blue Education
+            - generic [ref=e121]:
+              - text: 33 Barrack St, GF Unit 2
+              - text: Perth WA 6000
+            - generic [ref=e122]:
+              - paragraph [ref=e123]:
+                - link "+61 8 6381 0030" [ref=e124] [cursor=pointer]:
+                  - /url: tel:+61863810030
+              - paragraph [ref=e125]:
+                - link "info@blueeducation.com.au" [ref=e126] [cursor=pointer]:
+                  - /url: mailto:info@blueeducation.com.au
+    - generic [ref=e128]:
+      - generic [ref=e129]:
+        - heading "International Representatives" [level=2] [ref=e130]
+        - paragraph [ref=e131]: For local support in your region, contact our international team.
+      - table [ref=e134]:
+        - rowgroup [ref=e135]:
+          - row "Region Representative" [ref=e136]:
+            - columnheader "Region" [ref=e137]
+            - columnheader "Representative" [ref=e138]
+        - rowgroup [ref=e139]:
+          - row "Japan Minami Sakamoto" [ref=e140]:
+            - cell "Japan" [ref=e141]
+            - cell "Minami Sakamoto" [ref=e142]
+          - row "New Zealand Sherene" [ref=e143]:
+            - cell "New Zealand" [ref=e144]
+            - cell "Sherene" [ref=e145]
+          - row "Zambia / Africa Elijah" [ref=e146]:
+            - cell "Zambia / Africa" [ref=e147]
+            - cell "Elijah" [ref=e148]
+          - row "Indonesia Hana" [ref=e149]:
+            - cell "Indonesia" [ref=e150]
+            - cell "Hana" [ref=e151]
+          - row "Malaysia Elaine Ho & Monica Low" [ref=e152]:
+            - cell "Malaysia" [ref=e153]
+            - cell "Elaine Ho & Monica Low" [ref=e154]
+      - paragraph [ref=e155]:
+        - text: Or email
+        - link "info@blueeducation.com.au" [ref=e156] [cursor=pointer]:
+          - /url: mailto:info@blueeducation.com.au
+        - text: for general enquiries.
+    - generic [ref=e157]:
+      - img [ref=e159]
+      - generic [ref=e163]:
+        - generic [ref=e164]:
+          - heading "Ready to Get Started?" [level=2] [ref=e165]
+          - paragraph [ref=e166]: Book a free consultation — in person, by phone, or video. We speak English, Bahasa, Cantonese, Japanese, and more.
+        - generic [ref=e167]:
+          - link "Book a Consultation" [ref=e168] [cursor=pointer]:
+            - /url: https://wa.me/61411708899?text=Hi%2C%20I%27d%20like%20to%20book%20a%20consultation
+            - img [ref=e169]
+            - text: Book a Consultation
+          - link "Or send an enquiry →" [ref=e171] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/contact#enquiry-form
+          - generic [ref=e172]:
+            - paragraph [ref=e173]:
+              - 'link "WhatsApp: +61 411 708 899" [ref=e174] [cursor=pointer]':
+                - /url: https://wa.me/61411708899?text=Hi%2C%20I%27d%20like%20to%20book%20a%20consultation
+            - paragraph [ref=e175]:
+              - text: "Or call:"
+              - link "+61 8 6381 0030" [ref=e176] [cursor=pointer]:
+                - /url: tel:+61863810030
+  - contentinfo [ref=e177]:
+    - generic [ref=e178]:
+      - generic [ref=e179]:
+        - generic [ref=e180]:
+          - img "Blue Education" [ref=e182]
+          - paragraph [ref=e183]: Independent education, career, and migration advice from Perth, Western Australia; Since 1998.
+        - generic [ref=e184]:
+          - heading "Services" [level=3] [ref=e185]
+          - list [ref=e186]:
+            - listitem [ref=e187]:
+              - link "Education Services" [ref=e188] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/services/education
+            - listitem [ref=e189]:
+              - link "Migration & Visas" [ref=e190] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/services/migration
+            - listitem [ref=e191]:
+              - link "Career Services" [ref=e192] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/services/career
+            - listitem [ref=e193]:
+              - link "Student Support" [ref=e194] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/services/student-support
+        - generic [ref=e195]:
+          - heading "Programmes" [level=3] [ref=e196]
+          - list [ref=e197]:
+            - listitem [ref=e198]:
+              - link "Buddy Programme" [ref=e199] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/programs/buddy-programme
+            - listitem [ref=e200]:
+              - link "Study Tours" [ref=e201] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/programs/study-tours
+            - listitem [ref=e202]:
+              - link "Executive Internship" [ref=e203] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/programs/executive-internship
+        - generic [ref=e204]:
+          - heading "About" [level=3] [ref=e205]
+          - list [ref=e206]:
+            - listitem [ref=e207]:
+              - link "About Us" [ref=e208] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/about
+            - listitem [ref=e209]:
+              - link "Our Team" [ref=e210] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/about/team
+            - listitem [ref=e211]:
+              - link "Our Partners" [ref=e212] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/about/partners
+            - listitem [ref=e213]:
+              - link "SCSA Partnership" [ref=e214] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/about/scsa-partnership
+            - listitem [ref=e215]:
+              - link "Why Australia" [ref=e216] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/why-australia
+        - generic [ref=e217]:
+          - heading "Resources" [level=3] [ref=e218]
+          - list [ref=e219]:
+            - listitem [ref=e220]:
+              - link "Blog" [ref=e221] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/blog
+            - listitem [ref=e222]:
+              - link "FAQ" [ref=e223] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/faq
+            - listitem [ref=e224]:
+              - link "Admission Requirements" [ref=e225] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/admission-requirements
+            - listitem [ref=e226]:
+              - link "Fees & Investment" [ref=e227] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/fees
+          - heading "Contact" [level=3] [ref=e228]
+          - generic [ref=e229]:
+            - paragraph [ref=e230]: 33 Barrack St, GF Unit 2
+            - paragraph [ref=e231]: Perth WA 6000
+            - paragraph [ref=e232]:
+              - 'link "WhatsApp: +61 411 708 899" [ref=e233] [cursor=pointer]':
+                - /url: https://wa.me/61411708899
+            - paragraph [ref=e234]:
+              - link "+61 8 6381 0030" [ref=e235] [cursor=pointer]:
+                - /url: tel:+61863810030
+            - paragraph [ref=e236]:
+              - link "info@blueeducation.com.au" [ref=e237] [cursor=pointer]:
+                - /url: mailto:info@blueeducation.com.au
+      - generic [ref=e238]:
+        - generic [ref=e239]: "Professional credentials:"
+        - generic [ref=e240]:
+          - generic [ref=e241]:
+            - paragraph [ref=e242]: QEAC
+            - paragraph [ref=e243]:
+              - text: Qualified Education
+              - text: Agent Counsellor
+          - generic [ref=e244]:
+            - paragraph [ref=e245]:
+              - text: Migration
+              - text: Alliance
+            - paragraph [ref=e246]: Professional Member
+          - generic [ref=e247]:
+            - paragraph [ref=e248]: MIA
+            - paragraph [ref=e249]:
+              - text: Migration Institute
+              - text: of Australia
+          - generic [ref=e250]:
+            - paragraph [ref=e251]:
+              - text: Australian Bar
+              - text: Association
+            - paragraph [ref=e252]: Legal Practitioner Member
+    - generic [ref=e253]:
+      - generic [ref=e254]: © 2026 Blue Education Pty Ltd. All rights reserved.
+      - generic [ref=e255]:
+        - link "Privacy Policy" [ref=e256] [cursor=pointer]:
+          - /url: http://127.0.0.1:8000/privacy
+        - link "Terms of Use" [ref=e257] [cursor=pointer]:
+          - /url: http://127.0.0.1:8000/terms
+  - link "Chat on WhatsApp" [ref=e258] [cursor=pointer]:
+    - /url: https://wa.me/61411708899
+    - img [ref=e259]
+  - generic [ref=e262]:
+    - generic "Drag to reposition toolbar" [ref=e263]:
+      - img
+    - button "Annotate elements (A)" [ref=e264] [cursor=pointer]:
+      - text: Annotate elements (A)
+      - img [ref=e265]
+    - button "Screenshot region (C)" [ref=e268] [cursor=pointer]:
+      - text: Screenshot region (C)
+      - img [ref=e269]
+    - button "Freeze page (F)" [ref=e273] [cursor=pointer]:
+      - text: Freeze page (F)
+      - img [ref=e274]
+    - button "Copy annotations as markdown" [ref=e278] [cursor=pointer]:
+      - text: Copy annotations as markdown
+      - img [ref=e279]
+    - generic [ref=e283]:
+      - button "Clear this page (X)" [ref=e284] [cursor=pointer]:
+        - text: Clear this page (X)
+        - img [ref=e285]
+      - text: Delete all instructions.
+    - button "Minimize toolbar" [ref=e288] [cursor=pointer]:
+      - text: Minimize toolbar
+      - img [ref=e289]

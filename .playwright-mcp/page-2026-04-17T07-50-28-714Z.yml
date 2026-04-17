@@ -1,0 +1,210 @@
+- generic [ref=e3]:
+  - region "top of page"
+  - generic [ref=e9]:
+    - banner [ref=e10]:
+      - generic [ref=e16]:
+        - generic:
+          - generic:
+            - link "Phoneicon.png" [ref=e18] [cursor=pointer]:
+              - /url: tel:086381000
+              - img "Phoneicon.png" [ref=e19]
+            - link "08 6381 0030" [ref=e21] [cursor=pointer]:
+              - /url: tel:0863810030
+              - generic [ref=e23]: 08 6381 0030
+            - generic:
+              - generic:
+                - generic:
+                  - link "WhatsappIcon.png" [ref=e25] [cursor=pointer]:
+                    - /url: https://wa.me/+61411708899
+                    - img "WhatsappIcon.png" [ref=e26]
+                  - link "+61 411 708 899" [ref=e28] [cursor=pointer]:
+                    - /url: https://wa.me/+61411708899
+                    - generic [ref=e30]: +61 411 708 899
+            - img "Logo Color (White Background) Transparen" [ref=e33]
+            - link [ref=e35] [cursor=pointer]:
+              - /url: https://www.blueeducation.com.au
+              - img [ref=e36]
+            - blockquote [ref=e40]:
+              - paragraph [ref=e41]:
+                - link "1300 040 696" [ref=e43] [cursor=pointer]:
+                  - /url: tel:+611300040696
+            - generic:
+              - generic:
+                - generic:
+                  - link "email Icon.png" [ref=e45] [cursor=pointer]:
+                    - /url: mailto:info@blueeducation.com.au
+                    - img "email Icon.png" [ref=e46]
+                  - heading "info@blueeducation.com.au" [level=2] [ref=e47]:
+                    - link "info@blueeducation.com.au" [ref=e49] [cursor=pointer]:
+                      - /url: mailto:info@blueeducation.com.au
+                      - generic [ref=e50]: info@blueeducation.com.au
+            - link "ENROL NOW" [ref=e52] [cursor=pointer]:
+              - /url: https://www.cognitoforms.com/BLUEEducationMigration/PersonalInformationEnrolmentForm
+              - generic [ref=e53]: ENROL NOW
+            - navigation "Site" [ref=e55]:
+              - list [ref=e56]:
+                - listitem [ref=e57] [cursor=pointer]:
+                  - link "OUR SERVICES" [ref=e58]:
+                    - /url: https://www.blueeducation.com.au/ourservices
+                    - paragraph [ref=e61]: OUR SERVICES
+                  - button "More OUR SERVICES pages" [ref=e62]:
+                    - img [ref=e63]
+                - listitem [ref=e65] [cursor=pointer]:
+                  - link "ABOUT US" [ref=e66]:
+                    - /url: https://www.blueeducation.com.au/about-us
+                    - paragraph [ref=e69]: ABOUT US
+                  - button "More ABOUT US pages" [ref=e70]:
+                    - img [ref=e71]
+                - listitem [ref=e73] [cursor=pointer]:
+                  - link "EDUCATION" [ref=e74]:
+                    - /url: https://www.blueeducation.com.au/education
+                    - paragraph [ref=e77]: EDUCATION
+                  - button "More EDUCATION pages" [ref=e78]:
+                    - img [ref=e79]
+                - listitem [ref=e81] [cursor=pointer]:
+                  - link "MIGRATION" [ref=e82]:
+                    - /url: https://www.blueeducation.com.au/migration
+                    - paragraph [ref=e85]: MIGRATION
+                  - button "More MIGRATION pages" [ref=e86]:
+                    - img [ref=e87]
+                - listitem [ref=e89] [cursor=pointer]:
+                  - link "TOEFL" [ref=e90]:
+                    - /url: https://www.blueeducation.com.au/toefl
+                    - paragraph [ref=e93]: TOEFL
+                - listitem [ref=e94] [cursor=pointer]:
+                  - link "CAREER" [ref=e95]:
+                    - /url: https://www.blueeducation.com.au/career
+                    - paragraph [ref=e98]: CAREER
+                  - button "More CAREER pages" [ref=e99]:
+                    - img [ref=e100]
+                - listitem [ref=e102] [cursor=pointer]:
+                  - link "PARTNERS" [ref=e103]:
+                    - /url: https://www.blueeducation.com.au/partners
+                    - paragraph [ref=e106]: PARTNERS
+                - listitem [ref=e107] [cursor=pointer]:
+                  - paragraph [ref=e111]: More
+    - main [ref=e112]:
+      - generic [ref=e117]:
+        - generic:
+          - generic:
+            - generic:
+              - generic [ref=e118]:
+                - generic:
+                  - generic:
+                    - heading "CLIENT TESTIMONIALS" [level=5] [ref=e122]:
+                      - generic [ref=e124]: CLIENT TESTIMONIALS
+                    - list [ref=e127]:
+                      - generic [ref=e128]:
+                        - listitem [ref=e129]:
+                          - generic [ref=e130]:
+                            - generic:
+                              - generic:
+                                - link "NatKoh Pic.png" [ref=e135] [cursor=pointer]:
+                                  - /url: http://www.wix.com
+                                  - img "NatKoh Pic.png" [ref=e136]
+                                - heading "NATALIE KOH Singapore" [level=4] [ref=e137]:
+                                  - generic [ref=e140]: NATALIE KOH
+                                  - generic [ref=e143]: Singapore
+                                - paragraph [ref=e144]:
+                                  - generic [ref=e148]: Bachelor of Biomedical Science
+                                - paragraph [ref=e149]:
+                                  - generic [ref=e153]: They even went as far as to arrange a home stay for me and plan out the smoothest course for my next few years of study. I am especially grateful to Sonia and Monica who made my transition to Australia extremely easy. Since then, I head to them with any queries regarding my studies or any difficulties I’m facing in Australia. I highly recommend BLUE education for their professionalism and dedication.
+                        - listitem [ref=e154]:
+                          - generic [ref=e155]:
+                            - generic:
+                              - generic:
+                                - link "TiffAiling.png" [ref=e160] [cursor=pointer]:
+                                  - /url: http://www.wix.com
+                                  - img "TiffAiling.png" [ref=e161]
+                                - heading "TIFFANY AILING United States of America" [level=4] [ref=e162]:
+                                  - generic [ref=e165]: TIFFANY AILING
+                                  - generic [ref=e168]: United States of America
+                                - paragraph [ref=e169]:
+                                  - generic [ref=e172]: Masters of Public Health
+                                - paragraph [ref=e173]:
+                                  - generic [ref=e177]: Where would I be without the team at Blue Education? They have helped me so much through my time in Perth, that they are now like family. They are always there for me to help with whatever I need, to reassure me that everything will be okay... as they all I know I love to worry. I was feeling hopeless when I had decided to stop my studies at UWA as I didn’t think that path was right for me at the time. I found Blue Education and they found time for that day, after I called, to have me meet them in their office. It was a sigh of relief. All the staff there are so kind, professional, and will do anything in their power to help you succeed. Thank you so much for your kind faces, dedication, and support. Perth is home because of them. You’re in good hands with Blue Education.
+                        - listitem [ref=e178]:
+                          - generic [ref=e179]:
+                            - generic:
+                              - generic:
+                                - link "Sheila.jpeg" [ref=e184] [cursor=pointer]:
+                                  - /url: http://www.wix.com
+                                  - img "Sheila.jpeg" [ref=e185]
+                                - heading "SHEILAH KOGO Kenya" [level=4] [ref=e186]:
+                                  - generic [ref=e189]: SHEILAH KOGO
+                                  - generic [ref=e192]: Kenya
+                                - paragraph [ref=e193]:
+                                  - generic [ref=e197]: Bachelor of Nursing
+                                - paragraph [ref=e198]:
+                                  - generic [ref=e203]:
+                                    - text: My first experience with Blue Education Migration was in 2017 when I was renewing my visa for the first time in Australia. I experienced the most organised service. Everything was done in order and in a timely manner as I am a person who worries a lot when it comes to visa. Since then, I have never thought otherwise. Anytime I want any information to do with the best university and best course I have always approached the team. ...oh, did I forget that they also keep checking on you throughout to see how you are doing and whether you are having any issues with studies. I mean the support is just extraordinary. They make you feel cared for and that there is actually someone who is ready to advocate for you in case there is any issues.
+                                    - text: Sonia and Monica are very professional and caring at the same time. I have worked with them ever since and every time I need them the service is always the best.
+                                    - text: Blue education migration with the help of Sonia and Monica specifically have made my dream of being a Registered Nurse come true. I am not yet fully there but I am sure I will definitely get there. Thank you Blue Education Migration!!
+                        - listitem [ref=e204]:
+                          - generic [ref=e205]:
+                            - generic:
+                              - generic:
+                                - link "Hameed Mohammad.jpeg" [ref=e210] [cursor=pointer]:
+                                  - /url: http://www.wix.com
+                                  - img "Hameed Mohammad.jpeg" [ref=e211]
+                                - heading "HAMEED MOHAMMAD India" [level=4] [ref=e212]:
+                                  - generic [ref=e215]: HAMEED MOHAMMAD
+                                  - generic [ref=e218]: India
+                                - paragraph [ref=e219]:
+                                  - generic [ref=e223]: Bachelor of Nursing
+                                - paragraph [ref=e224]:
+                                  - generic [ref=e227]: Excellent student services and very responsive staff with effective communication and problem-solving capabilities to support students. I highly recommend Blue education & migration for the best student services in the city.
+                    - region "Anchor 1"
+                    - region "Anchor 2"
+                    - region "Anchor 3"
+              - generic [ref=e228]:
+                - generic:
+                  - generic:
+                    - paragraph [ref=e232]: Want to know more about what our clients think about us, check us out on
+                    - link "facebook-review.png" [ref=e234] [cursor=pointer]:
+                      - /url: https://www.facebook.com/blueeducation.com.au
+                      - img "facebook-review.png" [ref=e235]
+                    - link "Google review.png" [ref=e237] [cursor=pointer]:
+                      - /url: https://g.page/r/CQ24_gPdyKONEAI/review
+                      - img "Google review.png" [ref=e238]
+    - contentinfo [ref=e240]:
+      - generic [ref=e243]:
+        - generic:
+          - generic:
+            - generic:
+              - paragraph [ref=e244]:
+                - generic [ref=e246]: © 2025 BLUE INTERNATIONAL PTY. LTD. | MARN 1385471 I QEAC S165
+              - paragraph [ref=e247]
+              - paragraph [ref=e248]:
+                - generic [ref=e251]:
+                  - link "PRIVACY POLICY" [ref=e252] [cursor=pointer]:
+                    - /url: https://www.blueeducation.com.au/privacy-policy
+                  - text: "|"
+                  - link "MIGRATION AGENTS CODE OF CONDUC" [ref=e253] [cursor=pointer]:
+                    - /url: https://www.mara.gov.au/tools-for-registered-agents/code-of-conduct
+                  - text: T |
+                  - link "ZERO TOLERANCE TOWARDS ABUSE POLICY" [ref=e254] [cursor=pointer]:
+                    - /url: https://www.blueeducation.com.au/zerotolerancetoabuse
+              - paragraph [ref=e255]
+              - paragraph [ref=e256]:
+                - link "Staff only" [ref=e259] [cursor=pointer]:
+                  - /url: https://www.blueeducation.com.au/staff
+                  - generic [ref=e260]: Staff
+                  - generic [ref=e261]: only
+              - paragraph [ref=e262]
+            - link "WhatsAppIconSq.png" [ref=e264] [cursor=pointer]:
+              - /url: https://wa.me/+61411708899
+              - img "WhatsAppIconSq.png" [ref=e265]
+            - link "MessengerIconSq.png" [ref=e267] [cursor=pointer]:
+              - /url: http://m.me/blueeducation.com.au
+              - img "MessengerIconSq.png" [ref=e268]
+            - link "FBIconSq.png" [ref=e270] [cursor=pointer]:
+              - /url: https://www.facebook.com/blueeducation.com.au/
+              - img "FBIconSq.png" [ref=e271]
+            - link "InstaIconSq.png" [ref=e273] [cursor=pointer]:
+              - /url: https://www.instagram.com/iambiablue/
+              - img "InstaIconSq.png" [ref=e274]
+            - link "LinkedInIconSq.png" [ref=e276] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/blueeducationmigrationcareer?originalSubdomain=au
+              - img "LinkedInIconSq.png" [ref=e277]
+  - region "bottom of page"

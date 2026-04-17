@@ -1,0 +1,313 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - link "Skip to content" [ref=e3] [cursor=pointer]:
+      - /url: "#main-content"
+    - navigation "Main navigation" [ref=e4]:
+      - link "Blue Education — home" [ref=e5] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000
+        - img "Blue Education" [ref=e7]
+      - generic [ref=e8]:
+        - button "Services" [ref=e10]:
+          - text: Services
+          - img [ref=e11]
+        - button "Programs" [ref=e14]:
+          - text: Programs
+          - img [ref=e15]
+        - link "Why Australia" [ref=e17] [cursor=pointer]:
+          - /url: http://127.0.0.1:8000/why-australia
+        - button "About" [ref=e19]:
+          - text: About
+          - img [ref=e20]
+        - button "Resources" [ref=e23]:
+          - text: Resources
+          - img [ref=e24]
+        - link "Fees" [ref=e26] [cursor=pointer]:
+          - /url: http://127.0.0.1:8000/fees
+        - link "Contact" [ref=e27] [cursor=pointer]:
+          - /url: http://127.0.0.1:8000/contact
+      - link "Book a Consultation" [ref=e29] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/contact
+  - main [ref=e30]:
+    - generic [ref=e31]:
+      - img "Education advisor guiding an East Asian student through university options" [ref=e32]
+      - generic [ref=e34]:
+        - navigation "Breadcrumb" [ref=e35]:
+          - list [ref=e36]:
+            - listitem [ref=e37]:
+              - link "Home" [ref=e38] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000
+            - listitem [ref=e39]:
+              - img [ref=e40]
+              - link "Services" [ref=e42] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/services
+            - listitem [ref=e43]:
+              - img [ref=e44]
+              - generic [ref=e46]: Education
+        - generic [ref=e47]: 1,100+ institutions · 20,000+ programs
+        - heading "Finding the right one takes more than a Google search." [level=1] [ref=e48]
+        - paragraph [ref=e49]: Blue Education has been navigating this system since 1998. Let us show you where you fit.
+    - generic [ref=e52]:
+      - generic [ref=e53]:
+        - heading "How We Help" [level=2] [ref=e54]
+        - generic [ref=e55]:
+          - paragraph [ref=e56]: Choosing where and what to study in Australia isn't just an education decision — it's a career decision, a migration decision, and a life decision.
+          - paragraph [ref=e57]: "Your advisor maps out institutions and programs against two questions: what career do you want, and what does your visa pathway look like? The course recommendation will come after that — not before."
+          - paragraph [ref=e58]: Once you've decided, we take care of the rest — application, enrolment, and student visa included.
+      - img "Education advisor guiding an East Asian student through programme options" [ref=e60]
+    - generic [ref=e62]:
+      - heading "Which describes your situation?" [level=2] [ref=e64]
+      - generic [ref=e65]:
+        - generic [ref=e66]:
+          - link "Learn more" [ref=e67] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/services/education/school
+          - img "East Asian student smiling in a modern classroom with classmates" [ref=e69]
+          - generic [ref=e70]:
+            - heading "I'm enrolling a child in school" [level=3] [ref=e71]
+            - paragraph [ref=e72]: For students aged 5–18. We handle school selection, accommodation, guardianship, and welfare — so parents know their child is looked after at every stage.
+            - generic [ref=e73]:
+              - text: Learn more
+              - img [ref=e74]
+        - generic [ref=e76]:
+          - link "Learn more" [ref=e77] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/services/education/english
+          - img "East Asian student laughing with classmates in a language school classroom" [ref=e79]
+          - generic [ref=e80]:
+            - heading "I need to build my English or bridge to university" [level=3] [ref=e81]
+            - paragraph [ref=e82]: Not quite at university entry level yet? English language courses (10–30 weeks) and foundation programs build the academic skills and IELTS scores that open the door.
+            - generic [ref=e83]:
+              - text: Learn more
+              - img [ref=e84]
+        - generic [ref=e86]:
+          - link "Learn more" [ref=e87] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/services/education/vet-tafe
+          - img "Students in professional culinary training at a vocational kitchen" [ref=e89]
+          - generic [ref=e90]:
+            - heading "I want a practical, career-focused qualification" [level=3] [ref=e91]
+            - paragraph [ref=e92]: Certificates through to Advanced Diplomas — practical, industry-recognised qualifications. Many sit directly on Australia's skilled migration lists.
+            - generic [ref=e93]:
+              - text: Learn more
+              - img [ref=e94]
+        - generic [ref=e96]:
+          - link "Learn more" [ref=e97] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/services/education/degrees
+          - img "East Asian graduate celebrating with diploma in university library" [ref=e99]
+          - generic [ref=e100]:
+            - heading "I'm applying for a Bachelor's, Master's, or PhD" [level=3] [ref=e101]
+            - paragraph [ref=e102]: Bachelor, Master, and Doctoral programs across globally ranked Australian universities. Graduates receive 2–4 years of post-study work rights.
+            - generic [ref=e103]:
+              - text: Learn more
+              - img [ref=e104]
+    - generic [ref=e107]:
+      - generic [ref=e108]:
+        - heading "The Placement Process" [level=2] [ref=e109]
+        - paragraph [ref=e110]: Your advisor helps you at every step; From the initial onboarding to post-travel support.
+      - list [ref=e112]:
+        - listitem [ref=e113]:
+          - img [ref=e116]
+          - generic [ref=e118]: Step 1
+          - heading "Discovery Session" [level=3] [ref=e119]
+          - paragraph [ref=e120]: We assess your background, goals, and eligibility to understand where you are and where you want to end up.
+        - listitem [ref=e121]:
+          - img [ref=e124]
+          - generic [ref=e126]: Step 2
+          - heading "Pathway Recommendation" [level=3] [ref=e127]
+          - paragraph [ref=e128]: A shortlist of institutions and programs matched to your career and migration goals — with a clear explanation of why each one fits.
+        - listitem [ref=e129]:
+          - img [ref=e132]
+          - generic [ref=e134]: Step 3
+          - heading "Application & Enrolment" [level=3] [ref=e135]
+          - paragraph [ref=e136]: We prepare your documents, lodge applications, and secure your offer and enrolment confirmation.
+        - listitem [ref=e137]:
+          - img [ref=e140]
+          - generic [ref=e142]: Step 4
+          - heading "Visa & Pre-Departure" [level=3] [ref=e143]
+          - paragraph [ref=e144]: Student visa, accommodation, health insurance, arrival orientation. All coordinated in one place.
+        - listitem [ref=e145]:
+          - img [ref=e147]
+          - generic [ref=e149]: Step 5
+          - heading "Ongoing Support" [level=3] [ref=e150]
+          - paragraph [ref=e151]: Academic guidance, welfare monitoring, and career planning for as long as you're studying.
+    - generic [ref=e153]:
+      - heading "Admission Snapshot" [level=2] [ref=e154]
+      - paragraph [ref=e155]: Entry requirements as a starting point for your education journey, not a ceiling.
+      - table [ref=e158]:
+        - rowgroup [ref=e159]:
+          - row "Program Level IELTS Duration Post-Study Work Visa" [ref=e160]:
+            - columnheader "Program Level" [ref=e161]
+            - columnheader "IELTS" [ref=e162]
+            - columnheader "Duration" [ref=e163]
+            - columnheader "Post-Study Work Visa" [ref=e164]
+        - rowgroup [ref=e165]:
+          - row "Foundation 5.0 – 5.5 6–12 months —" [ref=e166]:
+            - cell "Foundation" [ref=e167]
+            - cell "5.0 – 5.5" [ref=e168]
+            - cell "6–12 months" [ref=e169]
+            - cell "—" [ref=e170]
+          - row "VET/TAFE 5.5 – 6.0 6 months – 2 years 18 months (if eligible)" [ref=e171]:
+            - cell "VET/TAFE" [ref=e172]
+            - cell "5.5 – 6.0" [ref=e173]
+            - cell "6 months – 2 years" [ref=e174]
+            - cell "18 months (if eligible)" [ref=e175]
+          - row "Bachelor Degree 6.5 3–4 years 2 years" [ref=e176]:
+            - cell "Bachelor Degree" [ref=e177]
+            - cell "6.5" [ref=e178]
+            - cell "3–4 years" [ref=e179]
+            - cell "2 years" [ref=e180]
+          - row "Master Degree 6.5 – 7.0 1–2 years 3 years" [ref=e181]:
+            - cell "Master Degree" [ref=e182]
+            - cell "6.5 – 7.0" [ref=e183]
+            - cell "1–2 years" [ref=e184]
+            - cell "3 years" [ref=e185]
+          - row "Doctoral 6.5 – 7.0 3–4 years 4 years" [ref=e186]:
+            - cell "Doctoral" [ref=e187]
+            - cell "6.5 – 7.0" [ref=e188]
+            - cell "3–4 years" [ref=e189]
+            - cell "4 years" [ref=e190]
+      - paragraph [ref=e191]: VET post-study work rights (Graduate Work Stream, Subclass 485, 18 months) are available to graduates whose qualification and occupation appear on a skilled occupation list.
+      - link "See full admission requirements →" [ref=e192] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/admission-requirements
+    - generic [ref=e193]:
+      - img [ref=e195]
+      - generic [ref=e199]:
+        - generic [ref=e200]:
+          - heading "Know what you want to study. Not sure how to get there?" [level=2] [ref=e201]
+          - paragraph [ref=e202]: We review your background, map your options, and tell you exactly what the pathway looks like — in one conversation.
+        - generic [ref=e203]:
+          - link "Book an Education Assessment" [ref=e204] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/contact
+          - paragraph [ref=e205]:
+            - text: "Or call:"
+            - link "+61 8 6381 0030" [ref=e206] [cursor=pointer]:
+              - /url: tel:+61863810030
+  - contentinfo [ref=e207]:
+    - generic [ref=e208]:
+      - generic [ref=e209]:
+        - generic [ref=e210]:
+          - img "Blue Education" [ref=e212]
+          - paragraph [ref=e213]: Independent education, career, and migration advice from Perth, Western Australia; Since 1998.
+        - generic [ref=e214]:
+          - heading "Services" [level=3] [ref=e215]
+          - list [ref=e216]:
+            - listitem [ref=e217]:
+              - link "Education Services" [ref=e218] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/services/education
+            - listitem [ref=e219]:
+              - link "Migration & Visas" [ref=e220] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/services/migration
+            - listitem [ref=e221]:
+              - link "Career Services" [ref=e222] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/services/career
+            - listitem [ref=e223]:
+              - link "Student Support" [ref=e224] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/services/student-support
+        - generic [ref=e225]:
+          - heading "Programs" [level=3] [ref=e226]
+          - list [ref=e227]:
+            - listitem [ref=e228]:
+              - link "Buddy Programme" [ref=e229] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/programs/buddy-programme
+            - listitem [ref=e230]:
+              - link "Study Tours" [ref=e231] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/programs/study-tours
+            - listitem [ref=e232]:
+              - link "SCSA Associate" [ref=e233] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/programs/scsa-associate
+            - listitem [ref=e234]:
+              - link "Executive Internship" [ref=e235] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/programs/executive-internship
+        - generic [ref=e236]:
+          - heading "About" [level=3] [ref=e237]
+          - list [ref=e238]:
+            - listitem [ref=e239]:
+              - link "About Us" [ref=e240] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/about
+            - listitem [ref=e241]:
+              - link "Our Team" [ref=e242] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/about/team
+            - listitem [ref=e243]:
+              - link "Our Partners" [ref=e244] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/about/partners
+            - listitem [ref=e245]:
+              - link "Why Australia" [ref=e246] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/why-australia
+        - generic [ref=e247]:
+          - heading "Resources" [level=3] [ref=e248]
+          - list [ref=e249]:
+            - listitem [ref=e250]:
+              - link "Blog" [ref=e251] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/blog
+            - listitem [ref=e252]:
+              - link "FAQ" [ref=e253] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/faq
+            - listitem [ref=e254]:
+              - link "Admission Requirements" [ref=e255] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/admission-requirements
+            - listitem [ref=e256]:
+              - link "Fees & Investment" [ref=e257] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/fees
+          - heading "Contact" [level=3] [ref=e258]
+          - generic [ref=e259]:
+            - paragraph [ref=e260]: 33 Barrack St, GF Unit 2
+            - paragraph [ref=e261]: Perth WA 6000
+            - paragraph [ref=e262]:
+              - link "+61 8 6381 0030" [ref=e263] [cursor=pointer]:
+                - /url: tel:+61863810030
+            - paragraph [ref=e264]:
+              - link "info@blueeducation.com.au" [ref=e265] [cursor=pointer]:
+                - /url: mailto:info@blueeducation.com.au
+      - generic [ref=e266]:
+        - generic [ref=e267]: "Professional credentials:"
+        - generic [ref=e268]:
+          - generic [ref=e269]:
+            - paragraph [ref=e270]: QEAC
+            - paragraph [ref=e271]:
+              - text: Qualified Education
+              - text: Agent Counsellor
+          - generic [ref=e272]:
+            - paragraph [ref=e273]:
+              - text: Migration
+              - text: Alliance
+            - paragraph [ref=e274]: Professional Member
+          - generic [ref=e275]:
+            - paragraph [ref=e276]: MIA
+            - paragraph [ref=e277]:
+              - text: Migration Institute
+              - text: of Australia
+          - generic [ref=e278]:
+            - paragraph [ref=e279]:
+              - text: Australian Bar
+              - text: Association
+            - paragraph [ref=e280]: Legal Practitioner Member
+    - generic [ref=e281]:
+      - generic [ref=e282]: © 2026 Blue Education Pty Ltd. All rights reserved.
+      - generic [ref=e283]:
+        - link "Privacy Policy" [ref=e284] [cursor=pointer]:
+          - /url: http://127.0.0.1:8000/privacy
+        - link "Terms of Use" [ref=e285] [cursor=pointer]:
+          - /url: http://127.0.0.1:8000/terms
+  - link "Chat on WhatsApp" [ref=e286] [cursor=pointer]:
+    - /url: https://wa.me/61411708899
+    - img [ref=e287]
+  - generic [ref=e290]:
+    - generic "Drag to reposition toolbar" [ref=e291]:
+      - img
+    - button "Annotate elements (A)" [ref=e292] [cursor=pointer]:
+      - text: Annotate elements (A)
+      - img [ref=e293]
+    - button "Screenshot region (C)" [ref=e296] [cursor=pointer]:
+      - text: Screenshot region (C)
+      - img [ref=e297]
+    - button "Freeze page (F)" [ref=e301] [cursor=pointer]:
+      - text: Freeze page (F)
+      - img [ref=e302]
+    - button "Copy annotations as markdown" [ref=e306] [cursor=pointer]:
+      - text: Copy annotations as markdown
+      - img [ref=e307]
+    - generic [ref=e311]:
+      - button "Clear this page (X)" [ref=e312] [cursor=pointer]:
+        - text: Clear this page (X)
+        - img [ref=e313]
+      - text: Delete all instructions.
+    - button "Minimize toolbar" [ref=e316] [cursor=pointer]:
+      - text: Minimize toolbar
+      - img [ref=e317]
