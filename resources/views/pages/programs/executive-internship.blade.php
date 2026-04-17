@@ -129,18 +129,18 @@
                     <h3 class="font-bold text-base-900 mb-3">What's Involved</h3>
                     <p class="text-base-600 text-sm leading-relaxed mb-4 text-pretty">Hosting an EIP intern means providing a supervisor, agreed learning objectives, and a genuine working environment. Blue Education handles the matching, objectives framework, and performance review structure. There is no obligation to hire after placement.</p>
                     <ul class="space-y-2 text-sm text-base-600">
-                        <li class="flex items-start gap-2"><span class="text-base-400 font-bold mt-0.5" aria-hidden="true">&#8226;</span> Commitment: 16 hours per week for up to 8 weeks</li>
-                        <li class="flex items-start gap-2"><span class="text-base-400 font-bold mt-0.5" aria-hidden="true">&#8226;</span> Dedicated mentor or supervisor</li>
-                        <li class="flex items-start gap-2"><span class="text-base-400 font-bold mt-0.5" aria-hidden="true">&#8226;</span> Orientation and agreed task expectations</li>
+                        <li class="flex items-start gap-2"><span class="text-base-500 mt-0.5" aria-hidden="true">&#8226;</span> Commitment: 16 hours per week for up to 8 weeks</li>
+                        <li class="flex items-start gap-2"><span class="text-base-500 mt-0.5" aria-hidden="true">&#8226;</span> Dedicated mentor or supervisor</li>
+                        <li class="flex items-start gap-2"><span class="text-base-500 mt-0.5" aria-hidden="true">&#8226;</span> Orientation and agreed task expectations</li>
                     </ul>
                 </div>
                 <div>
                     <h3 class="font-bold text-base-900 mb-3">Benefits for Your Business</h3>
                     <ul class="space-y-2 text-sm text-base-600">
-                        <li class="flex items-start gap-2"><span class="text-primary-600 font-bold mt-0.5" aria-hidden="true">&#10003;</span> Access to motivated, pre-assessed business graduates</li>
-                        <li class="flex items-start gap-2"><span class="text-primary-600 font-bold mt-0.5" aria-hidden="true">&#10003;</span> An early look at talent before any hiring decision is made</li>
-                        <li class="flex items-start gap-2"><span class="text-primary-600 font-bold mt-0.5" aria-hidden="true">&#10003;</span> Fresh perspectives and skills from candidates with international education backgrounds</li>
-                        <li class="flex items-start gap-2"><span class="text-primary-600 font-bold mt-0.5" aria-hidden="true">&#10003;</span> No recruitment cost or hiring obligation</li>
+                        <li class="flex items-start gap-2"><span class="text-primary-600 mt-0.5" aria-hidden="true">&#10003;</span> Access to motivated, pre-assessed business graduates</li>
+                        <li class="flex items-start gap-2"><span class="text-primary-600 mt-0.5" aria-hidden="true">&#10003;</span> An early look at talent before any hiring decision is made</li>
+                        <li class="flex items-start gap-2"><span class="text-primary-600 mt-0.5" aria-hidden="true">&#10003;</span> Fresh perspectives and skills from candidates with international education backgrounds</li>
+                        <li class="flex items-start gap-2"><span class="text-primary-600 mt-0.5" aria-hidden="true">&#10003;</span> No recruitment cost or hiring obligation</li>
                     </ul>
                     <a href="{{ route('contact') }}" class="text-primary-800 font-medium text-sm hover:underline mt-4 inline-block">Interested in hosting an intern? Contact our team &rarr;</a>
                 </div>

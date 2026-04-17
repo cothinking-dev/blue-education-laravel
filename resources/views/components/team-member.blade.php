@@ -83,7 +83,7 @@
                 <p class="text-xs text-base-500 mt-1.5">{{ $languages }}</p>
             @endif
             @if($bio)
-                <p class="text-xs text-base-600 mt-3 leading-relaxed">{{ $bio }}</p>
+                <p class="text-sm text-base-600 mt-3 leading-relaxed">{{ $bio }}</p>
             @endif
         </div>
     </article>

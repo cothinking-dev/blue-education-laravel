@@ -79,15 +79,15 @@
                     <div class="space-y-2">
                         <div>
                             <a href="tel:{{ preg_replace('/\s/', '', $phone) }}" class="font-semibold text-primary-800 hover:underline">{{ $phone }}</a>
-                            <p class="text-base-400 text-xs">Office</p>
+                            <p class="text-base-500 text-xs">Office</p>
                         </div>
                         <div>
                             <a href="https://wa.me/{{ config('seo.organization.whatsapp') }}" target="_blank" rel="noopener noreferrer" class="font-semibold text-primary-800 hover:underline">{{ $phoneMobile }}</a>
-                            <p class="text-base-400 text-xs">WhatsApp</p>
+                            <p class="text-base-500 text-xs">WhatsApp</p>
                         </div>
                         <div>
                             <a href="tel:{{ preg_replace('/\s/', '', $phoneNational) }}" class="font-semibold text-primary-800 hover:underline">{{ $phoneNational }}</a>
-                            <p class="text-base-400 text-xs">Australia-wide</p>
+                            <p class="text-base-500 text-xs">Australia-wide</p>
                         </div>
                     </div>
                 </x-contact-card>
@@ -97,7 +97,7 @@
                         <x-heroicon-o-envelope class="w-6 h-6" />
                     </x-slot:icon>
                     <a href="mailto:{{ $email }}" class="font-semibold text-primary-800 hover:underline">{{ $email }}</a>
-                    <p class="text-base-400 text-xs mt-1">We respond within three business days.</p>
+                    <p class="text-base-500 text-xs mt-1">We respond within three business days.</p>
                 </x-contact-card>
 
                 <x-contact-card title="Visit Our Office">
@@ -108,7 +108,7 @@
                         33 Barrack St, GF Unit 2<br>
                         Perth, Western Australia 6000
                     </address>
-                    <p class="text-base-400 text-xs mt-1">Mon–Fri, 9:00 AM – 5:00 PM</p>
+                    <p class="text-base-500 text-xs mt-1">Mon–Fri, 9:00 AM – 5:00 PM</p>
                 </x-contact-card>
             </div>
         </div>

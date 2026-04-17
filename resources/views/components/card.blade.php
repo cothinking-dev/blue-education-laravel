@@ -45,7 +45,7 @@
             @endif
             <h3 class="text-lg font-semibold text-base-900 mb-2">{{ $title }}</h3>
             @if($description)
-                <p class="text-base-600 text-sm leading-relaxed mb-4 text-pretty">{{ $description }}</p>
+                <p class="text-base-600 leading-relaxed mb-4 text-pretty">{{ $description }}</p>
             @endif
             {{ $slot }}
             @if($href)
@@ -82,7 +82,7 @@
         @endif
         <h3 class="text-lg font-semibold text-base-900 mb-2">{{ $title }}</h3>
         @if($description)
-            <p class="text-base-600 text-sm leading-relaxed mb-4 text-pretty">{{ $description }}</p>
+            <p class="text-base-600 leading-relaxed mb-4 text-pretty">{{ $description }}</p>
         @endif
         {{ $slot }}
         @if($href)

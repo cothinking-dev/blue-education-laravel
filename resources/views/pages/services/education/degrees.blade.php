@@ -18,7 +18,7 @@
                     <div class="w-10 h-10 rounded-corner bg-primary-100 text-primary-800 flex items-center justify-center mb-4">
                         <x-heroicon-o-book-open class="w-5 h-5" />
                     </div>
-                    <h3 class="text-lg font-bold text-base-900 mb-2">Bachelor</h3>
+                    <h3 class="text-lg font-semibold text-base-900 mb-2">Bachelor</h3>
                     <p class="text-base-600 text-sm mb-4 text-pretty">The starting point for most professional careers — and for post-study work rights in Western Australia.</p>
                     <div class="space-y-2 text-sm">
                         <div class="flex justify-between"><span class="text-base-500">AQF Level</span><span class="font-medium text-base-900">7</span></div>
@@ -30,7 +30,7 @@
                     <div class="w-10 h-10 rounded-corner bg-primary-100 text-primary-800 flex items-center justify-center mb-4">
                         <x-heroicon-o-academic-cap class="w-5 h-5" />
                     </div>
-                    <h3 class="text-lg font-bold text-base-900 mb-2">Master</h3>
+                    <h3 class="text-lg font-semibold text-base-900 mb-2">Master</h3>
                     <p class="text-base-600 text-sm mb-4 text-pretty">For specialisation or career advancement. Coursework or research pathways available.</p>
                     <div class="space-y-2 text-sm">
                         <div class="flex justify-between"><span class="text-base-500">AQF Level</span><span class="font-medium text-base-900">9</span></div>
@@ -42,7 +42,7 @@
                     <div class="w-10 h-10 rounded-corner bg-primary-100 text-primary-800 flex items-center justify-center mb-4">
                         <x-heroicon-o-light-bulb class="w-5 h-5" />
                     </div>
-                    <h3 class="text-lg font-bold text-base-900 mb-2">Doctoral</h3>
+                    <h3 class="text-lg font-semibold text-base-900 mb-2">Doctoral</h3>
                     <p class="text-base-600 text-sm mb-4 text-pretty">Research-focused PhD programmes at institutions with strong industry and government research ties.</p>
                     <div class="space-y-2 text-sm">
                         <div class="flex justify-between"><span class="text-base-500">AQF Level</span><span class="font-medium text-base-900">10</span></div>
@@ -77,7 +77,7 @@
                             <img src="{{ asset($uni['logo']) }}" alt="{{ $uni['name'] }}" class="h-14 w-auto max-w-[140px] object-contain" loading="lazy">
                         </div>
                         <div class="p-5">
-                            <h3 class="font-bold text-base-900 mb-1 text-pretty">{{ $uni['name'] }}</h3>
+                            <h3 class="font-semibold text-base-900 mb-1 text-pretty">{{ $uni['name'] }}</h3>
                             <p class="text-base-600 text-sm leading-relaxed text-pretty">{{ $uni['desc'] }}</p>
                         </div>
                     </div>

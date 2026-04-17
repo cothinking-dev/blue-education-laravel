@@ -46,10 +46,10 @@
             <div class="bg-primary-50 rounded-corner-lg px-6 py-4">
                 <div class="flex flex-wrap gap-x-8 gap-y-2 items-center">
                     <span class="text-sm font-semibold text-base-900">Both streams include:</span>
-                    <span class="flex items-center gap-2 text-sm text-base-700"><span class="text-primary-600 font-bold">&#10003;</span> Work rights</span>
-                    <span class="flex items-center gap-2 text-sm text-base-700"><span class="text-primary-600 font-bold">&#10003;</span> Australian work experience</span>
-                    <span class="flex items-center gap-2 text-sm text-base-700"><span class="text-primary-600 font-bold">&#10003;</span> <a href="{{ route('services.migration.permanent-residence') }}" class="text-primary-800 hover:underline font-medium">Migration pathway &rarr;</a></span>
-                    <span class="flex items-center gap-2 text-sm text-base-700"><span class="text-primary-600 font-bold">&#10003;</span> Family inclusion</span>
+                    <span class="flex items-center gap-2 text-sm text-base-700"><span class="text-primary-600">&#10003;</span> Work rights</span>
+                    <span class="flex items-center gap-2 text-sm text-base-700"><span class="text-primary-600">&#10003;</span> Australian work experience</span>
+                    <span class="flex items-center gap-2 text-sm text-base-700"><span class="text-primary-600">&#10003;</span> <a href="{{ route('services.migration.permanent-residence') }}" class="text-primary-800 hover:underline font-medium">Migration pathway &rarr;</a></span>
+                    <span class="flex items-center gap-2 text-sm text-base-700"><span class="text-primary-600">&#10003;</span> Family inclusion</span>
                 </div>
             </div>
         </div>

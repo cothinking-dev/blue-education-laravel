@@ -20,7 +20,7 @@
         <div>
             <div class="font-semibold text-base-900 text-sm">{{ $name }}</div>
             @if($credential)
-                <div class="text-base-500 text-xs">{{ $credential }}</div>
+                <div class="text-base-500 text-sm">{{ $credential }}</div>
             @endif
         </div>
     </div>

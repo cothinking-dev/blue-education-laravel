@@ -70,12 +70,12 @@
     <x-content-split title="Orientation & Onboarding" :image="asset('images/services-student-support/orientation-tour.webp')" alt="East Asian student on a campus orientation tour">
         <p>Comprehensive introduction to life and study in Australia for all new arrivals:</p>
         <ul class="space-y-2 text-sm">
-            <li class="flex items-start gap-2"><span class="text-primary-600 font-bold">&#8226;</span> <span><strong>Campus and local area</strong> familiarisation</span></li>
-            <li class="flex items-start gap-2"><span class="text-primary-600 font-bold">&#8226;</span> <span><strong>Banking and essential services</strong> setup</span></li>
-            <li class="flex items-start gap-2"><span class="text-primary-600 font-bold">&#8226;</span> <span><strong>Public transport</strong> guidance</span></li>
-            <li class="flex items-start gap-2"><span class="text-primary-600 font-bold">&#8226;</span> <span><strong>Australian lifestyle and culture</strong> introduction</span></li>
-            <li class="flex items-start gap-2"><span class="text-primary-600 font-bold">&#8226;</span> <span><strong>Student support services</strong> overview</span></li>
-            <li class="flex items-start gap-2"><span class="text-primary-600 font-bold">&#8226;</span> <span><strong>Personal development programmes</strong> for confidence and community</span></li>
+            <li class="flex items-start gap-2"><span class="text-primary-600">&#8226;</span> <span><span class="font-medium">Campus and local area</span> familiarisation</span></li>
+            <li class="flex items-start gap-2"><span class="text-primary-600">&#8226;</span> <span><span class="font-medium">Banking and essential services</span> setup</span></li>
+            <li class="flex items-start gap-2"><span class="text-primary-600">&#8226;</span> <span><span class="font-medium">Public transport</span> guidance</span></li>
+            <li class="flex items-start gap-2"><span class="text-primary-600">&#8226;</span> <span><span class="font-medium">Australian lifestyle and culture</span> introduction</span></li>
+            <li class="flex items-start gap-2"><span class="text-primary-600">&#8226;</span> <span><span class="font-medium">Student support services</span> overview</span></li>
+            <li class="flex items-start gap-2"><span class="text-primary-600">&#8226;</span> <span><span class="font-medium">Personal development programmes</span> for confidence and community</span></li>
         </ul>
     </x-content-split>
 
@@ -83,10 +83,10 @@
     <x-content-split title="For Parents" :image="asset('images/services-student-support/parent-reassurance.webp')" alt="East Asian parent reassuring child about studying abroad" class="bg-base-50" reverse>
         <p>Sending your child to study in Australia is a significant decision. Here's how we look after them:</p>
         <ul class="space-y-2 text-sm">
-            <li class="flex items-start gap-2"><span class="text-primary-600 font-bold">&#8226;</span> <span><strong>24/7 emergency hotline</strong> — for parents and students, any time</span></li>
-            <li class="flex items-start gap-2"><span class="text-primary-600 font-bold">&#8226;</span> <span><strong>Regular welfare reports</strong> — school updates and wellbeing checks</span></li>
-            <li class="flex items-start gap-2"><span class="text-primary-600 font-bold">&#8226;</span> <span><strong>Direct communication</strong> with guardianship providers</span></li>
-            <li class="flex items-start gap-2"><span class="text-primary-600 font-bold">&#8226;</span> <span><strong>On-ground support</strong> in Perth and across major Australian cities</span></li>
+            <li class="flex items-start gap-2"><span class="text-primary-600">&#8226;</span> <span><span class="font-medium">24/7 emergency hotline</span> — for parents and students, any time</span></li>
+            <li class="flex items-start gap-2"><span class="text-primary-600">&#8226;</span> <span><span class="font-medium">Regular welfare reports</span> — school updates and wellbeing checks</span></li>
+            <li class="flex items-start gap-2"><span class="text-primary-600">&#8226;</span> <span><span class="font-medium">Direct communication</span> with guardianship providers</span></li>
+            <li class="flex items-start gap-2"><span class="text-primary-600">&#8226;</span> <span><span class="font-medium">On-ground support</span> in Perth and across major Australian cities</span></li>
         </ul>
     </x-content-split>
 

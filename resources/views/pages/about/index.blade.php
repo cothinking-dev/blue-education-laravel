@@ -38,7 +38,7 @@
                             <x-dynamic-component :component="'heroicon-o-' . $value['icon']" class="w-6 h-6" />
                         </div>
                         <h3 class="font-bold text-base-900 mb-2 text-sm text-pretty">{{ $value['title'] }}</h3>
-                        <p class="text-base-600 text-xs leading-relaxed text-pretty">{{ $value['desc'] }}</p>
+                        <p class="text-base-600 text-sm leading-relaxed text-pretty">{{ $value['desc'] }}</p>
                     </div>
                 @endforeach
             </div>
@@ -105,7 +105,7 @@
     {{-- §6 Professional Credentials --}}
     <section class="bg-base-50 border-y border-base-200">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-12">
-            <h2 class="text-sm font-bold text-base-500 uppercase tracking-widest mb-8 text-center" data-animate="fade-up">Professional Credentials</h2>
+            <p class="text-sm font-bold text-base-500 uppercase tracking-widest mb-8 text-center" data-animate="fade-up">Professional Credentials</p>
             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6" data-animate="stagger">
                 <x-credential-card name="QEAC Certified"
                                    logo="images/credentials/qeac.svg"

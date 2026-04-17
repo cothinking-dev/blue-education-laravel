@@ -15,7 +15,7 @@
         {{-- Content --}}
         <div class="relative z-10 px-8 sm:px-10 py-10 sm:py-12 max-w-3xl mx-auto bg-white/10 backdrop-blur-md rounded-corner-lg shadow-lg">
             <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-base-900 mb-2 leading-tight text-pretty">Start Your Journey to Australia with us today!</h1>
-            <p class="text-xs sm:text-sm text-base-500 mb-8">Your trusted advisors since the 90s</p>
+            <p class="text-sm sm:text-base text-base-500 mb-8">Your trusted advisors since the 90s</p>
 
             <div class="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
                 <div class="relative w-full sm:w-auto">
@@ -83,9 +83,9 @@
                     <img src="{{ asset('brand/logo.webp') }}" alt="Blue Education — education, migration & career" class="h-16 w-auto mx-auto mb-6" loading="lazy">
                     <h2 class="text-3xl font-bold text-base-900 mb-6 text-pretty" data-animate="fade-up"> We stand behind more than half a century of collective experience.</h2>
                     <div class="text-base-600 leading-relaxed space-y-4 text-pretty">
-                        <p class="text-sm">Since the beginning, we’ve operated on one principle: give honest advice. Every client is assigned a dedicated advisor who coordinates your education, visa, and career plan from start to finish, so you never have to re-explain your situation to multiple agencies.</p>
-                        <p class="text-sm">We’ll tell you when a visa application is unlikely to succeed, when a course isn’t the right fit, or when a better pathway exists — before you commit to the wrong one. </p>
-                        <p class="text-sm">We take this seriously because <b>we were once international students ourselves</b>, and <b>we are migrants too.</p>
+                        <p>Since the beginning, we’ve operated on one principle: give honest advice. Every client is assigned a dedicated advisor who coordinates your education, visa, and career plan from start to finish, so you never have to re-explain your situation to multiple agencies.</p>
+                        <p>We’ll tell you when a visa application is unlikely to succeed, when a course isn’t the right fit, or when a better pathway exists — before you commit to the wrong one.</p>
+                        <p>We take this seriously because <span class="font-medium">we were once international students ourselves</span>, and <span class="font-medium">we are migrants too</span>.</p>
                     </div>
                     <a href="{{ route('about.index') }}" class="inline-flex items-center gap-1 text-sm font-semibold text-primary-800 hover:text-primary-600 transition-colors mt-4">
                         Learn our story

@@ -76,9 +76,9 @@
                         <h3 class="text-lg font-bold text-base-900 mb-3 text-pretty">Mornings: English Language & Culture</h3>
                         <p class="text-base-600 text-sm leading-relaxed mb-4 text-pretty">Structured lessons built around Australian context — history, culture, geography, and wildlife. Grammar, vocabulary, and sentence structure taught practically, not in isolation.</p>
                         <ul class="space-y-2 text-sm text-base-600">
-                            <li class="flex items-start gap-2"><span class="text-primary-600 font-bold mt-0.5">&#8226;</span> Australian history, geography, and wildlife as lesson themes</li>
-                            <li class="flex items-start gap-2"><span class="text-primary-600 font-bold mt-0.5">&#8226;</span> Vocabulary, grammar, and sentence structure</li>
-                            <li class="flex items-start gap-2"><span class="text-primary-600 font-bold mt-0.5">&#8226;</span> Communication skills through interactive class discussion</li>
+                            <li class="flex items-start gap-2"><span class="text-primary-600 mt-0.5">&#8226;</span> Australian history, geography, and wildlife as lesson themes</li>
+                            <li class="flex items-start gap-2"><span class="text-primary-600 mt-0.5">&#8226;</span> Vocabulary, grammar, and sentence structure</li>
+                            <li class="flex items-start gap-2"><span class="text-primary-600 mt-0.5">&#8226;</span> Communication skills through interactive class discussion</li>
                         </ul>
                     </div>
                 </div>
@@ -130,9 +130,9 @@
                         <h3 class="text-lg font-bold text-base-900 mb-3 text-pretty">Afternoons: High School Integration</h3>
                         <p class="text-base-600 text-sm leading-relaxed mb-4 text-pretty">Students join regular Australian high school classes — Science, Maths, and other subjects, all in English. The point is participation, not observation: same lessons, same teachers, same expectations as local students.</p>
                         <ul class="space-y-2 text-sm text-base-600">
-                            <li class="flex items-start gap-2"><span class="text-base-400 font-bold mt-0.5">&#8226;</span> Standard academic classes alongside Australian peers</li>
-                            <li class="flex items-start gap-2"><span class="text-base-400 font-bold mt-0.5">&#8226;</span> All subjects taught in English (including Science, Maths)</li>
-                            <li class="flex items-start gap-2"><span class="text-base-400 font-bold mt-0.5">&#8226;</span> Social and cross-cultural skills in a real school environment</li>
+                            <li class="flex items-start gap-2"><span class="text-base-500 mt-0.5">&#8226;</span> Standard academic classes alongside Australian peers</li>
+                            <li class="flex items-start gap-2"><span class="text-base-500 mt-0.5">&#8226;</span> All subjects taught in English (including Science, Maths)</li>
+                            <li class="flex items-start gap-2"><span class="text-base-500 mt-0.5">&#8226;</span> Social and cross-cultural skills in a real school environment</li>
                         </ul>
                     </div>
                 </div>

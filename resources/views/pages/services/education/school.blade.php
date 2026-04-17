@@ -50,7 +50,7 @@
                     ['src' => 'images/services-education-school/school-campus.webp', 'alt' => 'East Asian students at an Australian school campus'],
                 ]" :inline="true" />
             </div>
-            <h2 class="text-2xl font-bold text-base-900 mb-3 text-pretty" data-animate="fade-up">Once They're There...</h2>
+            <h2 class="text-3xl font-bold text-base-900 mb-3 text-pretty" data-animate="fade-up">Once They're There...</h2>
             <p class="text-base-600 mb-8">We take of them! These services run in parallel, not in sequence.</p>
             <div class="grid sm:grid-cols-2 gap-6" data-animate="stagger">
                 <x-card title="Guardianship"

@@ -14,9 +14,9 @@
         <p>Blue Education's fees vary based on the services you need and the complexity of your situation. Every journey is different, so pricing is personalised; not one-size-fits-all.</p>
         <p>Before we do any work, we tell you exactly what it will cost and why. Our initial consultation is used to assess your situation — we provide a personalised quote before you commit to anything.</p>
         <ul class="space-y-3 text-sm mt-4">
-            <li class="flex items-start gap-3"><span class="text-primary-600 font-bold mt-0.5">&#10003;</span> <span><strong>Fees by service</strong> — You pay for what you need, not a package that includes what you don't.</span></li>
-            <li class="flex items-start gap-3"><span class="text-primary-600 font-bold mt-0.5">&#10003;</span> <span><strong>Personalised quotes</strong> — Every situation is different; pricing reflects that.</span></li>
-            <li class="flex items-start gap-3"><span class="text-primary-600 font-bold mt-0.5">&#10003;</span> <span><strong>Upfront breakdown</strong> — Full cost picture provided at consultation, before any application work begins.</span></li>
+            <li class="flex items-start gap-3"><span class="text-primary-600 mt-0.5">&#10003;</span> <span><span class="font-medium">Fees by service</span> — You pay for what you need, not a package that includes what you don't.</span></li>
+            <li class="flex items-start gap-3"><span class="text-primary-600 mt-0.5">&#10003;</span> <span><span class="font-medium">Personalised quotes</span> — Every situation is different; pricing reflects that.</span></li>
+            <li class="flex items-start gap-3"><span class="text-primary-600 mt-0.5">&#10003;</span> <span><span class="font-medium">Upfront breakdown</span> — Full cost picture provided at consultation, before any application work begins.</span></li>
         </ul>
     </x-content-split>
 
