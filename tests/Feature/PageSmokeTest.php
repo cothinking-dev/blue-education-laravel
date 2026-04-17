@@ -28,7 +28,7 @@ dataset('static_pages', [
     'programs index' => '/programs',
     'programs buddy-programme' => '/programs/buddy-programme',
     'programs study-tours' => '/programs/study-tours',
-    'programs scsa-associate' => '/programs/scsa-associate',
+    'about scsa-partnership' => '/about/scsa-partnership',
     'programs executive-internship' => '/programs/executive-internship',
     'why-australia' => '/why-australia',
     'faq' => '/faq',

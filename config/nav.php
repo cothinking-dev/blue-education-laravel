@@ -48,7 +48,6 @@ return [
                 ['divider' => true],
                 ['label' => 'Buddy Programme', 'route' => 'programs.buddy-programme', 'indent' => true],
                 ['label' => 'Study Tours', 'route' => 'programs.study-tours', 'indent' => true],
-                ['label' => 'SCSA Associate', 'route' => 'programs.scsa-associate', 'indent' => true],
                 ['label' => 'Executive Internship', 'route' => 'programs.executive-internship', 'indent' => true],
             ],
         ],
@@ -64,6 +63,7 @@ return [
                 ['label' => 'About Us', 'route' => 'about.index'],
                 ['label' => 'Our Team', 'route' => 'about.team'],
                 ['label' => 'Our Partners', 'route' => 'about.partners'],
+                ['label' => 'SCSA Partnership', 'route' => 'about.scsa-partnership'],
             ],
         ],
         [

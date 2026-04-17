@@ -54,7 +54,7 @@ Route::prefix('programs')->name('programs.')->group(function () {
     Route::get('/', [PageController::class, 'show'])->name('index')->defaults('label', 'Programs');
     Route::get('/buddy-programme', [PageController::class, 'show'])->name('buddy-programme')->defaults('label', 'Buddy Programme');
     Route::get('/study-tours', [PageController::class, 'show'])->name('study-tours')->defaults('label', 'Study Tours');
-    Route::get('/scsa-associate', [PageController::class, 'show'])->name('scsa-associate')->defaults('label', 'SCSA Associate');
+
     Route::get('/executive-internship', [PageController::class, 'show'])->name('executive-internship')->defaults('label', 'Executive Internship');
 });
 
@@ -63,6 +63,7 @@ Route::prefix('about')->name('about.')->group(function () {
     Route::get('/', [PageController::class, 'show'])->name('index')->defaults('label', 'About');
     Route::get('/team', [PageController::class, 'show'])->name('team')->defaults('label', 'Our Team');
     Route::get('/partners', PartnerController::class)->name('partners')->defaults('label', 'Our Partners');
+    Route::get('/scsa-partnership', [PageController::class, 'show'])->name('scsa-partnership')->defaults('label', 'SCSA Partnership');
 });
 
 // Why Australia
