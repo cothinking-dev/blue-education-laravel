@@ -30,6 +30,7 @@ class PartnerSeeder extends Seeder
             ['name' => 'Murdoch University', 'logo' => 'images/partners/murdoch-logo.svg'],
             ['name' => 'Edith Cowan University', 'logo' => 'images/partners/ecu-logo.png'],
             ['name' => 'Notre Dame Australia', 'logo' => 'images/partners/notre-dame-logo.webp'],
+            ['name' => 'Southern Cross University', 'logo' => 'images/partners/scu-logo.png'],
         ];
 
         foreach ($universities as $i => $data) {
@@ -47,8 +48,6 @@ class PartnerSeeder extends Seeder
     private function seedTafePartners(): void
     {
         $partners = [
-            ['name' => 'North Metropolitan TAFE', 'logo' => 'images/partners/nmtafe-logo.svg'],
-            ['name' => 'South Metropolitan TAFE', 'logo' => 'images/partners/smtafe-logo.svg'],
             ['name' => 'TAFE Queensland', 'logo' => 'images/partners/tafe-qld-logo.png'],
             ['name' => 'TAFE NSW', 'logo' => 'images/partners/tafe-nsw-logo.svg'],
             ['name' => 'TAFE SA', 'logo' => 'images/partners/tafe-sa-logo.png'],

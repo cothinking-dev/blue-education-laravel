@@ -16,7 +16,7 @@
 
             @if(($partnersByCategory->get('university'))?->isNotEmpty())
                 <h3 class="text-xl font-semibold text-base-800 mb-4 mt-8">Universities</h3>
-                <p class="text-base-600 mb-8 leading-relaxed text-pretty">Blue Education works with all five Western Australian universities and a broader network of partner institutions across Australia. Access to over 1,100 institutions and 20,000 programmes means your options aren't limited to what one agent happens to represent.</p>
+                <p class="text-base-600 mb-8 leading-relaxed text-pretty">Blue Education works with Western Australia's leading universities and a broader network of partner institutions across Australia. Access to over 1,100 institutions and 20,000 programmes means your options aren't limited to what one agent happens to represent.</p>
 
                 <div class="mb-6">
                     <p class="text-xs font-bold text-base-400 uppercase tracking-widest mb-4">Western Australian Universities</p>

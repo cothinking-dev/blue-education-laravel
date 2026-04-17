@@ -91,7 +91,7 @@
             <h2 class="text-3xl font-bold text-base-900 mb-4 text-pretty" data-animate="fade-up">Why Perth.</h2>
             <div class="flex flex-col lg:flex-row gap-12">
                 <div class="flex-1">
-                    <p class="text-base-600 leading-relaxed text-pretty">Perth is Western Australia's capital and Blue Education's home base. It's also one of the most underrated study destinations in Australia — four globally ranked universities, a thriving job market across mining, technology, healthcare, and education, and a liveability ranking that consistently places it among the world's top 15 cities.</p>
+                    <p class="text-base-600 leading-relaxed text-pretty">Perth is Western Australia's capital and Blue Education's home base. It's also one of the most underrated study destinations in Australia — home to globally ranked universities, a thriving job market across mining, technology, healthcare, and education, and a liveability ranking that consistently places it among the world's top 15 cities.</p>
                     <img src="{{ asset('images/why-australia/perth-skyline.webp') }}" alt="Perth city skyline with Kings Park and Swan River" class="rounded-corner-lg w-full h-auto object-cover aspect-[16/9] shadow-xl mt-6" loading="lazy">
                 </div>
                 <div class="lg:w-[40%]">

@@ -110,8 +110,6 @@
             <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 mb-8" data-animate="stagger">
                 @php
                     $partners = [
-                        ['src' => 'images/partners/nmtafe-logo.svg', 'name' => 'North Metropolitan TAFE'],
-                        ['src' => 'images/partners/smtafe-logo.svg', 'name' => 'South Metropolitan TAFE'],
                         ['src' => 'images/partners/tafe-qld-logo.png', 'name' => 'TAFE Queensland'],
                         ['src' => 'images/partners/tafe-nsw-logo.svg', 'name' => 'TAFE NSW'],
                         ['src' => 'images/partners/tafe-sa-logo.png', 'name' => 'TAFE SA'],
@@ -135,7 +133,7 @@
 
     {{-- §8 CTA --}}
     <x-cta-banner title="Find the right VET qualification."
-                  subtitle="Talk to an advisor. They'll match your career goals to the right programme and confirm whether it opens a pathway to skilled migration."
+                  subtitle="Book a free education consultation. We'll match your career goals to the right programme and confirm whether it opens a pathway to skilled migration."
                   primaryText="Explore VET Options"
                   :primaryHref="route('contact')" />
                   secondaryText="View Admission Requirements"

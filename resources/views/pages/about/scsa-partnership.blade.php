@@ -132,7 +132,7 @@
                     <x-badge variant="semantic" color="amber" size="md" :uppercase="false" class="mb-3">Premier's WACE Bursary</x-badge>
                     <h3 class="text-xl font-bold text-base-900 mb-2 text-pretty">AUD $20,000 towards a WA university degree</h3>
                     <p class="text-base-600 leading-relaxed mb-3 text-pretty">Students who complete the WACE programme overseas and enrol in a participating WA university may be eligible for the Premier's WACE Bursary — awarded to 50 applicants annually.</p>
-                    <p class="text-base-500 text-sm text-pretty">Participating universities: UWA, Curtin, Murdoch, ECU, and Notre Dame.</p>
+                    <p class="text-base-500 text-sm text-pretty">Participating universities: UWA, Curtin, Murdoch, ECU, Notre Dame, and Southern Cross University.</p>
                 </div>
             </div>
         </div>

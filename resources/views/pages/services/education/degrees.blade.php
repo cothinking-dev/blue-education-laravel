@@ -59,7 +59,7 @@
     <section class="bg-base-50">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
             <x-section-heading title="Our Partner Universities" :centered="false" />
-            <p class="text-base-600 mb-8 text-pretty">Blue Education works with all five main Western Australian universities — and a wider network of institutions across Australia. Your advisor matches you to the right one based on your goals, background, and intended field.</p>
+            <p class="text-base-600 mb-8 text-pretty">Blue Education works with Western Australia's leading universities — and a wider network of institutions across Australia. Your advisor matches you to the right one based on your goals, background, and intended field.</p>
             @php
                 $unis = [
                     ['name' => 'The University of Western Australia (UWA)', 'logo' => 'images/partners/uwa-logo.svg', 'desc' => 'One of Australia\'s leading research universities. Strong in medicine, science, law, and engineering. Consistently ranked in the global top 100.'],
@@ -67,6 +67,7 @@
                     ['name' => 'Murdoch University', 'logo' => 'images/partners/murdoch-logo.svg', 'desc' => 'Known for health sciences, law, veterinary science, and environmental studies. Smaller cohorts and strong student support.'],
                     ['name' => 'Edith Cowan University (ECU)', 'logo' => 'images/partners/ecu-logo.png', 'desc' => 'Recognised for creative arts, education, nursing, and security studies. A practical, career-focused institution.'],
                     ['name' => 'The University of Notre Dame Australia', 'logo' => 'images/partners/notre-dame-logo.webp', 'desc' => 'A smaller, values-based university with strengths in health, law, philosophy, and education. Located in Fremantle.'],
+                    ['name' => 'Southern Cross University', 'logo' => 'images/partners/scu-logo.png', 'desc' => 'A regional university with campuses in NSW and Queensland, offering courses in Perth through partner institutions. Known for tourism, marine science, and health.'],
                 ];
             @endphp
             <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6" data-animate="stagger">
@@ -188,7 +189,7 @@
 
     {{-- §8 CTA --}}
     <x-cta-banner title="Not sure which university is the right fit?"
-                  subtitle="Talk to an advisor. They'll assess your background and goals, then recommend the institution and programme that suits your situation."
+                  subtitle="Book a free education consultation. We'll assess your background and goals, then recommend the institution and programme that suits your situation."
                   primaryText="Get University Recommendations"
                   :primaryHref="route('contact')" />
 

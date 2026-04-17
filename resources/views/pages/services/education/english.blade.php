@@ -101,7 +101,7 @@
 
     {{-- §8 CTA --}}
     <x-cta-banner title="Find out where your English sits."
-                  subtitle="An English level assessment takes the guesswork out. Your advisor will tell you exactly which course suits your situation and what comes next."
+                  subtitle="Book a free education consultation. We'll assess your English level and tell you exactly which course suits your situation and what comes next."
                   primaryText="Assess My English Level"
                   :primaryHref="route('contact')" />
                   secondaryText="View Admission Requirements"
