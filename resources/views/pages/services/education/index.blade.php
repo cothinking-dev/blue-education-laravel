@@ -75,14 +75,72 @@
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
             <h2 class="text-3xl font-bold text-base-900 mb-4 text-pretty" data-animate="fade-up">Admission Snapshot</h2>
             <p class="text-base-600 mb-8 text-pretty">Entry requirements as a starting point for your education journey, not a ceiling.</p>
-            <x-data-table :headers="['Programme Level', 'IELTS', 'Duration', 'Post-Study Work Visa']"
-                          :rows="[
-                              ['Foundation', '5.0 – 5.5', '6–12 months', '—'],
-                              ['VET/TAFE', '5.5 – 6.0', '6 months – 2 years', '18 months (if eligible)'],
-                              ['Bachelor Degree', '6.5', '3–4 years', '2 years'],
-                              ['Master Degree', '6.5 – 7.0', '1–2 years', '3 years'],
-                              ['Doctoral', '6.5 – 7.0', '3–4 years', '4 years'],
-                          ]" />
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6" data-animate="stagger">
+                {{-- Foundation / ELICOS --}}
+                <div class="border border-base-200 rounded-corner-lg p-6 bg-white">
+                    <div class="w-10 h-10 rounded-corner bg-primary-100 text-primary-800 flex items-center justify-center mb-4">
+                        <x-heroicon-o-language class="w-5 h-5" />
+                    </div>
+                    <h3 class="text-lg font-bold text-base-900 mb-2">Foundation / ELICOS</h3>
+                    <div class="space-y-2 text-sm">
+                        <div class="flex justify-between"><span class="text-base-500">Duration</span><span class="font-medium text-base-900">10 weeks – 1 year</span></div>
+                        <div class="flex justify-between"><span class="text-base-500">IELTS</span><span class="font-medium text-base-900">5.0 – 5.5</span></div>
+                        <div class="flex justify-between"><span class="text-base-500">Post-Study Work</span><span class="font-medium text-base-500">Pathway course</span></div>
+                    </div>
+                </div>
+
+                {{-- VET / TAFE --}}
+                <div class="border border-base-200 rounded-corner-lg p-6 bg-white">
+                    <div class="w-10 h-10 rounded-corner bg-primary-100 text-primary-800 flex items-center justify-center mb-4">
+                        <x-heroicon-o-wrench-screwdriver class="w-5 h-5" />
+                    </div>
+                    <h3 class="text-lg font-bold text-base-900 mb-2">VET / TAFE</h3>
+                    <div class="space-y-2 text-sm">
+                        <div class="flex justify-between"><span class="text-base-500">Duration</span><span class="font-medium text-base-900">6 months – 2 years</span></div>
+                        <div class="flex justify-between"><span class="text-base-500">IELTS</span><span class="font-medium text-base-900">5.5 – 6.0</span></div>
+                        <div class="flex justify-between"><span class="text-base-500">Post-Study Work</span><span class="font-bold text-primary-800">~18 months*</span></div>
+                    </div>
+                </div>
+
+                {{-- Bachelor Degree --}}
+                <div class="border border-base-200 rounded-corner-lg p-6 bg-white">
+                    <div class="w-10 h-10 rounded-corner bg-primary-100 text-primary-800 flex items-center justify-center mb-4">
+                        <x-heroicon-o-book-open class="w-5 h-5" />
+                    </div>
+                    <h3 class="text-lg font-bold text-base-900 mb-2">Bachelor Degree</h3>
+                    <div class="space-y-2 text-sm">
+                        <div class="flex justify-between"><span class="text-base-500">Duration</span><span class="font-medium text-base-900">3 – 4 years</span></div>
+                        <div class="flex justify-between"><span class="text-base-500">IELTS</span><span class="font-medium text-base-900">6.0 – 6.5</span></div>
+                        <div class="flex justify-between"><span class="text-base-500">Post-Study Work</span><span class="font-bold text-primary-800">Up to 2 years</span></div>
+                    </div>
+                </div>
+
+                {{-- Master Degree --}}
+                <div class="border border-base-200 rounded-corner-lg p-6 bg-white">
+                    <div class="w-10 h-10 rounded-corner bg-primary-100 text-primary-800 flex items-center justify-center mb-4">
+                        <x-heroicon-o-academic-cap class="w-5 h-5" />
+                    </div>
+                    <h3 class="text-lg font-bold text-base-900 mb-2">Master Degree</h3>
+                    <div class="space-y-2 text-sm">
+                        <div class="flex justify-between"><span class="text-base-500">Duration</span><span class="font-medium text-base-900">1 – 2 years</span></div>
+                        <div class="flex justify-between"><span class="text-base-500">IELTS</span><span class="font-medium text-base-900">6.5 – 7.0</span></div>
+                        <div class="flex justify-between"><span class="text-base-500">Post-Study Work</span><span class="font-bold text-primary-800">Up to 3 years</span></div>
+                    </div>
+                </div>
+
+                {{-- Doctoral --}}
+                <div class="border border-base-200 rounded-corner-lg p-6 bg-white">
+                    <div class="w-10 h-10 rounded-corner bg-primary-100 text-primary-800 flex items-center justify-center mb-4">
+                        <x-heroicon-o-light-bulb class="w-5 h-5" />
+                    </div>
+                    <h3 class="text-lg font-bold text-base-900 mb-2">Doctoral</h3>
+                    <div class="space-y-2 text-sm">
+                        <div class="flex justify-between"><span class="text-base-500">Duration</span><span class="font-medium text-base-900">3 – 4 years</span></div>
+                        <div class="flex justify-between"><span class="text-base-500">IELTS</span><span class="font-medium text-base-900">6.5 – 7.0</span></div>
+                        <div class="flex justify-between"><span class="text-base-500">Post-Study Work</span><span class="font-bold text-primary-800">Up to 4 years</span></div>
+                    </div>
+                </div>
+            </div>
             <p class="text-sm text-base-500 mt-4 text-pretty">VET post-study work rights (Graduate Work Stream, Subclass 485, 18 months) are available to graduates whose qualification and occupation appear on a skilled occupation list.</p>
             <a href="{{ route('admission-requirements') }}" class="text-primary-800 font-semibold text-sm hover:text-primary-600 transition-colors mt-2 inline-block">See full admission requirements &rarr;</a>
         </div>
@@ -90,7 +148,7 @@
 
     {{-- §6 CTA --}}
     <x-cta-banner title="Know what you want to study. Not sure how to get there?"
-                  subtitle="We review your background, map your options, and tell you exactly what the pathway looks like — in one conversation."
+                  subtitle="Book a free education consultation. We review your background, map your options, and tell you exactly what the pathway looks like — in one conversation."
                   primaryText="Book an Education Assessment"
                   :primaryHref="route('contact')" />
 

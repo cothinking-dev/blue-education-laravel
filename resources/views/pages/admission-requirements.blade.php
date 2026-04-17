@@ -14,16 +14,16 @@
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
             <h2 class="text-3xl font-bold text-base-900 mb-4 text-pretty" data-animate="fade-up">English Language Requirements</h2>
             <p class="text-base-600 mb-2 text-pretty">Accepted tests: IELTS, TOEFL, Cambridge CAE, Pearson PTE. Scores valid for 2 years.</p>
-            <p class="text-sm text-base-500 mb-6 text-pretty">Institutions may set higher thresholds. Course requirements may differ from visa requirements.</p>
-            <x-data-table class="shadow-xl" :headers="['Programme', 'Overall IELTS', 'Per-Band Minimum']"
+            <p class="text-sm text-base-500 mb-6 text-pretty">Score ranges are indicative only. Requirements vary by course, institution, and visa type. <a href="{{ route('contact') }}" class="text-primary-800 font-medium hover:underline">Speak to a counsellor</a> for guidance specific to your situation.</p>
+            <x-data-table class="shadow-xl" :headers="['Programme', 'IELTS', 'PTE Academic', 'TOEFL iBT', 'Cambridge', 'Band Min (IELTS)']"
                           :rows="[
-                              ['Certificate I–IV', '5.5', 'Varies'],
-                              ['VET/TAFE', '5.5 – 6.0', 'Varies'],
-                              ['Bachelor', '6.0 – 6.5', 'No band below 6.0'],
-                              ['Bachelor Honours', '6.5', 'No band below 6.0'],
-                              ['Graduate Cert/Diploma', '6.5 – 7.0', 'Minimum 6.0 in each band'],
-                              ['Masters', '6.5 – 7.5', 'No band below 6.5'],
-                              ['Doctoral', '6.5 – 8.0', 'No band below 7.0'],
+                              ['ELICOS', 'Provider-set', '—', '—', '—', 'N/A'],
+                              ['Certificate III–IV', '5.5 – 6.0', '42 – 50', '46 – 60', '—', 'Varies'],
+                              ['Diploma / Adv. Diploma', '5.5 – 6.0', '42 – 50', '46 – 60', '—', 'Varies'],
+                              ['Bachelor', '6.0 – 6.5', '50 – 58', '60 – 79', '169 – 176', 'No band below 6.0'],
+                              ['Graduate Cert/Diploma', '6.0 – 6.5', '50 – 58', '60 – 79', '—', 'Min 6.0 each'],
+                              ['Master\'s', '6.5 – 7.0', '58 – 65', '79 – 94', '176 – 185', 'No band below 6.5'],
+                              ['Doctoral', '6.5 – 7.0', '58 – 65', '79 – 94', '—', 'No band below 6.5'],
                           ]" />
         </div>
     </section>
