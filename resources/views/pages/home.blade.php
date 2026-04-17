@@ -291,7 +291,6 @@
     <x-cta-banner title="Not sure where to start?"
                   subtitle="Most people aren't. Book a conversation with us and we'll map out your options honestly — whatever they turn out to be."
                   primaryText="Book a Consultation"
-                  :primaryHref="route('contact')"
-                  phone="+61 8 6381 0030" />
+                  :primaryHref="route('contact')" />
 
 </x-layout>

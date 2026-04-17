@@ -160,7 +160,6 @@
     <x-cta-banner title="Ready to apply?"
                   subtitle="We assess your eligibility, give you a clear document checklist, and lodge your application. No guesswork on your end."
                   primaryText="Start My Student Visa Application"
-                  :primaryHref="route('contact')"
-                  phone="+61 8 6381 0030" />
+                  :primaryHref="route('contact')" />
 
 </x-layout>

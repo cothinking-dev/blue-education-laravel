@@ -98,7 +98,6 @@
     <x-cta-banner title="Send your transcripts — we'll tell you where you stand."
                   subtitle="Send academic transcripts and English test results. We assess your current level, identify any gaps, and recommend the most direct pathway to your target programme."
                   primaryText="Book an Assessment"
-                  :primaryHref="route('contact')"
-                  phone="+61 8 6381 0030" />
+                  :primaryHref="route('contact')" />
 
 </x-layout>

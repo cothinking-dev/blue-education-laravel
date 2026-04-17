@@ -130,7 +130,7 @@
     <x-cta-banner title="Talk to us. We'll tell you where you stand."
                   subtitle="One session covers your education, career, and migration options — assessed together, not in separate conversations with separate agencies."
                   primaryText="Book a Consultation"
-                  :primaryHref="route('contact')"
+                  :primaryHref="route('contact')" />
                   secondaryText="Meet Our Team"
                   :secondaryHref="route('about.team')" />
 

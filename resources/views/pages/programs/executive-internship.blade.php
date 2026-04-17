@@ -170,7 +170,6 @@
     <x-cta-banner title="Two intakes a year. Applications close early."
                   subtitle="Tell us about your background and the type of placement you're aiming for. We'll confirm current intake dates and walk you through the application process."
                   primaryText="Apply for the Next Intake"
-                  :primaryHref="route('contact')"
-                  phone="+61 8 6381 0030" />
+                  :primaryHref="route('contact')" />
 
 </x-layout>

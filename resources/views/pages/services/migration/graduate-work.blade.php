@@ -102,7 +102,6 @@
     <x-cta-banner title="Graduated or about to?"
                   subtitle="We review your post-study options and tell you which visa applies, how long you have, and what to apply for next — before your student visa becomes a problem."
                   primaryText="Book a Work Visa Assessment"
-                  :primaryHref="route('contact')"
-                  phone="+61 8 6381 0030" />
+                  :primaryHref="route('contact')" />
 
 </x-layout>

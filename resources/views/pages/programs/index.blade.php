@@ -45,7 +45,6 @@
     <x-cta-banner title="Not sure which programme fits?"
                   subtitle="Tell us your goals and we'll match you to the right programme — or build a pathway that covers all of them."
                   primaryText="Book a Consultation"
-                  :primaryHref="route('contact')"
-                  phone="+61 8 6381 0030" />
+                  :primaryHref="route('contact')" />
 
 </x-layout>

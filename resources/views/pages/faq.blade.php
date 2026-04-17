@@ -69,7 +69,6 @@
     <x-cta-banner title="Still have questions?"
                   subtitle="Contact us directly. We respond to all enquiries within one business day."
                   primaryText="Contact Us"
-                  :primaryHref="route('contact')"
-                  phone="+61 8 6381 0030" />
+                  :primaryHref="route('contact')" />
 
 </x-layout>

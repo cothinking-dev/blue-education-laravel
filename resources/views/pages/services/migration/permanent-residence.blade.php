@@ -163,7 +163,6 @@
     <x-cta-banner title="Eligible for PR?"
                   subtitle="We assess your qualifications, work history, and visa status, and tell you which pathways apply — and which don't. Straight answer, no speculation."
                   primaryText="Assess My PR Eligibility"
-                  :primaryHref="route('contact')"
-                  phone="+61 8 6381 0030" />
+                  :primaryHref="route('contact')" />
 
 </x-layout>

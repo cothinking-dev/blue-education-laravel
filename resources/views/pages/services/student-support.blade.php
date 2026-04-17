@@ -134,7 +134,6 @@
     <x-cta-banner title="Get the full picture."
                   subtitle="Contact us with your situation. We'll tell you exactly what support is available and what it costs."
                   primaryText="Ask About Support Services"
-                  :primaryHref="route('contact')"
-                  phone="+61 8 6381 0030" />
+                  :primaryHref="route('contact')" />
 
 </x-layout>

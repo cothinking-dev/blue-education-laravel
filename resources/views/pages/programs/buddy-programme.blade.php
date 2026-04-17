@@ -284,7 +284,6 @@
     <x-cta-banner title="Limited slots each intake."
                   subtitle="Contact us to confirm availability for the upcoming intake and receive programme dates, costs, and enrolment details."
                   primaryText="Enquire About the Buddy Programme"
-                  :primaryHref="route('contact')"
-                  phone="+61 8 6381 0030" />
+                  :primaryHref="route('contact')" />
 
 </x-layout>

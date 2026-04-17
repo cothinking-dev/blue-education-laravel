@@ -95,7 +95,7 @@
     <x-cta-banner title="Start with a conversation."
                   subtitle="Tell us your child's age, year level, and preferences — we'll recommend schools and walk you through exactly what the process involves."
                   primaryText="Enquire About School Placements"
-                  :primaryHref="route('contact')"
+                  :primaryHref="route('contact')" />
                   secondaryText="Explore the Buddy Programme"
                   :secondaryHref="route('programs.buddy-programme')" />
 

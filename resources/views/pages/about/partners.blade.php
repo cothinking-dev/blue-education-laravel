@@ -109,7 +109,7 @@
     <x-cta-banner title="Partner with Blue Education."
                   subtitle="We work with institutions and organisations committed to student outcomes. Contact us to start a conversation."
                   primaryText="Partner With Us"
-                  :primaryHref="route('contact')"
+                  :primaryHref="route('contact')" />
                   message="Hi, I'd like to discuss a partnership with Blue Education" />
 
 </x-layout>

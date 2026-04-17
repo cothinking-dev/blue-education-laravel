@@ -67,7 +67,6 @@
     <x-cta-banner title="Your career in Australia starts with a plan."
                   subtitle="We map your skills against Australian employment pathways and identify your work visa options before you're under pressure to figure it out alone."
                   primaryText="Book a Career Assessment"
-                  :primaryHref="route('contact')"
-                  phone="+61 8 6381 0030" />
+                  :primaryHref="route('contact')" />
 
 </x-layout>

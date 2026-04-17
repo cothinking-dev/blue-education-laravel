@@ -161,7 +161,6 @@
     <x-cta-banner title="Get tour details."
                   subtitle="Contact us for available dates, pricing, and custom programme options."
                   primaryText="Enquire About Study Tours"
-                  :primaryHref="route('contact')"
-                  phone="+61 8 6381 0030" />
+                  :primaryHref="route('contact')" />
 
 </x-layout>

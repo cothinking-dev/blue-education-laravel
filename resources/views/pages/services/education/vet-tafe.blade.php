@@ -137,7 +137,7 @@
     <x-cta-banner title="Find the right VET qualification."
                   subtitle="Talk to an advisor. They'll match your career goals to the right programme and confirm whether it opens a pathway to skilled migration."
                   primaryText="Explore VET Options"
-                  :primaryHref="route('contact')"
+                  :primaryHref="route('contact')" />
                   secondaryText="View Admission Requirements"
                   :secondaryHref="route('admission-requirements')" />
 

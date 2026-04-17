@@ -153,7 +153,6 @@
     <x-cta-banner title="Want to know more about studying the Australian curriculum?"
                   subtitle="Whether you're a student, a parent, or a school — we can explain how the WA curriculum works and what your options are."
                   primaryText="Talk to Us"
-                  :primaryHref="route('contact')"
-                  phone="+61 8 6381 0030" />
+                  :primaryHref="route('contact')" />
 
 </x-layout>

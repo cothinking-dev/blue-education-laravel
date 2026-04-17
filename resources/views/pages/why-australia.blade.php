@@ -143,7 +143,7 @@
     <x-cta-banner title="Talk to someone who knows Western Australia."
                   :subtitle="'Perth-based advisors with ' . (date('Y') - 1998) . ' years of experience, serving clients from 40+ countries. We\'ll tell you what fits your situation — no guesswork.'"
                   primaryText="Book an Education Assessment"
-                  :primaryHref="route('contact')"
+                  :primaryHref="route('contact')" />
                   secondaryText="Explore Education Services"
                   :secondaryHref="route('services.education.index')" />
 

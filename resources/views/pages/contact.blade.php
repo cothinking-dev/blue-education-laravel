@@ -164,7 +164,6 @@
     <x-cta-banner title="Ready to Get Started?"
                   subtitle="Book a free consultation — in person, by phone, or video. We speak English, Bahasa, Cantonese, Japanese, and more."
                   primary-text="Book a Consultation"
-                  :primary-href="route('contact') . '#enquiry-form'"
-                  phone="+61 8 6381 0030" />
+                  :primary-href="route('contact') . '#enquiry-form'" />
 
 </x-layout>
