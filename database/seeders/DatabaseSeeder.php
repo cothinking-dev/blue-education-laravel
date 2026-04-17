@@ -24,14 +24,41 @@ class DatabaseSeeder extends Seeder
         // Blog categories and posts (migrated from Wix)
         $this->call(BlogSeeder::class);
 
-        // Testimonials from wireframe
+        // Testimonials from blueeducation.com.au/copy-of-testimonies
         if (Testimonial::count() === 0) {
             $testimonials = [
-                ['quote' => 'The team went above and beyond, helping me find my course of interest and arrange a scholarship to UWA within 2 weeks.', 'name' => 'N.L.', 'initials' => 'NL', 'photo' => 'images/testimonials/nl.webp', 'credential' => 'Bachelor of Commerce — University of Western Australia', 'country' => 'Malaysia'],
-                ['quote' => 'Where would I be without the team at Blue Education? They have helped me so much through my time in Perth, that they are now like family. They are always there for me, whatever I need.', 'name' => 'H.T.', 'initials' => 'HT', 'photo' => 'images/testimonials/ht.webp', 'credential' => 'Master of Business Administration — Curtin University', 'country' => 'Japan'],
-                ['quote' => 'Blue Education made my dream of becoming a Registered Nurse come true.', 'name' => 'S.W.', 'initials' => 'SW', 'photo' => 'images/testimonials/sw.webp', 'credential' => 'Bachelor of Nursing — Edith Cowan University', 'country' => 'Singapore'],
-                ['quote' => 'My first experience with Blue Education was in 2017, renewing my visa for the first time. Everything was handled in order and in a timely manner. The most organised service I\'ve experienced.', 'name' => 'Z.L.', 'initials' => 'ZL', 'photo' => 'images/testimonials/zl.webp', 'credential' => 'Doctor of Philosophy — Murdoch University', 'country' => 'China'],
-                ['quote' => 'They went as far as arranging homestay accommodation and planning out the smoothest course for my next few years of study. My transition to Australia couldn\'t have been easier.', 'name' => 'J.K.', 'initials' => 'JK', 'photo' => 'images/testimonials/jk.webp', 'credential' => 'Foundation Studies — North Metropolitan TAFE', 'country' => 'South Korea'],
+                [
+                    'quote' => "They even went as far as to arrange a home stay for me and plan out the smoothest course for my next few years of study. I am especially grateful to Sonia and Monica who made my transition to Australia extremely easy.\n\nSince then, I head to them with any queries regarding my studies or any difficulties I'm facing in Australia. I highly recommend BLUE education for their professionalism and dedication.",
+                    'name' => 'Natalie Koh',
+                    'initials' => 'NK',
+                    'photo' => 'images/testimonials/natalie-koh.webp',
+                    'credential' => 'Bachelor of Biomedical Science',
+                    'country' => 'Singapore',
+                ],
+                [
+                    'quote' => "Where would I be without the team at Blue Education? They have helped me so much through my time in Perth, that they are now like family. They are always there for me to help with whatever I need, to reassure me that everything will be okay.\n\nI found Blue Education and they found time that day, after I called, to have me meet them in their office. It was a sigh of relief. All the staff there are so kind, professional, and will do anything in their power to help you succeed.\n\nPerth is home because of them. You're in good hands with Blue Education.",
+                    'name' => 'Tiffany Ailing',
+                    'initials' => 'TA',
+                    'photo' => 'images/testimonials/tiffany-ailing.webp',
+                    'credential' => 'Masters of Public Health',
+                    'country' => 'United States of America',
+                ],
+                [
+                    'quote' => "My first experience with Blue Education Migration was in 2017 when I was renewing my visa for the first time in Australia. I experienced the most organised service. Everything was done in order and in a timely manner.\n\nAnytime I want any information to do with the best university and best course I have always approached the team. They also keep checking on you throughout to see how you are doing and whether you are having any issues with studies. The support is just extraordinary.\n\nSonia and Monica are very professional and caring at the same time. Blue Education Migration have made my dream of being a Registered Nurse come true.",
+                    'name' => 'Sheilah Kogo',
+                    'initials' => 'SK',
+                    'photo' => 'images/testimonials/sheilah-kogo.webp',
+                    'credential' => 'Bachelor of Nursing',
+                    'country' => 'Kenya',
+                ],
+                [
+                    'quote' => 'Excellent student services and very responsive staff with effective communication and problem-solving capabilities to support students. I highly recommend Blue education & migration for the best student services in the city.',
+                    'name' => 'Hameed Mohammad',
+                    'initials' => 'HM',
+                    'photo' => 'images/testimonials/hameed-mohammad.webp',
+                    'credential' => 'Bachelor of Nursing',
+                    'country' => 'India',
+                ],
             ];
 
             foreach ($testimonials as $i => $data) {
