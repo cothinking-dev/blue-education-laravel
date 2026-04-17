@@ -32,7 +32,7 @@ Never invent stats. Never claim something that isn't in the docs.
 | Lead with history/evidence | "Since 1998, we've operated on one principle..." |
 | Explain the benefit, not just the feature | "No handoffs means no need to re-explain your situation over and over again." |
 | Concrete over abstract | "That means telling you when a visa won't succeed, a course isn't the right fit, or a better path exists." |
-| Fragment + confirmation | "Four globally recognised universities. All in Perth." |
+| Fragment + confirmation | "Globally recognised universities. Right here in Western Australia." |
 | Reader-first framing | "Your degree comes with time to use it." |
 | Earned credibility | "That's earned the trust of clients from 40+ countries — for decisions that shaped their lives." |
 | Varied sentence length | Mix fragments, medium sentences, and longer complex sentences in the same block |
