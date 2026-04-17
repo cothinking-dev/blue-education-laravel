@@ -73,6 +73,33 @@ it('can search enquiries by name', function () {
         ->assertCanNotSeeTableRecords($enquiries->filter(fn ($e) => ! $e->is($target)));
 });
 
+it('marks a new enquiry as read when viewed', function () {
+    $enquiry = Enquiry::factory()->create(['status' => 'new']);
+
+    Livewire::test(ViewEnquiry::class, ['record' => $enquiry->getRouteKey()])
+        ->assertSuccessful();
+
+    $enquiry->refresh();
+    expect($enquiry->status)->toBe('read')
+        ->and($enquiry->read_at)->not->toBeNull();
+});
+
+it('does not overwrite status when viewing an already-read enquiry', function () {
+    $enquiry = Enquiry::factory()->create([
+        'status' => 'replied',
+        'read_at' => now()->subDay(),
+    ]);
+
+    $originalReadAt = $enquiry->read_at->toDateTimeString();
+
+    Livewire::test(ViewEnquiry::class, ['record' => $enquiry->getRouteKey()])
+        ->assertSuccessful();
+
+    $enquiry->refresh();
+    expect($enquiry->status)->toBe('replied')
+        ->and($enquiry->read_at->toDateTimeString())->toBe($originalReadAt);
+});
+
 it('denies non-admin users access', function () {
     $user = User::factory()->create();
 

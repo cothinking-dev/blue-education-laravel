@@ -22,6 +22,17 @@ class EnquiryInfolist
                             ->default('—'),
                         TextEntry::make('enquiry_type')
                             ->badge(),
+                        TextEntry::make('status')
+                            ->badge()
+                            ->color(fn (string $state): string => match ($state) {
+                                'new' => 'danger',
+                                'read' => 'warning',
+                                'replied' => 'success',
+                                default => 'gray',
+                            }),
+                        TextEntry::make('read_at')
+                            ->dateTime()
+                            ->placeholder('—'),
                     ])
                     ->columns(2),
                 Section::make('Message')

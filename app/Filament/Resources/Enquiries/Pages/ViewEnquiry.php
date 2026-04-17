@@ -10,6 +10,18 @@ class ViewEnquiry extends ViewRecord
 {
     protected static string $resource = EnquiryResource::class;
 
+    public function mount(int|string $record): void
+    {
+        parent::mount($record);
+
+        if ($this->record->status === 'new') {
+            $this->record->update([
+                'status' => 'read',
+                'read_at' => now(),
+            ]);
+        }
+    }
+
     protected function getHeaderActions(): array
     {
         return [

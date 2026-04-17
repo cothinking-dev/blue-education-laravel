@@ -2,16 +2,24 @@
 
 namespace App\Models;
 
+use Database\Factories\EnquiryFactory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class Enquiry extends Model
 {
-    /** @use HasFactory<\Database\Factories\EnquiryFactory> */
+    /** @use HasFactory<EnquiryFactory> */
     use HasFactory;
 
     /** @var list<string> */
     public const ENQUIRY_TYPES = ['Education', 'Migration', 'Career', 'Student Support', 'Other'];
+
+    /** @var array<string, string> */
+    public const STATUSES = [
+        'new' => 'New',
+        'read' => 'Read',
+        'replied' => 'Replied',
+    ];
 
     /** @var list<string> */
     protected $fillable = [
@@ -21,5 +29,17 @@ class Enquiry extends Model
         'country',
         'enquiry_type',
         'message',
+        'status',
+        'read_at',
     ];
+
+    /**
+     * @return array<string, string>
+     */
+    protected function casts(): array
+    {
+        return [
+            'read_at' => 'datetime',
+        ];
+    }
 }

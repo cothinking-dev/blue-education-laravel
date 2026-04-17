@@ -9,7 +9,7 @@ enum PartnerCategory: string implements HasLabel
     case University = 'university';
     case TafeTraining = 'tafe_training';
     case EnglishLanguage = 'english_language';
-    case OvereastCollege = 'overeast_college';
+    case OverseasCollege = 'overseas_college';
     case OtherCollege = 'other_college';
     case AngliSchool = 'angli_school';
     case Credential = 'credential';
@@ -21,7 +21,7 @@ enum PartnerCategory: string implements HasLabel
             self::University => 'Universities',
             self::TafeTraining => 'TAFE & Training Providers',
             self::EnglishLanguage => 'English Language Schools',
-            self::OvereastCollege => 'Overeast Colleges',
+            self::OverseasCollege => 'Overseas Colleges',
             self::OtherCollege => 'Other Colleges',
             self::AngliSchool => 'AngliSchools',
             self::Credential => 'Professional Credentials',
