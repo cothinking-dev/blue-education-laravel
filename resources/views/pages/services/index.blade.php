@@ -16,7 +16,7 @@
 
             <div class="grid sm:grid-cols-2 gap-6" data-animate="stagger">
                 <x-card title="Education Services"
-                        description="School, English, VET & TAFE, and university programs. We match students to the right institution and course based on career goals and visa pathway."
+                        description="School, English, VET & TAFE, and university programmes. We match students to the right institution and course based on career goals and visa pathway."
                         :href="route('services.education.index')"
                         linkText="Explore education services">
                     <x-slot:icon>

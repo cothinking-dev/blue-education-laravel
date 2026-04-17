@@ -1,3 +1,10 @@
+{{--
+| Prop    | Type    | Default   | Values                          |
+|---------|---------|-----------|----------------------------------|
+| title   | string  | —         | Callout heading                  |
+| variant | string  | 'primary' | primary, info, success, warning  |
+| icon    | ?slot   | null      | Optional icon slot               |
+--}}
 @props([
     'title',
     'variant' => 'primary',

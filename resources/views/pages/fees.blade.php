@@ -30,7 +30,7 @@
                               ['STAC charges', 'Blue Education', 'Blue Education', 'Varies by visa history'],
                               ['Medical examination', 'Panel physicians', 'Medical provider', '$240 – $380'],
                               ['Visa application', 'Dept of Home Affairs', 'Australian Government', 'Varies by subclass'],
-                              ['Tuition', 'Institution', 'Institution', 'Varies by program'],
+                              ['Tuition', 'Institution', 'Institution', 'Varies by programme'],
                           ]" />
         </div>
     </section>
@@ -58,7 +58,7 @@
                 </div>
                 <div class="border-l-4 border-primary-600 pl-6">
                     <h3 class="font-bold text-base-900 mb-2">Tuition Fees</h3>
-                    <p class="text-base-600 text-sm leading-relaxed text-pretty">Paid directly to your educational institution. Vary by institution, program, and duration.</p>
+                    <p class="text-base-600 text-sm leading-relaxed text-pretty">Paid directly to your educational institution. Vary by institution, programme, and duration.</p>
                 </div>
             </div>
         </div>
@@ -78,7 +78,7 @@
                               ['24/7 Emergency Hotline', 'Round-the-clock crisis support'],
                               ['Document Translation', 'NAATI-certified'],
                               ['Airport Transfers', 'Meet, greet, transport'],
-                              ['Study Tour Programs', 'Short-term tour coordination'],
+                              ['Study Tour Programmes', 'Short-term tour coordination'],
                               ['Specialised Consultations', 'Expert advice sessions'],
                           ]" />
         </div>

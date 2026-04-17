@@ -1,3 +1,11 @@
+{{--
+| Prop    | Type    | Default   | Values                                                        |
+|---------|---------|-----------|---------------------------------------------------------------|
+| variant | string  | 'primary' | primary, secondary, outline, ghost, outline-white, white, success |
+| size    | string  | 'md'      | sm, md, lg                                                    |
+| href    | ?string | null      | URL — renders <a> when set, <button> when null                |
+| type    | string  | 'button'  | HTML button type (ignored when href is set)                   |
+--}}
 @props([
     'variant' => 'primary',
     'size' => 'md',

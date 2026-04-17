@@ -1,4 +1,4 @@
-<x-layout title="English & Foundation Programs"
+<x-layout title="English & Foundation Programmes"
           description="ELICOS and Foundation programmes for students on their way to an Australian university. Build your English and bridge to degree entry.">
 
     {{-- §1 Hero --}}
@@ -91,9 +91,9 @@
             <x-callout title="Teaching English professionally? There's a qualification for that." variant="info">
                 <p class="text-sm mb-3">Blue Education also assists in obtaining professional English teaching qualifications — for educators pursuing careers in international English instruction.</p>
                 <div class="flex flex-wrap gap-2">
-                    <span class="inline-block bg-white border border-base-200 text-base-700 text-xs font-medium px-3 py-1 rounded-full">TESOL</span>
-                    <span class="inline-block bg-white border border-base-200 text-base-700 text-xs font-medium px-3 py-1 rounded-full">CELTA</span>
-                    <span class="inline-block bg-white border border-base-200 text-base-700 text-xs font-medium px-3 py-1 rounded-full">EfTC</span>
+                    <x-badge variant="outline" size="md" :uppercase="false">TESOL</x-badge>
+                    <x-badge variant="outline" size="md" :uppercase="false">CELTA</x-badge>
+                    <x-badge variant="outline" size="md" :uppercase="false">EfTC</x-badge>
                 </div>
             </x-callout>
         </div>

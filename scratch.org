@@ -1,18 +1,7 @@
 #+TITLE: Blue Education — Page Review Checklist
 #+STARTUP: showall
 
-For the team member section -- I would like you to evaluate, if it's smarter to be in the form of a database, or hard coded into the blade pages. For context, would rarely be changed via filament, and it's either I would edit the DB direcly, or edite the blade pages. directory. Same logic goes to Partners (I notice there is 5 entries, even though the website probably uses more.)
+You are now a senior Laravel Developer. Your task is to review this current project from a backend, data architecture and deployment point of view. You are to give a review in the form of a rubrics score, with metrics such as YAGNI, KISS, and following Laravel best practices. Put your findings in the tmp subdir
 
------
 
-You are now a senior Laravel Developer. Your task is to review this projects based on a rubrics review score. i would like you to rate it from different persepctives
-- KISS
-- YAGNI
-- Following Laravel's Best practices
-- Dead/complicated code
-- Frontend coding
-- Backend coding
-- Database architecture
-- UI/UX
-
-^^ The above are just examples, you cna consolidate these rubrics / add on to them if and when necessary. Your job is to review, not to change anything. I encourage you and your subagents to take your time, be deliberate. Place your findings in a tmp subdir, and have the subagents  add/modify. Be systematic in your review approach. Craft a plan on how you would approach this problem.
+You are now a senior Laravel Developer. Your task is to review this current project from a frontend, component UI/UX point of view. You are to give a review in the form of a rubrics score, with metrics such as YAGNI, KISS, and following Laravel best practices. Put your findings in the tmp subdir

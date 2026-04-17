@@ -1,7 +1,7 @@
 @props([
     'logos' => [],
     'title' => null,
-    'grayscale' => true,
+    'grayscale' => false,
     'marquee' => false,
 ])
 

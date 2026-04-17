@@ -12,13 +12,7 @@
     </svg>
     <blockquote class="text-base-700 leading-relaxed mb-6 text-pretty">{{ $quote }}</blockquote>
     <div class="flex items-center gap-3">
-        @if($photo)
-            <img src="{{ asset($photo) }}" alt="{{ $name }}" class="w-10 h-10 rounded-full object-cover shrink-0" loading="lazy">
-        @else
-            <div class="w-10 h-10 rounded-full bg-primary-100 text-primary-800 flex items-center justify-center text-sm font-semibold shrink-0">
-                {{ $initials ?? strtoupper(substr($name, 0, 1)) }}
-            </div>
-        @endif
+        <x-avatar :name="$name" :photo="$photo" size="sm" shape="circle" :webp="false" />
         <div>
             <div class="font-semibold text-base-900 text-sm">{{ $name }}</div>
             @if($credential)

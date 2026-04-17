@@ -93,7 +93,7 @@
                         <span class="flex-shrink-0 w-10 h-10 rounded-full bg-primary-100 text-primary-800 font-bold text-lg flex items-center justify-center">3</span>
                         <h3 class="text-2xl font-bold text-base-900 text-pretty">Support from enrolment to permanent residence.</h3>
                     </div>
-                    <p class="text-base-600 leading-relaxed text-pretty lg:pl-14">Our relationship doesn't end at enrollment. Study support. Career development. Migration pathways. 24/7 emergency hotline. We stay with you through every stage.</p>
+                    <p class="text-base-600 leading-relaxed text-pretty lg:pl-14">Our relationship doesn't end at enrolment. Study support. Career development. Migration pathways. 24/7 emergency hotline. We stay with you through every stage.</p>
                 </div>
                 <div class="flex-1 lg:max-w-[40%]">
                     <img src="{{ asset('images/about/student-graduation.webp') }}" alt="East Asian graduate celebrating with family at graduation ceremony" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2] shadow-lg" loading="lazy">
@@ -106,7 +106,7 @@
     <section class="bg-base-50 border-y border-base-200">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-12">
             <h2 class="text-sm font-bold text-base-500 uppercase tracking-widest mb-8 text-center" data-animate="fade-up">Professional Credentials</h2>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-6" data-animate="stagger">
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6" data-animate="stagger">
                 <x-credential-card name="QEAC Certified"
                                    logo="images/credentials/qeac.svg"
                                    description="Qualified Education Agent Counsellor — premier professional qualification" />
@@ -119,6 +119,9 @@
                 <x-credential-card name="Australian Bar Association"
                                    logo="images/credentials/australian-bar-association.svg"
                                    description="Legal expertise relevant to education and migration matters" />
+                <x-credential-card name="SCSA Associate"
+                                   logo="images/credentials/scsa-logo.png"
+                                   description="Appointed by WA Government to deliver Australian curriculum internationally" />
             </div>
         </div>
     </section>

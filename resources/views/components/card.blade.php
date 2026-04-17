@@ -1,3 +1,17 @@
+{{--
+| Prop        | Type    | Default    | Description                                      |
+|-------------|---------|------------|--------------------------------------------------|
+| title       | string  | —          | Card heading (h3)                                |
+| description | ?string | null       | Body text below heading                          |
+| image       | ?string | null       | Image URL                                        |
+| alt         | string  | ''         | Image alt text                                   |
+| badge       | ?string | null       | Small label above title                          |
+| href        | ?string | null       | Makes the entire card clickable                  |
+| linkText    | string  | 'Learn more' | Visible CTA text and aria-label for card link  |
+| variant     | string  | 'default'  | default, featured                                |
+| aspect      | string  | '16/10'    | CSS aspect ratio for image (e.g. '21/9', '4/3') |
+| gradient    | bool    | false      | White gradient fade over bottom of image         |
+--}}
 @props([
     'title',
     'description' => null,
@@ -7,6 +21,8 @@
     'href' => null,
     'linkText' => 'Learn more',
     'variant' => 'default',
+    'aspect' => '16/10',
+    'gradient' => false,
 ])
 
 @if($variant === 'featured')
@@ -25,7 +41,7 @@
         @endisset
         <div class="p-6 flex-1">
             @if($badge)
-                <span class="inline-block bg-primary-50 text-primary-800 text-xs font-semibold px-2.5 py-0.5 rounded-full mb-3 uppercase tracking-wider">{{ $badge }}</span>
+                <x-badge class="mb-3">{{ $badge }}</x-badge>
             @endif
             <h3 class="text-lg font-semibold text-base-900 mb-2">{{ $title }}</h3>
             @if($description)
@@ -48,8 +64,11 @@
         <a href="{{ $href }}" class="absolute inset-0 z-10" aria-label="{{ $linkText }}"></a>
     @endif
     @if($image)
-        <div class="aspect-[16/10] bg-base-200" style="background-image: repeating-linear-gradient(-55deg, transparent, transparent 8px, var(--placeholder-stripe) 8px, var(--placeholder-stripe) 9px);">
-            <img src="{{ $image }}" alt="{{ $alt }}" class="w-full h-full object-cover" loading="lazy">
+        <div class="aspect-[{{ $aspect }}] bg-base-200 {{ $gradient ? 'relative' : '' }}" style="background-image: repeating-linear-gradient(-55deg, transparent, transparent 8px, var(--placeholder-stripe) 8px, var(--placeholder-stripe) 9px);">
+            <img src="{{ $image }}" alt="{{ $alt }}" class="w-full h-full object-cover" loading="lazy" width="640" height="400">
+            @if($gradient)
+                <div class="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-b from-transparent to-white"></div>
+            @endif
         </div>
     @endif
     <div class="p-6">
@@ -59,7 +78,7 @@
             </div>
         @endisset
         @if($badge)
-            <span class="inline-block bg-primary-50 text-primary-800 text-xs font-semibold px-2.5 py-0.5 rounded-full mb-3 uppercase tracking-wider">{{ $badge }}</span>
+            <x-badge class="mb-3">{{ $badge }}</x-badge>
         @endif
         <h3 class="text-lg font-semibold text-base-900 mb-2">{{ $title }}</h3>
         @if($description)

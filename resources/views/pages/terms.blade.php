@@ -16,13 +16,13 @@
             <p>By accessing and using the Blue Education website (blueeducation.com.au), you accept and agree to be bound by these Terms of Use. If you do not agree, please do not use our website.</p>
 
             <h2>2. About Our Services</h2>
-            <p>Blue Education Pty Ltd provides education consulting, migration advisory, career services, and student support programs. We act as an independent intermediary between you and educational institutions, government bodies, and other service providers. We are not the institution itself, and final decisions on admissions, visa grants, and related outcomes are made by the relevant authority.</p>
+            <p>Blue Education Pty Ltd provides education consulting, migration advisory, career services, and student support programmes. We act as an independent intermediary between you and educational institutions, government bodies, and other service providers. We are not the institution itself, and final decisions on admissions, visa grants, and related outcomes are made by the relevant authority.</p>
 
             <h2>3. Migration Services Disclaimer</h2>
             <p>Migration advice provided by Blue Education is given by or under the supervision of registered migration agents in accordance with the Migration Act 1958 (Cth). Our registered agents hold current registration with the Office of the Migration Agents Registration Authority (OMARA). Registration details are available on request. Nothing on this website constitutes migration advice — for personalised advice, please contact us directly.</p>
 
             <h2>4. Education Agent Disclaimer</h2>
-            <p>Blue Education acts as an authorised representative of various Australian educational institutions. We assist with course selection, application preparation, and enrolment processes. However, we do not guarantee admission to any institution or program. Entry requirements, fees, and course availability are determined by the institution and may change without notice.</p>
+            <p>Blue Education acts as an authorised representative of various Australian educational institutions. We assist with course selection, application preparation, and enrolment processes. However, we do not guarantee admission to any institution or programme. Entry requirements, fees, and course availability are determined by the institution and may change without notice.</p>
 
             <h2>5. Intellectual Property</h2>
             <p>All content on this website — including text, images, logos, and design — is the property of Blue Education Pty Ltd or its licensors. You may not reproduce, distribute, or modify any content without our prior written consent.</p>

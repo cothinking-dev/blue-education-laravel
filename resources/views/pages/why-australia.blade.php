@@ -32,7 +32,7 @@
                 <div class="flex-1">
                     <span class="text-6xl font-bold text-primary-100">02</span>
                     <h3 class="text-2xl font-bold text-base-900 mt-2 mb-4 text-pretty">More choice than almost anywhere</h3>
-                    <p class="text-base-600 leading-relaxed text-pretty">1,100+ institutions. 20,000+ programs. From 10-week English language courses to doctoral research, vocational training to executive education — Australia offers a pathway for every ambition, every level, every budget.</p>
+                    <p class="text-base-600 leading-relaxed text-pretty">1,100+ institutions. 20,000+ programmes. From 10-week English language courses to doctoral research, vocational training to executive education — Australia offers a pathway for every ambition, every level, every budget.</p>
                 </div>
                 <div class="flex-1 lg:max-w-[40%]">
                     <img src="{{ asset('images/why-australia/education-choice.webp') }}" alt="East Asian students studying in a university library" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2] shadow-lg" loading="lazy">
@@ -75,7 +75,7 @@
                 <div class="flex-1">
                     <span class="text-6xl font-bold text-primary-100">05</span>
                     <h3 class="text-2xl font-bold text-base-900 mt-2 mb-4 text-pretty">Affordable compared to the alternatives</h3>
-                    <p class="text-base-600 leading-relaxed text-pretty">Australia offers competitive tuition fees across its university sector — from AUD $20,000 per year for many undergraduate programs. Perth and regional cities offer a lower cost of living than Australia's east coast capitals. The combination makes a meaningful difference over a two to four year degree.</p>
+                    <p class="text-base-600 leading-relaxed text-pretty">Australia offers competitive tuition fees across its university sector — from AUD $20,000 per year for many undergraduate programmes. Perth and regional cities offer a lower cost of living than Australia's east coast capitals. The combination makes a meaningful difference over a two to four year degree.</p>
                 </div>
                 <div class="flex-1 lg:max-w-[40%]">
                     <img src="{{ asset('images/why-australia/affordable-living.webp') }}" alt="East Asian student working on a laptop at an outdoor cafe" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2] shadow-lg" loading="lazy">

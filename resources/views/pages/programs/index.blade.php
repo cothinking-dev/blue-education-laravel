@@ -1,18 +1,18 @@
-<x-layout title="Programs"
-          description="Immersive programs for international students. Structured experiences that accelerate integration, learning, and career readiness.">
+<x-layout title="Programmes"
+          description="Immersive programmes for international students. Structured experiences that accelerate integration, learning, and career readiness.">
 
     {{-- §1 Hero --}}
-    <x-hero title="Immersive Programs for International Students"
+    <x-hero title="Immersive Programmes for International Students"
             subtitle="Beyond standard enrolment. Structured experiences that accelerate integration, learning, and career readiness."
             :image="asset('images/heroes/programs.webp')"
             alt="East Asian and international students walking on campus"
             variant="centered"
             :breadcrumbs="true" />
 
-    {{-- §2 Programs Grid --}}
+    {{-- §2 Programmes Grid --}}
     <section class="bg-white">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
-            <x-section-heading title="Our Programs" :centered="false" />
+            <x-section-heading title="Our Programmes" :centered="false" />
             <div class="grid sm:grid-cols-2 gap-6" data-animate="stagger">
                 <x-card title="Buddy Programme"
                         badge="14-Day Immersion"
@@ -24,22 +24,14 @@
 
                 <x-card title="Study Tours"
                         badge="Flexible Duration"
-                        description="Educational and cultural immersion programs. One week to several months. No long-term enrolment required. Custom tours for schools, universities, and organisations available on request."
+                        description="Educational and cultural immersion programmes. One week to several months. No long-term enrolment required. Custom tours for schools, universities, and organisations available on request."
                         :image="asset('images/programs-index/study-tours.webp')"
                         alt="Two Asian students with backpacks walking and laughing on a university campus"
                         :href="route('programs.study-tours')"
                         linkText="Explore Study Tours" />
 
-                <x-card title="SCSA Associate"
-                        badge="Official SCSA Partnership"
-                        description="Blue Education is appointed by SCSA — the WA Government's curriculum authority — to help international schools implement the Western Australian curriculum, including the WACE programme, internationally."
-                        :image="asset('images/programs-index/scsa-associate.webp')"
-                        alt="Group of East Asian students brainstorming together in a classroom"
-                        :href="route('programs.scsa-associate')"
-                        linkText="Explore SCSA Associate" />
-
                 <x-card title="Executive Internship"
-                        badge="Premium Program"
+                        badge="Premium Programme"
                         description="Strategic work experience for business graduates. The Executive Internship Programme (EIP) runs twice a year with limited places. A six-phase structured programme with real employer placements and executive mentorship."
                         :image="asset('images/programs-index/executive-internship.webp')"
                         alt="Asian professionals collaborating over documents in a modern office"
@@ -50,8 +42,8 @@
     </section>
 
     {{-- §3 CTA --}}
-    <x-cta-banner title="Not sure which program fits?"
-                  subtitle="Tell us your goals and we'll match you to the right program — or build a pathway that covers all of them."
+    <x-cta-banner title="Not sure which programme fits?"
+                  subtitle="Tell us your goals and we'll match you to the right programme — or build a pathway that covers all of them."
                   primaryText="Book a Consultation"
                   :primaryHref="route('contact')"
                   phone="+61 8 6381 0030" />

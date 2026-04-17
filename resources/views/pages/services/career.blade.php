@@ -50,7 +50,7 @@
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
             <div class="flex flex-col lg:flex-row items-center gap-12">
                 <div class="flex-1">
-                    <span class="inline-block bg-white/20 text-white text-xs font-semibold px-3 py-1 rounded-full mb-4">Premium Program</span>
+                    <x-badge variant="dark" size="md" :uppercase="false" class="mb-4">Premium Programme</x-badge>
                     <h2 class="text-3xl font-bold text-white mb-4 text-pretty" data-animate="fade-up">The Executive Internship Programme</h2>
                     <p class="text-primary-200 leading-relaxed mb-4 text-pretty">For business graduates and experienced professionals who want more than entry-level experience. Strategic placements with Australian employers, executive mentorship through our EIP partners, and a structured programme that runs twice a year.</p>
                     <p class="text-primary-200 leading-relaxed mb-6 text-pretty">Places are limited. Applications open before each intake.</p>

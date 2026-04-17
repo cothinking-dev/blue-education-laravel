@@ -33,7 +33,7 @@
             <ul>
                 <li>Provide education consulting, migration, and career services</li>
                 <li>Process enrolment applications and visa applications</li>
-                <li>Communicate about our services, programs, and events</li>
+                <li>Communicate about our services, programmes, and events</li>
                 <li>Respond to enquiries submitted through our website contact form</li>
                 <li>Send updates about our services where you have opted in</li>
                 <li>Comply with legal and regulatory requirements</li>

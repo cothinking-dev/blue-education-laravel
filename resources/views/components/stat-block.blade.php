@@ -1,3 +1,10 @@
+{{--
+| Prop    | Type   | Default | Values                                       |
+|---------|--------|---------|----------------------------------------------|
+| stats   | array  | []      | Array of ['value' => '...', 'label' => '...'] |
+| variant | string | 'dark'  | dark, primary, light                          |
+| slant   | bool   | false   | SVG slant divider above the block             |
+--}}
 @props([
     'stats' => [],
     'variant' => 'dark',
@@ -8,7 +15,7 @@
     $variants = [
         'dark' => 'bg-base-800 text-white',
         'primary' => 'bg-primary-800 text-white',
-        'light' => 'bg-primary-50 text-base-900',
+        'light' => 'bg-base-50 text-base-900',
     ];
     $bg = $variants[$variant] ?? $variants['dark'];
 @endphp
@@ -17,7 +24,7 @@
     @if($slant)
         <div class="absolute bottom-full left-0 right-0">
             <svg viewBox="0 0 1440 80" preserveAspectRatio="none" class="block w-full h-8 md:h-12" aria-hidden="true">
-                <polygon points="0,80 1440,0 1440,80" class="fill-base-800" />
+                <polygon points="0,80 1440,0 1440,80" class="{{ $variant === 'light' ? 'fill-primary-50' : ($variant === 'primary' ? 'fill-primary-800' : 'fill-base-800') }}" />
             </svg>
         </div>
     @endif

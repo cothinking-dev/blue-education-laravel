@@ -75,7 +75,7 @@
             <li class="flex items-start gap-2"><span class="text-primary-600 font-bold">&#8226;</span> <span><strong>Public transport</strong> guidance</span></li>
             <li class="flex items-start gap-2"><span class="text-primary-600 font-bold">&#8226;</span> <span><strong>Australian lifestyle and culture</strong> introduction</span></li>
             <li class="flex items-start gap-2"><span class="text-primary-600 font-bold">&#8226;</span> <span><strong>Student support services</strong> overview</span></li>
-            <li class="flex items-start gap-2"><span class="text-primary-600 font-bold">&#8226;</span> <span><strong>Personal development programs</strong> for confidence and community</span></li>
+            <li class="flex items-start gap-2"><span class="text-primary-600 font-bold">&#8226;</span> <span><strong>Personal development programmes</strong> for confidence and community</span></li>
         </ul>
     </x-content-split>
 
@@ -102,7 +102,7 @@
             <x-timeline :steps="[
                 ['title' => 'Pre-Arrival', 'description' => 'Documents translated. Accommodation arranged. OSHC enrolled. Visa approved.'],
                 ['title' => 'Arrival Day', 'description' => 'Airport pickup. Transfer to accommodation. First-day orientation.'],
-                ['title' => 'Ongoing', 'description' => '24/7 hotline. Welfare monitoring. Cultural adaptation support. Personal development programs.'],
+                ['title' => 'Ongoing', 'description' => '24/7 hotline. Welfare monitoring. Cultural adaptation support. Personal development programmes.'],
             ]" />
         </div>
     </section>

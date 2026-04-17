@@ -1,4 +1,4 @@
-<x-layout title="School Programs"
+<x-layout title="School Programmes"
           description="A quality Australian education for your child. We handle school selection, visa, accommodation, and guardianship.">
 
     {{-- §1 Hero --}}
@@ -24,7 +24,7 @@
             <ul class="mt-6 space-y-1.5 text-sm text-base-500">
                 <li>* Compulsory until age 16 in most states and territories.</li>
                 <li>* Public and private schools available — we match your child to the right fit.</li>
-                <li>* Blue Education is an SCSA Associate — officially named by SCSA to promote the Western Australian curriculum internationally. <a href="{{ route('programs.scsa-associate') }}" class="text-primary-800 hover:underline font-medium">Learn about SCSA &rarr;</a></li>
+                <li>* Blue Education is an SCSA Associate — officially named by SCSA to promote the Western Australian curriculum internationally. <a href="{{ route('about.scsa-partnership') }}" class="text-primary-800 hover:underline font-medium">Learn about SCSA &rarr;</a></li>
             </ul>
         </div>
     </section>

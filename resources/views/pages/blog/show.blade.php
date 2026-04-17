@@ -33,27 +33,27 @@
           :json-ld="$blogPostingSchema">
 
     {{-- §1 Hero — featured image as background --}}
-    <section class="relative flex flex-col overflow-hidden [clip-path:inset(0)] items-start justify-end" style="min-height: 80dvh; background-color: var(--color-base-700);">
+    <section class="relative flex flex-col overflow-hidden [clip-path:inset(0)] items-start justify-end" style="min-height: 80dvh; background-color: var(--color-base-100);">
         @if($post->featured_image)
             <img data-hero-parallax src="{{ asset($post->featured_image) }}" alt="{{ $post->title }}" class="fixed inset-0 w-full h-full object-cover">
         @endif
-        <div class="absolute inset-0" style="background: linear-gradient(135deg, var(--hero-overlay-start), var(--hero-overlay-end)); mix-blend-mode: multiply;"></div>
+        <div class="absolute inset-0" style="background: linear-gradient(135deg, var(--hero-overlay-start), var(--hero-overlay-end));"></div>
         <div class="absolute inset-0" style="background: radial-gradient(ellipse 80% 80% at 50% 50%, transparent 30%, var(--hero-vignette) 100%);"></div>
-        <div class="relative z-10 px-8 lg:px-16 py-20 max-w-7xl w-full mx-auto">
-            <x-auto-breadcrumb class="mb-6" dark />
+        <div class="relative z-10 px-8 lg:px-16 py-20 max-w-7xl w-full mx-auto bg-white/10 backdrop-blur-md rounded-corner-lg shadow-lg">
+            <x-auto-breadcrumb class="mb-6" />
             <div class="flex flex-wrap items-center gap-3 mb-4">
                 @if($post->category)
-                    <span class="inline-block text-xs font-semibold px-2.5 py-0.5 rounded-full text-white {{ $post->category->badgeClass() }}">{{ $post->category->name }}</span>
+                    <x-badge variant="none" :uppercase="false" class="text-base-900 {{ $post->category->badgeClass() }}">{{ $post->category->name }}</x-badge>
                 @endif
                 @if($post->published_at)
-                    <span class="text-base-300 text-sm">{{ $post->published_at->format('M j, Y') }}</span>
+                    <span class="text-base-600 text-sm">{{ $post->published_at->format('M j, Y') }}</span>
                 @endif
                 @if($post->read_time)
                     <span class="text-base-400 text-sm">&middot;</span>
-                    <span class="text-base-300 text-sm">{{ $post->read_time }} min read</span>
+                    <span class="text-base-600 text-sm">{{ $post->read_time }} min read</span>
                 @endif
             </div>
-            <h1 class="text-3xl lg:text-5xl font-bold text-white leading-tight text-pretty max-w-4xl">{{ $post->title }}</h1>
+            <h1 class="text-3xl lg:text-5xl font-bold text-base-900 leading-tight text-pretty max-w-4xl">{{ $post->title }}</h1>
         </div>
     </section>
 

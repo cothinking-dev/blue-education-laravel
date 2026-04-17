@@ -25,9 +25,7 @@
 
     <div class="p-5">
         @if($category)
-            <span class="inline-block px-2.5 py-0.5 rounded-full text-xs font-semibold text-white mb-3 {{ $categoryBadgeClass }}">
-                {{ $category }}
-            </span>
+            <x-badge variant="none" :uppercase="false" class="text-white mb-3 {{ $categoryBadgeClass }}">{{ $category }}</x-badge>
         @endif
 
         <h3 class="font-bold text-base-900 mb-2 line-clamp-2">

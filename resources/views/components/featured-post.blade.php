@@ -23,9 +23,7 @@
 
     <div class="p-8 flex flex-col justify-center">
         @if($category)
-            <span class="inline-block px-2.5 py-0.5 rounded-full text-xs font-semibold text-white mb-4 self-start {{ $categoryBadgeClass }}">
-                {{ $category }}
-            </span>
+            <x-badge variant="none" :uppercase="false" class="text-white mb-4 self-start {{ $categoryBadgeClass }}">{{ $category }}</x-badge>
         @endif
 
         <h2 class="text-2xl font-bold text-base-900 mb-3">

@@ -54,13 +54,13 @@
                                 @elseif (isset($child['heading']))
                                     <div class="px-3 py-1 text-xs font-bold text-base-400 uppercase tracking-wider">{{ $child['heading'] }}</div>
                                 @else
-                                    <a href="{{ route($child['route']) }}" class="block px-4 py-2 text-sm text-base-700 hover:bg-primary-50 hover:text-primary-800 {{ ! empty($child['indent']) ? 'pl-8' : '' }} {{ $isChildActive($child) ? 'bg-primary-50 text-primary-800 font-semibold' : '' }}">{{ $child['label'] }}</a>
+                                    <a href="{{ route($child['route']) }}" {!! $isChildActive($child) ? 'aria-current="true"' : '' !!} class="block px-4 py-2 text-sm text-base-700 hover:bg-primary-50 hover:text-primary-800 {{ ! empty($child['indent']) ? 'pl-8' : '' }} {{ $isChildActive($child) ? 'bg-primary-50 text-primary-800 font-semibold' : '' }}">{{ $child['label'] }}</a>
                                 @endif
                             @endforeach
                         </div>
                     </div>
                 @else
-                    <a href="{{ route($item['route']) }}" class="nav-link py-1 transition-colors focus:outline-none {{ $isActive($item) ? 'text-primary-800 font-semibold' : 'hover:text-primary-800 focus:text-primary-800' }}">{{ $item['label'] }}</a>
+                    <a href="{{ route($item['route']) }}" {!! $isActive($item) ? 'aria-current="page"' : '' !!} class="nav-link py-1 transition-colors focus:outline-none {{ $isActive($item) ? 'text-primary-800 font-semibold' : 'hover:text-primary-800 focus:text-primary-800' }}">{{ $item['label'] }}</a>
                 @endif
             @endforeach
         </div>
@@ -99,13 +99,13 @@
                             @elseif (isset($child['heading']))
                                 <p class="text-xs font-bold text-base-400 uppercase tracking-wider py-1 {{ ! $loop->first ? 'mt-1' : '' }}">{{ $child['heading'] }}</p>
                             @else
-                                <a href="{{ route($child['route']) }}" class="block py-1.5 text-sm {{ ! empty($child['indent']) ? 'pl-3' : '' }} {{ $isChildActive($child) ? 'text-primary-800 font-semibold' : 'text-base-600 hover:text-primary-800' }}">{{ $child['label'] }}</a>
+                                <a href="{{ route($child['route']) }}" {!! $isChildActive($child) ? 'aria-current="true"' : '' !!} class="block py-1.5 text-sm {{ ! empty($child['indent']) ? 'pl-3' : '' }} {{ $isChildActive($child) ? 'text-primary-800 font-semibold' : 'text-base-600 hover:text-primary-800' }}">{{ $child['label'] }}</a>
                             @endif
                         @endforeach
                     </div>
                 </div>
             @else
-                <a href="{{ route($item['route']) }}" class="block py-2 text-sm font-medium {{ $isActive($item) ? 'text-primary-800' : 'text-base-700 hover:text-primary-800' }}">{{ $item['label'] }}</a>
+                <a href="{{ route($item['route']) }}" {!! $isActive($item) ? 'aria-current="page"' : '' !!} class="block py-2 text-sm font-medium {{ $isActive($item) ? 'text-primary-800' : 'text-base-700 hover:text-primary-800' }}">{{ $item['label'] }}</a>
             @endif
         @endforeach
 

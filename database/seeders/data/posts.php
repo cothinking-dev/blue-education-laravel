@@ -82,7 +82,7 @@ return [
   <li><strong>Statement of Purpose / Personal Statement </strong>as to why you would like to pursue this programme</li>
   <li><strong>Curriculum Vitae (CV) / Resume</strong></li>
   <li><strong>Letters of Recommendation</strong> – 2–3 referees (is an added advantage)</li>
-  <li><strong>Research Proposal</strong> – applicable for research/Master of Philosophy or PhD programs.</li>
+  <li><strong>Research Proposal</strong> – applicable for research/Master of Philosophy or PhD programmes.</li>
   <li><strong>Financial Documents</strong> – proof of funds, tuition fee receipt.</li>
   <li><strong>Additional (if applicable)</strong> – portfolio, work experience letters, medical reports.</li>
 </ul>
@@ -96,7 +96,7 @@ return [
 <p>·       Strong industry connections & research opportunities</p>
 <p>·       Enhanced career outcomes & pathways</p>
 <p>·       Skills you’ll gain</p>
-<p>So, you know you can unlock a future that can exceed your expectations when you study and graduate from a <strong>Go8 university in Australia</strong>. Universities like <strong>University of Melbourne</strong>, <strong>UNSW Sydney</strong>, and <strong>Australian National University</strong> are globally recognized for <strong>academic excellence</strong>, <strong>research-led teaching</strong>, and <strong>state-of-the-art facilities</strong>. A <strong>Go8 degree</strong> doesn’t just offer world-class education — it boosts your <strong>career prospects</strong>, connects you with <strong>industry leaders</strong>, and opens doors to <strong>international opportunities</strong>. For ambitious students, these universities provide the perfect platform to access <strong>scholarships</strong>, <strong>professional networks</strong>, and <strong>real-world internships</strong>, giving you a competitive edge in today’s global job market.</p>
+<p>So, you know you can unlock a future that can exceed your expectations when you study and graduate from a <strong>Go8 university in Australia</strong>. Universities like <strong>University of Melbourne</strong>, <strong>UNSW Sydney</strong>, and <strong>Australian National University</strong> are globally recognised for <strong>academic excellence</strong>, <strong>research-led teaching</strong>, and <strong>state-of-the-art facilities</strong>. A <strong>Go8 degree</strong> doesn’t just offer world-class education — it boosts your <strong>career prospects</strong>, connects you with <strong>industry leaders</strong>, and opens doors to <strong>international opportunities</strong>. For ambitious students, these universities provide the perfect platform to access <strong>scholarships</strong>, <strong>professional networks</strong>, and <strong>real-world internships</strong>, giving you a competitive edge in today’s global job market.</p>
 <p>Studying at a Go8 university is more than just academics — it’s a <strong>life-changing experience</strong>. With vibrant <strong>campus life</strong>, <strong>innovative learning environments</strong>, and <strong>dedicated support for international students</strong>, you’ll thrive both personally and professionally. Graduates of Go8 universities are highly sought-after by <strong>employers worldwide</strong>, reflecting their emphasis on <strong>graduate employability</strong> and <strong>cutting-edge research</strong>. At <strong>Blue Education</strong>, we help you navigate the application process, making your dream of studying at a top Australian university a reality.</p>
 <p>Applying to one of Australia’s top Group of Eight universities is a big step — and a potentially life‑changing one. With the right preparation (course choice, documents, budget, timeline) and a clear understanding of what a degree can offer you (career outcomes, global recognition, valuable skills), you’ll be well equipped to make the most of the experience.</p>
 <p><strong>Start your journey to a prestigious degree and a global career today! If you wish to speak to a trained and experience education counsellor on your choices, you can reach out via WhatsApp +61411708899 | Email: </strong><a href="mailto:info@blueeducation.com.au"><strong>info@blueeducation.com.au</strong></a></p>
@@ -298,17 +298,17 @@ return [
 <p><strong>Pathways to Teaching in Australia</strong></p>
 <p>If you\'re an international student aspiring to become a teacher, here are some of the routes you can take:</p>
 <ul>
-  <li><strong>Bachelor of Education (Early Childhood, Primary, or Secondary)</strong>: This comprehensive undergraduate program equips you with the skills and knowledge you need for a rewarding teaching career.</li>
+  <li><strong>Bachelor of Education (Early Childhood, Primary, or Secondary)</strong>: This comprehensive undergraduate programme equips you with the skills and knowledge you need for a rewarding teaching career.</li>
   <li><strong>Master of Teaching (Primary, Secondary, or Special Education)</strong>: Perfect for graduates with a non-teaching degree who want to pivot into education.</li>
-  <li><strong>Graduate Diploma in Education</strong>: A specialized program for those seeking targeted training in specific teaching fields.</li>
-  <li><strong>Special Needs Education Programs</strong>: These courses focus on strategies to support children with diverse learning needs, preparing you to make a difference in inclusive classrooms.</li>
+  <li><strong>Graduate Diploma in Education</strong>: A specialised programme for those seeking targeted training in specific teaching fields.</li>
+  <li><strong>Special Needs Education Programmes</strong>: These courses focus on strategies to support children with diverse learning needs, preparing you to make a difference in inclusive classrooms.</li>
 </ul>
-<p>All these programs are accredited by the Australian Institute for Teaching and School Leadership (AITSL) and meet the standards required for teacher registration.</p>
+<p>All these programmes are accredited by the Australian Institute for Teaching and School Leadership (AITSL) and meet the standards required for teacher registration.</p>
 <p><strong>Why Choose Australia for Your Teaching Qualification?</strong></p>
 <ol>
   <li><strong>World-Class Education</strong>: Australian universities are known for their high teaching standards and research excellence.</li>
   <li><strong>Cultural Diversity</strong>: You’ll experience a multicultural environment, giving you valuable insights into teaching in diverse classrooms.</li>
-  <li><strong>Hands-On Learning</strong>: Programs include practical placements in real schools, so you can gain essential hands-on experience.</li>
+  <li><strong>Hands-On Learning</strong>: Programmes include practical placements in real schools, so you can gain essential hands-on experience.</li>
   <li><strong>Work and Visa Opportunities</strong>: Graduates may be eligible for Temporary Graduate visas, opening doors to work experience in Australia.</li>
   <li><strong>Global Recognition</strong>: Australian teaching qualifications are respected worldwide, giving you the flexibility to teach internationally.</li>
 </ol>
@@ -317,7 +317,7 @@ return [
 <ul>
   <li><strong>Early Childhood Education</strong>: With the Australian government investing heavily in early learning, there are plenty of job openings for passionate educators.</li>
   <li><strong>Primary and Secondary Education</strong>: As the population grows and curricula evolve, schools need teachers in key subjects like mathematics, science, English, and technology.</li>
-  <li><strong>Special Needs Education</strong>: Schools are increasingly prioritizing inclusive education, creating a strong demand for educators skilled in supporting students with disabilities or learning challenges.</li>
+  <li><strong>Special Needs Education</strong>: Schools are increasingly prioritising inclusive education, creating a strong demand for educators skilled in supporting students with disabilities or learning challenges.</li>
 </ul>
 <p><strong>The Numbers Speak for Themselves</strong></p>
 <p>If you’re wondering just how in-demand teachers are, take a look at these recent findings:</p>
@@ -328,7 +328,7 @@ return [
   <li>The need for <strong>Special Needs Teachers</strong> continues to rise as schools adopt inclusive education policies.</li>
 </ul>
 <p><strong>Your Future Starts Here</strong></p>
-<p>Australia is brimming with opportunities for international students ready to pursue a teaching career. With supportive training programs, a welcoming education environment, and a booming demand for educators, it\'s the perfect place to start your journey.  You\'re preparing for a significant step in your career when choosing to embark on the teacher skills assessment and English language proficiency test.</p>
+<p>Australia is brimming with opportunities for international students ready to pursue a teaching career. With supportive training programmes, a welcoming education environment, and a booming demand for educators, it\'s the perfect place to start your journey.  You\'re preparing for a significant step in your career when choosing to embark on the teacher skills assessment and English language proficiency test.</p>
 <p>By choosing Australia, you’ll not only gain a world-class education but also play a key role in shaping future generations. Ready to make a difference? Your teaching adventure awaits!</p>
 <p> </p>',
         'featured_image' => 'images/blog/the-growing-demand-for-teachers-in-australia-why-a-teaching-qualification-is-gold.webp',
@@ -345,7 +345,7 @@ return [
 <p>DAMA in itself presents an opportunity to a candidate with the right skillset and the employer who needs that skillset to fill a resource gap.</p>
 <img src="https://static.wixstatic.com/media/11062b_d3a8e0150c5f48e4b994788fc73c9cd6~mv2.jpg/v1/fill/w_740,h_481,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_d3a8e0150c5f48e4b994788fc73c9cd6~mv2.jpg" alt="">
 <p>DAMA essentially stands for Designatred Area Migration Agreement, DAMA in short. This is an agreement between the Department of Home Affairs (DHA) and the state/region.  Whilst DHA can set conditions for entry into the country on a federal level for skilled migration, under DAMA, the state or region can have more flexible requirements for overseas workers to come in via <em>regional sponsorship</em> to respond to the state’s economic and labour market conditions.  </p>
-<p>Authorised by Home Affairs, a Designated Area Representative (DAR) manages and oversees a DAMA program for a specific area. Responsibilities include: </p>
+<p>Authorised by Home Affairs, a Designated Area Representative (DAR) manages and oversees a DAMA programme for a specific area. Responsibilities include: </p>
 <ul>
   <li>endorsing businesses to access <em>Labour Agreements</em> and hire Skilled Migrants; </li>
   <li>monitoring labour market trends in the DAMA region; </li>
@@ -484,7 +484,7 @@ However, there are definitely exemptions given for age and English proficiency l
 <p><em>Taking you back to your current position, you need to have a checklist on what matters most to you?</em></p>
 <p><em>- Autonomy in making decision and planning for an outcome.</em></p>
 <p><em>- Work-life balance with adequate importance placed on mental health and wellbeing.</em></p>
-<p><em>- Financially rewarding career that incentivizes hard work and over-achievements. </em></p>
+<p><em>- Financially rewarding career that incentivises hard work and over-achievements. </em></p>
 <p><em>- Working with intelligent and motivating teams that are supportive and extends the boundaries of learning.</em></p>
 <p><em>- Working in a challenging environment i.e., able to solve complex problems and learn new skills</em></p>
 <p><em>- Able to create, build or develop products and services that can have a positive impact on people’s lives. </em></p>
@@ -563,7 +563,7 @@ You need to fulfil 4 criteria:</p>
   <li>a master’s by research degree; or</li>
   <li>a master’s  by coursework with a thesis component (dissertation).</li>
 </ul>
-<p>If you have attained your qualifications from overseas, generally, a master or bachelor degree with first or upper second class honors will be considered.</p>
+<p>If you have attained your qualifications from overseas, generally, a master or bachelor degree with first or upper second class honours will be considered.</p>
 <p>Apart from meeting the English language requirement, there are two (2) things that the applicant needs to prepare for.</p>
 <p>One, is your research proposal.</p>
 <p>Two, is to find an academic research supervisor at the university of your choice.</p>
@@ -634,7 +634,7 @@ Despite the many years provided by the Temporary Graduate visa to provide the vi
 <p>· History of employment or work internship – with the name of the employer, or the host, the position you held, key roles and responsibilities and the period you were engaged in that position.</p>
 <p>· Referee – for reference check, at least 2 persons, 1 who gives a good word about your character and 1 on your professionalism at work (please do not state that you will provide a referee upon request).</p>
 <p>You would also need to organise and prepare your documents.  If your documents are in a language other than English, you need to arrange for the documents to be officially translated. Alternatively, we can assist to find you a National Accreditation Authority for Translators and Interpreters (NAATI) approved translator to have your documents translated which will be acceptable by the institution and Department of Home Affairs. Documents that you need to have in hand. The documents required for your application to study in Australia includes:</p>
-<p>- Valid traveling passport</p>
+<p>- Valid travelling passport</p>
 <p>- High school certificate and transcripts</p>
 <p>- Other qualifications with the certificate and transcripts</p>
 <p>- Formal English Test results for e.g. IELTS, PTE</p>
@@ -676,7 +676,7 @@ Despite the many years provided by the Temporary Graduate visa to provide the vi
         'category' => 'career-employment',
         'excerpt' => 'Relevant experience When an employer puts up a job advertisement, most often the employer knows what he or she is looking for. The position and job scope are...',
         'body' => '<p><strong>Relevant experience</strong></p>
-<p>When an employer puts up a job advertisement, most often the employer knows what he or she is looking for.  The position and job scope are articulated, and the required skill sets, listed.  If you are responding to a job advertisement, you need to present your CV so that it would capture the employer’s interest, by demonstrating that you understand the job requirements and that you do in fact, have the relevant qualification and experience to fulfill that role.  So, before you even begin to respond to any of these advertisements, you need to filter out and choose only the roles that match what you have to offer. Therefore, the keywords here are ‘relevant work experience’.  Relevant experience would refer to the type of industry you have been in, level of experience, specific skills that you have acquired, and even internship experiences that you have accumulated.</p>
+<p>When an employer puts up a job advertisement, most often the employer knows what he or she is looking for.  The position and job scope are articulated, and the required skill sets, listed.  If you are responding to a job advertisement, you need to present your CV so that it would capture the employer’s interest, by demonstrating that you understand the job requirements and that you do in fact, have the relevant qualification and experience to fulfil that role.  So, before you even begin to respond to any of these advertisements, you need to filter out and choose only the roles that match what you have to offer. Therefore, the keywords here are ‘relevant work experience’.  Relevant experience would refer to the type of industry you have been in, level of experience, specific skills that you have acquired, and even internship experiences that you have accumulated.</p>
 <p>If an employer is looking for a software programmer who understands the business requirements, whereas your experience lies with the business as an analyst who designs the user requirement architecture, then you would not be able to fulfil that role to develop codes and software.</p>
 <p><strong>Duration of each employment</strong></p>
 <p>Next, the employer looks at how long have you stayed with one organisation. If you are constantly changing jobs every 6 months, it sounds the alarm bells that the candidate may not have the interest or tenacity to stay in a job for too long. Recruitment and hiring is a tedious process. It does cost time and money.  So, if an employer would like to hire someone, the preference is for the right candidate to be appointed, who would have the propensity to stay on at least a year.  So, in order for you to let the employer know that you have a good track record, be sure that you include your work experience with the duration specified in each line of information.  For e.g., if you had taken up a role as a Trainee for six months, be sure that you indicate that you started in January 2020 and ended in Jun 2021. If you are currently still employed, state the start date i.e. July 2021 till current.</p>

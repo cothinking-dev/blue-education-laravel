@@ -1,3 +1,16 @@
+{{--
+| Prop        | Type    | Default | Values                                 |
+|-------------|---------|---------|----------------------------------------|
+| name        | string  | —       | Team member's full name                |
+| role        | string  | —       | Job title (used as default badge text) |
+| photo       | ?string | null    | Photo path (relative to public/)       |
+| bio         | ?string | null    | Short biography                        |
+| credentials | ?string | null    | Professional qualifications            |
+| languages   | ?string | null    | Languages spoken                       |
+| variant     | string  | 'card'  | card, featured, legal                  |
+| badge       | ?string | null    | Override badge text (defaults to role) |
+| leadership  | bool    | false   | Styled as leadership role badge        |
+--}}
 @props([
     'name',
     'role',
@@ -15,23 +28,12 @@
     $badgeClasses = $leadership
         ? 'bg-primary-50 border-primary-200 text-primary-700'
         : 'bg-base-50 border-base-200 text-base-600';
-    $initials = collect(explode(' ', $name))->map(fn($w) => mb_substr($w, 0, 1))->take(2)->join('');
-    $webpPhoto = $photo ? preg_replace('/\.(png|jpe?g)$/i', '.webp', $photo) : null;
 @endphp
 
 @if($variant === 'featured')
     {{-- Full-width featured card (e.g. Executive Director) --}}
     <article {{ $attributes->merge(['class' => 'bg-white rounded-corner-lg border border-base-200 p-8 flex items-start gap-8 shadow-md']) }}>
-        @if($photo)
-            <picture class="shrink-0">
-                <source srcset="{{ asset($webpPhoto) }}" type="image/webp">
-                <img src="{{ asset($photo) }}" alt="{{ $name }}" class="w-40 h-52 rounded-xl object-cover" loading="lazy" width="160" height="208">
-            </picture>
-        @else
-            <div class="w-40 h-52 rounded-xl bg-primary-100 flex items-center justify-center shrink-0">
-                <span class="text-3xl font-bold text-primary-600">{{ $initials }}</span>
-            </div>
-        @endif
+        <x-avatar :name="$name" :photo="$photo" size="lg" />
         <div class="flex-1">
             <div class="inline-block {{ $badgeClasses }} border text-xs font-bold px-2 py-0.5 rounded mb-3">{{ $badgeLabel }}</div>
             <h3 class="text-xl font-bold text-base-900">{{ $name }}</h3>
@@ -54,16 +56,7 @@
             <span class="text-white text-xs font-bold uppercase tracking-widest">{{ $badgeLabel }}</span>
         </div>
         <div class="p-7 flex items-start gap-6">
-            @if($photo)
-                <picture class="shrink-0">
-                    <source srcset="{{ asset($webpPhoto) }}" type="image/webp">
-                    <img src="{{ asset($photo) }}" alt="{{ $name }}" class="w-30 h-40 rounded-xl object-cover" loading="lazy" width="120" height="160">
-                </picture>
-            @else
-                <div class="w-30 h-40 rounded-xl bg-primary-100 flex items-center justify-center shrink-0">
-                    <span class="text-3xl font-bold text-primary-600">{{ $initials }}</span>
-                </div>
-            @endif
+            <x-avatar :name="$name" :photo="$photo" size="md" />
             <div>
                 <h3 class="text-xl font-bold text-base-900">{{ $name }}</h3>
                 @if($credentials)
@@ -82,16 +75,7 @@
 @else
     {{-- Default card variant: photo on top, bordered card --}}
     <article {{ $attributes->merge(['class' => 'border border-base-200 rounded-corner-lg overflow-hidden shadow-md']) }}>
-        @if($photo)
-            <picture class="block">
-                <source srcset="{{ asset($webpPhoto) }}" type="image/webp">
-                <img src="{{ asset($photo) }}" alt="{{ $name }}" class="w-full h-56 object-cover object-top" loading="lazy" width="320" height="224">
-            </picture>
-        @else
-            <div class="w-full h-56 bg-primary-100 flex items-center justify-center">
-                <span class="text-3xl font-bold text-primary-600">{{ $initials }}</span>
-            </div>
-        @endif
+        <x-avatar :name="$name" :photo="$photo" size="full" />
         <div class="p-5">
             <div class="inline-block {{ $badgeClasses }} border text-xs font-bold px-2 py-0.5 rounded mb-3">{{ $badgeLabel }}</div>
             <h3 class="font-bold text-base-900 text-base">{{ $name }}</h3>

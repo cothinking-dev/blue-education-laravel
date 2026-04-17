@@ -1,3 +1,12 @@
+{{--
+| Prop     | Type    | Default        | Values                                             |
+|----------|---------|----------------|----------------------------------------------------|
+| title    | string  | 'Explore More' | Section heading                                    |
+| subtitle | ?string | null           | Text below heading                                 |
+| variant  | string  | 'cards'        | cards, links, featured                             |
+| bg       | string  | 'bg-base-50'   | Tailwind background class                          |
+| links    | array   | []             | Array of ['title' => '...', 'href' => '...', ...] |
+--}}
 @props([
     'title' => 'Explore More',
     'subtitle' => null,

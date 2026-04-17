@@ -31,12 +31,12 @@
 
     {{-- §2 Social Proof Bar --}}
     <x-stat-block :slant="true" variant="light" :stats="[
-        ['value' => '25+', 'label' => 'Years of service'],
-        ['value' => '145+', 'label' => 'Client countries'],
-        ['value' => '100+', 'label' => 'Australian institutions'],
-        ['value' => '1000+', 'label' => 'Programmes'],
-        ['value' => '24/7', 'label' => 'Emergency support'],
-    ]" />
+                          ['value' => '25+', 'label' => 'Years of service'],
+                          ['value' => '145+', 'label' => 'Client countries'],
+                          ['value' => '100+', 'label' => 'Australian institutions'],
+                          ['value' => '1000+', 'label' => 'Programmes'],
+                          ['value' => '24/7', 'label' => 'Emergency support'],
+                          ]" />
 
     {{-- §3 What We Do --}}
     <section class="bg-white">
@@ -44,7 +44,7 @@
             <x-section-heading title="What We Do" :centered="false" />
             <div class="grid sm:grid-cols-2 gap-6" data-animate="stagger">
                 <x-card title="Education Services"
-                        description="Primary school to PhD — we help you choose the right institution and program for your goals."
+                        description="Primary school to PhD — we help you choose the right institution and programme for your goals."
                         :image="asset('images/home/education-services.webp')"
                         alt="East Asian education advisor discussing options with students"
                         :href="route('services.education.index')"
@@ -81,12 +81,11 @@
                 {{-- Text --}}
                 <div class="lg:w-[42%] shrink-0">
                     <img src="{{ asset('brand/logo.webp') }}" alt="Blue Education — education, migration & career" class="h-16 w-auto mx-auto mb-6" loading="lazy">
-                    <h2 class="text-3xl font-bold text-base-900 mb-6 text-pretty" data-animate="fade-up">{{ date('Y') - 1998 }} years of experience we stand behind.</h2>
+                    <h2 class="text-3xl font-bold text-base-900 mb-6 text-pretty" data-animate="fade-up"> We stand behind more than half a century of collective experience.</h2>
                     <div class="text-base-600 leading-relaxed space-y-4 text-pretty">
-                        <p class="text-sm">Since 1998, we've operated on one principle: give honest advice.</p>
-                        <p class="text-sm">Every client is assigned a dedicated advisor who coordinates your education, visa, and career plan — start to finish. No handoffs between agencies means no need to re-explain your situation over and over again.</p>
-                        <p class="text-sm">That means telling you when a visa application won't succeed, a course isn't the right fit, or a better path exists — before you commit to the wrong one.</p>
-                        <p class="text-sm">That's earned the trust of clients from 40+ countries — scholars who came back, and brought others — for decisions that shaped their lives.</p>
+                        <p class="text-sm">Since the beginning, we’ve operated on one principle: give honest advice. Every client is assigned a dedicated advisor who coordinates your education, visa, and career plan from start to finish, so you never have to re-explain your situation to multiple agencies.</p>
+                        <p class="text-sm">We’ll tell you when a visa application is unlikely to succeed, when a course isn’t the right fit, or when a better pathway exists — before you commit to the wrong one. </p>
+                        <p class="text-sm">We take this seriously because <b>we were once international students ourselves</b>, and <b>we are migrants too.</p>
                     </div>
                     <a href="{{ route('about.index') }}" class="inline-flex items-center gap-1 text-sm font-semibold text-primary-800 hover:text-primary-600 transition-colors mt-4">
                         Learn our story
@@ -95,23 +94,23 @@
                 </div>
                 {{-- Team collage — bleeds past container into the gutter --}}
                 @php
-                    $teamPhotos = [
-                        'images/team/glen-ong.webp',
-                        'images/team/monica-gaikwad.webp',
-                        'images/team/flora-wang.webp',
-                        'images/team/shen-sekhon.webp',
-                        'images/team/mansheel-kaur.webp',
-                        'images/team/arwinder-singh.webp',
-                        'images/team/sonia-ong.webp',
-                        'images/team/elaine-ho.webp',
-                        'images/team/monica-low.webp',
-                        'images/team/hana-hursepuny.webp',
-                        'images/team/minami-sakamoto.webp',
-                        'images/team/nino-sekyere-boakye.webp',
-                        'images/team/elijah-chongo.webp',
-                        'images/team/priscilla-mwansa.webp',
-                        'images/team/sherene-chan.webp',
-                    ];
+                $teamPhotos = [
+                'images/team/glen-ong.webp',
+                'images/team/monica-gaikwad.webp',
+                'images/team/flora-wang.webp',
+                'images/team/shen-sekhon.webp',
+                'images/team/mansheel-kaur.webp',
+                'images/team/arwinder-singh.webp',
+                'images/team/sonia-ong.webp',
+                'images/team/elaine-ho.webp',
+                'images/team/monica-low.webp',
+                'images/team/hana-hursepuny.webp',
+                'images/team/minami-sakamoto.webp',
+                'images/team/nino-sekyere-boakye.webp',
+                'images/team/elijah-chongo.webp',
+                'images/team/priscilla-mwansa.webp',
+                'images/team/sherene-chan.webp',
+                ];
                 @endphp
                 <div class="flex-1 lg:-mr-16 xl:-mr-24 2xl:-mr-32 min-w-0">
                     <div class="columns-3 sm:columns-4 lg:columns-5 gap-3">
@@ -127,15 +126,38 @@
         </div>
     </section>
 
-    {{-- §5 Featured Programs --}}
+    {{-- §5 SCSA Partnership — Trust Signal --}}
+    <section class="bg-white border-y border-base-200">
+        <div class="max-w-7xl mx-auto px-8 lg:px-16 py-12">
+            <div class="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
+                {{-- Logos --}}
+                <div class="flex items-center gap-6 shrink-0">
+                    <img src="{{ asset('images/credentials/scsa-international-logo.png') }}" alt="SCSA International" class="h-14 w-auto object-contain" loading="lazy">
+                    <img src="{{ asset('images/credentials/wa-dept-education-logo.svg') }}" alt="WA Department of Education" class="h-12 w-auto object-contain" loading="lazy">
+                </div>
+                {{-- Copy --}}
+                <div class="flex-1 text-center lg:text-left">
+                    <h2 class="text-xl font-bold text-base-900 mb-2 text-pretty" data-animate="fade-up">Official SCSA Associate — recognised by the WA Government.</h2>
+                    <p class="text-base-600 text-sm leading-relaxed text-pretty">Blue Education is appointed by Western Australia's School Curriculum and Standards Authority to promote the Australian curriculum internationally — giving you access to government-backed education advice.</p>
+                </div>
+                {{-- Link --}}
+                <a href="{{ route('about.scsa-partnership') }}" class="inline-flex items-center gap-1 text-sm font-semibold text-primary-800 hover:text-primary-600 transition-colors whitespace-nowrap shrink-0">
+                    Learn about SCSA partnership
+                    <x-heroicon-o-chevron-right class="w-4 h-4" />
+                </a>
+            </div>
+        </div>
+    </section>
+
+    {{-- §6 Featured Programmes --}}
     <section class="bg-white">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-16">
-            <x-section-heading title="Featured Programs" :centered="false" />
+            <x-section-heading title="Featured Programmes" :centered="false" />
             <div class="grid md:grid-cols-2 gap-8" data-animate="stagger">
                 <x-card variant="featured"
                         title="Buddy Programme"
-                        description="14 days at an Australian homestay — classroom integration and cultural immersion. Built in partnership with Anglican Schools."
-                        badge="14-Day Immersion"
+                        description="Join our Buddy Programme and experience Australian school life alongside a local student — a real preview of what it's like to be an Australian student."
+                        badge="7 – 14 Day Immersion"
                         :href="route('programs.buddy-programme')"
                         linkText="Discover the Buddy Programme">
                     <x-slot:icon>
@@ -144,13 +166,13 @@
                 </x-card>
 
                 <x-card variant="featured"
-                        title="SCSA Associate"
-                        description="Complete the Western Australian Certificate of Education (WACE) from your home country. Officially recognised and globally respected."
-                        badge="International Curriculum"
-                        :href="route('programs.scsa-associate')"
-                        linkText="Learn about SCSA">
+                        title="Study Tours"
+                        description="Participate in a combination of English lessons with real-life skills and sightseeing fun — a great way to enjoy your break and discover Australia's culture and everyday life."
+                        badge="1 – 4 Week Study & Tour"
+                        :href="route('programs.study-tours')"
+                        linkText="Explore Study Tours">
                     <x-slot:icon>
-                        <x-heroicon-o-academic-cap class="w-7 h-7" />
+                        <x-heroicon-o-globe-alt class="w-7 h-7" />
                     </x-slot:icon>
                 </x-card>
             </div>
@@ -207,34 +229,34 @@
 
     {{-- §7 Testimonials --}}
     @if($testimonials->isNotEmpty())
-    <section class="bg-white">
-        <div class="max-w-7xl mx-auto px-8 lg:px-16 py-16">
-            <x-section-heading title="What Our Clients Say" :centered="false" />
-            <div class="grid md:grid-cols-3 gap-6" data-animate="stagger">
-                @foreach($testimonials->take(3) as $testimonial)
-                    <x-testimonial :quote="$testimonial->quote"
-                                   :name="$testimonial->name"
-                                   :credential="$testimonial->country . ($testimonial->credential ? ' · ' . $testimonial->credential : '')"
-                                   :initials="$testimonial->initials"
-                                   :photo="$testimonial->photo" />
-                @endforeach
+        <section class="bg-white">
+            <div class="max-w-7xl mx-auto px-8 lg:px-16 py-16">
+                <x-section-heading title="What Our Clients Say" :centered="false" />
+                <div class="grid md:grid-cols-3 gap-6" data-animate="stagger">
+                    @foreach($testimonials->take(3) as $testimonial)
+                        <x-testimonial :quote="$testimonial->quote"
+                                       :name="$testimonial->name"
+                                       :credential="$testimonial->country . ($testimonial->credential ? ' · ' . $testimonial->credential : '')"
+                                       :initials="$testimonial->initials"
+                                       :photo="$testimonial->photo" />
+                    @endforeach
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
     @endif
 
     {{-- §8 Partners --}}
     <x-logo-grid title="Partnered with leading Western Australian institutions."
                  :marquee="true"
                  :logos="[
-                     ['src' => asset('images/partners/uwa-logo.svg'), 'alt' => 'University of Western Australia'],
-                     ['src' => asset('images/partners/curtin-logo.webp'), 'alt' => 'Curtin University'],
-                     ['src' => asset('images/partners/murdoch-logo.svg'), 'alt' => 'Murdoch University'],
-                     ['src' => asset('images/partners/ecu-logo.png'), 'alt' => 'Edith Cowan University'],
-                     ['src' => asset('images/partners/notre-dame-logo.webp'), 'alt' => 'University of Notre Dame Australia'],
-                     ['src' => asset('images/partners/nmtafe-logo.svg'), 'alt' => 'North Metropolitan TAFE'],
-                     ['src' => asset('images/partners/smtafe-logo.svg'), 'alt' => 'South Metropolitan TAFE'],
-                 ]" />
+                        ['src' => asset('images/partners/uwa-logo.svg'), 'alt' => 'University of Western Australia'],
+                        ['src' => asset('images/partners/curtin-logo.webp'), 'alt' => 'Curtin University'],
+                        ['src' => asset('images/partners/murdoch-logo.svg'), 'alt' => 'Murdoch University'],
+                        ['src' => asset('images/partners/ecu-logo.png'), 'alt' => 'Edith Cowan University'],
+                        ['src' => asset('images/partners/notre-dame-logo.webp'), 'alt' => 'University of Notre Dame Australia'],
+                        ['src' => asset('images/partners/nmtafe-logo.svg'), 'alt' => 'North Metropolitan TAFE'],
+                        ['src' => asset('images/partners/smtafe-logo.svg'), 'alt' => 'South Metropolitan TAFE'],
+                        ]" />
 
     {{-- §9 Latest From the Blog --}}
     <section class="bg-white">

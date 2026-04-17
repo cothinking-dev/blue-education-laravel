@@ -1,5 +1,5 @@
 <x-layout title="University Degrees"
-          description="Bachelor, Master, and Doctoral programs at Western Australian universities. Graduates receive 2–4 years of post-study work rights.">
+          description="Bachelor, Master, and Doctoral programmes at Western Australian universities. Graduates receive 2–4 years of post-study work rights.">
 
     {{-- §1 Hero --}}
     <x-hero title="A degree worth having, from a city worth studying in."
@@ -9,10 +9,10 @@
             variant="left"
             :breadcrumbs="true" />
 
-    {{-- §2 Programs --}}
+    {{-- §2 Programmes --}}
     <section class="bg-white">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
-            <x-section-heading title="Programs" :centered="false" />
+            <x-section-heading title="Programmes" :centered="false" />
             <div class="grid md:grid-cols-3 gap-6 mb-8" data-animate="stagger">
                 <div class="border border-base-200 rounded-corner-lg p-6 bg-white">
                     <div class="w-10 h-10 rounded-corner bg-primary-100 text-primary-800 flex items-center justify-center mb-4">
@@ -155,7 +155,7 @@
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
             <x-section-heading title="Admission Requirements & Fees" :centered="false" />
             <p class="text-base-600 mb-8 text-pretty">Tuition fees vary by institution, field of study, and qualification level. Perth is widely regarded as one of Australia's most cost-effective cities for international students — your advisor can provide a detailed cost breakdown for your specific situation.</p>
-            <x-data-table :headers="['Program', 'IELTS', 'Academic Requirement']"
+            <x-data-table :headers="['Programme', 'IELTS', 'Academic Requirement']"
                           :rows="[
                               ['Bachelor', '6.5', 'Year 12 equivalent or VET Diploma'],
                               ['Master', '6.5 – 7.0', 'Relevant Bachelor degree'],

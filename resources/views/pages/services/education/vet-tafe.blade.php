@@ -59,7 +59,7 @@
             <p class="text-base-600 mb-8 text-pretty">Industries available through TAFE and registered training providers across Australia:</p>
             <div class="flex flex-wrap gap-3">
                 @foreach(['Construction & Trades', 'Business & Administration', 'Information Technology', 'Hospitality & Tourism', 'Childcare & Community Services', 'Healthcare Support', 'Automotive', 'Creative Industries'] as $industry)
-                    <span class="inline-block bg-primary-50 text-primary-800 text-sm font-medium px-4 py-2 rounded-full">{{ $industry }}</span>
+                    <x-badge size="lg" :uppercase="false">{{ $industry }}</x-badge>
                 @endforeach
             </div>
         </div>

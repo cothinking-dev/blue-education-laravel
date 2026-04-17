@@ -1,3 +1,20 @@
+{{--
+| Prop         | Type    | Default    | Description                                    |
+|--------------|---------|------------|------------------------------------------------|
+| title        | string  | —          | Page heading (h1)                              |
+| subtitle     | ?string | null       | Paragraph below title                          |
+| image        | ?string | null       | Background image URL                           |
+| alt          | string  | ''         | Image alt text                                 |
+| overlay      | bool    | true       | Brand-blue gradient overlay on image           |
+| breadcrumbs  | mixed   | null       | Truthy value enables auto-breadcrumb           |
+| badge        | ?string | null       | Small label above the title                    |
+| variant      | string  | 'centered' | centered, left                                 |
+| height       | string  | '80dvh'    | CSS min-height value                           |
+| position     | string  | 'center'   | CSS object-position for the background image   |
+| width        | int     | 1920       | Image intrinsic width                          |
+| imageHeight  | int     | 1080       | Image intrinsic height                         |
+| preloadImage | bool    | false      | Add <link rel="preload"> for the hero image    |
+--}}
 @props([
     'title',
     'subtitle' => null,
@@ -15,13 +32,9 @@
 ])
 
 @php
-    $variants = [
-        'centered' => 'items-center justify-center text-center',
-        'left' => 'items-start justify-center text-left',
-        'light' => 'items-center justify-center text-center',
-        'split' => '',
-    ];
-    $alignment = $variants[$variant] ?? $variants['centered'];
+    $alignment = $variant === 'left'
+        ? 'items-start justify-center text-left'
+        : 'items-center justify-center text-center';
 @endphp
 
 @if($preloadImage && $image)
@@ -30,70 +43,28 @@
     @endpush
 @endif
 
-@if($variant === 'light')
-<section {{ $attributes->merge(['class' => 'relative']) }} style="min-height:{{ $height }}; background: linear-gradient(180deg, var(--color-primary-50) 0%, white 100%);">
-    <div class="relative z-10 px-8 py-20 max-w-3xl mx-auto text-center">
-        @if($breadcrumbs)
-            <x-auto-breadcrumb class="mb-6 justify-center" />
-        @endif
-        @if($badge)
-            <span class="inline-block bg-primary-100 text-primary-800 text-xs font-semibold px-3 py-1 rounded-full mb-4 uppercase tracking-wider">{{ $badge }}</span>
-        @endif
-        <h1 class="text-4xl lg:text-5xl font-bold text-base-900 mb-5 leading-tight text-pretty">{{ $title }}</h1>
-        @if($subtitle)
-            <p class="text-xl text-base-600 mb-8 text-pretty">{{ $subtitle }}</p>
-        @endif
-        {{ $slot }}
-    </div>
-</section>
-@elseif($variant === 'split')
-<section {{ $attributes->merge(['class' => 'relative bg-white']) }}>
-    <div class="max-w-7xl mx-auto px-8 lg:px-16 py-16 lg:py-20 flex flex-col lg:flex-row items-center gap-12">
-        <div class="flex-1">
-            @if($breadcrumbs)
-                <x-auto-breadcrumb class="mb-4" />
-            @endif
-            @if($badge)
-                <span class="inline-block bg-primary-50 text-primary-800 text-xs font-semibold px-3 py-1 rounded-full mb-4 uppercase tracking-wider">{{ $badge }}</span>
-            @endif
-            <h1 class="text-4xl lg:text-5xl font-bold text-base-900 mb-5 leading-tight text-pretty">{{ $title }}</h1>
-            @if($subtitle)
-                <p class="text-xl text-base-600 mb-8 text-pretty">{{ $subtitle }}</p>
-            @endif
-            {{ $slot }}
-        </div>
-        <div class="flex-1">
-            @if($image)
-                <img src="{{ $image }}" alt="{{ $alt }}" class="rounded-corner-lg w-full h-auto" loading="lazy" width="{{ $width }}" height="{{ $imageHeight }}">
-            @else
-                <div class="bg-base-200 rounded-corner-lg aspect-[4/3] w-full" style="background-image: repeating-linear-gradient(-55deg, transparent, transparent 8px, var(--placeholder-stripe) 8px, var(--placeholder-stripe) 9px);"></div>
-            @endif
-        </div>
-    </div>
-</section>
-@else
-<section {{ $attributes->merge(['class' => 'relative flex flex-col overflow-hidden [clip-path:inset(0)] ' . $alignment]) }} style="min-height:{{ $height }}; background-color: var(--color-base-700);">
+<section {{ $attributes->merge(['class' => 'relative flex flex-col overflow-hidden [clip-path:inset(0)] ' . $alignment]) }} style="min-height:{{ $height }}; background-color: var(--color-base-100);">
     @if($image)
         <img data-hero-parallax src="{{ $image }}" alt="{{ $alt }}" class="fixed inset-0 w-full h-full object-cover" style="object-position: {{ $position }};" fetchpriority="high" width="{{ $width }}" height="{{ $imageHeight }}">
     @endif
-    @if($overlay)
-        {{-- Layer 1: Brand blue gradient with multiply blend --}}
-        <div class="absolute inset-0" style="background: linear-gradient(135deg, var(--hero-overlay-start), var(--hero-overlay-end)); mix-blend-mode: multiply;"></div>
-        {{-- Layer 2: Vignette — darkens edges, clear center --}}
-        <div class="absolute inset-0" style="background: radial-gradient(ellipse 80% 80% at 50% 50%, transparent 30%, var(--hero-vignette) 100%);"></div>
+    @if($overlay && $variant === 'centered')
+        {{-- Centered: top-to-bottom white gradient --}}
+        <div class="absolute inset-0" style="background: linear-gradient(to bottom, rgb(255 255 255 / 1), rgb(255 255 255 / 0.55));"></div>
+    @elseif($overlay && $variant === 'left')
+        {{-- Left: left-to-right white gradient --}}
+        <div class="absolute inset-0" style="background: linear-gradient(to right, rgb(255 255 255 / 1), rgb(255 255 255 / 0.9), rgb(255 255 255 / 0.7));"></div>
     @endif
-    <div class="relative z-10 px-8 py-10 my-auto {{ $variant === 'centered' ? 'max-w-3xl mx-auto' : 'max-w-7xl w-full mx-auto lg:px-16' }}">
+    <div class="relative z-10 px-8 py-10 my-auto {{ $variant === 'centered' ? 'max-w-3xl mx-auto bg-white/10 backdrop-blur-md rounded-corner-lg shadow-lg' : 'max-w-7xl w-full mx-auto lg:px-16' }}">
         @if($breadcrumbs)
-            <x-auto-breadcrumb class="mb-10" dark />
+            <x-auto-breadcrumb class="mb-10" />
         @endif
         @if($badge)
-            <span class="inline-block bg-white/20 text-white text-xs font-semibold px-3 py-1 rounded-full mb-5 uppercase tracking-wider backdrop-blur-sm">{{ $badge }}</span>
+            <x-badge variant="primary" size="md" class="mb-5">{{ $badge }}</x-badge>
         @endif
-        <h1 class="text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight text-pretty max-w-4xl">{{ $title }}</h1>
+        <h1 class="text-4xl lg:text-5xl font-bold text-base-900 mb-6 leading-tight text-pretty max-w-4xl">{{ $title }}</h1>
         @if($subtitle)
-            <p class="text-xl text-base-200 text-pretty max-w-3xl">{{ $subtitle }}</p>
+            <p class="text-xl text-base-600 text-pretty max-w-3xl">{{ $subtitle }}</p>
         @endif
         {{ $slot }}
     </div>
 </section>
-@endif
