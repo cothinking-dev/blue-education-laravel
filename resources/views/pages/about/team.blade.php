@@ -165,17 +165,25 @@
     <section class="bg-base-50 border-y border-base-200">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-8">
             <h2 class="sr-only">Credentials and registrations</h2>
-            <div class="flex items-center gap-4 flex-wrap">
-                <span class="text-base-500 text-xs font-medium uppercase tracking-wider">Registrations:</span>
-                @foreach([
-                    'MARN 1385471 — Glen Ong',
-                    'MARN 0959773 — Nino Sekyere-Boakye',
-                    'MARN 1574550 — Arwinder Pal Singh',
-                    'QEAC S165',
-                    'MARA Registered',
-                ] as $credential)
-                    <span class="font-mono text-xs bg-white border border-base-200 rounded px-3 py-1.5 text-base-600">{{ $credential }}</span>
-                @endforeach
+            <div class="flex flex-col sm:flex-row items-center gap-6 sm:gap-8">
+                {{-- Credential logos --}}
+                <div class="flex items-center gap-6 shrink-0">
+                    <img src="{{ asset('images/credentials/qeac.svg') }}" alt="QEAC Certified" class="h-10 w-auto opacity-70" loading="lazy">
+                    <img src="{{ asset('images/credentials/migration-alliance.svg') }}" alt="Migration Alliance" class="h-10 w-auto opacity-70" loading="lazy">
+                    <img src="{{ asset('images/credentials/mia.svg') }}" alt="Migration Institute of Australia" class="h-10 w-auto opacity-70" loading="lazy">
+                    <img src="{{ asset('images/credentials/australian-bar-association.svg') }}" alt="Australian Bar Association" class="h-10 w-auto opacity-70" loading="lazy">
+                </div>
+                {{-- Registration badges --}}
+                <div class="flex items-center gap-3 flex-wrap">
+                    @foreach([
+                        'MARN 1385471',
+                        'MARN 0959773',
+                        'MARN 1574550',
+                        'QEAC S165',
+                    ] as $credential)
+                        <span class="font-mono text-xs bg-white border border-base-200 rounded px-3 py-1.5 text-base-600">{{ $credential }}</span>
+                    @endforeach
+                </div>
             </div>
         </div>
     </section>

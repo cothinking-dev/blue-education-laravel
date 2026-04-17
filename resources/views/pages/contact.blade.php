@@ -160,6 +160,15 @@
         </div>
     </section>
 
+    {{-- Credential trust strip --}}
+    <x-logo-grid title="Professionally accredited"
+                 :grayscale="true"
+                 :logos="[
+                     ['src' => asset('images/credentials/qeac.svg'), 'alt' => 'QEAC Certified'],
+                     ['src' => asset('images/credentials/migration-alliance.svg'), 'alt' => 'Migration Alliance'],
+                     ['src' => asset('images/credentials/mia.svg'), 'alt' => 'Migration Institute of Australia'],
+                 ]" />
+
     {{-- §7 CTA --}}
     <x-cta-banner title="Ready to Get Started?"
                   subtitle="Book a free consultation — in person, by phone, or video. We speak English, Bahasa, Cantonese, Japanese, and more."

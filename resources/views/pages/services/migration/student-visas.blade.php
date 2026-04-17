@@ -156,6 +156,15 @@
         ['href' => route('services.student-support'), 'label' => 'While You Study', 'title' => 'Support during your studies', 'description' => 'Accommodation, welfare monitoring, and ongoing advisor support.'],
     ]" />
 
+    {{-- Credential trust strip --}}
+    <x-logo-grid title="Registered & accredited migration agents"
+                 :grayscale="true"
+                 :logos="[
+                     ['src' => asset('images/credentials/qeac.svg'), 'alt' => 'QEAC Certified'],
+                     ['src' => asset('images/credentials/migration-alliance.svg'), 'alt' => 'Migration Alliance'],
+                     ['src' => asset('images/credentials/mia.svg'), 'alt' => 'Migration Institute of Australia'],
+                 ]" />
+
     {{-- §6 CTA --}}
     <x-cta-banner title="Ready to apply?"
                   subtitle="We assess your eligibility, give you a clear document checklist, and lodge your application. No guesswork on your end."
