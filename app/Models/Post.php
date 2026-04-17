@@ -2,6 +2,8 @@
 
 namespace App\Models;
 
+use App\Console\Commands\GenerateSitemap;
+use Database\Factories\PostFactory;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
@@ -15,8 +17,10 @@ use Symfony\Component\HtmlSanitizer\HtmlSanitizerConfig;
 
 class Post extends Model
 {
-    /** @use HasFactory<\Database\Factories\PostFactory> */
+    /** @use HasFactory<PostFactory> */
     use HasFactory, SoftDeletes;
+
+    public const CACHE_KEY_LATEST = 'home:latest-posts';
 
     /** @var list<string> */
     protected $fillable = [
@@ -35,12 +39,12 @@ class Post extends Model
     protected static function booted(): void
     {
         static::saved(function (): void {
-            Cache::forget('sitemap:xml');
-            Cache::forget('home:latest-posts');
+            Cache::forget(GenerateSitemap::CACHE_KEY);
+            Cache::forget(self::CACHE_KEY_LATEST);
         });
         static::deleted(function (): void {
-            Cache::forget('sitemap:xml');
-            Cache::forget('home:latest-posts');
+            Cache::forget(GenerateSitemap::CACHE_KEY);
+            Cache::forget(self::CACHE_KEY_LATEST);
         });
     }
 

@@ -14,7 +14,7 @@ class ContactController extends Controller
     {
         $enquiry = Enquiry::create($request->validated());
 
-        Mail::to(config('seo.organization.email'))->send(new EnquiryReceived($enquiry));
+        Mail::to(config('seo.organization.email'))->queue(new EnquiryReceived($enquiry));
 
         return response()->json(['success' => true]);
     }

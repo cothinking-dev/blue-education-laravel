@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use Database\Factories\TestimonialFactory;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
@@ -10,13 +11,15 @@ use Illuminate\Support\Facades\Cache;
 
 class Testimonial extends Model
 {
-    /** @use HasFactory<\Database\Factories\TestimonialFactory> */
+    /** @use HasFactory<TestimonialFactory> */
     use HasFactory, SoftDeletes;
+
+    public const CACHE_KEY = 'home:testimonials';
 
     protected static function booted(): void
     {
-        static::saved(fn () => Cache::forget('home:testimonials'));
-        static::deleted(fn () => Cache::forget('home:testimonials'));
+        static::saved(fn () => Cache::forget(self::CACHE_KEY));
+        static::deleted(fn () => Cache::forget(self::CACHE_KEY));
     }
 
     /** @var list<string> */

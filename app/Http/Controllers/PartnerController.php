@@ -10,7 +10,7 @@ class PartnerController extends Controller
 {
     public function __invoke(): View
     {
-        $partners = Cache::remember('partners:all', 3600, fn () => Partner::query()
+        $partners = Cache::remember(Partner::CACHE_KEY, 3600, fn () => Partner::query()
             ->active()
             ->orderBy('sort_order')
             ->get()

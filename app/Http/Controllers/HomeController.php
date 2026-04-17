@@ -12,8 +12,8 @@ class HomeController extends Controller
     public function __invoke(): View
     {
         return view('pages.home', [
-            'latestPosts' => Cache::remember('home:latest-posts', 3600, fn () => Post::query()->published()->with('category')->latest('published_at')->limit(3)->get()),
-            'testimonials' => Cache::remember('home:testimonials', 3600, fn () => Testimonial::query()->active()->orderBy('sort_order')->get()),
+            'latestPosts' => Cache::remember(Post::CACHE_KEY_LATEST, 3600, fn () => Post::query()->published()->with('category')->latest('published_at')->limit(3)->get()),
+            'testimonials' => Cache::remember(Testimonial::CACHE_KEY, 3600, fn () => Testimonial::query()->active()->orderBy('sort_order')->get()),
         ]);
     }
 }

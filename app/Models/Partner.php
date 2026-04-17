@@ -14,6 +14,8 @@ class Partner extends Model
 {
     use HasFactory, SoftDeletes;
 
+    public const CACHE_KEY = 'partners:all';
+
     protected $fillable = [
         'name',
         'logo',
@@ -37,8 +39,8 @@ class Partner extends Model
 
     protected static function booted(): void
     {
-        static::saved(fn () => Cache::forget('partners:all'));
-        static::deleted(fn () => Cache::forget('partners:all'));
+        static::saved(fn () => Cache::forget(self::CACHE_KEY));
+        static::deleted(fn () => Cache::forget(self::CACHE_KEY));
     }
 
     public function logoUrl(): ?string
