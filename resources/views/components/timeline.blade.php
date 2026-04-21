@@ -24,9 +24,12 @@
                     </div>
                 @endif
 
-                <h3 class="font-semibold text-base-900 mb-2 text-center">{{ $step['title'] }}</h3>
+                <h3 class="font-semibold text-base-900 mb-2 text-center min-h-[2lh] grid place-items-center">{{ $step['title'] }}</h3>
+                @if(!empty($step['summary']))
+                    <p class="text-base-800 text-sm font-medium leading-relaxed text-pretty self-start mb-1.5">{{ $step['summary'] }}</p>
+                @endif
                 @if(!empty($step['description']))
-                    <p class="text-base-600 text-sm leading-relaxed text-pretty self-start">{{ $step['description'] }}</p>
+                    <p class="text-base-500 text-sm leading-relaxed text-pretty self-start">{{ $step['description'] }}</p>
                 @endif
             </li>
         @endforeach

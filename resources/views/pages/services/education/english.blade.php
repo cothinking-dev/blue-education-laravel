@@ -11,22 +11,8 @@
 
     {{-- §2 ELICOS Courses --}}
     <x-content-split title="ELICOS Courses" :image="asset('images/services-education-english/elicos-class.webp')" alt="East Asian students in an ELICOS English language class">
-        <h3 class="text-lg font-semibold text-base-800 mb-2">What is ELICOS?</h3>
-        <p>Most Australian universities require an IELTS score of 6.5 or higher for undergraduate entry. ELICOS is how you get there — structured English courses delivered at private colleges and university English colleges across Australia.</p>
-        <p>Classes cover the four core skills: reading, writing, listening, and speaking. Duration depends on where your English is now — your advisor will assess your level before you enrol.</p>
+        <p>ELICOS, short for English Language Intensive Courses for Overseas Students, allows international students to be enrolled in full-time English language programmes in Australia, focusing on improving language proficiency for work, travel or further education pathways.</p>
     </x-content-split>
-
-    <section class="bg-base-50">
-        <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
-            <h3 class="text-lg font-semibold text-base-800 mb-6 text-pretty" data-animate="fade-up">Course Durations</h3>
-            <x-data-table :headers="['Block', 'Duration', 'Best For']"
-                          :rows="[
-                              ['Intensive', '10 weeks', 'Upper-intermediate students close to target score'],
-                              ['Comprehensive', '20 weeks', 'Intermediate students building toward entry'],
-                              ['Extended', '30 weeks', 'Beginner to lower-intermediate'],
-                          ]" />
-        </div>
-    </section>
 
     {{-- §3 Course Types --}}
     <section class="bg-white">
@@ -103,7 +89,7 @@
     <x-cta-banner title="Find out where your English sits."
                   subtitle="Book a free education consultation. We'll assess your English level and tell you exactly which course suits your situation and what comes next."
                   primaryText="Assess My English Level"
-                  :primaryHref="route('contact')" />
+                  :primaryHref="route('contact')"
                   secondaryText="View Admission Requirements"
                   :secondaryHref="route('admission-requirements')" />
 

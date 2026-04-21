@@ -14,17 +14,31 @@
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
             <h2 class="text-3xl font-bold text-base-900 mb-4 text-pretty" data-animate="fade-up">English Language Requirements</h2>
             <p class="text-base-600 mb-2 text-pretty">Accepted tests: IELTS, TOEFL, Cambridge CAE, Pearson PTE. Scores valid for 2 years.</p>
-            <p class="text-sm text-base-500 mb-6 text-pretty">Score ranges are indicative only. Requirements vary by course, institution, and visa type. <a href="{{ route('contact') }}" class="text-primary-800 font-medium hover:underline">Speak to a counsellor</a> for guidance specific to your situation.</p>
-            <x-data-table class="shadow-xl" :headers="['Programme', 'IELTS', 'PTE Academic', 'TOEFL iBT', 'Cambridge', 'Band Min (IELTS)']"
+            <x-data-table class="shadow-xl" :headers="['Programme', 'IELTS', 'PTE Academic', 'TOEFL iBT', 'Cambridge', 'Band Min (IELTS)', 'Post-Study Work Visa (Subclass 485)']"
                           :rows="[
-                              ['ELICOS', 'Provider-set', '—', '—', '—', 'N/A'],
-                              ['Certificate III–IV', '5.5 – 6.0', '42 – 50', '46 – 60', '—', 'Varies'],
-                              ['Diploma / Adv. Diploma', '5.5 – 6.0', '42 – 50', '46 – 60', '—', 'Varies'],
-                              ['Bachelor', '6.0 – 6.5', '50 – 58', '60 – 79', '169 – 176', 'No band below 6.0'],
-                              ['Graduate Cert/Diploma', '6.0 – 6.5', '50 – 58', '60 – 79', '—', 'Min 6.0 each'],
-                              ['Master\'s', '6.5 – 7.0', '58 – 65', '79 – 94', '176 – 185', 'No band below 6.5'],
-                              ['Doctoral', '6.5 – 7.0', '58 – 65', '79 – 94', '—', 'No band below 6.5'],
+                              ['ELICOS', 'Provider-set', '—', '—', '—', 'N/A', 'Not directly eligible — pathway into a qualifying course'],
+                              ['Certificate III–IV', '5.5 – 6.0', '42 – 50', '46 – 60', '—', 'Varies', 'Generally not eligible; Graduate Work stream may apply (~18 months)'],
+                              ['Diploma / Adv. Diploma', '5.5 – 6.0', '42 – 50', '46 – 60', '—', 'Varies', 'Graduate Work stream may apply if linked to eligible occupation (~18 months)'],
+                              ['Bachelor', '6.0 – 6.5', '50 – 58', '60 – 79', '169 – 176', 'No band below 6.0', 'Up to 2 years (Post-Study Work stream)'],
+                              ['Graduate Cert/Diploma', '6.0 – 6.5', '50 – 58', '60 – 79', '—', 'Min 6.0 each', 'Subject to overall qualification package and study duration'],
+                              ['Master\'s', '6.5 – 7.0', '58 – 65', '79 – 94', '176 – 185', 'No band below 6.5', 'Up to 3 years (Post-Study Work stream)'],
+                              ['Doctoral', '6.5 – 7.0', '58 – 65', '79 – 94', '—', 'No band below 6.5', 'Up to 4 years (Post-Study Work stream)'],
                           ]" />
+
+            <p class="text-sm text-base-500 mt-4 text-pretty"><strong>Disclaimer:</strong> Score ranges and visa entitlements are indicative only. Requirements vary by course, institution, and visa type, and are subject to change by the Department of Home Affairs and individual education providers. Speak to one of our Counsellors for more personalised guidance.</p>
+
+            {{-- Callouts: alternative English evidence + free placement test --}}
+            <div class="mt-6 grid sm:grid-cols-2 gap-6">
+                <x-callout title="Not all candidates need a formal English test" variant="info">
+                    <x-slot:icon><x-heroicon-o-information-circle class="w-6 h-6" /></x-slot:icon>
+                    Some universities accept alternative evidence of English proficiency — for example, Malaysian students may qualify with 1119 English, SPM English, or Cambridge O Level English results.
+                </x-callout>
+
+                <x-callout title="Free English Placement Test" variant="primary">
+                    <x-slot:icon><x-heroicon-o-clipboard-document-check class="w-6 h-6" /></x-slot:icon>
+                    Blue Education can administer a free English Placement Test for students, depending on where they are from or where they are planning to study.
+                </x-callout>
+            </div>
         </div>
     </section>
 

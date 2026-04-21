@@ -1,31 +1,83 @@
 <x-layout title="School Programmes"
-          description="A quality Australian education for your child. We handle school selection, visa, accommodation, and guardianship.">
+          description="A quality Australian education with a safety net built around every student. We handle placement, visa, accommodation, and guardianship.">
 
     {{-- §1 Hero --}}
-    <x-hero title="A quality Australian education for your child, with a safety net built around them."
-            subtitle="We handle placement, visa, accommodation, and guardianship — so you're not left worrying from the other side of the world."
+    <x-hero title="A quality Australian education with a safety net built around every student — from primary school children to mature-aged learners."
+            subtitle="We handle placement, visa, accommodation, and guardianship, so families and adult students aren't left worrying from the other side of the world."
             :image="asset('images/heroes/services-education-school.webp')"
             alt="East Asian children in school uniforms in an Australian classroom"
             variant="left"
             :breadcrumbs="true" />
 
-    {{-- §2 The Australian School System --}}
+    {{-- §2 Questions that need answers --}}
     <section class="bg-white">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
-            <h2 class="text-3xl font-bold text-base-900 mb-6 text-pretty" data-animate="fade-up">The Australian School System</h2>
-            <p class="text-base-600 mb-8 text-pretty">Australia's school system spans 13 years:</p>
-            <x-data-table :headers="['Stage', 'Years', 'Ages', 'Focus']"
-                          :rows="[
-                              ['Preparatory', 'Foundation', '~5', 'Early learning, social development'],
-                              ['Primary', '1–6 (or 1–7)', '6–12', 'Core subjects across all learning areas'],
-                              ['Lower Secondary', '7–10 (or 8–10)', '12–16', 'Broader learning with growing elective choices'],
-                              ['Upper Secondary', '11–12', '16–18', 'Subjects chosen for further education or career'],
-                          ]" />
-            <ul class="mt-6 space-y-1.5 text-sm text-base-500">
-                <li>* Compulsory until age 16 in most states and territories.</li>
-                <li>* Public and private schools available — we match your child to the right fit.</li>
-                <li>* Blue Education is an SCSA Associate — officially named by SCSA to promote the Western Australian curriculum internationally. <a href="{{ route('about.scsa-partnership') }}" class="text-primary-800 hover:underline font-medium">Learn about SCSA &rarr;</a></li>
-            </ul>
+            <h2 class="text-3xl font-bold text-base-900 mb-8 text-pretty" data-animate="fade-up">Questions that need answers...</h2>
+            <div class="relative border border-base-200 rounded-corner-lg overflow-hidden shadow-xl">
+                <div class="overflow-x-auto">
+                    <table class="w-full text-sm">
+                        <thead>
+                            <tr class="bg-base-50 border-b border-base-200 text-left">
+                                <th scope="col" class="px-6 py-4 font-semibold text-sm text-base-700 whitespace-nowrap">Area</th>
+                                <th scope="col" class="px-6 py-4 font-semibold text-sm text-base-700 whitespace-nowrap">What families want to know</th>
+                                <th scope="col" class="px-6 py-4 font-semibold text-sm text-base-700 whitespace-nowrap">How we assist</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="bg-white border-t border-base-100">
+                                <td class="px-6 py-4 text-base-700 align-top">
+                                    <div class="flex items-center gap-2.5">
+                                        <x-heroicon-o-academic-cap class="w-5 h-5 text-primary-600 shrink-0" />
+                                        <span class="font-medium text-base-900">Choosing the right school</span>
+                                    </div>
+                                </td>
+                                <td class="px-6 py-4 text-base-700 align-top"><strong>Public vs private</strong>, IB vs local curriculum, co-ed vs single-sex, location and ethos.</td>
+                                <td class="px-6 py-4 text-base-700 align-top"><strong>Shortlist suitable schools</strong>, explain key differences, and match options to your child's goals and family priorities.</td>
+                            </tr>
+                            <tr class="bg-base-50 border-t border-base-100">
+                                <td class="px-6 py-4 text-base-700 align-top">
+                                    <div class="flex items-center gap-2.5">
+                                        <x-heroicon-o-map class="w-5 h-5 text-primary-600 shrink-0" />
+                                        <span class="font-medium text-base-900">Pathways to university and migration</span>
+                                    </div>
+                                </td>
+                                <td class="px-6 py-4 text-base-700 align-top">How <strong>Years 10–12 subjects</strong> affect university entry and future visa options.</td>
+                                <td class="px-6 py-4 text-base-700 align-top"><strong>Map subject choices</strong> and school pathways to potential university courses and longer-term migration strategies.</td>
+                            </tr>
+                            <tr class="bg-white border-t border-base-100">
+                                <td class="px-6 py-4 text-base-700 align-top">
+                                    <div class="flex items-center gap-2.5">
+                                        <x-heroicon-o-heart class="w-5 h-5 text-primary-600 shrink-0" />
+                                        <span class="font-medium text-base-900">Pastoral care, safety and wellbeing</span>
+                                    </div>
+                                </td>
+                                <td class="px-6 py-4 text-base-700 align-top"><strong>Homestay quality</strong>, guardianship, safety, bullying policies, mental health support.</td>
+                                <td class="px-6 py-4 text-base-700 align-top"><strong>Arrange vetted homestays</strong> and guardianship, and brief families on each school's wellbeing and duty-of-care framework.</td>
+                            </tr>
+                            <tr class="bg-base-50 border-t border-base-100">
+                                <td class="px-6 py-4 text-base-700 align-top">
+                                    <div class="flex items-center gap-2.5">
+                                        <x-heroicon-o-document-check class="w-5 h-5 text-primary-600 shrink-0" />
+                                        <span class="font-medium text-base-900">End-to-end support for school-age students</span>
+                                    </div>
+                                </td>
+                                <td class="px-6 py-4 text-base-700 align-top">Who manages <strong>placement, paperwork</strong>, and ongoing contact with the school.</td>
+                                <td class="px-6 py-4 text-base-700 align-top"><strong>Manage school applications</strong>, COEs, student and guardian visas, arrivals, and ongoing liaison with schools and hosts.</td>
+                            </tr>
+                            <tr class="bg-white border-t border-base-100">
+                                <td class="px-6 py-4 text-base-700 align-top">
+                                    <div class="flex items-center gap-2.5">
+                                        <x-heroicon-o-banknotes class="w-5 h-5 text-primary-600 shrink-0" />
+                                        <span class="font-medium text-base-900">Cost planning for schooling</span>
+                                    </div>
+                                </td>
+                                <td class="px-6 py-4 text-base-700 align-top"><strong>Tuition, uniforms, books</strong>, activities, homestay, insurance, and living costs.</td>
+                                <td class="px-6 py-4 text-base-700 align-top"><strong>Provide high-level cost guidance</strong> and scenarios, then prepare a tailored estimate for your chosen schools and visa pathway.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -33,16 +85,16 @@
     <section class="bg-primary-50">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
             <h2 class="text-3xl font-bold text-base-900 mb-4 text-pretty" data-animate="fade-up">What We Handle</h2>
-            <p class="text-base-600 mb-10">Everything we coordinate before your child arrives in Australia.</p>
+            <p class="text-base-600 mb-10">Everything we facilitate before the student arrives in Australia.</p>
             <x-timeline :steps="[
-                ['title' => 'School Selection & Placement', 'icon' => 'academic-cap', 'description' => 'We match your child to the right school based on location, curriculum, fees, learning profile, and long-term goals. Public and private options across Australia.'],
-                ['title' => 'Student Visa (Subclass 500)', 'icon' => 'document-text', 'description' => 'Full visa application management for minors — documentation, health checks, character requirements, lodgement. We handle the process end to end.'],
-                ['title' => 'Accommodation', 'icon' => 'home', 'description' => 'Homestay placement through the Australian Homestay Network. Vetted families, meals included, safe living environment — all arranged before your child arrives.'],
+                ['title' => 'School Selection & Placement', 'icon' => 'academic-cap', 'summary' => 'We match each student with the right school based on their goals and family priorities.', 'description' => 'Location, curriculum, fees, learning profile and long-term goals assessed across both public and private options in Australia.'],
+                ['title' => 'Student Visa (Subclass 500)', 'icon' => 'document-text', 'summary' => 'Comprehensive visa application management for students over and under 18.', 'description' => 'Documentation, health examinations, character requirements and online lodgement — coordinated end-to-end so the student and their family are fully supported.'],
+                ['title' => 'Arrival & Accommodation', 'icon' => 'home', 'summary' => 'Pre-arrival orientation and settling-in support so there is less to manage on day one.', 'description' => 'Coordinated airport pickup, Australian bank account, and accommodation through the Blue Education Homestay Network — trusted host families for almost two decades in a safe, welcoming home with warm meals.'],
             ]" />
         </div>
     </section>
 
-    {{-- §4 Once They're There --}}
+    {{-- §4 Arriving in Australia --}}
     <section class="bg-white">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
             <div class="mb-8">
@@ -50,30 +102,34 @@
                     ['src' => 'images/services-education-school/school-campus.webp', 'alt' => 'East Asian students at an Australian school campus'],
                 ]" :inline="true" />
             </div>
-            <h2 class="text-3xl font-bold text-base-900 mb-3 text-pretty" data-animate="fade-up">Once They're There...</h2>
-            <p class="text-base-600 mb-8">We take of them! These services run in parallel, not in sequence.</p>
+            <h2 class="text-3xl font-bold text-base-900 mb-3 text-pretty" data-animate="fade-up">Arriving in Australia...</h2>
+            <p class="text-base-600 mb-3">Our support continues after the student arrives in Australia. We remain available to assist with school transition, student wellbeing, communication with families, and practical matters that may arise during the student's time here.</p>
+            <p class="text-base-600 mb-3">Remember, our team is here. So, feel free to drop in for a cuppa and let us help you.</p>
+            <p class="text-base-800 font-semibold mb-8">Supporting students to adapt to life and study in Australia:</p>
             <div class="grid sm:grid-cols-2 gap-6" data-animate="stagger">
-                <x-card title="Guardianship"
-                        description="Legal guardianship arranged through Professional Student Care Australia or International Student Alliance. Required by the Department of Home Affairs for unaccompanied students under 18."
+                <x-card title="Settling Into Australian Daily Life"
+                        description="Practical tips on local customs, communication style, transport, banking and everyday etiquette so students feel at home more quickly."
                         :href="route('services.student-support')"
-                        linkText="Full guardianship details">
-                    <x-slot:icon><x-heroicon-o-shield-check class="w-5 h-5" /></x-slot:icon>
+                        linkText="Student support services">
+                    <x-slot:icon><x-heroicon-o-home class="w-5 h-5" /></x-slot:icon>
                 </x-card>
-                <x-card title="Welfare Monitoring"
-                        description="Regular welfare checks, school liaison, and parental reporting — so you always know how your child is settling in, not just at enrolment time."
-                        :href="route('services.student-support')"
-                        linkText="Full welfare support details">
-                    <x-slot:icon><x-heroicon-o-heart class="w-5 h-5" /></x-slot:icon>
-                </x-card>
-                <x-card title="Cultural Adaptation"
-                        description="The first weeks in a new country can be disorienting for young students. We provide ongoing integration support. For a structured introduction, our Buddy Programme places students alongside Australian peers for 14 days."
+                <x-card title="Understanding the Australian Learning Approach"
+                        description="Guidance on interactive learning, asking questions, group work and academic expectations to help students adapt to school and university culture."
                         :href="route('programs.buddy-programme')"
-                        linkText="Learn about the Buddy Programme">
-                    <x-slot:icon><x-heroicon-o-globe-alt class="w-5 h-5" /></x-slot:icon>
+                        linkText="Explore the Buddy Programme">
+                    <x-slot:icon><x-heroicon-o-book-open class="w-5 h-5" /></x-slot:icon>
                 </x-card>
-                <x-card title="School Transfer & Change of Programme"
-                        description="Already enrolled but need to change schools or programmes? We manage the full transfer — notifying the institution, updating enrolment records, and advising on any visa implications.">
-                    <x-slot:icon><x-heroicon-o-arrows-right-left class="w-5 h-5" /></x-slot:icon>
+                <x-card title="Making Friends and Building Networks"
+                        description="Advice on joining clubs, sports, community activities and homestay life to develop friendships and supportive relationships."
+                        :href="route('programs.buddy-programme')"
+                        linkText="Explore the Buddy Programme">
+                    <x-slot:icon><x-heroicon-o-user-group class="w-5 h-5" /></x-slot:icon>
+                </x-card>
+                <x-card title="Staying Well: Balance, Safety and Support"
+                        description="Information on staying healthy, knowing where to get help, balancing study and downtime, and feeling confident and safe in Australia."
+                        :href="route('services.student-support')"
+                        linkText="Wellbeing and safety support">
+                    <x-slot:icon><x-heroicon-o-heart class="w-5 h-5" /></x-slot:icon>
                 </x-card>
             </div>
         </div>
@@ -81,21 +137,21 @@
 
     {{-- §5 For Parents --}}
     <x-content-split title="For Parents" :image="asset('images/services-education-school/parent-child-school.webp')" alt="Young East Asian student smiling at airport terminal with luggage" class="bg-base-50">
-        <p>Sending your child overseas is a significant decision. Here's what we put in place before they board the plane:</p>
-        <ul class="space-y-2 text-sm">
-            <li class="flex items-start gap-2"><span class="text-primary-600 font-bold">✓</span> 24/7 emergency hotline — for parents and students, any time</li>
-            <li class="flex items-start gap-2"><span class="text-primary-600 font-bold">✓</span> Regular welfare reports — school updates and wellbeing checks</li>
-            <li class="flex items-start gap-2"><span class="text-primary-600 font-bold">✓</span> Direct communication with guardianship providers</li>
-            <li class="flex items-start gap-2"><span class="text-primary-600 font-bold">✓</span> On-ground support in Perth and across major Australian cities</li>
-        </ul>
-        <p class="font-semibold text-base-700 mt-4">Your child is never on their own. Neither are you.</p>
+        <p>Sending your child overseas is a significant decision and can feel daunting at times. We focus on keeping both you and your child supported and informed throughout their journey.</p>
+        <h3 class="text-lg font-semibold text-base-800 mt-4 mb-2">How we keep you informed:</h3>
+        <x-icon-list>
+            <x-icon-list.item>Regular welfare updates, including school progress and feedback on wellbeing</x-icon-list.item>
+            <x-icon-list.item>Facilitate direct communication with the school and homestay hosts</x-icon-list.item>
+            <x-icon-list.item>Local support in Perth and other major Australian cities</x-icon-list.item>
+        </x-icon-list>
+        <p class="font-semibold text-base-700 mt-4">Your child is never on their own — and neither are you.</p>
     </x-content-split>
 
     {{-- §6 CTA --}}
     <x-cta-banner title="Start with a conversation."
-                  subtitle="Book a free education consultation. Tell us your child's age, year level, and preferences — we'll recommend schools and walk you through exactly what the process involves."
+                  subtitle="Book a free education consultation. Tell us the student's age, year level, and preferences — we'll recommend schools and walk you through exactly what the process involves."
                   primaryText="Enquire About School Placements"
-                  :primaryHref="route('contact')" />
+                  :primaryHref="route('contact')"
                   secondaryText="Explore the Buddy Programme"
                   :secondaryHref="route('programs.buddy-programme')" />
 
