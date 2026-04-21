@@ -16,6 +16,7 @@
             <div class="relative border border-base-200 rounded-corner-lg overflow-hidden shadow-xl">
                 <div class="overflow-x-auto">
                     <table class="w-full text-sm">
+                        <caption class="sr-only">Common questions from families about school placement in Australia</caption>
                         <thead>
                             <tr class="bg-base-50 border-b border-base-200 text-left">
                                 <th scope="col" class="px-6 py-4 font-semibold text-sm text-base-700 whitespace-nowrap">Area</th>
@@ -78,6 +79,7 @@
                     </table>
                 </div>
             </div>
+            <p class="text-sm text-base-500 mt-4 text-pretty">Blue Education is an <a href="{{ route('about.scsa-partnership') }}" class="text-primary-800 font-medium hover:underline">SCSA Associate</a> — officially named by the School Curriculum and Standards Authority to promote the Western Australian curriculum internationally.</p>
         </div>
     </section>
 

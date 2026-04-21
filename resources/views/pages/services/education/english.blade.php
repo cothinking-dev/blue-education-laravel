@@ -44,7 +44,7 @@
         </div>
     </section>
 
-    {{-- §5 Foundation Studies --}}
+    {{-- §4 Foundation Studies --}}
     <x-content-split title="Foundation Studies" :image="asset('images/services-education-english/foundation-studies.webp')" alt="East Asian students in a foundation studies classroom preparing for university" class="bg-base-50">
         <h3 class="text-lg font-semibold text-base-800 mb-2">What are Foundation programmes?</h3>
         <p>Foundation programmes are for international students who've finished high school but don't yet meet direct entry requirements for an Australian university.</p>
@@ -58,7 +58,7 @@
         </ul>
     </x-content-split>
 
-    {{-- §6 Your Pathway --}}
+    {{-- §5 Your Pathway --}}
     <section class="bg-white">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
             <h2 class="text-3xl font-bold text-base-900 mb-4 text-pretty" data-animate="fade-up">Your Pathway</h2>
@@ -71,7 +71,7 @@
         </div>
     </section>
 
-    {{-- §7 Teaching English --}}
+    {{-- §6 Teaching English --}}
     <section class="bg-base-50">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
             <x-callout title="Teaching English professionally? There's a qualification for that." variant="info">
@@ -85,7 +85,7 @@
         </div>
     </section>
 
-    {{-- §8 CTA --}}
+    {{-- §7 CTA --}}
     <x-cta-banner title="Find out where your English sits."
                   subtitle="Book a free education consultation. We'll assess your English level and tell you exactly which course suits your situation and what comes next."
                   primaryText="Assess My English Level"

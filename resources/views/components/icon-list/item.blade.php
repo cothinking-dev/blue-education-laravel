@@ -1,10 +1,13 @@
 {{--
-| Prop    | Type   | Default | Description                                              |
-|---------|--------|---------|----------------------------------------------------------|
-| icon    | string | 'check' | Icon variant: check, arrow, shield, star, badge          |
+| Prop    | Type    | Default | Description                                              |
+|---------|---------|---------|----------------------------------------------------------|
+| icon    | ?string | null    | Override icon variant: check, arrow, shield, star, badge |
+|         |         |         | Falls back to parent <x-icon-list> variant if not set    |
 --}}
+@aware(['variant' => 'check'])
+
 @props([
-    'icon' => 'check',
+    'icon' => null,
 ])
 
 @php
@@ -16,7 +19,8 @@
         'badge'  => 'heroicon-s-check-badge',
     ];
 
-    $component = $icons[$icon] ?? $icons['check'];
+    $resolved = $icon ?? $variant;
+    $component = $icons[$resolved] ?? $icons['check'];
 @endphp
 
 <li class="flex items-start gap-2.5">
