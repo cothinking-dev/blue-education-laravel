@@ -146,7 +146,7 @@
             <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 <x-callout title="Free English Placement Test" variant="primary">
                     <x-slot:icon><x-heroicon-o-clipboard-document-check class="w-6 h-6" /></x-slot:icon>
-                    Blue Education administers a free internal English test accepted by our partner institutions. In many cases this substitutes for IELTS, TOEFL, or PTE — saving you time and money.
+                    Blue Education administers a free internal English test accepted by our partner institutions. In many cases this substitutes for IELTS, TOEFL, or PTE.
                     <a href="{{ route('contact') }}" class="text-primary-800 text-sm font-medium hover:underline mt-2 inline-block">Book your free test &rarr;</a>
                 </x-callout>
 
@@ -216,7 +216,7 @@
                 <x-icon-list>
                     <x-icon-list.item><a href="{{ route('services.student-support') }}" class="text-primary-800 font-medium hover:underline">Homestay and accommodation</a> arrangement</x-icon-list.item>
                     <x-icon-list.item>Airport pickup and orientation on arrival</x-icon-list.item>
-                    <x-icon-list.item><a href="{{ route('services.student-support') }}" class="text-primary-800 font-medium hover:underline">Ongoing welfare checks</a> and academic progress monitoring</x-icon-list.item>
+                    <x-icon-list.item><a href="{{ route('services.student-support') }}" class="text-primary-800 font-medium hover:underline">Ongoing welfare support</a> and feedback on wellbeing</x-icon-list.item>
                 </x-icon-list>
             </div>
         </div>
