@@ -25,6 +25,9 @@
                 @endif
 
                 <h3 class="font-semibold text-base-900 mb-2 text-center min-h-[2lh] grid place-items-center">{{ $step['title'] }}</h3>
+                @if(!empty($step['badge']))
+                    <span class="inline-block text-xs font-medium px-2.5 py-0.5 rounded-full bg-amber-100 text-amber-800 mb-2">{{ $step['badge'] }}</span>
+                @endif
                 @if(!empty($step['summary']))
                     <p class="text-base-800 text-sm font-medium leading-relaxed text-pretty self-start mb-1.5">{{ $step['summary'] }}</p>
                 @endif
