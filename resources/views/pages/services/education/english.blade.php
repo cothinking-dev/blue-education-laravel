@@ -1,5 +1,5 @@
 <x-layout title="English & Foundation Programmes"
-          description="ELICOS and Foundation programmes for students on their way to further studies in Australia. Build your English and bridge to degree entry.">
+          description="High-quality English language courses in Australia to help international students build confidence, improve academic English, and prepare for school, university and future careers.">
 
     {{-- §1 Hero --}}
     <x-hero title="English and Foundation programmes for students on their way to further studies in Australia."
@@ -11,7 +11,7 @@
 
     {{-- §2 ELICOS Courses --}}
     <x-content-split title="ELICOS Courses" :image="asset('images/services-education-english/elicos-class.webp')" alt="East Asian students in an ELICOS English language class">
-        <p>Studying English in Australia means full immersion — you practise every day, from the classroom to everyday life. It is the fastest way to build genuine fluency while preparing for further study or an Australian career.</p>
+        <p>By studying English in Australia, you are compelled to speak and engage others around you in their native language, English. There is no better way to immerse in the beauty, culture and language of your host country so that you may take this experience with you that will change your life forever.</p>
         <p>ELICOS, short for English Language Intensive Courses for Overseas Students, allows international students to be enrolled in full-time English language programmes in Australia, focusing on improving language proficiency for work, travel or further education pathways.</p>
         <p>Duration is 10 to 30 weeks depending on your starting point, and the minimum entry requirement of the university or institution.</p>
     </x-content-split>
@@ -37,7 +37,7 @@
                 </x-card>
 
                 <x-card title="Test Preparation"
-                        description="English test preparation courses in Australia help students achieve the scores required for study, visa applications or professional registration. With targeted training for exams such as IELTS, TOEFL and PTE Academic, learners develop effective strategies, practise with exam-style tasks and receive feedback to improve their performance on test day.">
+                        description="English test preparation courses in Australia help students achieve the scores required for study, visa applications or professional registration. With targeted training for exams such as IELTS, TOEFL and PTE Academic, learners develop effective strategies, practise with exam-style tasks and receive feedback to improve their performance on test day. Blue Education is a registered TOEFL iBT test centre.">
                     <x-slot:icon>
                         <x-heroicon-o-clipboard-document-list class="w-5 h-5" />
                     </x-slot:icon>
@@ -51,7 +51,7 @@
                 </x-card>
 
                 <x-card title="TESOL"
-                        description="TESOL (Teaching English to Speakers of Other Languages) programmes in Australia are suitable for people who wish to become English language teachers locally or overseas. Participants learn contemporary teaching methodologies, lesson planning, classroom management and assessment techniques, combining theory with practical experience. Includes pathways to CELTA and EfTC qualifications.">
+                        description="TESOL (Teaching English to Speakers of Other Languages) programmes in Australia are suitable for people who wish to become English language teachers locally or overseas. Participants learn contemporary teaching methodologies, lesson planning, classroom management and assessment techniques, combining theory with practical experience to deliver engaging and effective English lessons.">
                     <x-slot:icon>
                         <x-heroicon-o-academic-cap class="w-5 h-5" />
                     </x-slot:icon>
@@ -111,7 +111,6 @@
             <x-icon-list.item>Focus on Academic English, essay writing, presentations and exam skills</x-icon-list.item>
             <x-icon-list.item>Chance to experience Australian teaching methods before starting your main degree</x-icon-list.item>
             <x-icon-list.item>Time to settle into Australian life, make friends and build confidence in a new study environment</x-icon-list.item>
-            <x-icon-list.item>English Bridging completers can often progress to their main course without sitting a formal English test</x-icon-list.item>
         </x-icon-list>
     </x-content-split>
 
@@ -177,8 +176,8 @@
                         <div class="w-10 h-10 rounded-full bg-primary-50 border-2 border-primary-200 text-primary-800 flex items-center justify-center mx-auto mb-3">
                             <x-heroicon-o-arrow-right class="w-5 h-5" />
                         </div>
-                        <p class="font-semibold text-base-900 text-sm mb-1">Direct Entry</p>
-                        <p class="text-xs text-base-500">If you already meet English and academic requirements</p>
+                        <p class="font-semibold text-base-900 text-sm mb-1">Direct to University</p>
+                        <p class="text-xs text-base-500">If your ELICOS results and prior qualifications meet entry requirements</p>
                     </div>
                 </div>
 
