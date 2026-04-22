@@ -58,20 +58,16 @@
             </div>
             <x-section-heading title="What You Can Study" :centered="false" />
             <p class="text-base-600 mb-8 text-pretty">Industries available through TAFE and registered training providers across Australia:</p>
-            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-2">
+            <div class="grid sm:grid-cols-2 gap-x-12 gap-y-2">
                 <x-icon-list>
                     <x-icon-list.item>Construction & Trades</x-icon-list.item>
                     <x-icon-list.item>Business & Administration</x-icon-list.item>
-                </x-icon-list>
-                <x-icon-list>
                     <x-icon-list.item>Information Technology</x-icon-list.item>
                     <x-icon-list.item>Hospitality & Tourism</x-icon-list.item>
                 </x-icon-list>
                 <x-icon-list>
                     <x-icon-list.item>Childcare & Community Services</x-icon-list.item>
                     <x-icon-list.item>Healthcare Support</x-icon-list.item>
-                </x-icon-list>
-                <x-icon-list>
                     <x-icon-list.item>Automotive</x-icon-list.item>
                     <x-icon-list.item>Creative Industries</x-icon-list.item>
                 </x-icon-list>
@@ -79,38 +75,57 @@
         </div>
     </section>
 
+    {{-- Mid-page CTA --}}
+    <div class="bg-white">
+        <div class="max-w-7xl mx-auto px-8 lg:px-16 pb-14 text-center">
+            <p class="text-base-600 mb-3">Not sure which industry or qualification is right for you?</p>
+            <a href="{{ route('contact') }}" class="inline-flex items-center gap-1.5 bg-primary-800 text-white font-semibold px-5 py-2.5 rounded-corner text-sm hover:bg-primary-700 transition-colors">
+                Talk to an adviser
+                <x-heroicon-m-arrow-right class="w-4 h-4" />
+            </a>
+        </div>
+    </div>
+
     {{-- §5 Why VET? --}}
-    <section class="bg-white">
+    <section class="bg-base-50">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
             <x-section-heading title="Why VET?" :centered="false" />
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" data-animate="stagger">
-                <div class="border-l-4 border-primary-600 pl-6">
-                    <h3 class="font-bold text-base-900 mb-2 text-pretty">Practical, job-focused training</h3>
-                    <p class="text-base-600 text-sm leading-relaxed text-pretty">VET courses concentrate on real workplace skills instead of mainly theory. You learn how to do the tasks employers actually need, using industry-standard tools, equipment and procedures.</p>
-                </div>
-                <div class="border-l-4 border-primary-600 pl-6">
-                    <h3 class="font-bold text-base-900 mb-2 text-pretty">Faster pathway into the workforce</h3>
-                    <p class="text-base-600 text-sm leading-relaxed text-pretty">Many VET qualifications are shorter than traditional academic programmes, so you can enter the workforce or change careers more quickly, often within 6–24 months depending on the level of study.</p>
-                    <a href="{{ route('services.career') }}" class="text-primary-800 font-medium text-sm hover:underline mt-2 inline-block">Career services &rarr;</a>
-                </div>
-                <div class="border-l-4 border-primary-600 pl-6">
-                    <h3 class="font-bold text-base-900 mb-2 text-pretty">Flexible study options</h3>
-                    <p class="text-base-600 text-sm leading-relaxed text-pretty">VET is usually offered with flexible timetables, including evening, weekend or blended/online options, making it easier to balance training with work, family or other commitments.</p>
-                </div>
-                <div class="border-l-4 border-primary-600 pl-6">
-                    <h3 class="font-bold text-base-900 mb-2 text-pretty">Industry-recognised qualifications</h3>
-                    <p class="text-base-600 text-sm leading-relaxed text-pretty">VET qualifications are nationally recognised and developed in consultation with industry, meaning employers across Australia understand what your certificate or diploma represents in terms of skills.</p>
-                </div>
-                <div class="border-l-4 border-primary-600 pl-6">
-                    <h3 class="font-bold text-base-900 mb-2 text-pretty">Clear career and study pathways</h3>
-                    <p class="text-base-600 text-sm leading-relaxed text-pretty">Many VET courses are linked to specific occupations and can also provide credit pathways into higher-level qualifications, so you can build your skills step by step as your goals grow.</p>
-                    <a href="{{ route('services.education.degrees') }}" class="text-primary-800 font-medium text-sm hover:underline mt-2 inline-block">University degrees &rarr;</a>
-                </div>
-                <div class="border-l-4 border-primary-600 pl-6">
-                    <h3 class="font-bold text-base-900 mb-2 text-pretty">Suitable for upskilling and career change</h3>
-                    <p class="text-base-600 text-sm leading-relaxed text-pretty">Because VET focuses on targeted, hands-on learning, it is ideal for people who want to move into a new field or upgrade their skills without repeating years of general academic study.</p>
-                    <a href="{{ route('services.career') }}" class="text-primary-800 font-medium text-sm hover:underline mt-2 inline-block">Career services &rarr;</a>
-                </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6" data-animate="stagger">
+                <x-card title="Practical, job-focused training"
+                        description="VET courses concentrate on real workplace skills instead of mainly theory. You learn how to do the tasks employers actually need, using industry-standard tools, equipment and procedures.">
+                    <x-slot:icon><x-heroicon-o-wrench-screwdriver class="w-5 h-5" /></x-slot:icon>
+                </x-card>
+
+                <x-card title="Faster pathway into the workforce"
+                        description="Many VET qualifications are shorter than traditional academic programmes, so you can enter the workforce or change careers more quickly, often within 6–24 months depending on the level of study."
+                        :href="route('services.career')"
+                        linkText="Career services">
+                    <x-slot:icon><x-heroicon-o-rocket-launch class="w-5 h-5" /></x-slot:icon>
+                </x-card>
+
+                <x-card title="Flexible study options"
+                        description="VET is usually offered with flexible timetables, including evening, weekend or blended/online options, making it easier to balance training with work, family or other commitments.">
+                    <x-slot:icon><x-heroicon-o-clock class="w-5 h-5" /></x-slot:icon>
+                </x-card>
+
+                <x-card title="Industry-recognised qualifications"
+                        description="VET qualifications are nationally recognised and developed in consultation with industry, meaning employers across Australia understand what your certificate or diploma represents in terms of skills.">
+                    <x-slot:icon><x-heroicon-o-check-badge class="w-5 h-5" /></x-slot:icon>
+                </x-card>
+
+                <x-card title="Clear career and study pathways"
+                        description="Many VET courses are linked to specific occupations and can also provide credit pathways into higher-level qualifications, so you can build your skills step by step as your goals grow."
+                        :href="route('services.education.degrees')"
+                        linkText="University degrees">
+                    <x-slot:icon><x-heroicon-o-arrow-trending-up class="w-5 h-5" /></x-slot:icon>
+                </x-card>
+
+                <x-card title="Suitable for upskilling and career change"
+                        description="Because VET focuses on targeted, hands-on learning, it is ideal for people who want to move into a new field or upgrade their skills without repeating years of general academic study."
+                        :href="route('services.career')"
+                        linkText="Career services">
+                    <x-slot:icon><x-heroicon-o-arrows-right-left class="w-5 h-5" /></x-slot:icon>
+                </x-card>
             </div>
         </div>
     </section>
