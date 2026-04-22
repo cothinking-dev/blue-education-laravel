@@ -58,14 +58,14 @@
             </div>
             <x-section-heading title="What You Can Study" :centered="false" />
             <p class="text-base-600 mb-8 text-pretty">Industries available through TAFE and registered training providers across Australia:</p>
-            <div class="grid sm:grid-cols-2 gap-x-12 gap-y-2">
-                <x-icon-list>
+            <div class="grid sm:grid-cols-2 gap-x-6 gap-y-0 max-w-2xl">
+                <x-icon-list class="mt-0">
                     <x-icon-list.item>Construction & Trades</x-icon-list.item>
                     <x-icon-list.item>Business & Administration</x-icon-list.item>
                     <x-icon-list.item>Information Technology</x-icon-list.item>
                     <x-icon-list.item>Hospitality & Tourism</x-icon-list.item>
                 </x-icon-list>
-                <x-icon-list>
+                <x-icon-list class="mt-0">
                     <x-icon-list.item>Childcare & Community Services</x-icon-list.item>
                     <x-icon-list.item>Healthcare Support</x-icon-list.item>
                     <x-icon-list.item>Automotive</x-icon-list.item>
