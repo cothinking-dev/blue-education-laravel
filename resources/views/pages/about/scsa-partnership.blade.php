@@ -2,7 +2,7 @@
           description="Blue Education is officially recognised by the WA Government's School Curriculum and Standards Authority (SCSA) — appointed to promote the Western Australian curriculum internationally.">
 
     {{-- §1 Hero --}}
-    <x-hero title="Officially recognised by the WA Government to promote Australian education internationally."
+    <x-hero title="Officially recognised by the WA Government to promote Australian education internationally"
             subtitle="Blue Education is an appointed SCSA Associate — recognised by the School Curriculum and Standards Authority under the WA Department of Education. This means we can provide direct support to students and schools seeking access to the Western Australian curriculum."
             :image="asset('images/heroes/programs-scsa-associate.webp')"
             alt="Students at an international school delivering the Australian curriculum"

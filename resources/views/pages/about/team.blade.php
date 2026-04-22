@@ -40,7 +40,7 @@
     @endphp
 
     {{-- §1 Hero --}}
-    <x-hero title="Multilingual specialists across five countries."
+    <x-hero title="Multilingual specialists across five countries"
             subtitle="Education, migration, and career experts — headquartered in Perth, represented across Asia, Africa, and the Pacific."
             :image="asset('images/about-team/team-meeting.webp')"
             alt="Blue Education team in a professional meeting"
@@ -189,7 +189,7 @@
     </section>
 
     {{-- §8 CTA Banner --}}
-    <x-cta-banner title="Work with a team that understands your world."
+    <x-cta-banner title="Work with a team that understands your world"
                   subtitle="Book a consultation with an advisor who speaks your language and knows your market."
                   primaryText="Book a Consultation"
                   :primaryHref="route('contact')" />

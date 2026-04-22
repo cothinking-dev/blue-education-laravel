@@ -33,7 +33,7 @@ Route::prefix('services')->name('services.')->group(function () {
         Route::get('/school', [PageController::class, 'show'])->name('school')->defaults('label', 'School Programs');
         Route::get('/english', [PageController::class, 'show'])->name('english')->defaults('label', 'English & Foundation');
         Route::get('/vet-tafe', [PageController::class, 'show'])->name('vet-tafe')->defaults('label', 'VET & TAFE');
-        Route::get('/degrees', [PageController::class, 'show'])->name('degrees')->defaults('label', 'University Degrees');
+        Route::get('/degrees', [PageController::class, 'show'])->name('degrees')->defaults('label', 'Undergraduate & Postgraduate');
     });
 
     // Services — Migration

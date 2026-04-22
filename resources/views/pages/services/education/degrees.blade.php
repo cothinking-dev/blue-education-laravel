@@ -166,6 +166,7 @@
                         :href="route('services.migration.graduate-work')"
                         linkText="Graduate work visas">
                     <x-slot:icon><x-heroicon-o-clock class="w-5 h-5" /></x-slot:icon>
+                    <a href="{{ route('services.migration.permanent-residence') }}" class="relative z-20 text-primary-800 font-medium text-xs hover:underline mt-1 inline-block">Permanent residence &rarr;</a>
                 </x-card>
                 <x-card title="Safe, multicultural lifestyle"
                         description="Diverse campuses, low crime rates and welcoming communities help international students feel supported.">

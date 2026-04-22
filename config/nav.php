@@ -28,7 +28,7 @@ return [
                 ['label' => 'School Programs', 'route' => 'services.education.school', 'indent' => true],
                 ['label' => 'English & Foundation', 'route' => 'services.education.english', 'indent' => true],
                 ['label' => 'VET & TAFE', 'route' => 'services.education.vet-tafe', 'indent' => true],
-                ['label' => 'University Degrees', 'route' => 'services.education.degrees', 'indent' => true],
+                ['label' => 'Undergraduate & Postgraduate', 'route' => 'services.education.degrees', 'indent' => true],
                 ['divider' => true],
                 ['heading' => 'Migration'],
                 ['label' => 'Migration Overview', 'route' => 'services.migration.index'],
