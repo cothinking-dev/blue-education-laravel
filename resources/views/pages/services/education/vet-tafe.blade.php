@@ -77,7 +77,7 @@
 
     {{-- Mid-page CTA --}}
     <div class="bg-white">
-        <div class="max-w-7xl mx-auto px-8 lg:px-16 pb-14">
+        <div class="max-w-7xl mx-auto px-8 lg:px-16 pb-14 text-center">
             <p class="text-base-600 mb-3">Not sure which industry or qualification is right for you?</p>
             <a href="{{ route('contact') }}" class="inline-flex items-center gap-1.5 bg-primary-800 text-white font-semibold px-5 py-2.5 rounded-corner text-sm hover:bg-primary-700 transition-colors">
                 Talk to an adviser
