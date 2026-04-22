@@ -122,6 +122,16 @@
         </div>
     </section>
 
+    {{-- QEAC Credential --}}
+    <section class="bg-white">
+        <div class="max-w-7xl mx-auto px-8 lg:px-16 py-8">
+            <div class="flex items-center gap-4">
+                <x-credential-card name="QEAC Certified" logo="images/credentials/qeac.svg" description="" />
+                <p class="text-base-500 text-sm text-pretty">Blue Education is QEAC certified — meeting the quality standards set for education agent counsellors in Australia.</p>
+            </div>
+        </div>
+    </section>
+
     {{-- §6 CTA --}}
     <x-cta-banner title="Know what you want to study. Not sure how to get there?"
                   subtitle="Book a free education consultation. We review your background, map your options, and tell you exactly what the pathway looks like — in one conversation."

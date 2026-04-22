@@ -82,6 +82,7 @@
             <x-callout title="Skilled Migration and Skills Assessment" variant="info">
                 <x-slot:icon><x-heroicon-o-clipboard-document-check class="w-6 h-6" /></x-slot:icon>
                 <p class="text-sm text-base-600 mb-3">If you are considering skilled migration to Australia, one of the first steps is identifying whether your occupation is eligible and whether you need a skills assessment. For many skilled migration pathways, a positive skills assessment may be required before you can progress with your application strategy.</p>
+                <p class="text-sm text-base-600 mb-3">A skills assessment is not the same as a visa application. It is completed by the relevant assessing authority for your occupation, and the correct authority depends on the occupation you nominate. The Department of Home Affairs publishes assessing authorities for different occupations, which is why choosing the right pathway early is important.</p>
                 <p class="text-sm text-base-600 mb-3">At Blue Education, we help you understand:</p>
                 <x-icon-list class="mt-0 mb-3">
                     <x-icon-list.item>Whether your occupation may require a skills assessment</x-icon-list.item>
