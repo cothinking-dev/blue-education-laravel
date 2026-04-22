@@ -89,13 +89,35 @@
     <section class="bg-base-50">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
             <x-section-heading title="How We Can Help You" :centered="false" />
-            <x-timeline :steps="[
-                ['title' => 'Eligibility Assessment', 'description' => 'We go through your background, goals and documents with you to check whether you appear to meet key student visa requirements before you move ahead with an application.'],
-                ['title' => 'Document Preparation', 'description' => 'Together we organise your academic records, evidence of financial capacity, formal English test results and other supporting documents. We provide clear checklists and guidance, and help you make sure everything is complete and consistent.'],
-                ['title' => 'Genuine Student (GS) Statement', 'description' => 'The Genuine Student (GS) requirement is how the Department of Home Affairs assesses whether you genuinely intend to study in Australia and understand your obligations. We guide you on how to present your circumstances clearly and honestly, and help you structure a GS statement that is specific to your situation.'],
-                ['title' => 'Application Lodgement', 'description' => 'We help you complete the application forms and upload your supporting documents in the required format. Lodgement is done carefully to reflect the information and evidence you have provided.'],
-                ['title' => 'After Lodgement', 'description' => 'We help you monitor the application process and, where appropriate, respond to any requests for further information — supporting you from lodgement through to a final outcome.'],
-            ]" />
+
+            {{-- Vertical process timeline --}}
+            <div class="space-y-0">
+                @php
+                    $steps = [
+                        ['num' => 1, 'title' => 'Eligibility Assessment', 'desc' => 'We go through your background, goals and documents with you to check whether you appear to meet key student visa requirements before you move ahead with an application.'],
+                        ['num' => 2, 'title' => 'Document Preparation', 'desc' => 'Together we organise your academic records, evidence of financial capacity, formal English test results and other supporting documents. We provide clear checklists and guidance, and help you make sure everything is complete and consistent.'],
+                        ['num' => 3, 'title' => 'Genuine Student (GS) Statement', 'desc' => 'The Genuine Student (GS) requirement is how the Department of Home Affairs assesses whether you genuinely intend to study in Australia and understand your obligations. We guide you on how to present your circumstances clearly and honestly, and help you structure a GS statement that is specific to your situation.'],
+                        ['num' => 4, 'title' => 'Application Lodgement', 'desc' => 'We help you complete the application forms and upload your supporting documents in the required format. Lodgement is done carefully to reflect the information and evidence you have provided.'],
+                        ['num' => 5, 'title' => 'After Lodgement', 'desc' => 'We help you monitor the application process and, where appropriate, respond to any requests for further information — supporting you from lodgement through to a final outcome.'],
+                    ];
+                @endphp
+                @foreach($steps as $step)
+                    <div class="flex gap-6" data-animate="fade-up">
+                        {{-- Line + node --}}
+                        <div class="flex flex-col items-center shrink-0">
+                            <div class="w-10 h-10 rounded-full bg-primary-800 text-white flex items-center justify-center text-sm font-bold shrink-0">{{ $step['num'] }}</div>
+                            @if(!$loop->last)
+                                <div class="w-0.5 flex-1 bg-primary-200 my-1"></div>
+                            @endif
+                        </div>
+                        {{-- Content --}}
+                        <div class="pb-8 min-w-0">
+                            <h3 class="font-bold text-base-900 text-lg mb-1">{{ $step['title'] }}</h3>
+                            <p class="text-base-600 leading-relaxed text-pretty">{{ $step['desc'] }}</p>
+                        </div>
+                    </div>
+                @endforeach
+            </div>
         </div>
     </section>
 
@@ -109,72 +131,202 @@
 
             <x-section-heading title="Student Visa Requirements Snapshot" :centered="false" />
 
-            {{-- 2-column requirements grid --}}
-            <div class="grid sm:grid-cols-2 gap-6" data-animate="fade-up">
-                <div class="flex items-start gap-4 p-5 sm:p-6 rounded-corner-lg border border-base-200 bg-white">
-                    <span class="flex items-center justify-center w-8 h-8 rounded-full bg-primary-100 text-primary-800 font-bold text-sm shrink-0">1</span>
-                    <div>
-                        <h3 class="font-bold text-base-900 mb-1">Valid passport and identity documents</h3>
-                        <p class="text-base-600 text-sm leading-relaxed text-pretty">To apply for an international student visa, you must hold a valid passport, because your visa will be linked to your passport details and used as your primary identity and travel document. We check that your passport and other identity information are current and consistent before progressing with the rest of your application.</p>
+            {{-- Staggered vertical timeline --}}
+            <div class="relative">
+                {{-- Central vertical line (desktop only) --}}
+                <div class="hidden lg:block absolute left-1/2 top-0 bottom-0 w-px bg-primary-200 -translate-x-1/2"></div>
+
+                <div class="space-y-6 lg:space-y-10">
+                    {{-- 1. Passport — LEFT --}}
+                    <div class="relative lg:grid lg:grid-cols-2 lg:gap-12 items-start" data-animate="fade-up">
+                        <div class="lg:text-left">
+                            <div class="rounded-corner-lg p-6 bg-primary-50 border border-primary-100">
+                                <div class="flex items-center gap-3 mb-3 flex-row">
+                                    <div class="w-10 h-10 rounded-full bg-primary-100 text-primary-800 flex items-center justify-center shrink-0">
+                                        <x-heroicon-o-identification class="w-5 h-5" />
+                                    </div>
+                                    <h3 class="font-bold text-base-900">Valid passport and identity documents</h3>
+                                </div>
+                                <ul class="text-base-600 text-sm leading-relaxed space-y-1.5">
+                                    <li>Your visa will be linked to your passport details and used as your primary identity and travel document</li>
+                                    <li>Must be valid and current at time of application</li>
+                                </ul>
+                                <p class="text-primary-800 text-sm font-medium mt-3">We check that your passport and identity information are current and consistent before progressing.</p>
+                            </div>
+                        </div>
+                        {{-- Timeline node --}}
+                        <div class="hidden lg:flex absolute left-1/2 top-6 -translate-x-1/2 w-8 h-8 rounded-full bg-primary-800 text-white items-center justify-center text-xs font-bold z-10">1</div>
+                        <div class="hidden lg:block"></div>
                     </div>
-                </div>
-                <div class="flex items-start gap-4 p-5 sm:p-6 rounded-corner-lg border border-base-200 bg-white">
-                    <span class="flex items-center justify-center w-8 h-8 rounded-full bg-primary-100 text-primary-800 font-bold text-sm shrink-0">2</span>
-                    <div>
-                        <h3 class="font-bold text-base-900 mb-1">Confirmation of Enrolment (CoE)</h3>
-                        <p class="text-base-600 text-sm leading-relaxed text-pretty">A current Confirmation of Enrolment from a CRICOS-registered education provider is essential before lodging an Australian student visa application. We will assist you in obtaining an offer from the school and you will have to make the first term or semester's fees to the institution in order to obtain the CoE.</p>
+
+                    {{-- 2. CoE — RIGHT --}}
+                    <div class="relative lg:grid lg:grid-cols-2 lg:gap-12 items-start" data-animate="fade-up">
+                        <div class="hidden lg:block"></div>
+                        <div>
+                            <div class="rounded-corner-lg p-6 bg-base-50 border border-base-200">
+                                <div class="flex items-center gap-3 mb-3">
+                                    <div class="w-10 h-10 rounded-full bg-primary-100 text-primary-800 flex items-center justify-center shrink-0">
+                                        <x-heroicon-o-academic-cap class="w-5 h-5" />
+                                    </div>
+                                    <h3 class="font-bold text-base-900">Confirmation of Enrolment (CoE)</h3>
+                                </div>
+                                <ul class="text-base-600 text-sm leading-relaxed space-y-1.5">
+                                    <li>A current CoE from a <strong>CRICOS-registered</strong> education provider is essential before lodging</li>
+                                    <li>You will need to pay the first term or semester's fees to obtain the CoE</li>
+                                </ul>
+                                <p class="text-primary-800 text-sm font-medium mt-3">We assist you in obtaining an offer from the school and guide you through the enrolment process. <a href="{{ route('services.education.index') }}" class="underline hover:text-primary-600">Explore our education services &rarr;</a></p>
+                            </div>
+                        </div>
+                        <div class="hidden lg:flex absolute left-1/2 top-6 -translate-x-1/2 w-8 h-8 rounded-full bg-primary-800 text-white items-center justify-center text-xs font-bold z-10">2</div>
                     </div>
-                </div>
-                <div class="flex items-start gap-4 p-5 sm:p-6 rounded-corner-lg border border-base-200 bg-white">
-                    <span class="flex items-center justify-center w-8 h-8 rounded-full bg-primary-100 text-primary-800 font-bold text-sm shrink-0">3</span>
-                    <div>
-                        <h3 class="font-bold text-base-900 mb-1">Genuine Student (GS) information</h3>
-                        <p class="text-base-600 text-sm leading-relaxed text-pretty">The GS statement will require an explanation of your reasons for studying in Australia, your choice of course and provider, and how your plans fit your background and future goals. As a trusted agent and education counsellor, we will guide you on this matter with the required evidence, so that your GS responses are honest, consistent and easy to read for any Case Officer to review.</p>
+
+                    {{-- 3. GS Statement — LEFT --}}
+                    <div class="relative lg:grid lg:grid-cols-2 lg:gap-12 items-start" data-animate="fade-up">
+                        <div class="lg:text-left">
+                            <div class="rounded-corner-lg p-6 bg-primary-50 border border-primary-100">
+                                <div class="flex items-center gap-3 mb-3 flex-row">
+                                    <div class="w-10 h-10 rounded-full bg-primary-100 text-primary-800 flex items-center justify-center shrink-0">
+                                        <x-heroicon-o-document-text class="w-5 h-5" />
+                                    </div>
+                                    <h3 class="font-bold text-base-900">Genuine Student (GS) information</h3>
+                                </div>
+                                <ul class="text-base-600 text-sm leading-relaxed space-y-1.5">
+                                    <li>Explain your reasons for studying in Australia, your choice of course and provider</li>
+                                    <li>Show how your plans fit your background and future goals</li>
+                                </ul>
+                                <p class="text-primary-800 text-sm font-medium mt-3">As a trusted agent and education counsellor, we guide you so that your GS responses are honest, consistent and easy to read for any Case Officer.</p>
+                            </div>
+                        </div>
+                        <div class="hidden lg:flex absolute left-1/2 top-6 -translate-x-1/2 w-8 h-8 rounded-full bg-primary-800 text-white items-center justify-center text-xs font-bold z-10">3</div>
+                        <div class="hidden lg:block"></div>
                     </div>
-                </div>
-                <div class="flex items-start gap-4 p-5 sm:p-6 rounded-corner-lg border border-base-200 bg-white">
-                    <span class="flex items-center justify-center w-8 h-8 rounded-full bg-primary-100 text-primary-800 font-bold text-sm shrink-0">4</span>
-                    <div>
-                        <h3 class="font-bold text-base-900 mb-1">Academic qualifications and education history</h3>
-                        <p class="text-base-600 text-sm leading-relaxed text-pretty">You will usually need certified copies of your academic transcripts (translated into English where required), completion certificates and any relevant professional qualifications. For many international student visa applications, a clear study history helps show you are prepared for your chosen course and strengthens the overall credibility of your case.</p>
+
+                    {{-- 4. Academic qualifications — RIGHT --}}
+                    <div class="relative lg:grid lg:grid-cols-2 lg:gap-12 items-start" data-animate="fade-up">
+                        <div class="hidden lg:block"></div>
+                        <div>
+                            <div class="rounded-corner-lg p-6 bg-base-50 border border-base-200">
+                                <div class="flex items-center gap-3 mb-3">
+                                    <div class="w-10 h-10 rounded-full bg-primary-100 text-primary-800 flex items-center justify-center shrink-0">
+                                        <x-heroicon-o-clipboard-document-list class="w-5 h-5" />
+                                    </div>
+                                    <h3 class="font-bold text-base-900">Academic qualifications and education history</h3>
+                                </div>
+                                <ul class="text-base-600 text-sm leading-relaxed space-y-1.5">
+                                    <li>Certified copies of <strong>academic transcripts</strong> (translated into English where required)</li>
+                                    <li>Completion certificates and any relevant professional qualifications</li>
+                                    <li>A clear study history strengthens the overall credibility of your case</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="hidden lg:flex absolute left-1/2 top-6 -translate-x-1/2 w-8 h-8 rounded-full bg-primary-800 text-white items-center justify-center text-xs font-bold z-10">4</div>
                     </div>
-                </div>
-                <div class="flex items-start gap-4 p-5 sm:p-6 rounded-corner-lg border border-base-200 bg-white">
-                    <span class="flex items-center justify-center w-8 h-8 rounded-full bg-primary-100 text-primary-800 font-bold text-sm shrink-0">5</span>
-                    <div>
-                        <h3 class="font-bold text-base-900 mb-1">Financial capacity and proof of funds</h3>
-                        <p class="text-base-600 text-sm leading-relaxed text-pretty">You must demonstrate that you have genuine access to enough money to cover tuition fees, living costs, travel and any dependants' expenses whilst living and studying in Australia. An experienced student visa agent can help you understand what types of financial evidence are typically used and how to present them clearly. <a href="#appendix-a" class="text-primary-800 hover:underline font-medium">See indicative financial requirements &darr;</a></p>
+
+                    {{-- 5. Financial capacity — LEFT --}}
+                    <div class="relative lg:grid lg:grid-cols-2 lg:gap-12 items-start" data-animate="fade-up">
+                        <div class="lg:text-left">
+                            <div class="rounded-corner-lg p-6 bg-primary-50 border border-primary-100">
+                                <div class="flex items-center gap-3 mb-3 flex-row">
+                                    <div class="w-10 h-10 rounded-full bg-primary-100 text-primary-800 flex items-center justify-center shrink-0">
+                                        <x-heroicon-o-banknotes class="w-5 h-5" />
+                                    </div>
+                                    <h3 class="font-bold text-base-900">Financial capacity and proof of funds</h3>
+                                </div>
+                                <ul class="text-base-600 text-sm leading-relaxed space-y-1.5">
+                                    <li>Demonstrate genuine access to funds covering <strong>tuition fees, living costs, travel</strong> and dependants' expenses</li>
+                                    <li>Evidence includes bank statements, loans, sponsorship or scholarship letters</li>
+                                </ul>
+                                <p class="text-primary-800 text-sm font-medium mt-3">We help you understand what evidence is typically used and how to present it clearly. <a href="#appendix-a" class="underline hover:text-primary-600">See indicative financial requirements &darr;</a></p>
+                            </div>
+                        </div>
+                        <div class="hidden lg:flex absolute left-1/2 top-6 -translate-x-1/2 w-8 h-8 rounded-full bg-primary-800 text-white items-center justify-center text-xs font-bold z-10">5</div>
+                        <div class="hidden lg:block"></div>
                     </div>
-                </div>
-                <div class="flex items-start gap-4 p-5 sm:p-6 rounded-corner-lg border border-base-200 bg-white">
-                    <span class="flex items-center justify-center w-8 h-8 rounded-full bg-primary-100 text-primary-800 font-bold text-sm shrink-0">6</span>
-                    <div>
-                        <h3 class="font-bold text-base-900 mb-1">Official English language proficiency test results</h3>
-                        <p class="text-base-600 text-sm leading-relaxed text-pretty">Where required, you need a valid English test result (such as IELTS, TOEFL iBT, PTE Academic or Cambridge) that meets both your course entry requirements and the minimum standard for your visa. <a href="#appendix-b" class="text-primary-800 hover:underline font-medium">See typical English test ranges &darr;</a></p>
+
+                    {{-- 6. English proficiency — RIGHT --}}
+                    <div class="relative lg:grid lg:grid-cols-2 lg:gap-12 items-start" data-animate="fade-up">
+                        <div class="hidden lg:block"></div>
+                        <div>
+                            <div class="rounded-corner-lg p-6 bg-base-50 border border-base-200">
+                                <div class="flex items-center gap-3 mb-3">
+                                    <div class="w-10 h-10 rounded-full bg-primary-100 text-primary-800 flex items-center justify-center shrink-0">
+                                        <x-heroicon-o-language class="w-5 h-5" />
+                                    </div>
+                                    <h3 class="font-bold text-base-900">Official English language proficiency test results</h3>
+                                </div>
+                                <ul class="text-base-600 text-sm leading-relaxed space-y-1.5">
+                                    <li>A valid result from <strong>IELTS, TOEFL iBT, PTE Academic or Cambridge</strong></li>
+                                    <li>Must meet both your course entry requirements and the visa minimum standard</li>
+                                </ul>
+                                <p class="text-primary-800 text-sm font-medium mt-3"><a href="#appendix-b" class="underline hover:text-primary-600">See typical English test ranges &darr;</a> &middot; <a href="{{ route('services.education.english') }}" class="underline hover:text-primary-600">English &amp; Foundation courses &rarr;</a></p>
+                            </div>
+                        </div>
+                        <div class="hidden lg:flex absolute left-1/2 top-6 -translate-x-1/2 w-8 h-8 rounded-full bg-primary-800 text-white items-center justify-center text-xs font-bold z-10">6</div>
                     </div>
-                </div>
-                <div class="flex items-start gap-4 p-5 sm:p-6 rounded-corner-lg border border-base-200 bg-white">
-                    <span class="flex items-center justify-center w-8 h-8 rounded-full bg-primary-100 text-primary-800 font-bold text-sm shrink-0">7</span>
-                    <div>
-                        <h3 class="font-bold text-base-900 mb-1">Health examinations and Overseas Student Health Cover (OSHC)</h3>
-                        <p class="text-base-600 text-sm leading-relaxed text-pretty">Most international students must arrange OSHC for the duration of their stay and complete health examinations with an approved panel clinic. A trusted student visa agent will let you know when to book medicals, how to organise OSHC, and how to upload the evidence correctly.</p>
+
+                    {{-- 7. Health & OSHC — LEFT --}}
+                    <div class="relative lg:grid lg:grid-cols-2 lg:gap-12 items-start" data-animate="fade-up">
+                        <div class="lg:text-left">
+                            <div class="rounded-corner-lg p-6 bg-primary-50 border border-primary-100">
+                                <div class="flex items-center gap-3 mb-3 flex-row">
+                                    <div class="w-10 h-10 rounded-full bg-primary-100 text-primary-800 flex items-center justify-center shrink-0">
+                                        <x-heroicon-o-heart class="w-5 h-5" />
+                                    </div>
+                                    <h3 class="font-bold text-base-900">Health examinations and OSHC</h3>
+                                </div>
+                                <ul class="text-base-600 text-sm leading-relaxed space-y-1.5">
+                                    <li>Arrange <strong>Overseas Student Health Cover</strong> for the duration of your stay</li>
+                                    <li>Complete health examinations with an approved panel clinic</li>
+                                </ul>
+                                <p class="text-primary-800 text-sm font-medium mt-3">We let you know when to book medicals, how to organise OSHC, and how to upload evidence correctly.</p>
+                            </div>
+                        </div>
+                        <div class="hidden lg:flex absolute left-1/2 top-6 -translate-x-1/2 w-8 h-8 rounded-full bg-primary-800 text-white items-center justify-center text-xs font-bold z-10">7</div>
+                        <div class="hidden lg:block"></div>
                     </div>
-                </div>
-                <div class="flex items-start gap-4 p-5 sm:p-6 rounded-corner-lg border border-base-200 bg-white">
-                    <span class="flex items-center justify-center w-8 h-8 rounded-full bg-primary-100 text-primary-800 font-bold text-sm shrink-0">8</span>
-                    <div>
-                        <h3 class="font-bold text-base-900 mb-1">Character and background documents</h3>
-                        <p class="text-base-600 text-sm leading-relaxed text-pretty">Depending on your history, you may need police clearance certificates and character declarations for countries where you have lived. These documents support the character requirement for an Australian student visa and should be consistent with the rest of your application.</p>
+
+                    {{-- 8. Character documents — RIGHT --}}
+                    <div class="relative lg:grid lg:grid-cols-2 lg:gap-12 items-start" data-animate="fade-up">
+                        <div class="hidden lg:block"></div>
+                        <div>
+                            <div class="rounded-corner-lg p-6 bg-base-50 border border-base-200">
+                                <div class="flex items-center gap-3 mb-3">
+                                    <div class="w-10 h-10 rounded-full bg-primary-100 text-primary-800 flex items-center justify-center shrink-0">
+                                        <x-heroicon-o-shield-check class="w-5 h-5" />
+                                    </div>
+                                    <h3 class="font-bold text-base-900">Character and background documents</h3>
+                                </div>
+                                <ul class="text-base-600 text-sm leading-relaxed space-y-1.5">
+                                    <li><strong>Police clearance certificates</strong> from countries where you have lived</li>
+                                    <li>Character declarations supporting the character requirement for your visa</li>
+                                    <li>All documents should be consistent with the rest of your application</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="hidden lg:flex absolute left-1/2 top-6 -translate-x-1/2 w-8 h-8 rounded-full bg-primary-800 text-white items-center justify-center text-xs font-bold z-10">8</div>
                     </div>
                 </div>
             </div>
 
-            <p class="text-sm text-base-600 mt-6 text-pretty">Check with us on the set of documents or evidence that you need to provide. You wouldn't want to be short of providing the relevant documents.</p>
+            <p class="text-sm text-base-600 mt-8 text-pretty">Check with us on the set of documents or evidence that you need to provide. You wouldn't want to be short of providing the relevant documents.</p>
+
+            {{-- Mid-page CTA --}}
+            <div class="mt-10 bg-primary-50 border border-primary-100 rounded-corner-lg p-6 sm:p-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+                <p class="text-base-800 font-medium text-pretty">Have questions about what documents you need? We can review your situation and give you a clear checklist.</p>
+                <a href="{{ route('contact') }}" class="inline-flex items-center justify-center px-6 py-2.5 rounded-corner bg-primary-800 text-white text-sm font-semibold hover:bg-primary-700 transition-colors whitespace-nowrap shrink-0">Talk to Our Team</a>
+            </div>
         </div>
     </section>
 
+    {{-- Reference Tables divider --}}
+    <div class="bg-base-100 border-y border-base-200">
+        <div class="max-w-7xl mx-auto px-8 lg:px-16 py-4">
+            <p class="text-xs font-semibold uppercase tracking-wider text-base-400">Reference Tables</p>
+        </div>
+    </div>
+
     {{-- Appendix A — Indicative Financial Requirements --}}
-    <section id="appendix-a" class="bg-white scroll-mt-8">
+    <section id="appendix-a" class="bg-base-100 scroll-mt-8">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
             <x-section-heading title="Indicative Student Visa Financial Requirements" :centered="false" />
             <p class="text-sm text-base-600 mb-6 text-pretty">From time to time, the Department of Home Affairs will revise and publish the official requirements, so it is important that you should always refer to the <a href="https://immi.homeaffairs.gov.au/visas/web-evidentiary-tool" target="_blank" rel="noopener" class="text-primary-800 hover:underline font-medium">Document Checklist Tool</a> before you apply.</p>
@@ -233,7 +385,7 @@
     </section>
 
     {{-- Appendix B — Typical English Test Ranges --}}
-    <section id="appendix-b" class="bg-base-50 scroll-mt-8">
+    <section id="appendix-b" class="bg-base-100 border-t border-base-200 scroll-mt-8">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
             <x-section-heading title="Typical English Test Ranges for Study in Australia" :centered="false" />
 
@@ -287,11 +439,78 @@
                      ['src' => asset('images/credentials/mia.svg'), 'alt' => 'Migration Institute of Australia'],
                  ]" />
 
-    {{-- §5 What Comes Next? --}}
-    <x-next-steps title="What Comes Next?" variant="featured" :links="[
-        ['href' => route('services.migration.graduate-work'), 'label' => 'After Graduation', 'title' => 'Post-study work visas', 'description' => 'Your options for staying in Australia on a work visa after you graduate.'],
-        ['href' => route('services.student-support'), 'label' => 'While You Study', 'title' => 'Support during your studies', 'description' => 'Accommodation, welfare monitoring, and ongoing advisor support.'],
-    ]" />
+    {{-- §5a While You're in Australia --}}
+    <section class="bg-primary-800 text-white">
+        <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
+            <p class="text-primary-300 text-xs font-semibold uppercase tracking-wider mb-2">While You Study</p>
+            <h2 class="text-3xl font-bold mb-6">While You're in Australia</h2>
+
+            <div class="flex flex-col lg:flex-row gap-10">
+                <div class="flex-1">
+                    <p class="text-primary-100 leading-relaxed mb-6 text-pretty">Studying in Australia is more than just getting a visa approved — it's about feeling supported while you settle in, study and plan your next steps. Blue Education is based in Perth with partners around Australia, so you have a local team you can turn to throughout your journey.</p>
+
+                    <p class="text-white font-semibold mb-3">We can help with:</p>
+                    <ul class="space-y-3 text-primary-100 leading-relaxed mb-6">
+                        <li class="flex items-start gap-3"><span class="w-6 h-6 rounded-full bg-white/10 text-primary-300 flex items-center justify-center shrink-0 mt-0.5 text-xs font-bold">1</span>Arrival and orientation, including on-boarding sessions so you understand your new city, your campus and your visa conditions.</li>
+                        <li class="flex items-start gap-3"><span class="w-6 h-6 rounded-full bg-white/10 text-primary-300 flex items-center justify-center shrink-0 mt-0.5 text-xs font-bold">2</span>Accommodation options, such as homestay, student housing or other arrangements that suit your budget and needs.</li>
+                        <li class="flex items-start gap-3"><span class="w-6 h-6 rounded-full bg-white/10 text-primary-300 flex items-center justify-center shrink-0 mt-0.5 text-xs font-bold">3</span>Ongoing check-ins and welfare support, so you have someone to speak with if you need guidance or run into any issues.</li>
+                        <li class="flex items-start gap-3"><span class="w-6 h-6 rounded-full bg-white/10 text-primary-300 flex items-center justify-center shrink-0 mt-0.5 text-xs font-bold">4</span>Study, migration and career planning if you want to change courses, extend your studies, or explore post-study work and skilled migration pathways.</li>
+                    </ul>
+
+                    <p class="text-primary-200 text-sm text-pretty">Once you arrive in Australia, you are not on your own — you have a team in Perth that understands international student life and is here to support you from your first week through to graduation and beyond.</p>
+
+                    <a href="{{ route('services.student-support') }}" class="inline-flex items-center gap-1 mt-4 text-white hover:text-primary-200 font-semibold transition-colors">Student support services &rarr;</a>
+                </div>
+
+                {{-- Inline video --}}
+                <div class="lg:w-[45%] shrink-0">
+                    <div class="rounded-corner-lg overflow-hidden shadow-lg">
+                        <video controls preload="none" poster="{{ asset('videos/student-infopack-poster.jpg') }}" class="w-full aspect-video bg-black">
+                            <source src="{{ asset('videos/student-infopack.mp4') }}" type="video/mp4">
+                        </video>
+                    </div>
+                    <p class="text-primary-300 text-xs mt-2">What a student needs to know before arriving in Perth</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {{-- §5b Post-Study Work Options --}}
+    <section class="bg-white">
+        <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
+            <p class="text-primary-800 text-xs font-semibold uppercase tracking-wider mb-2">After Graduation</p>
+            <h2 class="text-3xl font-bold text-base-900 mb-6">Post-Study Work Options</h2>
+
+            <p class="text-base-600 leading-relaxed mb-8 text-pretty max-w-3xl">Finishing your course is just the beginning. Australia offers several pathways for graduates who want to stay, work and build a career — and in many cases, work towards permanent residence.</p>
+
+            <div class="grid sm:grid-cols-3 gap-6 mb-8">
+                <div class="border border-base-200 rounded-corner-lg p-6">
+                    <div class="w-10 h-10 rounded-full bg-primary-50 text-primary-800 flex items-center justify-center mb-3">
+                        <x-heroicon-o-briefcase class="w-5 h-5" />
+                    </div>
+                    <h3 class="font-bold text-base-900 mb-2">Post-Study Work Visa</h3>
+                    <p class="text-base-600 text-sm leading-relaxed">Subclass 485 — 2 years for bachelor's and master's coursework graduates, 3 years for master's research and doctoral graduates.</p>
+                </div>
+                <div class="border border-base-200 rounded-corner-lg p-6">
+                    <div class="w-10 h-10 rounded-full bg-primary-50 text-primary-800 flex items-center justify-center mb-3">
+                        <x-heroicon-o-building-office class="w-5 h-5" />
+                    </div>
+                    <h3 class="font-bold text-base-900 mb-2">Temporary Skill Shortage</h3>
+                    <p class="text-base-600 text-sm leading-relaxed">Subclass 482 — for graduates with an employer willing to sponsor, with pathways to permanent residence.</p>
+                </div>
+                <div class="border border-base-200 rounded-corner-lg p-6">
+                    <div class="w-10 h-10 rounded-full bg-primary-50 text-primary-800 flex items-center justify-center mb-3">
+                        <x-heroicon-o-home class="w-5 h-5" />
+                    </div>
+                    <h3 class="font-bold text-base-900 mb-2">Employer Nomination Scheme</h3>
+                    <p class="text-base-600 text-sm leading-relaxed">A direct pathway to permanent residence for skilled workers with employer support.</p>
+                </div>
+            </div>
+
+            <p class="text-base-500 text-sm text-pretty mb-4">The same team that helped with your student visa can guide you through the transition — no need to start over with a new agent.</p>
+            <a href="{{ route('services.migration.graduate-work') }}" class="inline-flex items-center justify-center px-6 py-2.5 rounded-corner bg-primary-800 text-white text-sm font-semibold hover:bg-primary-700 transition-colors">Explore Work Visa Options &rarr;</a>
+        </div>
+    </section>
 
     {{-- §6 CTA --}}
     <x-cta-banner title="Ready to apply?"
