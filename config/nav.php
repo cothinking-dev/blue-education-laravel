@@ -38,6 +38,7 @@ return [
                 ['divider' => true],
                 ['label' => 'Career Services', 'route' => 'services.career'],
                 ['label' => 'Student Support', 'route' => 'services.student-support'],
+                ['label' => 'Health Cover (OSHC)', 'route' => 'services.oshc'],
             ],
         ],
         [

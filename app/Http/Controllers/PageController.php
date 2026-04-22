@@ -20,6 +20,7 @@ class PageController extends Controller
         'services.migration.permanent-residence' => 'pages.services.migration.permanent-residence',
         'services.career' => 'pages.services.career',
         'services.student-support' => 'pages.services.student-support',
+        'services.oshc' => 'pages.services.oshc',
         'programs.index' => 'pages.programs.index',
         'programs.buddy-programme' => 'pages.programs.buddy-programme',
         'programs.study-tours' => 'pages.programs.study-tours',

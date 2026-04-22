@@ -52,7 +52,7 @@
                         <x-heroicon-o-heart class="w-5 h-5" />
                     </div>
                     <h3 class="font-bold text-base-900 mb-2">Health Insurance (OSHC)</h3>
-                    <p class="text-base-600 text-sm leading-relaxed text-pretty">Overseas Student Health Cover — mandatory for all student visas. We arrange cover through OSHC Australia, Annalink, and Konpare — and handle policy selection, enrolment, claims assistance, and renewal.</p>
+                    <p class="text-base-600 text-sm leading-relaxed text-pretty">Overseas Student Health Cover — mandatory for most student visas. We arrange cover through trusted partner platforms and handle policy selection, enrolment, claims assistance, and renewal. <a href="{{ route('services.oshc') }}" class="text-primary-800 hover:underline font-medium">Arrange your OSHC &rarr;</a></p>
                 </div>
 
                 <div class="border border-base-200 rounded-corner-lg p-6">

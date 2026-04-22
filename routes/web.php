@@ -47,6 +47,7 @@ Route::prefix('services')->name('services.')->group(function () {
     // Services — Career & Student Support
     Route::get('/career', [PageController::class, 'show'])->name('career')->defaults('label', 'Career Services');
     Route::get('/student-support', [PageController::class, 'show'])->name('student-support')->defaults('label', 'Student Support');
+    Route::get('/oshc', [PageController::class, 'show'])->name('oshc')->defaults('label', 'OSHC');
 });
 
 // Programs
