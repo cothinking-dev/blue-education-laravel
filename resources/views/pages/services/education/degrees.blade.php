@@ -144,6 +144,13 @@
         </div>
     </section>
 
+    {{-- Visual break --}}
+    <section class="bg-white">
+        <div class="max-w-7xl mx-auto px-8 lg:px-16 py-10">
+            <img src="{{ asset('images/services-education-degrees/global-recognition.webp') }}" alt="East Asian graduates celebrating at a university graduation ceremony" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/1] shadow-lg" loading="lazy">
+        </div>
+    </section>
+
     {{-- §4 Why Study in Australia? --}}
     <section class="bg-white">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
