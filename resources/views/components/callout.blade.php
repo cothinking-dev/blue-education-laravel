@@ -22,15 +22,13 @@
 @endphp
 
 <div {{ $attributes->merge(['class' => "border rounded-corner-lg p-6 {$style}"]) }}>
-    <div class="flex items-start gap-4">
+    <div class="flex items-center gap-3 mb-3">
         @if($icon)
-            <div class="shrink-0 mt-0.5">{!! $icon !!}</div>
+            <div class="shrink-0">{!! $icon !!}</div>
         @endif
-        <div>
-            <h3 class="font-semibold mb-2">{{ $title }}</h3>
-            <div class="text-sm leading-relaxed">
-                {{ $slot }}
-            </div>
-        </div>
+        <h3 class="font-semibold">{{ $title }}</h3>
+    </div>
+    <div class="text-sm leading-relaxed">
+        {{ $slot }}
     </div>
 </div>
