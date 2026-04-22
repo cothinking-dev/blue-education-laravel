@@ -56,9 +56,9 @@
                     ['src' => 'images/services-education-vet-tafe/tafe-campus.webp', 'alt' => 'Modern TAFE campus building'],
                 ]" :inline="true" />
             </div>
-            <x-section-heading title="What You Can Study" :centered="false" />
-            <p class="text-base-600 mb-8 text-pretty">Industries available through TAFE and registered training providers across Australia:</p>
-            <div class="grid sm:grid-cols-2 gap-x-6 gap-y-0 max-w-2xl">
+            <x-section-heading title="What You Can Study" :centered="true" />
+            <p class="text-base-600 mb-8 text-pretty text-center">Industries available through TAFE and registered training providers across Australia:</p>
+            <div class="grid sm:grid-cols-2 gap-x-6 gap-y-0 max-w-2xl mx-auto">
                 <x-icon-list class="mt-0">
                     <x-icon-list.item>Construction & Trades</x-icon-list.item>
                     <x-icon-list.item>Business & Administration</x-icon-list.item>
