@@ -295,7 +295,14 @@
         </div>
     </section>
 
-    {{-- §8 CTA --}}
+    {{-- §8 Also Relevant --}}
+    <x-next-steps variant="links" bg="bg-white" :links="[
+        ['href' => route('programs.study-abroad'), 'title' => 'Study Abroad for university students'],
+        ['href' => route('services.student-support'), 'title' => 'Student support services'],
+        ['href' => route('services.education.english'), 'title' => 'English programmes'],
+    ]" />
+
+    {{-- §9 CTA --}}
     <x-cta-banner title="Limited slots each intake."
                   subtitle="Contact us to confirm availability for the upcoming intake and receive programme dates, costs, and enrolment details."
                   primaryText="Enquire About Study Tours"

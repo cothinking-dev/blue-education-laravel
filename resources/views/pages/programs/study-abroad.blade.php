@@ -58,13 +58,43 @@
     <section class="bg-white">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
             <x-section-heading title="What the experience includes" :centered="false" />
-            <x-definition-grid :columns="1" :items="[
-                ['term' => 'Academic planning and subject selection', 'description' => 'We help you choose units that align with your home degree, meet prerequisites, and maximise your chances of credit transfer when you return.'],
-                ['term' => 'Admissions and documentation', 'description' => 'We guide you through university applications, offer acceptance, Confirmation of Enrolment (CoE) and supporting documents for your student visa.'],
-                ['term' => 'Accommodation options', 'description' => 'Support with on-campus housing, student apartments or homestay, depending on your budget, preferences and length of stay.'],
-                ['term' => 'Airport arrival and orientation', 'description' => 'Pre-departure information, airport pickup guidance and orientation so you understand your campus, city and key visa conditions from the start.'],
-                ['term' => 'Ongoing support in Perth', 'description' => 'Check-ins during your study period, help with practical issues, and advice if you consider extending, changing courses or planning further study in Australia.'],
-            ]" />
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6" data-animate="stagger">
+                <div class="border border-base-200 rounded-corner-lg p-6 bg-white">
+                    <div class="w-10 h-10 rounded-corner bg-primary-50 text-primary-800 flex items-center justify-center mb-4">
+                        <x-heroicon-o-book-open class="w-5 h-5" />
+                    </div>
+                    <h3 class="font-bold text-base-900 mb-2">Academic planning and subject selection</h3>
+                    <p class="text-base-600 text-sm leading-relaxed text-pretty">We help you choose units that align with your home degree, meet prerequisites, and maximise your chances of credit transfer when you return.</p>
+                </div>
+                <div class="border border-base-200 rounded-corner-lg p-6 bg-white">
+                    <div class="w-10 h-10 rounded-corner bg-primary-50 text-primary-800 flex items-center justify-center mb-4">
+                        <x-heroicon-o-document-check class="w-5 h-5" />
+                    </div>
+                    <h3 class="font-bold text-base-900 mb-2">Admissions and documentation</h3>
+                    <p class="text-base-600 text-sm leading-relaxed text-pretty">We guide you through university applications, offer acceptance, Confirmation of Enrolment (CoE) and supporting documents for your student visa.</p>
+                </div>
+                <div class="border border-base-200 rounded-corner-lg p-6 bg-white">
+                    <div class="w-10 h-10 rounded-corner bg-primary-50 text-primary-800 flex items-center justify-center mb-4">
+                        <x-heroicon-o-home-modern class="w-5 h-5" />
+                    </div>
+                    <h3 class="font-bold text-base-900 mb-2">Accommodation options</h3>
+                    <p class="text-base-600 text-sm leading-relaxed text-pretty">Support with on-campus housing, student apartments or homestay, depending on your budget, preferences and length of stay.</p>
+                </div>
+                <div class="border border-base-200 rounded-corner-lg p-6 bg-white">
+                    <div class="w-10 h-10 rounded-corner bg-primary-50 text-primary-800 flex items-center justify-center mb-4">
+                        <x-heroicon-o-map-pin class="w-5 h-5" />
+                    </div>
+                    <h3 class="font-bold text-base-900 mb-2">Airport arrival and orientation</h3>
+                    <p class="text-base-600 text-sm leading-relaxed text-pretty">Pre-departure information, airport pickup guidance and orientation so you understand your campus, city and key visa conditions from the start.</p>
+                </div>
+                <div class="border border-base-200 rounded-corner-lg p-6 bg-white sm:col-span-2 lg:col-span-1">
+                    <div class="w-10 h-10 rounded-corner bg-primary-50 text-primary-800 flex items-center justify-center mb-4">
+                        <x-heroicon-o-chat-bubble-left-right class="w-5 h-5" />
+                    </div>
+                    <h3 class="font-bold text-base-900 mb-2">Ongoing support in Perth</h3>
+                    <p class="text-base-600 text-sm leading-relaxed text-pretty">Check-ins during your study period, help with practical issues, and advice if you consider extending, changing courses or planning further study in Australia.</p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -91,7 +121,14 @@
         </div>
     </section>
 
-    {{-- §7 CTA --}}
+    {{-- §7 Also Relevant --}}
+    <x-next-steps variant="links" bg="bg-base-50" :links="[
+        ['href' => route('programs.study-tours'), 'title' => 'Study tours for high school students'],
+        ['href' => route('services.education.degrees'), 'title' => 'Full degree programmes'],
+        ['href' => route('services.migration.student-visas'), 'title' => 'Student visa support'],
+    ]" />
+
+    {{-- §8 CTA --}}
     <x-cta-banner title="Ready to study abroad?"
                   subtitle="Contact us to discuss your degree, preferred universities, and timing. We will help you build a realistic Study Abroad plan."
                   primaryText="Enquire About Study Abroad"
