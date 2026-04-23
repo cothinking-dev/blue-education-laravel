@@ -163,11 +163,6 @@
         </div>
     </section>
 
-    {{-- Visual break --}}
-    <x-visual-break :images="[
-        ['src' => 'images/services-career/future-starts-now.webp', 'alt' => 'Future Start Now button representing the beginning of your career journey'],
-    ]" bg="bg-base-50" />
-
     {{-- §3 Executive Internship Highlight --}}
     <section class="bg-gradient-to-br from-primary-900 to-primary-700">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
