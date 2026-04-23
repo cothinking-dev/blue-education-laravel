@@ -29,7 +29,6 @@
                                 </div>
                             </div>
                             <p class="text-base-500 text-xs mt-3"><strong>Best for:</strong> Skilled workers and professionals with relevant work experience and a required qualification approaching the points threshold.</p>
-                            <p class="text-base-400 text-[11px] mt-1.5">Note: applicants generally cannot be over 45 years of age at the time of invitation. <a href="#dama-appendix" class="text-primary-700 hover:underline">See DAMA pathways</a> for possible alternatives.</p>
                         </div>
                         <div class="flex-1">
                             <p class="text-base-600 text-sm leading-relaxed mb-3 text-pretty">Points-based system assessing age, English proficiency, qualifications, and work experience.</p>
@@ -42,6 +41,7 @@
                             <div class="bg-amber-50 border border-amber-200 rounded-corner p-3">
                                 <p class="text-amber-800 text-sm font-medium text-pretty">If your points are too low, our experts can guide you through your next steps.</p>
                             </div>
+                            <p class="text-base-400 text-[11px] mt-2">Note: applicants generally cannot be over 45 years of age at the time of invitation. <a href="#dama-appendix" class="text-primary-700 hover:underline">See DAMA pathways</a> for possible alternatives.</p>
                         </div>
                     </div>
                 </div>
