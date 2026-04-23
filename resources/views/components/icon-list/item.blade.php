@@ -4,7 +4,7 @@
 | icon    | ?string | null    | Override icon variant: check, arrow, shield, star, badge |
 |         |         |         | Falls back to parent <x-icon-list> variant if not set    |
 --}}
-@aware(['variant' => 'check'])
+@aware(['variant' => 'check', 'theme' => 'light'])
 
 @props([
     'icon' => null,
@@ -21,9 +21,11 @@
 
     $resolved = $icon ?? $variant;
     $component = $icons[$resolved] ?? $icons['check'];
+    $iconClass = $theme === 'dark' ? 'text-primary-300' : 'text-primary-600';
+    $textClass = $theme === 'dark' ? 'text-primary-100' : 'text-base-600';
 @endphp
 
 <li class="flex items-start gap-2.5">
-    <x-dynamic-component :component="$component" class="w-5 h-5 text-primary-600 shrink-0 mt-0.5" />
-    <span class="text-base-600 text-sm leading-relaxed">{{ $slot }}</span>
+    <x-dynamic-component :component="$component" class="w-5 h-5 {{ $iconClass }} shrink-0 mt-0.5" />
+    <span class="{{ $textClass }} text-sm leading-relaxed">{{ $slot }}</span>
 </li>
