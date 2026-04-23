@@ -158,7 +158,7 @@
                         title="Buddy Programme"
                         description="Join our Buddy Programme and experience Australian school life alongside a local student — a real preview of what it's like to be an Australian student."
                         badge="7 – 14 Day Immersion"
-                        :href="route('programs.buddy-programme')"
+                        :href="route('programs.study-tours') . '#buddy-programme'"
                         linkText="Discover the Buddy Programme">
                     <x-slot:icon>
                         <x-heroicon-o-user-group class="w-7 h-7" />

@@ -47,8 +47,8 @@ return [
             'children' => [
                 ['label' => 'Programs Overview', 'route' => 'programs.index'],
                 ['divider' => true],
-                ['label' => 'Buddy Programme', 'route' => 'programs.buddy-programme', 'indent' => true],
                 ['label' => 'Study Tours', 'route' => 'programs.study-tours', 'indent' => true],
+                ['label' => 'Study Abroad', 'route' => 'programs.study-abroad', 'indent' => true],
                 ['label' => 'Executive Internship', 'route' => 'programs.executive-internship', 'indent' => true],
             ],
         ],

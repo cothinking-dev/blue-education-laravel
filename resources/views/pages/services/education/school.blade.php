@@ -87,7 +87,7 @@
     <section class="bg-primary-50">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
             <h2 class="text-3xl font-bold text-base-900 mb-4 text-pretty" data-animate="fade-up">What We Handle</h2>
-            <p class="text-base-600 mb-10">Everything we facilitate before the student arrives in Australia.</p>
+            <p class="text-base-600 mb-10 text-pretty">Everything we facilitate before the student arrives in Australia.</p>
             <x-timeline :steps="[
                 ['title' => 'School Selection & Placement', 'icon' => 'academic-cap', 'summary' => 'We match each student with the right school based on their goals and family priorities.', 'description' => 'Location, curriculum, fees, learning profile and long-term goals assessed across both public and private options in Australia.'],
                 ['title' => 'Student Visa (Subclass 500)', 'icon' => 'document-text', 'summary' => 'Comprehensive visa application management for students over and under 18.', 'description' => 'Documentation, health examinations, character requirements and online lodgement — coordinated end-to-end so the student and their family are fully supported.'],
@@ -105,8 +105,8 @@
                 ]" :inline="true" />
             </div>
             <h2 class="text-3xl font-bold text-base-900 mb-3 text-pretty" data-animate="fade-up">Arriving in Australia...</h2>
-            <p class="text-base-600 mb-3">Our support continues after the student arrives in Australia. We remain available to assist with school transition, student wellbeing, communication with families, and practical matters that may arise during the student's time here.</p>
-            <p class="text-base-600 mb-3">Remember, our team is here. So, feel free to drop in for a cuppa and let us help you.</p>
+            <p class="text-base-600 mb-3 text-pretty">Our support continues after the student arrives in Australia. We remain available to assist with school transition, student wellbeing, communication with families, and practical matters that may arise during the student's time here.</p>
+            <p class="text-base-600 mb-3 text-pretty">Remember, our team is here. So, feel free to drop in for a cuppa and let us help you.</p>
             <p class="text-base-800 font-semibold mb-8">Supporting students to adapt to life and study in Australia:</p>
             <div class="grid sm:grid-cols-2 gap-6" data-animate="stagger">
                 <x-card title="Settling Into Australian Daily Life"
@@ -117,13 +117,13 @@
                 </x-card>
                 <x-card title="Understanding the Australian Learning Approach"
                         description="Guidance on interactive learning, asking questions, group work and academic expectations to help students adapt to school and university culture."
-                        :href="route('programs.buddy-programme')"
+                        :href="route('programs.study-tours')"
                         linkText="Explore the Buddy Programme">
                     <x-slot:icon><x-heroicon-o-book-open class="w-5 h-5" /></x-slot:icon>
                 </x-card>
                 <x-card title="Making Friends and Building Networks"
                         description="Advice on joining clubs, sports, community activities and homestay life to develop friendships and supportive relationships."
-                        :href="route('programs.buddy-programme')"
+                        :href="route('programs.study-tours')"
                         linkText="Explore the Buddy Programme">
                     <x-slot:icon><x-heroicon-o-user-group class="w-5 h-5" /></x-slot:icon>
                 </x-card>
@@ -155,6 +155,6 @@
                   primaryText="Enquire About School Placements"
                   :primaryHref="route('contact')"
                   secondaryText="Explore the Buddy Programme"
-                  :secondaryHref="route('programs.buddy-programme')" />
+                  :secondaryHref="route('programs.study-tours')" />
 
 </x-layout>

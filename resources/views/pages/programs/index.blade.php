@@ -14,21 +14,21 @@
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
             <x-section-heading title="Our Programmes" :centered="false" />
             <div class="grid sm:grid-cols-2 gap-6" data-animate="stagger">
-                <x-card title="Buddy Programme"
-                        badge="14-Day Immersion"
-                        description="High school students join Australian classrooms, live with vetted homestay families, and explore Western Australia through structured field trips — all within a supervised 14-day programme run in partnership with Anglican Schools."
+                <x-card title="Study Tours"
+                        badge="7 – 14 Day Immersion"
+                        description="Short-term study tours for high school students in Western Australia. The Buddy Programme, culinary experiences, and custom group tours, fully supervised and supported by our Perth team."
                         :image="asset('images/programs-index/buddy-programme.webp')"
                         alt="East Asian teenager with laptop in a diverse high school classroom"
-                        :href="route('programs.buddy-programme')"
-                        linkText="Explore the Buddy Programme" />
-
-                <x-card title="Study Tours"
-                        badge="Flexible Duration"
-                        description="Educational and cultural immersion programmes. One week to several months. No long-term enrolment required. Custom tours for schools, universities, and organisations available on request."
-                        :image="asset('images/programs-index/study-tours.webp')"
-                        alt="Two Asian students with backpacks walking and laughing on a university campus"
                         :href="route('programs.study-tours')"
                         linkText="Explore Study Tours" />
+
+                <x-card title="Study Abroad"
+                        badge="Semester or Year"
+                        description="Spend a semester or year at a Western Australian university while counting credit back to your degree. We work with Murdoch, ECU and Curtin to structure your time in Perth."
+                        :image="asset('images/programs-index/study-tours.webp')"
+                        alt="Two Asian students with backpacks walking and laughing on a university campus"
+                        :href="route('programs.study-abroad')"
+                        linkText="Explore Study Abroad" />
 
                 <x-card title="Executive Internship"
                         badge="Premium Programme"

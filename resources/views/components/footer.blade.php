@@ -10,7 +10,7 @@
                     <source srcset="{{ asset('brand/logo-sm.webp') }}" type="image/webp">
                     <img src="{{ asset('brand/logo-sm.png') }}" alt="Blue Education" class="h-8 w-auto" loading="lazy">
                 </picture>
-                <p class="text-base-500 text-sm leading-relaxed mb-4">Independent education, career, and migration advice from Perth, Western Australia; Since 1998.</p>
+                <p class="text-base-500 text-sm leading-relaxed mb-4 text-pretty">Independent education, career, and migration advice from Perth, Western Australia; Since 1998.</p>
             </div>
 
             {{-- Services --}}
@@ -28,8 +28,8 @@
             <div>
                 <h3 class="text-base-900 font-semibold text-sm mb-4 uppercase tracking-wider">Programmes</h3>
                 <ul class="space-y-2 text-sm">
-                    <li><a href="{{ route('programs.buddy-programme') }}" class="text-base-500 hover:text-primary-700 transition-colors">Buddy Programme</a></li>
                     <li><a href="{{ route('programs.study-tours') }}" class="text-base-500 hover:text-primary-700 transition-colors">Study Tours</a></li>
+                    <li><a href="{{ route('programs.study-abroad') }}" class="text-base-500 hover:text-primary-700 transition-colors">Study Abroad</a></li>
                     <li><a href="{{ route('programs.executive-internship') }}" class="text-base-500 hover:text-primary-700 transition-colors">Executive Internship</a></li>
                 </ul>
             </div>

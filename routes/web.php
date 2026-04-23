@@ -53,8 +53,8 @@ Route::prefix('services')->name('services.')->group(function () {
 // Programs
 Route::prefix('programs')->name('programs.')->group(function () {
     Route::get('/', [PageController::class, 'show'])->name('index')->defaults('label', 'Programs');
-    Route::get('/buddy-programme', [PageController::class, 'show'])->name('buddy-programme')->defaults('label', 'Buddy Programme');
     Route::get('/study-tours', [PageController::class, 'show'])->name('study-tours')->defaults('label', 'Study Tours');
+    Route::get('/study-abroad', [PageController::class, 'show'])->name('study-abroad')->defaults('label', 'Study Abroad');
 
     Route::get('/executive-internship', [PageController::class, 'show'])->name('executive-internship')->defaults('label', 'Executive Internship');
 });

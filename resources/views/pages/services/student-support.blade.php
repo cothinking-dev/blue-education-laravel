@@ -20,7 +20,7 @@
                     </div>
                     <h3 class="font-bold text-base-900 mb-2">Accommodation</h3>
                     <p class="text-base-600 text-sm leading-relaxed mb-3 text-pretty">Vetted homestay families through the Australian Homestay Network. Safe, supportive living environment. Meals included. Short-term and long-term arrangements available.</p>
-                    <a href="{{ route('programs.buddy-programme') }}" class="text-primary-800 font-medium text-sm hover:underline">See Buddy Programme homestay &rarr;</a>
+                    <a href="{{ route('programs.study-tours') }}" class="text-primary-800 font-medium text-sm hover:underline">See Buddy Programme homestay &rarr;</a>
                 </div>
 
                 <div class="border border-base-200 rounded-corner-lg p-6">
@@ -126,7 +126,7 @@
 
     {{-- §7 Explore More --}}
     <x-next-steps bg="bg-white" :links="[
-        ['href' => route('programs.buddy-programme'), 'icon' => 'heroicon-o-users', 'title' => 'Buddy Programme', 'description' => 'Peer support, homestay, and cultural mentorship for new arrivals.'],
+        ['href' => route('programs.study-tours'), 'icon' => 'heroicon-o-users', 'title' => 'Buddy Programme', 'description' => 'Peer support, homestay, and cultural mentorship for new arrivals.'],
         ['href' => route('services.migration.student-visas'), 'icon' => 'heroicon-o-document-check', 'title' => 'Student visa support', 'description' => 'Application management, compliance, and renewal assistance.'],
     ]" />
 
