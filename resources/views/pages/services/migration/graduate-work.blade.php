@@ -251,16 +251,16 @@
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
             <div class="flex flex-col lg:flex-row gap-10">
                 {{-- Important note for employers --}}
-                <div class="flex-1" data-animate="fade-up">
-                    <h3 class="text-xl font-bold text-base-900 mb-4">Important note for employers</h3>
-                    <div class="bg-amber-50 border border-amber-200 rounded-corner-lg p-6 overflow-hidden">
-                        <img src="{{ asset('images/services-migration-graduate-work/employer-handshake.webp') }}"
-                             alt="Employer and job candidate shaking hands after a successful interview"
-                             class="-mx-6 -mt-6 mb-5 w-[calc(100%+3rem)] h-48 object-cover">
-                        <p class="text-base-700 text-sm leading-relaxed mb-3 text-pretty">One of the most common misunderstandings about employer-sponsored visas is that only the worker needs to apply.</p>
-                        <p class="text-base-700 text-sm leading-relaxed text-pretty">In reality, the employer may first need to <strong>become an approved sponsor</strong>, then <strong>nominate the role</strong>, before the worker can lodge their visa application. This is why employer-sponsored migration needs planning on both sides.</p>
-                    </div>
-                </div>
+                <x-card class="flex-1"
+                        title="Important note for employers"
+                        :image="asset('images/services-migration-graduate-work/employer-handshake.webp')"
+                        alt="Employer and job candidate shaking hands after a successful interview"
+                        :gradient="true"
+                        aspect="16/9"
+                        data-animate="fade-up">
+                    <p class="text-base-600 leading-relaxed mb-3 text-pretty">One of the most common misunderstandings about employer-sponsored visas is that only the worker needs to apply.</p>
+                    <p class="text-base-600 leading-relaxed text-pretty">In reality, the employer may first need to <strong>become an approved sponsor</strong>, then <strong>nominate the role</strong>, before the worker can lodge their visa application. This is why employer-sponsored migration needs planning on both sides.</p>
+                </x-card>
 
                 {{-- How we help — dark CTA --}}
                 <div class="flex-1" data-animate="fade-up">
