@@ -222,6 +222,21 @@
                         <div class="hidden lg:flex absolute left-1/2 top-6 -translate-x-1/2 w-8 h-8 rounded-full bg-primary-800 text-white items-center justify-center text-xs font-bold z-10">4</div>
                     </div>
 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {{-- Visual break — splits requirements into two halves --}}
+    <x-visual-break />
+
+    <section class="bg-base-50">
+        <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
+            <div class="relative">
+                {{-- Timeline connector (continued) --}}
+                <div class="hidden lg:block absolute left-1/2 top-0 bottom-0 w-0.5 bg-primary-100 -translate-x-1/2"></div>
+                <div class="space-y-10">
+
                     {{-- 5. Financial capacity — LEFT --}}
                     <div class="relative lg:grid lg:grid-cols-2 lg:gap-12 items-start" data-animate="fade-up">
                         <div class="lg:text-left">
@@ -450,12 +465,12 @@
                     <p class="text-primary-100 leading-relaxed mb-6 text-pretty">Studying in Australia is more than just getting a visa approved — it's about feeling supported while you settle in, study and plan your next steps. Blue Education is based in Perth with partners around Australia, so you have a local team you can turn to throughout your journey.</p>
 
                     <p class="text-white font-semibold mb-3">We can help with:</p>
-                    <ul class="space-y-3 text-primary-100 leading-relaxed mb-6">
-                        <li class="flex items-start gap-3"><span class="w-6 h-6 rounded-full bg-white/10 text-primary-300 flex items-center justify-center shrink-0 mt-0.5 text-xs font-bold">1</span>Arrival and orientation, including on-boarding sessions so you understand your new city, your campus and your visa conditions.</li>
-                        <li class="flex items-start gap-3"><span class="w-6 h-6 rounded-full bg-white/10 text-primary-300 flex items-center justify-center shrink-0 mt-0.5 text-xs font-bold">2</span>Accommodation options, such as homestay, student housing or other arrangements that suit your budget and needs.</li>
-                        <li class="flex items-start gap-3"><span class="w-6 h-6 rounded-full bg-white/10 text-primary-300 flex items-center justify-center shrink-0 mt-0.5 text-xs font-bold">3</span>Ongoing check-ins and welfare support, so you have someone to speak with if you need guidance or run into any issues.</li>
-                        <li class="flex items-start gap-3"><span class="w-6 h-6 rounded-full bg-white/10 text-primary-300 flex items-center justify-center shrink-0 mt-0.5 text-xs font-bold">4</span>Study, migration and career planning if you want to change courses, extend your studies, or explore post-study work and skilled migration pathways.</li>
-                    </ul>
+                    <x-icon-list variant="check" theme="dark" class="mb-6">
+                        <x-icon-list.item>Arrival and orientation, including on-boarding sessions so you understand your new city, your campus and your visa conditions.</x-icon-list.item>
+                        <x-icon-list.item>Accommodation options, such as homestay, student housing or other arrangements that suit your budget and needs.</x-icon-list.item>
+                        <x-icon-list.item>Ongoing check-ins and welfare support, so you have someone to speak with if you need guidance or run into any issues.</x-icon-list.item>
+                        <x-icon-list.item>Study, migration and career planning if you want to change courses, extend your studies, or explore post-study work and skilled migration pathways.</x-icon-list.item>
+                    </x-icon-list>
 
                     <p class="text-primary-200 text-sm text-pretty">Once you arrive in Australia, you are not on your own — you have a team in Perth that understands international student life and is here to support you from your first week through to graduation and beyond.</p>
 
@@ -489,21 +504,21 @@
                         <x-heroicon-o-briefcase class="w-5 h-5" />
                     </div>
                     <h3 class="font-bold text-base-900 mb-2">Post-Study Work Visa</h3>
-                    <p class="text-base-600 text-sm leading-relaxed">Subclass 485 — 2 years for bachelor's and master's coursework graduates, 3 years for master's research and doctoral graduates.</p>
+                    <p class="text-base-600 text-sm leading-relaxed text-pretty">Subclass 485 — 2 years for bachelor's and master's coursework graduates, 3 years for master's research and doctoral graduates.</p>
                 </div>
                 <div class="border border-base-200 rounded-corner-lg p-6">
                     <div class="w-10 h-10 rounded-full bg-primary-50 text-primary-800 flex items-center justify-center mb-3">
                         <x-heroicon-o-building-office class="w-5 h-5" />
                     </div>
                     <h3 class="font-bold text-base-900 mb-2">Temporary Skill Shortage</h3>
-                    <p class="text-base-600 text-sm leading-relaxed">Subclass 482 — for graduates with an employer willing to sponsor, with pathways to permanent residence.</p>
+                    <p class="text-base-600 text-sm leading-relaxed text-pretty">Subclass 482 — for graduates with an employer willing to sponsor, with pathways to permanent residence.</p>
                 </div>
                 <div class="border border-base-200 rounded-corner-lg p-6">
                     <div class="w-10 h-10 rounded-full bg-primary-50 text-primary-800 flex items-center justify-center mb-3">
                         <x-heroicon-o-home class="w-5 h-5" />
                     </div>
                     <h3 class="font-bold text-base-900 mb-2">Employer Nomination Scheme</h3>
-                    <p class="text-base-600 text-sm leading-relaxed">A direct pathway to permanent residence for skilled workers with employer support.</p>
+                    <p class="text-base-600 text-sm leading-relaxed text-pretty">A direct pathway to permanent residence for skilled workers with employer support.</p>
                 </div>
             </div>
 
