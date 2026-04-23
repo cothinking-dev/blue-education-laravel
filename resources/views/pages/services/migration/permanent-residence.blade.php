@@ -146,7 +146,7 @@
             <p class="text-base-600 leading-relaxed mb-6 max-w-3xl text-pretty">A Designated Area Migration Agreement (DAMA) is a formal arrangement between the Australian Government and a regional, state or territory authority. It allows local employers to sponsor overseas workers in occupations or under conditions that fall outside the standard skilled visa programs. DAMA is not the first option for every graduate or employer, but for the right occupation and location it can open doors that standard skilled visas do not.</p>
 
             <div class="space-y-3">
-                <details class="group border border-base-200 rounded-corner-lg overflow-hidden bg-white transition-shadow hover:shadow-sm">
+                <details open class="group border border-base-200 rounded-corner-lg overflow-hidden bg-white transition-shadow hover:shadow-sm">
                     <summary class="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer select-none bg-base-50 hover:bg-base-100 transition-colors">
                         <span class="font-semibold text-base-900 text-sm">When is it worth considering a DAMA pathway?</span>
                         <x-heroicon-m-chevron-down class="w-5 h-5 text-base-400 shrink-0 transition-transform duration-200 group-open:rotate-180" aria-hidden="true" />
