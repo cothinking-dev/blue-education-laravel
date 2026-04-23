@@ -3,10 +3,12 @@
     "private": true,
     "type": "module",
     "scripts": {
+        "_lerd-note": "echo \"@rollup/rollup-linux-arm64-musl in devDeps is required for Lerd container (Alpine/musl) - do not remove\"",
         "build": "vite build",
         "dev": "vite"
     },
     "devDependencies": {
+        "@rollup/rollup-linux-arm64-musl": "^4.60.2",
         "@tailwindcss/vite": "^4.0.0",
         "concurrently": "^9.0.1",
         "instruckt": "^0.4.32",

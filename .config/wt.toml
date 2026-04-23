@@ -1,5 +1,3 @@
-# Worktrunk configuration for Laravel + Lerd + git worktrees
-
 [[pre-start]]
 copy = "wt step copy-ignored"
 
@@ -10,19 +8,10 @@ lerd = "cd {{ worktree_path }} && lerd link {{ branch | sanitize }}.blue-educati
 [[pre-start]]
 database = "cd {{ worktree_path }} && touch database/database.sqlite && php artisan migrate:fresh --seed --no-interaction"
 storage = "cd {{ worktree_path }} && php artisan storage:link --no-interaction"
-build = "cd {{ worktree_path }} && npm run build"
-
-[post-start]
-vite = "cd {{ worktree_path }} && npm run dev -- --port {{ branch | hash_port }}"
-queue = "cd {{ worktree_path }} && php artisan queue:listen --tries=1 --timeout=0"
-pail = "cd {{ worktree_path }} && php artisan pail --timeout=0"
 
 [[pre-remove]]
 lerd-unsecure = "cd {{ worktree_path }} && lerd unsecure || true"
 lerd-unlink = "cd {{ worktree_path }} && lerd unlink || true"
-
-[[pre-remove]]
-database = "rm -f {{ worktree_path }}/database/database.sqlite"
 
 [list]
 url = "{% if branch == 'main' %}https://blue-education-laravel.test{% else %}https://{{ branch | sanitize }}.blue-education-laravel.test{% endif %}"
