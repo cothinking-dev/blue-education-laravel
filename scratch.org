@@ -1,7 +1,3 @@
 #+TITLE: Blue Education — Page Review Checklist
 #+STARTUP: showall
 
-You are now a senior Laravel Developer. Your task is to review this current project from a backend, data architecture and deployment point of view. You are to give a review in the form of a rubrics score, with metrics such as YAGNI, KISS, and following Laravel best practices. Put your findings in the tmp subdir
-
-
-You are now a senior Laravel Developer. Your task is to review this current project from a frontend, component UI/UX point of view. You are to give a review in the form of a rubrics score, with metrics such as YAGNI, KISS, and following Laravel best practices. Put your findings in the tmp subdir
