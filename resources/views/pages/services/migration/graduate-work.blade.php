@@ -65,35 +65,35 @@
                         <x-heroicon-o-home-modern class="w-6 h-6" />
                     </div>
                     <h4 class="font-semibold text-base-900 mb-1">Live in Australia</h4>
-                    <p class="text-base-600 text-sm leading-relaxed">Live in Australia temporarily after you complete your eligible course.</p>
+                    <p class="text-base-600 text-sm leading-relaxed text-pretty">Live in Australia temporarily after you complete your eligible course.</p>
                 </div>
                 <div class="rounded-corner-lg p-6 bg-emerald-50 flex flex-col items-start">
                     <div class="w-12 h-12 rounded-full bg-emerald-100 text-emerald-800 flex items-center justify-center mb-4">
                         <x-heroicon-o-briefcase class="w-6 h-6" />
                     </div>
                     <h4 class="font-semibold text-base-900 mb-1">Work full-time</h4>
-                    <p class="text-base-600 text-sm leading-relaxed">Work full-time and gain Australian work experience.</p>
+                    <p class="text-base-600 text-sm leading-relaxed text-pretty">Work full-time and gain Australian work experience.</p>
                 </div>
                 <div class="rounded-corner-lg p-6 bg-amber-50 flex flex-col items-start">
                     <div class="w-12 h-12 rounded-full bg-amber-100 text-amber-800 flex items-center justify-center mb-4">
                         <x-heroicon-o-academic-cap class="w-6 h-6" />
                     </div>
                     <h4 class="font-semibold text-base-900 mb-1">Study further</h4>
-                    <p class="text-base-600 text-sm leading-relaxed">Study further if you want to upskill or change direction.</p>
+                    <p class="text-base-600 text-sm leading-relaxed text-pretty">Study further if you want to upskill or change direction.</p>
                 </div>
                 <div class="rounded-corner-lg p-6 bg-violet-50 flex flex-col items-start">
                     <div class="w-12 h-12 rounded-full bg-violet-100 text-violet-800 flex items-center justify-center mb-4">
                         <x-heroicon-o-user-group class="w-6 h-6" />
                     </div>
                     <h4 class="font-semibold text-base-900 mb-1">Include family</h4>
-                    <p class="text-base-600 text-sm leading-relaxed">Include eligible family members in your application.</p>
+                    <p class="text-base-600 text-sm leading-relaxed text-pretty">Include eligible family members in your application.</p>
                 </div>
                 <div class="rounded-corner-lg p-6 bg-sky-50 flex flex-col items-start sm:col-span-2 lg:col-span-1 lg:mx-0 sm:mx-auto sm:max-w-sm lg:max-w-none">
                     <div class="w-12 h-12 rounded-full bg-sky-100 text-sky-800 flex items-center justify-center mb-4">
                         <x-heroicon-o-arrow-trending-up class="w-6 h-6" />
                     </div>
                     <h4 class="font-semibold text-base-900 mb-1">Build your visa pathway</h4>
-                    <p class="text-base-600 text-sm leading-relaxed">Use your Australian work history to support future skilled or employer-sponsored visa options. <a href="{{ route('services.migration.permanent-residence') }}" class="text-primary-800 hover:underline font-medium">Migration pathways &rarr;</a></p>
+                    <p class="text-base-600 text-sm leading-relaxed text-pretty">Use your Australian work history to support future skilled or employer-sponsored visa options. <a href="{{ route('services.migration.permanent-residence') }}" class="text-primary-800 hover:underline font-medium">Migration pathways &rarr;</a></p>
                 </div>
             </div>
 
@@ -108,32 +108,15 @@
                 {{-- Eligibility — contained reference card --}}
                 <div class="flex-1" data-animate="fade-up">
                     <h3 class="text-xl font-bold text-base-900 mb-4">Eligibility snapshot</h3>
-                    <div class="bg-white rounded-corner-lg border border-base-200 p-6">
-                        <p class="text-base-600 text-sm mb-4 text-pretty">Requirements differ by stream, but common elements include:</p>
-                        <ul class="space-y-3">
-                            <li class="flex items-start gap-3">
-                                <span class="w-6 h-6 rounded-full bg-primary-100 text-primary-800 flex items-center justify-center shrink-0 mt-0.5 text-xs font-bold">1</span>
-                                <p class="text-base-600 text-sm">Being under the relevant <strong>age limit</strong> at the time of application</p>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <span class="w-6 h-6 rounded-full bg-primary-100 text-primary-800 flex items-center justify-center shrink-0 mt-0.5 text-xs font-bold">2</span>
-                                <p class="text-base-600 text-sm">Holding, or having held, an <strong>eligible student visa</strong></p>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <span class="w-6 h-6 rounded-full bg-primary-100 text-primary-800 flex items-center justify-center shrink-0 mt-0.5 text-xs font-bold">3</span>
-                                <p class="text-base-600 text-sm">Completing a <strong>CRICOS-registered course</strong> meeting the Australian Study Requirement</p>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <span class="w-6 h-6 rounded-full bg-primary-100 text-primary-800 flex items-center justify-center shrink-0 mt-0.5 text-xs font-bold">4</span>
-                                <p class="text-base-600 text-sm">Meeting <strong>English language, health and character</strong> requirements</p>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <span class="w-6 h-6 rounded-full bg-primary-100 text-primary-800 flex items-center justify-center shrink-0 mt-0.5 text-xs font-bold">5</span>
-                                <p class="text-base-600 text-sm">For some streams, a qualification on the <strong>skilled list</strong> and a Provisional Skills Assessment (PSA)</p>
-                            </li>
-                        </ul>
-                        <p class="text-xs text-base-500 mt-4 text-pretty">Because the rules are detailed and change over time, we always look at your individual study history, visa history and goals before recommending a pathway.</p>
-                    </div>
+                    <p class="text-base-600 text-sm mb-4 text-pretty">Requirements differ by stream, but common elements include:</p>
+                    <x-definition-grid :columns="1" :items="[
+                        ['term' => 'Age limit', 'description' => 'Being under the relevant age limit at the time of application'],
+                        ['term' => 'Eligible student visa', 'description' => 'Holding, or having held, an eligible student visa'],
+                        ['term' => 'CRICOS-registered course', 'description' => 'Completing a CRICOS-registered course meeting the Australian Study Requirement'],
+                        ['term' => 'English, health and character', 'description' => 'Meeting English language, health and character requirements'],
+                        ['term' => 'Skills assessment (some streams)', 'description' => 'For some streams, a qualification on the skilled list and a Provisional Skills Assessment (PSA)'],
+                    ]" />
+                    <p class="text-xs text-base-500 mt-4 text-pretty">Because the rules are detailed and change over time, we always look at your individual study history, visa history and goals before recommending a pathway.</p>
                 </div>
 
                 {{-- How we help — warm CTA block --}}
@@ -180,8 +163,8 @@
                     <span class="self-start text-xs font-medium px-2.5 py-0.5 rounded-full bg-primary-100 text-primary-800 mb-2">Temporary</span>
                     <h4 class="text-lg font-bold text-base-900 mb-2">Skills in Demand Visa (Subclass 482)</h4>
                     <p class="text-base-600 text-sm leading-relaxed mb-4 text-pretty">The subclass 482 visa is a temporary employer-sponsored visa for skilled workers nominated by an approved employer. It allows eligible workers to live and work in Australia in a nominated role, and for many applicants it becomes the first step in an employer-sponsored migration pathway.</p>
-                    <div class="border-t border-base-200 pt-4 mt-auto">
-                        <p class="text-[11px] font-semibold text-primary-700 uppercase tracking-wide mb-2">Who this may suit</p>
+                    <div class="bg-base-50 rounded-corner p-3 mt-auto">
+                        <p class="text-[11px] font-semibold text-primary-700 uppercase tracking-wide mb-1.5">Who this may suit</p>
                         <p class="text-base-600 text-sm leading-relaxed text-pretty">This option may suit graduates who have secured a job offer from an employer willing to sponsor them in an eligible occupation. The exact requirements depend on the stream, occupation, salary level and your background.</p>
                     </div>
                 </div>
@@ -192,8 +175,8 @@
                     <span class="self-start text-xs font-medium px-2.5 py-0.5 rounded-full bg-emerald-100 text-emerald-800 mb-2">Regional</span>
                     <h4 class="text-lg font-bold text-base-900 mb-2">Skilled Employer Sponsored Regional (Subclass 494)</h4>
                     <p class="text-base-600 text-sm leading-relaxed mb-4 text-pretty">The subclass 494 visa is for skilled workers who are nominated by an eligible employer in a designated regional area of Australia. It is a provisional visa and can provide a pathway to permanent residence for eligible applicants who continue to meet the requirements.</p>
-                    <div class="border-t border-base-200 pt-4 mt-auto">
-                        <p class="text-[11px] font-semibold text-emerald-700 uppercase tracking-wide mb-2">When this is relevant</p>
+                    <div class="bg-base-50 rounded-corner p-3 mt-auto">
+                        <p class="text-[11px] font-semibold text-emerald-700 uppercase tracking-wide mb-1.5">When this is relevant</p>
                         <p class="text-base-600 text-sm leading-relaxed text-pretty">This pathway can be relevant if you are working or planning to work in regional Australia and have an employer ready to support your application in a genuine regional position.</p>
                     </div>
                 </div>
@@ -204,8 +187,8 @@
                     <span class="self-start text-xs font-medium px-2.5 py-0.5 rounded-full bg-amber-100 text-amber-800 mb-2">Permanent</span>
                     <h4 class="text-lg font-bold text-base-900 mb-2">Employer Nomination Scheme (Subclass 186)</h4>
                     <p class="text-base-600 text-sm leading-relaxed mb-4 text-pretty">The subclass 186 visa is a permanent employer-sponsored visa for eligible skilled workers nominated by an Australian employer. Depending on the stream, this may be an option for applicants who already have employer-sponsored work experience in Australia or who meet direct entry criteria.</p>
-                    <div class="border-t border-base-200 pt-4 mt-auto">
-                        <p class="text-[11px] font-semibold text-amber-700 uppercase tracking-wide mb-2">Worth knowing</p>
+                    <div class="bg-base-50 rounded-corner p-3 mt-auto">
+                        <p class="text-[11px] font-semibold text-amber-700 uppercase tracking-wide mb-1.5">Worth knowing</p>
                         <p class="text-base-600 text-sm leading-relaxed text-pretty">This is not an automatic next step for every graduate, but for the right applicant and employer, it may become part of a longer-term strategy towards permanent residence.</p>
                     </div>
                 </div>
@@ -224,7 +207,7 @@
                     </div>
                     <span class="text-xs font-bold text-primary-800 mb-1">Step 1</span>
                     <h4 class="font-semibold text-base-900 mb-2">Employer sponsorship eligibility</h4>
-                    <p class="text-base-600 text-sm leading-relaxed">Before sponsoring a worker, the employer usually needs to be approved by the Department of Home Affairs as a sponsor. This is a separate step from the worker's visa application.</p>
+                    <p class="text-base-600 text-sm leading-relaxed text-pretty">Before sponsoring a worker, the employer usually needs to be approved by the Department of Home Affairs as a sponsor. This is a separate step from the worker's visa application.</p>
                 </div>
                 <div class="rounded-corner-lg p-6 bg-emerald-50 flex flex-col items-start">
                     <div class="w-12 h-12 rounded-full bg-emerald-100 text-emerald-800 flex items-center justify-center mb-4">
@@ -232,7 +215,7 @@
                     </div>
                     <span class="text-xs font-bold text-emerald-800 mb-1">Step 2</span>
                     <h4 class="font-semibold text-base-900 mb-2">Nomination of the role</h4>
-                    <p class="text-base-600 text-sm leading-relaxed">The employer then nominates the position they want to fill, and the role must meet the relevant visa criteria, including occupation and salary requirements.</p>
+                    <p class="text-base-600 text-sm leading-relaxed text-pretty">The employer then nominates the position they want to fill, and the role must meet the relevant visa criteria, including occupation and salary requirements.</p>
                 </div>
                 <div class="rounded-corner-lg p-6 bg-amber-50 flex flex-col items-start">
                     <div class="w-12 h-12 rounded-full bg-amber-100 text-amber-800 flex items-center justify-center mb-4">
@@ -240,7 +223,7 @@
                     </div>
                     <span class="text-xs font-bold text-amber-800 mb-1">Step 3</span>
                     <h4 class="font-semibold text-base-900 mb-2">Visa application by the worker</h4>
-                    <p class="text-base-600 text-sm leading-relaxed">Once the sponsorship and nomination requirements are in place, the worker can proceed with the visa application and must meet the criteria including English, skills, health and character requirements.</p>
+                    <p class="text-base-600 text-sm leading-relaxed text-pretty">Once the sponsorship and nomination requirements are in place, the worker can proceed with the visa application and must meet the criteria including English, skills, health and character requirements.</p>
                 </div>
             </div>
         </div>
@@ -297,10 +280,6 @@
                         <x-icon-list.item>Confirm you follow Australian <strong>workplace and anti-discrimination laws</strong>, and that there is no serious negative information about your business</x-icon-list.item>
                     </x-icon-list>
 
-                    <div class="mt-8 bg-primary-50 border border-primary-100 rounded-corner-lg p-6 sm:p-8 flex flex-col gap-4 items-start">
-                        <p class="text-base-800 font-medium text-pretty">We can help employers understand whether SBS is right for them, gather the core documents, and walk through the application so the information you provide is clear, consistent and aligned with current sponsorship obligations.</p>
-                        <a href="{{ route('contact') }}" class="inline-flex items-center justify-center px-6 py-2.5 rounded-corner bg-primary-800 text-white text-sm font-semibold hover:bg-primary-700 transition-colors whitespace-nowrap">Talk to Us About SBS &rarr;</a>
-                    </div>
                 </div>
 
                 {{-- Image — 1/3 width, sticky on desktop so it tracks with the content --}}
@@ -311,6 +290,16 @@
                          loading="lazy">
                 </div>
             </div>
+        </div>
+    </section>
+
+    {{-- §3e SBS CTA --}}
+    <section class="bg-white">
+        <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
+            <x-callout title="Need help with SBS?" variant="primary">
+                <p class="text-sm mb-3 text-pretty">We can help employers understand whether SBS is right for them, gather the core documents, and walk through the application so the information you provide is clear, consistent and aligned with current sponsorship obligations.</p>
+                <a href="{{ route('contact') }}" class="inline-flex items-center gap-1 text-sm font-semibold text-primary-800 hover:text-primary-600 transition-colors">Talk to Us About SBS &rarr;</a>
+            </x-callout>
         </div>
     </section>
 
