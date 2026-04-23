@@ -13,7 +13,13 @@
     <section class="bg-white">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
             <h2 class="text-3xl font-bold text-base-900 mb-4 text-pretty" data-animate="fade-up">Employability Booster Programme (EBP)</h2>
-            <p class="text-base-600 leading-relaxed mb-10 max-w-3xl text-pretty">Our Employability Booster Programme (EBP) is a 6-phase approach. We assist in the initial phases of Assessment and Readiness so you can position yourself better in the job marketplace. If you need us to connect you with potential employers or relevant host companies, we guide you through the rest of the programme, from Profiling all the way to Review.</p>
+            <p class="text-base-600 leading-relaxed mb-8 max-w-3xl text-pretty">Our Employability Booster Programme (EBP) is a 6-phase approach. We assist in the initial phases of Assessment and Readiness so you can position yourself better in the job marketplace. If you need us to connect you with potential employers or relevant host companies, we guide you through the rest of the programme, from Profiling all the way to Review.</p>
+
+            {{-- EBP diagram --}}
+            <img src="{{ asset('images/services-career/ebp-phases.webp') }}"
+                 alt="Employability Booster Programme: 6-phase diagram showing Assessment, Readiness, Profiling, Preparation, Placement and Review"
+                 class="w-full max-w-2xl mx-auto rounded-corner-lg mb-12"
+                 loading="lazy">
 
             {{-- Alternating zigzag timeline --}}
             <div class="relative">
@@ -31,7 +37,6 @@
                                     </div>
                                     <h3 class="font-bold text-base-900">Assessment</h3>
                                 </div>
-                                <p class="text-base-700 text-sm font-medium mb-2">Review of candidate's requirements, background and job readiness.</p>
                                 <ul class="text-base-600 text-sm leading-relaxed space-y-1.5">
                                     <li>Initial interview to ascertain candidate's strengths and areas for improvement</li>
                                     <li>Candidate to complete Initial Placement Questionnaire (IPQ)</li>
@@ -54,7 +59,6 @@
                                     </div>
                                     <h3 class="font-bold text-base-900">Readiness</h3>
                                 </div>
-                                <p class="text-base-700 text-sm font-medium mb-2">Ascertain candidate's inclination towards being 'ready' for employment.</p>
                                 <ul class="text-base-600 text-sm leading-relaxed space-y-1.5">
                                     <li>Assist with the preparation of a professional CV</li>
                                     <li>Provide additional support: presence in LinkedIn, tips on presentation and image, and understanding of cultural context</li>
@@ -74,7 +78,6 @@
                                     </div>
                                     <h3 class="font-bold text-base-900">Profiling</h3>
                                 </div>
-                                <p class="text-base-700 text-sm font-medium mb-2">Assess candidate's requirements and match with potential employers.</p>
                                 <ul class="text-base-600 text-sm leading-relaxed space-y-1.5">
                                     <li>Research on shortlisted employers</li>
                                     <li>Develop letters and templates of approach</li>
@@ -97,7 +100,6 @@
                                     </div>
                                     <h3 class="font-bold text-base-900">Preparation</h3>
                                 </div>
-                                <p class="text-base-700 text-sm font-medium mb-2">Get candidate ready and positioned for interviews in the job marketplace.</p>
                                 <ul class="text-base-600 text-sm leading-relaxed space-y-1.5">
                                     <li>Work with candidate to develop a target list of potential employers</li>
                                     <li>Shortlist and prioritise employers to approach</li>
@@ -117,7 +119,6 @@
                                     </div>
                                     <h3 class="font-bold text-base-900">Placement</h3>
                                 </div>
-                                <p class="text-base-700 text-sm font-medium mb-2">Facilitate opportunities for internship and interviews.</p>
                                 <ul class="text-base-600 text-sm leading-relaxed space-y-1.5">
                                     <li>Assist in lining up interviews and internship</li>
                                     <li>Assist candidate to prepare for interviews, provide feedback and action plans</li>
@@ -139,7 +140,6 @@
                                     </div>
                                     <h3 class="font-bold text-base-900">Review</h3>
                                 </div>
-                                <p class="text-base-700 text-sm font-medium mb-2">Gain feedback on candidate's performance.</p>
                                 <ul class="text-base-600 text-sm leading-relaxed space-y-1.5">
                                     <li>Contact employer, or the companies who have interviewed or hired candidate to obtain feedback</li>
                                     <li>Provide feedback to candidate</li>
