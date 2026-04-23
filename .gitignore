@@ -25,3 +25,6 @@ Homestead.yaml
 Thumbs.db
 /.agent-shell/
 .env.before_lerd
+/.ai/
+/database/database.sqlite
+/database/database.sqlite-journal
