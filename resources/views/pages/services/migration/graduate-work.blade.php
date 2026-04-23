@@ -6,7 +6,7 @@
             subtitle="The same team that supported your student visa can also guide you through your post-study options. That includes post-study work visas (Subclass 485), employer-sponsored visas (Subclass 482) and Employer Nomination Scheme pathways. We help you understand your choices and plan your next steps in Australia."
             :image="asset('images/heroes/services-migration-graduate-work.webp')"
             alt="East Asian businesswoman arriving confidently at a modern office"
-            position="top"
+            variant="left"
             :breadcrumbs="true" />
 
     {{-- §2a Temporary Graduate Visa (Subclass 485) — Intro + Streams --}}
@@ -294,7 +294,7 @@
     </section>
 
     {{-- §3e SBS CTA --}}
-    <section class="bg-white">
+    <section class="bg-base-50">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
             <x-callout title="Need help with SBS?" variant="primary">
                 <p class="text-sm mb-3 text-pretty">We can help employers understand whether SBS is right for them, gather the core documents, and walk through the application so the information you provide is clear, consistent and aligned with current sponsorship obligations.</p>

@@ -222,21 +222,6 @@
                         <div class="hidden lg:flex absolute left-1/2 top-6 -translate-x-1/2 w-8 h-8 rounded-full bg-primary-800 text-white items-center justify-center text-xs font-bold z-10">4</div>
                     </div>
 
-                </div>
-            </div>
-        </div>
-    </section>
-
-    {{-- Visual break — splits requirements into two halves --}}
-    <x-visual-break />
-
-    <section class="bg-base-50">
-        <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
-            <div class="relative">
-                {{-- Timeline connector (continued) --}}
-                <div class="hidden lg:block absolute left-1/2 top-0 bottom-0 w-0.5 bg-primary-100 -translate-x-1/2"></div>
-                <div class="space-y-10">
-
                     {{-- 5. Financial capacity — LEFT --}}
                     <div class="relative lg:grid lg:grid-cols-2 lg:gap-12 items-start" data-animate="fade-up">
                         <div class="lg:text-left">

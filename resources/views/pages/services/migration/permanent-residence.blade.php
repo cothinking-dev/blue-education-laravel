@@ -134,7 +134,7 @@
     </section>
 
     {{-- §5 What Comes Next? --}}
-    <x-next-steps title="What Comes Next?" subtitle="Permanent residence changes what is possible, from how long you can stay to the types of work and study you can take on. Once your status is confirmed, you can focus on building the life and career you want in Australia." :links="[
+    <x-next-steps bg="bg-white" title="What Comes Next?" subtitle="Permanent residence changes what is possible, from how long you can stay to the types of work and study you can take on. Once your status is confirmed, you can focus on building the life and career you want in Australia." :links="[
         ['href' => route('services.career'), 'icon' => 'heroicon-o-rocket-launch', 'title' => 'Explore career and job-ready support', 'description' => 'Career counselling, resume and interview preparation, job search strategies, internships and work opportunities, tailored for new graduates and new migrants.'],
         ['href' => route('contact'), 'icon' => 'heroicon-o-chat-bubble-left-right', 'title' => 'Talk to a migration agent', 'description' => 'Get a clear, honest view of your longer-term visa options, timelines and obligations, so you know how permanent residence fits into your wider study, work and family plans.'],
     ]" />
