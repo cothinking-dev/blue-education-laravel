@@ -13,7 +13,7 @@
     <section class="bg-white">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
             <x-section-heading title="Pathways to Permanent Residence" :centered="false" />
-            <div class="space-y-5" data-animate="stagger">
+            <div class="space-y-8" data-animate="stagger">
 
                 {{-- Skilled Migration --}}
                 <div class="border border-base-200 rounded-corner-lg p-6 bg-white">
@@ -32,12 +32,12 @@
                         </div>
                         <div class="flex-1">
                             <p class="text-base-600 text-sm leading-relaxed mb-3 text-pretty">Points-based system assessing age, English proficiency, qualifications, and work experience.</p>
-                            <div class="flex flex-wrap gap-2 mb-3">
-                                <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-primary-50 text-primary-800">Skills assessment</span>
-                                <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-primary-50 text-primary-800">EOI preparation</span>
-                                <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-primary-50 text-primary-800">State nomination</span>
-                                <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-primary-50 text-primary-800">Points optimisation</span>
-                            </div>
+                            <x-icon-list variant="check" class="mb-3">
+                                <x-icon-list.item>Skills assessment</x-icon-list.item>
+                                <x-icon-list.item>EOI preparation</x-icon-list.item>
+                                <x-icon-list.item>State nomination</x-icon-list.item>
+                                <x-icon-list.item>Points optimisation</x-icon-list.item>
+                            </x-icon-list>
                             <div class="bg-amber-50 border border-amber-200 rounded-corner p-3">
                                 <p class="text-amber-800 text-sm font-medium text-pretty">If your points are too low, our experts can guide you through your next steps.</p>
                             </div>
@@ -63,11 +63,11 @@
                         </div>
                         <div class="flex-1">
                             <p class="text-base-600 text-sm leading-relaxed mb-3 text-pretty">Your employer nominates you for permanent or temporary residence. We manage the full process.</p>
-                            <div class="flex flex-wrap gap-2 mb-3">
-                                <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-primary-50 text-primary-800">Nomination application</span>
-                                <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-primary-50 text-primary-800">Labour market testing</span>
-                                <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-primary-50 text-primary-800">Sponsorship compliance</span>
-                            </div>
+                            <x-icon-list variant="check" class="mb-3">
+                                <x-icon-list.item>Nomination application</x-icon-list.item>
+                                <x-icon-list.item>Labour market testing</x-icon-list.item>
+                                <x-icon-list.item>Sponsorship compliance</x-icon-list.item>
+                            </x-icon-list>
                             <div class="bg-amber-50 border border-amber-200 rounded-corner p-3">
                                 <p class="text-amber-800 text-sm font-medium text-pretty">The 482 visa has no fixed age limit, but permanent visas you may aim for afterwards (including 186 pathways) often have a threshold around 45. We assess the 482 as part of a broader strategy, not in isolation.</p>
                             </div>
@@ -91,11 +91,11 @@
                         </div>
                         <div class="flex-1">
                             <p class="text-base-600 text-sm leading-relaxed mb-3 text-pretty">Partner, parent, and family reunification pathways — including representation if an application requires review.</p>
-                            <div class="flex flex-wrap gap-2">
-                                <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-primary-50 text-primary-800">Relationship evidence</span>
-                                <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-primary-50 text-primary-800">Financial sponsorship</span>
-                                <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-primary-50 text-primary-800">Health & character</span>
-                            </div>
+                            <x-icon-list variant="check">
+                                <x-icon-list.item>Relationship evidence</x-icon-list.item>
+                                <x-icon-list.item>Financial sponsorship</x-icon-list.item>
+                                <x-icon-list.item>Health &amp; character</x-icon-list.item>
+                            </x-icon-list>
                         </div>
                     </div>
                 </div>
@@ -139,7 +139,10 @@
         ['href' => route('contact'), 'icon' => 'heroicon-o-chat-bubble-left-right', 'title' => 'Talk to a migration agent', 'description' => 'Get a clear, honest view of your longer-term visa options, timelines and obligations, so you know how permanent residence fits into your wider study, work and family plans.'],
     ]" />
 
-    {{-- Appendix: DAMA Pathways --}}
+    {{-- Visual break before DAMA --}}
+    <x-visual-break />
+
+    {{-- DAMA Pathways --}}
     <section id="dama-appendix" class="bg-base-50 scroll-mt-20">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
             <h2 class="text-2xl font-bold text-base-900 mb-3" data-animate="fade-up">DAMA Pathways</h2>
@@ -177,13 +180,13 @@
                             <div class="px-6 pb-5 text-base-600 text-sm leading-relaxed text-pretty border-t border-base-100 pt-4">
                                 <p class="mb-3">Western Australia is currently one of the most active states for DAMA use, with a state-wide WA DAMA designed to give both metropolitan and regional employers more options to sponsor skilled and semi-skilled workers where standard visas are too restrictive.</p>
                                 <p class="mb-4">For people already living and working in WA, this can create additional employer-sponsored and permanent residence pathways that are not available in other states or under standard programs alone.</p>
-                                <h4 class="font-semibold text-base-900 mb-2">Key advantages of the WA DAMA</h4>
-                                <x-icon-list variant="shield">
-                                    <x-icon-list.item><strong>State-wide coverage, not just remote pockets.</strong> The WA DAMA applies across the state, including metropolitan Perth and regional areas, instead of being limited to a handful of regional zones. More employers across WA can potentially access DAMA concessions if they qualify.</x-icon-list.item>
-                                    <x-icon-list.item><strong>Large number of places and occupations.</strong> The WA DAMA, combined with state nomination, can support thousands of overseas workers each year, with places split between metro and regional employers and a broader occupation list than standard skilled programs.</x-icon-list.item>
-                                    <x-icon-list.item><strong>Concessions compared to standard visas.</strong> Eligible employers can seek concessions to standard migration settings (for example in English, income thresholds and age) where that is built into the agreement. This can turn roles that are hard to fill under normal rules into viable sponsorship options.</x-icon-list.item>
-                                    <x-icon-list.item><strong>Staged transition with protections.</strong> As existing regional DAMAs reach their expiry dates, businesses can keep using their current agreements up to those dates, and individual labour agreements remain valid. A &ldquo;no disadvantage&rdquo; principle is being developed to support the shift into the WA DAMA, with grandfathering arrangements anticipated.</x-icon-list.item>
-                                </x-icon-list>
+                                <h4 class="font-semibold text-base-900 mb-3">Key advantages of the WA DAMA</h4>
+                                <x-definition-grid :columns="1" :items="[
+                                    ['term' => 'State-wide coverage, not just remote pockets', 'description' => 'The WA DAMA applies across the state, including metropolitan Perth and regional areas, instead of being limited to a handful of regional zones. More employers across WA can potentially access DAMA concessions if they qualify.'],
+                                    ['term' => 'Large number of places and occupations', 'description' => 'The WA DAMA, combined with state nomination, can support thousands of overseas workers each year, with places split between metro and regional employers and a broader occupation list than standard skilled programs.'],
+                                    ['term' => 'Concessions compared to standard visas', 'description' => 'Eligible employers can seek concessions to standard migration settings (for example in English, income thresholds and age) where that is built into the agreement. This can turn roles that are hard to fill under normal rules into viable sponsorship options.'],
+                                    ['term' => 'Staged transition with protections', 'description' => 'As existing regional DAMAs reach their expiry dates, businesses can keep using their current agreements up to those dates, and individual labour agreements remain valid. A "no disadvantage" principle is being developed to support the shift into the WA DAMA, with grandfathering arrangements anticipated.'],
+                                ]" />
                             </div>
                         </div>
                     </div>
