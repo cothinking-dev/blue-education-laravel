@@ -121,7 +121,7 @@
             <x-section-heading title="Course Types" :centered="false" class="mb-10" />
             <x-accordion :items="[
                 ['question' => 'General English', 'open' => true, 'answer' => 'General English courses in Australia focus on building overall confidence in everyday communication. Students develop practical speaking, listening, reading and writing skills for real-life situations such as travel, work and social interactions, while expanding vocabulary and improving grammar in an interactive classroom environment.'],
-                ['question' => 'Academic English (English Language Bridging) — Most Common', 'answer' => 'Academic English programmes are designed for students who plan to study at Australian high schools, TAFE institutes, colleges or universities. These courses strengthen academic reading and writing, note-taking, presentation skills and critical thinking, so learners can understand lectures, participate in tutorials and complete assignments at the standard expected by Australian institutions.'],
+                ['question' => 'Academic English (English Language Bridging): Most Common', 'answer' => 'Academic English programmes are designed for students who plan to study at Australian high schools, TAFE institutes, colleges or universities. These courses strengthen academic reading and writing, note-taking, presentation skills and critical thinking, so learners can understand lectures, participate in tutorials and complete assignments at the standard expected by Australian institutions.'],
                 ['question' => 'Test Preparation', 'answer' => 'English test preparation courses in Australia help students achieve the scores required for study, visa applications or professional registration. With targeted training for exams such as IELTS, TOEFL and PTE Academic, learners develop effective strategies, practise with exam-style tasks and receive feedback to improve their performance on test day. Blue Education is a registered TOEFL iBT test centre.'],
                 ['question' => 'English for Business and Career', 'answer' => 'English for Business and Career programmes in Australia support professionals who need to communicate clearly in international workplaces. These courses focus on practical skills such as meetings, presentations, negotiations, professional emails and reports, helping participants use accurate and appropriate language to advance their careers and build strong professional relationships.'],
                 ['question' => 'TESOL', 'answer' => 'TESOL (Teaching English to Speakers of Other Languages) programmes in Australia are suitable for people who wish to become English language teachers locally or overseas. Participants learn contemporary teaching methodologies, lesson planning, classroom management and assessment techniques, combining theory with practical experience to deliver engaging and effective English lessons.'],
@@ -152,7 +152,7 @@
 
                 <x-callout title="English Admission Exemptions" variant="info">
                     <x-slot:icon><x-heroicon-o-shield-check class="w-6 h-6" /></x-slot:icon>
-                    Some qualifications and school systems exempt students from formal English testing entirely — for example, years of English-medium schooling or recognised national English examinations.
+                    Some qualifications and school systems exempt students from formal English testing entirely; for example, years of English-medium schooling or recognised national English examinations.
                     <a href="{{ route('contact') }}" class="text-blue-800 text-sm font-medium hover:underline mt-2 inline-block">Check your eligibility &rarr;</a>
                 </x-callout>
 
@@ -174,7 +174,7 @@
                 {{-- What is it --}}
                 <div class="border border-base-200 rounded-corner-lg p-6 bg-base-50">
                     <h3 class="text-lg font-semibold text-base-900 mb-3">What is a Foundation Programme?</h3>
-                    <p class="text-sm text-base-600 leading-relaxed">A foundation programme is usually a 6–12 month course that sits between high school and university. It combines Academic English, study skills and subject units related to your future degree, such as business, engineering, IT, health, science or arts.</p>
+                    <p class="text-sm text-base-600 leading-relaxed text-pretty">A foundation programme is usually a 6–12 month course that sits between high school and university. It combines Academic English, study skills and subject units related to your future degree, such as business, engineering, IT, health, science or arts.</p>
                 </div>
 
                 {{-- Who is it for --}}

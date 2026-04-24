@@ -3,7 +3,7 @@
 
     {{-- §1 Hero --}}
     <x-hero title="Visa applications, handled with care from the start"
-            subtitle="We provide you access to a team of experienced migration lawyers and Registered Migration Agents in Australia. With decades of combined experience, we support a wide range of visa pathways — from student visas to permanent residency; partner and family sponsored visas; and skilled and work sponsorship visas."
+            subtitle="We provide you access to a team of experienced migration lawyers and Registered Migration Agents in Australia. With decades of combined experience, we support a wide range of visa pathways: from student visas to permanent residency; partner and family sponsored visas; and skilled and work sponsorship visas."
             :image="asset('images/heroes/services-migration.webp')"
             alt="East Asian woman adviser in a professional consultation meeting"
             :breadcrumbs="true" />
@@ -110,7 +110,7 @@
         <div class="max-w-7xl mx-auto px-8 lg:px-16 pb-14">
             <x-section-heading title="Why Trust Us With Your Future" :centered="false" />
             <p class="text-base-600 leading-relaxed mb-4 text-pretty">Visa applications are complex, change frequently and can be costly to get wrong. Instead of relying on hearsay or leaving things to chance, seeking timely professional advice helps you understand how the rules affect you, address issues early, and move forward with a clearer, more confident plan.</p>
-            <p class="text-base-700 font-medium mb-6 text-pretty">Remember — there is never a one-size that fits all!</p>
+            <p class="text-base-700 font-medium mb-6 text-pretty">Remember: there is never a one-size that fits all!</p>
             <div class="flex flex-col lg:flex-row gap-10">
                 <div class="flex-1">
                     <p class="text-base-800 font-semibold mb-4">Why book a consult with us?</p>
@@ -157,7 +157,7 @@
 
     {{-- §6 CTA --}}
     <x-cta-banner title="Get an honest read on your visa options"
-                  subtitle="A registered migration agent will assess your situation, identify the right pathway, and tell you if something won't work — before it costs you."
+                  subtitle="A registered migration agent will assess your situation, identify the right pathway, and tell you if something won't work, before it costs you."
                   primaryText="Book a Migration Assessment"
                   :primaryHref="route('contact')" />
 

@@ -32,7 +32,7 @@
                 <div class="flex-1">
                     <span class="text-6xl font-bold text-primary-100">02</span>
                     <h3 class="text-2xl font-bold text-base-900 mt-2 mb-4 text-pretty">More choice than almost anywhere</h3>
-                    <p class="text-base-600 leading-relaxed text-pretty">1,100+ institutions. 20,000+ programmes. From 10-week English language courses to doctoral research, vocational training to executive education — Australia offers a pathway for every ambition, every level, every budget.</p>
+                    <p class="text-base-600 leading-relaxed text-pretty">1,100+ institutions. 20,000+ programmes. From 10-week English language courses to doctoral research, vocational training to executive education. Australia offers a pathway for every ambition, every level, every budget.</p>
                 </div>
                 <div class="flex-1 lg:max-w-[40%]">
                     <img src="{{ asset('images/why-australia/education-choice.webp') }}" alt="East Asian students studying in a university library" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2] shadow-lg" loading="lazy">
@@ -43,7 +43,7 @@
             <div class="flex flex-col lg:flex-row items-center gap-12 py-12">
                 <div class="flex-1">
                     <span class="text-6xl font-bold text-primary-100">03</span>
-                    <h3 class="text-2xl font-bold text-base-900 mt-2 mb-4 text-pretty">Work while you study — and after</h3>
+                    <h3 class="text-2xl font-bold text-base-900 mt-2 mb-4 text-pretty">Work while you study, and after</h3>
                     <p class="text-base-600 leading-relaxed mb-4 text-pretty">Australia encourages international students to gain real work experience, and many graduates can stay and work full-time after they finish their course on a Temporary Graduate visa (subclass 485).</p>
                     <p class="text-sm font-bold text-base-900 mb-2">Typical post-study work rights (subclass 485: Post-Higher Education Work stream)</p>
                     <x-data-table :headers="['Qualification completed in Australia', 'Typical 485 visa length*']"
@@ -150,7 +150,7 @@
 
     {{-- §5 CTA --}}
     <x-cta-banner title="Talk to someone who knows Western Australia."
-                  :subtitle="'Perth-based advisors with ' . (date('Y') - 1998) . ' years of experience, serving clients from 40+ countries. We\'ll tell you what fits your situation — no guesswork.'"
+                  :subtitle="'Perth-based advisers with ' . (date('Y') - 1998) . ' years of experience, serving clients from 40+ countries. We\'ll tell you what fits your situation, no guesswork.'"
                   primaryText="Book an Education Assessment"
                   :primaryHref="route('contact')"
                   secondaryText="Explore Education Services"

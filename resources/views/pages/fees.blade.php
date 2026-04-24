@@ -12,11 +12,11 @@
     {{-- §2 Our Approach --}}
     <x-content-split title="Transparent pricing; Always." :image="asset('images/fees/transparent-pricing.webp')" alt="East Asian student in a transparent pricing consultation">
         <p>Blue Education's fees vary based on the services you need and the complexity of your situation. Every journey is different, so pricing is personalised; not one-size-fits-all.</p>
-        <p>Before we do any work, we tell you exactly what it will cost and why. Our initial consultation is used to assess your situation — we provide a personalised quote before you commit to anything.</p>
+        <p>Before we do any work, we tell you exactly what it will cost and why. Our initial consultation is used to assess your situation. We provide a personalised quote before you commit to anything.</p>
         <ul class="space-y-3 text-sm mt-4">
-            <li class="flex items-start gap-3"><span class="text-primary-600 mt-0.5">&#10003;</span> <span><span class="font-medium">Fees by service</span> — You pay for what you need, not a package that includes what you don't.</span></li>
-            <li class="flex items-start gap-3"><span class="text-primary-600 mt-0.5">&#10003;</span> <span><span class="font-medium">Personalised quotes</span> — Every situation is different; pricing reflects that.</span></li>
-            <li class="flex items-start gap-3"><span class="text-primary-600 mt-0.5">&#10003;</span> <span><span class="font-medium">Upfront breakdown</span> — Full cost picture provided at consultation, before any application work begins.</span></li>
+            <li class="flex items-start gap-3"><span class="text-primary-600 mt-0.5">&#10003;</span> <span><span class="font-medium">Fees by service</span>: You pay for what you need, not a package that includes what you don't.</span></li>
+            <li class="flex items-start gap-3"><span class="text-primary-600 mt-0.5">&#10003;</span> <span><span class="font-medium">Personalised quotes</span>: Every situation is different; pricing reflects that.</span></li>
+            <li class="flex items-start gap-3"><span class="text-primary-600 mt-0.5">&#10003;</span> <span><span class="font-medium">Upfront breakdown</span>: Full cost picture provided at consultation, before any application work begins.</span></li>
         </ul>
     </x-content-split>
 
@@ -42,7 +42,7 @@
             <div class="space-y-6">
                 <div class="border-l-4 border-primary-600 pl-6">
                     <h3 class="font-bold text-base-900 mb-2">Blue Education Service Fees</h3>
-                    <p class="text-base-600 text-sm leading-relaxed text-pretty">Our service fees cover consultation, pathway planning, application processing, document compilation, and ongoing support. Fees vary by case — contact us for a personalised quote.</p>
+                    <p class="text-base-600 text-sm leading-relaxed text-pretty">Our service fees cover consultation, pathway planning, application processing, document compilation, and ongoing support. Fees vary by case; contact us for a personalised quote.</p>
                 </div>
                 <div class="border-l-4 border-primary-600 pl-6">
                     <h3 class="font-bold text-base-900 mb-2">Student Travel Advice & Consent (STAC)</h3>
@@ -94,7 +94,7 @@
                     $budgetItems = [
                         ['icon' => 'home-modern', 'title' => 'Accommodation', 'desc' => 'Homestay, rental, or student housing'],
                         ['icon' => 'shield-check', 'title' => 'Guardianship', 'desc' => 'Required for students under 18 (Professional Student Care Australia or International Student Alliance)'],
-                        ['icon' => 'heart', 'title' => 'OSHC', 'desc' => 'Overseas Student Health Cover — mandatory for all student visas'],
+                        ['icon' => 'heart', 'title' => 'OSHC', 'desc' => 'Overseas Student Health Cover, mandatory for all student visas'],
                         ['icon' => 'banknotes', 'title' => 'Living Expenses', 'desc' => 'Transport, food, personal costs'],
                     ];
                 @endphp
@@ -124,7 +124,7 @@
 
     {{-- §7 CTA --}}
     <x-cta-banner title="Get your cost breakdown."
-                  subtitle="Tell us your situation — education level, visa status, and what you're trying to achieve. We'll provide an itemised quote before any work begins."
+                  subtitle="Tell us your situation: education level, visa status, and what you're trying to achieve. We'll provide an itemised quote before any work begins."
                   primaryText="Get a Personalised Quote"
                   :primaryHref="route('contact')" />
 

@@ -1,4 +1,4 @@
-<x-layout title="Privacy Policy" description="Blue Education's privacy policy — how we collect, use, and protect your personal information.">
+<x-layout title="Privacy Policy" description="Blue Education's privacy policy: how we collect, use, and protect your personal information.">
 
     <x-hero
         title="Privacy Policy"
@@ -45,7 +45,7 @@
             <ul>
                 <li>Educational institutions and training providers</li>
                 <li>Government departments (e.g., Department of Home Affairs)</li>
-                <li>Registered migration agents and legal advisors</li>
+                <li>Registered migration agents and legal advisers</li>
                 <li>Third-party service providers who assist in our operations</li>
             </ul>
             <p>We will not sell your personal information to third parties.</p>

@@ -3,7 +3,7 @@
 
     {{-- §1 Hero --}}
     <x-hero title="TAFE & Other VET Qualifications"
-            subtitle="Practical training across trades, technical fields, and specialist roles — with many qualifications aligning directly to Australia's skilled migration pathways."
+            subtitle="Practical training across trades, technical fields, and specialist roles, with many qualifications aligning directly to Australia's skilled migration pathways."
             :image="asset('images/heroes/services-education-vet-tafe.webp')"
             alt="East Asian students in a vocational training workshop"
             variant="left"
@@ -23,7 +23,7 @@
             <x-section-heading title="Is VET right for you?" :centered="false" />
             <div class="grid md:grid-cols-3 gap-6" data-animate="stagger">
                 <x-card title="You want to work in a trade or specialist role"
-                        description="Not every career requires a degree. VET qualifications are built around the skills employers actually hire for — and most can be completed in under two years.">
+                        description="Not every career requires a degree. VET qualifications are built around the skills employers actually hire for, and most can be completed in under two years.">
                     <x-slot:icon>
                         <x-heroicon-o-wrench-screwdriver class="w-5 h-5" />
                     </x-slot:icon>

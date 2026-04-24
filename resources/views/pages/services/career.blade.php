@@ -1,5 +1,5 @@
 <x-layout title="Career Services"
-          description="From skills gap analysis and employer introductions to graduate work visa support — every step from study to employment in Australia.">
+          description="From skills gap analysis and employer introductions to graduate work visa support: every step from study to employment in Australia.">
 
     {{-- §1 Hero --}}
     <x-hero title="Turn your Australian qualification into a career in Australia"

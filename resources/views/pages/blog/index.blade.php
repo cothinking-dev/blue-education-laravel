@@ -1,9 +1,9 @@
 <x-layout title="Blog"
-          description="Education, migration, careers, and life in Australia — resources for international students."
+          description="Education, migration, careers, and life in Australia: resources for international students."
           :robots="($activeCategory || request()->has('page')) ? 'noindex, follow' : null">
 
     {{-- §1 Hero --}}
-    <x-hero title="Blog — Resources for International Students"
+    <x-hero title="Blog: Resources for International Students"
             subtitle="Education, migration, careers, and life in Australia."
             :image="asset('images/heroes/blog.webp')"
             alt="East Asian student smiling on a sunny university campus lawn"
@@ -71,7 +71,7 @@
 
     {{-- §4 CTA --}}
     <x-cta-banner title="Ready to start your Australian journey?"
-                  subtitle="Talk to a Blue Education advisor about education pathways, visa options, and career planning — all in one place."
+                  subtitle="Talk to a Blue Education adviser about education pathways, visa options, and career planning, all in one place."
                   primaryText="Book a Consultation"
                   :primaryHref="route('contact')" />
 

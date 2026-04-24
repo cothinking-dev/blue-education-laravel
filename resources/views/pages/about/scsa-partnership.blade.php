@@ -1,9 +1,9 @@
 <x-layout title="SCSA Partnership"
-          description="Blue Education is officially recognised by the WA Government's School Curriculum and Standards Authority (SCSA) — appointed to promote the Western Australian curriculum internationally.">
+          description="Blue Education is officially recognised by the WA Government's School Curriculum and Standards Authority (SCSA), appointed to promote the Western Australian curriculum internationally.">
 
     {{-- §1 Hero --}}
     <x-hero title="Officially recognised by the WA Government to promote Australian education internationally"
-            subtitle="Blue Education is an appointed SCSA Associate — recognised by the School Curriculum and Standards Authority under the WA Department of Education. This means we can provide direct support to students and schools seeking access to the Western Australian curriculum."
+            subtitle="Blue Education is an appointed SCSA Associate, recognised by the School Curriculum and Standards Authority under the WA Department of Education. This means we can provide direct support to students and schools seeking access to the Western Australian curriculum."
             :image="asset('images/heroes/programs-scsa-associate.webp')"
             alt="Students at an international school delivering the Australian curriculum"
             badge="Official SCSA Associate · WA Government"
@@ -21,13 +21,13 @@
             <x-section-heading title="What Is SCSA?" :centered="false" />
             <div class="flex flex-col lg:flex-row gap-12">
                 <div class="flex-1">
-                    <p class="text-base-600 leading-relaxed mb-6 text-pretty">The School Curriculum and Standards Authority is a Western Australian Government statutory authority responsible for the curriculum, assessment, standards, and reporting for all schools — from Kindergarten to Year 12. Since 1987, SCSA has licensed international schools to deliver its curriculum programmes overseas, producing graduates with the same qualification as domestic Australian students.</p>
+                    <p class="text-base-600 leading-relaxed mb-6 text-pretty">The School Curriculum and Standards Authority is a Western Australian Government statutory authority responsible for the curriculum, assessment, standards, and reporting for all schools, from Kindergarten to Year 12. Since 1987, SCSA has licensed international schools to deliver its curriculum programmes overseas, producing graduates with the same qualification as domestic Australian students.</p>
                     <x-facts-table :rows="[
                         ['key' => 'Full name', 'value' => 'School Curriculum and Standards Authority'],
                         ['key' => 'Jurisdiction', 'value' => 'Western Australia'],
                         ['key' => 'Scope', 'value' => 'Kindergarten to Year 12'],
                         ['key' => 'Key qualification', 'value' => 'Western Australian Certificate of Education (WACE)'],
-                        ['key' => 'International programme', 'value' => 'Western Australian Matriculation International (WAM International) — since 1987'],
+                        ['key' => 'International programme', 'value' => 'Western Australian Matriculation International (WAM International), since 1987'],
                         ['key' => 'Recognition', 'value' => 'Accepted for direct entry to all Australian universities'],
                     ]" />
                 </div>
@@ -36,7 +36,7 @@
                         <svg class="absolute -right-4 -bottom-4 w-28 h-28 opacity-[0.06]" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                             <path d="M50 5 L55 20 L70 10 L65 28 L85 25 L72 38 L90 45 L72 50 L85 65 L68 58 L70 78 L55 65 L50 85 L45 65 L30 78 L32 58 L15 65 L28 50 L10 45 L28 38 L15 25 L35 28 L30 10 L45 20 Z" class="fill-purple-900" />
                         </svg>
-                        <img src="{{ asset('images/credentials/scsa-logo.png') }}" alt="School Curriculum and Standards Authority — Government of Western Australia" class="relative h-16 w-auto object-contain mb-3" loading="lazy">
+                        <img src="{{ asset('images/credentials/scsa-logo.png') }}" alt="School Curriculum and Standards Authority, Government of Western Australia" class="relative h-16 w-auto object-contain mb-3" loading="lazy">
                         <p class="relative font-bold text-base-900 mb-1">Official SCSA Associate</p>
                         <p class="relative text-base-600 text-sm text-pretty">Appointed to promote the Western Australian curriculum programme internationally.</p>
                     </div>
@@ -68,14 +68,14 @@
                         <x-heroicon-o-globe-alt class="w-5 h-5" />
                     </div>
                     <h3 class="font-bold text-base-900 mb-2 text-pretty">Access WACE From Home</h3>
-                    <p class="text-base-600 text-sm leading-relaxed text-pretty">Through SCSA-accredited schools, students can earn the Western Australian Certificate of Education (WACE) from their home country — the same qualification Australian Year 12 students receive.</p>
+                    <p class="text-base-600 text-sm leading-relaxed text-pretty">Through SCSA-accredited schools, students can earn the Western Australian Certificate of Education (WACE) from their home country, the same qualification Australian Year 12 students receive.</p>
                 </div>
                 <div class="border border-base-200 rounded-corner-lg p-6 bg-white">
                     <div class="w-10 h-10 rounded-corner bg-primary-50 text-primary-800 flex items-center justify-center mb-4">
                         <x-heroicon-o-academic-cap class="w-5 h-5" />
                     </div>
                     <h3 class="font-bold text-base-900 mb-2 text-pretty">Direct University Entry</h3>
-                    <p class="text-base-600 text-sm leading-relaxed text-pretty">WACE graduates are assessed on the same criteria as domestic Australian students. No bridging courses, no additional testing — direct entry to Western Australian universities.</p>
+                    <p class="text-base-600 text-sm leading-relaxed text-pretty">WACE graduates are assessed on the same criteria as domestic Australian students. No bridging courses, no additional testing. Direct entry to Western Australian universities.</p>
                 </div>
             </div>
         </div>
@@ -91,7 +91,7 @@
     <section class="bg-white">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
             <x-section-heading title="Where We Promote the WA Curriculum" :centered="false" />
-            <p class="text-base-600 leading-relaxed mb-8 max-w-3xl text-pretty">Blue Education is appointed to promote the Western Australian curriculum in these markets — connecting students and families with SCSA-accredited schools delivering the Australian education system.</p>
+            <p class="text-base-600 leading-relaxed mb-8 max-w-3xl text-pretty">Blue Education is appointed to promote the Western Australian curriculum in these markets, connecting students and families with SCSA-accredited schools delivering the Australian education system.</p>
             <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6" data-animate="stagger">
                 @php
                     $countries = [
@@ -108,7 +108,7 @@
                     </div>
                 @endforeach
             </div>
-            <p class="text-base-500 text-sm mt-6 text-center">And more — our reach extends across 145+ countries worldwide.</p>
+            <p class="text-base-500 text-sm mt-6 text-center">And more: our reach extends across 145+ countries worldwide.</p>
         </div>
     </section>
 
@@ -131,7 +131,7 @@
                 <div class="flex-1">
                     <x-badge variant="semantic" color="amber" size="md" :uppercase="false" class="mb-3">Premier's WACE Bursary</x-badge>
                     <h3 class="text-xl font-bold text-base-900 mb-2 text-pretty">AUD $20,000 towards a WA university degree</h3>
-                    <p class="text-base-600 leading-relaxed mb-3 text-pretty">Students who complete the WACE programme overseas and enrol in a participating WA university may be eligible for the Premier's WACE Bursary — awarded to 50 applicants annually.</p>
+                    <p class="text-base-600 leading-relaxed mb-3 text-pretty">Students who complete the WACE programme overseas and enrol in a participating WA university may be eligible for the Premier's WACE Bursary, awarded to 50 applicants annually.</p>
                     <p class="text-base-500 text-sm text-pretty">Participating universities: UWA, Curtin, Murdoch, ECU, Notre Dame, and Southern Cross University.</p>
                 </div>
             </div>
@@ -145,13 +145,13 @@
 
     {{-- §8 Also Relevant --}}
     <x-next-steps variant="featured" bg="bg-white" :links="[
-        ['href' => route('services.education.index'), 'title' => 'Education Pathways', 'label' => 'Explore', 'description' => 'From school programmes to postgraduate degrees — see the full range of education options we support for students coming to Western Australia.'],
+        ['href' => route('services.education.index'), 'title' => 'Education Pathways', 'label' => 'Explore', 'description' => 'From school programmes to postgraduate degrees. See the full range of education options we support for students coming to Western Australia.'],
         ['href' => route('about.partners'), 'title' => 'Our Partner Institutions', 'label' => 'Network', 'description' => 'See the universities, schools, and organisations Blue Education works with across Australia.'],
     ]" />
 
     {{-- §9 CTA --}}
     <x-cta-banner title="Want to know more about studying the Australian curriculum?"
-                  subtitle="Whether you're a student, a parent, or a school — we can explain how the WA curriculum works and what your options are."
+                  subtitle="Whether you're a student, a parent, or a school, we can explain how the WA curriculum works and what your options are."
                   primaryText="Talk to Us"
                   :primaryHref="route('contact')" />
 

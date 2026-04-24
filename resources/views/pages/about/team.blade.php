@@ -1,5 +1,5 @@
 <x-layout title="Our Team"
-          description="Meet the Blue Education team — multilingual specialists who have engaged with more than 145 nations, delivering education, migration, and career advice.">
+          description="Meet the Blue Education team: multilingual specialists who have engaged with more than 145 nations, delivering education, migration, and career advice.">
 
     @php
         $australianTeam = [
@@ -19,11 +19,11 @@
         $internationalTeam = [
             ['name' => 'Elaine Ho', 'role' => 'Regional Head, Malaysia', 'photo' => 'images/team/elaine-ho.webp', 'bio' => 'Elaine brings a rare combination of legal training, international procurement experience, and education counselling. After practising law in Malaysia, she moved into governance and strategy roles with the UN and a major Asia Pacific airline before dedicating herself to student and migration counselling.', 'credentials' => 'Barrister at Law — Lincoln\'s Inn', 'languages' => 'English, Malay, Cantonese', 'region' => 'Malaysia, Southeast Asia'],
             ['name' => 'Monica Low', 'role' => 'Associate Counsellor, Malaysia', 'photo' => 'images/team/monica-low.webp', 'bio' => 'A native of Kuala Lumpur, Monica brings years of business and interpersonal skills developed across hotel management in Seattle, retail banking in Singapore, and now education counselling in Malaysia. Her approachable personality and multilingual fluency make her a natural fit for student interaction across Southeast Asia.', 'credentials' => 'BSc in Hospitality & Tourism Management — Purdue University; Postgraduate Diploma in Marketing — Curtin University', 'languages' => 'English, Bahasa Malaysia, Mandarin, Cantonese', 'region' => 'Malaysia, Southeast Asia'],
-            ['name' => 'Hana Hursepuny', 'role' => 'Executive Assistant | Indonesia Representative', 'photo' => 'images/team/hana-hursepuny.webp', 'bio' => 'Hana is an integral member of the Blue family. She started as an intern and has grown into the team\'s go-to expert on enrolment process requirements and student visa guidelines — and a trainer for the wider team. She serves as translator and interpreter for Indonesian and Malaysian students on short-term study tours.', 'credentials' => null, 'languages' => 'English, Indonesian', 'region' => 'Indonesia, Malaysia'],
-            ['name' => 'Minami Sakamoto', 'role' => 'Associate Counsellor, Japan', 'photo' => 'images/team/minami-sakamoto.webp', 'bio' => 'Based in Japan, Minami first came to Australia to study English, then joined Blue as an intern before becoming a counsellor. Her own experience as an international student — having studied in France and New York — gives her a genuine connection with clients navigating life away from home.', 'credentials' => 'World Liberal Arts — Nagoya University of Foreign Studies', 'languages' => 'Japanese, English', 'region' => 'Japan, Northeast Asia'],
+            ['name' => 'Hana Hursepuny', 'role' => 'Executive Assistant | Indonesia Representative', 'photo' => 'images/team/hana-hursepuny.webp', 'bio' => 'Hana is an integral member of the Blue family. She started as an intern and has grown into the team\'s go-to expert on enrolment process requirements and student visa guidelines, and a trainer for the wider team. She serves as translator and interpreter for Indonesian and Malaysian students on short-term study tours.', 'credentials' => null, 'languages' => 'English, Indonesian', 'region' => 'Indonesia, Malaysia'],
+            ['name' => 'Minami Sakamoto', 'role' => 'Associate Counsellor, Japan', 'photo' => 'images/team/minami-sakamoto.webp', 'bio' => 'Based in Japan, Minami first came to Australia to study English, then joined Blue as an intern before becoming a counsellor. Her own experience as an international student (having studied in France and New York) gives her a genuine connection with clients navigating life away from home.', 'credentials' => 'World Liberal Arts — Nagoya University of Foreign Studies', 'languages' => 'Japanese, English', 'region' => 'Japan, Northeast Asia'],
             ['name' => 'Nino Sekyere-Boakye', 'role' => 'Regional Director, Ghana | Registered Migration Agent MARN: 0959773', 'photo' => 'images/team/nino-sekyere-boakye.webp', 'bio' => 'Nino is an academician and researcher who has spent over a decade helping African students pursue education and work experience in Australia. He has travelled and worked in over 25 African countries. As a Registered Migration Agent, Nino advises on courses, visa pathways, career options, and life in Australia.', 'credentials' => 'BA (Hons) — University of Ghana; Master of Professional Marketing — Edith Cowan University; Graduate Diploma of Migration Law — Murdoch University; MARN 0959773', 'languages' => 'English, French (conversational)', 'region' => 'Ghana, West Africa'],
-            ['name' => 'Elijah Chongo', 'role' => 'Regional Head, Zambia', 'photo' => 'images/team/elijah-chongo.webp', 'bio' => 'Based in Lusaka, Elijah assists clients across Zambia and neighbouring countries in planning their pathway to Australia — whether to study, work, visit, or migrate. He brings over 20 years of research, risk management, and strategic advisory experience across both private and public sectors.', 'credentials' => 'Master\'s in Business Management — Wales University; Bachelor of Public Administration — University of Lusaka; Certificate in Basic Prosecution in Law — NIPA Zambia', 'languages' => 'English, ici Bemba, ci Nyanja', 'region' => 'Zambia, Southern Africa'],
-            ['name' => 'Priscilla Bwalya Mwansa', 'role' => 'Regional Advisor, Lusaka | Senior Counsellor', 'photo' => 'images/team/priscilla-mwansa.webp', 'bio' => 'Priscilla is a Senior Counsellor responsible for planning, advising, and supporting students from Zambia and the broader region who wish to pursue education in Australia. With a background in strategic management and chartered accounting, she provides insight into both career planning and the financial considerations of studying abroad.', 'credentials' => 'Bachelor of Accounting — Copperbelt University; MBA (Finance, in progress); Chartered Accountant — ZICA', 'languages' => 'English, ici Bemba', 'region' => 'Zambia, Southern Africa'],
+            ['name' => 'Elijah Chongo', 'role' => 'Regional Head, Zambia', 'photo' => 'images/team/elijah-chongo.webp', 'bio' => 'Based in Lusaka, Elijah assists clients across Zambia and neighbouring countries in planning their pathway to Australia, whether to study, work, visit, or migrate. He brings over 20 years of research, risk management, and strategic advisory experience across both private and public sectors.', 'credentials' => 'Master\'s in Business Management — Wales University; Bachelor of Public Administration — University of Lusaka; Certificate in Basic Prosecution in Law — NIPA Zambia', 'languages' => 'English, ici Bemba, ci Nyanja', 'region' => 'Zambia, Southern Africa'],
+            ['name' => 'Priscilla Bwalya Mwansa', 'role' => 'Regional Adviser, Lusaka | Senior Counsellor', 'photo' => 'images/team/priscilla-mwansa.webp', 'bio' => 'Priscilla is a Senior Counsellor responsible for planning, advising, and supporting students from Zambia and the broader region who wish to pursue education in Australia. With a background in strategic management and chartered accounting, she provides insight into both career planning and the financial considerations of studying abroad.', 'credentials' => 'Bachelor of Accounting — Copperbelt University; MBA (Finance, in progress); Chartered Accountant — ZICA', 'languages' => 'English, ici Bemba', 'region' => 'Zambia, Southern Africa'],
             ['name' => 'Sherene Chan', 'role' => 'Regional Head, New Zealand', 'photo' => 'images/team/sherene-chan.webp', 'bio' => 'Based in Auckland, Sherene facilitates options for those intending to study, work, and live in New Zealand. Her background as a migrant gives her invaluable firsthand perspective. Prior to education counselling, Sherene worked with a Big 4 firm and led stakeholder relationship management for prominent institutions including the United Nations Development Programme.', 'credentials' => 'MBA — University of South Australia; former Big 4 accounting firm consultant', 'languages' => 'English, Malay, Cantonese', 'region' => 'New Zealand, Oceania'],
         ];
 
@@ -31,7 +31,7 @@
 
     {{-- §1 Hero --}}
     <x-hero title="Multilingual specialists who have engaged with more than 145 nations"
-            subtitle="Education, migration, and career experts — headquartered in Perth, represented across Asia, Africa, and the Pacific."
+            subtitle="Education, migration, and career experts, headquartered in Perth, represented across Asia, Africa, and the Pacific."
             :image="asset('images/about-team/team-meeting.webp')"
             alt="Blue Education team in a professional meeting"
             variant="left"
@@ -40,7 +40,7 @@
     {{-- Intro --}}
     <section class="bg-white">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
-            <p class="text-base-600 text-lg leading-relaxed text-pretty max-w-3xl">Our team spans continents, industries, and languages. From Registered Migration Agents to chartered accountants, solicitors to career counsellors — we bring real-world expertise to every consultation. Most of us are multilingual, and we are committed to getting it right for you.</p>
+            <p class="text-base-600 text-lg leading-relaxed text-pretty max-w-3xl">Our team spans continents, industries, and languages. From Registered Migration Agents to chartered accountants, solicitors to career counsellors, we bring real-world expertise to every consultation. Most of us are multilingual, and we are committed to getting it right for you.</p>
         </div>
     </section>
 
@@ -70,7 +70,7 @@
     <section class="bg-base-50">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
             <x-section-heading title="International Operations" :centered="false" />
-            <p class="text-base-600 mb-10 text-lg leading-relaxed max-w-3xl text-pretty">Blue's international reach is powered by a team of regional representatives who provide localised support — in your language, in your time zone, with on-the-ground knowledge of your country's education and migration landscape.</p>
+            <p class="text-base-600 mb-10 text-lg leading-relaxed max-w-3xl text-pretty">Blue's international reach is powered by a team of regional representatives who provide localised support: in your language, in your time zone, with on-the-ground knowledge of your country's education and migration landscape.</p>
 
             {{-- Sonia Ong — featured full-width lead --}}
             <x-team-member :name="$sonia['name']"
@@ -104,7 +104,7 @@
     <section class="bg-white">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
             <x-section-heading title="Migration & Legal Specialists" :centered="false" />
-            <p class="text-base-600 mb-10 leading-relaxed max-w-3xl text-pretty">Blue's migration and legal specialists are fully registered and credentialled. Whether you need visa advice, migration strategy, or legal representation — we have qualified professionals on the team.</p>
+            <p class="text-base-600 mb-10 leading-relaxed max-w-3xl text-pretty">Blue's migration and legal specialists are fully registered and credentialled. Whether you need visa advice, migration strategy, or legal representation, we have qualified professionals on the team.</p>
             <div class="grid sm:grid-cols-1 lg:grid-cols-2 gap-6" data-animate="stagger">
                 @foreach($legalTeam as $member)
                     <x-team-member :name="$member['name']"
@@ -171,7 +171,7 @@
 
     {{-- §8 CTA Banner --}}
     <x-cta-banner title="Work with a team that understands your world"
-                  subtitle="Book a consultation with an advisor who speaks your language and knows your market."
+                  subtitle="Book a consultation with an adviser who speaks your language and knows your market."
                   primaryText="Book a Consultation"
                   :primaryHref="route('contact')"
                   secondaryText="Learn About Blue Education"

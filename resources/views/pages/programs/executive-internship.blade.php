@@ -1,5 +1,5 @@
 <x-layout title="Executive Internship Programme"
-          description="Strategic work experience for business graduates. The EIP runs twice a year with limited places — structured placements with executive mentorship.">
+          description="Strategic work experience for business graduates. The EIP runs twice a year with limited places: structured placements with executive mentorship.">
 
     {{-- §1 Hero --}}
     <x-hero title="Strategic work experience for business graduates."
@@ -16,14 +16,14 @@
             <div class="flex flex-col lg:flex-row gap-12">
                 <div class="flex-1">
                     <h2 class="text-3xl font-bold text-base-900 mb-4 text-pretty" data-animate="fade-up">What It Is</h2>
-                    <p class="text-base-600 leading-relaxed mb-4 text-pretty">The EIP places business graduates and final-year students with Australian employers for structured, mentored workplace experience. Not entry-level administration — a real position with agreed objectives, a dedicated supervisor, and a formal performance review at the end.</p>
+                    <p class="text-base-600 leading-relaxed mb-4 text-pretty">The EIP places business graduates and final-year students with Australian employers for structured, mentored workplace experience. Not entry-level administration, but a real position with agreed objectives, a dedicated supervisor, and a formal performance review at the end.</p>
                     <p class="text-base-600 leading-relaxed text-pretty">The programme is built around our six-phase Employability Booster Programme (EBP), which starts before placement and continues through to review. Blue Education manages the matching, preparation, and employer coordination. You bring the commitment.</p>
                 </div>
                 <div class="lg:w-[40%]">
                     <x-facts-table title="Key Facts"
                                    :rows="[
                                        ['key' => 'Intakes', 'value' => 'Twice per year'],
-                                       ['key' => 'Places', 'value' => 'Limited — assessed intake'],
+                                       ['key' => 'Places', 'value' => 'Limited (assessed intake)'],
                                        ['key' => 'Eligible', 'value' => 'Undergraduate and postgraduate, business/commerce'],
                                        ['key' => 'Duration', 'value' => 'Up to 3 months (min. 16 hrs/week)'],
                                        ['key' => 'Partners', 'value' => 'Professional Vogue · Employment Advantage'],
@@ -42,7 +42,7 @@
             <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6" data-animate="stagger">
                 @php
                     $phases = [
-                        ['title' => 'Assessment', 'desc' => 'Background review, Initial Placement Questionnaire, and an online readiness module — completed before the programme begins.'],
+                        ['title' => 'Assessment', 'desc' => 'Background review, Initial Placement Questionnaire, and an online readiness module, completed before the programme begins.'],
                         ['title' => 'Readiness', 'desc' => 'CV preparation, LinkedIn presence, presentation guidance, and context on Australian workplace culture.'],
                         ['title' => 'Profiling', 'desc' => 'We research target organisations and match your profile with employers suited to your background and goals.'],
                         ['title' => 'Preparation', 'desc' => 'Shortlisted employers, prioritised by fit. Interview coaching and workplace expectations briefing before any approach is made.'],
@@ -67,7 +67,7 @@
             <x-section-heading title="What You Gain" :centered="false" />
             <div class="grid sm:grid-cols-3 gap-6" data-animate="stagger">
                 <x-card title="Documented Australian Experience"
-                        description="Placement with a real employer — agreed objectives, a dedicated supervisor, and a formal performance review that strengthens your Australian job applications."
+                        description="Placement with a real employer: agreed objectives, a dedicated supervisor, and a formal performance review that strengthens your Australian job applications."
                         :image="asset('images/programs-executive-internship/australian-experience.webp')"
                         alt="East Asian business professionals collaborating at a laptop in a modern office" />
 
@@ -77,7 +77,7 @@
                         alt="East Asian woman presenting a project to colleagues in a modern office" />
 
                 <x-card title="AQF Alignment"
-                        description="Understand how your qualification maps to Australian employer expectations within the AQF — and what it means for your post-study visa options."
+                        description="Understand how your qualification maps to Australian employer expectations within the AQF, and what it means for your post-study visa options."
                         :image="asset('images/programs-executive-internship/aqf-alignment.webp')"
                         alt="East Asian businesswoman reviewing qualification documents in a city setting" />
             </div>
@@ -100,7 +100,7 @@
                     <div>
                         <h3 class="font-bold text-base-900">Lisa</h3>
                         <p class="text-primary-800 text-sm font-medium mb-2">Professional Vogue</p>
-                        <p class="text-base-600 text-sm leading-relaxed text-pretty">Lisa has two passions: fashion and style, and personal development. Professional Vogue programmes focus on enhancing employability and soft skills — building and developing future leaders and helping men and women make their mark and achieve their goals in corporate WA.</p>
+                        <p class="text-base-600 text-sm leading-relaxed text-pretty">Lisa has two passions: fashion and style, and personal development. Professional Vogue programmes focus on enhancing employability and soft skills, building and developing future leaders and helping men and women make their mark and achieve their goals in corporate WA.</p>
                     </div>
                 </div>
                 <div class="bg-white rounded-corner-lg border border-base-200 p-6 flex items-start gap-5">
@@ -163,7 +163,7 @@
     {{-- §8 Also Relevant --}}
     <x-next-steps variant="featured" bg="bg-white" :links="[
         ['href' => route('services.career'), 'title' => 'Career Services', 'label' => 'Related Service', 'description' => 'CV preparation, interview coaching, and job search support for international graduates in Australia.'],
-        ['href' => route('services.migration.graduate-work'), 'title' => 'Graduate Work Visas', 'label' => 'Post-Study Pathways', 'description' => 'Understand your visa options after completing your studies — including the Temporary Graduate visa (subclass 485).'],
+        ['href' => route('services.migration.graduate-work'), 'title' => 'Graduate Work Visas', 'label' => 'Post-Study Pathways', 'description' => 'Understand your visa options after completing your studies, including the Temporary Graduate visa (subclass 485).'],
     ]" />
 
     {{-- §9 CTA --}}

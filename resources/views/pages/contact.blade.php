@@ -44,7 +44,7 @@
 
     {{-- §1 Hero --}}
     <x-hero title="Let's Talk About Your Future"
-            subtitle="Whether you need education, migration, or career guidance — we respond to all enquiries within three business days."
+            subtitle="Whether you need education, migration, or career guidance, we respond to all enquiries within three business days."
             :image="asset('images/contact/consultation-room.webp')"
             alt="Professional consultation at Blue Education office"
             variant="left"
@@ -171,7 +171,7 @@
 
     {{-- §7 CTA --}}
     <x-cta-banner title="Ready to Get Started?"
-                  subtitle="Book a free consultation — in person, by phone, or video. We speak English, Bahasa, Cantonese, Japanese, and more."
+                  subtitle="Book a free consultation: in person, by phone, or video. We speak English, Bahasa, Cantonese, Japanese, and more."
                   primary-text="Book a Consultation"
                   :primary-href="route('contact') . '#enquiry-form'" />
 

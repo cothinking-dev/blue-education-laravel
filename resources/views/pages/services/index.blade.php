@@ -2,10 +2,10 @@
           description="Education, migration, career, and student support services from Perth, Western Australia. One provider, every step of the journey.">
 
     {{-- §1 Hero --}}
-    <x-hero title="Education, migration, and career services — under one roof."
+    <x-hero title="Education, migration, and career services, under one roof."
             subtitle="From choosing the right course to securing permanent residence, Blue Education covers every step."
             :image="asset('images/heroes/services.webp')"
-            alt="Education advisor meeting with East Asian students to discuss study options"
+            alt="Education adviser meeting with East Asian students to discuss study options"
             variant="left"
             :breadcrumbs="true" />
 

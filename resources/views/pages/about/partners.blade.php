@@ -40,7 +40,7 @@
             @endif
 
             <x-partner-grid :partners="$partnersByCategory->get('tafe_training', collect())" title="TAFE & Training Providers">
-                <p class="text-base-600 mb-6 leading-relaxed text-pretty">Direct relationships with TAFE WA and registered training organisations across Western Australia and nationally. VET applications handled the same way as university placements — with the same advisor, start to finish.</p>
+                <p class="text-base-600 mb-6 leading-relaxed text-pretty">Direct relationships with TAFE WA and registered training organisations across Western Australia and nationally. VET applications handled the same way as university placements, with the same adviser, start to finish.</p>
             </x-partner-grid>
 
             <x-partner-grid :partners="$partnersByCategory->get('english_language', collect())" title="English Language Schools" />

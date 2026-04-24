@@ -3,7 +3,7 @@
 
     {{-- §1 Hero --}}
     <x-hero title="Independent education and migration advice; Since 1998."
-            :subtitle="'Most education consultancies cover one thing. We\'ve covered all three — education, career, and migration — from a single Perth office for ' . (date('Y') - 1998) . ' years. Clients from 40+ countries trust us with decisions that don\'t have a do-over.'"
+            :subtitle="'Most education consultancies cover one thing. We\'ve covered all three (education, career, and migration) from a single Perth office for ' . (date('Y') - 1998) . ' years. Clients from 40+ countries trust us with decisions that don\'t have a do-over.'"
             :image="asset('images/heroes/about.webp')"
             alt="Blue Education professional team collaborating in a modern office"
             variant="left"
@@ -26,7 +26,7 @@
                 @php
                     $values = [
                         ['title' => 'Client-Centric', 'desc' => "Your goals drive every recommendation. We listen, assess, and advise based on what's right for you.", 'icon' => 'identification'],
-                        ['title' => 'Honesty', 'desc' => "We tell you what you need to hear. If a pathway won't work, we say so — and find one that will.", 'icon' => 'check-circle'],
+                        ['title' => 'Honesty', 'desc' => "We tell you what you need to hear. If a pathway won't work, we say so, and find one that will.", 'icon' => 'check-circle'],
                         ['title' => 'Quality-Driven', 'desc' => "Every interaction, from first consultation to visa approval, meets a standard we'd set for our own family.", 'icon' => 'star'],
                         ['title' => 'Professionally Qualified', 'desc' => 'QEAC certified. Migration Alliance. MIA affiliated. Australian Bar Association.', 'icon' => 'shield-check'],
                         ['title' => 'Personalised', 'desc' => 'Your situation is unique. Our advice should match your circumstances, goals, and timeline.', 'icon' => 'finger-print'],
@@ -65,10 +65,10 @@
                         <span class="flex-shrink-0 w-10 h-10 rounded-full bg-primary-100 text-primary-800 font-bold text-lg flex items-center justify-center">1</span>
                         <h3 class="text-2xl font-bold text-base-900 text-pretty">Education + Career + Migration. One provider.</h3>
                     </div>
-                    <p class="text-base-600 leading-relaxed text-pretty lg:pl-14">Most agencies cover one domain. We cover all three — coordinated into a single, seamless plan. One team. No handoffs between providers.</p>
+                    <p class="text-base-600 leading-relaxed text-pretty lg:pl-14">Most agencies cover one domain. We cover all three, coordinated into a single, seamless plan. One team. No handoffs between providers.</p>
                 </div>
                 <div class="flex-1 lg:max-w-[40%]">
-                    <img src="{{ asset('images/about/education-consulting.webp') }}" alt="East Asian students meeting with education advisor to discuss course options" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2] shadow-lg" loading="lazy">
+                    <img src="{{ asset('images/about/education-consulting.webp') }}" alt="East Asian students meeting with education adviser to discuss course options" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2] shadow-lg" loading="lazy">
                 </div>
             </div>
 
@@ -109,13 +109,13 @@
             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6" data-animate="stagger">
                 <x-credential-card name="QEAC Certified"
                                    logo="images/credentials/qeac.svg"
-                                   description="Qualified Education Agent Counsellor — premier professional qualification" />
+                                   description="Qualified Education Agent Counsellor: premier professional qualification" />
                 <x-credential-card name="Migration Alliance"
                                    logo="images/credentials/migration-alliance.svg"
                                    description="Australia's largest professional body for migration agents" />
                 <x-credential-card name="MIA"
                                    logo="images/credentials/mia.svg"
-                                   description="Migration Institute of Australia — highest ethical standards" />
+                                   description="Migration Institute of Australia: highest ethical standards" />
                 <x-credential-card name="Australian Bar Association"
                                    logo="images/credentials/australian-bar-association.svg"
                                    description="Legal expertise relevant to education and migration matters" />
@@ -128,7 +128,7 @@
 
     {{-- §7 CTA Banner --}}
     <x-cta-banner title="Talk to us. We'll tell you where you stand."
-                  subtitle="One session covers your education, career, and migration options — assessed together, not in separate conversations with separate agencies."
+                  subtitle="One session covers your education, career, and migration options, assessed together, not in separate conversations with separate agencies."
                   primaryText="Book a Consultation"
                   :primaryHref="route('contact')" />
                   secondaryText="Meet Our Team"

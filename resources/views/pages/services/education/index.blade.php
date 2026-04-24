@@ -1,19 +1,19 @@
 <x-layout title="Education Services"
-          description="Australia has 1,100+ institutions and 20,000+ programmes. Blue Education helps you find the right one — from school to PhD.">
+          description="Australia has 1,100+ institutions and 20,000+ programmes. Blue Education helps you find the right one, from school to PhD.">
 
     {{-- §1 Hero --}}
     <x-hero title="Finding the right one takes more than a Google search."
             subtitle="Blue Education has engaged with thousands of students from more than 145 countries. Let us show you how we can help you navigate your way to Australia and New Zealand."
             badge="1,100+ institutions · 20,000+ programmes"
             :image="asset('images/heroes/services-education.webp')"
-            alt="Education advisor guiding an East Asian student through university options"
+            alt="Education adviser guiding an East Asian student through university options"
             variant="left"
             :breadcrumbs="true" />
 
     {{-- §2 How We Help --}}
-    <x-content-split title="How We Help" :image="asset('images/services-education/education-guidance.webp')" alt="Education advisor guiding an East Asian student through programme options">
+    <x-content-split title="How We Help" :image="asset('images/services-education/education-guidance.webp')" alt="Education adviser guiding an East Asian student through programme options">
         <p>Your career outcome is our <strong>primary focus</strong>. We first identify programmes that genuinely support your intended <strong>career goal</strong>.</p>
-        <p>Where possible, we then consider <strong>visa options</strong> and highlight pathways that align with your study plan — treating migration outcomes as an additional advantage.</p>
+        <p>Where possible, we then consider <strong>visa options</strong> and highlight pathways that align with your study plan, treating migration outcomes as an additional advantage.</p>
     </x-content-split>
 
     {{-- §3 Education Pathways --}}
@@ -23,7 +23,7 @@
                                :centered="false" class="mb-10" />
             <div class="grid sm:grid-cols-2 gap-6" data-animate="stagger">
                 <x-card title="I'm enrolling a child in school"
-                        description="We place school-age children — from age 5 — into Australian public and private schools, and support older students applying on their own student visa."
+                        description="We place school-age children (from age 5) into Australian public and private schools, and support older students applying on their own student visa."
                         :image="asset('images/services-education/pathway-school.webp')"
                         alt="East Asian student smiling in a modern classroom with classmates"
                         :href="route('services.education.school')"
@@ -78,11 +78,11 @@
     <section class="bg-white">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
             <x-section-heading title="End-to-end Support"
-                               subtitle="Your advisor supports you at every stage — from initial onboarding through to post-arrival support."
+                               subtitle="Your adviser supports you at every stage, from initial onboarding through to post-arrival support."
                                :centered="true" class="mb-10" />
             <x-timeline :steps="[
                 ['title' => 'Discovery Session', 'icon' => 'chat-bubble-left-right', 'description' => 'We assess your background, goals, and eligibility to understand where you are and where you want to be.'],
-                ['title' => 'Pathway Recommendation', 'icon' => 'map', 'description' => 'A shortlist of institutions and programmes matched to your career and migration goals — with a clear explanation of why each one fits.'],
+                ['title' => 'Pathway Recommendation', 'icon' => 'map', 'description' => 'A shortlist of institutions and programmes matched to your career and migration goals, with a clear explanation of why each one fits.'],
                 ['title' => 'Review & Enrolment', 'icon' => 'document-text', 'description' => 'We will review your documents, prepare for your school\'s submission and secure your offer and confirmation of enrolment.'],
                 ['title' => 'Visa & Pre-Departure', 'icon' => 'paper-airplane', 'description' => 'Student visa, accommodation, health insurance, arrival orientation. All coordinated in one place.'],
                 ['title' => 'Ongoing Support', 'icon' => 'shield-check', 'description' => 'Academic guidance, welfare monitoring, and career planning for as long as you\'re studying.'],
@@ -98,7 +98,7 @@
 
             <x-data-table class="shadow-xl" :headers="['Study Level', 'Typical Duration', 'Post-Study Work Visa (Subclass 485)']"
                           :rows="[
-                              ['English Language (ELICOS)', '10 weeks – 1 year', 'Not directly eligible — pathway into a qualifying course'],
+                              ['English Language (ELICOS)', '10 weeks – 1 year', 'Not directly eligible; pathway into a qualifying course'],
                               ['Certificate III–IV (VET)', '6 months – 2 years', 'Generally not eligible; Graduate Work stream may apply for some occupations (~18 months)'],
                               ['Diploma / Advanced Diploma (VET)', '1 – 2 years', 'Graduate Work stream may apply if linked to an eligible occupation (~18 months)'],
                               ['Bachelor Degree', '3 – 4 years', 'Up to 2 years (Post-Study Work stream)'],
@@ -112,7 +112,7 @@
             <div class="mt-6 bg-primary-50 border-2 border-primary-100 rounded-corner-lg p-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
                 <div>
                     <p class="font-semibold text-base-900">Need to know the English score and academic entry requirements?</p>
-                    <p class="text-sm text-base-600 mt-1">IELTS, PTE, TOEFL, Cambridge equivalencies — plus academic qualifications and pathway options.</p>
+                    <p class="text-sm text-base-600 mt-1">IELTS, PTE, TOEFL, Cambridge equivalencies, plus academic qualifications and pathway options.</p>
                 </div>
                 <a href="{{ route('admission-requirements') }}" class="inline-flex items-center gap-1.5 shrink-0 bg-primary-800 text-white font-semibold px-5 py-2.5 rounded-corner text-sm hover:bg-primary-700 transition-colors">
                     View Full Requirements
@@ -127,14 +127,14 @@
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-8">
             <div class="flex items-center gap-4">
                 <x-credential-card name="QEAC Certified" logo="images/credentials/qeac.svg" description="" />
-                <p class="text-base-500 text-sm text-pretty">Blue Education is QEAC certified — meeting the quality standards set for education agent counsellors in Australia.</p>
+                <p class="text-base-500 text-sm text-pretty">Blue Education is QEAC certified, meeting the quality standards set for education agent counsellors in Australia.</p>
             </div>
         </div>
     </section>
 
     {{-- §6 CTA --}}
     <x-cta-banner title="Know what you want to study. Not sure how to get there?"
-                  subtitle="Book a free education consultation. We review your background, map your options, and tell you exactly what the pathway looks like — in one conversation."
+                  subtitle="Book a free education consultation. We review your background, map your options, and tell you exactly what the pathway looks like, in one conversation."
                   primaryText="Book an Education Assessment"
                   :primaryHref="route('contact')" />
 

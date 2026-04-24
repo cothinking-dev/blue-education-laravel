@@ -1,11 +1,11 @@
 <x-layout title="Overseas Student Health Cover (OSHC)"
-          description="OSHC is mandatory for Australian student visas. We arrange your health cover through trusted partner platforms — so your policy is confirmed before you lodge.">
+          description="OSHC is mandatory for Australian student visas. We arrange your health cover through trusted partner platforms, so your policy is confirmed before you lodge.">
 
     {{-- §1 Hero --}}
     <x-hero title="Health cover sorted before you arrive"
-            subtitle="Overseas Student Health Cover is mandatory for most student visas in Australia. We arrange your policy through trusted partner platforms — so your cover is confirmed and ready when you need it."
+            subtitle="Overseas Student Health Cover is mandatory for most student visas in Australia. We arrange your policy through trusted partner platforms, so your cover is confirmed and ready when you need it."
             :image="asset('images/heroes/services-student-support.webp')"
-            alt="International student consulting with an advisor about health insurance documents"
+            alt="International student consulting with an adviser about health insurance documents"
             variant="left"
             :breadcrumbs="true" />
 
@@ -15,8 +15,8 @@
             <div class="flex flex-col lg:flex-row gap-12">
                 <div class="flex-1">
                     <h2 class="text-3xl font-bold text-base-900 mb-4 text-pretty" data-animate="fade-up">What Is OSHC?</h2>
-                    <p class="text-base-600 leading-relaxed mb-4 text-pretty">Overseas Student Health Cover (OSHC) is health insurance designed specifically for international students in Australia. It covers essential medical costs while you study — and in most cases, you cannot lodge a student visa application without it.</p>
-                    <p class="text-base-600 leading-relaxed mb-4 text-pretty">If you are travelling with dependants — a partner, spouse, or children — you will need couples cover or family cover to meet your visa requirements.</p>
+                    <p class="text-base-600 leading-relaxed mb-4 text-pretty">Overseas Student Health Cover (OSHC) is health insurance designed specifically for international students in Australia. It covers essential medical costs while you study, and in most cases, you cannot lodge a student visa application without it.</p>
+                    <p class="text-base-600 leading-relaxed mb-4 text-pretty">If you are travelling with dependants (a partner, spouse, or children), you will need couples cover or family cover to meet your visa requirements.</p>
                     <p class="text-xs text-base-500 text-pretty">Students from Norway, Sweden, and Belgium may be exempt from OSHC if covered under a reciprocal health care agreement with Australia. We can confirm whether an exemption applies to your situation.</p>
                 </div>
                 <div class="lg:w-[40%]">
@@ -88,7 +88,7 @@
     <section class="bg-white">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
             <x-section-heading title="Arrange your OSHC" :centered="false" />
-            <p class="text-base-600 leading-relaxed mb-8 text-pretty">OSHC policies are underwritten by approved insurers including Bupa, Medibank, nib, Allianz Care, AHM, and CBHS. You can compare and arrange your cover through any of our partner platforms below — and we will obtain your OSHC certificate promptly for your visa lodgement.</p>
+            <p class="text-base-600 leading-relaxed mb-8 text-pretty">OSHC policies are underwritten by approved insurers including Bupa, Medibank, nib, Allianz Care, AHM, and CBHS. You can compare and arrange your cover through any of our partner platforms below, and we will obtain your OSHC certificate promptly for your visa lodgement.</p>
 
             <div class="grid sm:grid-cols-3 gap-6">
                 <div class="border border-base-200 rounded-corner-lg p-6 text-center flex flex-col items-center">
@@ -123,7 +123,7 @@
     <section class="bg-base-50">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
             <x-section-heading title="Overseas Visitors Cover (OVC)" :centered="false" />
-            <p class="text-base-600 leading-relaxed mb-8 text-pretty">If you hold a temporary visa other than a student visa — such as a Temporary Graduate (subclass 485), Working Holiday (subclass 417), or Temporary Skill Shortage (subclass 482) visa — you will need Overseas Visitors Health Cover (OVHC) rather than OSHC. Students who graduate and transition to a post-study work visa will also need to switch from OSHC to OVHC.</p>
+            <p class="text-base-600 leading-relaxed mb-8 text-pretty">If you hold a temporary visa other than a student visa (such as a Temporary Graduate (subclass 485), Working Holiday (subclass 417), or Temporary Skill Shortage (subclass 482) visa), you will need Overseas Visitors Health Cover (OVHC) rather than OSHC. Students who graduate and transition to a post-study work visa will also need to switch from OSHC to OVHC.</p>
 
             <div class="grid sm:grid-cols-3 gap-6">
                 <div class="border border-base-200 rounded-corner-lg p-6 text-center flex flex-col items-center bg-white">

@@ -5,7 +5,7 @@
     <x-hero title="Student support services in Australia."
             subtitle="Accommodation. Guardianship. Health cover. Airport transfers. Translation. 24/7 emergency line. All arranged before arrival."
             :image="asset('images/heroes/services-student-support.webp')"
-            alt="Advisor tutoring an East Asian student at a desk"
+            alt="Adviser tutoring an East Asian student at a desk"
             variant="left"
             :breadcrumbs="true" />
 
@@ -52,7 +52,7 @@
                         <x-heroicon-o-heart class="w-5 h-5" />
                     </div>
                     <h3 class="font-bold text-base-900 mb-2">Health Insurance (OSHC)</h3>
-                    <p class="text-base-600 text-sm leading-relaxed text-pretty">Overseas Student Health Cover — mandatory for most student visas. We arrange cover through trusted partner platforms and handle policy selection, enrolment, claims assistance, and renewal. <a href="{{ route('services.oshc') }}" class="text-primary-800 hover:underline font-medium">Arrange your OSHC &rarr;</a></p>
+                    <p class="text-base-600 text-sm leading-relaxed text-pretty">Overseas Student Health Cover, mandatory for most student visas. We arrange cover through trusted partner platforms and handle policy selection, enrolment, claims assistance, and renewal. <a href="{{ route('services.oshc') }}" class="text-primary-800 hover:underline font-medium">Arrange your OSHC &rarr;</a></p>
                 </div>
 
                 <div class="border border-base-200 rounded-corner-lg p-6">
@@ -83,8 +83,8 @@
     <x-content-split title="For Parents" :image="asset('images/services-student-support/parent-reassurance.webp')" alt="East Asian parent reassuring child about studying abroad" class="bg-base-50" reverse>
         <p>Sending your child to study in Australia is a significant decision. Here's how we look after them:</p>
         <ul class="space-y-2 text-sm">
-            <li class="flex items-start gap-2"><span class="text-primary-600">&#8226;</span> <span><span class="font-medium">24/7 emergency hotline</span> — for parents and students, any time</span></li>
-            <li class="flex items-start gap-2"><span class="text-primary-600">&#8226;</span> <span><span class="font-medium">Regular welfare reports</span> — school updates and wellbeing checks</span></li>
+            <li class="flex items-start gap-2"><span class="text-primary-600">&#8226;</span> <span><span class="font-medium">24/7 emergency hotline</span>: for parents and students, any time</span></li>
+            <li class="flex items-start gap-2"><span class="text-primary-600">&#8226;</span> <span><span class="font-medium">Regular welfare reports</span>: school updates and wellbeing checks</span></li>
             <li class="flex items-start gap-2"><span class="text-primary-600">&#8226;</span> <span><span class="font-medium">Direct communication</span> with guardianship providers</span></li>
             <li class="flex items-start gap-2"><span class="text-primary-600">&#8226;</span> <span><span class="font-medium">On-ground support</span> in Perth and across major Australian cities</span></li>
         </ul>
@@ -119,7 +119,7 @@
                               ['Medical examinations', '$240–$380 depending on assessment type'],
                               ['Translation, airport transfers, 24/7 hotline', 'Additional service fees apply'],
                           ]" />
-            <p class="text-sm text-base-500 mt-4 text-pretty">Items above are costs payable directly to providers — homestay families, guardianship organisations, OSHC providers, medical clinics. Blue Education's service fees for advisory, application management, and ongoing support are quoted separately during initial consultation.</p>
+            <p class="text-sm text-base-500 mt-4 text-pretty">Items above are costs payable directly to providers: homestay families, guardianship organisations, OSHC providers, medical clinics. Blue Education's service fees for advisory, application management, and ongoing support are quoted separately during initial consultation.</p>
             <a href="{{ route('fees') }}" class="text-primary-800 font-semibold text-sm hover:text-primary-600 transition-colors mt-2 inline-block">See full fees & costs &rarr;</a>
         </div>
     </section>

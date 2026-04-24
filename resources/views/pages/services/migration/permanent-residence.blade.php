@@ -1,9 +1,9 @@
 <x-layout title="Permanent Residence"
-          description="From skills assessment and points optimisation to employer nomination and family reunification — every pathway is different, and the details matter.">
+          description="From skills assessment and points optimisation to employer nomination and family reunification, every pathway is different, and the details matter.">
 
     {{-- §1 Hero --}}
     <x-hero title="Your path to Australian permanent residence starts with the right first step"
-            subtitle="From skills assessment and points optimisation to employer nomination and family reunification — every pathway is different, and the details matter. We manage the application from start to finish."
+            subtitle="From skills assessment and points optimisation to employer nomination and family reunification, every pathway is different, and the details matter. We manage the application from start to finish."
             :image="asset('images/heroes/services-migration-permanent-residence.webp')"
             alt="East Asian mother walking happily with her children from home"
             variant="left"
@@ -90,7 +90,7 @@
                             <p class="text-base-500 text-xs mt-3"><strong>Best for:</strong> Anyone with an eligible Australian citizen or permanent resident family member or partner.</p>
                         </div>
                         <div class="flex-1">
-                            <p class="text-base-600 text-sm leading-relaxed mb-3 text-pretty">Partner, parent, and family reunification pathways — including representation if an application requires review.</p>
+                            <p class="text-base-600 text-sm leading-relaxed mb-3 text-pretty">Partner, parent, and family reunification pathways, including representation if an application requires review.</p>
                             <x-icon-list variant="check">
                                 <x-icon-list.item>Relationship evidence</x-icon-list.item>
                                 <x-icon-list.item>Financial sponsorship</x-icon-list.item>
@@ -127,7 +127,7 @@
     <section class="bg-white">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
             <x-callout title="When It's More Complex" variant="info">
-                <p class="text-sm mb-3 text-pretty">Not every application is straightforward. If you've previously had a visa refused or cancelled — or if your situation involves complex employer arrangements, an appeal, or Administrative Appeals Tribunal proceedings — we work alongside experienced immigration lawyers who specialise in exactly these matters.</p>
+                <p class="text-sm mb-3 text-pretty">Not every application is straightforward. If you've previously had a visa refused or cancelled, or if your situation involves complex employer arrangements, an appeal, or Administrative Appeals Tribunal proceedings, we work alongside experienced immigration lawyers who specialise in exactly these matters.</p>
                 <a href="{{ route('contact') }}" class="inline-flex items-center gap-1 text-sm font-semibold text-primary-800 hover:text-primary-600 transition-colors">Talk to us about your situation &rarr;</a>
             </x-callout>
         </div>
@@ -197,7 +197,7 @@
 
     {{-- §6 CTA --}}
     <x-cta-banner title="Eligible for PR?"
-                  subtitle="We assess your qualifications, work history, and visa status, and tell you which pathways apply — and which don't. Straight answer, no speculation."
+                  subtitle="We assess your qualifications, work history, and visa status, and tell you which pathways apply, and which don't. Straight answer, no speculation."
                   primaryText="Assess My PR Eligibility"
                   :primaryHref="route('contact')" />
 

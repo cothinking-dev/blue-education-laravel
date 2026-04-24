@@ -2,8 +2,8 @@
           description="Applying for a student visa? Our team of Registered Migration Agents will guide you from eligibility through to lodgement.">
 
     {{-- §1 Hero --}}
-    <x-hero title="Applying for a student visa isn't as easy as it used to be — get it right from the start"
-            subtitle="Our team will work with you at every step — from checking your eligibility and documents, to guiding your Genuine Student (GS) statement, through to preparing, reviewing and lodging the application by a Registered Migration Agent."
+    <x-hero title="Applying for a student visa isn't as easy as it used to be. Get it right from the start"
+            subtitle="Our team will work with you at every step, from checking your eligibility and documents, to guiding your Genuine Student (GS) statement, through to preparing, reviewing and lodging the application by a Registered Migration Agent."
             :image="asset('images/heroes/services-migration-student-visas.webp')"
             alt="Two East Asian students checking flight information at the airport"
             variant="left"
@@ -15,8 +15,8 @@
             <div class="flex flex-col lg:flex-row gap-12">
                 <div class="flex-1">
                     <h2 class="text-3xl font-bold text-base-900 mb-4 text-pretty" data-animate="fade-up">What Is a Student Visa?</h2>
-                    <p class="text-base-600 leading-relaxed mb-4 text-pretty">The Student Visa (Subclass 500) allows international students to study full-time at a registered Australian institution — covering courses from primary school through to doctoral programmes.</p>
-                    <p class="text-base-600 leading-relaxed text-pretty">A well-prepared application moves through the system cleanly. Your advisor handles the document compilation, Genuine Student (GS) statement, and lodgement so nothing gets missed.</p>
+                    <p class="text-base-600 leading-relaxed mb-4 text-pretty">The Student Visa (Subclass 500) allows international students to study full-time at a registered Australian institution, covering courses from primary school through to doctoral programmes.</p>
+                    <p class="text-base-600 leading-relaxed text-pretty">A well-prepared application moves through the system cleanly. Your adviser handles the document compilation, Genuine Student (GS) statement, and lodgement so nothing gets missed.</p>
 
                     {{-- Decorative illustration --}}
                     <div class="hidden lg:flex items-center justify-center mt-8">
@@ -72,7 +72,7 @@
                     </div>
                 </div>
                 <div class="lg:w-[40%]">
-                    <x-facts-table title="Key Facts — Subclass 500"
+                    <x-facts-table title="Key Facts: Subclass 500"
                                    :rows="[
                                        ['key' => 'Visa subclass', 'value' => '500'],
                                        ['key' => 'Health cover', 'value' => 'OSHC mandatory'],
@@ -98,7 +98,7 @@
                         ['num' => 2, 'title' => 'Document Preparation', 'desc' => 'Together we organise your academic records, evidence of financial capacity, formal English test results and other supporting documents. We provide clear checklists and guidance, and help you make sure everything is complete and consistent.'],
                         ['num' => 3, 'title' => 'Genuine Student (GS) Statement', 'desc' => 'The Genuine Student (GS) requirement is how the Department of Home Affairs assesses whether you genuinely intend to study in Australia and understand your obligations. We guide you on how to present your circumstances clearly and honestly, and help you structure a GS statement that is specific to your situation.'],
                         ['num' => 4, 'title' => 'Application Lodgement', 'desc' => 'We help you complete the application forms and upload your supporting documents in the required format. Lodgement is done carefully to reflect the information and evidence you have provided.'],
-                        ['num' => 5, 'title' => 'After Lodgement', 'desc' => 'We help you monitor the application process and, where appropriate, respond to any requests for further information — supporting you from lodgement through to a final outcome.'],
+                        ['num' => 5, 'title' => 'After Lodgement', 'desc' => 'We help you monitor the application process and, where appropriate, respond to any requests for further information, supporting you from lodgement through to a final outcome.'],
                     ];
                 @endphp
                 @foreach($steps as $step)
@@ -343,7 +343,7 @@
                     </thead>
                     <tbody class="divide-y divide-base-100">
                         <tr class="bg-white">
-                            <td class="px-5 py-3 font-medium text-base-900">Living costs (primary student &mdash; 12 months)</td>
+                            <td class="px-5 py-3 font-medium text-base-900">Living costs (primary student, 12 months)</td>
                             <td class="px-5 py-3 text-base-600">Day-to-day expenses such as accommodation, food, transport and basic bills for the main applicant</td>
                             <td class="px-5 py-3 text-base-600 whitespace-nowrap">Around AUD 29,710/year</td>
                             <td class="px-5 py-3 text-base-600">Base living-cost benchmark for a single student for 12 months. Figures are indicative and can be updated by the Department.</td>
@@ -361,19 +361,19 @@
                             <td class="px-5 py-3 text-base-600">This can vary based on your country, airline and time of year.</td>
                         </tr>
                         <tr class="bg-base-50">
-                            <td class="px-5 py-3 font-medium text-base-900">Additional living costs &mdash; spouse/partner</td>
+                            <td class="px-5 py-3 font-medium text-base-900">Additional living costs: spouse/partner</td>
                             <td class="px-5 py-3 text-base-600">Extra living costs if a partner is included on the visa</td>
                             <td class="px-5 py-3 text-base-600 whitespace-nowrap">Around AUD 10,394/year</td>
                             <td class="px-5 py-3 text-base-600">Approximate benchmark for a spouse or de facto partner, in addition to the main student amount.</td>
                         </tr>
                         <tr class="bg-white">
-                            <td class="px-5 py-3 font-medium text-base-900">Additional living costs &mdash; each dependent child</td>
+                            <td class="px-5 py-3 font-medium text-base-900">Additional living costs: each dependent child</td>
                             <td class="px-5 py-3 text-base-600">Extra living costs for each dependent child</td>
                             <td class="px-5 py-3 text-base-600 whitespace-nowrap">Around AUD 4,449/child/year</td>
                             <td class="px-5 py-3 text-base-600">Added on top of the main student amount and any partner amount if applicable.</td>
                         </tr>
                         <tr class="bg-base-50">
-                            <td class="px-5 py-3 font-medium text-base-900">School-aged children &mdash; school fees</td>
+                            <td class="px-5 py-3 font-medium text-base-900">School-aged children: school fees</td>
                             <td class="px-5 py-3 text-base-600">Public or private schooling costs for dependent children of school age</td>
                             <td class="px-5 py-3 text-base-600 whitespace-nowrap">Around AUD 13,000+/child/year</td>
                             <td class="px-5 py-3 text-base-600">Exact school fees depend on the state, sector and school; some exemptions apply in limited cases.</td>
@@ -426,7 +426,7 @@
                 </table>
             </div>
 
-            <p class="text-xs text-base-500 mt-4 text-pretty">These score ranges are a general guide only. Every university, college and course in Australia sets its own English language entry requirements, and some programmes &mdash; especially medicine, nursing, teaching, social work and law &mdash; often require higher overall scores and higher minimum sub-scores than standard courses. Always check the exact English requirement for your chosen course and provider, and confirm any visa-related English settings with the education provider, or a trusted education agent.</p>
+            <p class="text-xs text-base-500 mt-4 text-pretty">These score ranges are a general guide only. Every university, college and course in Australia sets its own English language entry requirements, and some programmes (especially medicine, nursing, teaching, social work and law) often require higher overall scores and higher minimum sub-scores than standard courses. Always check the exact English requirement for your chosen course and provider, and confirm any visa-related English settings with the education provider, or a trusted education agent.</p>
         </div>
     </section>
 
@@ -447,7 +447,7 @@
 
             <div class="flex flex-col lg:flex-row gap-10">
                 <div class="flex-1">
-                    <p class="text-primary-100 leading-relaxed mb-6 text-pretty">Studying in Australia is more than just getting a visa approved — it's about feeling supported while you settle in, study and plan your next steps. Blue Education is based in Perth with partners around Australia, so you have a local team you can turn to throughout your journey.</p>
+                    <p class="text-primary-100 leading-relaxed mb-6 text-pretty">Studying in Australia is more than just getting a visa approved; it's about feeling supported while you settle in, study and plan your next steps. Blue Education is based in Perth with partners around Australia, so you have a local team you can turn to throughout your journey.</p>
 
                     <p class="text-white font-semibold mb-3">We can help with:</p>
                     <x-icon-list variant="check" theme="dark" class="mb-6">
@@ -457,7 +457,7 @@
                         <x-icon-list.item>Study, migration and career planning if you want to change courses, extend your studies, or explore post-study work and skilled migration pathways.</x-icon-list.item>
                     </x-icon-list>
 
-                    <p class="text-primary-200 text-sm text-pretty">Once you arrive in Australia, you are not on your own — you have a team in Perth that understands international student life and is here to support you from your first week through to graduation and beyond.</p>
+                    <p class="text-primary-200 text-sm text-pretty">Once you arrive in Australia, you are not on your own. You have a team in Perth that understands international student life and is here to support you from your first week through to graduation and beyond.</p>
 
                     <a href="{{ route('services.student-support') }}" class="inline-flex items-center gap-1 mt-4 text-white hover:text-primary-200 font-semibold transition-colors">Student support services &rarr;</a>
                 </div>
@@ -481,7 +481,7 @@
             <p class="text-primary-800 text-xs font-semibold uppercase tracking-wider mb-2">After Graduation</p>
             <h2 class="text-3xl font-bold text-base-900 mb-6">Post-Study Work Options</h2>
 
-            <p class="text-base-600 leading-relaxed mb-8 text-pretty max-w-3xl">Finishing your course is just the beginning. Australia offers several pathways for graduates who want to stay, work and build a career — and in many cases, work towards permanent residence.</p>
+            <p class="text-base-600 leading-relaxed mb-8 text-pretty max-w-3xl">Finishing your course is just the beginning. Australia offers several pathways for graduates who want to stay, work and build a career, and in many cases, work towards permanent residence.</p>
 
             <div class="grid sm:grid-cols-3 gap-6 mb-8">
                 <div class="border border-base-200 rounded-corner-lg p-6">
@@ -489,14 +489,14 @@
                         <x-heroicon-o-briefcase class="w-5 h-5" />
                     </div>
                     <h3 class="font-bold text-base-900 mb-2">Post-Study Work Visa</h3>
-                    <p class="text-base-600 text-sm leading-relaxed text-pretty">Subclass 485 — 2 years for bachelor's and master's coursework graduates, 3 years for master's research and doctoral graduates.</p>
+                    <p class="text-base-600 text-sm leading-relaxed text-pretty">Subclass 485: 2 years for bachelor's and master's coursework graduates, 3 years for master's research and doctoral graduates.</p>
                 </div>
                 <div class="border border-base-200 rounded-corner-lg p-6">
                     <div class="w-10 h-10 rounded-full bg-primary-50 text-primary-800 flex items-center justify-center mb-3">
                         <x-heroicon-o-building-office class="w-5 h-5" />
                     </div>
                     <h3 class="font-bold text-base-900 mb-2">Temporary Skill Shortage</h3>
-                    <p class="text-base-600 text-sm leading-relaxed text-pretty">Subclass 482 — for graduates with an employer willing to sponsor, with pathways to permanent residence.</p>
+                    <p class="text-base-600 text-sm leading-relaxed text-pretty">Subclass 482: for graduates with an employer willing to sponsor, with pathways to permanent residence.</p>
                 </div>
                 <div class="border border-base-200 rounded-corner-lg p-6">
                     <div class="w-10 h-10 rounded-full bg-primary-50 text-primary-800 flex items-center justify-center mb-3">
@@ -507,7 +507,7 @@
                 </div>
             </div>
 
-            <p class="text-base-500 text-sm text-pretty mb-4">The same team that helped with your student visa can guide you through the transition — no need to start over with a new agent.</p>
+            <p class="text-base-500 text-sm text-pretty mb-4">The same team that helped with your student visa can guide you through the transition. No need to start over with a new agent.</p>
             <a href="{{ route('services.migration.graduate-work') }}" class="inline-flex items-center justify-center px-6 py-2.5 rounded-corner bg-primary-800 text-white text-sm font-semibold hover:bg-primary-700 transition-colors">Explore Work Visa Options &rarr;</a>
         </div>
     </section>

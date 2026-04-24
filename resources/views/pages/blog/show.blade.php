@@ -158,7 +158,7 @@
 
     {{-- CTA --}}
     <x-cta-banner title="Ready to start your Australian journey?"
-                  subtitle="Talk to a Blue Education advisor about education pathways, visa options, and career planning — all in one place."
+                  subtitle="Talk to a Blue Education adviser about education pathways, visa options, and career planning, all in one place."
                   primaryText="Book a Consultation"
                   :primaryHref="route('contact')" />
 

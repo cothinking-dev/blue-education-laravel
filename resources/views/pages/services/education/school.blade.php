@@ -2,7 +2,7 @@
           description="A quality Australian education with a safety net built around every student. We handle placement, visa, accommodation, and guardianship.">
 
     {{-- §1 Hero --}}
-    <x-hero title="A quality Australian education with a safety net built around every student — from primary school children to mature-aged learners."
+    <x-hero title="A quality Australian education with a safety net built around every student, from primary school children to mature-aged learners."
             subtitle="We handle placement, visa, accommodation, and guardianship, so families and adult students aren't left worrying from the other side of the world."
             :image="asset('images/heroes/services-education-school.webp')"
             alt="East Asian children in school uniforms in an Australian classroom"
@@ -79,7 +79,7 @@
                     </table>
                 </div>
             </div>
-            <p class="text-sm text-base-500 mt-4 text-pretty">Blue Education is an <a href="{{ route('about.scsa-partnership') }}" class="text-primary-800 font-medium hover:underline">SCSA Associate</a> — officially named by the School Curriculum and Standards Authority to promote the Western Australian curriculum internationally.</p>
+            <p class="text-sm text-base-500 mt-4 text-pretty">Blue Education is an <a href="{{ route('about.scsa-partnership') }}" class="text-primary-800 font-medium hover:underline">SCSA Associate</a>, officially named by the School Curriculum and Standards Authority to promote the Western Australian curriculum internationally.</p>
         </div>
     </section>
 
@@ -90,8 +90,8 @@
             <p class="text-base-600 mb-10 text-pretty">Everything we facilitate before the student arrives in Australia.</p>
             <x-timeline :steps="[
                 ['title' => 'School Selection & Placement', 'icon' => 'academic-cap', 'summary' => 'We match each student with the right school based on their goals and family priorities.', 'description' => 'Location, curriculum, fees, learning profile and long-term goals assessed across both public and private options in Australia.'],
-                ['title' => 'Student Visa (Subclass 500)', 'icon' => 'document-text', 'summary' => 'Comprehensive visa application management for students over and under 18.', 'description' => 'Documentation, health examinations, character requirements and online lodgement — coordinated end-to-end so the student and their family are fully supported.'],
-                ['title' => 'Arrival & Accommodation', 'icon' => 'home', 'summary' => 'Pre-arrival orientation and settling-in support so there is less to manage on day one.', 'description' => 'Coordinated airport pickup, Australian bank account, and accommodation through the Blue Education Homestay Network — trusted host families for almost two decades in a safe, welcoming home with warm meals.'],
+                ['title' => 'Student Visa (Subclass 500)', 'icon' => 'document-text', 'summary' => 'Comprehensive visa application management for students over and under 18.', 'description' => 'Documentation, health examinations, character requirements and online lodgement, coordinated end-to-end so the student and their family are fully supported.'],
+                ['title' => 'Arrival & Accommodation', 'icon' => 'home', 'summary' => 'Pre-arrival orientation and settling-in support so there is less to manage on day one.', 'description' => 'Coordinated airport pickup, Australian bank account, and accommodation through the Blue Education Homestay Network: trusted host families for almost two decades in a safe, welcoming home with warm meals.'],
             ]" />
         </div>
     </section>
@@ -146,12 +146,12 @@
             <x-icon-list.item>Facilitate direct communication with the school and homestay hosts</x-icon-list.item>
             <x-icon-list.item>Local support in Perth and other major Australian cities</x-icon-list.item>
         </x-icon-list>
-        <p class="font-semibold text-base-700 mt-4">Your child is never on their own — and neither are you.</p>
+        <p class="font-semibold text-base-700 mt-4">Your child is never on their own, and neither are you.</p>
     </x-content-split>
 
     {{-- §6 CTA --}}
     <x-cta-banner title="Start with a conversation."
-                  subtitle="Book a free education consultation. Tell us the student's age, year level, and preferences — we'll recommend schools and walk you through exactly what the process involves."
+                  subtitle="Book a free education consultation. Tell us the student's age, year level, and preferences. We'll recommend schools and walk you through exactly what the process involves."
                   primaryText="Enquire About School Placements"
                   :primaryHref="route('contact')"
                   secondaryText="Explore the Buddy Programme"

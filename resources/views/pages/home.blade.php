@@ -15,7 +15,7 @@
         {{-- Content --}}
         <div class="relative z-10 px-8 sm:px-10 py-10 sm:py-12 max-w-3xl mx-auto bg-white/10 backdrop-blur-md rounded-corner-lg shadow-lg">
             <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-base-900 mb-2 leading-tight text-pretty">Start Your Journey to Australia with us today!</h1>
-            <p class="text-sm sm:text-base text-base-500 mb-8">Your trusted advisors since the 90s</p>
+            <p class="text-sm sm:text-base text-base-500 mb-8">Your trusted advisers since the 90s</p>
 
             <div class="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
                 <div class="relative w-full sm:w-auto">
@@ -44,9 +44,9 @@
             <x-section-heading title="What We Do" :centered="false" />
             <div class="grid sm:grid-cols-2 gap-6" data-animate="stagger">
                 <x-card title="Education Services"
-                        description="Primary school to PhD — we help you choose the right institution and programme for your goals."
+                        description="Primary school to PhD: we help you choose the right institution and programme for your goals."
                         :image="asset('images/home/education-services.webp')"
-                        alt="East Asian education advisor discussing options with students"
+                        alt="East Asian education adviser discussing options with students"
                         :href="route('services.education.index')"
                         linkText="Explore education pathways" />
 
@@ -67,7 +67,7 @@
                 <x-card title="Student Support"
                         description="We cover everything a student needs. Accommodation, guardianship, health cover, airport transfers, and a 24/7 emergency line."
                         :image="asset('images/home/student-support.webp')"
-                        alt="East Asian student advisor guiding a student at a laptop"
+                        alt="East Asian student adviser guiding a student at a laptop"
                         :href="route('services.student-support')"
                         linkText="See support services" />
             </div>
@@ -80,11 +80,11 @@
             <div class="flex flex-col lg:flex-row gap-12 items-center">
                 {{-- Text --}}
                 <div class="lg:w-[42%] shrink-0">
-                    <img src="{{ asset('brand/logo.webp') }}" alt="Blue Education — education, migration & career" class="h-16 w-auto mx-auto mb-6" loading="lazy">
+                    <img src="{{ asset('brand/logo.webp') }}" alt="Blue Education: education, migration & career" class="h-16 w-auto mx-auto mb-6" loading="lazy">
                     <h2 class="text-3xl font-bold text-base-900 mb-6 text-pretty" data-animate="fade-up"> We stand behind more than half a century of collective experience.</h2>
                     <div class="text-base-600 leading-relaxed space-y-4 text-pretty">
-                        <p>Since the beginning, we’ve operated on one principle: give honest advice. Every client is assigned a dedicated advisor who coordinates your education, visa, and career plan from start to finish, so you never have to re-explain your situation to multiple agencies.</p>
-                        <p>We’ll tell you when a visa application is unlikely to succeed, when a course isn’t the right fit, or when a better pathway exists — before you commit to the wrong one.</p>
+                        <p>Since the beginning, we’ve operated on one principle: give honest advice. Every client is assigned a dedicated adviser who coordinates your education, visa, and career plan from start to finish, so you never have to re-explain your situation to multiple agencies.</p>
+                        <p>We’ll tell you when a visa application is unlikely to succeed, when a course isn’t the right fit, or when a better pathway exists, before you commit to the wrong one.</p>
                         <p>We take this seriously because <span class="font-medium">we were once international students ourselves</span>, and <span class="font-medium">we are migrants too</span>.</p>
                     </div>
                     <a href="{{ route('about.index') }}" class="inline-flex items-center gap-1 text-sm font-semibold text-primary-800 hover:text-primary-600 transition-colors mt-4">
@@ -137,8 +137,8 @@
                 </div>
                 {{-- Copy --}}
                 <div class="flex-1 text-center lg:text-left">
-                    <h2 class="text-xl font-bold text-base-900 mb-2 text-pretty" data-animate="fade-up">Official SCSA Associate — recognised by the WA Government.</h2>
-                    <p class="text-base-600 text-sm leading-relaxed text-pretty">Blue Education is appointed by Western Australia's School Curriculum and Standards Authority to promote the Australian curriculum internationally — giving you access to government-backed education advice.</p>
+                    <h2 class="text-xl font-bold text-base-900 mb-2 text-pretty" data-animate="fade-up">Official SCSA Associate, recognised by the WA Government.</h2>
+                    <p class="text-base-600 text-sm leading-relaxed text-pretty">Blue Education is appointed by Western Australia's School Curriculum and Standards Authority to promote the Australian curriculum internationally, giving you access to government-backed education advice.</p>
                 </div>
                 {{-- Link --}}
                 <a href="{{ route('about.scsa-partnership') }}" class="inline-flex items-center gap-1 text-sm font-semibold text-primary-800 hover:text-primary-600 transition-colors whitespace-nowrap shrink-0">
@@ -156,7 +156,7 @@
             <div class="grid md:grid-cols-2 gap-8" data-animate="stagger">
                 <x-card variant="featured"
                         title="Buddy Programme"
-                        description="Join our Buddy Programme and experience Australian school life alongside a local student — a real preview of what it's like to be an Australian student."
+                        description="Join our Buddy Programme and experience Australian school life alongside a local student, a real preview of what it's like to be an Australian student."
                         badge="7 – 14 Day Immersion"
                         :href="route('programs.study-tours') . '#buddy-programme'"
                         linkText="Discover the Buddy Programme">
@@ -167,7 +167,7 @@
 
                 <x-card variant="featured"
                         title="Study Tours"
-                        description="Participate in a combination of English lessons with real-life skills and sightseeing fun — a great way to enjoy your break and discover Australia's culture and everyday life."
+                        description="Participate in a combination of English lessons with real-life skills and sightseeing fun. A great way to enjoy your break and discover Australia's culture and everyday life."
                         badge="1 – 4 Week Study & Tour"
                         :href="route('programs.study-tours')"
                         linkText="Explore Study Tours">
@@ -203,7 +203,7 @@
             </div>
             <div class="grid md:grid-cols-3 gap-6" data-animate="stagger">
                 <x-card title="Your degree comes with time to use it."
-                        description="Graduates receive 2–4 years of unrestricted work rights — enough to build real experience, establish connections, and weigh your options properly."
+                        description="Graduates receive 2–4 years of unrestricted work rights, enough to build real experience, establish connections, and weigh your options properly."
                         :image="asset('images/home/wa-work-rights.webp')"
                         alt="Two Asian engineers inspecting industrial robot systems with a tablet in a manufacturing facility"
                         aspect="16/9"
@@ -294,7 +294,7 @@
 
     {{-- §10 Final CTA --}}
     <x-cta-banner title="Not sure where to start?"
-                  subtitle="Most people don't either. Book a conversation with us and we'll map out your options honestly — whatever they turn out to be."
+                  subtitle="Most people don't either. Book a conversation with us and we'll map out your options honestly, whatever they turn out to be."
                   primaryText="Book a Consultation"
                   :primaryHref="route('contact')" />
 
