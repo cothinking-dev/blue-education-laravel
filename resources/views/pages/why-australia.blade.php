@@ -44,14 +44,18 @@
                 <div class="flex-1">
                     <span class="text-6xl font-bold text-primary-100">03</span>
                     <h3 class="text-2xl font-bold text-base-900 mt-2 mb-4 text-pretty">Work while you study — and after</h3>
-                    <p class="text-base-600 leading-relaxed mb-4 text-pretty">Australia actively encourages international students to work. After graduation, the Post-Study Work Visa (Subclass 485) gives you real time to build your career:</p>
-                    <x-data-table :headers="['Qualification', 'Visa Duration']"
+                    <p class="text-base-600 leading-relaxed mb-4 text-pretty">Australia encourages international students to gain real work experience, and many graduates can stay and work full-time after they finish their course on a Temporary Graduate visa (subclass 485).</p>
+                    <p class="text-sm font-bold text-base-900 mb-2">Typical post-study work rights (subclass 485: Post-Higher Education Work stream)</p>
+                    <x-data-table :headers="['Qualification completed in Australia', 'Typical 485 visa length*']"
                                   :rows="[
-                                      ['Bachelor Degree', '2 years'],
-                                      ['Master Degree', '3 years'],
-                                      ['Doctoral Degree', '4 years'],
+                                      ['Bachelor degree (including honours)', 'Up to 2 years'],
+                                      ['Master degree (coursework or extended)', 'Up to 2 years in most cases'],
+                                      ['Master degree (research)', 'Up to 3 years'],
+                                      ['Doctoral degree (PhD)', 'Up to 3 to 4 years, depending on current policy settings'],
                                   ]" />
-                    <p class="text-base-600 leading-relaxed mt-4 text-pretty">The Graduate Work Stream provides 18 months for graduates with skills on the relevant occupation lists.</p>
+                    <p class="text-base-500 text-xs mt-2 mb-4 text-pretty">*Actual duration depends on the 485 stream, your qualification level, when you apply, and any changes introduced under the government's migration strategy. Some nationalities and regional study may have different arrangements.</p>
+                    <p class="text-sm font-bold text-base-900 mb-2">Vocational graduates</p>
+                    <p class="text-base-600 leading-relaxed text-pretty">For graduates with eligible diplomas, associate degrees or trade qualifications linked to an occupation on the skilled list, the Post-Vocational Education Work stream of the 485 visa can allow up to 18 months of post-study stay (longer in limited cases for certain passport holders).</p>
                 </div>
                 <div class="flex-1 lg:max-w-[40%]">
                     <img src="{{ asset('images/why-australia/post-study-work.webp') }}" alt="East Asian professional woman working on a laptop in a modern office" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2] shadow-lg" loading="lazy">
@@ -75,7 +79,7 @@
                 <div class="flex-1">
                     <span class="text-6xl font-bold text-primary-100">05</span>
                     <h3 class="text-2xl font-bold text-base-900 mt-2 mb-4 text-pretty">Affordable compared to the alternatives</h3>
-                    <p class="text-base-600 leading-relaxed text-pretty">Australia offers competitive tuition fees across its university sector — from AUD $20,000 per year for many undergraduate programmes. Perth and regional cities offer a lower cost of living than Australia's east coast capitals. The combination makes a meaningful difference over a two to four year degree.</p>
+                    <p class="text-base-600 leading-relaxed text-pretty">Australia offers competitive tuition fees across its education sector. From $15,000 a year for undergraduate programmes and from $6,500 a year for VET courses. Perth and regional cities offer a lower cost of living than Australia's east coast capitals. The combination makes a meaningful difference over a two to four year degree.</p>
                 </div>
                 <div class="flex-1 lg:max-w-[40%]">
                     <img src="{{ asset('images/why-australia/affordable-living.webp') }}" alt="East Asian student working on a laptop at an outdoor cafe" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2] shadow-lg" loading="lazy">

@@ -1,5 +1,5 @@
 <x-layout title="Our Team"
-          description="Meet the Blue Education team — multilingual specialists across five countries, delivering education, migration, and career advice.">
+          description="Meet the Blue Education team — multilingual specialists who have engaged with more than 145 nations, delivering education, migration, and career advice.">
 
     @php
         $australianTeam = [
@@ -27,20 +27,10 @@
             ['name' => 'Sherene Chan', 'role' => 'Regional Head, New Zealand', 'photo' => 'images/team/sherene-chan.webp', 'bio' => 'Based in Auckland, Sherene facilitates options for those intending to study, work, and live in New Zealand. Her background as a migrant gives her invaluable firsthand perspective. Prior to education counselling, Sherene worked with a Big 4 firm and led stakeholder relationship management for prominent institutions including the United Nations Development Programme.', 'credentials' => 'MBA — University of South Australia; former Big 4 accounting firm consultant', 'languages' => 'English, Malay, Cantonese', 'region' => 'New Zealand, Oceania'],
         ];
 
-        $offices = [
-            ['Perth, WA (HQ)', 'Glen, Monica, Flora, Shen', 'Australia-wide'],
-            ['Global (Offshore)', 'Sonia Ong (Executive Director)', 'International operations'],
-            ['Malaysia', 'Elaine Ho, Monica Low', 'Malaysia, Southeast Asia'],
-            ['Indonesia', 'Hana Hursepuny', 'Indonesia, Malaysia'],
-            ['Japan', 'Minami Sakamoto', 'Japan, Northeast Asia'],
-            ['Ghana', 'Nino Sekyere-Boakye (MARN)', 'Ghana, West Africa'],
-            ['Zambia', 'Elijah Chongo, Priscilla Bwalya Mwansa', 'Zambia, Southern Africa'],
-            ['New Zealand', 'Sherene Chan', 'New Zealand, Oceania'],
-        ];
     @endphp
 
     {{-- §1 Hero --}}
-    <x-hero title="Multilingual specialists across five countries"
+    <x-hero title="Multilingual specialists who have engaged with more than 145 nations"
             subtitle="Education, migration, and career experts — headquartered in Perth, represented across Asia, Africa, and the Pacific."
             :image="asset('images/about-team/team-meeting.webp')"
             alt="Blue Education team in a professional meeting"
@@ -136,32 +126,23 @@
             <x-section-heading title="Our Expertise" />
             <div class="grid sm:grid-cols-1 md:grid-cols-3 gap-8" data-animate="stagger">
                 @foreach([
-                    ['icon' => 'academic-cap', 'title' => 'Education Specialists', 'desc' => 'Institution matching. Pathway planning. Course selection. We know the Australian education system inside out — from English language programmes to postgraduate degrees.'],
-                    ['icon' => 'briefcase', 'title' => 'Career Specialists', 'desc' => 'Job readiness. Employer connections. Career mapping. We bridge the gap between qualification and employment, with real-world insight into the Australian job market.'],
-                    ['icon' => 'globe-alt', 'title' => 'Migration Specialists', 'desc' => 'Registered agents. Visa applications. Legal compliance. Blue holds MARN 1385471 and QEAC S165. We navigate the system so you don\'t have to.'],
+                    ['icon' => 'academic-cap', 'title' => 'Education', 'desc' => 'Institution matching. Pathway planning. Course selection. We know the Australian education system inside out, from English language programmes to postgraduate degrees.'],
+                    ['icon' => 'briefcase', 'title' => 'Career', 'desc' => 'Job readiness. Employer connections. Career mapping. We bridge the gap between qualification and employment, with real-world insight into the Australian job market.'],
+                    ['icon' => 'globe-alt', 'title' => 'Migration', 'desc' => 'Registered agents. Visa applications. Legal compliance. Blue holds MARN 1385471 and QEAC S165. We navigate the system so you don\'t have to.'],
                 ] as $item)
                     <article class="bg-white rounded-corner-lg p-8 border border-base-200 text-center shadow-md">
                         <div class="w-14 h-14 bg-primary-100 rounded-xl flex items-center justify-center mx-auto mb-5">
                             <x-dynamic-component :component="'heroicon-o-' . $item['icon']" class="w-7 h-7 text-primary-700" />
                         </div>
                         <h3 class="font-bold text-base-900 text-lg mb-3">{{ $item['title'] }}</h3>
-                        <p class="text-base-600 text-sm leading-relaxed">{{ $item['desc'] }}</p>
+                        <p class="text-base-600 text-sm leading-relaxed text-pretty">{{ $item['desc'] }}</p>
                     </article>
                 @endforeach
             </div>
         </div>
     </section>
 
-    {{-- §6 International Offices --}}
-    <section class="bg-white">
-        <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
-            <x-section-heading title="International Offices" :centered="false" />
-            <x-data-table class="shadow-xl" :headers="['Location', 'Representative(s)', 'Market Coverage']"
-                          :rows="$offices" />
-        </div>
-    </section>
-
-    {{-- §7 Credentials & Registrations --}}
+    {{-- §6 Credentials & Registrations --}}
     <section class="bg-base-50 border-y border-base-200">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-8">
             <h2 class="sr-only">Credentials and registrations</h2>

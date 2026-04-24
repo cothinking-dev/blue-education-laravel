@@ -13,7 +13,7 @@
     <section class="bg-white">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
             <h2 class="text-3xl font-bold text-base-900 mb-4 text-pretty" data-animate="fade-up">English Language Requirements</h2>
-            <p class="text-base-600 mb-2 text-pretty">Accepted tests: IELTS, TOEFL, Cambridge CAE, Pearson PTE. Scores valid for 2 years.</p>
+            <p class="text-base-600 mb-2 text-pretty">Accepted tests: IELTS, TOEFL iBT, Cambridge CAE, Pearson PTE. Scores valid for 2 years.</p>
             <x-data-table class="shadow-xl" :headers="['Programme', 'IELTS', 'PTE Academic', 'TOEFL iBT', 'Cambridge', 'Band Min (IELTS)', 'Post-Study Work Visa (Subclass 485)']"
                           :rows="[
                               ['ELICOS', 'Provider-set', '—', '—', '—', 'N/A', 'Not directly eligible — pathway into a qualifying course'],
