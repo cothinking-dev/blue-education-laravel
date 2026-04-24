@@ -10,7 +10,38 @@
             variant="left"
             :breadcrumbs="true" />
 
-    {{-- §2 Buddy Programme --}}
+    {{-- §2 Programme Overview --}}
+    <section class="bg-white">
+        <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
+            <x-section-heading title="Our Study Tour Programmes" :centered="false" />
+            <p class="text-base-600 mb-8 -mt-2 text-pretty">Blue Education designs short-term educational and cultural immersion programmes in Western Australia. Every programme combines structured learning with real cultural experiences, and participants leave with a certificate of participation.</p>
+            <div class="grid sm:grid-cols-3 gap-6" data-animate="stagger">
+                <a href="#buddy-programme" class="border border-base-200 rounded-corner-lg p-6 bg-white hover:border-primary-300 transition-colors group">
+                    <div class="w-10 h-10 rounded-corner bg-primary-50 text-primary-800 flex items-center justify-center mb-4">
+                        <x-heroicon-o-academic-cap class="w-5 h-5" />
+                    </div>
+                    <h3 class="font-bold text-base-900 mb-1 group-hover:text-primary-700 transition-colors">Buddy Programme</h3>
+                    <p class="text-base-600 text-sm leading-relaxed text-pretty">7 to 14 days of school immersion with homestay families.</p>
+                </a>
+                <a href="#culinary-tour" class="border border-base-200 rounded-corner-lg p-6 bg-white hover:border-primary-300 transition-colors group">
+                    <div class="w-10 h-10 rounded-corner bg-primary-50 text-primary-800 flex items-center justify-center mb-4">
+                        <x-heroicon-o-fire class="w-5 h-5" />
+                    </div>
+                    <h3 class="font-bold text-base-900 mb-1 group-hover:text-primary-700 transition-colors">Culinary Study Tour</h3>
+                    <p class="text-base-600 text-sm leading-relaxed text-pretty">Hands-on culinary training and cultural immersion in Fremantle.</p>
+                </a>
+                <a href="#custom-tours" class="border border-base-200 rounded-corner-lg p-6 bg-white hover:border-primary-300 transition-colors group">
+                    <div class="w-10 h-10 rounded-corner bg-primary-50 text-primary-800 flex items-center justify-center mb-4">
+                        <x-heroicon-o-puzzle-piece class="w-5 h-5" />
+                    </div>
+                    <h3 class="font-bold text-base-900 mb-1 group-hover:text-primary-700 transition-colors">Custom Group Tours</h3>
+                    <p class="text-base-600 text-sm leading-relaxed text-pretty">Bespoke programmes designed around your group's goals and timeline.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    {{-- §3 Buddy Programme --}}
     <section id="buddy-programme" class="bg-white scroll-mt-20">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
             <div class="flex flex-col lg:flex-row gap-12">
@@ -22,7 +53,7 @@
                 <div class="lg:w-[40%]">
                     <x-facts-table title="Programme Summary"
                                    :rows="[
-                                       ['key' => 'Duration', 'value' => '7 – 14 days'],
+                                       ['key' => 'Duration', 'value' => '7 – 14 days (customisable)'],
                                        ['key' => 'Age group', 'value' => 'High school students'],
                                        ['key' => 'Accommodation', 'value' => 'Homestay (meals included)'],
                                        ['key' => 'Certificate', 'value' => 'Certificate of completion'],
@@ -249,14 +280,14 @@
                         <x-heroicon-o-shield-check class="w-7 h-7 text-primary-600" />
                     </div>
                     <h3 class="font-bold text-base-900 mb-1 text-pretty">Partner school network</h3>
-                    <p class="text-base-600 text-sm leading-relaxed text-pretty">Established pastoral care, vetted homestay families, and a programme that runs with selected private high schools in Western Australia.</p>
+                    <p class="text-base-600 text-sm leading-relaxed text-pretty">Established pastoral care, vetted homestay families, and a programme that runs with selected partner schools in Western Australia.</p>
                 </div>
             </div>
         </div>
     </section>
 
     {{-- §6 Culinary Study Tour --}}
-    <section class="bg-white">
+    <section id="culinary-tour" class="bg-white scroll-mt-20">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
             <div class="flex flex-col lg:flex-row items-center gap-12">
                 <div class="flex-1 lg:max-w-[45%]">
@@ -277,7 +308,7 @@
     </section>
 
     {{-- §7 Custom Group Tours --}}
-    <section class="bg-primary-50">
+    <section id="custom-tours" class="bg-primary-50 scroll-mt-20">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
             <div class="flex flex-col lg:flex-row items-center gap-12">
                 <div class="flex-1">
@@ -295,7 +326,20 @@
         </div>
     </section>
 
-    {{-- §8 Also Relevant --}}
+    {{-- §8 How It Works --}}
+    <section class="bg-base-50">
+        <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
+            <x-section-heading title="How It Works" :centered="false" />
+            <x-timeline :steps="[
+                ['title' => 'Tell us what you need', 'description' => 'Describe your group size, interests, and preferred dates. Individual enquiries are welcome.'],
+                ['title' => 'We design the programme', 'description' => 'Blue Education builds a tailored itinerary combining educational content, cultural experiences, and logistics.'],
+                ['title' => 'Confirm and prepare', 'description' => 'Once the programme is agreed, we handle pre-arrival coordination: visa guidance, orientation materials, and host briefings.'],
+                ['title' => 'Arrive and experience', 'description' => 'Your group arrives in Western Australia with everything organised. Blue Education provides on-the-ground support throughout.'],
+            ]" />
+        </div>
+    </section>
+
+    {{-- §9 Also Relevant --}}
     <x-next-steps variant="links" bg="bg-white" :links="[
         ['href' => route('programs.study-abroad'), 'title' => 'Study Abroad for university students'],
         ['href' => route('services.student-support'), 'title' => 'Student support services'],

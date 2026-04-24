@@ -30,29 +30,26 @@
             <p class="text-base-600 mb-8 -mt-2 text-pretty">We work with leading universities in Perth to match you to the right Study Abroad experience. You can mix subjects across areas of interest (subject to prerequisites and availability) while remaining enrolled at your home institution.</p>
             <div class="grid sm:grid-cols-3 gap-6" data-animate="stagger">
                 <div class="border border-base-200 rounded-corner-lg overflow-hidden bg-white">
-                    <div class="bg-base-50 flex items-center justify-center p-6 h-28">
-                        <img src="{{ asset('images/partners/murdoch-logo.svg') }}" alt="Murdoch University logo" class="max-h-14 w-auto" loading="lazy">
+                    <div class="bg-white flex items-center justify-center px-8 py-6 h-32 border-b border-base-100">
+                        <img src="{{ asset('images/partners/murdoch-logo.svg') }}" alt="Murdoch University logo" class="h-10 w-auto object-contain" loading="lazy">
                     </div>
                     <div class="p-6">
-                        <h3 class="font-bold text-base-900 mb-2">Murdoch University</h3>
                         <p class="text-base-600 text-sm leading-relaxed text-pretty">Known for hands-on learning, media, veterinary and environmental sciences, and a welcoming campus environment.</p>
                     </div>
                 </div>
                 <div class="border border-base-200 rounded-corner-lg overflow-hidden bg-white">
-                    <div class="bg-base-50 flex items-center justify-center p-6 h-28">
-                        <img src="{{ asset('images/partners/ecu-logo.png') }}" alt="Edith Cowan University logo" class="max-h-14 w-auto" loading="lazy">
+                    <div class="bg-white flex items-center justify-center px-8 py-6 h-32 border-b border-base-100">
+                        <img src="{{ asset('images/partners/ecu-logo.png') }}" alt="Edith Cowan University logo" class="h-14 w-auto object-contain" loading="lazy">
                     </div>
                     <div class="p-6">
-                        <h3 class="font-bold text-base-900 mb-2">Edith Cowan University (ECU)</h3>
                         <p class="text-base-600 text-sm leading-relaxed text-pretty">Strong in education, nursing, performing arts and applied disciplines, with modern campuses and industry connections.</p>
                     </div>
                 </div>
                 <div class="border border-base-200 rounded-corner-lg overflow-hidden bg-white">
-                    <div class="bg-base-50 flex items-center justify-center p-6 h-28">
-                        <img src="{{ asset('images/partners/curtin-logo.webp') }}" alt="Curtin University logo" class="max-h-14 w-auto" loading="lazy">
+                    <div class="bg-white flex items-center justify-center px-8 py-6 h-32 border-b border-base-100">
+                        <img src="{{ asset('images/partners/curtin-logo.webp') }}" alt="Curtin University logo" class="h-12 w-auto object-contain" loading="lazy">
                     </div>
                     <div class="p-6">
-                        <h3 class="font-bold text-base-900 mb-2">Curtin University</h3>
                         <p class="text-base-600 text-sm leading-relaxed text-pretty">A large, internationally recognised university with strengths in business, engineering, health sciences and design, and a vibrant campus life.</p>
                     </div>
                 </div>

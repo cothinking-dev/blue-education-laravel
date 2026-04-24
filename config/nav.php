@@ -42,10 +42,10 @@ return [
             ],
         ],
         [
-            'label' => 'Programs',
+            'label' => 'Programmes',
             'active' => 'programs.*',
             'children' => [
-                ['label' => 'Programs Overview', 'route' => 'programs.index'],
+                ['label' => 'Programmes Overview', 'route' => 'programs.index'],
                 ['divider' => true],
                 ['label' => 'Study Tours', 'route' => 'programs.study-tours', 'indent' => true],
                 ['label' => 'Study Abroad', 'route' => 'programs.study-abroad', 'indent' => true],
