@@ -173,7 +173,7 @@
     <x-cta-banner title="Work with a team that understands your world"
                   subtitle="Book a consultation with an advisor who speaks your language and knows your market."
                   primaryText="Book a Consultation"
-                  :primaryHref="route('contact')" />
+                  :primaryHref="route('contact')"
                   secondaryText="Learn About Blue Education"
                   :secondaryHref="route('about.index')" />
 

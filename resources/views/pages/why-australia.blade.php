@@ -53,14 +53,18 @@
                                       ['Master degree (research)', 'Up to 3 years'],
                                       ['Doctoral degree (PhD)', 'Up to 3 to 4 years, depending on current policy settings'],
                                   ]" />
-                    <p class="text-base-500 text-xs mt-2 mb-4 text-pretty">*Actual duration depends on the 485 stream, your qualification level, when you apply, and any changes introduced under the government's migration strategy. Some nationalities and regional study may have different arrangements.</p>
-                    <p class="text-sm font-bold text-base-900 mb-2">Vocational graduates</p>
-                    <p class="text-base-600 leading-relaxed text-pretty">For graduates with eligible diplomas, associate degrees or trade qualifications linked to an occupation on the skilled list, the Post-Vocational Education Work stream of the 485 visa can allow up to 18 months of post-study stay (longer in limited cases for certain passport holders).</p>
                 </div>
                 <div class="flex-1 lg:max-w-[40%]">
                     <img src="{{ asset('images/why-australia/post-study-work.webp') }}" alt="East Asian professional woman working on a laptop in a modern office" class="rounded-corner-lg w-full h-auto object-cover aspect-[3/2] shadow-lg" loading="lazy">
                 </div>
             </div>
+            <x-callout title="Vocational graduates and important notes" variant="info" class="-mt-6 mb-6">
+                <x-slot:icon>
+                    <x-heroicon-o-information-circle class="w-6 h-6 text-blue-500" />
+                </x-slot:icon>
+                <p class="text-sm leading-relaxed mb-2 text-pretty">For graduates with eligible diplomas, associate degrees or trade qualifications linked to an occupation on the skilled list, the Post-Vocational Education Work stream of the 485 visa can allow up to 18 months of post-study stay (longer in limited cases for certain passport holders).</p>
+                <p class="text-xs opacity-75 text-pretty">*Actual duration depends on the 485 stream, your qualification level, when you apply, and any changes introduced under the government's migration strategy. Some nationalities and regional study may have different arrangements.</p>
+            </x-callout>
 
             {{-- 04 --}}
             <div class="flex flex-col lg:flex-row-reverse items-center gap-12 py-12">
@@ -89,16 +93,17 @@
     </section>
 
     {{-- §3 Perth & Western Australia --}}
-    <section class="bg-primary-50 shadow-[inset_0_4px_8px_-2px_rgba(0,0,0,0.06),inset_0_-4px_8px_-2px_rgba(0,0,0,0.06)]">
+    <x-visual-break :images="[['src' => 'images/why-australia/perth-skyline.webp', 'alt' => 'Perth city skyline with Kings Park and Swan River']]" bg="bg-white" padding="pt-14 pb-6" />
+
+    <section class="bg-white">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
-            <p class="text-sm font-bold text-primary-600 uppercase tracking-widest mb-3">The Golden State of Education</p>
-            <h2 class="text-3xl font-bold text-base-900 mb-4 text-pretty" data-animate="fade-up">Why Perth.</h2>
             <div class="flex flex-col lg:flex-row gap-12">
                 <div class="flex-1">
-                    <p class="text-base-600 leading-relaxed text-pretty">Perth is Western Australia's capital and Blue Education's home base. It's also one of the most underrated study destinations in Australia — home to globally ranked universities, a thriving job market across mining, technology, healthcare, and education, and a liveability ranking that consistently places it among the world's top 15 cities.</p>
-                    <img src="{{ asset('images/why-australia/perth-skyline.webp') }}" alt="Perth city skyline with Kings Park and Swan River" class="rounded-corner-lg w-full h-auto object-cover aspect-[16/9] shadow-xl mt-6" loading="lazy">
+                    <p class="text-sm font-bold text-primary-600 uppercase tracking-widest mb-3">The Golden State of Education</p>
+                    <h2 class="text-3xl font-bold text-base-900 mb-4 text-pretty" data-animate="fade-up">Why Perth.</h2>
+                    <p class="text-base-600 leading-relaxed text-pretty">Perth is Western Australia's capital and Blue Education's home base. It is also one of the most underrated study destinations in Australia: home to globally ranked universities, a thriving job market across mining, technology, healthcare, and education, and a liveability ranking that consistently places it among the world's top 15 cities.</p>
                 </div>
-                <div class="lg:w-[40%]">
+                <div class="lg:w-[45%]">
                     <x-facts-table class="shadow-xl" title="Perth Advantage"
                                    :rows="[
                                        ['key' => 'Cost of living', 'value' => 'Lower than Sydney and Melbourne'],
@@ -147,7 +152,7 @@
     <x-cta-banner title="Talk to someone who knows Western Australia."
                   :subtitle="'Perth-based advisors with ' . (date('Y') - 1998) . ' years of experience, serving clients from 40+ countries. We\'ll tell you what fits your situation — no guesswork.'"
                   primaryText="Book an Education Assessment"
-                  :primaryHref="route('contact')" />
+                  :primaryHref="route('contact')"
                   secondaryText="Explore Education Services"
                   :secondaryHref="route('services.education.index')" />
 
