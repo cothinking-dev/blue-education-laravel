@@ -5,6 +5,7 @@ namespace App\Providers;
 use App\Models\Category;
 use App\Models\Enquiry;
 use App\Models\Faq;
+use App\Models\Partner;
 use App\Models\Post;
 use App\Models\Testimonial;
 use App\Policies\AdminPolicy;
@@ -31,5 +32,6 @@ class AppServiceProvider extends ServiceProvider
         Gate::policy(Faq::class, AdminPolicy::class);
         Gate::policy(Testimonial::class, AdminPolicy::class);
         Gate::policy(Enquiry::class, AdminPolicy::class);
+        Gate::policy(Partner::class, AdminPolicy::class);
     }
 }

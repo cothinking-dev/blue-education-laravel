@@ -3,6 +3,7 @@
 .playwright-mcp
 .env
 .env.backup
+.env.prod
 .env.production
 .phpactor.json
 .phpunit.result.cache
