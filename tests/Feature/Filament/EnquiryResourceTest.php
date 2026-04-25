@@ -60,7 +60,7 @@ it('can delete an enquiry from the view page', function () {
         ->assertNotified()
         ->assertRedirect();
 
-    $this->assertModelMissing($enquiry);
+    $this->assertSoftDeleted($enquiry);
 });
 
 it('can search enquiries by name', function () {

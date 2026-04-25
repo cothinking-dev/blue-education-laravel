@@ -26,8 +26,8 @@ dataset('static_pages', [
     'services career' => '/services/career',
     'services student-support' => '/services/student-support',
     'programs index' => '/programs',
-    'programs buddy-programme' => '/programs/buddy-programme',
     'programs study-tours' => '/programs/study-tours',
+    'programs study-abroad' => '/programs/study-abroad',
     'about scsa-partnership' => '/about/scsa-partnership',
     'programs executive-internship' => '/programs/executive-internship',
     'why-australia' => '/why-australia',
@@ -37,8 +37,11 @@ dataset('static_pages', [
     'contact' => '/contact',
     'privacy' => '/privacy',
     'terms' => '/terms',
+    'about index' => '/about',
     'about team' => '/about/team',
     'about partners' => '/about/partners',
+    'services index' => '/services',
+    'services oshc' => '/services/oshc',
 ]);
 
 it('renders static pages', function (string $uri) {

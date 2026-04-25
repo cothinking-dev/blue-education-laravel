@@ -26,10 +26,10 @@ it('displays International team members on the team page', function () {
         ->assertSeeText('Sherene Chan');
 });
 
-it('displays the offices table on the team page', function () {
+it('displays the expertise section on the team page', function () {
     $this->get('/about/team')
         ->assertSuccessful()
-        ->assertSeeText('Perth, WA (HQ)')
-        ->assertSeeText('Australia-wide')
-        ->assertSeeText('Global (Offshore)');
+        ->assertSeeText('Our Expertise')
+        ->assertSeeText('Education')
+        ->assertSeeText('Migration');
 });

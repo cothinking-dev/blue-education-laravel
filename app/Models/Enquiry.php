@@ -5,11 +5,12 @@ namespace App\Models;
 use Database\Factories\EnquiryFactory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Enquiry extends Model
 {
     /** @use HasFactory<EnquiryFactory> */
-    use HasFactory;
+    use HasFactory, SoftDeletes;
 
     /** @var list<string> */
     public const ENQUIRY_TYPES = ['Education', 'Migration', 'Career', 'Student Support', 'Other'];

@@ -35,7 +35,6 @@ class PageController extends Controller
         'contact' => 'pages.contact',
         'privacy' => 'pages.privacy',
         'terms' => 'pages.terms',
-        'showcase' => 'showcase',
     ];
 
     public function show(): View
