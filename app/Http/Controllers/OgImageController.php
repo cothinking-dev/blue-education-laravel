@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Response;
+use Illuminate\Routing\Route;
 use Illuminate\Support\Facades\Route as RouteFacade;
 use Illuminate\Support\Facades\Storage;
 use Intervention\Image\Drivers\Gd\Driver as GdDriver;
@@ -59,7 +60,7 @@ class OgImageController extends Controller
         // Match against registered routes to find the label
         $routes = collect(RouteFacade::getRoutes()->getRoutes());
 
-        $matched = $routes->first(function (\Illuminate\Routing\Route $route) use ($normalizedPath) {
+        $matched = $routes->first(function (Route $route) use ($normalizedPath) {
             return '/'.trim($route->uri(), '/') === $normalizedPath
                 && in_array('GET', $route->methods());
         });

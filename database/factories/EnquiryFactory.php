@@ -2,10 +2,11 @@
 
 namespace Database\Factories;
 
+use App\Models\Enquiry;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Enquiry>
+ * @extends Factory<Enquiry>
  */
 class EnquiryFactory extends Factory
 {

@@ -34,24 +34,37 @@ class GenerateSitemap extends Command
     {
         $this->info('Generating sitemap...');
 
+        $xml = static::generate();
+        Cache::put(self::CACHE_KEY, $xml);
+
+        $this->info('Sitemap generated and cached.');
+
+        return Command::SUCCESS;
+    }
+
+    /**
+     * Generate the sitemap XML string. Safe to call from controllers (no console dependency).
+     */
+    public static function generate(): string
+    {
+        $instance = new static;
         $sitemap = Sitemap::create();
 
-        // Auto-discover static pages from registered routes
         $routes = collect(Route::getRoutes()->getRoutes())
-            ->filter(function (\Illuminate\Routing\Route $route) {
+            ->filter(function (\Illuminate\Routing\Route $route) use ($instance) {
                 return in_array('GET', $route->methods())
                     && $route->getName()
                     && ! str_contains($route->uri(), '{')
-                    && ! in_array($route->getName(), $this->excludedRoutes)
+                    && ! in_array($route->getName(), $instance->excludedRoutes)
                     && ! str_starts_with($route->getName(), 'filament.')
                     && $route->getName() !== 'livewire.update';
             });
 
         foreach ($routes as $route) {
             $name = $route->getName();
-            $override = $this->overrides[$name] ?? [];
+            $override = $instance->overrides[$name] ?? [];
 
-            $priority = $override['priority'] ?? $this->defaultPriority($name);
+            $priority = $override['priority'] ?? $instance->defaultPriority($name);
             $frequency = $override['frequency'] ?? Url::CHANGE_FREQUENCY_MONTHLY;
 
             $sitemap->add(
@@ -61,7 +74,6 @@ class GenerateSitemap extends Command
             );
         }
 
-        // Add dynamic blog posts
         $posts = Post::query()->published()->get();
 
         foreach ($posts as $post) {
@@ -73,13 +85,7 @@ class GenerateSitemap extends Command
             );
         }
 
-        $this->info("Added {$posts->count()} blog posts.");
-
-        Cache::put(self::CACHE_KEY, $sitemap->render());
-
-        $this->info('Sitemap generated and cached.');
-
-        return Command::SUCCESS;
+        return $sitemap->render();
     }
 
     /**

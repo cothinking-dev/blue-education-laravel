@@ -13,8 +13,8 @@ class SitemapController extends Controller
         $xml = Cache::get(GenerateSitemap::CACHE_KEY);
 
         if ($xml === null) {
-            app(GenerateSitemap::class)->handle();
-            $xml = Cache::get(GenerateSitemap::CACHE_KEY);
+            $xml = GenerateSitemap::generate();
+            Cache::put(GenerateSitemap::CACHE_KEY, $xml);
         }
 
         return response($xml, 200, ['Content-Type' => 'application/xml']);
