@@ -453,11 +453,17 @@
                     <x-icon-list variant="check" theme="dark" class="mb-6">
                         <x-icon-list.item>Arrival and orientation, including on-boarding sessions so you understand your new city, your campus and your visa conditions.</x-icon-list.item>
                         <x-icon-list.item>Accommodation options, such as homestay, student housing or other arrangements that suit your budget and needs.</x-icon-list.item>
+                        <x-icon-list.item>Setting up an Australian bank account so you can receive money transfers before you arrive.</x-icon-list.item>
                         <x-icon-list.item>Ongoing check-ins and welfare support, so you have someone to speak with if you need guidance or run into any issues.</x-icon-list.item>
                         <x-icon-list.item>Study, migration and career planning if you want to change courses, extend your studies, or explore post-study work and skilled migration pathways.</x-icon-list.item>
                     </x-icon-list>
 
                     <p class="text-primary-200 text-sm text-pretty">Once you arrive in Australia, you are not on your own. You have a team in Perth that understands international student life and is here to support you from your first week through to graduation and beyond.</p>
+
+                    <div class="mt-4 border border-primary-600 rounded-corner-lg p-4 flex items-start gap-3">
+                        <x-heroicon-o-banknotes class="w-5 h-5 text-primary-300 shrink-0 mt-0.5" />
+                        <p class="text-primary-100 text-sm leading-relaxed">You can open an Australian bank account with CommBank up to 14 days before you arrive. <a href="http://www.commbank.com.au/blueedu" target="_blank" rel="noopener" class="text-white underline hover:text-primary-200 font-medium transition-colors">Open an account &rarr;</a></p>
+                    </div>
 
                     <a href="{{ route('services.student-support') }}" class="inline-flex items-center gap-1 mt-4 text-white hover:text-primary-200 font-semibold transition-colors">Student support services &rarr;</a>
                 </div>

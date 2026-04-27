@@ -93,6 +93,17 @@
                 ['title' => 'Student Visa (Subclass 500)', 'icon' => 'document-text', 'summary' => 'Comprehensive visa application management for students over and under 18.', 'description' => 'Documentation, health examinations, character requirements and online lodgement, coordinated end-to-end so the student and their family are fully supported.'],
                 ['title' => 'Arrival & Accommodation', 'icon' => 'home', 'summary' => 'Pre-arrival orientation and settling-in support so there is less to manage on day one.', 'description' => 'Coordinated airport pickup, Australian bank account, and accommodation through the Blue Education Homestay Network: trusted host families for almost two decades in a safe, welcoming home with warm meals.'],
             ]" />
+
+            <div class="mt-8 border border-primary-200 bg-primary-50 rounded-corner-lg p-5 flex items-start gap-4">
+                <div class="shrink-0 w-10 h-10 rounded-corner bg-primary-100 text-primary-800 flex items-center justify-center">
+                    <x-heroicon-o-banknotes class="w-5 h-5" />
+                </div>
+                <div>
+                    <h4 class="font-semibold text-primary-900 mb-1">Set up a bank account before you arrive</h4>
+                    <p class="text-primary-800 text-sm leading-relaxed text-pretty">You can open a student account with CommBank up to 14 days before landing in Australia. Visit a branch on arrival to verify your identity and start using your account straight away.</p>
+                    <a href="http://www.commbank.com.au/blueedu" target="_blank" rel="noopener" class="inline-flex items-center gap-1 mt-2 text-primary-800 hover:text-primary-600 font-semibold text-sm transition-colors">Open an account &rarr;</a>
+                </div>
+            </div>
         </div>
     </section>
 

@@ -98,6 +98,17 @@
             </div>
 
             <p class="text-base-700 leading-relaxed mt-8 max-w-3xl text-pretty font-medium">For many students, this visa is a key part of turning Australian study into real career opportunities.</p>
+
+            <div class="mt-6 border border-base-200 rounded-corner-lg p-5 flex items-start gap-4">
+                <div class="shrink-0 w-10 h-10 rounded-corner bg-primary-50 text-primary-800 flex items-center justify-center">
+                    <x-heroicon-o-banknotes class="w-5 h-5" />
+                </div>
+                <div>
+                    <h4 class="font-semibold text-base-900 mb-1">Need an Australian bank account?</h4>
+                    <p class="text-base-600 text-sm leading-relaxed text-pretty">If you are starting full-time work, you will need an Australian bank account for your salary. You can open a student account with CommBank online.</p>
+                    <a href="http://www.commbank.com.au/blueedu" target="_blank" rel="noopener" class="inline-flex items-center gap-1 mt-2 text-primary-800 hover:text-primary-600 font-semibold text-sm transition-colors">Open an account &rarr;</a>
+                </div>
+            </div>
         </div>
     </section>
 

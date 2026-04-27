@@ -57,6 +57,14 @@
 
                 <div class="border border-base-200 rounded-corner-lg p-6">
                     <div class="w-10 h-10 rounded-corner bg-primary-50 text-primary-800 flex items-center justify-center mb-4">
+                        <x-heroicon-o-banknotes class="w-5 h-5" />
+                    </div>
+                    <h3 class="font-bold text-base-900 mb-2">Australian Bank Account</h3>
+                    <p class="text-base-600 text-sm leading-relaxed text-pretty">Open a student account with CommBank before you arrive, up to 14 days before landing in Australia. Visit a branch on arrival to verify your identity and collect your Debit Mastercard. <a href="http://www.commbank.com.au/blueedu" target="_blank" rel="noopener" class="text-primary-800 hover:underline font-medium">Open an account &rarr;</a></p>
+                </div>
+
+                <div class="border border-base-200 rounded-corner-lg p-6">
+                    <div class="w-10 h-10 rounded-corner bg-primary-50 text-primary-800 flex items-center justify-center mb-4">
                         <x-heroicon-o-document-text class="w-5 h-5" />
                     </div>
                     <h3 class="font-bold text-base-900 mb-2">Document Translation</h3>
