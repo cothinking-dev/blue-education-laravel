@@ -97,7 +97,7 @@
                     </div>
                     <h3 class="font-bold text-base-900 mb-1">OSHC Australia</h3>
                     <p class="text-base-500 text-xs mb-4">Comparison platform</p>
-                    <a href="https://oshcaustralia.com.au" target="_blank" rel="noopener" class="mt-auto inline-flex items-center justify-center px-5 py-2.5 rounded-corner bg-primary-800 text-white text-sm font-semibold hover:bg-primary-700 transition-colors">Get a Quote</a>
+                    <a href="https://oshcaustralia.com.au/en?partner=au-blueeducation" target="_blank" rel="noopener" class="mt-auto inline-flex items-center justify-center px-5 py-2.5 rounded-corner bg-primary-800 text-white text-sm font-semibold hover:bg-primary-700 transition-colors">Get a Quote</a>
                 </div>
                 <div class="border border-base-200 rounded-corner-lg p-6 text-center flex flex-col items-center">
                     <div class="h-16 flex items-center justify-center mb-4">
@@ -105,7 +105,7 @@
                     </div>
                     <h3 class="font-bold text-base-900 mb-1">Annalink OSHC-Students</h3>
                     <p class="text-base-500 text-xs mb-4">Comparison platform</p>
-                    <a href="https://oshcstudents.com.au" target="_blank" rel="noopener" class="mt-auto inline-flex items-center justify-center px-5 py-2.5 rounded-corner bg-primary-800 text-white text-sm font-semibold hover:bg-primary-700 transition-colors">Get a Quote</a>
+                    <a href="https://oshcstudents.com.au/client/oshc?affiliate=BLAJ1M" target="_blank" rel="noopener" class="mt-auto inline-flex items-center justify-center px-5 py-2.5 rounded-corner bg-primary-800 text-white text-sm font-semibold hover:bg-primary-700 transition-colors">Get a Quote</a>
                 </div>
                 <div class="border border-base-200 rounded-corner-lg p-6 text-center flex flex-col items-center">
                     <div class="h-16 flex items-center justify-center mb-4">
@@ -113,7 +113,7 @@
                     </div>
                     <h3 class="font-bold text-base-900 mb-1">Konpare</h3>
                     <p class="text-base-500 text-xs mb-4">Comparison platform</p>
-                    <a href="https://konpare.com" target="_blank" rel="noopener" class="mt-auto inline-flex items-center justify-center px-5 py-2.5 rounded-corner bg-primary-800 text-white text-sm font-semibold hover:bg-primary-700 transition-colors">Get a Quote</a>
+                    <a href="https://blueeducation.konpare.online/compare" target="_blank" rel="noopener" class="mt-auto inline-flex items-center justify-center px-5 py-2.5 rounded-corner bg-primary-800 text-white text-sm font-semibold hover:bg-primary-700 transition-colors">Get a Quote</a>
                 </div>
             </div>
         </div>
@@ -132,7 +132,7 @@
                     </div>
                     <h3 class="font-bold text-base-900 mb-1">Allianz Care</h3>
                     <p class="text-base-500 text-xs mb-4">Insurer</p>
-                    <a href="https://www.allianzcare.com.au/en/visas/visitors-visa-ovhc.html" target="_blank" rel="noopener" class="mt-auto inline-flex items-center justify-center px-5 py-2.5 rounded-corner border border-primary-800 text-primary-800 text-sm font-semibold hover:bg-primary-50 transition-colors">Learn More</a>
+                    <a href="https://payment.ovhcallianzassistance.com.au/en/?AGENCYID=269323&GROUPCODEID=A600" target="_blank" rel="noopener" class="mt-auto inline-flex items-center justify-center px-5 py-2.5 rounded-corner border border-primary-800 text-primary-800 text-sm font-semibold hover:bg-primary-50 transition-colors">Learn More</a>
                 </div>
                 <div class="border border-base-200 rounded-corner-lg p-6 text-center flex flex-col items-center bg-white">
                     <div class="h-16 flex items-center justify-center mb-4">
@@ -140,7 +140,7 @@
                     </div>
                     <h3 class="font-bold text-base-900 mb-1">Annalink OVHC</h3>
                     <p class="text-base-500 text-xs mb-4">Comparison platform</p>
-                    <a href="https://annalink.com/overseas-visitor-health-cover-ovhc/" target="_blank" rel="noopener" class="mt-auto inline-flex items-center justify-center px-5 py-2.5 rounded-corner border border-primary-800 text-primary-800 text-sm font-semibold hover:bg-primary-50 transition-colors">Learn More</a>
+                    <a href="https://oshcstudents.com.au/client/ovhc?affiliate=BLAJ1M" target="_blank" rel="noopener" class="mt-auto inline-flex items-center justify-center px-5 py-2.5 rounded-corner border border-primary-800 text-primary-800 text-sm font-semibold hover:bg-primary-50 transition-colors">Learn More</a>
                 </div>
                 <div class="border border-base-200 rounded-corner-lg p-6 text-center flex flex-col items-center bg-white">
                     <div class="h-16 flex items-center justify-center mb-4">
@@ -148,7 +148,7 @@
                     </div>
                     <h3 class="font-bold text-base-900 mb-1">Konpare OVHC</h3>
                     <p class="text-base-500 text-xs mb-4">Comparison platform</p>
-                    <a href="https://konpare.com" target="_blank" rel="noopener" class="mt-auto inline-flex items-center justify-center px-5 py-2.5 rounded-corner border border-primary-800 text-primary-800 text-sm font-semibold hover:bg-primary-50 transition-colors">Learn More</a>
+                    <a href="https://blueeducation.konpare.online/ovhc" target="_blank" rel="noopener" class="mt-auto inline-flex items-center justify-center px-5 py-2.5 rounded-corner border border-primary-800 text-primary-800 text-sm font-semibold hover:bg-primary-50 transition-colors">Learn More</a>
                 </div>
             </div>
         </div>
