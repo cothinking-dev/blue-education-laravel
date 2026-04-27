@@ -4,7 +4,7 @@
         <div class="max-w-7xl mx-auto px-8 lg:px-16 text-center">
             <p class="text-primary-600 font-semibold text-lg mb-4">500</p>
             <h1 class="text-4xl lg:text-5xl font-bold text-base-900 mb-6">Something went wrong</h1>
-            <p class="text-lg text-base-600 max-w-xl mx-auto mb-10">
+            <p class="text-lg text-base-600 max-w-xl mx-auto mb-10 text-pretty">
                 We're sorry, something went wrong on our end. Please try again later or contact us if the problem persists.
             </p>
             <div class="flex flex-col sm:flex-row items-center justify-center gap-4">

@@ -28,6 +28,8 @@ class AdminPanelProvider extends PanelProvider
             ->id('admin')
             ->path('admin')
             ->login()
+            ->passwordReset()
+            ->profile()
             ->brandName('Blue Education')
             ->colors([
                 'primary' => Color::Blue,

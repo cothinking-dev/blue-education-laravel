@@ -4,7 +4,7 @@
         <div class="max-w-7xl mx-auto px-8 lg:px-16 text-center">
             <p class="text-primary-600 font-semibold text-lg mb-4">404</p>
             <h1 class="text-4xl lg:text-5xl font-bold text-base-900 mb-6">Page not found</h1>
-            <p class="text-lg text-base-600 max-w-xl mx-auto mb-10">
+            <p class="text-lg text-base-600 max-w-xl mx-auto mb-10 text-pretty">
                 Sorry, we couldn't find the page you're looking for. It may have been moved or no longer exists.
             </p>
             <div class="flex flex-col sm:flex-row items-center justify-center gap-4">

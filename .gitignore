@@ -29,3 +29,5 @@ Thumbs.db
 /.ai/
 /database/database.sqlite
 /database/database.sqlite-journal
+.lerd.yaml
+/.cloud/

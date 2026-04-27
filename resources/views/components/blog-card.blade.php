@@ -33,7 +33,7 @@
         </h3>
 
         @if($excerpt)
-            <p class="text-sm text-base-600 line-clamp-2 mb-3">{{ $excerpt }}</p>
+            <p class="text-sm text-base-600 line-clamp-2 mb-3 text-pretty">{{ $excerpt }}</p>
         @endif
 
         <div class="flex items-center gap-3 text-xs text-base-500">

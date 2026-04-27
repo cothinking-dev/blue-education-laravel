@@ -44,7 +44,7 @@
                 <p class="text-xs text-base-500 mt-2">{{ $languages }}</p>
             @endif
             @if($bio)
-                <p class="text-sm text-base-600 mt-4 leading-relaxed">{{ $bio }}</p>
+                <p class="text-sm text-base-600 mt-4 leading-relaxed text-pretty">{{ $bio }}</p>
             @endif
         </div>
     </article>
@@ -66,7 +66,7 @@
                     <p class="text-xs text-base-500 mt-3">{{ $languages }}</p>
                 @endif
                 @if($bio)
-                    <p class="text-sm text-base-600 mt-4 leading-relaxed">{{ $bio }}</p>
+                    <p class="text-sm text-base-600 mt-4 leading-relaxed text-pretty">{{ $bio }}</p>
                 @endif
             </div>
         </div>
@@ -83,7 +83,7 @@
                 <p class="text-xs text-base-500 mt-1.5">{{ $languages }}</p>
             @endif
             @if($bio)
-                <p class="text-sm text-base-600 mt-3 leading-relaxed">{{ $bio }}</p>
+                <p class="text-sm text-base-600 mt-3 leading-relaxed text-pretty">{{ $bio }}</p>
             @endif
         </div>
     </article>

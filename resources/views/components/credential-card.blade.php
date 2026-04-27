@@ -16,6 +16,6 @@
     <h3 class="text-sm font-bold text-base-900 mb-1">{{ $name }}</h3>
 
     @if($description)
-        <p class="text-xs text-base-500 leading-relaxed">{{ $description }}</p>
+        <p class="text-xs text-base-500 leading-relaxed text-pretty">{{ $description }}</p>
     @endif
 </div>

@@ -28,7 +28,7 @@
         @endif
         <h3 class="font-semibold">{{ $title }}</h3>
     </div>
-    <div class="text-sm leading-relaxed">
+    <div class="text-sm leading-relaxed text-pretty">
         {{ $slot }}
     </div>
 </div>
