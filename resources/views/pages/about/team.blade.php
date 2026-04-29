@@ -50,7 +50,7 @@
     <section class="bg-white">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
             <x-section-heading title="Australian Team" :centered="false" />
-            <div class="grid sm:grid-cols-2 gap-6" data-animate="stagger">
+            <div class="grid sm:grid-cols-2 gap-6 [&_picture_img]:h-72" data-animate="stagger">
                 @foreach($australianTeam as $member)
                     @php
                         $isLeader = str_contains($member['role'], 'Managing Director');
@@ -133,7 +133,7 @@
                 <p class="text-pretty">Our team members are located across the Asia-Pacific region and have supported Blue for more than a decade. Over the years, they have developed a deep understanding of every aspect of our internal processes and external requirements. Their experience, attention to detail and client-focused approach mean they consistently strive to achieve the best possible outcomes for every student and family we work with.</p>
             </div>
 
-            <div class="grid grid-cols-3 sm:grid-cols-6 gap-6" data-animate="stagger">
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6" data-animate="stagger">
                 @foreach($supportTeam as $member)
                     <div class="flex flex-col items-center text-center">
                         <x-avatar :name="$member['name']" :photo="$member['photo']" size="md" />
@@ -145,7 +145,7 @@
     </section>
 
     {{-- §6 Our Expertise --}}
-    <section class="bg-base-50">
+    <section class="bg-white">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
             <x-section-heading title="Our Expertise" />
             <div class="grid sm:grid-cols-1 md:grid-cols-3 gap-8" data-animate="stagger">
