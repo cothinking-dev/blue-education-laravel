@@ -3,7 +3,7 @@
 |--------|---------|-----------|----------------------------------------------------|
 | name   | string  | —         | Full name (used for alt text and initials fallback) |
 | photo  | ?string | null      | Photo path (resolved via asset())                  |
-| size   | string  | 'md'      | sm (40px circle), md (120x160), lg (160x208), full (100%x224) |
+| size   | string  | 'md'      | sm (40px circle), md (120x160), lg (160x208), full (100% width, 4:3 aspect) |
 | shape  | string  | 'rounded' | rounded (rounded-xl), circle (rounded-full)        |
 | webp   | bool    | true      | Use <picture> with webp source                     |
 --}}

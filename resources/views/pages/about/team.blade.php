@@ -9,11 +9,7 @@
                 'languages' => 'English, Cantonese, Bahasa Malaysia',
                 'badge' => 'Managing Director · MARN 1385471',
                 'leadership' => true,
-                'bullets' => [
-                    'Nearly 20 years across education and migration sectors',
-                    'Registered Migration Agent specialising in student, skilled, family and partner visas',
-                    'BCom and BArts, Curtin University; Grad Cert Migration Law & Practice',
-                ],
+                'bio' => 'Glen brings nearly 20 years of experience across private and government education sectors. As Managing Director, he leads Blue\'s long-term strategy while remaining personally accessible to clients. A Registered Migration Agent, Glen is experienced in student visas, skilled migration, family and partner visas, and resident return visas.',
             ],
             [
                 'name' => 'Sonia Ong',
@@ -21,11 +17,7 @@
                 'languages' => 'English, Mandarin, Cantonese, Bahasa Malaysia, Bahasa Indonesia',
                 'badge' => 'Executive Director · International Operations',
                 'leadership' => true,
-                'bullets' => [
-                    '20+ years in strategy, risk and governance consulting across Asia',
-                    'Experience spanning multi-nationals, public-listed companies and senior advisory',
-                    'MBA — Deakin University; CPA (Australia); Chartered Accountant (Malaysia)',
-                ],
+                'bio' => 'Sonia leads Blue\'s offshore initiatives, bringing over 20 years of experience in strategy, risk, and governance consulting. Her background spans multi-national corporations, public listed companies, and senior management advisory across Asia. She speaks fluently in five languages.',
             ],
             [
                 'name' => 'Monica Gaikwad',
@@ -33,11 +25,7 @@
                 'languages' => 'English, Hindi, Marathi',
                 'badge' => 'Service Manager',
                 'leadership' => false,
-                'bullets' => [
-                    'Joined Blue through the Executive Internship Programme',
-                    'Oversees onshore client experience end-to-end',
-                    'Coordinates institutions and stakeholders for smooth case progress',
-                ],
+                'bio' => 'Monica joined Blue through the Executive Internship Programme and quickly proved herself a real asset to the team. As Service Manager, she oversees onshore client experience, coordinating between institutions and stakeholders to keep each case progressing smoothly and transparently. Originally from India, Monica enjoys cooking, calligraphy and relaxed brunches with friends.',
             ],
             [
                 'name' => 'Elaine Ho',
@@ -45,11 +33,7 @@
                 'languages' => 'English, Malay, Cantonese',
                 'badge' => 'Regional Head, Malaysia',
                 'leadership' => false,
-                'bullets' => [
-                    'Legal training and international procurement experience',
-                    'Former UN governance and Asia Pacific airline strategy roles',
-                    'Barrister at Law — Lincoln\'s Inn; specialises in student and migration counselling',
-                ],
+                'bio' => 'Elaine brings a rare combination of legal training, international procurement experience, and education counselling. After practising law in Malaysia, she moved into governance and strategy roles with the UN and a major Asia Pacific airline before dedicating herself to student and migration counselling.',
             ],
             [
                 'name' => 'Monica Low',
@@ -57,11 +41,7 @@
                 'languages' => 'English, Bahasa Malaysia, Mandarin, Cantonese',
                 'badge' => 'Associate Counsellor, Malaysia',
                 'leadership' => false,
-                'bullets' => [
-                    'Hotel management, retail banking and education counselling experience',
-                    'Multilingual fluency for Southeast Asian student interaction',
-                    'BSc Hospitality & Tourism — Purdue University',
-                ],
+                'bio' => 'A native of Kuala Lumpur, Monica brings years of business and interpersonal skills developed across hotel management in Seattle, retail banking in Singapore, and now education counselling in Malaysia. Her approachable personality and multilingual fluency make her a natural fit for student interaction across Southeast Asia.',
             ],
             [
                 'name' => 'Ruby Aglagoh',
@@ -69,11 +49,9 @@
                 'languages' => 'English',
                 'badge' => 'Regional Adviser, Ghana & West Africa',
                 'leadership' => false,
-                'bullets' => [
-                    'Strategic alliance partner for Ghana and West Africa',
-                    'Two decades-plus legal career; called to the Ghana Bar in 2001',
-                    'Notary Public; focus on ethical counselling and tailored support',
-                ],
+                'bio' => 'Ruby Aglagoh is the Regional Adviser for Ghana and West Africa through an established strategic alliance with Blue Education. She provides guidance on international study pathways, student placement, and cross-border academic advisory services, supporting students and families in making informed study-abroad decisions.
+
+Called to the Ghana Bar in 2001 and as Notary Public in 2012, Mrs. Ruby Aglagoh has built a distinguished legal career spanning over two decades.',
             ],
             [
                 'name' => 'Nino Sekyere-Boakye',
@@ -81,11 +59,7 @@
                 'languages' => 'English, French (conversational)',
                 'badge' => 'Regional Director, Ghana · MARN 0959773',
                 'leadership' => true,
-                'bullets' => [
-                    'A decade-plus supporting African students into Australia',
-                    'Lived and worked across 25+ African countries',
-                    'Registered Migration Agent; Master of Professional Marketing — ECU',
-                ],
+                'bio' => 'Nino is an academician and researcher who has spent over a decade helping African students pursue education and work experience in Australia. He has travelled and worked in over 25 African countries. As a Registered Migration Agent, Nino advises on courses, visa pathways, career options, and life in Australia.',
             ],
             [
                 'name' => 'Mansheel Kaur',
@@ -93,11 +67,7 @@
                 'languages' => 'English, Malay, Indonesian, Punjabi, Hindi',
                 'badge' => 'Solicitor · Immigration Lawyer',
                 'leadership' => false,
-                'bullets' => [
-                    '35+ years of legal experience across Australia and Malaysia',
-                    'Track record in business, skilled, family and partner visas',
-                    'Notary Public, accredited Mediator; Solicitor (NSW); LL.B — Monash University',
-                ],
+                'bio' => 'Mansheel comes with over 35 years of legal experience spanning Australia and Malaysia. She has a strong track record across business migration, skilled migration, family and partner visas, contributory parent visas, and resident return visas. She is a Notary Public and an accredited Mediator, and speaks five languages.',
             ],
             [
                 'name' => 'Priscilla Bwalya Mwansa',
@@ -105,11 +75,7 @@
                 'languages' => 'English, ici Bemba',
                 'badge' => 'Senior Counsellor, Lusaka',
                 'leadership' => false,
-                'bullets' => [
-                    'Senior Counsellor for Zambia and the broader region',
-                    'Strategic management and chartered accounting background',
-                    'Guides career planning and study-abroad financial considerations',
-                ],
+                'bio' => 'Priscilla is a Senior Counsellor responsible for planning, advising, and supporting students from Zambia and the broader region who wish to pursue education in Australia. With a background in strategic management and chartered accounting, she provides insight into both career planning and the financial considerations of studying abroad.',
             ],
         ];
 
@@ -147,7 +113,7 @@
                 @foreach($mainTeam as $member)
                     <x-team-member :name="$member['name']"
                                    :photo="$member['photo']"
-                                   :bullets="$member['bullets']"
+                                   :bio="$member['bio']"
                                    :languages="$member['languages']"
                                    :badge="$member['badge']"
                                    :leadership="$member['leadership']" />
