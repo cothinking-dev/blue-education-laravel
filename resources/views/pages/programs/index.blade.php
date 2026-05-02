@@ -13,7 +13,7 @@
     <section class="bg-white">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
             <x-section-heading title="Our Programmes" :centered="false" />
-            <div class="grid sm:grid-cols-2 gap-6" data-animate="stagger">
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6" data-animate="stagger">
                 <x-card title="Study Tours"
                         badge="7 – 14 Day Immersion"
                         description="Short-term study tours for high school students in Western Australia. The Buddy Programme, culinary experiences, and custom group tours, fully supervised and supported by our Perth team."
