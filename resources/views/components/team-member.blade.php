@@ -16,6 +16,7 @@
     'role',
     'photo' => null,
     'bio' => null,
+    'bullets' => [],
     'credentials' => null,
     'languages' => null,
     'variant' => 'card',
@@ -74,15 +75,24 @@
 
 @else
     {{-- Default card variant: photo on top, bordered card --}}
-    <article {{ $attributes->merge(['class' => 'border border-base-200 rounded-corner-lg overflow-hidden shadow-md']) }}>
+    <article {{ $attributes->merge(['class' => 'flex flex-col border border-base-200 rounded-corner-lg overflow-hidden shadow-md bg-white']) }}>
         <x-avatar :name="$name" :photo="$photo" size="full" />
-        <div class="p-5">
-            <div class="inline-block {{ $badgeClasses }} border text-xs font-bold px-2 py-0.5 rounded mb-3">{{ $badgeLabel }}</div>
+        <div class="p-5 flex flex-col flex-1">
+            <div class="inline-block self-start {{ $badgeClasses }} border text-xs font-bold px-2 py-0.5 rounded mb-3">{{ $badgeLabel }}</div>
             <h3 class="font-bold text-base-900 text-base">{{ $name }}</h3>
             @if($languages)
                 <p class="text-xs text-base-500 mt-1.5">{{ $languages }}</p>
             @endif
-            @if($bio)
+            @if(!empty($bullets))
+                <ul class="mt-3 space-y-1.5 text-sm text-base-600">
+                    @foreach($bullets as $bullet)
+                        <li class="flex gap-2 leading-relaxed text-pretty">
+                            <span class="text-primary-600 shrink-0" aria-hidden="true">&bull;</span>
+                            <span>{{ $bullet }}</span>
+                        </li>
+                    @endforeach
+                </ul>
+            @elseif($bio)
                 <p class="text-sm text-base-600 mt-3 leading-relaxed text-pretty">{{ $bio }}</p>
             @endif
         </div>

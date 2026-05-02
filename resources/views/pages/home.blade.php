@@ -96,28 +96,28 @@
                 @php
                 $teamPhotos = [
                 'images/team/glen-ong.webp',
-                'images/team/monica-gaikwad.webp',
-                'images/team/flora-wang.webp',
-                'images/team/shen-sekhon.webp',
-                'images/team/mansheel-kaur.webp',
-                'images/team/arwinder-singh.webp',
                 'images/team/sonia-ong.webp',
+                'images/team/monica-gaikwad.webp',
                 'images/team/elaine-ho.webp',
                 'images/team/monica-low.webp',
-                'images/team/hana-hursepuny.webp',
-                'images/team/minami-sakamoto.webp',
+                'images/team/ruby-aglagoh.webp',
                 'images/team/nino-sekyere-boakye.webp',
-                'images/team/elijah-chongo.webp',
+                'images/team/mansheel-kaur.webp',
                 'images/team/priscilla-mwansa.webp',
-                'images/team/sherene-chan.webp',
+                'images/team/hana-hursepuny.webp',
+                'images/team/tamsyn-ong.webp',
+                'images/team/noor-ghafar.webp',
+                'images/team/nurainy-desa.webp',
+                'images/team/lucy-lim.webp',
+                'images/team/claudine-macaculop.webp',
                 ];
                 @endphp
                 <div class="flex-1 lg:-mr-16 xl:-mr-24 2xl:-mr-32 min-w-0">
-                    <div class="columns-3 sm:columns-4 lg:columns-5 gap-3">
-                        @foreach($teamPhotos as $i => $photo)
+                    <div class="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-5 gap-3">
+                        @foreach($teamPhotos as $photo)
                             <img src="{{ asset($photo) }}"
                                  alt="Blue Education team member"
-                                 class="w-full object-cover rounded-corner-lg mb-3 {{ ['aspect-[4/5]', 'aspect-square', 'aspect-[3/4]'][$i % 3] }}"
+                                 class="w-full aspect-square object-cover rounded-corner-lg"
                                  loading="lazy">
                         @endforeach
                     </div>
@@ -217,7 +217,7 @@
 
                 <x-card title="A qualification system designed to move with you."
                         description="The Australian Qualifications Framework ranks every recognised credential from Certificate to PhD on one national scale. That makes it straightforward to transfer credits, step up between levels, and prove your qualification to employers and migration authorities."
-                        :image="asset('images/home/wa-aqf.svg')"
+                        :image="asset('images/home/wa-aqf.png')"
                         alt="Australian Qualifications Framework levels from Certificate I through to Doctoral Degree"
                         aspect="16/9" />
             </div>

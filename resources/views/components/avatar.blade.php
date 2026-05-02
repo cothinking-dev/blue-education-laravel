@@ -23,7 +23,7 @@
         'sm'   => ['container' => 'w-10 h-10', 'text' => 'text-sm', 'width' => 40, 'height' => 40],
         'md'   => ['container' => 'w-30 h-40', 'text' => 'text-3xl', 'width' => 120, 'height' => 160],
         'lg'   => ['container' => 'w-40 h-52', 'text' => 'text-3xl', 'width' => 160, 'height' => 208],
-        'full' => ['container' => 'w-full h-56', 'text' => 'text-3xl', 'width' => 320, 'height' => 224],
+        'full' => ['container' => 'w-full aspect-[4/3]', 'text' => 'text-3xl', 'width' => 320, 'height' => 240],
     ];
     $s = $sizes[$size] ?? $sizes['md'];
     $radius = $shape === 'circle' ? 'rounded-full' : 'rounded-xl';
