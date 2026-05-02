@@ -25,7 +25,7 @@ return [
             'children' => [
                 ['heading' => 'Education'],
                 ['label' => 'Education Overview', 'route' => 'services.education.index'],
-                ['label' => 'School Programs', 'route' => 'services.education.school', 'indent' => true],
+                ['label' => 'School Programmes', 'route' => 'services.education.school', 'indent' => true],
                 ['label' => 'English & Foundation', 'route' => 'services.education.english', 'indent' => true],
                 ['label' => 'VET & TAFE', 'route' => 'services.education.vet-tafe', 'indent' => true],
                 ['label' => 'Undergraduate & Postgraduate', 'route' => 'services.education.degrees', 'indent' => true],

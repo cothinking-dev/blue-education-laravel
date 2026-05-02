@@ -30,7 +30,7 @@ Route::prefix('services')->name('services.')->group(function () {
 
     Route::prefix('education')->name('education.')->group(function () {
         Route::get('/', [PageController::class, 'show'])->name('index')->defaults('label', 'Education');
-        Route::get('/school', [PageController::class, 'show'])->name('school')->defaults('label', 'School Programs');
+        Route::get('/school', [PageController::class, 'show'])->name('school')->defaults('label', 'School Programmes');
         Route::get('/english', [PageController::class, 'show'])->name('english')->defaults('label', 'English & Foundation');
         Route::get('/vet-tafe', [PageController::class, 'show'])->name('vet-tafe')->defaults('label', 'VET & TAFE');
         Route::get('/degrees', [PageController::class, 'show'])->name('degrees')->defaults('label', 'Undergraduate & Postgraduate');
@@ -52,7 +52,7 @@ Route::prefix('services')->name('services.')->group(function () {
 
 // Programs
 Route::prefix('programs')->name('programs.')->group(function () {
-    Route::get('/', [PageController::class, 'show'])->name('index')->defaults('label', 'Programs');
+    Route::get('/', [PageController::class, 'show'])->name('index')->defaults('label', 'Programmes');
     Route::get('/study-tours', [PageController::class, 'show'])->name('study-tours')->defaults('label', 'Study Tours');
     Route::get('/study-abroad', [PageController::class, 'show'])->name('study-abroad')->defaults('label', 'Study Abroad');
 

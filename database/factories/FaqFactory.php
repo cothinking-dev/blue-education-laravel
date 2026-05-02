@@ -17,7 +17,7 @@ class FaqFactory extends Factory
         'education' => [
             [
                 'question' => 'What types of courses can I study in Australia?',
-                'answer' => 'Australia offers a wide range of courses including vocational education (VET/TAFE), undergraduate degrees, postgraduate degrees, research programs, and English language courses. Popular fields include business, IT, engineering, health sciences, and hospitality.',
+                'answer' => 'Australia offers a wide range of courses including vocational education (VET/TAFE), undergraduate degrees, postgraduate degrees, research programmes, and English language courses. Popular fields include business, IT, engineering, health sciences, and hospitality.',
             ],
             [
                 'question' => 'How do I choose the right university or institution?',

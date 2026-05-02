@@ -117,7 +117,7 @@
             <p class="text-base-500 text-sm mb-6 -mt-2 text-pretty">The following steps apply to self-sponsored skilled visas (subclasses 189, 190, 491). Employer-sponsored and family/partner pathways follow a different process.</p>
             <x-timeline :steps="[
                 ['title' => 'Skills assessment', 'description' => 'For most points-tested skilled visas, you will need a suitable skills assessment in your nominated occupation before you can be invited to apply. We help identify the correct assessing authority for your field and guide you through the skills assessment process so it fits into your overall migration strategy.'],
-                ['title' => 'Expression of Interest (EOI)', 'description' => 'Once your skills and background are aligned with an eligible occupation, you submit an Expression of Interest through SkillSelect. EOIs are ranked and invitations are issued in selection rounds based on current program settings and your points score. We work with you to strengthen your points profile where possible and explain state or territory nomination pathways that may increase your total points or improve your prospects.'],
+                ['title' => 'Expression of Interest (EOI)', 'description' => 'Once your skills and background are aligned with an eligible occupation, you submit an Expression of Interest through SkillSelect. EOIs are ranked and invitations are issued in selection rounds based on current programme settings and your points score. We work with you to strengthen your points profile where possible and explain state or territory nomination pathways that may increase your total points or improve your prospects.'],
                 ['title' => 'Visa application', 'description' => 'If you receive an invitation, you have a limited time (often around 60 days under current settings) to lodge a complete application. We help you prepare and submit the visa application, including documentation, health and character requirements, and compliance checks, so your case is presented clearly and in line with current requirements.'],
             ]" />
         </div>
@@ -146,7 +146,7 @@
     <section id="dama-appendix" class="bg-base-50 scroll-mt-20">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
             <h2 class="text-2xl font-bold text-base-900 mb-3" data-animate="fade-up">DAMA Pathways</h2>
-            <p class="text-base-600 leading-relaxed mb-6 max-w-3xl text-pretty">A Designated Area Migration Agreement (DAMA) is a formal arrangement between the Australian Government and a regional, state or territory authority. It allows local employers to sponsor overseas workers in occupations or under conditions that fall outside the standard skilled visa programs. DAMA is not the first option for every graduate or employer, but for the right occupation and location it can open doors that standard skilled visas do not.</p>
+            <p class="text-base-600 leading-relaxed mb-6 max-w-3xl text-pretty">A Designated Area Migration Agreement (DAMA) is a formal arrangement between the Australian Government and a regional, state or territory authority. It allows local employers to sponsor overseas workers in occupations or under conditions that fall outside the standard skilled visa programmes. DAMA is not the first option for every graduate or employer, but for the right occupation and location it can open doors that standard skilled visas do not.</p>
 
             <div class="space-y-3">
                 <details open class="group border border-base-200 rounded-corner-lg overflow-hidden bg-white transition-shadow hover:shadow-sm">
@@ -159,7 +159,7 @@
                             <div class="px-6 pb-5 text-base-600 text-sm leading-relaxed text-pretty border-t border-base-100 pt-4">
                                 <p class="mb-3">A DAMA pathway is usually worth exploring when:</p>
                                 <x-icon-list variant="check">
-                                    <x-icon-list.item>Your occupation is not available, or is very limited, under the standard skilled migration or employer-sponsored visa programs.</x-icon-list.item>
+                                    <x-icon-list.item>Your occupation is not available, or is very limited, under the standard skilled migration or employer-sponsored visa programmes.</x-icon-list.item>
                                     <x-icon-list.item>An employer wants to sponsor you but is struggling to meet standard requirements for things like English, age, work experience or salary, and your role may be covered by an approved DAMA occupation list.</x-icon-list.item>
                                     <x-icon-list.item>You are working in a regional or designated area where local employers are using DAMA to fill long-term skills shortages.</x-icon-list.item>
                                     <x-icon-list.item>You and your employer are both looking at a medium-to-long-term pathway (not just a short job), and are prepared for the extra endorsement and compliance steps that come with a labour agreement.</x-icon-list.item>
@@ -179,11 +179,11 @@
                         <div class="overflow-hidden">
                             <div class="px-6 pb-5 text-base-600 text-sm leading-relaxed text-pretty border-t border-base-100 pt-4">
                                 <p class="mb-3">Western Australia is currently one of the most active states for DAMA use, with a state-wide WA DAMA designed to give both metropolitan and regional employers more options to sponsor skilled and semi-skilled workers where standard visas are too restrictive.</p>
-                                <p class="mb-4">For people already living and working in WA, this can create additional employer-sponsored and permanent residence pathways that are not available in other states or under standard programs alone.</p>
+                                <p class="mb-4">For people already living and working in WA, this can create additional employer-sponsored and permanent residence pathways that are not available in other states or under standard programmes alone.</p>
                                 <h4 class="font-semibold text-base-900 mb-3">Key advantages of the WA DAMA</h4>
                                 <x-definition-grid :columns="1" :items="[
                                     ['term' => 'State-wide coverage, not just remote pockets', 'description' => 'The WA DAMA applies across the state, including metropolitan Perth and regional areas, instead of being limited to a handful of regional zones. More employers across WA can potentially access DAMA concessions if they qualify.'],
-                                    ['term' => 'Large number of places and occupations', 'description' => 'The WA DAMA, combined with state nomination, can support thousands of overseas workers each year, with places split between metro and regional employers and a broader occupation list than standard skilled programs.'],
+                                    ['term' => 'Large number of places and occupations', 'description' => 'The WA DAMA, combined with state nomination, can support thousands of overseas workers each year, with places split between metro and regional employers and a broader occupation list than standard skilled programmes.'],
                                     ['term' => 'Concessions compared to standard visas', 'description' => 'Eligible employers can seek concessions to standard migration settings (for example in English, income thresholds and age) where that is built into the agreement. This can turn roles that are hard to fill under normal rules into viable sponsorship options.'],
                                     ['term' => 'Staged transition with protections', 'description' => 'As existing regional DAMAs reach their expiry dates, businesses can keep using their current agreements up to those dates, and individual labour agreements remain valid. A "no disadvantage" principle is being developed to support the shift into the WA DAMA, with grandfathering arrangements anticipated.'],
                                 ]" />
