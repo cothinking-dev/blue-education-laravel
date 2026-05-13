@@ -50,7 +50,7 @@ it('can create a faq', function () {
         ->fillForm([
             'question' => 'What is the meaning of life?',
             'answer' => 'To learn and grow.',
-            'category' => 'education',
+            'category' => 'study',
             'sort_order' => 1,
         ])
         ->call('create')
@@ -91,7 +91,7 @@ it('validates required fields on create', function (array $data, array $errors) 
         ->fillForm([
             'question' => 'Valid question?',
             'answer' => 'Valid answer.',
-            'category' => 'education',
+            'category' => 'study',
             'sort_order' => 0,
             ...$data,
         ])

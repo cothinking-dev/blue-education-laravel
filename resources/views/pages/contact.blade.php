@@ -144,10 +144,56 @@
         </div>
     </section>
 
-    {{-- §5 International Representatives --}}
+    {{-- §5 Our Offices --}}
+    <section class="bg-white">
+        <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
+            <x-section-heading title="Our Offices" subtitle="Five locations worldwide. One team. All enquiries route to our Perth-based team via the central WhatsApp and email." :centered="false" />
+            @php
+                $offices = [
+                    [
+                        'country' => 'Australia',
+                        'address' => '33 (GF) Barrack Street<br>Perth, Western Australia 6000',
+                    ],
+                    [
+                        'country' => 'Malaysia',
+                        'address' => 'D-23-1, Pusat Komersial Arena Bintang Fasa 2<br>Jalan Zuhal U5/179, Seksyen U5<br>40150 Shah Alam',
+                    ],
+                    [
+                        'country' => 'Indonesia',
+                        'address' => 'Menara Batavia, 12A floor<br>Jl. KH Mas Mansyur Kav. 126<br>Central Jakarta 10220',
+                    ],
+                    [
+                        'country' => 'Ghana',
+                        'address' => '16 Odanta Street<br>Asylum Down<br>Accra',
+                    ],
+                    [
+                        'country' => 'Zambia',
+                        'address' => 'Room 4, Monarch International Company Limited<br>6643+CF Kitwe',
+                    ],
+                ];
+            @endphp
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" data-animate="stagger">
+                @foreach($offices as $office)
+                    <div class="border border-base-200 rounded-corner-lg p-6 shadow-md bg-white">
+                        <div class="flex items-center gap-3 mb-3">
+                            <x-heroicon-o-map-pin class="w-5 h-5 text-primary-700" />
+                            <h3 class="font-bold text-base-900">{{ $office['country'] }}</h3>
+                        </div>
+                        <address class="not-italic text-sm text-base-600 leading-relaxed mb-4">{!! $office['address'] !!}</address>
+                        <div class="pt-3 border-t border-base-100 space-y-1 text-sm">
+                            <p><a href="https://wa.me/{{ config('seo.organization.whatsapp') }}" target="_blank" rel="noopener noreferrer" class="text-primary-800 hover:underline">WhatsApp: {{ $phoneMobile }}</a></p>
+                            <p><a href="mailto:{{ $email }}" class="text-primary-800 hover:underline">{{ $email }}</a></p>
+                        </div>
+                    </div>
+                @endforeach
+            </div>
+        </div>
+    </section>
+
+    {{-- §6 Local Representatives --}}
     <section class="bg-base-50">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
-            <x-section-heading title="International Representatives" subtitle="For local support in your region, contact our international team." :centered="false" />
+            <x-section-heading title="Local Representatives" subtitle="For local support in your region, our international team can speak with you in-language." :centered="false" />
             <x-data-table :headers="['Region', 'Representative']"
                           :rows="[
                               ['Japan', 'Minami Sakamoto'],

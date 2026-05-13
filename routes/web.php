@@ -88,6 +88,7 @@ Route::post('/contact', [ContactController::class, 'submit'])->name('contact.sub
 // Legal
 Route::get('/privacy', [PageController::class, 'show'])->name('privacy')->defaults('label', 'Privacy Policy');
 Route::get('/terms', [PageController::class, 'show'])->name('terms')->defaults('label', 'Terms of Use');
+Route::get('/zero-tolerance-to-abuse', [PageController::class, 'show'])->name('zero-tolerance-to-abuse')->defaults('label', 'Zero Tolerance to Abuse');
 
 // Sitemap & Robots
 Route::get('/sitemap.xml', SitemapController::class)->name('sitemap');

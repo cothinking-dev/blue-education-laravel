@@ -43,11 +43,11 @@ it('relates posts to a category', function () {
 });
 
 it('filters FAQs by category', function () {
-    Faq::factory()->forCategory('education')->count(2)->create();
-    Faq::factory()->forCategory('migration')->count(3)->create();
+    Faq::factory()->forCategory('study')->count(2)->create();
+    Faq::factory()->forCategory('visa')->count(3)->create();
 
-    expect(Faq::category('education')->count())->toBe(2);
-    expect(Faq::category('migration')->count())->toBe(3);
+    expect(Faq::category('study')->count())->toBe(2);
+    expect(Faq::category('visa')->count())->toBe(3);
 });
 
 it('returns excerpt as seo description when available', function () {
@@ -101,11 +101,11 @@ it('excludes soft-deleted testimonials from active scope', function () {
 });
 
 it('excludes soft-deleted FAQs from queries', function () {
-    Faq::factory()->forCategory('education')->count(2)->create();
-    $deleted = Faq::factory()->forCategory('education')->create();
+    Faq::factory()->forCategory('study')->count(2)->create();
+    $deleted = Faq::factory()->forCategory('study')->create();
     $deleted->delete();
 
-    expect(Faq::category('education')->count())->toBe(2);
+    expect(Faq::category('study')->count())->toBe(2);
 });
 
 /*

@@ -35,6 +35,7 @@ class PageController extends Controller
         'contact' => 'pages.contact',
         'privacy' => 'pages.privacy',
         'terms' => 'pages.terms',
+        'zero-tolerance-to-abuse' => 'pages.zero-tolerance-to-abuse',
     ];
 
     public function show(): View

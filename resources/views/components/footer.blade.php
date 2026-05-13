@@ -92,11 +92,13 @@
     </div>
 
     {{-- Legal row --}}
-    <div class="border-t border-base-200 px-8 lg:px-16 py-4 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-base-500">
-        <span>&copy; {{ date('Y') }} Blue Education Pty Ltd. All rights reserved.</span>
-        <div class="flex gap-6">
+    <div class="border-t border-base-200 px-8 lg:px-16 py-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 text-xs text-base-500">
+        <span class="text-center sm:text-left">&copy; {{ date('Y') }} Blue Education Pty Ltd. All rights reserved.</span>
+        <div class="flex flex-wrap justify-center sm:justify-end gap-x-5 gap-y-2">
             <a href="{{ route('privacy') }}" class="hover:text-base-700 transition-colors">Privacy Policy</a>
             <a href="{{ route('terms') }}" class="hover:text-base-700 transition-colors">Terms of Use</a>
+            <a href="https://www.mara.gov.au/tools-for-registered-agents/code-of-conduct" target="_blank" rel="noopener noreferrer" class="hover:text-base-700 transition-colors">Migration Agents Code of Conduct</a>
+            <a href="{{ route('zero-tolerance-to-abuse') }}" class="hover:text-base-700 transition-colors">Zero Tolerance to Abuse</a>
         </div>
     </div>
 

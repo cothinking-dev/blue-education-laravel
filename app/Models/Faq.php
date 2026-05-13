@@ -15,11 +15,11 @@ class Faq extends Model
 
     /** @var array<string, string> */
     public const CATEGORIES = [
-        'education' => 'Education',
-        'migration' => 'Migration',
-        'career' => 'Career',
-        'support' => 'Support',
-        'fees' => 'Fees',
+        'study' => 'Study Options',
+        'visa' => 'Student Visa',
+        'living' => 'Living in Australia',
+        'post-study' => 'Employment & Visa Options',
+        'fees' => 'Our Fees',
     ];
 
     /** @var list<string> */

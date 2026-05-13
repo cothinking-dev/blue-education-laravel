@@ -37,6 +37,7 @@ dataset('static_pages', [
     'contact' => '/contact',
     'privacy' => '/privacy',
     'terms' => '/terms',
+    'zero-tolerance-to-abuse' => '/zero-tolerance-to-abuse',
     'about index' => '/about',
     'about team' => '/about/team',
     'about partners' => '/about/partners',

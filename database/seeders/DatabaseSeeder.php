@@ -2,7 +2,6 @@
 
 namespace Database\Seeders;
 
-use App\Models\Faq;
 use App\Models\Partner;
 use App\Models\Testimonial;
 use App\Models\User;
@@ -71,14 +70,7 @@ class DatabaseSeeder extends Seeder
             $this->call(PartnerSeeder::class);
         }
 
-        // FAQ seed data
-        if (Faq::count() === 0) {
-            Faq::factory()->count(5)->create(['category' => 'education']);
-            Faq::factory()->count(5)->create(['category' => 'migration']);
-            Faq::factory()->count(3)->create(['category' => 'career']);
-            Faq::factory()->count(3)->create(['category' => 'support']);
-            Faq::factory()->count(3)->create(['category' => 'fees']);
-        }
-
+        // FAQ — sourced from client docx (truncate-and-reseed)
+        $this->call(FaqSeeder::class);
     }
 }
