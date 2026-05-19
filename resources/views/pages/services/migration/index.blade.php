@@ -159,6 +159,7 @@
     <x-cta-banner title="Get an honest read on your visa options"
                   subtitle="A registered migration agent will assess your situation, identify the right pathway, and tell you if something won't work, before it costs you."
                   primaryText="Book a Migration Assessment"
-                  :primaryHref="route('contact')" />
+                  :primaryHref="route('contact')"
+                  :showPhone="true" />
 
 </x-layout>

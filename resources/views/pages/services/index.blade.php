@@ -58,6 +58,7 @@
     <x-cta-banner title="Not sure which service you need?"
                   subtitle="Tell us your situation and we'll map out the right combination of education, migration, and career support."
                   primaryText="Book a Consultation"
-                  :primaryHref="route('contact')" />
+                  :primaryHref="route('contact')"
+                  :showPhone="true" />
 
 </x-layout>

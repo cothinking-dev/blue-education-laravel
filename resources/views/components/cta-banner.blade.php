@@ -6,11 +6,14 @@
     'secondaryText' => null,
     'secondaryHref' => null,
     'message' => 'Hi, I\'d like to book a consultation',
+    'showPhone' => false,
 ])
 
 @php
     $waUrl = 'https://wa.me/' . config('seo.organization.whatsapp') . '?text=' . rawurlencode($message);
     $contactHref = $secondaryHref ?? $primaryHref;
+    $phoneNational = config('seo.organization.phone_national');
+    $phoneNationalTel = preg_replace('/\s/', '', $phoneNational);
 @endphp
 
 <section {{ $attributes->merge(['class' => 'bg-primary-800 relative overflow-hidden']) }}>
@@ -50,6 +53,12 @@
                     WhatsApp Us
                 </x-btn>
                 <a href="{{ $contactHref }}" class="inline-flex text-white font-medium hover:text-primary-200 transition-colors text-sm">{{ $secondaryText ?? $primaryText }} &rarr;</a>
+                @if($showPhone)
+                    <a href="tel:{{ $phoneNationalTel }}" class="inline-flex items-center gap-1.5 text-primary-100 hover:text-white transition-colors text-sm mt-1">
+                        <x-heroicon-o-phone class="w-4 h-4" aria-hidden="true" />
+                        <span>Or call <span class="font-semibold tabular-nums">{{ $phoneNational }}</span> (Australia-wide)</span>
+                    </a>
+                @endif
             </div>
         </div>
     </div>

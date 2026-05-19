@@ -88,7 +88,7 @@
         'name' => $org['name'],
         'url' => $org['url'],
         'logo' => url($org['logo']),
-        'telephone' => $org['phone'],
+        'telephone' => $org['phone_national'],
         'email' => $org['email'],
         'foundingDate' => $org['founding_year'] . '-01-01',
         'address' => [

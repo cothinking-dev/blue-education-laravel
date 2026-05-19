@@ -187,6 +187,7 @@
     <x-cta-banner title="Get your cost breakdown."
                   subtitle="Tell us your situation: education level, visa status, and what you're trying to achieve. We'll provide an itemised quote before any work begins."
                   primaryText="Get a Personalised Quote"
-                  :primaryHref="route('contact')" />
+                  :primaryHref="route('contact')"
+                  :showPhone="true" />
 
 </x-layout>

@@ -11,7 +11,7 @@
         'url' => $org['url'],
         'logo' => url($org['logo']),
         'image' => url('/images/contact/office-reception.webp'),
-        'telephone' => $org['phone'],
+        'telephone' => $org['phone_national'],
         'email' => $org['email'],
         'address' => [
             '@type' => 'PostalAddress',
@@ -79,7 +79,7 @@
                     <div class="space-y-2">
                         <div>
                             <a href="tel:{{ preg_replace('/\s/', '', $phone) }}" class="font-semibold text-primary-800 hover:underline">{{ $phone }}</a>
-                            <p class="text-base-500 text-xs">Office</p>
+                            <p class="text-base-500 text-xs">Office (Perth)</p>
                         </div>
                         <div>
                             <a href="https://wa.me/{{ config('seo.organization.whatsapp') }}" target="_blank" rel="noopener noreferrer" class="font-semibold text-primary-800 hover:underline">{{ $phoneMobile }}</a>

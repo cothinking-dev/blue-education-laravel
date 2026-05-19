@@ -136,6 +136,7 @@
     <x-cta-banner title="Know what you want to study. Not sure how to get there?"
                   subtitle="Book a free education consultation. We review your background, map your options, and tell you exactly what the pathway looks like, in one conversation."
                   primaryText="Book an Education Assessment"
-                  :primaryHref="route('contact')" />
+                  :primaryHref="route('contact')"
+                  :showPhone="true" />
 
 </x-layout>

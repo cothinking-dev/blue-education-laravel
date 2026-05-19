@@ -296,6 +296,7 @@
     <x-cta-banner title="Not sure where to start?"
                   subtitle="Most people don't either. Book a conversation with us and we'll map out your options honestly, whatever they turn out to be."
                   primaryText="Book a Consultation"
-                  :primaryHref="route('contact')" />
+                  :primaryHref="route('contact')"
+                  :showPhone="true" />
 
 </x-layout>

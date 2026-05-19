@@ -61,7 +61,7 @@
                 33 Barrack St, GF Unit 2<br>
                 Perth WA 6000<br>
                 Email: <a href="mailto:info@blueeducation.com.au">info@blueeducation.com.au</a><br>
-                Phone: <a href="tel:+61863810030">+61 8 6381 0030</a>
+                Phone: <a href="tel:{{ preg_replace('/\s/', '', config('seo.organization.phone')) }}">{{ config('seo.organization.phone') }}</a> (Perth) or <a href="tel:{{ preg_replace('/\s/', '', config('seo.organization.phone_national')) }}">{{ config('seo.organization.phone_national') }}</a> (Australia-wide)
             </p>
         </div>
     </section>

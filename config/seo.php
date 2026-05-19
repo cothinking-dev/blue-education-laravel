@@ -63,7 +63,7 @@ return [
             'postal_code' => '6000',
             'country' => 'AU',
         ],
-        'phone' => '+61 8 6381 0030',
+        'phone' => '08 6381 0030',
         'phone_mobile' => '+61 411 708 899',
         'phone_national' => '1300 040 696',
         'email' => 'info@blueeducation.com.au',

@@ -30,7 +30,8 @@
 </table>
 
 <p style="margin-top: 24px;">If your question is urgent, please call us on
-    <a href="tel:{{ str_replace(' ', '', $org['phone']) }}">{{ $org['phone'] }}</a>
+    <a href="tel:{{ str_replace(' ', '', $org['phone_national']) }}">{{ $org['phone_national'] }}</a> (Australia-wide)
+    or <a href="tel:{{ str_replace(' ', '', $org['phone']) }}">{{ $org['phone'] }}</a> (Perth),
     or message us on WhatsApp at
     <a href="https://wa.me/{{ $org['whatsapp'] }}">+{{ $org['whatsapp'] }}</a>.
 </p>

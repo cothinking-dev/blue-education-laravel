@@ -60,7 +60,8 @@
                     <p class="text-base-500">33 Barrack St, GF Unit 2</p>
                     <p class="text-base-500">Perth WA 6000</p>
                     <p><a href="https://wa.me/{{ config('seo.organization.whatsapp') }}" target="_blank" rel="noopener noreferrer" class="text-primary-700 hover:text-primary-800 font-medium transition-colors">WhatsApp: {{ config('seo.organization.phone_mobile') }}</a></p>
-                    <p><a href="tel:+61863810030" class="text-base-500 hover:text-primary-700 transition-colors">+61 8 6381 0030</a></p>
+                    <p><a href="tel:{{ preg_replace('/\s/', '', config('seo.organization.phone_national')) }}" class="text-base-500 hover:text-primary-700 transition-colors">{{ config('seo.organization.phone_national') }}</a> <span class="text-base-400 text-xs">· Australia-wide</span></p>
+                    <p><a href="tel:{{ preg_replace('/\s/', '', config('seo.organization.phone')) }}" class="text-base-500 hover:text-primary-700 transition-colors">{{ config('seo.organization.phone') }}</a> <span class="text-base-400 text-xs">· Office (Perth)</span></p>
                     <p><a href="mailto:info@blueeducation.com.au" class="text-base-500 hover:text-primary-700 transition-colors">info@blueeducation.com.au</a></p>
                 </address>
             </div>
