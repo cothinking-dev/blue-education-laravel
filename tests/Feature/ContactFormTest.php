@@ -1,5 +1,6 @@
 <?php
 
+use App\Mail\EnquiryConfirmation;
 use App\Mail\EnquiryReceived;
 use Illuminate\Support\Facades\Mail;
 
@@ -79,17 +80,21 @@ it('rejects an invalid enquiry type', function () {
         ->assertJsonValidationErrors(['enquiry_type']);
 });
 
-it('sends an email notification on valid enquiry', function () {
+it('queues both the staff notification and the user confirmation', function () {
     Mail::fake();
+    config()->set('seo.enquiry.recipient', 'sonia@example.com');
+    config()->set('seo.enquiry.cc', ['info@example.com', 'jotham@example.com']);
 
     $this->postJson(route('contact.submit'), [
         'full_name' => 'Jane Doe',
         'email' => 'jane@example.com',
     ])->assertSuccessful();
 
-    Mail::assertQueued(EnquiryReceived::class, function ($mail) {
-        return $mail->hasTo(config('seo.organization.email'));
-    });
+    Mail::assertQueued(EnquiryReceived::class, fn ($mail) => $mail->hasTo('sonia@example.com')
+        && $mail->hasCc('info@example.com')
+        && $mail->hasCc('jotham@example.com'));
+
+    Mail::assertQueued(EnquiryConfirmation::class, fn ($mail) => $mail->hasTo('jane@example.com'));
 });
 
 it('rejects submissions with honeypot field filled', function () {

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\StoreEnquiryRequest;
+use App\Mail\EnquiryConfirmation;
 use App\Mail\EnquiryReceived;
 use App\Models\Enquiry;
 use Illuminate\Http\JsonResponse;
@@ -14,7 +15,8 @@ class ContactController extends Controller
     {
         $enquiry = Enquiry::create($request->validated());
 
-        Mail::to(config('seo.organization.email'))->queue(new EnquiryReceived($enquiry));
+        Mail::queue(new EnquiryReceived($enquiry));
+        Mail::queue(new EnquiryConfirmation($enquiry));
 
         return response()->json(['success' => true]);
     }

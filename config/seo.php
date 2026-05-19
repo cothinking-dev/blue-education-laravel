@@ -85,6 +85,28 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+    | Contact Form Routing
+    |--------------------------------------------------------------------------
+    |
+    | Where contact-form submissions are sent. ``recipient`` goes in the To
+    | header; ``cc`` is a comma-separated list of additional addresses to copy.
+    | Decoupled from organization.email (which is public — displayed on the
+    | contact page and in JSON-LD) so internal routing can change without
+    | touching anything visitors see.
+    |
+    */
+
+    'enquiry' => [
+        'recipient' => env('ENQUIRY_RECIPIENT', 'sonia.ong@blueeducation.com.au'),
+
+        'cc' => array_values(array_filter(array_map(
+            'trim',
+            explode(',', (string) env('ENQUIRY_CC', 'info@blueeducation.com.au,jotham@cothink.ing'))
+        ))),
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
     | Site Verification Tokens
     |--------------------------------------------------------------------------
     |
