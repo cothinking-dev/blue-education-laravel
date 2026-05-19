@@ -27,11 +27,11 @@
 
 @if($variant === 'featured')
 {{-- Featured variant: horizontal layout with prominent icon panel --}}
-<div {{ $attributes->merge(['class' => 'relative border border-base-200 rounded-corner-lg overflow-hidden bg-white transition-shadow' . ($href ? ' hover:shadow-lg' : '')]) }}>
+<div {{ $attributes->merge(['class' => 'relative h-full border border-base-200 rounded-corner-lg overflow-hidden bg-white transition-shadow' . ($href ? ' hover:shadow-lg' : '')]) }}>
     @if($href)
         <a href="{{ $href }}" class="absolute inset-0 z-10" aria-label="{{ $linkText }}"></a>
     @endif
-    <div class="flex flex-col lg:flex-row">
+    <div class="flex flex-col lg:flex-row h-full">
         @isset($icon)
             <div class="flex shrink-0 lg:w-44 items-center justify-center bg-gradient-to-br from-primary-50 to-primary-100 p-8">
                 <div class="w-14 h-14 rounded-2xl bg-primary-800 text-white flex items-center justify-center shadow-sm">
