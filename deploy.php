@@ -64,6 +64,12 @@ task('artisan:seed:wix-redirects', function () {
     run('cd {{release_or_current_path}} && {{bin/php}} artisan db:seed --class=WixRedirectsSeeder --force --no-interaction');
 });
 
+desc('Rebuild the cached sitemap.xml so new routes / posts appear immediately');
+task('artisan:sitemap:generate', function () {
+    run('cd {{release_or_current_path}} && {{bin/php}} artisan cache:forget sitemap:xml');
+    run('cd {{release_or_current_path}} && {{bin/php}} artisan sitemap:generate');
+});
+
 // ─────────────────────────────────────────────────────────────────────────────
 // Hooks
 // ─────────────────────────────────────────────────────────────────────────────
@@ -72,4 +78,5 @@ before('deploy:prepare', 'deploy:verify_env');
 after('deploy:vendors', 'npm:build');
 after('deploy:vendors', 'artisan:migrate:force');
 after('deploy:symlink', 'artisan:queue:restart');
+after('deploy:symlink', 'artisan:sitemap:generate');
 after('deploy:failed', 'deploy:unlock');

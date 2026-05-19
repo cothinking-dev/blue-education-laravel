@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Middleware\CaptureServerPageview;
 use App\Http\Middleware\HandleRedirects;
 use App\Support\PostHogExceptionReporter;
 use Illuminate\Foundation\Application;
@@ -15,6 +16,11 @@ return Application::configure(basePath: dirname(__DIR__))
     )
     ->withMiddleware(function (Middleware $middleware): void {
         $middleware->prepend(HandleRedirects::class);
+        $middleware->appendToGroup('web', CaptureServerPageview::class);
+
+        // cookie_consent is set by JS as plain text and read by both the client
+        // and the server — exclude it from EncryptCookies so it round-trips.
+        $middleware->encryptCookies(except: ['cookie_consent']);
 
         // App sits behind Caddy (and optionally Cloudflare). Trust the forwarded
         // headers so URL generation, isSecure(), and client IP resolution work.

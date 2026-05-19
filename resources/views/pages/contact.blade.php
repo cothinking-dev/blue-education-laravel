@@ -179,11 +179,7 @@
                             <x-heroicon-o-map-pin class="w-5 h-5 text-primary-700" />
                             <h3 class="font-bold text-base-900">{{ $office['country'] }}</h3>
                         </div>
-                        <address class="not-italic text-sm text-base-600 leading-relaxed mb-4">{!! $office['address'] !!}</address>
-                        <div class="pt-3 border-t border-base-100 space-y-1 text-sm">
-                            <p><a href="https://wa.me/{{ config('seo.organization.whatsapp') }}" target="_blank" rel="noopener noreferrer" class="text-primary-800 hover:underline">WhatsApp: {{ $phoneMobile }}</a></p>
-                            <p><a href="mailto:{{ $email }}" class="text-primary-800 hover:underline">{{ $email }}</a></p>
-                        </div>
+                        <address class="not-italic text-sm text-base-600 leading-relaxed">{!! $office['address'] !!}</address>
                     </div>
                 @endforeach
             </div>

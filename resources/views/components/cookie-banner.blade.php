@@ -59,16 +59,27 @@
             return {
                 visible: false,
                 STORAGE_KEY: 'cookie_consent',
+                writeCookie(value) {
+                    // 1-year persistence, SameSite=Lax, Secure when on HTTPS.
+                    var oneYear = 60 * 60 * 24 * 365;
+                    var secure = location.protocol === 'https:' ? '; Secure' : '';
+                    document.cookie = this.STORAGE_KEY + '=' + value + '; path=/; max-age=' + oneYear + '; SameSite=Lax' + secure;
+                },
                 init() {
                     try {
                         const stored = localStorage.getItem(this.STORAGE_KEY);
                         this.visible = stored !== 'granted' && stored !== 'denied';
+                        // Mirror localStorage state into a cookie so server-side can read it.
+                        if (stored === 'granted' || stored === 'denied') {
+                            this.writeCookie(stored);
+                        }
                     } catch (e) {
                         this.visible = true;
                     }
                 },
                 accept() {
                     try { localStorage.setItem(this.STORAGE_KEY, 'granted'); } catch (e) {}
+                    this.writeCookie('granted');
                     if (typeof gtag === 'function') {
                         gtag('consent', 'update', {
                             'ad_storage': 'granted',
@@ -84,6 +95,7 @@
                 },
                 reject() {
                     try { localStorage.setItem(this.STORAGE_KEY, 'denied'); } catch (e) {}
+                    this.writeCookie('denied');
                     window.dataLayer = window.dataLayer || [];
                     window.dataLayer.push({ 'event': 'cookie_consent_rejected' });
                     this.visible = false;
