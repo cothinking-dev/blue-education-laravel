@@ -30,6 +30,9 @@ class GenerateSitemap extends Command
     /** @var list<string> */
     private array $excludedRoutes = ['sitemap', 'showcase', 'og-image'];
 
+    /** @var list<string> */
+    private array $excludedUriPrefixes = ['admin', 'livewire-', 'instruckt/', 'storage/', 'up', 'robots.txt'];
+
     public function handle(): int
     {
         $this->info('Generating sitemap...');
@@ -52,12 +55,40 @@ class GenerateSitemap extends Command
 
         $routes = collect(Route::getRoutes()->getRoutes())
             ->filter(function (\Illuminate\Routing\Route $route) use ($instance) {
-                return in_array('GET', $route->methods())
-                    && $route->getName()
-                    && ! str_contains($route->uri(), '{')
-                    && ! in_array($route->getName(), $instance->excludedRoutes)
-                    && ! str_starts_with($route->getName(), 'filament.')
-                    && $route->getName() !== 'livewire.update';
+                $name = $route->getName();
+                $uri = $route->uri();
+
+                if (! in_array('GET', $route->methods())) {
+                    return false;
+                }
+
+                if (! $name) {
+                    return false;
+                }
+
+                if (str_contains($uri, '{')) {
+                    return false;
+                }
+
+                if (in_array($name, $instance->excludedRoutes)) {
+                    return false;
+                }
+
+                if (str_starts_with($name, 'filament.')) {
+                    return false;
+                }
+
+                if (str_starts_with($name, 'livewire.') || $name === 'default-livewire.update') {
+                    return false;
+                }
+
+                foreach ($instance->excludedUriPrefixes as $prefix) {
+                    if ($uri === $prefix || str_starts_with($uri, $prefix.'/') || str_starts_with($uri, $prefix)) {
+                        return false;
+                    }
+                }
+
+                return true;
             });
 
         foreach ($routes as $route) {

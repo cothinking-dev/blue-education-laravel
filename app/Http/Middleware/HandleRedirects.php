@@ -26,6 +26,10 @@ class HandleRedirects
             return $next($request);
         }
 
+        if ($redirect->from_path === $redirect->to_path) {
+            return $next($request);
+        }
+
         $redirect->forceFill([
             'hits' => $redirect->hits + 1,
             'last_hit_at' => now(),

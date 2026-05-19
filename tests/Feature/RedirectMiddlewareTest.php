@@ -81,3 +81,12 @@ it('does not intercept POST requests', function () {
 
     expect($response->status())->not->toBe(301);
 });
+
+it('skips self-redirects to avoid infinite loops', function () {
+    Redirect::factory()->create([
+        'from_path' => '/why-australia',
+        'to_path' => '/why-australia',
+    ]);
+
+    $this->get('/why-australia')->assertOk();
+});

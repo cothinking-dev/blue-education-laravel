@@ -110,7 +110,6 @@ class WixRedirectsSeeder extends Seeder
             '/study-work-live-in-australia-atfis' => '/programs/study-abroad',
 
             // ── Why Australia ────────────────────────────────────────────────
-            '/why-australia' => '/why-australia',
             '/australian-education-system' => '/why-australia',
 
             // ── Resources ────────────────────────────────────────────────────
@@ -121,7 +120,6 @@ class WixRedirectsSeeder extends Seeder
             '/ebooks' => '/blog',
 
             // ── Blog index + categories ──────────────────────────────────────
-            '/blog' => '/blog',
             '/blog/categories/english-blog' => '/blog',
             '/blog/categories/简体中文blog' => '/blog',
             '/blog/categories/繁体中文blog' => '/blog',
