@@ -14,13 +14,17 @@
         <div class="max-w-7xl mx-auto px-8 lg:px-16 py-14">
             <x-section-heading title="What's included" :centered="false" />
             <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6" data-animate="stagger">
-                <div class="border border-base-200 rounded-corner-lg p-6">
+                <div id="homestay" class="border border-base-200 rounded-corner-lg p-6">
                     <div class="w-10 h-10 rounded-corner bg-primary-50 text-primary-800 flex items-center justify-center mb-4">
                         <x-heroicon-o-home class="w-5 h-5" />
                     </div>
-                    <h3 class="font-bold text-base-900 mb-2">Accommodation</h3>
-                    <p class="text-base-600 text-sm leading-relaxed mb-3 text-pretty">Vetted homestay families through the Australian Homestay Network. Safe, supportive living environment. Meals included. Short-term and long-term arrangements available.</p>
-                    <a href="{{ route('programs.study-tours') }}" class="text-primary-800 font-medium text-sm hover:underline">See Buddy Programme homestay &rarr;</a>
+                    <h3 class="font-bold text-base-900 mb-2">Homestay accommodation</h3>
+                    <p class="text-base-600 text-sm leading-relaxed mb-4 text-pretty">Vetted homestay families through the Australian Homestay Network. Safe, supportive living environment. Meals included. Short-term and long-term arrangements available.</p>
+                    <div class="flex flex-col gap-1.5 text-sm">
+                        <a href="https://www.cognitoforms.com/blueeducationmigration/homestaystudentapplicationform" target="_blank" rel="noopener noreferrer" class="text-primary-800 font-medium hover:underline">Apply as a homestay student &rarr;</a>
+                        <a href="https://www.cognitoforms.com/blueeducationmigration/homestayhostapplicationform2" target="_blank" rel="noopener noreferrer" class="text-primary-800 font-medium hover:underline">Become a homestay host &rarr;</a>
+                        <a href="{{ route('programs.study-tours') }}" class="text-base-500 text-xs hover:text-primary-700 hover:underline">Short-term homestay via Buddy Programme &rarr;</a>
+                    </div>
                 </div>
 
                 <div class="border border-base-200 rounded-corner-lg p-6">
