@@ -24,6 +24,9 @@
     {{-- Google Consent Mode + GTM (must load before other tracking scripts) --}}
     <x-gtm />
 
+    {{-- PostHog client analytics — gated by cookie consent --}}
+    <x-posthog />
+
     <x-seo
         :title="$title"
         :description="$description"

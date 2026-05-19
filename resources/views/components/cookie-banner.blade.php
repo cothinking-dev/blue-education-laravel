@@ -79,6 +79,7 @@
                     }
                     window.dataLayer = window.dataLayer || [];
                     window.dataLayer.push({ 'event': 'cookie_consent_accepted' });
+                    window.dispatchEvent(new CustomEvent('cookie:consent-granted'));
                     this.visible = false;
                 },
                 reject() {
