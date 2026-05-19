@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Middleware\HandleRedirects;
+use App\Support\PostHogExceptionReporter;
 use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Configuration\Exceptions;
 use Illuminate\Foundation\Configuration\Middleware;
@@ -11,8 +13,12 @@ return Application::configure(basePath: dirname(__DIR__))
         health: '/up',
     )
     ->withMiddleware(function (Middleware $middleware): void {
-        //
+        $middleware->prepend(HandleRedirects::class);
     })
     ->withExceptions(function (Exceptions $exceptions): void {
-        //
+        $exceptions->report(function (Throwable $e): void {
+            if (config('posthog.capture_exceptions') && config('posthog.token')) {
+                app(PostHogExceptionReporter::class)->report($e);
+            }
+        });
     })->create();

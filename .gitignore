@@ -31,3 +31,15 @@ Thumbs.db
 /database/database.sqlite-journal
 .lerd.yaml
 /.cloud/
+.env.vps
+/secrets/
+
+# automation/ — Python tooling for GTM / Search Console provisioning
+/automation/.venv/
+/automation/.env
+/automation/ga-credentials.json
+/automation/gtm-client-secrets.json
+/automation/gtm-token.json
+/automation/__pycache__/
+/automation/**/__pycache__/
+

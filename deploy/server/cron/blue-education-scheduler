@@ -1,0 +1,11 @@
+# Laravel scheduler — runs every minute, dispatches what's due.
+# Owned by the `deployer` user. Install via:
+#
+#   sudo cp deploy/server/cron/blue-education-scheduler /etc/cron.d/blue-education-scheduler
+#   sudo chmod 644 /etc/cron.d/blue-education-scheduler
+#
+# Then verify:
+#   sudo systemctl reload cron
+#   sudo tail -f /var/log/syslog | grep CRON
+
+* * * * * deployer cd /home/deployer/blue-education-laravel/current && /usr/bin/php artisan schedule:run >> /dev/null 2>&1

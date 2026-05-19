@@ -23,15 +23,6 @@
                 "boost:mcp"
             ],
             "command": "php"
-        },
-        "lerd": {
-            "args": [
-                "mcp"
-            ],
-            "command": "lerd",
-            "env": {
-                "LERD_SITE_PATH": "/home/jothamlec/co_projects/blue-education-laravel"
-            }
         }
     }
 }

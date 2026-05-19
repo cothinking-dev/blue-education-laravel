@@ -44,6 +44,14 @@
 <meta name="robots" content="{{ $pageRobots }}">
 <link rel="canonical" href="{{ $pageCanonical }}">
 
+{{-- Search engine verification tokens (paste into env when registering the property) --}}
+@if($googleVerification = config('seo.verification.google'))
+<meta name="google-site-verification" content="{{ $googleVerification }}">
+@endif
+@if($bingVerification = config('seo.verification.bing'))
+<meta name="msvalidate.01" content="{{ $bingVerification }}">
+@endif
+
 {{-- Open Graph --}}
 <meta property="og:title" content="{{ $title ?? $defaults['title'] }}">
 <meta property="og:description" content="{{ $pageDescription }}">

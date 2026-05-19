@@ -83,4 +83,21 @@ return [
         'linkedin' => env('SOCIAL_LINKEDIN', 'https://www.linkedin.com/company/blue-education'),
     ],
 
+    /*
+    |--------------------------------------------------------------------------
+    | Site Verification Tokens
+    |--------------------------------------------------------------------------
+    |
+    | Paste verification tokens here when registering the property in Search
+    | Console, Bing Webmaster Tools, etc. The <x-seo> component renders a meta
+    | tag for each non-empty value. Use this when DNS-based verification isn't
+    | available — Google fetches the meta tag from the live URL.
+    |
+    */
+
+    'verification' => [
+        'google' => env('GOOGLE_SITE_VERIFICATION'),
+        'bing' => env('BING_SITE_VERIFICATION'),
+    ],
+
 ];

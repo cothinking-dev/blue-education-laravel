@@ -21,6 +21,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
+    {{-- Google Consent Mode + GTM (must load before other tracking scripts) --}}
+    <x-gtm />
+
     <x-seo
         :title="$title"
         :description="$description"
@@ -53,6 +56,8 @@
 </head>
 <body class="bg-white text-base-900 font-sans antialiased">
 
+    <x-gtm-noscript />
+
     <x-nav :transparent="$transparentNav" />
 
     <main id="main-content">
@@ -63,10 +68,13 @@
 
     <x-whatsapp-widget />
 
+    <x-cookie-banner />
+
     {{-- Alpine.js --}}
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.15.8/dist/cdn.min.js" integrity="sha384-LXWjKwDZz29o7TduNe+r/UxaolHh5FsSvy2W7bDHSZ8jJeGgDeuNnsDNHoxpSgDi" crossorigin="anonymous"></script>
 
     {{-- Per-page scripts --}}
     {{ $scripts ?? '' }}
+    @stack('scripts')
 </body>
 </html>

@@ -4,6 +4,7 @@ use App\Filament\Resources\Categories\Pages\ListCategories;
 use App\Filament\Resources\Enquiries\Pages\ListEnquiries;
 use App\Filament\Resources\Faqs\Pages\ListFaqs;
 use App\Filament\Resources\Posts\Pages\ListPosts;
+use App\Filament\Resources\Redirects\Pages\ListRedirects;
 use App\Filament\Resources\Testimonials\Pages\ListTestimonials;
 use App\Models\User;
 
@@ -43,6 +44,7 @@ dataset('filament_list_pages', [
     'testimonials' => ListTestimonials::class,
     'faqs' => ListFaqs::class,
     'enquiries' => ListEnquiries::class,
+    'redirects' => ListRedirects::class,
 ]);
 
 it('renders admin list pages', function (string $page) {

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4abdfb80bf0bd8911e77db66dbb31c83",
+    "content-hash": "485bdb5da57d911f093b21b44302e9a4",
     "packages": [
         {
             "name": "blade-ui-kit/blade-heroicons",
@@ -4079,6 +4079,59 @@
             "time": "2025-12-27T19:41:33+00:00"
         },
         {
+            "name": "posthog/posthog-php",
+            "version": "4.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/PostHog/posthog-php.git",
+                "reference": "d709d579c0b991b7628725078b2272c7e34a00e0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PostHog/posthog-php/zipball/d709d579c0b991b7628725078b2272c7e34a00e0",
+                "reference": "d709d579c0b991b7628725078b2272c7e34a00e0",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": ">=8.2",
+                "symfony/clock": "^6.2|^7.0|^8.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^11.0",
+                "squizlabs/php_codesniffer": "^3.7"
+            },
+            "bin": [
+                "bin/posthog"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "PostHog\\": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PostHog <engineering@posthog.com>",
+                    "homepage": "https://posthog.com/"
+                }
+            ],
+            "description": "PostHog PHP Library",
+            "homepage": "https://github.com/PostHog/posthog-php",
+            "keywords": [
+                "posthog"
+            ],
+            "support": {
+                "issues": "https://github.com/PostHog/posthog-php/issues",
+                "source": "https://github.com/PostHog/posthog-php/tree/4.3.0"
+            },
+            "time": "2026-05-01T20:40:35+00:00"
+        },
+        {
             "name": "pragmarx/google2fa",
             "version": "v9.0.0",
             "source": {
@@ -4809,16 +4862,16 @@
         },
         {
             "name": "resend/resend-laravel",
-            "version": "v1.3.2",
+            "version": "v1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/resend/resend-laravel.git",
-                "reference": "49773f31e9e7753f596f8459b6a8200525ffde0c"
+                "reference": "6dd5f5ec607404068c5af067fd7f6ba4b659262b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/resend/resend-laravel/zipball/49773f31e9e7753f596f8459b6a8200525ffde0c",
-                "reference": "49773f31e9e7753f596f8459b6a8200525ffde0c",
+                "url": "https://api.github.com/repos/resend/resend-laravel/zipball/6dd5f5ec607404068c5af067fd7f6ba4b659262b",
+                "reference": "6dd5f5ec607404068c5af067fd7f6ba4b659262b",
                 "shasum": ""
             },
             "require": {
@@ -4872,9 +4925,9 @@
             ],
             "support": {
                 "issues": "https://github.com/resend/resend-laravel/issues",
-                "source": "https://github.com/resend/resend-laravel/tree/v1.3.2"
+                "source": "https://github.com/resend/resend-laravel/tree/v1.4.0"
             },
-            "time": "2026-03-27T02:11:50+00:00"
+            "time": "2026-05-06T17:08:44+00:00"
         },
         {
             "name": "resend/resend-php",
@@ -8421,6 +8474,71 @@
             "time": "2026-03-29T15:46:14+00:00"
         },
         {
+            "name": "deployer/deployer",
+            "version": "v8.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/deployphp/deployer.git",
+                "reference": "98fa6dd5b0840fbe0fd11db5508ea60c57b00b11"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/deployphp/deployer/zipball/98fa6dd5b0840fbe0fd11db5508ea60c57b00b11",
+                "reference": "98fa6dd5b0840fbe0fd11db5508ea60c57b00b11",
+                "shasum": ""
+            },
+            "require": {
+                "maml/maml": "^3.2",
+                "php": "^8.3",
+                "symfony/console": "^7.4.0 || ^8.0.0",
+                "symfony/process": "^7.4.0 || ^8.0.0",
+                "symfony/yaml": "^7.4.0 || ^8.0.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^3.68",
+                "phpstan/phpstan": "^2.1",
+                "phpunit/php-code-coverage": "^12.0",
+                "phpunit/phpunit": "^12.5"
+            },
+            "bin": [
+                "bin/dep"
+            ],
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/functions.php",
+                    "src/Support/helpers.php"
+                ],
+                "psr-4": {
+                    "Deployer\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Anton Medvedev",
+                    "email": "anton@medv.io"
+                }
+            ],
+            "description": "Deployment Tool",
+            "homepage": "https://deployer.org",
+            "support": {
+                "docs": "https://deployer.org/docs",
+                "issues": "https://github.com/deployphp/deployer/issues",
+                "source": "https://github.com/deployphp/deployer"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sponsors/antonmedv",
+                    "type": "github"
+                }
+            ],
+            "time": "2026-05-05T14:11:52+00:00"
+        },
+        {
             "name": "doctrine/deprecations",
             "version": "1.1.6",
             "source": {
@@ -9327,6 +9445,60 @@
                 "source": "https://github.com/laravel/tinker/tree/v3.0.0"
             },
             "time": "2026-03-17T14:53:17+00:00"
+        },
+        {
+            "name": "maml/maml",
+            "version": "v3.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/maml-dev/maml-php.git",
+                "reference": "f11cdff4325bf399f23c33fc1995450e40ac0854"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maml-dev/maml-php/zipball/f11cdff4325bf399f23c33fc1995450e40ac0854",
+                "reference": "f11cdff4325bf399f23c33fc1995450e40ac0854",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "php": ">=8.2"
+            },
+            "require-dev": {
+                "php-cs-fixer/shim": "^3.94",
+                "phpstan/phpstan": "^2.1",
+                "phpunit/phpunit": "^10.0 || ^11.0 || ^12.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Maml\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Anton Medvedev",
+                    "email": "anton@medv.io"
+                }
+            ],
+            "description": "MAML Parser",
+            "homepage": "https://maml.dev",
+            "keywords": [
+                "config",
+                "configuration",
+                "maml",
+                "parser",
+                "serializer"
+            ],
+            "support": {
+                "issues": "https://github.com/maml-dev/maml-php/issues",
+                "source": "https://github.com/maml-dev/maml-php/tree/v3.2.0"
+            },
+            "time": "2026-04-12T16:50:36+00:00"
         },
         {
             "name": "mockery/mockery",
