@@ -1,26 +1,50 @@
-# Caddy reverse-proxy + automatic HTTPS for blueeducation.com.au.
+# Caddy site config — staging (Cloudflare) + production (direct).
 #
 # Install path on the server: /etc/caddy/Caddyfile
+# Reload after edits:          sudo systemctl reload caddy
+# Tail logs:                   sudo journalctl -u caddy -f
 #
-# Caddy auto-provisions Let's Encrypt certs. The redirect from www → apex below
-# matches your apex-as-canonical decision.
-#
-# After install:
-#   sudo systemctl reload caddy
-#   sudo journalctl -u caddy -f
+# Topology:
+#   blue-education.cothink.ing  → behind Cloudflare → Cloudflare Origin Cert
+#   blueeducation.com.au + www  → direct (GoDaddy A record) → Caddy auto-TLS
+#                                  via Let's Encrypt HTTP-01 / TLS-ALPN-01
+
+# ──────────────────────────────────────────────────────────────────────────────
+# Staging (cothink.ing). Keep accessible during cutover; flip to a redirect
+# (commented below) once production is verified, then remove entirely.
+# ──────────────────────────────────────────────────────────────────────────────
+
+blue-education.cothink.ing {
+    tls /etc/ssl/cothink/origin.pem /etc/ssl/cothink/origin.key
+    # Post-cutover, swap the block below for: redir https://blueeducation.com.au{uri} 308
+    root * /home/deployer/blue-education-laravel/current/public
+    encode zstd gzip
+    file_server
+    php_fastcgi unix//run/php/php8.4-fpm.sock {
+        resolve_root_symlink
+    }
+    log {
+        output stderr
+    }
+}
+
+# ──────────────────────────────────────────────────────────────────────────────
+# www → apex (Google treats them as distinct properties unless canonicalised).
+# Caddy auto-provisions a Let's Encrypt cert for the redirect host too.
+# ──────────────────────────────────────────────────────────────────────────────
 
 www.blueeducation.com.au {
     redir https://blueeducation.com.au{uri} 308
 }
 
+# ──────────────────────────────────────────────────────────────────────────────
+# Production apex (direct via GoDaddy → Hetzner; no Cloudflare in path).
+# Caddy auto-provisions + auto-renews the Let's Encrypt cert.
+# ──────────────────────────────────────────────────────────────────────────────
+
 blueeducation.com.au {
     root * /home/deployer/blue-education-laravel/current/public
-
     encode zstd gzip
-
-    # Long-cache static build assets (fingerprinted by Vite).
-    @assets path /build/*
-    header @assets Cache-Control "public, max-age=31536000, immutable"
 
     # Security headers.
     header {
@@ -31,13 +55,43 @@ blueeducation.com.au {
         Permissions-Policy "camera=(), microphone=(), geolocation=()"
     }
 
-    php_fastcgi unix//run/php/php8.5-fpm.sock
+    # Vite-fingerprinted assets are immutable.
+    @vite path /build/*
+    header @vite Cache-Control "public, max-age=31536000, immutable"
+
+    # User-uploaded media (linked via storage:link).
+    @storage path /storage/*
+    header @storage Cache-Control "public, max-age=2592000"
+
+    # Brand assets at the root.
+    @static path /favicon.ico /robots.txt /apple-touch-icon.png
+    header @static Cache-Control "public, max-age=86400"
+
+    # Sitemap is regenerated nightly — short cache so updates propagate.
+    @sitemap path /sitemap.xml /sitemap*.xml
+    header @sitemap Cache-Control "public, max-age=3600"
+
+    # Never cache admin or Livewire — these are stateful per user.
+    @nocache path /admin* /livewire/* /login /logout
+    header @nocache Cache-Control "no-store, must-revalidate"
+
     file_server
+    php_fastcgi unix//run/php/php8.4-fpm.sock {
+        resolve_root_symlink
+    }
 
     log {
-        output file /var/log/caddy/blueeducation.access.log {
-            roll_size 50mb
-            roll_keep 5
+        output stderr
+    }
+
+    handle_errors {
+        @404 {
+            expression {http.error.status_code} == 404
+        }
+        rewrite @404 /404.html
+        encode zstd gzip
+        file_server {
+            root /var/deployer
         }
     }
 }
