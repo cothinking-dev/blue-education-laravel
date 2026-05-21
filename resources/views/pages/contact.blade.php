@@ -111,6 +111,12 @@
                     <p class="text-base-500 text-xs mt-1">Mon–Fri, 9:00 AM – 5:00 PM</p>
                 </x-contact-card>
             </div>
+
+            {{-- Social --}}
+            <div class="mt-10 pt-8 border-t border-base-100 flex flex-col sm:flex-row sm:items-center gap-3">
+                <p class="text-sm font-medium text-base-700">Find us elsewhere</p>
+                <x-social-links size="md" tone="accent" class="sm:ml-2" />
+            </div>
         </div>
     </section>
 

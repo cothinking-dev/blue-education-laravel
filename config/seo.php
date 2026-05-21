@@ -78,9 +78,9 @@ return [
     */
 
     'social' => [
-        'facebook' => env('SOCIAL_FACEBOOK', 'https://www.facebook.com/blueeducation'),
-        'instagram' => env('SOCIAL_INSTAGRAM', 'https://www.instagram.com/blueeducation'),
-        'linkedin' => env('SOCIAL_LINKEDIN', 'https://www.linkedin.com/company/blue-education'),
+        'facebook' => env('SOCIAL_FACEBOOK', 'https://www.facebook.com/blueeducation.com.au/'),
+        'instagram' => env('SOCIAL_INSTAGRAM', 'https://www.instagram.com/iambiablue/'),
+        'linkedin' => env('SOCIAL_LINKEDIN', 'https://www.linkedin.com/company/blueeducationmigrationcareer'),
     ],
 
     /*

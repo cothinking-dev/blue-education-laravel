@@ -11,6 +11,7 @@
                     <img src="{{ asset('brand/logo-sm.png') }}" alt="Blue Education" class="h-8 w-auto" loading="lazy">
                 </picture>
                 <p class="text-base-500 text-sm leading-relaxed mb-4 text-pretty">Independent education, career, and migration advice from Perth, Western Australia; Since 1998.</p>
+                <x-social-links size="md" tone="muted" />
             </div>
 
             {{-- Services --}}
