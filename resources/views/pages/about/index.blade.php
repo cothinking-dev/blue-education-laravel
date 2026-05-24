@@ -28,7 +28,7 @@
                         ['title' => 'Client-Centric', 'desc' => "Your goals drive every recommendation. We listen, assess, and advise based on what's right for you.", 'icon' => 'identification'],
                         ['title' => 'Honesty', 'desc' => "We tell you what you need to hear. If a pathway won't work, we say so, and find one that will.", 'icon' => 'check-circle'],
                         ['title' => 'Quality-Driven', 'desc' => "Every interaction, from first consultation to visa approval, meets a standard we'd set for our own family.", 'icon' => 'star'],
-                        ['title' => 'Professionally Qualified', 'desc' => 'QEAC certified. Migration Alliance. MIA affiliated. Australian Bar Association.', 'icon' => 'shield-check'],
+                        ['title' => 'Professionally Qualified', 'desc' => 'QEAC certified. Migration Alliance. Australian Bar Association.', 'icon' => 'shield-check'],
                         ['title' => 'Personalised', 'desc' => 'Your situation is unique. Our advice should match your circumstances, goals, and timeline.', 'icon' => 'finger-print'],
                     ];
                 @endphp
@@ -113,9 +113,6 @@
                 <x-credential-card name="Migration Alliance"
                                    logo="images/credentials/migration-alliance.svg"
                                    description="Australia's largest professional body for migration agents" />
-                <x-credential-card name="MIA"
-                                   logo="images/credentials/mia.svg"
-                                   description="Migration Institute of Australia: highest ethical standards" />
                 <x-credential-card name="Australian Bar Association"
                                    logo="images/credentials/australian-bar-association.svg"
                                    description="Legal expertise relevant to education and migration matters" />

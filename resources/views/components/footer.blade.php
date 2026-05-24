@@ -82,10 +82,6 @@
                     <p class="text-xs text-base-500 leading-tight">Professional Member</p>
                 </div>
                 <div class="text-center">
-                    <p class="text-sm font-bold tracking-wide">MIA</p>
-                    <p class="text-xs text-base-500 leading-tight">Migration Institute<br>of Australia</p>
-                </div>
-                <div class="text-center">
                     <p class="text-sm font-bold tracking-wide leading-tight">Australian Bar<br>Association</p>
                     <p class="text-xs text-base-500 leading-tight">Legal Practitioner Member</p>
                 </div>

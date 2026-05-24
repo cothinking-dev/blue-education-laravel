@@ -73,7 +73,6 @@ class PartnerSeeder extends Seeder
         $credentials = [
             ['name' => 'QEAC Certified', 'logo' => 'images/credentials/qeac.svg', 'description' => 'Qualified Education Agent Counsellor — the premier professional qualification for education agents in Australia. QEAC S165.'],
             ['name' => 'Migration Alliance', 'logo' => 'images/credentials/migration-alliance.svg', 'description' => "Australia's largest professional body for migration agents. Access to current industry knowledge, professional development, and peer networks."],
-            ['name' => 'Migration Institute of Australia', 'logo' => 'images/credentials/mia.svg', 'description' => 'The MIA represents the highest professional and ethical standards in migration advice and services.'],
             ['name' => 'Australian Bar Association', 'logo' => 'images/credentials/australian-bar-association.svg', 'description' => 'Access to legal expertise relevant to education and migration matters.'],
         ];
 
