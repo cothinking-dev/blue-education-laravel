@@ -24,6 +24,9 @@
     {{-- Google Consent Mode + GTM (must load before other tracking scripts) --}}
     <x-gtm />
 
+    {{-- Google Analytics (requested direct install alongside GTM) --}}
+    <x-google-analytics />
+
     {{-- PostHog client analytics — gated by cookie consent --}}
     <x-posthog />
 

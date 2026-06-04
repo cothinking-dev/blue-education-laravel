@@ -39,4 +39,8 @@ return [
         'container_id' => env('GTM_CONTAINER_ID'),
     ],
 
+    'google_analytics' => [
+        'measurement_id' => env('GA_MEASUREMENT_ID'),
+    ],
+
 ];
